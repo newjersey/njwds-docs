@@ -1,29 +1,17 @@
 {
-  "name": "innovation-repo-template",
-  "version": "0.3.0",
-  "description": "Template repository for the New Jersey State Office of Innovation",
-  "repository": "github:newjersey/innovation-repo-template",
-  "homepage": "https://github.com/newjersey/innovation-repo-template",
-  "bugs": "https://github.com/newjersey/innovation-repo-template/issues",
+  "name": "njwds-sandbox",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier . --write",
-    "format:check": "prettier . --check",
-    "prepare": "husky"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": {
-    "name": "New Jersey State Office of Innovation",
-    "url": "https://github.com/newjersey"
-  },
-  "license": "ISC",
-  "devDependencies": {
-    "husky": "latest",
-    "lint-staged": "latest",
-    "prettier": "latest",
-    "prettier-plugin-jsdoc": "latest"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+  "dependencies": {
+    "@astrojs/starlight": "^0.36.2",
+    "astro": "^5.6.1",
+    "sharp": "^0.34.2"
   }
 }

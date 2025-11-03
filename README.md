@@ -1,53 +1,49 @@
-# Innovation Repository Template
+# Starlight Starter Kit: Basics
 
-This repository serves as a template for creating new repositories within the New Jersey State
-Office of Innovation. It provides a standardized structure and guidelines to follow when developing
-software or documents.
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-To get started with this repository, have an Innovation GitHub admin clone this template repository
-for you. We'll need the following information from you:
+```
+npm create astro@latest -- --template starlight
+```
 
-- the intended name for the GitHub repository
-- the visibility of the repository (public, private, internal)
-- the permissions for the repository, either:
-  - explicit permissions for the new repository
-  - another repository from which we can mirror the permissions
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Table of Contents
+## 🚀 Project Structure
 
-1. [Using](#using)
-2. [Contributing](#contributing)
-3. [License](#license)
-4. [Acknowledgements](#acknowledgements)
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-## Using
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   └── docs/
+│   └── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-Once this template is mirrored to the new repository, you'll need to perform the following steps:
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-- Delete this `README.md` file, then rename the `README.template.md` file to take its place.
-- Pin the major versions of the packages in `package.json`.
-  - `npm`: `npm update --save`
-  - `yarn` doesn't do this. Reinstall each of the packages.
-  - `pnpm`: `pnpm up -L`
-- Modify the `package.json` file to set the appropriate version and repository information.
-- Update the supported versions in `SECURITY.md`.
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-## Contributing
+Static assets, like favicons, can be placed in the `public/` directory.
 
-Contributions are welcome!
+## 🧞 Commands
 
-1. Clone the repository (`gh repo clone newjersey/innovation-repo-template`)
-2. Create your feature branch (`git checkout -b your_gh_username/NewConfig`)
-3. Commit your changes (`git commit -S -m 'Change some config'`)
-4. Push to the Branch (`git push origin your_gh_username/NewConfig`)
-5. Open a pull request
-6. Post to `#engineering-all` for feedback
+All commands are run from the root of the project, from a terminal:
 
-## License
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-This repository is provided with no license. Adapt as you see fit for your project.
+## 👀 Want to learn more?
 
-## Acknowledgements
-
-Credit goes to [Sanni](https://github.com/sannidhishukla) for kicking off the conversation that led
-to this template repository.
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
