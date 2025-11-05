@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           registry-url: https://registry.npmjs.org/
-          node-version-file: .nvmrc
+          node-version-file: ./.nvmrc
       - name: Send message to Slack
         id: slack
         uses: slackapi/slack-github-action@v1.24.0
