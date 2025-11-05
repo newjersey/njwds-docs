@@ -23,4 +23,4 @@ jobs:
             token: ${{ env.SLACK_BOT_TOKEN }}
             payload: |
               channel: "${{ env.CHANNEL_ID }}"
-              text: "[ <${{ github.event.pull_request.url }}|SHOW PR> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
+              text: "[ <${{ github.event.pull_request.url }}|SHOW PR!> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
