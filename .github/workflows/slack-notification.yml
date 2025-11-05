@@ -43,7 +43,7 @@ jobs:
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "<Message 4>"
+                      "text": "<Message 4?>"
                     },
                     {
                       "type": "mrkdwn",
