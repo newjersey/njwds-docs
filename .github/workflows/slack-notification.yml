@@ -16,7 +16,7 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
           ## CHANNEL_ID: C09Q36G9HMX # Sandbox
-          CHANNEL_ID: D09H54ABJMQ # Direct Message to Tim
+          CHANNEL_ID: "D09H54ABJMQ" # Direct Message to Tim
         with:
             method: chat.postMessage
             token: ${{ env.SLACK_BOT_TOKEN }}
