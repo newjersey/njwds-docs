@@ -43,11 +43,11 @@ jobs:
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "<Message 4?>"
+                      "text": "Message 4"
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Workflow Run>"
+                      "text": "Message 5"
                     }
                     
                   ]
