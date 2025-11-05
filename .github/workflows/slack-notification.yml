@@ -12,11 +12,6 @@ jobs:
   alert-slack:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          registry-url: https://registry.npmjs.org/
-          node-version-file: ../.nvmrc
       - name: Send message to Slack
         id: slack
         uses: slackapi/slack-github-action@v1.24.0
