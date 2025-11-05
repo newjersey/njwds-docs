@@ -31,6 +31,7 @@ jobs:
                 },
                 {
                   "type": "context",
+                  "text": "Additional context message"
                   "elements": [
                     {
                       "type": "mrkdwn",
