@@ -7,52 +7,15 @@ on:
       - main
   workflow_dispatch:
 
-
 jobs:
   alert-slack:
     runs-on: ubuntu-latest
     steps:
-      - name: Send message to Slack
-        id: slack
+      - name: Send message the Slack channel
         uses: slackapi/slack-github-action@v2.1.1
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
         with:
-          channel-id: C09Q36G9HMX #sandbox
-          payload: |
-            {
-              "blocks": [
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "Message one"
-                  }
-                },
-                {
-                  "type": "context",
-                  "text": "Additional context message",
-                  "elements": [
-                    {
-                      "type": "mrkdwn",
-                      "text": "Message 2"
-                    },
-                    {
-                      "type": "mrkdwn",
-                      "text": "Message 3"
-                    },
-                    {
-                      "type": "mrkdwn",
-                      "text": "Message 4"
-                    },
-                    {
-                      "type": "mrkdwn",
-                      "text": "Message 5"
-                    }
-                    
-                  ]
-                }
-              ],
-              "unfurl_links": false,
-              "unfurl_media": false
-            }
+            method: chat.postMessage
+            token: ${{ secrets.SLACK_OAUTH_TOKEN }}
+            payload: |
+              channel: "#sandbox"
+              text: "Message content"
