@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send message the Slack channel
-        uses: slackapi/slack-github-action@v2.1.1
+        uses: slackapi/slack-github-action@v2
         with:
             method: chat.postMessage
             token: ${{ secrets.SLACK_OAUTH_TOKEN }}
             payload: |
-              channel: C09Q36G9HMX
+              channel: "C09Q36G9HMX"
               text: "Message content"
