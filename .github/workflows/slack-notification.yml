@@ -1,3 +1,5 @@
+# Docs: https://docs.slack.dev/tools/slack-github-action/sending-techniques/sending-data-slack-api-method/
+
 name: 'Slack Notification'
 
 on:
