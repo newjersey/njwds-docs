@@ -13,9 +13,12 @@ jobs:
     steps:
       - name: Send message the Slack channel
         uses: slackapi/slack-github-action@v2
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
+          CHANNEL_ID: C09Q36G9HMX
         with:
             method: chat.postMessage
-            token: ${{ secrets.SLACK_OAUTH_TOKEN }}
+            token: ${{ env.SLACK_BOT_TOKEN }}
             payload: |
-              channel: "C09Q36G9HMX"
-              text: "Message content"
+              channel: "${{ env.CHANNEL_ID }}"
+              text: "[ <${{ github.event.pull_request.url }}|SHOW PR> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
