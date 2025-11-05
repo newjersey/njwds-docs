@@ -17,5 +17,5 @@ jobs:
             method: chat.postMessage
             token: ${{ secrets.SLACK_OAUTH_TOKEN }}
             payload: |
-              channel: "#sandbox"
+              channel: "C09Q36G9HMX"
               text: "Message content"
