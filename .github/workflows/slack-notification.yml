@@ -17,8 +17,7 @@ jobs:
         uses: slackapi/slack-github-action@v2
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
-          CHANNEL_ID: C09Q36G9HMX # Sandbox
-          ## CHANNEL_ID: "D09H54ABJMQ" # Direct Message to Tim
+          CHANNEL_ID: C09Q36G9HMX # sandbox
         with:
             errors: true
             method: chat.postMessage
