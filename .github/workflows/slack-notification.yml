@@ -28,4 +28,4 @@ jobs:
               - type: "section"
                 text:
                   type: "mrkdwn"
-                  text: "[ <${{ github.event.pull_request.url }}|PR Review> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
+                  text: "[ <${{ github.event.pull_request.html_url }}|PR Review> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
