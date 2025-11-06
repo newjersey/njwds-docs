@@ -24,4 +24,9 @@ jobs:
             token: ${{ env.SLACK_BOT_TOKEN }}
             payload: |
               channel: "${{ env.CHANNEL_ID }}"
-              text: "[ <${{ github.event.pull_request.url }}|SHOW PR!> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
+              text: "[ <${{ github.event.pull_request.url }}|PR Review> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
+              blocks:
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
