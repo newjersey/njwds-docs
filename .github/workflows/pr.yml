@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send message the Slack channel
-        uses: slack-notification.yml
+        uses: ./.github/workflows/slack-notification.yml
         id: slack_thread
         with:
           channel_id: ${{ env.CHANNEL_ID }}
