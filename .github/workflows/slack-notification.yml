@@ -14,6 +14,22 @@ env:
   CHANNEL_ID: C09Q36G9HMX # sandbox
 
 jobs:
+  get_assignees:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log PR Assignees
+        run: |
+          ASSIGNESS_JSON='${{ toJson(github.event.pull_request.assignees) }}'
+          echo "Assignees JSON: $ASSIGNESS_JSON"
+
+          # Iterate through assignees and print their logins
+          if [ "$ASSIGNESS_JSON" != "[]" ]; then
+            echo "$ASSIGNESS_JSON" | jq -r '.[].login' | while read -r assignee; do
+              echo "Assignee: $assignee"
+            done
+          else
+            echo "No assignees found for this Pull Request."
+          fi
   alert-slack:
     runs-on: ubuntu-latest
     steps:
