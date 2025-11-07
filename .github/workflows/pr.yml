@@ -16,7 +16,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v5
       - name: Evaluate PR and notify Slack
-        uses: ./.github/actions/slack-notification/action.yml
+        uses: ./.github/workflows/slack-notification/action.yml
         id: slack
         with:
           channel_id: ${{ env.CHANNEL_ID }}
