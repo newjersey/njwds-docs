@@ -14,6 +14,9 @@ on:
       thread_message:
         required: true
         type: string
+    secrets:
+      SLACK_OAUTH_TOKEN:
+        required: true
 
 env:
   SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
