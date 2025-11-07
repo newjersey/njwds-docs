@@ -1,0 +1,43 @@
+name: 'Slack Notification'
+description: 'Send messages to Slack with optional threaded replies'
+
+inputs:
+  channel_id:
+    description: 'Slack channel ID'
+    required: true
+  message:
+    description: 'Main message text'
+    required: true
+  thread_message:
+    description: 'Optional follow-up message to post in thread'
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: Send message to Slack channel
+      uses: slackapi/slack-github-action@v2
+      id: slack_thread
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
+      with:
+        errors: true
+        method: chat.postMessage
+        token: ${{ env.SLACK_BOT_TOKEN }}
+        payload: |
+          channel: "${{ inputs.channel_id }}"
+          text: "${{ inputs.message }}"
+    
+    - name: Follow up message
+      if: inputs.thread_message != ''
+      uses: slackapi/slack-github-action@v2
+      id: follow_up
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
+      with:
+        method: chat.postMessage
+        token: ${{ env.SLACK_BOT_TOKEN }}
+        payload: |
+          channel: "${{ inputs.channel_id }}"
+          thread_ts: "${{ steps.slack_thread.outputs.ts }}"
+          text: "${{ inputs.thread_message }}"

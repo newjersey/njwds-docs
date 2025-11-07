@@ -14,9 +14,12 @@ on:
       thread_message:
         required: false
         type: string
+    secrets:
+      SLACK_OAUTH_TOKEN:
+        required: false
 
 env:
-  # SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
+  SLACK_BOT_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
   CHANNEL_ID: ${{ inputs.channel_id }}
   MESSAGE: ${{ inputs.message }}
   THREAD_MESSAGE: ${{ inputs.thread_message }}
@@ -31,7 +34,7 @@ jobs:
         with:
             errors: true
             method: chat.postMessage
-            token: ${{ secrets.SLACK_OAUTH_TOKEN }}
+            token: ${{ env.SLACK_BOT_TOKEN }}
             payload: |
               channel: "${{ env.CHANNEL_ID }}"
               text: "${{ env.MESSAGE }}"
@@ -40,7 +43,7 @@ jobs:
         id: follow_up
         with:
           method: chat.postMessage
-          token: ${{ secrets.SLACK_OAUTH_TOKEN }}
+          token: ${{ env.SLACK_BOT_TOKEN }}
           payload: |
             channel: "${{ env.CHANNEL_ID }}"
             thread_ts: "${{ steps.slack_thread.outputs.ts }}"
