@@ -8,8 +8,7 @@ on:
 
 
 jobs:
-    alert-slack:
-        # Call the reusable workflow defined at .github/workflows/slack-notification.yml
+    request-pr-review:
         uses: ./.github/workflows/slack.yml
         with:
             channel_id: C09Q36G9HMX
