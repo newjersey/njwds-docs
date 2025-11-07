@@ -25,6 +25,8 @@ jobs:
   alert-slack:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
       - name: Send message the Slack channel
         uses: slackapi/slack-github-action@v2
         id: slack_thread
