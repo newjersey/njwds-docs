@@ -13,9 +13,6 @@ jobs:
   alert-slack:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v5
-
       - name: Evaluate PR and notify Slack
         uses: ./.github/workflows/slack-notification.yml
         id: slack
