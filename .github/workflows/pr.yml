@@ -13,11 +13,13 @@ jobs:
   alert-slack:
     runs-on: ubuntu-latest
     steps:
-      - name: Send message the Slack channel
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Evaluate PR and notify Slack
         uses: ./.github/workflows/slack-notification.yml
-        id: slack_thread
+        id: slack
         with:
           channel_id: ${{ env.CHANNEL_ID }}
-          message: >
-            [ <${{ github.event.pull_request.html_url }}|PR Review> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}
+          message: <${{ github.event.pull_request.html_url }}|PR Review> ] ${{ github.event.repository.name }} - #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}
           thread_message: "Please review the above pull request."
