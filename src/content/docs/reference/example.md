@@ -6,7 +6,7 @@ description: A reference page in my new Starlight docs site.
 Reference pages are ideal for outlining how things work in terse and clear terms.
 Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
 
-`<div class="usa-accordion usa-accordion--bordered">
+<div class="usa-accordion usa-accordion--bordered">
 
     <!-- Use the accurate heading level to maintain the document outline -->
     <h2 class="usa-accordion__heading">
@@ -67,7 +67,7 @@ Less concerned with telling a story or addressing a specific use case, they shou
 
     </div>
 
-</div>`
+</div>
 
 ## Further reading
 
