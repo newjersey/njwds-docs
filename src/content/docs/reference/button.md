@@ -22,7 +22,7 @@ Less popular or less important actions may be visually styled as links.
 Avoid using too many buttons on a page, as this can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
 
 ## Button Types and Use 
-### Button variants
+### Button types
 <img width="1767" height="597" alt="Three buttons shown: a blue filled button labeled 'Primary', a darker blue outline button labelled 'Secondary', and a link style button labelled 'Tertiary' " src="https://github.com/user-attachments/assets/5f17c07e-9a12-4a07-92b3-a62e9003bd69" />
 Button variants 
 
@@ -112,6 +112,43 @@ Button text should be as short as possible with action words that clearly explai
 Make the first word of the button’s text a verb. For example, instead of Complaint filing, label the button File a complaint.
 - **Icons can be helpful:**
 Consider adding an icon to signal specific actions (Download, Open in a new window, etc).
+
+## Code 
+### Button settings 
+
+**Button Variants**
+Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
+| Type | Mode | Applied Variants |
+| ----------- | ----------- |
+| primary | light | `usa-button` |
+| primary | dark | `usa-button nj–button--primary-dark` |
+| primary | danger | `usa-button usa-button--secondary` |
+| secondary | light | `usa-button usa-button--outline` |
+| secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
+| secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
+| tertiary | light | `usa-button usa-button--unstyled` |
+| tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
+| tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
+
+**Button Variant CSS Classes**
+| Variant | Description | 
+| ----------- | ----------- |
+| usa-button-outline | Used for secondary type |
+| usa-button-unstyled | Used for tertiary type |
+| usa-button--inverse | Used for dark mode |
+| usa-button--secondary | Used for danger mode |
+| nj-button--primary-dark | [Custom NJWDS] Used for primary dark variant |
+| nj-button--outline-danger | [Custom NJWDS] Used for secondary danger variant |
+| nj-button--unstyled-dark | [Custom NJWDS] Used for tertiary dark variant |
+| nj-button--unstyled-danger | [Custom NJWDS] Used for tertiary danger variant |
+| nj-button--icon | [Custom NJWDS] Used for buttons containing icons |
+
+## Resources
+### NJWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma NJWDS: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using button in designs, documentation and best practices on button usage |
+| [Fractal: Button](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview button styles, see button code snippet |
 
 ## Further reading
 
