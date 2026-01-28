@@ -118,8 +118,9 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 **Button Variants**
 Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
+
 | Type | Mode | Applied Variants |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | primary | light | `usa-button` |
 | primary | dark | `usa-button nj–button--primary-dark` |
 | primary | danger | `usa-button usa-button--secondary` |
