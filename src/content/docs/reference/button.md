@@ -9,7 +9,7 @@ description: A reference page in my new Starlight docs site.
 
 ## Button Usage
 ### 👍 Use this component for
-**Important actions** 
+**Important actions**
 Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
 
 ### 👎 Consider something else for
