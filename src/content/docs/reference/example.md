@@ -13,10 +13,10 @@ Button component, used for primary, secondary, and tertiary actions on a page.
 Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out. 
 
 ### Consider something else for
-**Linking between a site’s pages **
+**Linking between a site’s pages**
 Use regular links instead.
 
-**If the action is less popular or less important **
+**If the action is less popular or less important**
 Less popular or less important actions may be visually styled as links.
 
 Avoid using too many buttons on a page, as this can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
