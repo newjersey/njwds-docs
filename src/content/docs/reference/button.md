@@ -133,15 +133,15 @@ Demos of these variants (including how they can be used with icon buttons) can b
 ### Button Variant CSS Classes
 | Variant | Description | 
 | ----------- | ----------- |
-| usa-button-outline | Used for secondary type |
-| usa-button-unstyled | Used for tertiary type |
-| usa-button--inverse | Used for dark mode |
-| usa-button--secondary | Used for danger mode |
-| nj-button--primary-dark | [Custom NJWDS] Used for primary dark variant |
-| nj-button--outline-danger | [Custom NJWDS] Used for secondary danger variant |
-| nj-button--unstyled-dark | [Custom NJWDS] Used for tertiary dark variant |
-| nj-button--unstyled-danger | [Custom NJWDS] Used for tertiary danger variant |
-| nj-button--icon | [Custom NJWDS] Used for buttons containing icons |
+| `usa-button-outline` | Used for secondary type |
+| `usa-button-unstyled` | Used for tertiary type |
+| `usa-button--inverse` | Used for dark mode |
+| `usa-button--secondary` | Used for danger mode |
+| `nj-button--primary-dark` | [Custom NJWDS] Used for primary dark variant |
+| `nj-button--outline-danger` | [Custom NJWDS] Used for secondary danger variant |
+| `nj-button--unstyled-dark` | [Custom NJWDS] Used for tertiary dark variant |
+| `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
+| `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
 
 ## Resources
 ### NJWDS links 
@@ -149,7 +149,12 @@ Demos of these variants (including how they can be used with icon buttons) can b
 | ----------- | ----------- |
 | [Figma NJWDS: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using button in designs, documentation and best practices on button usage |
 | [Fractal: Button](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview button styles, see button code snippet |
+| [Button settings: variables and variants](https://office-of-innovation.gitbook.io/njwds/button#code)  | Utilities to use in button styling (NJWDS specific) |
 
-## Further reading
+### NJWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Button](https://designsystem.digital.gov/components/button/) | Reference for additional button styles and functionalities  |
+| [USWDS: Button utilities](https://designsystem.digital.gov/components/button/#using-the-button-component-2) | Utilities to be referenced in button styling (may not all apply to NJWDS) |
+| [USWDS: Button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) | Accessibility tests to run for button component |
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
