@@ -3,9 +3,9 @@ title: Button
 description: A reference page in my new Starlight docs site.
 ---
 
-Button component, used for primary, secondary, and tertiary actions on a page.
+## Button component, used for primary, secondary, and tertiary actions on a page.
 
-✅ Passed WCAG 2.1 AA (USWDS component)
+✅ **Passed WCAG 2.1 AA (USWDS component)**
 
 ## Button Usage
 ### Use this component for
@@ -99,7 +99,7 @@ _**Note: Ensure the icon has a universal meaning and is properly labeled with al
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
 - Buttons should display a visible focus state when users tab to them
 - Use standard markup:
-Avoid using <div>or  <img>tags to create buttons. Screen readers don’t automatically know either is a usable button.
+Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don’t automatically know either is a usable button.
 - Screen readers handle buttons and links differently:
 When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
 
