@@ -114,9 +114,8 @@ Make the first word of the button’s text a verb. For example, instead of Compl
 Consider adding an icon to signal specific actions (Download, Open in a new window, etc).
 
 ## Code 
-### Button settings 
 
-**Button Variants**
+### Button Variants
 Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
 
 | Type | Mode | Applied Variants |
@@ -131,7 +130,7 @@ Demos of these variants (including how they can be used with icon buttons) can b
 | tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
 
-**Button Variant CSS Classes**
+### Button Variant CSS Classes
 | Variant | Description | 
 | ----------- | ----------- |
 | usa-button-outline | Used for secondary type |
