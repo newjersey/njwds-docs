@@ -8,11 +8,11 @@ description: A reference page in my new Starlight docs site.
 ✅ **Passed WCAG 2.1 AA (USWDS component)**
 
 ## Button Usage
-### Use this component for
+### 👍 Use this component for
 **Important actions** 
 Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
 
-### Consider something else for
+### 👎 Consider something else for
 **Linking between a site’s pages**
 Use regular links instead.
 
@@ -97,10 +97,10 @@ _**Note: Ensure the icon has a universal meaning and is properly labeled with al
 
 ## Accessibility guidance
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
-- Buttons should display a visible focus state when users tab to them
-- Use standard markup:
+- Buttons should display a **visible focus state** when users tab to them
+- **Use standard markup:**
 Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don’t automatically know either is a usable button.
-- Screen readers handle buttons and links differently:
+- **Screen readers handle buttons and links differently:**
 When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
 
 ## Content guidelines
