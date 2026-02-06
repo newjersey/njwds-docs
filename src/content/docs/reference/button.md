@@ -23,6 +23,9 @@ Avoid using too many buttons on a page, as this can disrupt visual hierarchy. So
 
 ## Button Types and Use 
 ### Button types
+
+<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+
 <img width="1767" height="597" alt="Three buttons shown: a blue filled button labeled 'Primary', a darker blue outline button labelled 'Secondary', and a link style button labelled 'Tertiary' " src="https://github.com/user-attachments/assets/5f17c07e-9a12-4a07-92b3-a62e9003bd69" />
 Button variants 
 
