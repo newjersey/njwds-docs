@@ -26,8 +26,6 @@ Avoid using too many buttons on a page, as this can disrupt visual hierarchy. So
 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
-<img width="1767" height="597" alt="Three buttons shown: a blue filled button labeled 'Primary', a darker blue outline button labelled 'Secondary', and a link style button labelled 'Tertiary' " src="https://github.com/user-attachments/assets/5f17c07e-9a12-4a07-92b3-a62e9003bd69" />
-Button variants 
 
 | Property | Value |
 | ----------- | ----------- |
@@ -43,8 +41,7 @@ Use for non-primary, but still common, actions on a page. Can have multiple on a
 Use for actions that are allowed but potentially discouraged or uncommon 
 
 ## Button states
-<img width="2304" height="1064" alt="A matrix of buttons, states going across, variants going down" src="https://github.com/user-attachments/assets/a1a4e9ea-cdff-4d21-9c7d-1bdc5d2f165b" />
-Button states 
+
 
 | Property | Value |
 | ----------- | ----------- |
@@ -60,7 +57,7 @@ Make sure buttons look selectable — the NJWDS button component currently suppo
 Not supported: Disabled state, Secondary, Accent cool, Accent warm, Big, and Outline inverse.
 
 ## Button modes
-<img width="2304" height="748" alt="A matrix of button styles, organized along the top by 'On light', 'On dark', and 'danger', and along the side by variant" src="https://github.com/user-attachments/assets/a3b8dcf2-19e8-4f52-acab-06087911c4f7" />
+
 Button modes
 
 | Property | Value |
@@ -77,7 +74,7 @@ Use this for typical use cases when buttons appear on a dark background.
 These buttons should be used if the use case is destructive or irreversible, such as deleting an application.
 
 ## Icons in Buttons
-<img width="2304" height="578" alt="Three buttons displayed, primary, secondary, and tertiary, all with a paper clip icon inside them on the left side" src="https://github.com/user-attachments/assets/ec9ee447-3de0-42ac-99ee-51f330f637ab" />
+
 Button variants with leading icons
 
 | Property | Value |
