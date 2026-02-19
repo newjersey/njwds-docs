@@ -29,13 +29,6 @@ description: A reference page in my new Starlight docs site.
 | ----------- | ----------- |
 | type | primary, secondary, tertiary |
 
-**Mode: Light Property Value:(on) Light** 
-| Type | CSS Class | Description | 
-| ----------- | ----------- | ----------- |
-| Secondary |`usa-button-outline` | Used for secondary type |
-| Tertiary | `usa-button-unstyled` | Used for tertiary type |
-
-
 ### Primary buttons
 **Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
@@ -87,6 +80,14 @@ Use this for typical use cases when buttons appear on a dark background.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
   🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+**Mode: light 
+Property value: (on) light** 
+| Dark Variant Class | Description | 
+| ----------- | ----------- |
+| n/a | No class needed for primary type |
+|`usa-button-outline` | Used for secondary type |
+| `usa-button-unstyled` | Used for tertiary type |
 
 ### Dark mode
 **Use this for typical use cases when buttons appear on a dark background.**
