@@ -25,9 +25,6 @@ description: A reference page in my new Starlight docs site.
 ## Button Types and Use 
 ### Button types
 
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
-
-
 | Property | Value |
 | ----------- | ----------- |
 | type | primary, secondary, tertiary |
