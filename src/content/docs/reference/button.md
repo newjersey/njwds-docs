@@ -7,7 +7,7 @@ description: A reference page in my new Starlight docs site.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid c9c9c9;" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9;" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
   
 ## Button Usage
@@ -22,31 +22,32 @@ description: A reference page in my new Starlight docs site.
 - **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
 - **Avoid disabling buttons.** Disabling buttons is strongly discouraged.
 
-## Button Types and Use 
-### Button types
+## Button Types
+
 
 | Property | Value |
 | ----------- | ----------- |
 | type | primary, secondary, tertiary |
 
 ### Primary buttons
-Use it as the main action that users will take on a page. There should only be one primary button per page. Primary buttons often trigger page transitions or next steps. 
+**Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
   🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
 ### Secondary buttons
-Use for non-primary, but still common, actions on a page. Can have multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
+**Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html" width="100%" />
 
   🔗[View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
 ### Tertiary/Link buttons
-Use for actions that are allowed but potentially discouraged or uncommon 
+**Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html" width="100%" />
 
   🔗[View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
   
+
 ## Button states
 
 
@@ -54,7 +55,7 @@ Use for actions that are allowed but potentially discouraged or uncommon
 | ----------- | ----------- |
 | state | default, hover, active, focus |
 
-
+###
 Make sure buttons look selectable — the NJWDS button component currently supports the following states: 
 - Default
 - Hover
