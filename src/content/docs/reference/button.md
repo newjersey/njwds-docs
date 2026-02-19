@@ -32,14 +32,17 @@ description: A reference page in my new Starlight docs site.
 ### Primary buttons
 Use it as the main action that users will take on a page. There should only be one primary button per page. Primary buttons often trigger page transitions or next steps. 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+🔗 [View primary buttom in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
 ### Secondary buttons
 Use for non-primary, but still common, actions on a page. Can have multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html" width="100%" />
+🔗[View secondary buttom in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
 ### Tertiary/Link buttons
 Use for actions that are allowed but potentially discouraged or uncommon 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html" width="100%" />
+🔗[View tertiary buttom in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
   
 ## Button states
 
