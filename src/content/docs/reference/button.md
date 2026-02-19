@@ -80,18 +80,49 @@ Use this for typical use cases when buttons appear on a dark background.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
   🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-  
+
 ### Dark mode
 **Use this for typical use cases when buttons appear on a dark background.**
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(dark).html" width="100%" />
 
   🔗[View primary (on) dark button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(dark).html)
-  
+
+| Variant | Description | 
+| ----------- | ----------- |
+| `usa-button--inverse` | Used for dark mode |
+| `nj-button--primary-dark` | [Custom NJWDS] Used for primary dark variant |
+| `nj-button--unstyled-dark` | [Custom NJWDS] Used for tertiary dark variant |
+
 ### Danger mode
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html" width="100%" />
 
   🔗[View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
+
+### Button Variant CSS Classes
+| Type | Mode | Variant | Description | 
+| ----------- | ----------- | ----------- | ----------- |
+| secondary | `usa-button-outline` | Used for secondary type |
+| `usa-button-unstyled` | Used for tertiary type |
+| `usa-button--inverse` | Used for dark mode |
+| `usa-button--secondary` | Used for danger mode |
+| `nj-button--primary-dark` | [Custom NJWDS] Used for primary dark variant |
+| `nj-button--outline-danger` | [Custom NJWDS] Used for secondary danger variant |
+| `nj-button--unstyled-dark` | [Custom NJWDS] Used for tertiary dark variant |
+| `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
+| `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
+| Type | Mode | Applied Variants |
+| ----------- | ----------- | ----------- |
+| primary | light | `usa-button` | Used for secondary type |
+| primary | dark | `usa-button nj–button--primary-dark` |
+| primary | danger | `usa-button usa-button--secondary` |
+| secondary | light | `usa-button usa-button--outline` |
+| secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
+| secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
+| tertiary | light | `usa-button usa-button--unstyled` |
+| tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
+| tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
+
 
 ## Icons in Buttons
 
