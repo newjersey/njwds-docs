@@ -8,18 +8,15 @@ description: A reference page in my new Starlight docs site.
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+
   
 ## Button Usage
 ### 👍 Use this component for
-**Important actions**
-Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
+- **Important actions.** Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
 
 ### 👎 Consider something else for
-**Linking between a site’s pages**
-Use regular links instead. 
-
-**If the action is less popular or less important**
-Less popular or less important actions may be visually styled as links.
+- **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
+- **Less popular or less important actions.** Less popular or less important actions may be visually styled as links.
 
 Avoid using too many buttons on a page, as this can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
 
