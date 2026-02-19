@@ -18,7 +18,9 @@ description: A reference page in my new Starlight docs site.
 - **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
 - **Less popular or less important actions.** Less popular or less important actions may be visually styled as links.
 
-Avoid using too many buttons on a page, as this can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
+### 👆 Behavior
+- **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
+- **Avoid disabling buttons.** Disabling buttons is strongly discouraged.
 
 ## Button Types and Use 
 ### Button types
