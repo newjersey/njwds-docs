@@ -81,7 +81,6 @@ Button modes
 
 ### Light mode
 **This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
-Use this for typical use cases when buttons appear on a dark background.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
   🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
