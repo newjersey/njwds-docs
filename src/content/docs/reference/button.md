@@ -46,6 +46,11 @@ description: A reference page in my new Starlight docs site.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html" width="100%" />
 
   🔗[View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
+
+| Type Variant Class | Description | 
+| ----------- | ----------- |
+| `usa-button-outline` | Used for secondary type |
+| `usa-button-unstyled` | Used for tertiary type |
   
 _**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
 
