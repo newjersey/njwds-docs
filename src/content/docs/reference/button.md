@@ -81,9 +81,7 @@ Use this for typical use cases when buttons appear on a dark background.
 
   🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-**Mode: light 
-Property value: (on) light** 
-| Dark Variant Class | Description | 
+| Light Variant Class | Description | 
 | ----------- | ----------- |
 | n/a | No class needed for primary type |
 |`usa-button-outline` | Used for secondary type |
