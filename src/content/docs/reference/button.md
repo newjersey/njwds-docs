@@ -47,6 +47,7 @@ description: A reference page in my new Starlight docs site.
 
   🔗[View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
   
+_**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
 
 ## Button states
 
@@ -55,14 +56,15 @@ description: A reference page in my new Starlight docs site.
 | ----------- | ----------- |
 | state | default, hover, active, focus |
 
-###
-Make sure buttons look selectable — the NJWDS button component currently supports the following states: 
+### Supported button states
+**Make sure buttons look selectable.** The NJWDS button component currently supports the following states: 
 - Default
 - Hover
 - Active
 - Focus
 
-Not supported: Disabled state, Secondary, Accent cool, Accent warm, Big, and Outline inverse.
+_**Not Supported:** NJWDS does not support a disabled button states from USWDS._
+
 
 ## Button modes
 
@@ -73,13 +75,23 @@ Button modes
 | mode | (on) light, (on) dark, danger |
 
 ### Light mode
-This is the typical use case of buttons. It should be used anytime a button is for a general use case and on a light background.
-
-### Dark mode
+**This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
 Use this for typical use cases when buttons appear on a dark background.
+<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
+  🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+  
+### Dark mode
+**Use this for typical use cases when buttons appear on a dark background.**
+<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(dark).html" width="100%" />
+
+  🔗[View primary (on) dark button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(dark).html)
+  
 ### Danger mode
-These buttons should be used if the use case is destructive or irreversible, such as deleting an application.
+**These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
+<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html" width="100%" />
+
+  🔗[View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 ## Icons in Buttons
 
