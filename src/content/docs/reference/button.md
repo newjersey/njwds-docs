@@ -7,7 +7,7 @@ description: A reference page in my new Starlight docs site.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: 2px solid c9c9c9; padding: 10px;" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid c9c9c9;" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
 
   
 ## Button Usage
@@ -32,7 +32,6 @@ description: A reference page in my new Starlight docs site.
 ### Primary buttons
 Use it as the main action that users will take on a page. There should only be one primary button per page. Primary buttons often trigger page transitions or next steps. 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
-
 
   🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
