@@ -42,7 +42,11 @@ description: A reference page in my new Starlight docs site.
 
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
-  
+
+  | Type Variant Class | Description | 
+| ----------- | ----------- |
+| `usa-button-outline` | Used for secondary type |
+
 ### Tertiary/Link buttons
 **Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
 <iframe title="Button preview" frameborder="0" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%" />
@@ -53,7 +57,6 @@ description: A reference page in my new Starlight docs site.
 
 | Type Variant Class | Description | 
 | ----------- | ----------- |
-| `usa-button-outline` | Used for secondary type |
 | `usa-button-unstyled` | Used for tertiary type |
   
 ❌ _**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
