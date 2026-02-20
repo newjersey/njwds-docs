@@ -104,6 +104,7 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html" width="100%" />
 
+  Testing Text here
 🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 | Danger Variant Class | Description | 
@@ -157,7 +158,6 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 ## Code 
 
 ### Button Variants
-Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
 
 | Type | Mode | Applied Variants |
 | ----------- | ----------- | ----------- |
@@ -171,6 +171,8 @@ Demos of these variants (including how they can be used with icon buttons) can b
 | tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
 
+Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
+
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
@@ -179,7 +181,7 @@ Demos of these variants (including how they can be used with icon buttons) can b
 | [Fractal: Button](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview button styles, see button code snippet |
 | [Button settings: variables and variants](https://office-of-innovation.gitbook.io/njwds/button#code)  | Utilities to use in button styling (NJWDS specific) |
 
-### NJWDS links 
+### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Button](https://designsystem.digital.gov/components/button/) | Reference for additional button styles and functionalities  |
