@@ -7,7 +7,7 @@ description: A reference page in my new Starlight docs site.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20px" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="300px" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100" />
 
   
 ## Button Usage
@@ -31,21 +31,21 @@ description: A reference page in my new Starlight docs site.
 
 ### Primary buttons
 **Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100" />
 
 
 🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
 ### Secondary buttons
 **Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
 
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
 ### Tertiary/Link buttons
 **Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html" width="100%" />
+<iframe title="Button preview" frameborder="0" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%" />
 
 
 🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
@@ -56,7 +56,7 @@ description: A reference page in my new Starlight docs site.
 | `usa-button-outline` | Used for secondary type |
 | `usa-button-unstyled` | Used for tertiary type |
   
-_**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
+❌_**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
 
 
 ## Button states
@@ -64,10 +64,6 @@ _**Not Supported:** NJWDS does not support select button types from USWDS includ
 | Property | Value |
 | ----------- | ----------- |
 | state | default, hover, active, focus |
-
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
-
-🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 **Make sure buttons look selectable.** The NJWDS button component currently supports the following states: 
 - Default
@@ -86,7 +82,7 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 
 ### Light mode
 **This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="180"/>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"/>
 
   🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
@@ -109,7 +105,7 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 
 ### Danger mode
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20px" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100" />
 
 🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
@@ -131,6 +127,10 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 ### Icon with text
 Use to clarify the purpose of the button further, indicate directionality, etc.
 
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"/>
+
+  🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+  
 **To use:** Toggle on the leading or trailing icon in the button component.
 
 ### Icon only
