@@ -47,6 +47,7 @@ description: A reference page in my new Starlight docs site.
 
 🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
 
+
 | Type Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button-outline` | Used for secondary type |
@@ -82,7 +83,7 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 
 ### Light mode
 **This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20px" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" />
 
   🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
@@ -93,9 +94,9 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 
 ### Dark mode
 **Use this for typical use cases when buttons appear on a dark background.**
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(dark).html" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20px" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adark" width="100%" />
 
-🔗 [View primary (on) dark button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(dark).html)
+🔗 [View primary (on) dark button in Storybook](https://pr-158.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=theme:dark)
 
 | Dark Variant Class | Description | 
 | ----------- | ----------- |
@@ -105,7 +106,7 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 
 ### Danger mode
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
-<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20px" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" />
 
 🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
