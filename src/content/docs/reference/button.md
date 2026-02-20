@@ -104,8 +104,7 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html" width="100%" />
 
-  Testing Text here
-🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
+## 🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 | Danger Variant Class | Description | 
 | ----------- | ----------- |
