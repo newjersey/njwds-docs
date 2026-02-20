@@ -56,7 +56,7 @@ description: A reference page in my new Starlight docs site.
 | `usa-button-outline` | Used for secondary type |
 | `usa-button-unstyled` | Used for tertiary type |
   
-❌_**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
+❌ _**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
 
 
 ## Button states
@@ -71,7 +71,7 @@ description: A reference page in my new Starlight docs site.
 - Active
 - Focus
 
-_**Not Supported:** NJWDS does not support a disabled button states from USWDS._
+❌ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 
 
 ## Button modes
@@ -84,7 +84,7 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 **This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"/>
 
-  🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 | Light Variant Class | Description | 
 | ----------- | ----------- |
@@ -129,20 +129,20 @@ Use to clarify the purpose of the button further, indicate directionality, etc.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"/>
 
-  🔗[View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
-**To use:** Toggle on the leading or trailing icon in the button component.
+ℹ️ **To use:** Toggle on the leading or trailing icon in the button component.
 
 ### Icon only
 An icon can be used in place of text to demonstrate a button's meaning.
 
-**To use:** Toggle on the leading or trailing icon in the button component and hide the button text from the layer panel.   
+ℹ️ **To use:** Toggle on the leading or trailing icon in the button component and hide the button text from the layer panel.   
 
 | Icon Variant Class | Description | 
 | ----------- | ----------- |
 | `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
 
-_**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
+✅ _**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
 
 ## Accessibility guidance
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
