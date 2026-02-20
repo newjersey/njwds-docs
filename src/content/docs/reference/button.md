@@ -39,7 +39,7 @@ description: A reference page in my new Starlight docs site.
 **Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html" width="100%" />
 
-  🔗[View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+Storybook: [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
 ### Tertiary/Link buttons
 **Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
