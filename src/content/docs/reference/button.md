@@ -7,7 +7,7 @@ description: A reference page in my new Starlight docs site.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20px" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-button--primary" width="100%" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20px" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" />
 
   
 ## Button Usage
