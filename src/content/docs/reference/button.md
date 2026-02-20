@@ -61,7 +61,10 @@ _**Not Supported:** NJWDS does not support select button types from USWDS includ
 | ----------- | ----------- |
 | state | default, hover, active, focus |
 
-### Supported button states
+<iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html" width="100%" />
+
+🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
 **Make sure buttons look selectable.** The NJWDS button component currently supports the following states: 
 - Default
 - Hover
@@ -104,13 +107,14 @@ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
 <iframe title="Button preview" frameborder="0" src="https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html" width="100%" />
 
-## 🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
+🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 | Danger Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button--secondary` | Used for danger mode |
 | `nj-button--outline-danger` | [Custom NJWDS] Used for secondary danger variant |
 | `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
+
 
 ## Icons in Buttons
 
