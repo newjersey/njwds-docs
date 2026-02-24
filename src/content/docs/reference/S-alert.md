@@ -1,5 +1,5 @@
 ---
-title: Alert
+title: S-Alert
 description: Documentation for alert component.
 ---
 
