@@ -173,6 +173,28 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | `role="status"` | Messages that provide advisory information but do not have the same urgency as alerts. **Example:** Success alert |
 | `role="region"` | Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow. **Example:** Informative or warning alert **Note:** you must add an appropriate `aria-label` or `aria-labelledby` attribute when using this role. |
 
+## Code utilities 
+### Alert components 
+| Name | Class | Description |
+| ----------- | ----------- | ----------- |
+| Alert Body | `usa-alert__body` | Apply this class to a `<div>` element that has the class `usa-alert` to wrap the contents of the alert. |
+| Alert Heading | `usa-alert__heading` | Apply this class to a heading element within the alert body to style text within the alert as a heading. |
+| Alert Text | `usa-alert__text` | Apply this class to a `<p>` element within the alert body to style the main text of the alert. |
+
+### Alert State Variants
+| Variant | Description | 
+| ----------- | ----------- |
+| `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
+| `usa-alert--success` | Used to communicate a success status. The alert body will be a light green color and display a checkmark icon. |
+| `usa-alert--warning` | Used to communicate warnings. The alert body will be a light yellow color and display a triangular warning icon. |
+| `usa-alert--error` | Used to communicate errors. The alert body will be a light red color and display a circular error icon. |
+| `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
+
+### Alert Size Variants 
+| Variant | Description | 
+| ----------- | ----------- |
+| `usa-alert--slim` | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text. |
+| `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
 
 ## Resources
 ### NJWDS links 
