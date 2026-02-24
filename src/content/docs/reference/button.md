@@ -24,7 +24,7 @@ description: A reference page in my new Starlight docs site.
 
 ## Button Types
 
-
+### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | primary, secondary, tertiary |
@@ -35,6 +35,13 @@ description: A reference page in my new Starlight docs site.
 
 
 🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+#### Code Variants
+| Type | Mode | Applied Variants |
+| ----------- | ----------- | ----------- |
+| primary | light | `usa-button` |
+| primary | dark | `usa-button nj–button--primary-dark` |
+| primary | danger | `usa-button usa-button--secondary` |
   
 ### Secondary buttons
 **Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
@@ -43,9 +50,10 @@ description: A reference page in my new Starlight docs site.
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
-  | Type Variant Class | Description | 
-| ----------- | ----------- |
-| `usa-button-outline` | Used for secondary type |
+#### Code Variants
+| secondary | light | `usa-button usa-button--outline` |
+| secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
+| secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
 
 ### Tertiary/Link buttons
 **Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
@@ -55,15 +63,17 @@ description: A reference page in my new Starlight docs site.
 🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
 
 
-| Type Variant Class | Description | 
-| ----------- | ----------- |
-| `usa-button-unstyled` | Used for tertiary type |
+#### Code Variants
+| tertiary | light | `usa-button usa-button--unstyled` |
+| tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
+| tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
   
 ❌ _**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
 
 
 ## Button states
 
+### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | state | default, hover, active, focus |
@@ -79,6 +89,7 @@ description: A reference page in my new Starlight docs site.
 
 ## Button modes
 
+### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | mode | (on) light, (on) dark, danger |
@@ -91,7 +102,8 @@ description: A reference page in my new Starlight docs site.
 
 | Light Variant Class | Description | 
 | ----------- | ----------- |
-|`usa-button-outline` | Used for secondary type |
+| `usa-button` | Used for primary type |
+| `usa-button-outline` | Used for secondary type |
 | `usa-button-unstyled` | Used for tertiary type |
 
 ### Dark mode
