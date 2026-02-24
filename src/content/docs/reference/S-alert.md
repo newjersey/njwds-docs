@@ -20,6 +20,10 @@ description: Documentation for alert component.
 - **Long forms.** On long forms, always include in-line validation in addition to any error messages that appear at the top of the form.
 - **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this action is what they want.
 
+### 🚫 What to avoid
+- **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
+- **Understand the user's context.** Don’t include notifications that aren’t related to the user’s current goal.
+
 ## Content Guidance 
 
 ### Definition 
@@ -125,10 +129,6 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 Dismissable alerts are used for timely notifications that do not need to remain on the page. 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-
-## Usability Guidance
-- **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
-- **Understand the user's context.** Don’t include notifications that aren’t related to the user’s current goal.
 
 ## Accessibility Guidance
 Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test button implementation.
