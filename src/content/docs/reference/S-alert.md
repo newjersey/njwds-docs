@@ -46,47 +46,32 @@ Alert states determine alert color / role / level of severity. There are current
 | Property | Value |
 | ----------- | ----------- |
 | state | info, warning, error, success, emergency |
+ 
   🔗 [View alert states in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 **Information state** 
 Give instant feedback about the tasks a user just performed. Its main objective is to confirm or notify tasks. (this seems like success state)
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-[iframe shows info state]
 
 **Success state** 
 Confirm that a user’s action was effective, and can have a celebratory tone.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-[iframe shows success state]
 
 **Warning state** 
 Inform the user of risks or things to be aware of before taking action. 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-[iframe shows warning state]
 
 **Error state** 
 Inform that something went wrong after an action. Learn about errors (link to error documentation)
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-[iframe shows error state]
 
 **Emergency state** 
 Demand immediate action to prevent a serious threat or inform the user of an emergency happening in their context. 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-[iframe shows emergency state]
 
 ### Dismissable alerts
 Dismissable alerts are used for timely notifications that do not need to remain on the page. 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-[iframe shows dismissable and non dismissable alerts]
-
-🔗 [View dismissable alerts in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
-
-
-### Tertiary/Link buttons
-**Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
-<iframe title="Button preview" frameborder="0" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%" />
-
-
-🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
 
 ## Usability Guidance
 - **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
