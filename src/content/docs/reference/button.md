@@ -22,9 +22,21 @@ description: A reference page in my new Starlight docs site.
 - **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
 - **Avoid disabling buttons.** Disabling buttons is strongly discouraged.
 
+
+## Content guidelines
+- **Use sentence-case** 
+capitalization for button labels
+- **Keep button text short:** 
+Button text should be as short as possible with action words that clearly explain what will happen when the button is selected (for example, Download, View, or Sign up).
+- **Lead with a verb:**
+Make the first word of the button’s text a verb. For example, instead of Complaint filing, label the button File a complaint.
+- **Icons can be helpful:**
+Consider adding an icon to signal specific actions (Download, Open in a new window, etc).
+
+
 ## Button Types
 
-### Figma properties
+### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
 | type | primary, secondary, tertiary |
@@ -36,7 +48,7 @@ description: A reference page in my new Starlight docs site.
 
 🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-#### Code Variants
+#### Code Primary Variants
 | Type | Mode | Applied Variants |
 | ----------- | ----------- | ----------- |
 | primary | light | `usa-button` |
@@ -50,20 +62,24 @@ description: A reference page in my new Starlight docs site.
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
-#### Code Variants
+#### Code Secondary Variants
+| Type | Mode | Applied Variants |
+| ----------- | ----------- | ----------- |
 | secondary | light | `usa-button usa-button--outline` |
 | secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
 | secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
 
 ### Tertiary/Link buttons
 **Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
-<iframe title="Button preview" frameborder="0" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%"></iframe>
+<iframe title="Button preview" frameborder="0.5" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%"></iframe>
 
 
 🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
 
 
-#### Code Variants
+#### Code Tertiary Variants
+| Type | Mode | Applied Variants |
+| ----------- | ----------- | ----------- |
 | tertiary | light | `usa-button usa-button--unstyled` |
 | tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
@@ -73,7 +89,7 @@ description: A reference page in my new Starlight docs site.
 
 ## Button states
 
-### Figma properties
+### Figma state properties
 | Property | Value |
 | ----------- | ----------- |
 | state | default, hover, active, focus |
@@ -89,7 +105,7 @@ description: A reference page in my new Starlight docs site.
 
 ## Button modes
 
-### Figma properties
+### Figma mode properties
 | Property | Value |
 | ----------- | ----------- |
 | mode | (on) light, (on) dark, danger |
@@ -116,6 +132,7 @@ description: A reference page in my new Starlight docs site.
 | ----------- | ----------- |
 | `usa-button--inverse` | Used for dark mode |
 | `nj-button--primary-dark` | [Custom NJWDS] Used for primary dark variant |
+| `usa-button usa-button--outline usa-button--inverse` | Used for secondary dark variant |
 | `nj-button--unstyled-dark` | [Custom NJWDS] Used for tertiary dark variant |
 
 ### Danger mode
@@ -127,17 +144,15 @@ description: A reference page in my new Starlight docs site.
 | Danger Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button--secondary` | Used for danger mode |
+| `usa-button usa-button--secondary` | Used for primary danger variant |
 | `nj-button--outline-danger` | [Custom NJWDS] Used for secondary danger variant |
 | `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
 
 
 ## Icons in Buttons
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
 
-| Property | Value |
-| ----------- | ----------- |
-| leading icon | true, false (default) |
-| trailing icon | true, false (default) |
-| icon | (instance swap) |
+🔗 [View icons in buttons in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 ### Icon with text
 Use to clarify the purpose of the button further, indicate directionality, etc.
@@ -153,6 +168,14 @@ An icon can be used in place of text to demonstrate a button's meaning.
 
 ℹ️ **To use:** Toggle on the leading or trailing icon in the button component and hide the button text from the layer panel.   
 
+### Figma properties
+| Property | Value |
+| ----------- | ----------- |
+| leading icon | true, false (default) |
+| trailing icon | true, false (default) |
+| icon | (instance swap) |
+
+### Code class
 | Icon Variant Class | Description | 
 | ----------- | ----------- |
 | `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
@@ -166,16 +189,6 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don’t automatically know either is a usable button.
 - **Screen readers handle buttons and links differently:**
 When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
-
-## Content guidelines
-- **Use sentence-case** 
-capitalization for button labels
-- **Keep button text short:** 
-Button text should be as short as possible with action words that clearly explain what will happen when the button is selected (for example, Download, View, or Sign up).
-- **Lead with a verb:**
-Make the first word of the button’s text a verb. For example, instead of Complaint filing, label the button File a complaint.
-- **Icons can be helpful:**
-Consider adding an icon to signal specific actions (Download, Open in a new window, etc).
 
 ## Code 
 
