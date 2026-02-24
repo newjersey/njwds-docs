@@ -3,8 +3,8 @@ title: Date pickers
 description: Documentation for date pickers.
 ---
 
-**Date picker: A date picker helps users select a single date.** 
-**Memorable date picker: A select for month followed by two text fields is the easiest way for users to enter most dates.**
+- **Date picker:** A date picker helps users select a single date. 
+- **Memorable date picker:** A select for month followed by two text fields is the easiest way for users to enter most dates.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
