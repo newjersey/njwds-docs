@@ -206,12 +206,12 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using button in designs, documentation and best practices on button usage |
-| [Fractal: Alert](https://innovation.nj.gov/app/njwds/components/detail/alerts--default.html) | Preview button styles, see button code snippet |
+| [Figma NJWDS: Alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using alert in designs, documentation and best practices on alert usage |
+| [Fractal: Alert](https://innovation.nj.gov/app/njwds/components/detail/alerts--default.html) | Preview alert styles, see alert code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Alert](https://designsystem.digital.gov/components/alert/) | Reference for additional button styles and functionalities  |
-| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in button styling (may not all apply to NJWDS) |
+| [USWDS: Alert](https://designsystem.digital.gov/components/alert/) | Reference for additional alert styles and functionalities  |
+| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in alert styling (may not all apply to NJWDS) |
 | [USWDS: Alert accessibility tests](https://designsystem.digital.gov/components/alert/#accessibility-guidance) | Accessibility tests to run for button component |
