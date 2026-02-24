@@ -9,11 +9,10 @@ description: A reference page in my new Starlight docs site.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100" />
 
-  
-
-
 
 ## Default Button Group Usage
+
+
 ### 👍 Use this component for
 - **Actions that have a contextual relationship.** For example, the default button group can be used when a form has both a primary and alternative action.
 - **Steppiong through linear content** Buttons in a button group can be used for directional navigation and actions (e.g., “Back,” “Next,” “Continue,” “Skip,” “Cancel.”).
