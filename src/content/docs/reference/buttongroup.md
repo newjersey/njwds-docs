@@ -10,6 +10,9 @@ description: A reference page in my new Starlight docs site.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100" />
 
   
+
+
+
 ## Default Button Group Usage
 ### 👍 Use this component for
 - **Actions that have a contextual relationship.** For example, the default button group can be used when a form has both a primary and alternative action.
@@ -78,7 +81,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
 - **Convey relationship.** If not using a list element, give the parent element `role="group"` in order to convey to screen readers that actions are part of a group. If using as part of a toolbar, use `role="toolbar"`.
 - **Use aria-label to give the buttons a useful name.** Some contexts may require additional context provided to screen readers.
-- **Use the <button type="button"> element.** Don’t use `<a>` because it’s a link. Don’t use <span> because screen readers won’t know it’s a usable button.
+- **Use the `<button type="button">` element.** Don’t use `<a>` because it’s a link. Don’t use <span> because screen readers won’t know it’s a usable button.
 
 
 ## Resources
