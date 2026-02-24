@@ -82,6 +82,14 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 - **Use aria-label to give the buttons a useful name.** Some contexts may require additional context provided to screen readers.
 - **Use the `<button type="button">` element.** Don’t use `<a>` because it’s a link. Don’t use <span> because screen readers won’t know it’s a usable button.
 
+## Code utilities 
+### Button group variants 
+
+| Style | Applied Variants | 
+| ----------- | ----------- |
+| Default | `usa-button-group` | 
+| Segmented | `usa-button-group usa-button-group--segmented` | 
+
 
 ## Resources
 ### NJWDS links 
