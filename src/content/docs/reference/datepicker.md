@@ -16,6 +16,7 @@ description: Documentation for date pickers.
 ### 👍 Use this component for
 - **Scheduling.** When users need to schedule or record an event, and benefit from the context of a calendar.
 - **When the day of the week is important.** When knowing the day of the week helps users choose a specific date.
+- **Date ranges.** This component accommodates selecting date ranges.
 
 ### 👎 Consider something else for
 - **Familiar dates.** When asking users for a date they know well, or can look up without using a calendar (like a birthday), use a memorable date picker.
@@ -36,6 +37,7 @@ description: Documentation for date pickers.
 
 ### 👎 Consider something else for
 - **Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
+- **Date ranges.** This component does not accommodate date ranges.
 
 ### 🚫 What to ensure / avoid
 - **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
