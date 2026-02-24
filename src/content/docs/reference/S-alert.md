@@ -35,19 +35,19 @@ Alerts are notifications of high priority since they provide critical informatio
 | Emergency | Demand immediate action to prevent a serious threat. Usually written in all caps. |EMERGENCY ALERT: SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
 
 ### Writing tips
-- Identify the purpose: what type of alert are you writing?
-- Be timely: Alerts should appear when they are most relevant to the user's current context and disappear when no longer needed. 
-- Maintain tone: Match the severity of the alert to the tone. Is it informative, warning, celebratory? Don't be alarming, causing stress, sound calm instead.
-- State the problem or Status Clearly, using a direct tone and explaining what happened. E.g.: File upload failed. / Profile updated successfully.
-- Explain the impact if necessary: Why should the user care? What are the consequences? E.g.: Your changes will be lost if you don't save.
-- Suggest a solution if applicable: What can the user do now? E.g.: Please try again. / Review your account settings. / Save
-- Keep it brief: Aim for 1-2 short sentences and use concise button labels.
+- **Identify the purpose:** what type of alert are you writing?
+- **Be timely:** Alerts should appear when they are most relevant to the user's current context and disappear when no longer needed. 
+- **Maintain tone:** Match the severity of the alert to the tone. Is it informative, warning, celebratory? Don't be alarming, causing stress, sound calm instead.
+- **State the problem or Status Clearly**, using a direct tone and explaining what happened. E.g.: File upload failed. / Profile updated successfully.
+- **Explain the impact if necessary:** Why should the user care? What are the consequences? E.g.: Your changes will be lost if you don't save.
+- **Suggest a solution if applicable:** What can the user do now? E.g.: Please try again. / Review your account settings. / Save
+- **Keep it brief:** Aim for 1-2 short sentences and use concise button labels.
 
 ### Content structure
-1. Headline / Status (Required): What happened or what is the current status?
-2. Brief Explanation / Impact (Required for errors/warnings; Optional for success/info): Why does it matter? Provide essential context.
-3. Call to Action (CTA) / Next Step (Required for actionable alerts; Optional for purely informational): What should the user do now?
-4. Additional Details / Learn More (Optional): For complex issues is genuinely helpful because it is an opportunity to educate the user about the system.
+**1. Headline / Status** (Required): What happened or what is the current status?
+**2. Brief Explanation / Impact** (Required for errors/warnings; Optional for success/info): Why does it matter? Provide essential context.
+**3. Call to Action (CTA) / Next Step** (Required for actionable alerts; Optional for purely informational): What should the user do now?
+**4. Additional Details / Learn More** (Optional): For complex issues is genuinely helpful because it is an opportunity to educate the user about the system.
 
 ## Alert Variants
 
