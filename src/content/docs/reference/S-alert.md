@@ -27,7 +27,7 @@ Alerts are notifications of high priority since they provide critical informatio
 
 ### Examples and types
 | Type | Definition | Example |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | Information | Inform the user of contextual information that might affect their next step. | Processing time typically takes 2-3 weeks. |
 | Success status | Confirm that a user’s action was effective, and can have a celebratory tone. | Order successfully placed! |
 | Warning | Inform the user of risks or caution before taking any decision. | Sorry, this account is inactive. Please check your store’s billing for more information. |
