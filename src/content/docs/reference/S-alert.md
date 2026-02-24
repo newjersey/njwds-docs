@@ -153,18 +153,6 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | `role="status"` | Messages that provide advisory information but do not have the same urgency as alerts. **Example:** Success alert |
 | `role="region"` | Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow. **Example:** Informative or warning alert **Note:** you must add an appropriate `aria-label` or `aria-labelledby` attribute when using this role. |
 
-### Danger mode
-**These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100" />
-
-🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
-| Danger Variant Class | Description | 
-| ----------- | ----------- |
-| `usa-button--secondary` | Used for danger mode |
-| `nj-button--outline-danger` | [Custom NJWDS] Used for secondary danger variant |
-| `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
-
 
 ## Resources
 ### NJWDS links 
