@@ -9,6 +9,7 @@ description: Documentation for alert component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
+🔗 [View alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
 ## Alert Usage
 ### 👍 Use this component for
@@ -68,6 +69,7 @@ Alerts are notifications of high priority since they provide critical informatio
 **Tip:** Slim-icon is the slimmest.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 [iframe shows standard, slim-icon, slim-no icon info alerts] 
+🔗 [View alert sizes in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 #### Code variants
 The following classes can be added to elements with class usa-alert to modify the size of the alert if needed. They can be used in combination with alert type variant classes to adjust the styling as well.
@@ -91,6 +93,8 @@ Give instant feedback about the tasks a user just performed. Its main objective 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+🔗 [View info alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
 | Variant | Description | 
 | ----------- | ----------- |
 | `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
@@ -99,6 +103,8 @@ Give instant feedback about the tasks a user just performed. Its main objective 
 Confirm that a user’s action was effective, and can have a celebratory tone.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View success alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -109,6 +115,8 @@ Inform the user of risks or things to be aware of before taking action.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+🔗 [View warning alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
 | Variant | Description |
 | ----------- | ----------- |
 | `usa-alert--warning` | Used to communicate warnings. The alert body will be a light yellow color and display a triangular warning icon. |
@@ -117,6 +125,8 @@ Inform the user of risks or things to be aware of before taking action.
 Inform that something went wrong after an action. Learn about errors (link to error documentation)
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View error alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -127,6 +137,8 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+🔗 [View emergency alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
 | Variant | Description |
 | ----------- | ----------- |
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
@@ -135,6 +147,8 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. USWDS is working on a way to help developers implement a dismissible alert. [You can follow their progress on GitHub](https://github.com/uswds/uswds/issues/5754).
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View dismissable alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 ## Accessibility Guidance
 Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test button implementation.
