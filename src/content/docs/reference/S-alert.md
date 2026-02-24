@@ -44,10 +44,10 @@ Alerts are notifications of high priority since they provide critical informatio
 - **Keep it brief:** Aim for 1-2 short sentences and use concise button labels.
 
 ### Content structure
-**1. Headline / Status** (Required): What happened or what is the current status?
-**2. Brief Explanation / Impact** (Required for errors/warnings; Optional for success/info): Why does it matter? Provide essential context.
-**3. Call to Action (CTA) / Next Step** (Required for actionable alerts; Optional for purely informational): What should the user do now?
-**4. Additional Details / Learn More** (Optional): For complex issues is genuinely helpful because it is an opportunity to educate the user about the system.
+1. Headline / Status (Required): What happened or what is the current status?
+2. Brief Explanation / Impact (Required for errors/warnings; Optional for success/info): Why does it matter? Provide essential context.
+3. Call to Action (CTA) / Next Step (Required for actionable alerts; Optional for purely informational): What should the user do now?
+4. Additional Details / Learn More (Optional): For complex issues is genuinely helpful because it is an opportunity to educate the user about the system.
 
 ## Alert Variants
 
@@ -71,7 +71,7 @@ The following classes can be added to elements with class usa-alert to modify th
 | Variant | Description |
 | ----------- | ----------- |
 | `usa-alert--slim` | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text.|
-| usa-alert--no-icon | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
+| `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
   
 
 ### Alert states
