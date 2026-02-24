@@ -85,48 +85,54 @@ Alert states determine alert color / role / level of severity. There are current
 | ----------- | ----------- |
 | state | info, warning, error, success, emergency |
  
-#### Code variants
-| Variant | Description |
-| ----------- | ----------- |
-| `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
-| `usa-alert--success` | Used to communicate a success status. The alert body will be a light green color and display a checkmark icon. |
-| `usa-alert--warning` | Used to communicate warnings. The alert body will be a light yellow color and display a triangular warning icon. |
-| `usa-alert--error` | Used to communicate errors. The alert body will be a light red color and display a circular error icon. |
-| `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
-
 
 #### Information state
 Give instant feedback about the tasks a user just performed. Its main objective is to confirm or notify tasks. (this seems like success state)
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+| Variant | Description | 
+| ----------- | ----------- |
+| `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
 
 #### Success state 
 Confirm that a user’s action was effective, and can have a celebratory tone.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-alert--success` | Used to communicate a success status. The alert body will be a light green color and display a checkmark icon. |
 
 #### Warning state 
 Inform the user of risks or things to be aware of before taking action. 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-alert--warning` | Used to communicate warnings. The alert body will be a light yellow color and display a triangular warning icon. |
 
 #### Error state
 Inform that something went wrong after an action. Learn about errors (link to error documentation)
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-alert--error` | Used to communicate errors. The alert body will be a light red color and display a circular error icon. |
 
 #### Emergency state 
 Demand immediate action to prevent a serious threat or inform the user of an emergency happening in their context. 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
 
 ### Dismissable alerts
-Dismissable alerts are used for timely notifications that do not need to remain on the page. 
+Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. USWDS is working on a way to help developers implement a dismissible alert. [You can follow their progress on GitHub](https://github.com/uswds/uswds/issues/5754).
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
