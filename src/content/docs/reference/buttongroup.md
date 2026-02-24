@@ -95,14 +95,13 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using button in designs, documentation and best practices on button usage |
-| [Fractal: Button](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview button styles, see button code snippet |
-| [Button settings: variables and variants](https://office-of-innovation.gitbook.io/njwds/button#code)  | Utilities to use in button styling (NJWDS specific) |
+| [Figma NJWDS: Button Group](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1600-3056&t=8Iz1cfQBJpns25JR-11) | Using button in designs, documentation and best practices on button usage |
+| [Fractal: Button Group](https://newjersey.github.io/njwds/components/detail/button-groups--default.html) | Preview button styles, see button code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Button](https://designsystem.digital.gov/components/button/) | Reference for additional button styles and functionalities  |
-| [USWDS: Button utilities](https://designsystem.digital.gov/components/button/#using-the-button-component-2) | Utilities to be referenced in button styling (may not all apply to NJWDS) |
-| [USWDS: Button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) | Accessibility tests to run for button component |
+| [USWDS: Button Group](https://designsystem.digital.gov/components/button-group/) | Reference for additional button styles and functionalities  |
+| [USWDS: Button Group utilities](https://designsystem.digital.gov/components/button-group/#package) | Utilities to be referenced in button styling (may not all apply to NJWDS) |
+| [USWDS: Button Group accessibility tests](https://designsystem.digital.gov/components/button-group/#accessibility-test-status) | Accessibility tests to run for button component |
 
