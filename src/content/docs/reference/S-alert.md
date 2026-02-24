@@ -32,8 +32,7 @@ Alerts are notifications of high priority since they provide critical informatio
 | Success status | Confirm that a user’s action was effective, and can have a celebratory tone. | Order successfully placed! |
 | Warning | Inform the user of risks or caution before taking any decision. | Sorry, this account is inactive. Please check your store’s billing for more information. |
 | Error | Inform that something went wrong after an action. [Learn about errors](https://docs.google.com/document/d/1e-ojlLXcV8XoXKvZwnE-S9XIsE1NL3-M2Tg_mf9jqEg/edit?tab=t.0#heading=h.oc5dzlagmn7b) | The email and password you entered did not match our records. Please double-check and write again. |
-| Emergency | Demand immediate action to prevent a serious threat. Usually written in all caps. |EMERGENCY ALERT:
-SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
+| Emergency | Demand immediate action to prevent a serious threat. Usually written in all caps. |EMERGENCY ALERT: SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
 
 ### Writing tips
 - Identify the purpose: what type of alert are you writing?
@@ -152,9 +151,7 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | ----------- | ----------- |
 | `role="alert"` | Important messages that demand the user's immediate attention. **Example:** Error alert |
 | `role="status"` | Messages that provide advisory information but do not have the same urgency as alerts. **Example:** Success alert |
-| `role="region"` | Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow.
-**Example:** Informative or warning alert
-**Note:** you must add an appropriate `aria-label` or `aria-labelledby` attribute when using this role. |
+| `role="region"` | Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow. **Example:** Informative or warning alert **Note:** you must add an appropriate `aria-label` or `aria-labelledby` attribute when using this role. |
 
 ### Danger mode
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
