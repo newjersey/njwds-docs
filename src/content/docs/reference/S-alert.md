@@ -20,7 +20,7 @@ description: Documentation for alert component.
 - **Long forms.** On long forms, always include in-line validation in addition to any error messages that appear at the top of the form.
 - **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this action is what they want.
 
-## Alert Types
+## Alert Variants
 
 | Property | Value |
 | ----------- | ----------- |
@@ -38,6 +38,40 @@ description: Documentation for alert component.
 
 🔗 [View alert sizes in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
+
+### Alert states
+Alert states determine alert color / role / level of severity. There are currently 5 alert states.  
+
+| Property | Value |
+| ----------- | ----------- |
+| state | info, warning, error, success, emergency |
+  🔗 [View alert states in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
+**Information state** 
+Give instant feedback about the tasks a user just performed. Its main objective is to confirm or notify tasks. (this seems like success state)
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
+[iframe shows info state]
+
+**Success state** 
+Confirm that a user’s action was effective, and can have a celebratory tone.
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
+[iframe shows success state]
+
+**Warning state** 
+Inform the user of risks or things to be aware of before taking action. 
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
+[iframe shows warning state]
+
+**Error state** 
+Inform that something went wrong after an action. Learn about errors (link to error documentation)
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
+[iframe shows error state]
+
+**Emergency state** 
+Demand immediate action to prevent a serious threat or inform the user of an emergency happening in their context. 
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
+[iframe shows emergency state]
+
 ### Dismissable alerts
 Dismissable alerts are used for timely notifications that do not need to remain on the page. 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
@@ -45,15 +79,7 @@ Dismissable alerts are used for timely notifications that do not need to remain 
 
 🔗 [View dismissable alerts in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
-### Alert states
-Alert states determine alert color / role / level of severity. There are currently 5 alert states.  
-| Property | Value |
-| ----------- | ----------- |
-| state | info, warning, error, success, emergency |
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
-[iframe shows alert states]
 
-🔗 [View dismissable alerts in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 ### Tertiary/Link buttons
 **Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
 <iframe title="Button preview" frameborder="0" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%" />
@@ -61,57 +87,34 @@ Alert states determine alert color / role / level of severity. There are current
 
 🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
 
+## Usability Guidance
+- **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
+- **Understand the user's context.** Don’t include notifications that aren’t related to the user’s current goal.
 
-| Type Variant Class | Description | 
+## Accessibility Guidance
+Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test button implementation.
+
+### Avoid using fading alerts
+Since alerts are used to display important and often urgent messages to users, it is important for all users to get a chance to read through them. This means not having error alerts automatically fade out after a set amount of time.
+
+See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) for more information on situations where having disappearing alerts may impede a user's ability to engage with information provided.
+
+#### Alternatives to fading alerts:
+- **Make alerts manually dismissible** — By adding an interactive "close" button to alerts and making them dismissible, users can remove alerts from the screen once they have had ample time to respond to the information provided. This option is especially helpful in situations where multiple alerts may be displayed at once and risk cluttering the screen.
+- **Reduce the number of alerts shown onscreen at once** — It can be especially tempting to have alerts that fade automatically to reduce clutter when many alerts need to be shown onscreen at once. Instead of having alerts fade out automatically, consider if multiple of the alerts displayed can be condensed into a single alert or if there is another way to display the information within the alert.
+
+### Additional guidance
+- **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
+- **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate the importance of the alert, choose the appropriate `role` from the [ARIA roles table](https://designsystem.digital.gov/components/alert/#alert-aria-roles) and add it to the `.usa-alert` element.
+
+### Alert ARIA roles
+| Attribute | Use Case | 
 | ----------- | ----------- |
-| `usa-button-unstyled` | Used for tertiary type |
-  
-❌ _**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
-
-
-## Button states
-
-| Property | Value |
-| ----------- | ----------- |
-| state | default, hover, active, focus |
-
-**Make sure buttons look selectable.** The NJWDS button component currently supports the following states: 
-- Default
-- Hover
-- Active
-- Focus
-
-❌ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
-
-
-## Button modes
-
-| Property | Value |
-| ----------- | ----------- |
-| mode | (on) light, (on) dark, danger |
-
-### Light mode
-**This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"/>
-
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
-| Light Variant Class | Description | 
-| ----------- | ----------- |
-|`usa-button-outline` | Used for secondary type |
-| `usa-button-unstyled` | Used for tertiary type |
-
-### Dark mode
-**Use this for typical use cases when buttons appear on a dark background.**
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adark" width="100%" height="100"/>
-
-🔗 [View primary (on) dark button in Storybook](https://pr-158.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=theme:dark)
-
-| Dark Variant Class | Description | 
-| ----------- | ----------- |
-| `usa-button--inverse` | Used for dark mode |
-| `nj-button--primary-dark` | [Custom NJWDS] Used for primary dark variant |
-| `nj-button--unstyled-dark` | [Custom NJWDS] Used for tertiary dark variant |
+| `role="alert"` | Important messages that demand the user's immediate attention. **Example:** Error alert |
+| `role="status"` | Messages that provide advisory information but do not have the same urgency as alerts. **Example:** Success alert |
+| `role="region"` | Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow.
+**Example:** Informative or warning alert
+**Note:** you must add an appropriate `aria-label` or `aria-labelledby` attribute when using this role. |
 
 ### Danger mode
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
@@ -126,51 +129,6 @@ Alert states determine alert color / role / level of severity. There are current
 | `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
 
 
-## Icons in Buttons
-
-| Property | Value |
-| ----------- | ----------- |
-| leading icon | true, false (default) |
-| trailing icon | true, false (default) |
-| icon | (instance swap) |
-
-### Icon with text
-Use to clarify the purpose of the button further, indicate directionality, etc.
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"/>
-
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-  
-ℹ️ **To use:** Toggle on the leading or trailing icon in the button component.
-
-### Icon only
-An icon can be used in place of text to demonstrate a button's meaning.
-
-ℹ️ **To use:** Toggle on the leading or trailing icon in the button component and hide the button text from the layer panel.   
-
-| Icon Variant Class | Description | 
-| ----------- | ----------- |
-| `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
-
-✅ _**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
-
-## Accessibility guidance
-Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
-- Buttons should display a **visible focus state** when users tab to them
-- **Use standard markup:**
-Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don’t automatically know either is a usable button.
-- **Screen readers handle buttons and links differently:**
-When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
-
-## Content guidelines
-- **Use sentence-case** 
-capitalization for button labels
-- **Keep button text short:** 
-Button text should be as short as possible with action words that clearly explain what will happen when the button is selected (for example, Download, View, or Sign up).
-- **Lead with a verb:**
-Make the first word of the button’s text a verb. For example, instead of Complaint filing, label the button File a complaint.
-- **Icons can be helpful:**
-Consider adding an icon to signal specific actions (Download, Open in a new window, etc).
 
 ## Code 
 
