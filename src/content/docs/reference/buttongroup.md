@@ -7,7 +7,7 @@ description: A reference page in my new Starlight docs site.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 
 ## Default Button Group Usage
@@ -15,7 +15,7 @@ description: A reference page in my new Starlight docs site.
 
 ### 👍 Use this component for
 - **Actions that have a contextual relationship.** For example, the default button group can be used when a form has both a primary and alternative action.
-- **Steppiong through linear content** Buttons in a button group can be used for directional navigation and actions (e.g., “Back,” “Next,” “Continue,” “Skip,” “Cancel.”).
+- **Stepping through linear content** Buttons in a button group can be used for directional navigation and actions (e.g., “Back,” “Next,” “Continue,” “Skip,” “Cancel.”).
 
 ### 👎 Consider something else for
 - **If actions are not related.** Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.
@@ -54,7 +54,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 ### Default button Group
 **Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 
 🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
@@ -66,7 +66,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 ### Segmented Button Group buttons
 **Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" />
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" ></iframe>
 
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
