@@ -56,20 +56,19 @@ Alerts are notifications of high priority since they provide critical informatio
 
 ## Alert Variants
 
-| Property | Value |
-| ----------- | ----------- |
-| state | info, warning, error, success, emergency |
-| icon | true, false |
-| heading | true, false |
-| slim | false, true |
-| dismissable | false, true |
-
 ### Size variants
 [Type/size/modifiers] determine the size and amount of information in the alert. 
 **Tip:** Slim-icon is the slimmest.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 [iframe shows standard, slim-icon, slim-no icon info alerts] 
 🔗 [View alert sizes in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
+#### Figma properties
+| Property | Value |
+| ----------- | ----------- |
+| icon | true, false |
+| heading | true, false |
+| slim | false, true |
 
 #### Code variants
 The following classes can be added to elements with class usa-alert to modify the size of the alert if needed. They can be used in combination with alert type variant classes to adjust the styling as well.
@@ -83,6 +82,7 @@ The following classes can be added to elements with class usa-alert to modify th
 ### Alert states
 Alert states determine alert color / role / level of severity. There are currently 5 alert states.  
 
+#### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | state | info, warning, error, success, emergency |
@@ -149,6 +149,11 @@ Dismissable alerts are used for timely notifications that do not need to remain 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View dismissable alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
+#### Figma properties 
+| Property | Value |
+| ----------- | ----------- |
+| dismissable | false, true |
 
 ## Accessibility Guidance
 Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test button implementation.
