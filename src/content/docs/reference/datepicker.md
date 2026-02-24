@@ -3,6 +3,7 @@ title: Date Pickers
 description: Documentation for date pickers.
 ---
 
+**Date picker options**
 - **Date Picker:** A date picker helps users select a single date. 
 - **Memorable Date Picker:** A select for month followed by two text fields is the easiest way for users to enter most dates.
   
