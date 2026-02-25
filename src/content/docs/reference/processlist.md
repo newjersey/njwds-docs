@@ -1,0 +1,60 @@
+---
+title: Process list
+description: Documentation for process list component.
+---
+
+**A process list displays the steps or stages of important instructions or processes.**
+  
+✅ _Passed WCAG 2.1 AA (USWDS component)_
+
+🚧 **Not present in NJWDS, only in USWDS** 🚧
+
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+  
+## Process List Usage
+### 👍 Use this component for
+- **Displaying high-level sequential steps.** Use process lists to create a clear hierarchy and help users easily differentiate between individual steps or stages in a process.
+
+### 👎 Consider something else for
+- **Multi-page forms or wizards.** Use the step indicator component to help users work through a form or process that spans several different pages.
+- **When showing current status or progress.** Use the step indicator component to show the user the current step in a multi-step process.
+- **In-page navigation.** Use the side navigation component to display the “sub-navigation” within a section or page of the website.
+- **The steps are non-sequential.** Use unordered lists, graphic lists (coming soon), or icon lists (coming soon) to display text that doesn’t have a clear, logical order to it.
+- **The listed content is meant to improve readability of a complex sentence.** Use the ordered and unordered list components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
+
+### 🚫 What to ensure / avoid
+- **Be thoughtful about the number of steps.** A process list should include between three and ten steps to prevent it from getting too unwieldy or confusing.
+- **Add other types of content as needed.** The body of each list item can be used to display additional rich text content including HTML, images, and other components like buttons, images, simple lists, links, and tables.
+
+## Content guidelines
+- **Use consistent headings.** Headings should be written with a parallel structure (e.g., all start with an action verb, etc.), including consistent end punctuation, and should be short enough to fit on one line, if possible.
+- **Omit labels with verbose content.** Aim for clear and crisp labels. Omit labels to save space or if the step names are too long to comfortably fit in the step indicator.
+
+
+## Figma properties
+| Property | Value |
+| ----------- | ----------- |
+| last | false, true |
+| header text | [text input] |
+| body text | true, false |
+| text | [text input] |
+
+
+## Accessibility guidance
+Use [USWDS process list accessibility tests](https://designsystem.digital.gov/components/process-list/accessibility-tests/) to test process list implementation.
+- **Use semantic heading levels.** Though our default code uses an `<h4>`, use the correct heading level with the class name `usa-process-list__heading` in your own implementation.
+
+
+## Resources
+### NJWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma NJWDS: Process list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1735-310&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Process list](https://designsystem.digital.gov/components/process-list/) | Reference for additional styles and functionalities  |
+| [USWDS: Process list utilities](https://designsystem.digital.gov/components/process-list/#using-the-process-list-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Process list accessibility tests](https://designsystem.digital.gov/components/process-list/accessibility-tests/) | Accessibility tests to run for component |
+
