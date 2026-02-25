@@ -1,5 +1,5 @@
 ---
-title: Feedback Widget
+title: NJ Feedback Widget
 description: Documentation for NJWDS feedback widget component.
 ---
 
