@@ -1,6 +1,6 @@
 ---
 title: Banner / Site Header
-description: Documentation for banner / site header.
+description: Documentation for custom NJWDS banner.
 ---
 
 **Custom NJWDS banner component for NJIA-built websites and web apps.**
