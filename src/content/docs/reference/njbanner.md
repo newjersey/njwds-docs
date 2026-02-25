@@ -1,5 +1,5 @@
 ---
-title: Banner / Site Header
+title: NJ Banner
 description: Documentation for custom NJWDS banner.
 ---
 
