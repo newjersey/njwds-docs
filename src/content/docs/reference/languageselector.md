@@ -51,17 +51,7 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 - Label the dropdown menu **Languages** or **Select languages**.
 - **Capitalize** the name of each language (for example, English, Español).
 - **Strongly consider labeling the name in the common, native language**, like Español (Spanish) or 简体字 (Chinese - Simplified).
-- **Order the languages alphabetically by the common, native language name.** For example:
-| Language |
-| ----------- |
-| العربية (Arabic)| 
-| 简体字 (Chinese - Simplified) |
-| English |
-| Español (Spanish) |
-| Français (French) |
-| Italiano (Italian) |
-| Pусский (Russian) |
-
+- **Order the languages alphabetically by the common, native language name.** For example: العربية (Arabic),  简体字 (Chinese - Simplified), English, Español (Spanish), Français (French), Italiano (Italian), Pусский (Russian) 
 - Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. The country code ES may not be universally understood to indicate Spanish.
 
 ### Figma properties 
