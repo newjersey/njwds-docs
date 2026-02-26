@@ -2,10 +2,11 @@
 title: Language Selector
 description: Documentation for language selector component.
 ---
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
 
 **The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in.**
-  
+
+🚧 Not present in NJWDS Fractal, only in USWDS 🚧
+
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 ##
