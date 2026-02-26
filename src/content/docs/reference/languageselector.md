@@ -1,5 +1,5 @@
 ---
-title: Language Selector
+title: Language Selector 🚧
 description: Documentation for language selector component.
 ---
 
