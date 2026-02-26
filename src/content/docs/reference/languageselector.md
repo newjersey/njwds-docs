@@ -2,12 +2,13 @@
 title: Language Selector
 description: Documentation for language selector component.
 ---
+🚧 Not present in NJWDS Fractal, only in USWDS 🚧
 
 **The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🚧 **Not present in NJWDS Fractal, only in USWDS** 🚧
+
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"> </iframe>
 
