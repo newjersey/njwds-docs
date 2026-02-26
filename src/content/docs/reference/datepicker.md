@@ -9,20 +9,9 @@ description: Documentation for date pickers.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" 
-                         frameborder="1" 
-                         scrolling="no" 
-                         width="49%" 
-                         height="100%" 
-                         align="left"> </iframe>
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" 
-                         frameborder="1" 
-                         scrolling="no" 
-                         width="49%" 
-                         height="100%" 
-                         align="right">
-    </iframe>
-
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"></iframe>
+<br><br>
 
 ## Date Picker Usage
 
