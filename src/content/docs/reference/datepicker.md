@@ -12,13 +12,13 @@ description: Documentation for date pickers.
 <div class="box"><iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" 
                          frameborder="1" 
                          scrolling="no" 
-                         width="50%" 
+                         width="48%" 
                          height="100%" 
                          align="left"> </iframe> </div>
 <div class="box"><iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" 
                          frameborder="1" 
                          scrolling="no" 
-                         width="50%" 
+                         width="48%" 
                          height="100%" 
                          align="right">
     </iframe>
