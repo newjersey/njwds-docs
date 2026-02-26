@@ -6,6 +6,10 @@ description: Documentation for date pickers.
 **Date picker options**
 - **Date Picker:** A date picker helps users select a single date. 
 - **Memorable Date Picker:** A select for month followed by two text fields is the easiest way for users to enter most dates.
+
+  TEST
+Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number).
+Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
