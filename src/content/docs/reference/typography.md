@@ -27,7 +27,6 @@ Description
 
 
 
-
 ## Styles
 
 ### Headers
@@ -41,60 +40,3 @@ Description
 
 🔗 [View checkbox list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-#### Figma properties
-| Property | Value |
-| ----------- | ----------- |
-| list items | 2, 3, 4, 5, 6 |
-| state | default, error |
-| required | true, false |
-| helper | true, false |
-| helper text | [text input] |
-| error text | [text input] |
-
-#### Code variant
-| Variant | Description |
-| ----------- | ----------- |
-| `usa-checkbox__input--tile` | Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page. |
-
-## Accessibility Guidance
-Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test button implementation.
-
-- **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls](https://designsystem.digital.gov/components/form).
-- **Use a fieldset and legend for a checkbox group.** Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Don’t use fieldset and legend for a single check.
-- **These custom checkboxes are accessible.** The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with `position: absolute; left: -999em`.
-- **Use semantic tags.** Each input should have a semantic tag for the id attribute, and its corresponding label should have the same value in its `for` attribute.
-
-
-## Code utilities 
-### Checkbox components 
-| Name | Class | Description |
-| ----------- | ----------- | ----------- |
-| Form | `usa-form` | Use this for a form. |
-| Fieldset | `usa-fieldset` | Use this for a set of questions in a form. |
-| Legend | `usa-legend` | Use this for the title of a question. |
-| Checkbox | `usa-checkbox` | Use this for checkbox |
-| Checkbox input | `usa-checkbox__input` | Use this for checkbox input. |
-| Checkbox label | `usa-checkbox__label` | Use this for checkbox label -- the text next to the checkbox. |
-| Helper text label | `usa-checkbox__label-description` | Used only for checkbox tile. Optional helper text that can be used to describe the label in more detail. To use, put the class on a span and place it inside the label component. (See Fractal for an example). |
-| Error message | `nj-error-message-container` | [Custom NJWDS] Used for error message, combines an icon and the USWDS error message. |
-
-
-### Checkbox Variants
-| Variant | Description | 
-| ----------- | ----------- |
-| `usa-checkbox__input--tile` | Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page. |
-
-
-## Resources
-### NJWDS links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [Figma NJWDS: Checkbox](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=33-1439&t=i4k26YohAESPvEsR-0) | Using button in designs, documentation and best practices on button usage |
-| [Fractal: Checkbox](https://innovation.nj.gov/app/njwds/components/detail/checkboxes.html) | Preview button styles, see button code snippet |
-
-### USWDS links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [USWDS: Checkbox](https://designsystem.digital.gov/components/checkbox/) | Reference for additional checkbox styles and functionalities  |
-| [USWDS: Checkbox utilities](https://designsystem.digital.gov/components/checkbox/#using-the-checkbox-component-2)  | Utilities to be referenced in checkbox styling (may not all apply to NJWDS) |
-| [USWDS: Checkbox accessibility tests](https://designsystem.digital.gov/components/checkbox/accessibility-tests/) | Accessibility tests to run for checkbox component |
