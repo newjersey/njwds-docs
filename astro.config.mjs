@@ -7,6 +7,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			customCss: [
+				'@newjersey/njwds/dist/css/styles.css',
+				'./src/styles/custom.css'
+			],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
