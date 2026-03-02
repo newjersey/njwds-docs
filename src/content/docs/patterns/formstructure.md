@@ -23,45 +23,30 @@ description: Documentation for form structure.
 
 ### Complex Forms
 Follow USWDS guidance for creating a complex form. The guidance is broken down across three patterns:
-
-Help users understand expectations and establish trust.
-
-Help users progress easily through form questions.
-
-Help users keep a record of submitted information.
+- Help users understand expectations and establish trust.
+- Help users progress easily through form questions.
+- Help users keep a record of submitted information.
 
 Some important points to remember are:
-
-Guide the user from simple to more difficult questions.
-
-Break questions into chunks, one topic at a time.
-
-Show the user where they are in the process.
-
-Show a summary of their answers before submission.
-
-Add any next steps, time frames, or reference numbers.
+- Guide the user from simple to more difficult questions.
+- Break questions into chunks, one topic at a time.
+- Show the user where they are in the process.
+- Show a summary of their answers before submission.
+- Add any next steps, time frames, or reference numbers.
 
 Make sure to review the full guidance for details on trust, inclusion, and best practices. This list is not exhaustive.
-___
+
 ### Make multi-step forms consistent
 Forms with multiple steps should have consistent patterns to guide users through the flow. Make sure to:
-
-Use unique page titles to identify individual steps.
-
-Provide a skip link if form fields follow repeated navigation.
-
-Manage keyboard focus consistently across steps.
-
-Show progress relevant to the task at hand.
-
-Use headings to describe each step's task or content.
+- Use unique page titles to identify individual steps.
+- Provide a skip link if form fields follow repeated navigation.
+- Manage keyboard focus consistently across steps.
+- Show progress relevant to the task at hand.
+- Use headings to describe each step's task or content.
 
 When designing step-by-step navigation, consider:
-
-Use buttons when saving form data, submitting form data, and dynamically moving users through a form.
-
-Use links for static navigation to pages.
+- Use buttons when saving form data, submitting form data, and dynamically moving users through a form.
+- Use links for static navigation to pages.
 
 ### Build semantic form elements
 To build accessible forms, proper semantics must be used to communicate content and functionality to screen readers. Start with semantic HTML whenever possible, and use ARIA attributes when HTML is not enough.
