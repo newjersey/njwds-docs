@@ -11,7 +11,7 @@ description: Help Users Recognize, Diagnose, and Recover from Errors.
 ## Definition
 An error message is a system-generated alert that interrupts the user's workflow to inform the user of an incomplete, incompatible, or undesirable situation according to the system's implementation.
 
-## Example
+### Example
 The email and password you entered did not match our records. Please double-check and write again.
 
 # Content
