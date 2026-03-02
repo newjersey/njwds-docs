@@ -20,16 +20,17 @@ description: Documentation for required feilds.
 
 
 ## Usage Guidance
-### Should you use an astersk
+
 ![Flow chart where user hits submit on a form and form validation error populates](src/assets/error validation 1.png)
-The default pattern for validation is after a user performs an action in a form, such as 'Continue', 'Save,' or 'Submit'. In most cases, this action is triggered by a button.
+
 ### 👍 Use an asterisk when..
 USWDS guidance on forms (Form | USWDS) recommends tagging required fields using a red asterisk. If you're working on a design that leans heavily on USWDS, it is recommended that you follow that pattern.
 
 ### 👎 Don't use an asterisk...
-If cognitive accessibility or low-tech literacy are concerns for your project, the asterisk may not be a familiar symbol. Instead of an asterisk, it is helpful to spell out requirements in content:
+If cognitive accessibility or low-tech literacy are concerns for your project, the asterisk may not be a familiar symbol.
 
-#### What to use instead 
+#### What to use instead
+ Instead of an asterisk, it is helpful to spell out requirements in content:
 - Example instructions: "All fields are required unless marked optional."
 - Example label: "Name (required)".
 
@@ -41,4 +42,3 @@ While familiar to a lot of users, an asterisk is still a symbol that has implici
 | File | Purpose | 
 | ----------- | ----------- |
 | [Indicating mandatory fields in an accessible way - TPGi](https://www.tpgi.com/doing-whats-required-indicating-mandatory-fields-in-an-accessible-way/l) | Guidance for accessible required fields. |
-| [A Guide to Accessible Form Validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/) | Usabilty and accessibilty in forms |
