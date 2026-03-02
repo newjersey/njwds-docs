@@ -19,8 +19,9 @@ description: Documentation for error validation.
 - Do not validate empty form fields, unless content has been removed from them.
 
 
-## Implementation
+## Usage Guidance
 ### Validate on user action
+![Flow chart where user hits submit on a form and form validation error populates](src/assets/error validation 1.png)
 The default pattern for validation is after a user performs an action in a form, such as 'Continue', 'Save,' or 'Submit'. In most cases, this action is triggered by a button.
 
 When validating after an action, it is important to manage focus for assistive technology users. Take the following into account:
@@ -30,6 +31,7 @@ When there are 1-2 errors on a form, focus should be sent to the first field wit
 When there are 3 or more errors in a form, an error summary should be used. The error summary should receive focus once it is displayed.
 
 ### Validation on blur
+![Flow chart where user leaves field on a form and form validation error populates](src/assets/error validation 2.png)
 For form fields that are likely to cause errors, it can help to show an inline alert once the field loses focus (on blur). Forms may be more likely to lead to errors if they have complex formatting requirements, or if they are unique to the context, and unfamiliar to most users.
 
  Some examples may include:
@@ -38,6 +40,13 @@ For form fields that are likely to cause errors, it can help to show an inline a
  - A feedback form with a character limit.
 
 When possible, avoid validating on blur for common fields like names, phone numbers, and email addresses. On blur validation can be disruptive and easily missed for assistive technology users. It should be considered for highlighting important errors, not as the default form of validation.
+
+### Multiple errors
+![Flow chart where user hits submit on a form and error summary and multiple form validation errors populate](src/assets/error validation 3.png)
+
+Use an error summary when a form has three or more errors. The error summary is triggered on submit, and should receive focus when it appears.
+
+An error summary should follow a main heading on the page, either the H1, or the most relevant heading to the form.
 
 ### 🚫 Known Issues
 **For help with known issues, please reach out to the platform team.**
