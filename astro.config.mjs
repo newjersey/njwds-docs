@@ -21,7 +21,11 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Reference',
+					label: 'Styles',
+					autogenerate: { directory: 'styles' },
+				},
+				{
+					label: 'Components',
 					autogenerate: { directory: 'reference' },
 				},
 				{
