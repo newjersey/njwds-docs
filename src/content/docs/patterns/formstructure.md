@@ -7,7 +7,7 @@ description: Documentation for form structure.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
   
-## Error Validation Usage
+## Usage
 ### ✔️ What to do
 - Follow USWDS guidance for structuring complex forms
 - Follow NJWDS guidance for multi-step forms
@@ -44,19 +44,65 @@ Add any next steps, time frames, or reference numbers.
 
 Make sure to review the full guidance for details on trust, inclusion, and best practices. This list is not exhaustive.
 ___
-### 👎 Don't use an asterisk...
-If cognitive accessibility or low-tech literacy are concerns for your project, the asterisk may not be a familiar symbol.
+### Make multi-step forms consistent
+Forms with multiple steps should have consistent patterns to guide users through the flow. Make sure to:
 
-#### What to use instead
- Instead of an asterisk, it is helpful to spell out requirements in content:
-- Example instructions: "All fields are required unless marked optional."
-- Example label: "Name (required)".
+Use unique page titles to identify individual steps.
 
-While familiar to a lot of users, an asterisk is still a symbol that has implicit meaning. When considering cognitive accessibility, it is helpful to clearly explain implied content when possible.
+Provide a skip link if form fields follow repeated navigation.
+
+Manage keyboard focus consistently across steps.
+
+Show progress relevant to the task at hand.
+
+Use headings to describe each step's task or content.
+
+When designing step-by-step navigation, consider:
+
+Use buttons when saving form data, submitting form data, and dynamically moving users through a form.
+
+Use links for static navigation to pages.
+
+### Build semantic form elements
+To build accessible forms, proper semantics must be used to communicate content and functionality to screen readers. Start with semantic HTML whenever possible, and use ARIA attributes when HTML is not enough.
+
+#### Creating forms
+| Code | Purpose | 
+| ----------- | ----------- |
+| 'label' | Always use a label for input fields. |
+| 'type' | Use the relevant input  type , such as text, checkbox, radio, or submit. |
+| 'autocomplete' | Use autocomplete  attributes, such as given-name, family-name, or email. |
+
+#### Grouping forms
+| Code | Purpose | 
+| ----------- | ----------- |
+| 'fieldset' | Create the group using fieldset |
+| 'legend' | Label the group with a  legend |
+
+#### Required Fields
+| Code | Purpose | 
+| ----------- | ----------- |
+| 'required' or 'aria-required' | ? |
+| 'legend' | Use Javascript for radio button and checkbox requirements [AWC needs to validate/find source]|
+
+#### Validating Data Patterns
+| Code | Purpose | 
+| ----------- | ----------- |
+| 'pattern' added to 'input' | pattern added to input [AWC to validate/find source] |
+| 'aria-describedby' | Help text with aria-describedby |
+| 'novalidate' | override HTML validation b/c limitations? [AWC to validate] |
+
+
+#### Error validation
+| Code | Purpose | 
+| ----------- | ----------- |
+| 'aria-invalid="true"' |  for form fields in error, associate error messages with aria-describedby |
 
 
 ## Resources
 ### Best Practice Guides 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Indicating mandatory fields in an accessible way - TPGi](https://www.tpgi.com/doing-whats-required-indicating-mandatory-fields-in-an-accessible-way/l) | Guidance for accessible required fields. |
+| [Forms and buttons in HTML]([https://www.tpgi.com/doing-whats-required-indicating-mandatory-fields-in-an-accessible-way/l](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_forms) |?|
+| [Multi-page Forms-Web Accessibility Initiative WAI-W3C](https://www.w3.org/WAI/tutorials/forms/multi-page/) | ? |
+| [From Rachele DiTullio - Structuring accessible forms]([https://www.tpgi.com/doing-whats-required-indicating-mandatory-fields-in-an-accessible-way/l](https://racheleditullio.com/talks/accessible-forms/)) | ? |
