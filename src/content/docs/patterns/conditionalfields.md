@@ -42,9 +42,8 @@ For help with known issues, please reach out to the platform team.
 
 NJWDS and USWDS components do not come with their own conditional styles. The following items are in the NJWDS backlog:
 
-Radio button group
-
-Checkbox group
+- Radio button group
+- Checkbox group
 
 Teams should explore conditional styles on their own, and connect with the platform team for assistance.
 
