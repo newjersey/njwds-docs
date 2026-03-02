@@ -54,34 +54,34 @@ To build accessible forms, proper semantics must be used to communicate content 
 #### Creating forms
 | Code | Purpose | 
 | ----------- | ----------- |
-| 'label' | Always use a label for input fields. |
-| 'type' | Use the relevant input  type , such as text, checkbox, radio, or submit. |
-| 'autocomplete' | Use autocomplete  attributes, such as given-name, family-name, or email. |
+| `label` | Always use a label for input fields. |
+| `type` | Use the relevant input  type , such as text, checkbox, radio, or submit. |
+| `autocomplete` | Use autocomplete  attributes, such as given-name, family-name, or email. |
 
 #### Grouping forms
 | Code | Purpose | 
 | ----------- | ----------- |
-| 'fieldset' | Create the group using fieldset |
-| 'legend' | Label the group with a  legend |
+| `fieldset` | Create the group using fieldset |
+| `legend` | Label the group with a  legend |
 
 #### Required Fields
 | Code | Purpose | 
 | ----------- | ----------- |
-| 'required' or 'aria-required' | ? |
-| 'legend' | Use Javascript for radio button and checkbox requirements [AWC needs to validate/find source]|
+| `required` or `aria-required` | ? |
+| `legend` | Use Javascript for radio button and checkbox requirements [AWC needs to validate/find source]|
 
 #### Validating Data Patterns
 | Code | Purpose | 
 | ----------- | ----------- |
-| 'pattern' added to 'input' | pattern added to input [AWC to validate/find source] |
-| 'aria-describedby' | Help text with aria-describedby |
-| 'novalidate' | override HTML validation b/c limitations? [AWC to validate] |
+| `pattern` added to `input` | pattern added to input [AWC to validate/find source] |
+| `aria-describedby` | Help text with aria-describedby |
+| `novalidate` | override HTML validation b/c limitations? [AWC to validate] |
 
 
 #### Error validation
 | Code | Purpose | 
 | ----------- | ----------- |
-| 'aria-invalid="true"' |  for form fields in error, associate error messages with aria-describedby |
+| `aria-invalid="true"` |  for form fields in error, associate error messages with aria-describedby |
 
 
 ## Resources
