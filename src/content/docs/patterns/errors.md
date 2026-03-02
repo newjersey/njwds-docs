@@ -5,20 +5,20 @@ description: Help Users Recognize, Diagnose, and Recover from Errors.
 
 **Help Users Recognize, Diagnose, and Recover from Errors.**
 
-# Overview
-## Definition
+## Overview
+### Definition
 An error message is a system-generated alert that interrupts the user's workflow to inform the user of an incomplete, incompatible, or undesirable situation according to the system's implementation.
 
-### Example
+#### Example
 The email and password you entered did not match our records. Please double-check and write again.
 
-# Content
-## Writing tips
+## Content
+### Writing tips
 - **Placement.** Show the error message next to the error's source.
 - **Tone.** Direct, plainspoken, friendly—never blame the user.
 - **Prevent frustration.** keep the user's input so they see what’s wrong, don’t need to start over, and have the autonomy to edit.
 
-## Content structure
+### Content structure
 1) What’s the problem: concisely describe the issue.  
 
 2) What’s the solution(s): give helpful advice.  
@@ -27,5 +27,5 @@ The email and password you entered did not match our records. Please double-chec
 
 4) Educate (if applicable): explain how the system works. 
 
-### Example
+#### Example
 If the error says “A maximum of 10 files can be uploaded”, when actually more files can be uploaded in another group, your answer is misleading.  “Sorry, the limit is 10 files per upload. You can add more later” gives the user an alternative.
