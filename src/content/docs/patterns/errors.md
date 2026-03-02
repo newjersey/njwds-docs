@@ -3,9 +3,7 @@ title: Errors
 description: Help Users Recognize, Diagnose, and Recover from Errors.
 ---
 
-**Help Users Recognize, Diagnose, and Recover from Errors..**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
+**Help Users Recognize, Diagnose, and Recover from Errors.**
 
 # Overview
 ## Definition
