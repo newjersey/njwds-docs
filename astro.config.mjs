@@ -24,6 +24,10 @@ export default defineConfig({
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+				{
+					label: 'Patterns',
+					autogenerate: { directory: 'patterns' },
+				},
 			],
 		}),
 	],
