@@ -3,18 +3,27 @@ title: Alert
 description: Documentation for alert component.
 ---
 
-**Alert component used to prominently display timely information to users.**
+**Alert options**
+- **Alert:** Alert component used to prominently display timely information to users.
+- **Site Alert:** A site alert communicates urgent sitewide information.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+###
 
-🔗 [View alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
-  
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"></iframe>
+
+🔗 [View alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+ 
 ## Alert Usage
 ### 👍 Use this component for
-- **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates.
-- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully.
+|Alert | Site Alert |
+| ----- | ----- |
+|- **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates.
+- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully.| - **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
+- **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page. |
 
 ### 👎 Consider something else for
 - **Information call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
@@ -25,6 +34,18 @@ description: Documentation for alert component.
 - **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
 - **Understand the user's context.** Don’t include notifications that aren’t related to the user’s current goal.
 
+## Site Alert Usage
+### 👍 Use this component for
+- **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
+- **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
+  
+### 👎 Consider something else for
+- **Responding to user actions. Use the alert component for page-level validation messages (like error messages on a form) or to inform a user that a task was completed successfully.
+Validating form input. On most forms, especially longer forms, validation messages should appear inline with error messages at the top of the form.
+
+### 🚫 What to avoid
+- **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
+- **Understand the user's context.** Don’t include notifications that aren’t related to the user’s current goal.
 ## Content Guidance 
 
 ### Definition 
