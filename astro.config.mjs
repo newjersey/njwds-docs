@@ -21,10 +21,6 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Overview',
-					autogenerate: { directory: 'guides' },
-				},
-				{
 					label: 'Styles',
 					autogenerate: { directory: 'styles' },
 				},
