@@ -1,6 +1,6 @@
 ---
 title: Button Group
-description: A reference page in my new Starlight docs site.
+description: Documentation for button group component.
 ---
 
 **Button group component, used for the visual grouping of buttons for similar actions on a page.**
