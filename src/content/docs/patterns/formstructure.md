@@ -22,10 +22,10 @@ description: Documentation for form structure.
 ![Flow chart where user hits submit on a form and form validation error populates](src/assets/error validation 1.png)
 
 ### Complex Forms
-Follow USWDS guidance for creating a complex form. The guidance is broken down across three patterns:
-- Help users understand expectations and establish trust.
-- Help users progress easily through form questions.
-- Help users keep a record of submitted information.
+Follow USWDS guidance for creating a [complex form](https://designsystem.digital.gov/patterns/complete-a-complex-form/). The guidance is broken down across three patterns:
+- Help users [understand expectations and establish trust](https://designsystem.digital.gov/patterns/complete-a-complex-form/establish-trust/).
+- Help users [progress easily through form questions](https://designsystem.digital.gov/patterns/complete-a-complex-form/progress-easily/).
+- Help users [keep a record of submitted information](https://designsystem.digital.gov/patterns/complete-a-complex-form/keep-a-record/).
 
 Some important points to remember are:
 - Guide the user from simple to more difficult questions.
@@ -38,25 +38,25 @@ Make sure to review the full guidance for details on trust, inclusion, and best 
 
 ### Make multi-step forms consistent
 Forms with multiple steps should have consistent patterns to guide users through the flow. Make sure to:
-- Use unique page titles to identify individual steps.
-- Provide a skip link if form fields follow repeated navigation.
+- Use unique [page titles](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title) to identify individual steps.
+- Provide a [skip link](https://www.w3.org/WAI/test-evaluate/easy-checks/skip-link/) if form fields follow repeated navigation.
 - Manage keyboard focus consistently across steps.
 - Show progress relevant to the task at hand.
 - Use headings to describe each step's task or content.
 
 When designing step-by-step navigation, consider:
-- Use buttons when saving form data, submitting form data, and dynamically moving users through a form.
-- Use links for static navigation to pages.
+- Use **buttons** when saving form data, submitting form data, and dynamically moving users through a form.
+- Use **links** for static navigation to pages.
 
 ### Build semantic form elements
-To build accessible forms, proper semantics must be used to communicate content and functionality to screen readers. Start with semantic HTML whenever possible, and use ARIA attributes when HTML is not enough.
+To build accessible forms, proper [semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) must be used to communicate content and functionality to screen readers. Start with semantic HTML whenever possible, and use [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) attributes when HTML is not enough.
 
 #### Creating forms
 | Code | Purpose | 
 | ----------- | ----------- |
 | `label` | Always use a label for input fields. |
-| `type` | Use the relevant input  type , such as text, checkbox, radio, or submit. |
-| `autocomplete` | Use autocomplete  attributes, such as given-name, family-name, or email. |
+| `type` | Use the relevant input  type , such as [text, checkbox, radio, or submit.](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input) |
+| `autocomplete` | Use autocomplete  attributes, such as [given-name, family-name, or email](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete). |
 
 #### Grouping forms
 | Code | Purpose | 
