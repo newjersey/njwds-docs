@@ -45,9 +45,9 @@ description: Documentation for breadcrumb component.
 ## Breadcrumb Variants
 
 ### Default Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-breadcrumb--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View default breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/breadcrumbs--primary-(light).html)
+🔗 [View default breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
 
 #### Figma proporties
 | Property | Value |
@@ -59,9 +59,9 @@ description: Documentation for breadcrumb component.
 | Default | `usa-breadcrumb` |
 
 ### Wrapping Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-breadcrumb--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View wrapping breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/breadcrumbs--primary-(light).html)
+🔗 [View wrapping breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
 
 #### Figma proporties
 | Property | Value |
@@ -74,9 +74,9 @@ description: Documentation for breadcrumb component.
 
 
 ### Mobile Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-breadcrumb--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View mobile breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/breadcrumbs--primary-(light).html)
+🔗 [View mobile breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
 
 
 
