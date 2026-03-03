@@ -1,6 +1,6 @@
 ---
-title: Required Feilds
-description: Documentation for required feilds.
+title: Required Fields
+description: Documentation for required fields.
 ---
 
 **UTell users what information is needed in order for them to complete a task.**
