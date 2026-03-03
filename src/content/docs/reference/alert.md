@@ -19,11 +19,8 @@ description: Documentation for alert component.
  
 ## Alert Usage
 ### 👍 Use this component for
-|Alert | Site Alert |
-| ----- | ----- |
-|- **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates. 
-- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully. | - **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
-- **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page. |
+- **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates. 
+- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully. 
 
 ### 👎 Consider something else for
 - **Information call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
@@ -40,12 +37,15 @@ description: Documentation for alert component.
 - **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
   
 ### 👎 Consider something else for
-- **Responding to user actions. Use the alert component for page-level validation messages (like error messages on a form) or to inform a user that a task was completed successfully.
-Validating form input. On most forms, especially longer forms, validation messages should appear inline with error messages at the top of the form.
+- **Responding to user actions.** Use the alert component for page-level validation messages (like error messages on a form) or to inform a user that a task was completed successfully.
+- **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages at the top of the form.
 
 ### 🚫 What to avoid
-- **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
-- **Understand the user's context.** Don’t include notifications that aren’t related to the user’s current goal.
+- **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.
+- **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
+- **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange to draw attention to an emergency-related site alert. However, these colors can produce strong negative emotional reactions such as fear or panic. Positioning the banner at the top of the screen provides enough weight that such strong colors may not be necessary.
+
+
 ## Content Guidance 
 
 ### Definition 
