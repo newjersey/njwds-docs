@@ -22,7 +22,7 @@ description: Documentation for alert component.
 |Alert | Site Alert |
 | ----- | ----- |
 |- **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates. 
-- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully.| - **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
+- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully. | - **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
 - **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page. |
 
 ### 👎 Consider something else for
