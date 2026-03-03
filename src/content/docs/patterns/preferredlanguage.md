@@ -34,16 +34,16 @@ Pусский (Russian)
 ## Usage Guidance
 
 ### Considerations
-Strongly consider providing language to reassure the user that there are no penalties associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
+Strongly consider providing language to **reassure the user that there are no penalties** associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
 
 Once a user has saved a preference setting other than English, default to their preferred language for future mail or email communications whenever possible.
 
-Consider that individuals may have other challenges in addition to limited English proficiency, and may require other types of support.
+Consider that individuals may have **other challenges in addition to limited English proficiency**, and may require other types of support.
 
 Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
 
 ### Accessibility
-Use the HTML lang attributes to set the language of the page (<html lang='en'>, for example). See H57: Using the language attribute on the HTML element for more information.
+**Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example). See H57: Using the language attribute on the HTML element for more information.
 
 ## Resources
 ### USWDS
