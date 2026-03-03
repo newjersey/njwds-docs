@@ -24,18 +24,9 @@ description: Documentation for breadcrumb component.
 - **Redundant side navigation.** When side navigation is used in combination with main navigation, it may be redundant to include breadcrumbs.
 - **Step-by-step processes.** Use breadcrumbs for hierarchical relationships, not linear relationships (like individual steps in a multi-step process).
 
-## Segmented breadcrumb Usage
-### 👍 Use this component for
-- **Categorically related controls.** For example, segmented breadcrumbs can be used as a switch between different views.
-
-### 👎 Consider something else for
-- **No clear relationship.** Consider how placement and alternative structure of unrelated controls can improve usability over placing all actions in a group.
-- **If there are more than three breadcrumbs.** Be mindful of how a long list of breadcrumbs might appear on small screens. An alternative type of control might be more suitable.
-
 ## 🚫 What to ensure / avoid
 - **Consider alternatives to wrapping.** In general, rely on truncating the title of the current page over wrapping breadcrumb text. But usability comes first. Consider alternative approaches if the title of the current page is completely truncated. For example, a mobile-friendly breadcrumb may show only a page’s direct parent. Sites with very long breadcrumb trails might ultimately need to wrap breadcrumbs, or consider flattening the information architecture of the site.
 - **Consider size of tap targets on small widths.** Although breadcrumbs are frequently displayed using smaller text, make sure the text is not too small to select at small widths.
-
 
 ## Content guidelines
 - **Use complete page titles.** Use the same wording in breadcrumb text as in the page title.
