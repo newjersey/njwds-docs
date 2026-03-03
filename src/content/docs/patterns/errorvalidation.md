@@ -32,6 +32,7 @@ When there are 3 or more errors in a form, an error summary should be used. The 
 
 ### Validation on blur
 ![Flow chart where user leaves field on a form and form validation error populates](src/assets/error validation 2.png)
+
 For form fields that are likely to cause errors, it can help to show an inline alert once the field loses focus (on blur). Forms may be more likely to lead to errors if they have complex formatting requirements, or if they are unique to the context, and unfamiliar to most users.
 
  Some examples may include:
