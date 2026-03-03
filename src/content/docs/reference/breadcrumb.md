@@ -7,9 +7,9 @@ description: Documentation for breadcrumb component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-breadcrumb--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/breadcrumbs--primary-(light).html)
+🔗 [View breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
 
 
 ## Breadcrumb Usage
