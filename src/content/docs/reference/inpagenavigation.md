@@ -1,5 +1,5 @@
 ---
-title: In-Page navigation
+title: In-Page navigation 🚧
 description: Documentation for in-page navigation component.
 ---
 
@@ -48,25 +48,8 @@ description: Documentation for in-page navigation component.
 ### Code components
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
-| Side Navigation Item | `usa-sidenav__item` | Apply this class to a `<li>` element to designate an item within the side navigation panel. |
-| Side Navigation Sublist | `usa-sidenav__sublist` | Apply this class to a `<ul>` element to designate a nested list of "child links" to be nested under a parent link within the sidenav. |
-
-
-## Side Nav Panel
-The panel appears by default when a site with side navigation is being used on mobile. 
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View side navigation panel in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
-### Figma Type properties
-| Property | Value |
-| ----------- | ----------- |
-| mode | light, dark (dark mode only in Figma, not Fractal) |
-| nav text | true, false |
-| nav | true, false |
-| language | true, false |
-| updates | true, false |
+| In-page Navigation Container | `usa-in-page-nav-container` | A wrapper `div` with the class `usa-in-page-nav-container` must surround the main element of your page. |
+| In-page Navigation | `usa-in-page-nav` | A new sibling `aside` with the class `usa-in-page-nav` must precede the main element. |
 
 ## Accessibility guidance
 Use the [USWDS in-page navigation accessibility tests](https://designsystem.digital.gov/components/in-page-navigation/accessibility-tests/) to test implementation.
@@ -76,20 +59,19 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 
 ## Code 
 
-### Side Navigation Components
-NJWDS provides a number of CSS classes that can be applied to various elements within the side navigation panel to help achieve a more standardized styling and layout.
+### In-page Navigation Components
+
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
-| Side Navigation Item | `usa-sidenav__item` | Apply this class to a `<li>` element to designate an item within the side navigation panel. |
-| Side Navigation Sublist | `usa-sidenav__sublist` | Apply this class to a `<ul>` element to designate a nested list of "child links" to be nested under a parent link within the sidenav. |
+| X | X |
 
 
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Side navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=196-330&p=f&t=5K6zTsl37oLtbvIT-0) | Using in designs |
-| [Fractal: Side navigation](https://newjersey.github.io/njwds/components/detail/sidenav--default.html) | Preview styles, see code snippet |
+| [Figma NJWDS: In-page navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3019-108&t=OWFjainTs6OfqOdE-0) | Using in designs |
+| [Fractal: In-page navigation](x) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
