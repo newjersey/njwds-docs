@@ -11,7 +11,7 @@ description: Documentation for in-page navigation component.
 
 🔗 [View side panel in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
-## In=Page Navigation Usage
+## In-Page Navigation Usage
 ### 👍 Use this component for
 - **Long pages.** In-page navigation can offer a substantial improvement to user experience for pages that include three or more distinct content sections or content that exceeds three or more viewport heights.
 
@@ -20,7 +20,7 @@ description: Documentation for in-page navigation component.
 - **Unstructured content.** Pages that lack heading-based hierarchical structures cannot use the in-page navigation component.
 - **Infinite scrolling.** For pages that feature infinite scrolling, in-page navigation is neither a practical nor feasible feature.
 
-### 🚫 What to ensure / avoid
+### ✔️ What to ensure / avoid
 - **Display the in-page navigation to the side of the main content.** Visually, place the in-page navigation component after the main content in the language’s natural reading order. For example, for a left-to-right language like English, this component goes to the right of the main content.
 - **Make it stand out.** Site visitors should be able to quickly and easily distinguish in-page navigation from other landmarks on the page. Include borders and well-defined link active states to clearly convey the utility and purpose of the section. Define a consistent width for the in-page navigation component that is sufficiently wide and does not change based on text length.
 - **Use language that matches section headings.** The text of the links displayed within the in-page navigation `aside` should match the heading text of the target sections. By default, the component scans the page for `h2` and `h3` elements within the `main` element, automatically creates the in-page navigation block, and dynamically inserts the text to match the section headings.
@@ -31,8 +31,8 @@ description: Documentation for in-page navigation component.
 ## Content guidelines
 - **Keep the navigation links short.** They can be shorter derivatives of section titles themselves.
 
-___________________________
-## Side Nav Item
+
+## In-Page Nav Item
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
@@ -41,9 +41,8 @@ ___________________________
 ### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
-| level | 1, 2, 3 |
+| level | 1, 2 |
 | active | inactive, active |
-| mode | light, dark (dark mode only in Figma, not Fractal) |
 | nav text | [text input] |
 
 ### Code components
