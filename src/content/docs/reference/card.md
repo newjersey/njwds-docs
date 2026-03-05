@@ -57,17 +57,6 @@ description: Documentation for card component.
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
-| =Class | Description |  
-| ----------- | ----------- |
-| `.usa-card--flag` | Display in a horizontal (“flag”) orientation at a specified width ($theme-card-flag-min-width).|
-| `.usa-card--header-first`| Displays the header element before the media element.|
-| `.usa-card--media-right`  | In combination with usa-card--flag, sets the media element on the right. (Flag cards display media on the left by default.) |
-| `.usa-card__media--inset`| Indents the media element so it doesn’t extend to the edge of the card. |
-| `.usa-card__body--exdent`| Extends the body element out over the card border. Useful for light-bordered cards. |
-| `.usa-card__footer--exdent` | Extends the footer element out over the card border. Useful for light-bordered cards. |
-| `.usa-card__header--exdent` | Extends the header element out over the card border. Useful for light-bordered cards. |
-| `.usa-card__media--exdent`  | Extends the media element out over the card border. Useful for light-bordered cards. |
-
 
 ## Card variants
 
@@ -100,46 +89,25 @@ description: Documentation for card component.
 🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 
-
-### Figma properties
-| Property | Value |
-| ----------- | ----------- |
-| leading icon | true, false (default) |
-| trailing icon | true, false (default) |
-| icon | (instance swap) |
-
-### Code class
-| Icon Variant Class | Description | 
-| ----------- | ----------- |
-| `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
-
-✅ _**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
-
 ## Accessibility guidance
-Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
-- Buttons should display a **visible focus state** when users tab to them
-- **Use standard markup:**
-Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don’t automatically know either is a usable button.
-- **Screen readers handle buttons and links differently:**
-When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
+Use the [USWDS card accessibility tests](https://designsystem.digital.gov/components/card/accessibility-tests) to test button implementation.
+- **Use unordered lists and list items.** Use a `ul` for a card group and an `li` for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
+- **Use the appropriate heading level for your page.** Update heading level based on the content of your page to make sure card headings are in the correct, logical outline order.
+- **Use CSS to order the media element.** Logically, the media element should follow the header element. Don’t re-organize the markup to reverse their order.
 
 ## Code 
 
-### Button Variants
-
-| Type | Mode | Applied Variants |
-| ----------- | ----------- | ----------- |
-| primary | light | `usa-button` |
-| primary | dark | `usa-button nj–button--primary-dark` |
-| primary | danger | `usa-button usa-button--secondary` |
-| secondary | light | `usa-button usa-button--outline` |
-| secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
-| secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
-| tertiary | light | `usa-button usa-button--unstyled` |
-| tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
-| tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
-
-Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
+#### Code Variants
+| Class | Description |  
+| ----------- | ----------- |
+| `.usa-card--flag` | Display in a horizontal (“flag”) orientation at a specified width ($theme-card-flag-min-width).|
+| `.usa-card--header-first`| Displays the header element before the media element.|
+| `.usa-card--media-right`  | In combination with usa-card--flag, sets the media element on the right. (Flag cards display media on the left by default.) |
+| `.usa-card__media--inset`| Indents the media element so it doesn’t extend to the edge of the card. |
+| `.usa-card__body--exdent`| Extends the body element out over the card border. Useful for light-bordered cards. |
+| `.usa-card__footer--exdent` | Extends the footer element out over the card border. Useful for light-bordered cards. |
+| `.usa-card__header--exdent` | Extends the header element out over the card border. Useful for light-bordered cards. |
+| `.usa-card__media--exdent`  | Extends the media element out over the card border. Useful for light-bordered cards. |
 
 ## Resources
 ### NJWDS links 
