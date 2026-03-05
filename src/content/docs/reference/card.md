@@ -57,13 +57,8 @@ description: Documentation for card component.
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
-| =Class | Description | 
+| =Class | Description |  
 | ----------- | ----------- |
-|Certainly! Here's the table with each code element enclosed in backticks:
-
-```markdown
-| Code                        | Description                                                                                           |
-|-----------------------------|-------------------------------------------------------------------------------------------------------|
 | `.usa-card--flag` | Display in a horizontal (“flag”) orientation at a specified width ($theme-card-flag-min-width).|
 | `.usa-card--header-first`| Displays the header element before the media element.|
 | `.usa-card--media-right`  | In combination with usa-card--flag, sets the media element on the right. (Flag cards display media on the left by default.) |
