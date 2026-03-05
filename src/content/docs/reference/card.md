@@ -11,7 +11,7 @@ description: Documentation for card component.
 
 🔗 [View button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
-## Button Usage
+## Card Usage
 ### 👍 Use this component for
 - **Collections of related content.** Cards help present a collection of related groups of content, like articles or sections of a website.
 
@@ -41,9 +41,9 @@ description: Documentation for card component.
 | type | default, flag |
 
 ### Default Card
-**Mobile-first design.** They stack and adapt to mobile screens.
-**Visual-heavy content** Ideal for image-driven content.
-**Browsing and discovery.** When users are skimming through items.
+- **Mobile-first design.** They stack and adapt to mobile screens.
+- **Visual-heavy content** Ideal for image-driven content.
+- **Browsing and discovery.** When users are skimming through items.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
@@ -59,30 +59,19 @@ description: Documentation for card component.
 
 | =Class | Description | 
 | ----------- | ----------- |
-| `.usa-card--flag` | Display in a horizontal (“flag”) orientation at a specified width ($theme-card-flag-min-width). |
-| `.usa-card--header-first` | Displays the header element before the media element. |
-| `.usa-card--media-right` | In combination with usa-card--flag, sets the media element on the right. (Flag cards display media on the left by default.) |
-| `
+|Certainly! Here's the table with each code element enclosed in backticks:
 
-.usa-card__media--inset
-
-Indents the media element so it doesn’t extend to the edge of the card.
-
-.usa-card__body--exdent
-
-Extends the body element out over the card border. Useful for light-bordered cards.
-
-.usa-card__footer--exdent
-
-Extends the footer element out over the card border. Useful for light-bordered cards.
-
-.usa-card__header--exdent
-
-Extends the header element out over the card border. Useful for light-bordered cards.
-
-.usa-card__media--exdent
-
-Extends the media element out over the card border. Useful for light-bordered cards.
+```markdown
+| Code                        | Description                                                                                           |
+|-----------------------------|-------------------------------------------------------------------------------------------------------|
+| `.usa-card--flag` | Display in a horizontal (“flag”) orientation at a specified width ($theme-card-flag-min-width).|
+| `.usa-card--header-first`| Displays the header element before the media element.|
+| `.usa-card--media-right`  | In combination with usa-card--flag, sets the media element on the right. (Flag cards display media on the left by default.) |
+| `.usa-card__media--inset`| Indents the media element so it doesn’t extend to the edge of the card. |
+| `.usa-card__body--exdent`| Extends the body element out over the card border. Useful for light-bordered cards. |
+| `.usa-card__footer--exdent` | Extends the footer element out over the card border. Useful for light-bordered cards. |
+| `.usa-card__header--exdent` | Extends the header element out over the card border. Useful for light-bordered cards. |
+| `.usa-card__media--exdent`  | Extends the media element out over the card border. Useful for light-bordered cards. |
 
 
 ## Card variants
