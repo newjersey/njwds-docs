@@ -18,6 +18,10 @@ export default defineConfig({
 					autogenerate: { directory: 'guides' },
 				},
 				{
+					label: 'Content',
+					autogenerate: { directory: 'content' },
+				},
+				{
 					label: 'Styles',
 					autogenerate: { directory: 'styles' },
 				},
@@ -30,8 +34,8 @@ export default defineConfig({
 					autogenerate: { directory: 'patterns' },
 				},
 				{
-					label: 'Content',
-					autogenerate: { directory: 'content' },
+					label: 'Templates',
+					autogenerate: { directory: 'templates' },
 				},
 			],
 		}),
