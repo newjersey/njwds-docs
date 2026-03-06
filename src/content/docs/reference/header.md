@@ -37,8 +37,13 @@ description: Documentation for header component.
 | ----------- | ----------- |
 | type | basic, extended |
 
-### Basic Header
-## Basic Header Usage
+## Basic Header
+
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View basic header in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+### Basic Header Usage
 Use the basic header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
 
 - **A text or image logo**
@@ -56,14 +61,29 @@ Use the basic header if you have few enough sections in your main navigation to 
 
 - **Many sections or deep hierarchy.** Consider using the extended header if you have more sections in your horizontal navigation than will fit comfortably next to your logo or if you have complex sections that require the use of a megamenu.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
-### Extended Header
-- ?
+## Extended Header
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+
+An extended header allows for the inclusion of more sections in a horizontal navigation. You can customize the header (depending on your site structure) and use it:
+
+- **With a text or image logo**
+- **With or without dropdown menus**
+- **With or without the expandable search bar**
+- **With or without call-to-action buttons in place of the secondary links featured in your horizontal navigation**
+
+### When to Use the Extended Header
+
+- **Lots of sections.** Use the extended header if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
+
+- **Secondary links or specific calls to action.** Use the extended header if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example, Log in and Sign up links.
+
+### When to Consider Something Else
+
+- **Simple site needs.** Consider using the basic header if you have less information — the basic header takes up less space.
+Explanation:
+
+
 
 
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
