@@ -1,6 +1,6 @@
 ---
 title: Name form
-description: Form template for collecting addresses.
+description: Form template for inputting name.
 ---
 
 **Collect a full name as separate elements of data.**
