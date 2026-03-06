@@ -25,18 +25,6 @@ description: Template for documentation page.
 - **Use a precise headline.** A precise headline quickly communicates your page’s purpose. If the page content is especially complex, you may consider using a subheadline to further clarify its meaning.
 - **Write concise copy.** Favor short sentences (and paragraphs) over longer ones, and use straightforward language, avoiding jargon. Remember, copy blocks don’t need to be long to be comprehensive.
 
-## Accessibility guidance
-As you customize this form template, make sure it continues to follow the [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
-
-## Additional guidance 
-
-### ZIP code handling 
-We limit the characters in the ZIP code field to numbers and the hyphen (-), following the pattern `pattern="[\d]{5}(-[\d]{4})?"`. If you need your ZIP code field to allow non-U.S. postal codes that use a different pattern or require different characters, remove or edit the `pattern` property.
-
-### Mailing standards
-[USPS Publication 28](https://pe.usps.com/text/pub28/28c1_001.htm) defines the mailing standards in the United States.
-
-
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
