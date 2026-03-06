@@ -37,7 +37,7 @@ export default defineConfig({
 					label: 'Templates',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						 { label: 'Forms', link: 'slug: 'templatess/forms'},
+						 { label: 'Forms', slug: 'templatess/forms'},
 				},
 			],
 		}),
