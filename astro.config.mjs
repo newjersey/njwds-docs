@@ -38,7 +38,7 @@ export default defineConfig({
 					autogenerate: { directory: 'templatess' },
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'forms', slug: 'templatess/forms' },
+						{ label: 'Forms', slug: 'templatess/forms' },
 				},
 			],
 		}),
