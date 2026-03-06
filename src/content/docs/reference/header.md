@@ -92,7 +92,7 @@ Explanation:
 | Property | Value |
 | ----------- | ----------- |
 | mega menu | true, false |
-| search bar | true false |
+| search bar | true, false |
 | site title | text feild |
 
 ### Megamenu
@@ -139,7 +139,7 @@ The basic header with a megamenu is similar in design to the basic header compon
 **?**
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View search bar in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 ## Accessibility guidance
 Use the [USWDS header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) to test button implementation.
