@@ -9,7 +9,7 @@ description: Documentation for card component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View card in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
 ## Card Usage
 ### 👍 Use this component for
