@@ -25,7 +25,7 @@ description: Documentation for conditional feilds.
 ## Usage Guidance
 
 ### Manage Complexity
-![Flow chart where user selects email and email address form populates](src/assets/errorvalidation1.png)
+![Flow chart where user selects email and email address form populates](../../../assets/errorvalidation1.png)
 
 Conditional fields are a way to ask users for necessary information, but only when it is relevant to them. By using this pattern, you can avoid cluttering a form with optional or unnecessary fields. 
 
