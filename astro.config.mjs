@@ -37,6 +37,10 @@ export default defineConfig({
 					label: 'Templates',
 					autogenerate: { directory: 'templatess' },
 				},
+				{
+					label: 'Forms',
+					autogenerate: { directory: 'forms' },
+				},
 			],
 		}),
 	],
