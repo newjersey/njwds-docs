@@ -36,9 +36,9 @@ export default defineConfig({
 				{
 					label: 'Templates',
 					autogenerate: { directory: 'templatess' },
-					// Rename subfolders here
-					directoryLabels: {
-       				'templatess/forms': 'Forms'},
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'forms', slug: 'templatess/forms' },
 				},
 			],
 		}),
