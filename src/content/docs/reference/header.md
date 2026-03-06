@@ -11,22 +11,19 @@ description: Documentation for header component.
 
 🔗 [View button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
-## Card Usage
+## Header Usage
 ### 👍 Use this component for
 - **Most websites require header navigation.** Most websites require some form of navigation to help users find the information they need. While a horizontal navigation bar is just one option for navigation design, it is one of the most visible and familiar ways of helping users navigate a site.
 
-### 👎 Consider something else for
-- **Tabular data.** Don’t use a card as a substitute for a table row.
-- **Simple calls to action.** Use a button instead.
-- **Standalone content.** Consider an aside or another standalone element.
-- **Sequential, continuous text.** Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.
-
 ### 🚫 What to avoid / ensure
-- **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.
-- **Don’t use the card component only for decoration.** Use the card component for cards, not for any type of content that’s designed to have a border around it.
-- **Include non-redundant content.** Don’t repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.
-- **Make sure images are properly sized.** Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.
-- **Use simple styling.** Avoid distracting skeumorphism. Don’t include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.
+- **List all important website sections as links in the horizontal navigation.**
+- **Dropdown menus help preview lower-level content.** For large websites, use dropdown menus to help users preview lower-level content. If lower-level sections are closely related and users will need to quickly jump between them, consider using a side navigation instead of — or in addition to — a dropdown.
+- **Use short, clear link labels.** Don’t use jargon or unfamiliar terms.
+- **Left-justify.** Left-justified link labels are more easily scannable.
+- **Present links in priority order.** Higher-demand links should appear farther to the left, and lower-demand links should appear farther to the right.
+- **Avoid org-structure navigation.** Don’t model your navigation after your agency’s org structure. Instead, structure it according to the tasks and information your users most frequently need to access.
+- **Highlight the current section.** Show users where they are within the site by highlighting the current section.
+- **Always research your navigation.** Conduct research with your users, and base decisions about your site’s information architecture and navigation structure on your findings. Continue researching to confirm that updates meet your users’ needs.
 
 
 ## Content guidelines
