@@ -19,7 +19,7 @@ description: Documentation for form structure.
 
 ## Usage Guidance
 
-![Flow chart where user hits submit on a form and form validation error populates](.src/assets/error validation 1.png)
+![Flow chart where user hits submit on a form and form validation error populates](.src/assets/errorvalidation1.png)
 
 ### Complex Forms
 Follow USWDS guidance for creating a [complex form](https://designsystem.digital.gov/patterns/complete-a-complex-form/). The guidance is broken down across three patterns:
