@@ -101,28 +101,28 @@ For the best experience, place your language selector in a prominent area of you
 
 #### Web - Navigation Banner
 
-<img width="2304" height="552" alt="language4" src="https://github.com/user-attachments/assets/126b5d96-ac57-415a-9f26-c434e77b1a23" />
+![Web banner with language toggle in secondary button style.](../../../assets/language4.png)
 
 Use the secondary styling button as the default.
 
 
-<img width="2304" height="461" alt="language5" src="https://github.com/user-attachments/assets/dc9ce52e-781e-48d3-aab1-f72856104284" />
+![Web banner with language toggle in link or tertiary button style.](../../../assets/language5.png)
 
 Link styling can be used when the language controls need to be placed in a section with other links
 
 
-<img width="2304" height="461" alt="language6" src="https://github.com/user-attachments/assets/f76520c6-3e95-460c-8b30-bb9802c38896" />
+![Web banner with language toggle in tertiary or link button style with an icon.](../../../assets/language6.png)
 
 Icons with the link variant can make the language selector more distinct in a crowded UI.
 
 #### Mobile - Side navigation 
 
-<img width="1119" height="2103" alt="language7" src="https://github.com/user-attachments/assets/ec0a1d78-dfb8-4139-bc46-3fef0d9fe6b2" />
+![Mobile navigation with language toggle in secondary style.](../../../assets/language7.png)
 
 Use the secondary button style side menu as a toggle when only two languages are available.
 
 
-<img width="373" height="701" alt="language8" src="https://github.com/user-attachments/assets/ce5cb162-d241-46fa-b694-bef9f0eed9e7" />
+![Mobile navigation with language toggle in tertiary style.](../../../assets/language8.png)
 
 Link styling can be used when multiple language options are available. In this implementation, the dropdown list frame should span the width of the side menu to create a visual distinction between the navigation and language lists.
 
