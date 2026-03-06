@@ -36,10 +36,10 @@ export default defineConfig({
 				{
 					label: 'Templates',
 					autogenerate: { directory: 'templatess' },
-				},
-				{
-					label: 'Forms',
-					autogenerate: { directory: 'forms' },
+					directory: 'templates',
+     				// Rename subfolders here
+     				directoryLabels: {
+        			'templates/forms': 'Forms',
 				},
 			],
 		}),
