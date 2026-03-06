@@ -1,5 +1,5 @@
 ---
-title: Header 🚧
+title: Header
 description: Documentation for header component.
 ---
 
@@ -38,7 +38,24 @@ description: Documentation for header component.
 | type | basic, extended |
 
 ### Basic Header
-- ?
+## Basic Header Usage
+Use the basic header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
+
+- **A text or image logo**
+- **With or without dropdown menus**
+- **With or without a search bar**
+- **With or without call-to-action buttons in place of the search bar**
+
+### When to Use the Basic Header
+
+- **Limited sections.** The basic header is great if you have a modest number of sections in your main navigation.
+
+- **Shallow hierarchy.** You may also use it if each main section listed in the horizontal navigation has six or fewer subsections that you’d like to include in a dropdown menu.
+
+### When to Consider Something Else
+
+- **Many sections or deep hierarchy.** Consider using the extended header if you have more sections in your horizontal navigation than will fit comfortably next to your logo or if you have complex sections that require the use of a megamenu.
+
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
@@ -62,7 +79,41 @@ description: Documentation for header component.
 | site title | text feild |
 
 ### Megamenu
-**?**
+#### Mega Menu with Extended header
+Like an extended header, an extended header with a megamenu allows for the inclusion of more sections in your horizontal navigation; it also allows you to include more links in your dropdowns. You can customize the header (depending on your site structure) and use it:
+
+- **With a text or image logo**
+- **With or without the expandable search bar**
+- **With or without call-to-action buttons in place of the secondary links in the horizontal navigation**
+
+##### When to Use the Extended Header with Megamenu
+
+- **Lots of sections.** Use an extended header with a megamenu if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
+
+- **Secondary links or specific calls to action.** This type of header is also useful if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example, Log in and Sign up links.
+
+- **Deep hierarchy.** Use this type of header if you’d like to include more than six links in any of your dropdowns.
+
+##### When to Consider Something Else
+
+- **Shallow hierarchy.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a very large number of sub-pages.
+Explanation:
+
+#### Mega menu with basic header
+The basic header with a megamenu is similar in design to the basic header component. The megamenu allows for the inclusion of more links in dropdown menus. You can customize this header (depending on your site structure) and use it with:
+
+- **A text or image logo**
+- **With or without a search bar**
+- **With or without call-to-action buttons in place of the search bar**
+
+##### When to Use the Basic Header with Megamenu
+
+- **Deep hierarchy.** Use the basic header with a megamenu if you’d like to include more than six links in any of your dropdown menus and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.
+
+##### When to Consider Something Else
+
+- **Not enough content to warrant a megamenu.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a large number of sub-pages.
+
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
@@ -105,8 +156,8 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Card]([https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1625-667&p=f&t=OWFjainTs6OfqOdE-0)) | Using card in designs, documentation and best practices on button usage |
-| [Fractal: Card](https://newjersey.github.io/njwds/components/detail/card--compare.html) | Preview card styles, see card code snippet |
+| [Figma NJWDS: Header](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1910-52&p=f&t=Yx31eAZO0ULNN6UA-0) | Using header in designs, documentation and best practices on button usage |
+| [Fractal: Header](https://newjersey.github.io/njwds/components/detail/header--default.html) | Preview card styles, see card code snippet |
 
 ### USWDS links 
 | File | Purpose | 
