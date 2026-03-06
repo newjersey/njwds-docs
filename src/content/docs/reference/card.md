@@ -1,5 +1,5 @@
 ---
-title: Card 🚧
+title: Card
 description: Documentation for card component.
 ---
 
