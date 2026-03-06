@@ -1,6 +1,6 @@
 ---
-title: Conditional Feilds
-description: Documentation for conditional feilds.
+title: Conditional Fields
+description: Documentation for conditional fields.
 ---
 
 **Reveal fields conditionally to manage a form's complexity and relevance for users.**
