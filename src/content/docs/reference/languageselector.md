@@ -100,21 +100,30 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 For the best experience, place your language selector in a prominent area of your application. Headers or above-the-fold areas are widely adopted for this reason. Side menus on mobile can also be used; however, this impacts the visibility of the language selector.
 
 #### Web - Navigation Banner
-<img width="3030" height="726" alt="Placement #1" src="https://github.com/user-attachments/assets/d1cba865-6de8-44b8-b464-5d30e58f5f8d" />
+
+<img width="2304" height="552" alt="language4" src="https://github.com/user-attachments/assets/126b5d96-ac57-415a-9f26-c434e77b1a23" />
+
 Use the secondary styling button as the default.
 
-<img width="3924" height="786" alt="Placement #3" src="https://github.com/user-attachments/assets/6f78c8d6-462f-4786-92f5-dad54f11dea1" />
+
+<img width="2304" height="461" alt="language5" src="https://github.com/user-attachments/assets/dc9ce52e-781e-48d3-aab1-f72856104284" />
+
 Link styling can be used when the language controls need to be placed in a section with other links
 
-<img width="3924" height="786" alt="Placement #4" src="https://github.com/user-attachments/assets/3089f6dc-1d2f-4290-80e6-664a43cf51bf" />
+
+<img width="2304" height="461" alt="language6" src="https://github.com/user-attachments/assets/f76520c6-3e95-460c-8b30-bb9802c38896" />
+
 Icons with the link variant can make the language selector more distinct in a crowded UI.
 
 #### Mobile - Side navigation 
 
-<img width="560" height="1052" alt="Frame 644" src="https://github.com/user-attachments/assets/c511f423-e272-4058-a4d3-bbd1796c98ac" />
+<img width="1119" height="2103" alt="language7" src="https://github.com/user-attachments/assets/ec0a1d78-dfb8-4139-bc46-3fef0d9fe6b2" />
+
 Use the secondary button style side menu as a toggle when only two languages are available.
 
-<img width="373" height="701" alt="Frame 642" src="https://github.com/user-attachments/assets/be067dda-e43c-453e-9af9-cc70bb2ed163" />
+
+<img width="373" height="701" alt="language8" src="https://github.com/user-attachments/assets/ce5cb162-d241-46fa-b694-bef9f0eed9e7" />
+
 Link styling can be used when multiple language options are available. In this implementation, the dropdown list frame should span the width of the side menu to create a visual distinction between the navigation and language lists.
 
 ### Application-specific vs site-wide language setting
