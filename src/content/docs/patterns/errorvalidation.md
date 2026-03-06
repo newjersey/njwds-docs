@@ -22,7 +22,7 @@ description: Documentation for error validation.
 ## Usage Guidance
 ### Validate on user action
 
-<img width="2304" height="1054" alt="validation1" src="https://github.com/user-attachments/assets/4b1c5263-1caa-44bb-a2c1-15254e79ca4d" />
+![Flow chart where user hits submit on a form and form validation error populates](../../../assets/errorvalidation1.png)
 
 
 The default pattern for validation is after a user performs an action in a form, such as 'Continue', 'Save,' or 'Submit'. In most cases, this action is triggered by a button.
@@ -35,7 +35,7 @@ When there are 3 or more errors in a form, an error summary should be used. The 
 
 ### Validation on blur
 
-<img width="2304" height="1106" alt="validation2" src="https://github.com/user-attachments/assets/980719f2-a68e-408c-b432-963393177ded" />
+![Flow chart where user hits submit on a form and form validation error populates](../../../assets/errorvalidation2.png)
 
 
 For form fields that are likely to cause errors, it can help to show an inline alert once the field loses focus (on blur). Forms may be more likely to lead to errors if they have complex formatting requirements, or if they are unique to the context, and unfamiliar to most users.
@@ -49,7 +49,7 @@ When possible, avoid validating on blur for common fields like names, phone numb
 
 ### Multiple errors
 
-<img width="2304" height="1679" alt="validation3" src="https://github.com/user-attachments/assets/171c27cd-a632-44ea-997d-52e93603bfdf" />
+![Flow chart where user hits submit on a form and form validation error populates](../../../assets/errorvalidation3.png)
 
 
 Use an error summary when a form has three or more errors. The error summary is triggered on submit, and should receive focus when it appears.
