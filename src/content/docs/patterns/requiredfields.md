@@ -21,7 +21,7 @@ description: Documentation for required fields.
 
 ## Usage Guidance
 
-![Flow chart where user hits submit on a form and form validation error populates](src/assets/error validation 1.png)
+![Flow chart where user hits submit on a form and form validation error populates](src/assets/errorvalidation1.png)
 
 ### 👍 Use an asterisk when..
 USWDS guidance on forms (Form | USWDS) recommends tagging required fields using a red asterisk. If you're working on a design that leans heavily on USWDS, it is recommended that you follow that pattern.
