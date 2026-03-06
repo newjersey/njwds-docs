@@ -29,6 +29,10 @@ export default defineConfig({
 					label: 'Patterns',
 					autogenerate: { directory: 'patterns' },
 				},
+				{
+					label: 'Content',
+					autogenerate: { directory: 'content' },
+				},
 			],
 		}),
 	],
