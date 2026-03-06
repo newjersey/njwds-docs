@@ -154,7 +154,7 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 
 ## Code 
 
-#### Code Variants
+### Code Variants
 | Class | Description |  
 | ----------- | ----------- |
 | `$theme-header-font-family` | Font family of the header. |
@@ -162,7 +162,7 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 | `$theme-header-max-width`| Maximum width of the header.|
 | `$theme-header-min-width`| Breakpoint at which the non-mobile header is shown. |
 
-# Header Variants
+### Header Variants
 | Variant                | Description                    |
 |------------------------|--------------------------------|
 | `.usa-header--basic`   | Display a simple header.       |
