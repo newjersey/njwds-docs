@@ -1,5 +1,5 @@
 ---
-title: Tooltip 🚧
+title: Tooltip 
 description: Documentation for tooltip component.
 ---
 
