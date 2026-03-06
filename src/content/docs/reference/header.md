@@ -9,7 +9,7 @@ description: Documentation for header component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View header in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
 ## Header Usage
 ### 👍 Use this component for
@@ -65,6 +65,8 @@ Use the basic header if you have few enough sections in your main navigation to 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+🔗 [View extended header in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
 An extended header allows for the inclusion of more sections in a horizontal navigation. You can customize the header (depending on your site structure) and use it:
 
 - **With a text or image logo**
@@ -82,11 +84,6 @@ An extended header allows for the inclusion of more sections in a horizontal nav
 
 - **Simple site needs.** Consider using the basic header if you have less information — the basic header takes up less space.
 Explanation:
-
-
-
-
-🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 
 ## Header variants
