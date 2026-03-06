@@ -39,7 +39,7 @@ export default defineConfig({
 					directory: 'templates',
      				// Rename subfolders here
      				directoryLabels: {
-        			'templates/forms': 'Forms',
+        			'guides/forms': 'Forms',
 				},
 			],
 		}),
