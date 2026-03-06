@@ -22,7 +22,7 @@ description: Documentation for error validation.
 ## Usage Guidance
 ### Validate on user action
 
-![Flow chart where user hits submit on a form and form validation error populates](src/assets/error validation 1.png)
+![Flow chart where user hits submit on a form and form validation error populates](src/assets/errorvalidation1.png)
 
 The default pattern for validation is after a user performs an action in a form, such as 'Continue', 'Save,' or 'Submit'. In most cases, this action is triggered by a button.
 
