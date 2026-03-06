@@ -11,8 +11,7 @@ description: Form template for collecting addresses.
 🔗 [View address form template in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 
-## Combobox Usage
-⚠️ Recommendation to use the Select component rather than combobox at this time due to accessibility and usablity issues.
+## Address Form Template Usage
 
 ### 👍 Use this template for
 - **You need separate data elements.** When you need to be able to parse out the specific parts of a mailing address.
