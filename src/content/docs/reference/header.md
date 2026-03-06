@@ -30,24 +30,21 @@ description: Documentation for header component.
 - **?**
 
 
-## Card Types
+## Header Types
 
 ### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
-| type | default, flag |
+| type | basic, extended |
 
-### Default Card
-- **Mobile-first design.** They stack and adapt to mobile screens.
-- **Visual-heavy content** Ideal for image-driven content.
-- **Browsing and discovery.** When users are skimming through items.
+### Basic Header
+- ?
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-### Flag Cards
-- **Desktop/Wide Screens** Better for using horizontal space and reducing vertical scrolling.
-- **Text-Heavy/Detailed Content.** Ideal when information needs to be read rather than just scanned.
+### Extended Header
+- ?
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
@@ -55,56 +52,54 @@ description: Documentation for header component.
 🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 
-## Card variants
+## Header variants
 
 ### Figma variant properties
 | Property | Value |
 | ----------- | ----------- |
-| media position | left,right |
-| media extent | true,false |
-| media-inset | true,false |
-| button | true,false |
-| media | true,false |
+| mega menu | true, false |
+| search bar | true false |
+| site title | text feild |
 
-### Media
-#### Left or Right Side Media
+### Megamenu
 **?**
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-#### Inset Media Media
+#### Search bar
 **?**
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
-#### No Media
-**?**
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
 
 ## Accessibility guidance
-Use the [USWDS card accessibility tests](https://designsystem.digital.gov/components/card/accessibility-tests) to test button implementation.
-- **Use unordered lists and list items.** Use a `ul` for a card group and an `li` for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
-- **Use the appropriate heading level for your page.** Update heading level based on the content of your page to make sure card headings are in the correct, logical outline order.
-- **Use CSS to order the media element.** Logically, the media element should follow the header element. Don’t re-organize the markup to reverse their order.
+Use the [USWDS header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) to test button implementation.
+- **Add a skip navigation link before the header.** Include skip navigation links to allow those using screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skip navigation link. Find more information on skip navigation links at WebAIM.
+- **Ensure your horizontal navigation is keyboard compatible.** Test to make sure users can use Tab to navigate and Space (or Enter) to open pages.
+- **Include tab focus for all top-level navigation items.** This feature will allow keyboard-reliant users to easily navigate interactive items.
+- **Avoid using hover to expand dropdown lists.** Hover is difficult for some users and won't work on touch screens. Dropdowns should expand on click or with keyboard navigation.
+- **Add context by labeling your nav element.** If your page has more than one nav element, use the `aria-label` attribute to help assistive technology users understand the purpose of the navigation.
+- **Use list elements for your navigation links.** This helps screen reader users navigate header content.
+- **Add alt text to your logo image.** If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.
+- **Don't use an H1 for your logo.** If you’re using a logo that’s text, use an `em`, not an `h1`, unless it’s the homepage. Find more information here: [Your Logo is an Image, Not a H1](http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/).
 
 ## Code 
 
 #### Code Variants
 | Class | Description |  
 | ----------- | ----------- |
-| `.usa-card--flag` | Display in a horizontal (“flag”) orientation at a specified width ($theme-card-flag-min-width).|
-| `.usa-card--header-first`| Displays the header element before the media element.|
-| `.usa-card--media-right`  | In combination with usa-card--flag, sets the media element on the right. (Flag cards display media on the left by default.) |
-| `.usa-card__media--inset`| Indents the media element so it doesn’t extend to the edge of the card. |
-| `.usa-card__body--exdent`| Extends the body element out over the card border. Useful for light-bordered cards. |
-| `.usa-card__footer--exdent` | Extends the footer element out over the card border. Useful for light-bordered cards. |
-| `.usa-card__header--exdent` | Extends the header element out over the card border. Useful for light-bordered cards. |
-| `.usa-card__media--exdent`  | Extends the media element out over the card border. Useful for light-bordered cards. |
+| `$theme-header-font-family` | Font family of the header. |
+| `$theme-header-logo-text-width`| Width of the logo text area at desktop width as a percentage of the total header width. |
+| `$theme-header-max-width`| Maximum width of the header.|
+| `$theme-header-min-width`| Breakpoint at which the non-mobile header is shown. |
+
+# Header Variants
+| Variant                | Description                    |
+|------------------------|--------------------------------|
+| `.usa-header--basic`   | Display a simple header.       |
+| `.usa-header--megamenu`| Display a megamenu.            |
+| `.usa-header--extended`| Display an extended header.    |
 
 ## Resources
 ### NJWDS links 
