@@ -13,10 +13,11 @@ description: Documentation of the summary box component.
 
 🔗 [View summary box in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
-## Checkbox Usage
+## Summary box Usage
 ### 👍 Use this component for
 - **Summarize dense content.** If your page contains a lot of information, use the summary box to call out 3-5 key details that readers shouldn’t miss.
 - **Highlight a short, actionable list.** If the page content describes a few steps or a checklist of items to remember, collect them in a summary box. Use five bullet points or less.
+- **Highlight the most important information.** The Summary box component is for calling out key details that readers shouldn’t miss. The content should be “evergreen”, not time sensitive.
 
 ### 👎 Consider something else for
 - **Internal page navigation.** Don’t use a summary box as a table of contents. If you’re listing headings for internal page navigation, use a simple unordered list of jump links or side navigation.
@@ -25,7 +26,10 @@ description: Documentation of the summary box component.
   - There are more than five bullet points.
   - Bullet points are longer than 20 words.
   - Bullet points require a header, image, or button.
-- **Alerts or callouts.** you’re highlighting something new, rather than surfacing details from further down the page, use the alert component, such as the informative status alert. 
+- **Related content.** Don’t use this component to highlight related information on, and drive Veterans to, other pages. Use related or major links, media cards, or stories (depending on template options) instead for this purpose.
+- **Table of contents.** Do not use a Summary box component for a table of contents. Use the On this page component instead for in-page navigation.
+- **Dynamic highlight / interactive feedback / time sensitive.** If you’re highlighting something that was dynamically added to the page in response to a user action, use a variation of an Alert component.
+- **Additional context.** To reveal helpful background information in a form, use the accordion component.  
 
 ### 🚫 What to ensure / avoid
 - **Use smooth scrolling.** Show the reader that they haven’t left the page with smooth scrolling. If you opt for smooth scrolling, ensure the focus state is transferred appropriately.
