@@ -27,7 +27,6 @@ description: Documentation of the summary box component.
   - Bullet points are longer than 20 words.
   - Bullet points require a header, image, or button.
 - **Related content.** Don’t use this component to highlight related information on, and drive Veterans to, other pages. Use related or major links, media cards, or stories (depending on template options) instead for this purpose.
-- **Table of contents.** Do not use a Summary box component for a table of contents. Use the On this page component instead for in-page navigation.
 - **Dynamic highlight / interactive feedback / time sensitive.** If you’re highlighting something that was dynamically added to the page in response to a user action, use a variation of an Alert component.
 - **Additional context.** To reveal helpful background information in a form, use the accordion component.  
 
