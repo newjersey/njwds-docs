@@ -4,6 +4,8 @@ description: Documentation for in-page navigation component.
 ---
 
 **The in-page navigation allows navigation to specific sections on a lengthy content page.**
+
+🚧 Not present in NJWDS Fractal, only in USWDS 🚧
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
