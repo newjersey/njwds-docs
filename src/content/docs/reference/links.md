@@ -28,7 +28,7 @@ description: Documentation for link component.
 
 ### 🚫 What to ensure / avoid
 - **Combine icons with text.** Only a few icons are consistently understood across the digital-using
-- - **Use unique, meaningful link text.** Link text should explain the link’s purpose and help the user understand the link’s destination. Vague and repetitive text like “click here” or “read more” is unhelpful to those using screen-reading software. Screen-reading software collects all page links into a single list, and users typically start with that list. When they do so, they will not be able to tell the difference between links with similar wording.
+    - **Use unique, meaningful link text.** Link text should explain the link’s purpose and help the user understand the link’s destination. Vague and repetitive text like “click here” or “read more” is unhelpful to those using screen-reading software. Screen-reading software collects all page links into a single list, and users typically start with that list. When they do so, they will not be able to tell the difference between links with similar wording.
 - **Simplify link placement in body text.** A link requires mental effort, which affects readability. Reduce the number of links in a single sentence to simplify its message. Consider placing links at the beginning or end of sentences to improve readability.
 - **Link directly to the most relevant page.** Avoid links to pages that require further user action to locate the intended information.
 - **Indicate nonpublic links that require authentication.** Use text or an indicator like a lock icon to signal any link that is not available publicly. This includes links behind a login or other authentication like a paywall.
