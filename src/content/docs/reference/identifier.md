@@ -28,204 +28,90 @@ description: Documentation for identifier component.
 - **Display multiple parents and logos in hierarchical order.** If a site has more than one parent agency, you may display a reference and a logo for each parent in hierarchical order, highest first. For example, "An official website of \[Grandparent Department\] and \[Parent Agency\]."
 - **Avoid distraction.** The identifier appears on every page of your site. Choose background colors that fit with your site theme and avoid color combinations that draw excessive attention to the identifier.
 - **Keep the text up-to-date.** Use the most current version of the identifier.
+- **Except where noted, use the entire component without deletions or additions.** With rare exceptions, if you use the identifier, include the entire identifier. That is, don’t delete sections or required links or change any link text beyond the customizations mentioned in the implementation section.
 
 
 
 ## Content guidelines
-- **Use sentence-case** 
-capitalization for button labels
-- **Keep button text short:** 
-Button text should be as short as possible with action words that clearly explain what will happen when the button is selected (for example, Download, View, or Sign up).
-- **Lead with a verb:**
-Make the first word of the button’s text a verb. For example, instead of Complaint filing, label the button File a complaint.
-- **Icons can be helpful:**
-Consider adding an icon to signal specific actions (Download, Open in a new window, etc).
+- ?
 
 
-## Button Types
+## Identifier States
 
 ### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
-| type | primary, secondary, tertiary |
+| screen size | mobile, tablet, desktop |
+| langauge | es, en|
+| hide nj.gov | true, false |
+| taxpayer disclaimer | true, false |
+| show logos | true, false |
+| multiple agencies | true, false |
+| masthead text | text field |
+| domain address | text field |
 
-### Primary buttons
-**Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
+### Language
+- **Use the Spanish version for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
+
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
+🔗 [View spanish identifier in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-#### Code Primary Variants
-| Type | Mode | Applied Variants |
-| ----------- | ----------- | ----------- |
-| primary | light | `usa-button` |
-| primary | dark | `usa-button nj–button--primary-dark` |
-| primary | danger | `usa-button usa-button--secondary` |
+### Agency Logos
+- **Use an SVG logo if possible.** Ensure the logo is high resolution. We recommend using the SVG version of any logo if you have one. Otherwise, use an image that’s at least 120 pixels tall.
+- **Use logos intended for dark backgrounds if possible.** The identifier has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.
+- **Duplicate the logo element if using multiple logos.** If you’re using multiple logos, duplicate the `usa-identifier__logo` element and link the image to your image source.
   
-### Secondary buttons
-**Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+### Hiding Taxpayer Disclaimer or NJ.gov
+- **If applicable, include any taxpayer disclaimer after the standard text.** If the organization must provide a taxpayer expense disclaimer, include it following the “Official website” text, as a separate sentence. For example, “An official website of [Department]. Produced and published at taxpayer expense.”
 
+### Screen Size
 
-🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
-
-#### Code Secondary Variants
-| Type | Mode | Applied Variants |
-| ----------- | ----------- | ----------- |
-| secondary | light | `usa-button usa-button--outline` |
-| secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
-| secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
-
-### Tertiary/Link buttons
-**Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
-<iframe title="Button preview" frameborder="0.5" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%"></iframe>
-
-
-🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
-
-
-#### Code Tertiary Variants
-| Type | Mode | Applied Variants |
-| ----------- | ----------- | ----------- |
-| tertiary | light | `usa-button usa-button--unstyled` |
-| tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
-| tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
-  
-❌ _**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
-
-
-## Button states
-
-### Figma state properties
-| Property | Value |
-| ----------- | ----------- |
-| state | default, hover, active, focus |
-
-**Make sure buttons look selectable.** The NJWDS button component currently supports the following states: 
-- Default
-- Hover
-- Active
-- Focus
-
-❌ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
-
-
-## Button modes
-
-### Figma mode properties
-| Property | Value |
-| ----------- | ----------- |
-| mode | (on) light, (on) dark, danger |
-
-### Light mode
-**This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View screen sizes of identifier in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-| Light Variant Class | Description | 
-| ----------- | ----------- |
-| `usa-button` | Used for primary type |
-| `usa-button-outline` | Used for secondary type |
-| `usa-button-unstyled` | Used for tertiary type |
-
-### Dark mode
-**Use this for typical use cases when buttons appear on a dark background.**
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adark" width="100%" height="100"></iframe>
-
-🔗 [View primary (on) dark button in Storybook](https://pr-158.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=theme:dark)
-
-| Dark Variant Class | Description | 
-| ----------- | ----------- |
-| `usa-button--inverse` | Used for dark mode |
-| `nj-button--primary-dark` | [Custom NJWDS] Used for primary dark variant |
-| `usa-button usa-button--outline usa-button--inverse` | Used for secondary dark variant |
-| `nj-button--unstyled-dark` | [Custom NJWDS] Used for tertiary dark variant |
-
-### Danger mode
-**These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
-| Danger Variant Class | Description | 
-| ----------- | ----------- |
-| `usa-button--secondary` | Used for danger mode |
-| `usa-button usa-button--secondary` | Used for primary danger variant |
-| `nj-button--outline-danger` | [Custom NJWDS] Used for secondary danger variant |
-| `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
-
-
-## Icons in Buttons
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View icons in buttons in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
-### Icon with text
-Use to clarify the purpose of the button further, indicate directionality, etc.
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"></iframe>
-
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-  
-ℹ️ **To use:** Toggle on the leading or trailing icon in the button component.
-
-### Icon only
-An icon can be used in place of text to demonstrate a button's meaning.
-
-ℹ️ **To use:** Toggle on the leading or trailing icon in the button component and hide the button text from the layer panel.   
-
-### Figma properties
-| Property | Value |
-| ----------- | ----------- |
-| leading icon | true, false (default) |
-| trailing icon | true, false (default) |
-| icon | (instance swap) |
-
-### Code class
-| Icon Variant Class | Description | 
-| ----------- | ----------- |
-| `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
-
-✅ _**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
 
 ## Accessibility guidance
-Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
-- Buttons should display a **visible focus state** when users tab to them
-- **Use standard markup:**
-Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don’t automatically know either is a usable button.
-- **Screen readers handle buttons and links differently:**
-When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
+Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/components/identifier/accessibility-tests) to test identifier implementation.
+- **Use proper landmarks for each identifier section.** Each identifier section should be either a `section` or a `nav`, and include an appropriate `aria-label` property.
+- **Add an `alt` attribute to each logo image.** Use `[Agency shortname] logo` as the alt text for each logo image you add.
+- **Use image role for any SVG images.** Use `role="img"` with any SVG logo image.
 
 ## Code 
 
-### Button Variants
+### Identifier States
 
-| Type | Mode | Applied Variants |
-| ----------- | ----------- | ----------- |
-| primary | light | `usa-button` |
-| primary | dark | `usa-button nj–button--primary-dark` |
-| primary | danger | `usa-button usa-button--secondary` |
-| secondary | light | `usa-button usa-button--outline` |
-| secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
-| secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
-| tertiary | light | `usa-button usa-button--unstyled` |
-| tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
-| tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
+| code | description |
+| ---------- | ---------- |
+| `usa-identifier` |
+| `usa-identifier__section` |
+| `usa-identifier__section--masthead` |
+| `usa-identifier__container` |
+| `usa-identifier__logos` |
+| `usa-identifier__identity` |
+| `usa-identifier__identity-domain` |
+| `usa-identifier__identity-disclaimer` |
+| `usa-identifier__section` | 
+| `usa-identifier__section--required-links` |
+| `usa-identifier__required-links-list` |
+| `usa-identifier__required-links-item` |
+
 
 Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
 
 ## Resources
+
 ### NJWDS links 
+
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using button in designs, documentation and best practices on button usage |
-| [Fractal: Button](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview button styles, see button code snippet |
+| [Figma NJWDS: Identifier](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2905-151&p=f&t=Yx31eAZO0ULNN6UA-0) | Using identifier in designs, documentation and best practices on identifier usage |
+| [Fractal: Identifier](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview identifier styles, see identifier code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Button](https://designsystem.digital.gov/components/button/) | Reference for additional button styles and functionalities  |
-| [USWDS: Button utilities](https://designsystem.digital.gov/components/button/#using-the-button-component-2) | Utilities to be referenced in button styling (may not all apply to NJWDS) |
-| [USWDS: Button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) | Accessibility tests to run for button component |
+| [USWDS: Identifier](https://designsystem.digital.gov/components/identifier/) | Reference for additional button styles and functionalities  
+| [USWDS: Identifier accessibility tests](https://designsystem.digital.gov/components/identifier/accessibility-tests) | Accessibility tests to run for identifier component |
