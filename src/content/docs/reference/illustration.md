@@ -5,7 +5,7 @@ description: Documentation for illustration component.
 
 **Illustration help communicate meaning, demonstrate something complex, or help users visually find what they need.**
   
-🚧
+🚧 Not present in NJWDS Fractal, custom NJWDS not in USWDS 🚧
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
