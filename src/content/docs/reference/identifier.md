@@ -79,27 +79,25 @@ Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/
 - **Add an `alt` attribute to each logo image.** Use `[Agency shortname] logo` as the alt text for each logo image you add.
 - **Use image role for any SVG images.** Use `role="img"` with any SVG logo image.
 
-## Code 
+## Code utilities
 
-### Identifier States
-
-| code | description |
-| ---------- | ---------- |
-| `usa-identifier` |
-| `usa-identifier__section` |
-| `usa-identifier__section--masthead` |
-| `usa-identifier__container` |
-| `usa-identifier__logos` |
-| `usa-identifier__identity` |
-| `usa-identifier__identity-domain` |
-| `usa-identifier__identity-disclaimer` |
-| `usa-identifier__section` | 
-| `usa-identifier__section--required-links` |
-| `usa-identifier__required-links-list` |
-| `usa-identifier__required-links-item` |
+### Checkbox components
+| Name |	Class	| Description |
+| ---------- | ---------- | ---------- |
+| identifier | `usa-identifier` | Use for identifier |
+| section |  `usa-identifier__section` | Use for section in identifier |
+| masthead | `usa-identifier__section--masthead` | Use for masthead in identifier |
+| container | `usa-identifier__container` | use for container |
+| logo | `usa-identifier__logos` | Use for agency logos |
+| identity | `usa-identifier__identity` | Use for agency identification section |
+| domain | `usa-identifier__identity-domain` | Use for domain |
+| disclaimer | `usa-identifier__identity-disclaimer` | Use for disclaimer |
+| links | `usa-identifier__section--required-links` | Use for required links section |
+| link list | `usa-identifier__required-links-list` | Use for link list |
+| link item | `usa-identifier__required-links-item` | Use for link item |
 
 
-Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
+Demos of these variants can be found on the [Fractal: Identifier page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
 
 ## Resources
 
