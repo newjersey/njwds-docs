@@ -28,7 +28,7 @@ description: Documentation for file input.
 
 
 ## Content guidelines
-- ?
+- TBD
 
 
 ## Figma properties 
