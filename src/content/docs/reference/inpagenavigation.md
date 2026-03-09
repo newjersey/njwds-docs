@@ -65,7 +65,7 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
-| In page navigation | usa-in-page-navigation | Use for the in page navigation component |
+| In page navigation | `usa-in-page-navigation` | Use for the in page navigation component |
 
 
 ## Resources
