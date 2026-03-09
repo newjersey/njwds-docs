@@ -10,7 +10,7 @@ description: Documentation for graphic list component.
 🔗 [View graphic list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 
-## Combobox Usage
+## Graphic List Usage
 
 ### 👍 Use this component for
 - **Related information** on a website that you'd like to draw attention to.
