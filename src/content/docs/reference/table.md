@@ -1,19 +1,19 @@
 ---
-title: Table
+title: Table 🚧
 description: Documentation of the table component.
 ---
 
 **A table shows information in columns and rows.**
-  
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
+
+🚧Some variants of the table are in USWDS, but are not availible in Fractal or Figma. 🚧
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View summary box in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
-## Summary box Usage
+## Table Usage
 ### 👍 Use this component for
 - **Displaying tabular data.** When you need to display tabular information, such as statistical data.
 - **Displaying directories.** When listing locations or resources that have similarly structured content for many items.
@@ -43,28 +43,57 @@ description: Documentation of the table component.
 - TBD
 
 
-## Figma properties
+## States
 
-### Default collection item
+### Figma properties
 | Property | Value |
 | ----------- | ----------- |
-| heading | [text input] |
-| content | [text input] |
+| border | true, false |
+| screen size | desktop, mobile |
 
+## Type
+### Bordered
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
+### Not Bordered
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+
+## Responsive
+### Responsive Stacked
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 ## Accessibility Guidance
-Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/components/summary-box/accessibility-tests) to test implementation.
+Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/components/table/accessibility-tests) to test implementation.
 - **Write for your audience.** The summary box is meant to make it easier to understand page content. Don’t leave readers without access to critical information. Check your writing level to ensure it’s easy to read. Search for “readability level tool” to find tools that assess reading level.
+
+## Code
+
+### Code Utilties
+| Table variants | Description  |
+|----------|----------|
+| `.usa-table--borderless`| Removes the outer table borders, retaining only a single bottom border on each row. Best for tables with more text than numbers. |
+| `.usa-table--compact` | Reduces the row height and vertical spacing to display more table rows within a limited space. Should only be used with dense, numerical data, not text content. Pairs well with scrollable and striped variants, but is not suitable for use with stacked variants. |
+| `.usa-table-container--scrollable > .usa-table` | Add the `usa-table-container--scrollable` class to a container around any `usa-table` to apply a horizontal scrollbar if the columns exceed the available width. Ideal for dense tables with many columns.|
+| `.usa-table--stacked`| Stacks the table cells on narrow screens. Ideal for tables that contain more text information than numerical data. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header. |
+| `.usa-table--stacked-header`| Stacks the table cells on narrow screens and visually promotes the first cell of every row into a “header” for that group. Preferred for directories and other lists where the first cell of every row is a name. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header. |
+| `.usa-table--sticky-header`| Allows the table header element to stick to the top of the page as the user scrolls. Preferred for long tables with many rows. This variant is not compatible with the scrollable and stacked table variants.|
+| `.usa-table--striped` | Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns. |
 
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Summary box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1523-124&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma NJWDS: Table](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3034-1111&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Summary box](https://designsystem.digital.gov/components/summary-box/) | Reference for additional styles and functionalities  |
-| [USWDS: Summary box utilities](https://designsystem.digital.gov/components/summary-box/#using-the-summary-box-component-2)  | Guidance on how to use this component |
-| [USWDS: Summary box accessibility tests](https://designsystem.digital.gov/components/summary-box/accessibility-tests) | Accessibility tests to run for component |
+| [USWDS: Table](https://designsystem.digital.gov/components/table/) | Reference for additional styles and functionalities  |
+| [USWDS: Table utilities](https://designsystem.digital.gov/components/table/#guidance)  | Guidance on how to use this component |
+| [USWDS: Summary box accessibility tests](https://designsystem.digital.gov/components/table/accessibility-tests) | Accessibility tests to run for component |
