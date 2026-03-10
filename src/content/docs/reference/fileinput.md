@@ -33,33 +33,43 @@ description: Documentation for file input.
 
 ## Figma properties 
 
-### Date Picker Figma properties 
+### Input File properties 
 | Property | Values | 
 | ----------- | ----------- |
-| state | default, focus, success, open, selected, error |
-| label text | [text input] |
-| required | true, false |
-| helper | true, false |
-| helper text | [text input] |
-| input | true, false | 
-| input text | [text input] |
-| focus | false, true | 
-| calendar | false, true | 
-| error text | [text input] |
+| state | default, error |
+| files | single, multiple|
+| preview | true, false |
+| number of files | [text input] |
 
-### Memborable Date Picker Figma properties 
-| Property | Values | 
-| ----------- | ----------- |
-| state | default, focus, success, open, selected, error |
-| label text | [text input] |
-| required | true, false |
-| helper | true, false |
-| helper text | [text input] |
-| error text | [text input] |
+### States
+#### Default
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 
+🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+#### Error
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+
+🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+### Amount of Files
+#### Single
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+
+🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+#### Multiple
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+
+🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
+### Preview Files
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+
+🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 ## Accessibility guidance
-Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
+Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/components/file-input/accessibility-tests) to test file input implementation.
 - **Use Proper Labels and Attributes.** Each file input should have a `label` element.** Associate the `label` to your input by defining the value of the label’s `for` attribute with the input’s `id`.
 - **Use as a Progressive Enhancement** The file input component should be a progressive enhancement of `<input type="file" />`. If the component doesn’t initialize, it should still work and appear like a standard file input.
 
@@ -85,4 +95,5 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: File input](https://designsystem.digital.gov/components/file-input/) | Documentation from USWDS |
-| [USWDS: File input](https://designsystem.digital.gov/components/file-input/accessibility-tests/) | Accessibility check |
+| [USWDS: File input accessibilty](https://designsystem.digital.gov/components/file-input/accessibility-tests) | Accessibility check |
+| [USWDS: File Input Utilities](https://designsystem.digital.gov/components/file-input/#using-the-file-input-component-2) | Find utilities |
