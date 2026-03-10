@@ -54,12 +54,12 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | ----------- | ----------- |
 | style | default, segmented, mobile |
 
-### Default button Group
+### Default Button Group
 **Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 
-🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View default button group in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 | Style | Applied Variants | 
 | ----------- | ----------- |
@@ -71,7 +71,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" ></iframe>
 
 
-🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View segmented button group in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 | Style | Applied Variants | 
 | ----------- | ----------- |
@@ -79,7 +79,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 
 ## Accessibility guidance
-Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
+Use the [USWDS button group accessibility tests](https://designsystem.digital.gov/components/button-group/accessibility-tests) to test button group implementation.
 - **Convey relationship.** If not using a list element, give the parent element `role="group"` in order to convey to screen readers that actions are part of a group. If using as part of a toolbar, use `role="toolbar"`.
 - **Use aria-label to give the buttons a useful name.** Some contexts may require additional context provided to screen readers.
 - **Use the `<button type="button">` element.** Don’t use `<a>` because it’s a link. Don’t use <span> because screen readers won’t know it’s a usable button.
@@ -97,13 +97,13 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Button Group](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1600-3056&t=8Iz1cfQBJpns25JR-11) | Using button in designs, documentation and best practices on button usage |
-| [Fractal: Button Group](https://newjersey.github.io/njwds/components/detail/button-groups--default.html) | Preview button styles, see button code snippet |
+| [Figma NJWDS: Button Group](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1600-3056&t=8Iz1cfQBJpns25JR-11) | Using in designs |
+| [Fractal: Button Group](https://newjersey.github.io/njwds/components/detail/button-groups--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Button Group](https://designsystem.digital.gov/components/button-group/) | Reference for additional button styles and functionalities  |
-| [USWDS: Button Group utilities](https://designsystem.digital.gov/components/button-group/#package) | Utilities to be referenced in button styling (may not all apply to NJWDS) |
-| [USWDS: Button Group accessibility tests](https://designsystem.digital.gov/components/button-group/#accessibility-test-status) | Accessibility tests to run for button component |
+| [USWDS: Button Group](https://designsystem.digital.gov/components/button-group/) | Reference for additional styles and functionalities  |
+| [USWDS: Button Group utilities](https://designsystem.digital.gov/components/button-group/#package) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Button Group accessibility tests](https://designsystem.digital.gov/components/button-group/#accessibility-test-status) | Accessibility tests to run for component |
 
