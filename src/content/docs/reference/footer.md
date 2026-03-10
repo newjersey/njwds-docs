@@ -16,7 +16,6 @@ description: Documentation for footer component.
 - **Big footer.** Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.
 - **Medium footer.** Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.
 - **Slim footer.** Use the slim footer when you only want to offer a few footer links and nothing else.
-- **Medium and slim footers.** Use the big footer when your footer has more than five links.
 
 ### 👎 Consider something else for
 - **Medium footer.** Use the big footer when your footer has more than five links.
