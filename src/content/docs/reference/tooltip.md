@@ -16,7 +16,7 @@ description: Documentation for tooltip component.
 - **Helpful, non-critical information.** Use tooltips to strengthen an existing message.
 - **Enhance confidence.** Use tooltips to increase certainty about an interaction.
 - **Brief descriptions.** Tooltips perform best with succinct helper text.
-- - **Icon only buttons.** Tooltips provide essential context to icon only buttons ensuring users understand the action. 
+- **Icon only buttons.** Tooltips provide essential context to icon only buttons ensuring users understand the action. 
 - **Lack of space.** Tooltips are useful as a last resort for space-constrained UI. Explore other options for keeping content visible without a tooltip.
 
 
