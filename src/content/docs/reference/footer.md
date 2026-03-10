@@ -1,6 +1,6 @@
 ---
 title: Footer
-description: Documentation for ifooter component.
+description: Documentation for footer component.
 ---
 
 **A footer serves site visitors who arrive at the bottom of a page without finding what they want.**
