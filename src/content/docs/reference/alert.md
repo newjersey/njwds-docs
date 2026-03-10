@@ -15,6 +15,7 @@ description: Documentation for alert component.
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"></iframe>
 
 🔗 [View alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View site alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
  
 ## Alert Usage
@@ -23,13 +24,13 @@ description: Documentation for alert component.
 - **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully. 
 
 ### 👎 Consider something else for
-- **Information call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
-- **Long forms.** On long forms, always include in-line validation in addition to any error messages that appear at the top of the form.
+- **Informational call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
 - **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this action is what they want.
 
-### 🚫 What to avoid
-- **Don't overdo it.** Too many notifications will either overwhelm or annoy the user and are likely to be ignored.
-- **Understand the user's context.** Don’t include notifications that aren’t related to the user’s current goal.
+### 🚫 What to ensure / avoid
+- **Validation on long forms.** On long forms, always include in-line validation (error states of form input components) in addition to any error messages that appear at the top of the form (alert component for now, error summary coming soon).
+- **Don't overdo it.** Too many alerts will either overwhelm or annoy the user and are likely to be ignored.
+- **Understand the user's context.** Don’t include alerts that aren’t related to the user’s current goal.
 
 ## Site Alert Usage
 ### 👍 Use this component for
@@ -37,8 +38,8 @@ description: Documentation for alert component.
 - **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
   
 ### 👎 Consider something else for
-- **Responding to user actions.** Use the alert component for page-level validation messages (like error messages on a form) or to inform a user that a task was completed successfully.
-- **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages at the top of the form.
+- **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
+- **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages (error states of form input components).
 
 ### 🚫 What to avoid
 - **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.
@@ -58,7 +59,7 @@ Alerts are notifications of high priority since they provide critical informatio
 | Success status | Confirm that a user’s action was effective, and can have a celebratory tone. | Order successfully placed! |
 | Warning | Inform the user of risks or caution before taking any decision. | Sorry, this account is inactive. Please check your store’s billing for more information. |
 | Error | Inform that something went wrong after an action. [Learn about errors](https://docs.google.com/document/d/1e-ojlLXcV8XoXKvZwnE-S9XIsE1NL3-M2Tg_mf9jqEg/edit?tab=t.0#heading=h.oc5dzlagmn7b) | The email and password you entered did not match our records. Please double-check and write again. |
-| Emergency | Demand immediate action to prevent a serious threat. Usually written in all caps. |EMERGENCY ALERT: SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
+| Emergency | Demand immediate action to prevent a serious threat. Usually written in all caps. | EMERGENCY ALERT: SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
 
 ### Writing tips
 - **Identify the purpose:** what type of alert are you writing?
@@ -79,9 +80,9 @@ Alerts are notifications of high priority since they provide critical informatio
 
 ### Size variants
 [Type/size/modifiers] determine the size and amount of information in the alert. 
+
 **Tip:** Slim-icon is the slimmest.
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-[iframe shows standard, slim-icon, slim-no icon info alerts] 
 
 🔗 [View alert sizes in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
@@ -166,7 +167,8 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
 
 ### Dismissable alerts
-Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. USWDS is working on a way to help developers implement a dismissible alert. [You can follow their progress on GitHub](https://github.com/uswds/uswds/issues/5754).
+🚧 Not present in NJWDS or USWDS, would need custom implementation 🚧
+Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the NJWDS team, but is not implemented yet. 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
@@ -178,7 +180,7 @@ Dismissable alerts are used for timely notifications that do not need to remain 
 | dismissable | false, true |
 
 ## Accessibility Guidance
-Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test button implementation.
+Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test alert implementation.
 
 ### Avoid using fading alerts
 Since alerts are used to display important and often urgent messages to users, it is important for all users to get a chance to read through them. This means not having error alerts automatically fade out after a set amount of time.
@@ -235,4 +237,4 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | ----------- | ----------- |
 | [USWDS: Alert](https://designsystem.digital.gov/components/alert/) | Reference for additional alert styles and functionalities  |
 | [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in alert styling (may not all apply to NJWDS) |
-| [USWDS: Alert accessibility tests](https://designsystem.digital.gov/components/alert/#accessibility-guidance) | Accessibility tests to run for button component |
+| [USWDS: Alert accessibility tests](https://designsystem.digital.gov/components/alert/#accessibility-guidance) | Accessibility tests to run for component |
