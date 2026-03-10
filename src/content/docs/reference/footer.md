@@ -32,7 +32,7 @@ description: Documentation for ifooter component.
 
 
 ## Content guidelines
-- ?
+- TBD
 
 
 ## Identifier States
