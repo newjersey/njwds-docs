@@ -84,7 +84,7 @@ Add the `data-allow-multiple attribute` to any usa-accordion to create a multise
 
 
 ## Accessibility guidance
-Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) to test button implementation.
+Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) to test accordion implementation.
 - **Code header areas in the accordion as buttons.** Using a `<button type="button">` assures accordions are usable with both screen readers and keyboards.
 - **Use meaningful expansion button labels.** Aim for informative labels like “Explore federal compliance checklists” rather than vague ones like “Click here.”
 - **Use `aria-controls` to associate an accordion button with its related content.** Connect an accordion button control with its appropriate content region by referencing the controlled element’s `id` in the button’s `aria-controls` attribute.
@@ -112,13 +112,11 @@ Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/c
 | Accordion Button | `usa-accordion__button` | Add to `button` for accordion button |
 | Accordion Content | `usa-accordion__content usa-prose` | Add to `div` for accordion content |
 
-Demos of these variants (including how they can be used with icon buttons) can be found on the [Fractal: Button page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
-
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Accordion | Using in designs |
+| [Figma NJWDS: Accordion](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1519-637&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
 | [Fractal: Accordion](https://newjersey.github.io/njwds/components/detail/accordion--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
