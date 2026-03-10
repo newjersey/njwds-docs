@@ -19,10 +19,9 @@ description: Documentation for footer component.
 - **Medium and slim footers.** Use the big footer when your footer has more than five links.
 
 ### 👎 Consider something else for
-- TBD
+- **Medium footer.** Use the big footer when your footer has more than five links.
 
 ### 🚫 What to avoid / ensure
-
 - **Curate your footer.** Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.
 - **The footer doesn’t need to mirror the header.** Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).
 - **Include newsletter signup.** Include the newsletter signup if one of your website’s goals is getting visitors to sign up for a newsletter.
@@ -43,7 +42,7 @@ description: Documentation for footer component.
 | screen size | mobile, tablet, desktop | Breakpoint-based layout variations optimized for mobile, tablet, and desktop. |
 | type | simple, with-contact, complex | Level of footer complexity, ranging from simple layouts to versions with contact and social information. |
 | sign up form | true, false | Option to hide sign up form on complex footer type. |
-| socials | true, false | Option to hide socails on with-contact and complex footer types. |
+| socials | true, false | Option to hide socials on with-contact and complex footer types. |
 
 ### Simple
 
@@ -75,7 +74,7 @@ description: Documentation for footer component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View with contact footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View with hide socials or sign up form footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 ## Accessibility guidance
 Use the [USWDS footer accessibility tests](https://designsystem.digital.gov/components/footer/accessibility-tests/) to test footer implementation.
@@ -124,8 +123,7 @@ Demos of these variants can be found on the [Fractal: Footer page](https://newje
 | ----------- | ----------- |
 | [Figma NJWDS: Footer](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=512-174&t=iqL6YX4GteFnJQKf-1) | Figma component with variable styles applied |
 | [Fractal: Footer](https://newjersey.github.io/njwds/components/detail/footer--default.html) | Preview styles, see code snippet |
-| [Footer settings: variables and variants ](https://office-of-innovation.gitbook.io/njwds/footer#code) | 
-Utilities to use in styling (NJWDS specific) |
+| [Footer settings: variables and variants ](https://office-of-innovation.gitbook.io/njwds/footer#code) | Utilities to use in styling (NJWDS specific) |
 
 ### USWDS links 
 | File | Purpose | 
