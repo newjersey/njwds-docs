@@ -235,6 +235,6 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Alert](https://designsystem.digital.gov/components/alert/) | Reference for additional alert styles and functionalities  |
-| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in alert styling (may not all apply to NJWDS) |
+| [USWDS: Alert](https://designsystem.digital.gov/components/alert/) | Reference for additional styles and functionalities  |
+| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
 | [USWDS: Alert accessibility tests](https://designsystem.digital.gov/components/alert/#accessibility-guidance) | Accessibility tests to run for component |
