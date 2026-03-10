@@ -26,6 +26,10 @@ export default defineConfig({
 					autogenerate: { directory: 'styles' },
 				},
 				{
+					label: 'NJWDS Components',
+					autogenerate: { directory: 'njcomponents' },
+				},
+				{
 					label: 'Components',
 					autogenerate: { directory: 'reference' },
 				},
