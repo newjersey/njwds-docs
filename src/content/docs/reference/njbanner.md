@@ -9,7 +9,7 @@ description: Documentation for custom NJWDS banner.
 
 🔗 [View banner in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-## Banner Usage
+## NJ Banner Usage
 ### 👍 Use this component for
 - **OOI-built websites and web pages**. Whenever we are building an entire page or app that links to NJ gov sites, but is standalone.
 
@@ -52,7 +52,7 @@ NJWDS provides a number of CSS classes that can be applied to various elements w
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: NJ Site Header](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=198-798&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma NJWDS: NJ Banner](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=198-798&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Fractal: Banner](https://newjersey.github.io/njwds/components/detail/banner.html) | Preview styles, see code snippet |
 
 ### USWDS links 
