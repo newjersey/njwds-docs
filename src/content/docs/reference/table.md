@@ -1,1 +1,70 @@
+---
+title: Table
+description: Documentation of the table component.
+---
 
+**A table shows information in columns and rows.**
+  
+🚧 Not present in NJWDS Fractal, only in USWDS 🚧
+
+✅ _Passed WCAG 2.1 AA (USWDS component)_
+
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View summary box in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+  
+## Summary box Usage
+### 👍 Use this component for
+- **Displaying tabular data.** When you need to display tabular information, such as statistical data.
+- **Displaying directories.** When listing locations or resources that have similarly structured content for many items.
+
+### 👎 Consider something else for
+- **Non-tabular data.** Depending on the type of content, consider using other presentation formats, [such as definition lists or hierarchical lists](https://designsystem.digital.gov/components/list).
+- **Robust data visualization.** If you need to display more complex relationships or [data visualizations](https://designsystem.digital.gov/components/data-visualizations/), consider a bar graph, infographic, or other type of chart.
+- **Dashboards** and other layouts. Don’t use tables in place of a [layout grid](https://designsystem.digital.gov/utilities/layout-grid/). Table content should follow a consistent structure using headers and logical columns and rows.
+- **Long-form content.** Table cell content should be brief and scannable. If you find yourself drafting multiple bullet points or paragraphs within a single table cell, the content is likely better off under conventional page headers or in an accordion.
+- **Groups of items with different structures.** Consider a [list](https://designsystem.digital.gov/components/list) or [cards](https://designsystem.digital.gov/components/card/) for content items that don’t follow a consistent pattern.
+
+### 🚫 What to ensure / avoid
+- **Tables are great at displaying data and complex information.** Minimal visual styling helps surface this information more easily.
+- **Always use a header row.** Use plain language and short labels to define the type of information that can be found in each column or row. For more complex table structures, review the [WCAG accessibility recommendations for tables](https://www.w3.org/WAI/tutorials/tables/).
+- **Predictably format columns.** Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared. For example, if most of the rows in a table show a count in days, don’t have some rows that count by weeks.
+- **Right-align numerical data.** Align numbers that represent a sum to the right using the [text alignment utilities](https://designsystem.digital.gov/utilities/paragraph-styles/#text-align) on the table cells.
+- **Use a monospace font for numerical data.** For even better readability of dense, numerical data, consider formatting numbers that convey amounts, such as percentages, currency, or tallies, in a [monospace](https://designsystem.digital.gov/design-tokens/typesetting/font-family) font. (There’s no need to apply monospace formatting or alignment to phone numbers, zip codes, dates, or other number content that can’t be totaled.)
+- **Attribute table data in a caption.** If your table includes information from a specific source or contains frequently updated content, provide the source and/or last updated date. This clarification is especially useful if your table summarizes data from a more extensive source.
+- **Consider a small-screen experience.** On mobile devices and other small screens, numerical data across many columns can be easier to understand if the table scrolls horizontally. Directory lists are more readable if the rows display in a stacked layout. For tables with more than two columns, make sure you choose either a scrollable or a stacked variant.
+- **Minimize the number of columns.** It’s easier for users to read down a long list of rows than it is to read across a long list of columns. Eliminate columns when possible, or consider swapping the columns and rows to improve scannability.
+- **Enable sort where useful.** Add row sorting to individual columns of long tables where the data can be logically ordered either alphabetically or numerically.
+- **Don’t use row sorting with merged cells.** Sorting won’t work properly if your table contains `colspan` or `rowspan` attributes on the cells.
+- **Don’t use row sorting with the mobile stacked variants.** Sorting won’t work properly with these variants because the column headers at the top of the table don’t appear at narrow widths and are instead moved into the cell content in each row.
+
+
+## Content Guidance 
+- TBD
+
+
+## Figma properties
+
+### Default collection item
+| Property | Value |
+| ----------- | ----------- |
+| heading | [text input] |
+| content | [text input] |
+
+
+## Accessibility Guidance
+Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/components/summary-box/accessibility-tests) to test implementation.
+- **Write for your audience.** The summary box is meant to make it easier to understand page content. Don’t leave readers without access to critical information. Check your writing level to ensure it’s easy to read. Search for “readability level tool” to find tools that assess reading level.
+
+## Resources
+### NJWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma NJWDS: Summary box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1523-124&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Summary box](https://designsystem.digital.gov/components/summary-box/) | Reference for additional styles and functionalities  |
+| [USWDS: Summary box utilities](https://designsystem.digital.gov/components/summary-box/#using-the-summary-box-component-2)  | Guidance on how to use this component |
+| [USWDS: Summary box accessibility tests](https://designsystem.digital.gov/components/summary-box/accessibility-tests) | Accessibility tests to run for component |
