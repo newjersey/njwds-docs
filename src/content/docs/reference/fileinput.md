@@ -72,7 +72,7 @@ description: Documentation for file input.
 Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/components/file-input/accessibility-tests) to test file input implementation.
 - **Use Proper Labels and Attributes.** Each file input should have a `label` element.** Associate the `label` to your input by defining the value of the label’s `for` attribute with the input’s `id`.
 - **Use as a Progressive Enhancement** The file input component should be a progressive enhancement of `<input type="file" />`. If the component doesn’t initialize, it should still work and appear like a standard file input.
-
+🚨**Known Issues** Screen reader users found it confusing to have both “Drag file here” and “Choose from folder” actions described in a single button. 
 
 ## Code utilities 
 
