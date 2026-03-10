@@ -45,6 +45,7 @@ description: Documentation for breadcrumb component.
 | ----------- | ----------- |
 | type | default |
 
+#### Code variants
 | Style | Applied Variants | 
 | ----------- | ----------- |
 | Default | `usa-breadcrumb` |
@@ -59,6 +60,7 @@ description: Documentation for breadcrumb component.
 | ----------- | ----------- |
 | type | wrapping |
 
+#### Code variants
 | Style | Applied Variants | 
 | ----------- | ----------- |
 | Wrapping | `usa-breadcrumb usa-breadcrumb--wrap` |
