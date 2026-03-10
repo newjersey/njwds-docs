@@ -62,9 +62,9 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 
 ### Tooltip Components
 
-| Name | Class | Description |
+| Class | Description |
 | ----------- | ----------- | ----------- |
-| X | X |
+| `"usa-tooltip` | Use for tooltip |
 
 
 ## Resources
