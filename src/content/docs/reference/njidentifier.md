@@ -1,9 +1,9 @@
 ---
-title: Identifier
+title: NJ Identifier
 description: Documentation for identifier component.
 ---
 
-**The identifier communicates a site’s parent agency and displays agency links required by federal laws and policies.**
+**The NJ identifier communicates a site’s parent agency and displays agency links required by federal laws and policies.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
@@ -11,7 +11,7 @@ description: Documentation for identifier component.
 
 🔗 [View identifier in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
-## Button Usage
+## NJ Identifier Usage
 ### 👍 Use this component for
 - **To identify the highest-level agency** associated with a site or service. The identifier is a complement to the [USWDS banner](https://designsystem.digital.gov/components/identifier/). Use the identifier to tell users what parent agency is responsible for your website. Consider the parent agency the highest-level agency associated with a site or service. If your site is the primary site associated with an agency, you can still use the identifier.
 - **To display links required by federal laws and policies.** The identifier includes [links required on all government sites](https://digital.gov/resources/required-web-content-and-links/).
@@ -36,7 +36,7 @@ description: Documentation for identifier component.
 - ?
 
 
-## Identifier States
+## NJ Identifier States
 
 ### Figma Type properties
 | Property | Value |
@@ -105,7 +105,7 @@ Demos of these variants can be found on the [Fractal: Identifier page](https://n
 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Identifier](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2905-151&p=f&t=Yx31eAZO0ULNN6UA-0) | Using identifier in designs, documentation and best practices on identifier usage |
+| [Figma NJWDS: NJ Identifier](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2905-151&p=f&t=Yx31eAZO0ULNN6UA-0) | Using identifier in designs, documentation and best practices on identifier usage |
 | [Fractal: Identifier](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview identifier styles, see identifier code snippet |
 
 ### USWDS links 
