@@ -1,5 +1,5 @@
 ---
-title: Footer
+title: NJ Footer
 description: Documentation for footer component.
 ---
 
