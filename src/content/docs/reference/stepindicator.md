@@ -86,7 +86,7 @@ description: Documentation for step indicator component.
 
 ## Accessibility guidance
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
-- **Use semantic heading levels.** Though our default code uses an <h4>, use the correct heading level in your own implementation.
+- **Use semantic heading levels.** Though our default code uses an `<h4>`, use the correct heading level in your own implementation.
 - **Use visually hidden text on labels.** Use visually hidden text make the completion status of each step explicit.
 - **Indicate the current step.** When using labeled segments, use aria-current="true" on the list item representing the current step.
 - **Hide unlabeled segments.** There is no content inside the segments when labels aren’t used, so it is safe to add aria-hidden="true" to the element with the class name usa-step-indicator__segments.
