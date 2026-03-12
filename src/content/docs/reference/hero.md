@@ -26,6 +26,9 @@ description: Documentation for hero component.
 - **Keep body text to 10 to 30 words.** Support the callout with some short explanatary text. You don't need more than a couple of sentences.
 - **Choose a meaningful CTA** This will be the main action the whole page points towards. Ensure you are leading users to the most meaningful next step. 
 
+## Related
+- [Landing page template](https://designsystem.digital.gov/templates/landing-page/)
+
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
