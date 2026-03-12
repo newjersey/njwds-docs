@@ -3,7 +3,7 @@ title: Text input and area
 description: Documentation for text input and area component.
 ---
 
-**A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.**
+**A text input allows users to enter any combination of letters, numbers, or symbols and can span single or multiple lines.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
@@ -12,7 +12,7 @@ description: Documentation for text input and area component.
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"> </iframe>
 
-🔗 [View text area in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View text input / area in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
 ## Button Usage
 ### 👍 Use this component for
