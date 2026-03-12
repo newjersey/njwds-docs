@@ -5,7 +5,7 @@ description: Documentation for date pickers.
 
 **Date picker options**
 - **Date Picker:** A date picker helps users select a single date. 
-- **Memorable Date Picker:** A select for month followed by two text fields is the easiest way for users to enter most dates.
+- **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
@@ -117,6 +117,7 @@ These properties must be set before the component is initialized in order to hav
 | ----------- | ----------- |
 | [Figma NJWDS: Date pickers](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=39-1651&p=f&t=9zBPMXiCmdIEadOE-0) | Using date pickers in designs |
 | [Fractal: Date picker](https://newjersey.github.io/njwds/components/detail/date-picker--default.html) | Preview date picker styles, see code snippet |
+| [Fractal: Memorable Date picker (Date input)](https://newjersey.github.io/njwds/components/detail/date-input.html) | Preview date picker styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
