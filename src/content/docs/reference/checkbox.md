@@ -98,7 +98,7 @@ A multiple select question with checkbox tiles.
 
 
 ## Accessibility Guidance
-Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test button implementation.
+Use [USWDS checkbox accessibility tests](https://designsystem.digital.gov/components/checkbox/accessibility-tests) to test checkbox implementation.
 
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls](https://designsystem.digital.gov/components/form).
 - **Use a fieldset and legend for a checkbox group.** Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Don’t use fieldset and legend for a single check.
