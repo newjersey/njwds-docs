@@ -139,7 +139,7 @@ Embedding tools onto existing websites requires special consideration regarding 
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using button in designs, documentation and best practices on button usage |
+| [Figma NJWDS: Language selector](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1726-757&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
