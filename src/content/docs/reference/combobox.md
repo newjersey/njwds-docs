@@ -6,6 +6,7 @@ description: Documentation for combo box component.
 **Combobox is a searchable dropdown, allowing the user to choose from a long list of options.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
+
 ⚠️ **Known accessibility/usability issues ** ⚠️
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
@@ -47,7 +48,7 @@ description: Documentation for combo box component.
 
 
 ## Accessibility guidance
-Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
+Use the [USWDS combobox accessibility tests](https://designsystem.digital.gov/components/combo-box/accessibility-tests) to test combobox implementation.
 - **⚠️Known assistive technology issues.⚠️** Testing with people using assistive technology revealed [usability concerns](https://github.com/uswds/uswds-site/issues/1898) that require additional investigation. At this time, consider using a [Select component](https://designsystem.digital.gov/components/select) instead of a Combo box. More research and testing is planned to better understand and address these accessibility issues. If you would like to contribute to improving this component, please [join USWDS community](https://designsystem.digital.gov/about/community/) if you'd like to share your feedback.
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the accessibility requirements that apply to all form controls.
 - **Always use a label.** Make sure your select element has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the menu read “Select a state” by default).
