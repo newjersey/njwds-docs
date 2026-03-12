@@ -5,7 +5,7 @@ description: Documentation for illustration component.
 
 **Illustration help communicate meaning, demonstrate something complex, or help users visually find what they need.**
   
-🚧 Not present in NJWDS Fractal, custom NJWDS not in USWDS 🚧
+🚧 Custom implementation, not in NJWDS Fractal or USWDS 🚧
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
@@ -38,15 +38,10 @@ description: Documentation for illustration component.
 ## Figma properties
 | Property | Value |
 | ----------- | ----------- |
-| size | TBD |
 | illustration | [illustration swap] |
 
-## Code utilities
-TBD
 
 ## Accessibility guidance
-TBD
-
 - **Check for good color contrast.** Make sure that the illustration has a minimum contrast ratio of 3:1 against its background. 
 
 
@@ -55,4 +50,3 @@ TBD
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Illustration](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2852-3510&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
-| [Fractal: Illustration](https://newjersey.github.io/njwds/components/detail/icon.html) | Preview styles, see code snippet |
