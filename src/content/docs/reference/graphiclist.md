@@ -27,7 +27,7 @@ description: Documentation for graphic list component.
 - **Never highlight anything without a goal.** For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.
 
 ## Related
-- Landing page template
+- [Landing page template](https://designsystem.digital.gov/templates/landing-page/)
 
 ## Resources
 ### NJWDS links 
