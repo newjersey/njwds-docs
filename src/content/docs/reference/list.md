@@ -13,8 +13,8 @@ description: Documentation for List component.
   
 ## List Usage
 ### 👍 Use this component for
-- **Ordered list: Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
-Unordered list: Use unordered lists to display text in no specific order.
+- **Ordered list.** Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
+- **Unordered list.** Use unordered lists to display text in no specific order.
 
 ### 👎 Consider something else for
 - **If you need to communicate long lists of narrative text.**
