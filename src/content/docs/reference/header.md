@@ -169,6 +169,10 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 | `.usa-header--megamenu`| Display a megamenu.            |
 | `.usa-header--extended`| Display an extended header.    |
 
+## Related
+- [Documentation page template](https://designsystem.digital.gov/templates/documentation-page/)
+- [Landing page template](https://designsystem.digital.gov/templates/landing-page/)
+
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
