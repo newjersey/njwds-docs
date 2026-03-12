@@ -39,6 +39,14 @@ We limit the characters in the ZIP code field to numbers and the hyphen (-), fol
 [USPS Publication 28](https://pe.usps.com/text/pub28/28c1_001.htm) defines the mailing standards in the United States.
 
 
+## Related components
+Embedded components in this template that have their own guidance can be found below: 
+| Component | Purpose | 
+| ----------- | ----------- |
+| [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/) | A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines. |
+| [Select](https://turbo-adventure-n2vkrrm.pages.github.io/reference/select/) | A select component allows users to choose one option from a temporary modal menu. |
+
+
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
