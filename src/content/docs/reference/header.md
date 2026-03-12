@@ -83,7 +83,6 @@ An extended header allows for the inclusion of more sections in a horizontal nav
 ### When to Consider Something Else
 
 - **Simple site needs.** Consider using the basic header if you have less information — the basic header takes up less space.
-Explanation:
 
 
 ## Header variants
@@ -93,7 +92,7 @@ Explanation:
 | ----------- | ----------- |
 | mega menu | true, false |
 | search bar | true, false |
-| site title | text feild |
+| site title | [text input] |
 
 ### Megamenu
 #### Mega Menu with Extended header
@@ -114,7 +113,6 @@ Like an extended header, an extended header with a megamenu allows for the inclu
 ##### When to Consider Something Else
 
 - **Shallow hierarchy.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a very large number of sub-pages.
-Explanation:
 
 #### Mega menu with basic header
 The basic header with a megamenu is similar in design to the basic header component. The megamenu allows for the inclusion of more links in dropdown menus. You can customize this header (depending on your site structure) and use it with:
@@ -136,7 +134,6 @@ The basic header with a megamenu is similar in design to the basic header compon
 🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 #### Search bar
-**?**
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View search bar in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
@@ -183,5 +180,7 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Card accessibility tests](https://designsystem.digital.gov/components/card/accessibility-tests/) | Accessibility tests to run for card component |
+| [USWDS: Header](https://designsystem.digital.gov/components/header/) | Reference for additional styles and functionalities  |
+| [USWDS: Header utilities](https://designsystem.digital.gov/components/header/#implementation) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) | Accessibility tests to run for header component |
 
