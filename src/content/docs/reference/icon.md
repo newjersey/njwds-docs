@@ -56,7 +56,7 @@ CSS classes can be used to manipulate icon size. By default, icons with the `.us
 
 
 ## Accessibility guidance
-Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/components/icon/accessibility-tests) to test button implementation.
+Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/components/icon/accessibility-tests) to test icon implementation.
 - **Hide decorative icons from screen readers.** Icons are decorative if they don’t provide meaningful information to the user. Usually, decorative icons are accompanied by text. Announcing a decorative icon is redundant and can be annoying. Use the aria-hidden="true" and role="img", as in the following code:
 
 `<a href="https://twitter.com/uswds">
@@ -66,7 +66,7 @@ Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/compon
   USWDS' Twitter account
 </a>`
 
-- **Provide descriptive text if a standalone icon has meaning or provides functionality.** If an icon provides information or functionality that people cannot understand from accompanying text, you need to make the icon perceivable to people who use screen readers. Remove the aria-hidden="true" attribute and add an aria-labelledby attribute with a value that matches the id of a <title> element added inside the SVG, as in the following code:
+- **Provide descriptive text if a standalone icon has meaning or provides functionality.** If an icon provides information or functionality that people cannot understand from accompanying text, you need to make the icon perceivable to people who use screen readers. Remove the `aria-hidden="true"` attribute and add an `aria-labelledby` attribute with a value that matches the `id` of a `<title>` element added inside the SVG, as in the following code:
 
 `<a href="https://twitter.com/uswds">
   <svg aria-labelledby="twitter-title" role="img">
@@ -77,7 +77,6 @@ Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/compon
 
 - **Check for good color contrast.** Make sure that the icon has a minimum contrast ratio of 3:1 against its background. See the USWDS color and accessibility page as well as WCAG 2.1 Techniques: Ensuring that a contrast ratio of 3:1 is provided for icons for more information.
 - **Place icons inside links.** If icons accompany a text link, place the icon inside the link to prevent screen readers from announcing the link twice.
-
 
 ## Resources
 ### NJWDS links 
