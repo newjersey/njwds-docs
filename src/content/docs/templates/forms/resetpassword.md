@@ -27,6 +27,11 @@ description: Form template for password reset.
 ## Accessibility guidance
 As you customize this form template, make sure it continues to follow the [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
+## Related
+- [Alert](https://turbo-adventure-n2vkrrm.pages.github.io/reference/alert/)
+- [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/)
+- [Button](https://turbo-adventure-n2vkrrm.pages.github.io/reference/button/)
+
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
