@@ -58,7 +58,7 @@ Use the [USWDS time picker accessibility tests](https://designsystem.digital.gov
 
 ## Code utilities 
 
-### Combobox initialization properties 
+### Time picker initialization properties 
 The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
 | Property | Element | Description | 
 | ----------- | ----------- | ----------- |
@@ -67,7 +67,7 @@ The following properties update the component during initialization. These prope
 | `data-step` | `usa-time-picker` | The number of minutes between options. The minimum is `1` minute and the default is `30` minutes. |
 | `value` | `usa-input` | The default value shown in the time picker.. |
 
-### Combobox properties 
+### Time picker properties 
 The following properties modify component functionality. These properties can be set or adjusted at any time before or after initialization in order to have an effect.
 | Property | Element | Description | 
 | ----------- | ----------- | ----------- |
