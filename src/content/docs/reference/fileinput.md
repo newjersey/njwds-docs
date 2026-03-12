@@ -5,7 +5,7 @@ description: Documentation for file input.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
@@ -44,14 +44,14 @@ description: Documentation for file input.
 
 #### Default
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 
 #### Error
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
@@ -60,20 +60,20 @@ description: Documentation for file input.
 
 #### Single
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 
 #### Multiple
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 
 ### Preview Files
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
