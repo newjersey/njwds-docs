@@ -14,7 +14,8 @@ description: Documentation for date pickers.
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"></iframe>
 
-🔗 [View date pickers in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View date picker in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View memorable date picker in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 ## Date Picker Usage
 
@@ -116,7 +117,6 @@ These properties must be set before the component is initialized in order to hav
 | ----------- | ----------- |
 | [Figma NJWDS: Date pickers](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=39-1651&p=f&t=9zBPMXiCmdIEadOE-0) | Using date pickers in designs |
 | [Fractal: Date picker](https://newjersey.github.io/njwds/components/detail/date-picker--default.html) | Preview date picker styles, see code snippet |
-| Fractal : Memorable date picker | Preview date picker styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
