@@ -26,6 +26,9 @@ description: Documentation for graphic list component.
 - **Keep body text to about 30 words.** They can be shorter, but try to be somewhat balanced across all the items in the graphic list.
 - **Never highlight anything without a goal.** For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.
 
+## Related
+- Landing page template
+
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
