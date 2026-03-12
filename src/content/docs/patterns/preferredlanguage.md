@@ -1,6 +1,6 @@
 ---
 title: Preferred Language Selection
-description: Documentation for conditional feilds.
+description: Documentation for preferred language pattern.
 ---
 
 **Help a user to choose the languages they prefer for communication.**
@@ -44,6 +44,9 @@ Translation and navigation functions in languages other than English should stil
 
 ### Accessibility
 **Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example). See H57: Using the language attribute on the HTML element for more information.
+
+## Related 
+- [Language selector](https://turbo-adventure-n2vkrrm.pages.github.io/reference/languageselector/)
 
 ## Resources
 ### USWDS
