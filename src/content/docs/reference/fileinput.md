@@ -9,9 +9,8 @@ description: Documentation for file input.
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
-## File Input Usage
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+## File Input Usage
 
 ### 👍 Use this component for
 - **Documents are required.** Ask users to provide files when it’s necessary.
@@ -42,37 +41,49 @@ description: Documentation for file input.
 | number of files | [text input] |
 
 ### States
+
 #### Default
+
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
 
 #### Error
+
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
 
 ### Amount of Files
+
 #### Single
+
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
 
 #### Multiple
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
+
 ### Preview Files
+
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 
 🔗 [View file input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+
 
 ## Accessibility guidance
 Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/components/file-input/accessibility-tests) to test file input implementation.
 - **Use Proper Labels and Attributes.** Each file input should have a `label` element.** Associate the `label` to your input by defining the value of the label’s `for` attribute with the input’s `id`.
 - **Use as a Progressive Enhancement** The file input component should be a progressive enhancement of `<input type="file" />`. If the component doesn’t initialize, it should still work and appear like a standard file input.
 🚨**Known Issues** Screen reader users found it confusing to have both “Drag file here” and “Choose from folder” actions described in a single button. 
+
 
 ## Code utilities 
 
