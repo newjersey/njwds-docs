@@ -13,7 +13,7 @@ description: Documentation for identifier component.
   
 ## NJ Identifier Usage
 ### 👍 Use this component for
-- **To identify the highest-level agency** associated with a site or service. The identifier is a complement to the [USWDS banner](https://designsystem.digital.gov/components/identifier/). Use the identifier to tell users what parent agency is responsible for your website. Consider the parent agency the highest-level agency associated with a site or service. If your site is the primary site associated with an agency, you can still use the identifier.
+- **To identify the highest-level agency** associated with a site or service. The identifier is a complement to the [NJ Banner](https://turbo-adventure-n2vkrrm.pages.github.io/njcomponents/njbanner/). Use the identifier to tell users what parent agency is responsible for your website. Consider the parent agency the highest-level agency associated with a site or service. If your site is the primary site associated with an agency, you can still use the identifier.
 - **To display links required by federal laws and policies.** The identifier includes [links required on all government sites](https://digital.gov/resources/required-web-content-and-links/).
 
 ### 👎 Consider something else for
