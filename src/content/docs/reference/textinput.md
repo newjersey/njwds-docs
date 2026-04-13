@@ -38,7 +38,7 @@ description: Documentation for text input and area component.
 
 
 ## Text Input
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-text-input--default&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View text input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
@@ -86,7 +86,7 @@ The following classes can be added to input elements with class usa-input to adj
 
 
 ## Text Area
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View text area in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
