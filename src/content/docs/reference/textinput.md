@@ -13,6 +13,7 @@ description: Documentation for text input and area component.
 <iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" frameborder="1" scrolling="no" width="49%" height:600px align="right"> </iframe>
 
 🔗 [View text input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs)
+
 🔗 [View text area in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-textarea--docs)
   
 ## Text Input or Area Usage
