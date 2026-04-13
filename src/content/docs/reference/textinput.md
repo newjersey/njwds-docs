@@ -9,10 +9,11 @@ description: Documentation for text input and area component.
 
 ##
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-text-input--default&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"> </iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-text-input--default&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%"> </iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%"> </iframe>
 
-🔗 [View text input / area in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View text input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs)
+🔗 [View text area in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-textarea--docs)
   
 ## Text Input or Area Usage
 ### 👍 Use this component for
