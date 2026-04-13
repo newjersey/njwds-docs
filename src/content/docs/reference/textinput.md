@@ -139,6 +139,8 @@ Use the [USWDS text input / area accessibility tests](https://designsystem.digit
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Text input / area](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19656&p=f&t=xEncjmi7erLwzVH8-0) | Using in designs |
+| [Storybook: Text Input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs) | Interactive preview, code snippet, variants |
+| [Storybook: Text Area](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-textarea--docs&args=characterCounter:!false) | Interactive preview, code snippet, variants |
 | [Fractal: Text input / area](https://newjersey.github.io/njwds/components/detail/text-input.html) | Preview styles, see code snippet |
 
 ### USWDS links 
