@@ -9,7 +9,7 @@ description: Documentation of the table component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story&args=border%3Afalse" width="100%" height="100"></iframe>
 
 🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
   
@@ -53,20 +53,18 @@ description: Documentation of the table component.
 
 ## Type
 ### Bordered
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 ### Not Bordered
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story&args=border%3Afalse" width="100%" height="100"></iframe>
 
 🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 ## Responsive
 ### Responsive Stacked
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+Not available in Storybook
 
 ## Accessibility Guidance
 Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/components/table/accessibility-tests) to test implementation.
