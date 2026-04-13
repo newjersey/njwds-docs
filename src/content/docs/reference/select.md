@@ -7,9 +7,9 @@ description: Documentation for select component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Select preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-select--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View select in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View select in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-select--docs&args=characterCounter:!false)
 
 ## Select Usage
 
@@ -60,6 +60,7 @@ Use [USWDS select accessibility tests](https://designsystem.digital.gov/componen
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Select](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=28-26&p=f&t=ER1CI2PNGfstfiVR-0) | Using in designs |
+| [Storybook: Select](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-select--docs&args=characterCounter:!false) | Interactive preview, code snippet, variants |
 | [Fractal: Select](https://newjersey.github.io/njwds/components/detail/dropdown.html) | Preview styles, see code snippet |
 
 ### USWDS links 
