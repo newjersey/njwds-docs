@@ -9,12 +9,12 @@ description: Documentation for text input and area component.
 
 ##
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"> </iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-text-input--default&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"> </iframe>
 
 🔗 [View text input / area in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
   
-## Button Usage
+## Text Input or Area Usage
 ### 👍 Use this component for
 - **Unpredictable or freeform responses.** If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
 - **Input simplicity.** When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a date picker.
