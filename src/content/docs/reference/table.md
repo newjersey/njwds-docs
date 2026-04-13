@@ -9,9 +9,9 @@ description: Documentation of the table component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story&args=border%3Afalse" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View table in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs)
   
 ## Table Usage
 ### 👍 Use this component for
@@ -55,12 +55,12 @@ description: Documentation of the table component.
 ### Bordered
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View table in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs)
 
 ### Not Bordered
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story&args=border%3Afalse" width="100%" height="100"></iframe>
 
-🔗 [View table in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View table in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs)
 
 ## Responsive
 ### Responsive Stacked
@@ -88,10 +88,11 @@ Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/com
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Table](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3034-1111&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
+| [Storybook: Table](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs) | Interactive preview, code snippet, variants |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Table](https://designsystem.digital.gov/components/table/) | Reference for additional styles and functionalities  |
 | [USWDS: Table utilities](https://designsystem.digital.gov/components/table/#guidance)  | Guidance on how to use this component |
-| [USWDS: Summary box accessibility tests](https://designsystem.digital.gov/components/table/accessibility-tests) | Accessibility tests to run for component |
+| [USWDS: Table accessibility tests](https://designsystem.digital.gov/components/table/accessibility-tests/) | Accessibility tests to run for component |
