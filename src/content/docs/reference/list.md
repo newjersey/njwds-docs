@@ -45,7 +45,7 @@ description: Documentation for List component.
 ### Unstyled
 <iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-list--basic&viewMode=story&args=unstyled%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View unstyled list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
 
 ## Accessibility guidance
 Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests) to test implementation.
