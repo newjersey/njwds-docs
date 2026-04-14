@@ -7,9 +7,9 @@ description: Documentation for identifier component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Identifier" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-identifier--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View identifier in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View identifier in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-identifier--docs)
   
 ## NJ Identifier Usage
 ### 👍 Use this component for
@@ -53,9 +53,9 @@ description: Documentation for identifier component.
 ### Language
 - **Use the Spanish version for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Identifier" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-identifier--default&viewMode=story&args=language%3ASpanish" width="100%" height="100"></iframe>
 
-🔗 [View spanish identifier in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View identifier in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-identifier--docs)
 
 
 ### Agency Logos
@@ -65,12 +65,6 @@ description: Documentation for identifier component.
   
 ### Hiding Taxpayer Disclaimer or NJ.gov
 - **If applicable, include any taxpayer disclaimer after the standard text.** If the organization must provide a taxpayer expense disclaimer, include it following the “Official website” text, as a separate sentence. For example, “An official website of [Department]. Produced and published at taxpayer expense.”
-
-### Screen Size
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View screen sizes of identifier in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 
 ## Accessibility guidance
@@ -97,8 +91,6 @@ Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/
 | link item | `usa-identifier__required-links-item` | Use for link item |
 
 
-Demos of these variants can be found on the [Fractal: Identifier page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
-
 ## Resources
 
 ### NJWDS links 
@@ -106,6 +98,7 @@ Demos of these variants can be found on the [Fractal: Identifier page](https://n
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: NJ Identifier](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2905-151&p=f&t=Yx31eAZO0ULNN6UA-0) | Using identifier in designs, documentation and best practices on identifier usage |
+| [Storybook: Identifier](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-identifier--docs) | Interactive example, code snippet, variants |
 | [Fractal: Identifier](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview identifier styles, see identifier code snippet |
 
 ### USWDS links 
