@@ -1,13 +1,15 @@
 ---
-title: NJ Banner
+title: NJ Banner 🚧
 description: Documentation for custom NJWDS banner.
 ---
 
 **Custom NJWDS banner component for NJIA-built websites and web apps.**
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+🚧 Mobile version differences between Figma and Fractal 🚧
 
-🔗 [View banner in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+<iframe title="Banner" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-banner--basic&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View banner in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true)
 
 ## NJ Banner Usage
 ### 👍 Use this component for
@@ -53,6 +55,7 @@ NJWDS provides a number of CSS classes that can be applied to various elements w
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: NJ Banner](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=198-798&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Banner](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true) | Interactive example, code snippets, variants |
 | [Fractal: Banner](https://newjersey.github.io/njwds/components/detail/banner.html) | Preview styles, see code snippet |
 
 ### USWDS links 
