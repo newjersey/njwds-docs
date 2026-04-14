@@ -20,7 +20,7 @@ description: Documentation for date pickers.
 
 🔗 [View date picker in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-picker--docs)
 
-🔗 [View memorable date picker in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View memorable date picker in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-date--default&viewMode=story)
 
 🔗 [View date range picker in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-range-picker--docs)
 
@@ -46,7 +46,7 @@ description: Documentation for date pickers.
 
 ## Memorable Date Picker Usage
 
-<iframe title="Memorable date picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Memorable date picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-date--default&viewMode=story" width="100%" height="100"></iframe>
 
 ### 👍 Use this component for
 - **Appropriate for most dates.** This component is appropriate for most dates.
@@ -141,6 +141,7 @@ These properties must be set before the component is initialized in order to hav
 | ----------- | ----------- |
 | [Figma NJWDS: Date pickers](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=39-1651&p=f&t=9zBPMXiCmdIEadOE-0) | Using date pickers in designs |
 | [Storybook: Date picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-picker--docs) | Interactive example, code snippet, variants |
+| [Storybook: Memorable date picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-date--docs) | Interactive example, code snippet, variants |
 | [Storybook: Date range picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-range-picker--docs) | Interactive example, code snippet, variants |
 | [Fractal: Date picker](https://newjersey.github.io/njwds/components/detail/date-picker--default.html) | Preview date picker styles, see code snippet |
 | [Fractal: Memorable Date picker (Date input)](https://newjersey.github.io/njwds/components/detail/date-input.html) | Preview date picker styles, see code snippet |
