@@ -1,17 +1,17 @@
 ---
 title: Tag
-description: Documentation for card component.
+description: Documentation for tag component.
 ---
 
 **A tag draws attention to new or categorized content elements.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Tag" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-tag--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View tag in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View tag in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true)
   
-## Card Usage
+## Tag Usage
 ### 👍 Use this component for
 - **To draw attention to new, important content.** Tags can focus attention on important content on that might otherwise be missed.
 - **To filter results with one or more tags.**
@@ -30,10 +30,10 @@ description: Documentation for card component.
 
 
 ## Content guidelines
-- **?**
+- TBD
 
 
-## Card Types
+## Tag Types
 
 ### Figma Type properties
 | Property | Value |
@@ -41,14 +41,14 @@ description: Documentation for card component.
 | type | default, big |
 
 ### Default Tag
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Tag" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-tag--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View default tag in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View tag in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true)
 
 ### Big Tag
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Tag" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-tag--basic&viewMode=story&args=size%3Abig"></iframe>
 
-🔗 [View big tag in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View tag in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true)
 
 
 ## Accessibility guidance
@@ -67,6 +67,7 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Tag](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
+| [Storybook: Tag](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true) | Interactive example, code snippet, variants |
 | [Fractal: Tag](https://newjersey.github.io/njwds/components/detail/labels--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
