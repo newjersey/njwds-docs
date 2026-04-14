@@ -6,20 +6,23 @@ description: Documentation for date pickers.
 **Date picker options**
 - **Date Picker:** A date picker helps users select a single date. 
 - **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
+- **Date Range Picker:** A set of date pickers to allow for selecting date ranges.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 ###
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"></iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-picker--default&viewMode=story" frameborder="1" scrolling="no" width="100" height="100%"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100" height="100%"></iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-range-picker--default&viewMode=story" frameborder="1" scrolling="no" width="100" height="100%"></iframe>
 
-🔗 [View date picker in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View date picker in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-picker--docs)
 🔗 [View memorable date picker in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View date range picker in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-range-picker--docs)
 
 ## Date Picker Usage
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Date picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-picker--default&viewMode=story" width="100%" height="100"></iframe>
 
 ### 👍 Use this component for
 - **Scheduling.** When users need to schedule or record an event, and benefit from the context of a calendar.
@@ -38,7 +41,7 @@ description: Documentation for date pickers.
 
 ## Memorable Date Picker Usage
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Memorable date picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 ### 👍 Use this component for
 - **Appropriate for most dates.** This component is appropriate for most dates.
@@ -46,6 +49,21 @@ description: Documentation for date pickers.
 ### 👎 Consider something else for
 - **Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
 - **Date ranges.** This component does not accommodate date ranges.
+
+### 🚫 What to ensure / avoid
+- **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
+- **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+
+
+## Date Range Picker Usage
+
+<iframe title="Date range picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-range-picker--default&viewMode=story" width="100%" height="100"></iframe>
+
+### 👍 Use this component for
+- **Date ranges.** This component is appropriate for collecting date ranges, such as availability.
+
+### 👎 Consider something else for
+- **Single dates.** This component does not accommodate single dates.
 
 ### 🚫 What to ensure / avoid
 - **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
@@ -94,7 +112,7 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 ## Code utilities 
 
 ### Date picker properties 
-These properties take effect regardless of whether they are set or adjusted before or after initialization. Demos of these properties can be found on the [Fractal: Date picker](https://newjersey.github.io/njwds/components/detail/date-picker--default.html) page.
+
 | Property | Element | Description | 
 | ----------- | ----------- | ----------- |
 | `data-min-date` | `.usa-date-picker` | The date picker will not allow a date selection before this date. The date should be in the format `YYYY-MM-DD`. Typing in an earlier date will cause native form validation error. A default min date or `0000-01-01` is used as a default. | 
@@ -103,6 +121,7 @@ These properties take effect regardless of whether they are set or adjusted befo
 
 ### Initialization properties 
 These properties must be set before the component is initialized in order to have an effect. Demos of these properties can be found on the These properties must be set before the component is initialized in order to have an effect. Demos of these properties can be found on the Fractal: Date picker page. page.
+
 | Property | Element | Description | 
 | ----------- | ----------- | ----------- |
 | `required` | `input` | The date picker component will be required in terms of native form validation. | 
@@ -116,6 +135,8 @@ These properties must be set before the component is initialized in order to hav
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Date pickers](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=39-1651&p=f&t=9zBPMXiCmdIEadOE-0) | Using date pickers in designs |
+| [Storybook: Date picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-picker--docs) | Interactive example, code snippet, variants |
+| [Storybook: Date range picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-range-picker--docs) | Interactive example, code snippet, variants |
 | [Fractal: Date picker](https://newjersey.github.io/njwds/components/detail/date-picker--default.html) | Preview date picker styles, see code snippet |
 | [Fractal: Memorable Date picker (Date input)](https://newjersey.github.io/njwds/components/detail/date-input.html) | Preview date picker styles, see code snippet |
 
