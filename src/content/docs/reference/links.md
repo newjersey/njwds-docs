@@ -7,25 +7,26 @@ description: Documentation for link component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-link--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View link in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs)
 
 
 ## Link Usage
 
 ### 👍 Use this component for
-- **Clearly identify external links.** The external link icon () is a good way to communicate that a link is external.
-- **Notify users about non-federal links.** Review [this resource on Digital.gov](https://digital.gov/resources/required-web-content-and-links) for guidance on non-federal link requirements.
+- **Navigation** to another page within a website or an external website
 
 ### 👎 Consider something else for
-- TBD
+- **Tertiary actions** within a page (ex: Print, Cancel)
 
 ### 🚫 What to ensure / avoid
+- **Clearly identify external links.** The external link icon is a good way to communicate that a link is external.
 - **Don’t rely on only color to distinguish links.** Include an underline or bottom border on text links, in addition to a consistent link color. 
 - **Don’t block external links with disruptive notifications.** Allow users to follow external links without taking a separate action to acknowledge leaving your site. Roadblock notices, such as modals and dialog boxes, result in a poor user experience. Instead, communicate about a link’s destination through descriptive link text and external link indicators. Use your site’s policy and notices page to provide important information about non-government sites without disrupting the user experience (see content guidance for more).
 - **Simplify link placement in body text.** A link requires mental effort, which affects readability. Reduce the number of links in a single sentence to simplify its message. Consider placing links at the beginning or end of sentences to improve readability.
 - **Link directly to the most relevant page.** Avoid links to pages that require further user action to locate the intended information.
+- **Notify users about non-government links.** Review [this resource on Digital.gov](https://digital.gov/resources/required-web-content-and-links) for guidance on non-federal link requirements.
 - **Indicate nonpublic links that require authentication.** Use text or an indicator like a lock icon to signal any link that is not available publicly. This includes links behind a login or other authentication like a paywall.
 
   - **Example 1:**  
@@ -92,27 +93,23 @@ description: Documentation for link component.
 | link text | [link text] |
 
 ### Mode
-#### Default
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+#### Default and On-Dark
+<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-link--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View default link in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs)
 
-#### On-Dark
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View on dark link in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 ### State
 #### Visited
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View visited link in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)
 
 ### Icon
 #### External Icon
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-link--basic&viewMode=story&args=external%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View external link in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)
 
 ## Code utilities
 ### Link variants 
@@ -132,6 +129,7 @@ Link hover state should be visible on focus. Users should be able to activate ho
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Link](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2776-427&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
+| [Storybook: Link]([https://newjersey.github.io/njwds/components/detail/icon.html](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)) | Interactive example, see code snippet, see variants |
 | [Fractal: Link](https://newjersey.github.io/njwds/components/detail/icon.html) | Preview styles, see code snippet |
 
 ### USWDS links 
