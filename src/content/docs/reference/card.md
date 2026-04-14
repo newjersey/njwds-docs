@@ -7,9 +7,9 @@ description: Documentation for card component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View card in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
   
 ## Card Usage
 ### 👍 Use this component for
@@ -30,7 +30,7 @@ description: Documentation for card component.
 
 
 ## Content guidelines
-- **?**
+- TBD
 
 
 ## Card Types
@@ -44,18 +44,19 @@ description: Documentation for card component.
 - **Mobile-first design.** They stack and adapt to mobile screens.
 - **Visual-heavy content** Ideal for image-driven content.
 - **Browsing and discovery.** When users are skimming through items.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+- 
+<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View default card in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
+
 
 ### Flag Cards
 - **Desktop/Wide Screens** Better for using horizontal space and reducing vertical scrolling.
 - **Text-Heavy/Detailed Content.** Ideal when information needs to be read rather than just scanned.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=layout%3AFlag" width="100%" height="100"></iframe>
 
-
-🔗 [View flag card in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
 
 
 ## Card variants
@@ -71,19 +72,19 @@ description: Documentation for card component.
 
 ### Media
 #### Left or Right Side Media
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=layout%3AFlag%3BflagPositionRight%3A!true" width="100%" height="100"></iframe>
 
-🔗 [View media card in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
 
 #### Inset Media
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=mediaInset%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View inset media card in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
 
 #### No Media
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=media%3Afalse" width="100%" height="100"></iframe>
 
-🔗 [View no media card in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
 
 
 ## Accessibility guidance
@@ -111,6 +112,7 @@ Use the [USWDS card accessibility tests](https://designsystem.digital.gov/compon
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Card]([https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1625-667&p=f&t=OWFjainTs6OfqOdE-0)) | Using in designs |
+| [Storybook: Card](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs&args=label:;icon:!true) | Interactive example, code snippet, variants |
 | [Fractal: Card](https://newjersey.github.io/njwds/components/detail/card--compare.html) | Preview styles, see code snippet |
 
 ### USWDS links 
