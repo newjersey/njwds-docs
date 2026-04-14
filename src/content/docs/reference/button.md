@@ -7,9 +7,9 @@ description: Documentation for button component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=label:Button;type:tertiary;theme:danger;icon:!false)
   
 ## Button Usage
 ### 👍 Use this component for
@@ -17,7 +17,6 @@ description: Documentation for button component.
 
 ### 👎 Consider something else for
 - **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
-- **Less popular or less important actions.** Less popular or less important actions may be visually styled as links.
 
 ### 🚫 What to avoid
 - **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
@@ -44,10 +43,10 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 ### Primary buttons
 **Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
 
-🔗 [View primary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View primary button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-button--primary)
 
 #### Code Primary Variants
 | Type | Mode | Applied Variants |
@@ -58,10 +57,11 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
   
 ### Secondary buttons
 **Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=type%3Asecondary" width="100%" height="100"></iframe>
 
-🔗 [View secondary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View secondary button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-button--secondary)
+
 
 #### Code Secondary Variants
 | Type | Mode | Applied Variants |
@@ -70,12 +70,12 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | secondary | dark | `usa-button usa-button--outline usa-button--inverse` |
 | secondary | danger | `usa-button usa-button--outline nj-button--outline-danger` |
 
-### Tertiary/Link buttons
+### Tertiary buttons
 **Use for actions that are allowed but potentially discouraged or uncommon.** These actions are not the main focus of the page or component, and should not distract from the primary task the user is expected to complete.
-<iframe title="Button preview" frameborder="0.5" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story" width="100%"></iframe>
 
+<iframe title="Button preview" frameborder="0.5" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=type%3Atertiary" width="100%"></iframe>
 
-🔗 [View tertiary button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--tertiary-(light).html)
+🔗 [View tertiary button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-button--tertiary)
 
 
 #### Code Tertiary Variants
@@ -113,9 +113,10 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 ### Light mode
 **This is the typical use case of buttons.** It should be used anytime a button is for a general use case and on a light background.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs)
 
 | Light Variant Class | Description | 
 | ----------- | ----------- |
@@ -123,11 +124,12 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | `usa-button-outline` | Used for secondary type |
 | `usa-button-unstyled` | Used for tertiary type |
 
+
 ### Dark mode
 **Use this for typical use cases when buttons appear on a dark background.**
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adark" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adark" width="100%" height="100"></iframe>
 
-🔗 [View primary (on) dark button in Storybook](https://pr-158.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=theme:dark)
+🔗 [View button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs)
 
 | Dark Variant Class | Description | 
 | ----------- | ----------- |
@@ -138,9 +140,9 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 ### Danger mode
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
 
-🔗 [View primary danger button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
+🔗 [View button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs)
 
 | Danger Variant Class | Description | 
 | ----------- | ----------- |
@@ -151,18 +153,16 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 
 ## Icons in Buttons
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View icons in buttons in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 ### Icon with text
 Use to clarify the purpose of the button further, indicate directionality, etc.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=icon%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs)
   
 ℹ️ **To use:** Toggle on the leading or trailing icon in the button component.
+
 
 ### Icon only
 An icon can be used in place of text to demonstrate a button's meaning.
@@ -212,6 +212,7 @@ When styling links to look like buttons, remember that screen readers handle lin
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using in designs |
+| [Storybook: Button](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=icon:!true) | Interative examples, see code snippet, see variants |
 | [Fractal: Button](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview styles, see code snippet |
 
 ### USWDS links 
