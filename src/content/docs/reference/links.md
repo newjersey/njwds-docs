@@ -16,6 +16,7 @@ description: Documentation for link component.
 
 ### 👍 Use this component for
 - **Navigation** to another page within a website or an external website
+- **Access** a file or email address
 
 ### 👎 Consider something else for
 - **Tertiary actions** within a page (ex: Print, Cancel)
