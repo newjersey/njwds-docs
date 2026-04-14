@@ -7,9 +7,9 @@ description: Documentation for footer component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
   
 ## Footer Use
 ### 👍 Use this component for
@@ -28,7 +28,6 @@ description: Documentation for footer component.
 - **Limit contact information to email and phone.** Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.
 
 
-
 ## Content guidelines
 - TBD
 
@@ -39,41 +38,30 @@ description: Documentation for footer component.
 | Property | Value | Description |
 | ----------- | ----------- | ----------- |
 | screen size | mobile, tablet, desktop | Breakpoint-based layout variations optimized for mobile, tablet, and desktop. |
-| type | simple, with-contact, complex | Level of footer complexity, ranging from simple layouts to versions with contact and social information. |
+| type | slim, default, big | Level of footer complexity, ranging from simple layouts to versions with contact and social information. |
 | sign up form | true, false | Option to hide sign up form on complex footer type. |
 | socials | true, false | Option to hide socials on with-contact and complex footer types. |
 
-### Simple
+### Default (Contact Info) 
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View simple footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
-###  With-contact
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View with contact footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
-### Complex
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View complex footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
 
 
-### Screen Size
+### Slim (No Contact Info)
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story&args=variant%3ASlim" width="100%" height="100"></iframe>
 
-🔗 [View screen sizes of footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
 
 
-###  Hide socials or sign up form
+### Big (Contact Info + Links)
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story&args=variant%3ABig" width="100%" height="100"></iframe>
 
-🔗 [View with hide socials or sign up form footer in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
+
 
 ## Accessibility guidance
 Use the [USWDS footer accessibility tests](https://designsystem.digital.gov/components/footer/accessibility-tests/) to test footer implementation.
@@ -112,8 +100,6 @@ The following classes can be added to the `<footer>` element to determine the st
 | `usa-footer--big` | A multi-column footer that expands and collapses on mobile. Elements within the footer will be styled with a more spacious look: Nav menus will have more padding, Links within nav menus will have more padding, Nav menus may be sorted into vertical lists of "topics" that each contain a list of related links |
 
 
-Demos of these variants can be found on the [Fractal: Footer page](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html).
-
 ## Resources
 
 ### NJWDS links 
@@ -121,8 +107,8 @@ Demos of these variants can be found on the [Fractal: Footer page](https://newje
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Footer](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=512-174&t=iqL6YX4GteFnJQKf-1) | Figma component with variable styles applied |
+| [Fractal: Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs) | Interactive example, code snippet, variants |
 | [Fractal: Footer](https://newjersey.github.io/njwds/components/detail/footer--default.html) | Preview styles, see code snippet |
-| [Footer settings: variables and variants ](https://office-of-innovation.gitbook.io/njwds/footer#code) | Utilities to use in styling (NJWDS specific) |
 
 ### USWDS links 
 | File | Purpose | 
