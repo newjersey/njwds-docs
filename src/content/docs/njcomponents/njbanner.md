@@ -5,7 +5,7 @@ description: Documentation for custom NJWDS banner.
 
 **Custom NJWDS banner component for NJIA-built websites and web apps.**
 
-🚧 Mobile version differences between Figma and Fractal 🚧
+🚧 Mobile version differences between Figma and Storybook 🚧
 
 <iframe title="Banner" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-banner--basic&viewMode=story" width="100%" height="100"></iframe>
 
