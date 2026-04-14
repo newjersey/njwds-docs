@@ -7,9 +7,9 @@ description: Documentation for icon component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Icon" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-icon--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View icon in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View icon in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-icon--docs)
 
 
 ## Icon Usage
@@ -83,6 +83,7 @@ Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/compon
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Icon](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2588-22&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Icon](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-icon--docs) | Interactive example, code snippet, variants |
 | [Fractal: Icon](https://newjersey.github.io/njwds/components/detail/icon.html) | Preview styles, see code snippet |
 
 ### USWDS links 
