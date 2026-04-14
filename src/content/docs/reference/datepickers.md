@@ -12,9 +12,11 @@ description: Documentation for date pickers.
 
 ###
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-picker--default&viewMode=story" frameborder="1" width="100" height="100%"> </iframe>
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" width="100" height="100%"></iframe>
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-range-picker--default&viewMode=story" frameborder="1" width="100" height="100%"></iframe>
+<iframe title="Date picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-picker--default&viewMode=story" width="100%" height="100"></iframe>
+
+<iframe title="Memorable date picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+
+<iframe title="Date range picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-date-range-picker--default&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View date picker in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-picker--docs)
 
