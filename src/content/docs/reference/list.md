@@ -7,9 +7,9 @@ description: Documentation for List component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-list--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
   
 ## List Usage
 ### 👍 Use this component for
@@ -33,17 +33,17 @@ description: Documentation for List component.
 | type | ordered, unordered, unstyled |
 
 ### Ordered
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View ordered list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
 
 ### Unordered
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-list--basic&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View unordered list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
 
 ### Unstyled
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-list--basic&viewMode=story&args=unstyled%3Atrue" width="100%" height="100"></iframe>
 
 🔗 [View unstyled list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
@@ -63,8 +63,9 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Tag](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
-| [Fractal: Tag](https://newjersey.github.io/njwds/components/detail/labels--default.html) | Preview styles, see code snippet |
+| [Figma NJWDS: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
+| [Storybook: List](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs) | Interactive example, see code snippet, see variants |
+| [Fractal: List](https://newjersey.github.io/njwds/components/detail/labels--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
