@@ -33,7 +33,7 @@ description: Documentation for identifier component.
 
 
 ## Content guidelines
-- ?
+- TBD
 
 
 ## NJ Identifier States
