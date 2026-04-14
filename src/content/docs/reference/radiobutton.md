@@ -5,7 +5,7 @@ description: Documentation for radio button component.
 
 **Radio buttons allow users to select exactly one choice from a group.**
   
-✅ _Passed WCAG 2.1 AA (USWDS component)_
+✅ _Passed WCAG 2.1 AA (USWDS component)_ 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-radio--default&viewMode=story" width="100%" height="100"></iframe>
 
