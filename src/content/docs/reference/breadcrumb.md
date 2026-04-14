@@ -7,9 +7,9 @@ description: Documentation for breadcrumb component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-breadcrumb--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
+🔗 [View breadcrumb in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-breadcrumb--docs&args=label:;icon:!true)
 
 
 ## Breadcrumb Usage
@@ -36,9 +36,9 @@ description: Documentation for breadcrumb component.
 ## Breadcrumb Variants
 
 ### Default Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-breadcrumb--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View default breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
+🔗 [View breadcrumb in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-breadcrumb--docs&args=label:;icon:!true)
 
 #### Figma proporties
 | Property | Value |
@@ -51,9 +51,9 @@ description: Documentation for breadcrumb component.
 | Default | `usa-breadcrumb` |
 
 ### Wrapping Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-breadcrumb--default&viewMode=story&args=wrap%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View wrapping breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
+🔗 [View breadcrumb in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-breadcrumb--docs&args=label:;icon:!true)
 
 #### Figma proporties
 | Property | Value |
@@ -64,13 +64,6 @@ description: Documentation for breadcrumb component.
 | Style | Applied Variants | 
 | ----------- | ----------- |
 | Wrapping | `usa-breadcrumb usa-breadcrumb--wrap` |
-
-
-### Mobile Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View mobile breadcrumb in Storybook](https://newjersey.github.io/njwds/components/preview/button--primary-(light).html)
-
 
 
 ## Accessibility guidance
@@ -112,6 +105,7 @@ Use the [USWDS breadcrumb accessibility tests](https://designsystem.digital.gov/
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Breadcrumb](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2788-628&t=p48LIM8AA1I9QJOL-0) | Using breadcrumb in designs, documentation and best practices on breadcrumb usage |
+| [Storybook: Breadcrumb](https://newjersey.github.io/njwds/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
 | [Fractal: Breadcrumb](https://newjersey.github.io/njwds/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
 
 ### USWDS links 
