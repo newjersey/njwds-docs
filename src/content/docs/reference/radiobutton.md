@@ -7,9 +7,9 @@ description: Documentation for radio button component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-radio--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View radio button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View radio button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-radio--docs&args=characterCounter:!false)
   
 ## Radio Button Usage
 ### 👍 Use this component for
@@ -33,12 +33,9 @@ description: Documentation for radio button component.
 - **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.
 
 
-## Checkbox Variants
+## Radio Button Variants
 
 ### Radio button 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View radio button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 #### Figma properties
 | Property | Value |
@@ -48,9 +45,9 @@ description: Documentation for radio button component.
 ### Radio button list
 A radio button question with multiple options.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"></iframe>
+<iframe title="Radio button list preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-radio--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View radio button list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View radio button list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-radio--docs&args=characterCounter:!false)
 
 #### Figma properties
 | Property | Value |
@@ -65,10 +62,6 @@ A radio button question with multiple options.
 
 ### Radio button tile
 Radio button surrounded in a clickable tile.
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View radio button tile in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 #### Figma properties
 | Property | Value |
@@ -85,9 +78,9 @@ Radio button surrounded in a clickable tile.
 ### Radio button tile list
 A multiple select question with checkbox tiles.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"></iframe>
+<iframe title="Radio button tile list preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-radio--default&viewMode=story&args=tile%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View radio button tile list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View radio button tile list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-radio--tile)
 
 #### Figma properties
 | Property | Value |
@@ -134,6 +127,8 @@ Use [USWDS radio button accessibility tests](https://designsystem.digital.gov/co
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Radio button / tile](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19547&p=f&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
+| [Storybook: Radio button list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-radio--default) | Interactive example, see code snippet, see variants |
+| [Storybook: Radio button tile list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-radio--tile) | Interactive example, see code snippet, see variants |
 | [Fractal: Radio button](https://newjersey.github.io/njwds/components/detail/radio-buttons--default.html) | Preview styles, see code snippet |
 | [Fractal: Radio button tile](https://newjersey.github.io/njwds/components/detail/radio-buttons--tile.html) | Preview styles, see code snippet |
 
