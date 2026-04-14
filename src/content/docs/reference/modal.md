@@ -7,9 +7,9 @@ description: Documentation for modal component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View modal in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
   
 ## Modal Usage
 ### 👍 Use this component for
@@ -37,10 +37,10 @@ description: Documentation for modal component.
 ## Modal Sizes
 
 ### Default modal
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story" width="100%" height="100"></iframe>
 
+🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
 
-🔗 [View default modal in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 #### Figma Type properties
 | Property | Value |
@@ -54,10 +54,10 @@ description: Documentation for modal component.
 
 
 ### Large modal
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story&args=size%3Alarge" width="100%" height="100"></iframe>
 
+🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
 
-🔗 [View large modal in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 #### Figma Type properties
 | Property | Value |
@@ -72,12 +72,9 @@ description: Documentation for modal component.
 
 ## Forced Action Modal
 
+<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story&args=forceAction%3Atrue" width="100%" height="100"></iframe>
 
-### Default modal
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-
-🔗 [View forced action modal in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
 
 #### Figma Type properties
 | Property | Value |
@@ -89,6 +86,8 @@ description: Documentation for modal component.
 | ----------- | ----------- |
 | `data-force-action` | Added to modal `div` class to remove ability to close modal. |
 
+
+
 ## Accessibility guidance
 Use [USWDS modal accessibility tests](https://designsystem.digital.gov/components/modal/accessibility-tests) to test implementation.
 - **Label the modal with its heading.** Use `aria-labelledby=”[id]”` on `.usa-modal` to read out the modal title when opening the modal. The `[id]` should match the value of the `id` attribute on the `usa-modal__heading` element.
@@ -97,7 +96,6 @@ Use [USWDS modal accessibility tests](https://designsystem.digital.gov/component
 - **Ensure keyboard focus is trapped inside the modal.** When using a keyboard to test the modal, ensure focus does not move to the page behind it.
 
 ## Code 
-Demos of these variants can be found on the [Fractal: Modal](https://newjersey.github.io/njwds/components/detail/modal--default.html) page
 
 ### Modal Variants
 | Name | Class | Description |
@@ -126,6 +124,7 @@ Demos of these variants can be found on the [Fractal: Modal](https://newjersey.g
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Modal](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=368-9018&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
+| [Storybook: Modal](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs) | Interactive example, code snippet, see variants |
 | [Fractal: Modal](https://newjersey.github.io/njwds/components/detail/modal--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
