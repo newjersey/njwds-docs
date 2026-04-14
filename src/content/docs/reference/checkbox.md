@@ -7,9 +7,9 @@ description: Documentation of the checkbox component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-checkbox--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View checkbox in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View checkbox in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-checkbox--docs&args=label:Link%20text;external:!false)
   
 ## Checkbox Usage
 ### 👍 Use this component for
@@ -34,9 +34,9 @@ description: Documentation of the checkbox component.
 ## Checkbox Variants
 
 ### Checkbox item
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
+<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
 
-🔗 [View checkbox item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
+🔗 [View checkbox in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-checkbox--docs)
 
 #### Figma properties
 | Property | Value |
@@ -46,9 +46,9 @@ description: Documentation of the checkbox component.
 ### Checkbox list
 A multiple select question with checkboxes.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"></iframe>
+<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-checkbox--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View checkbox list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View checkbox list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-checkbox--default)
 
 #### Figma properties
 | Property | Value |
@@ -62,10 +62,6 @@ A multiple select question with checkboxes.
 
 ### Checkbox tile
 Checkbox item surrounded in a clickable tile.
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View checkbox item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 #### Figma properties
 | Property | Value |
@@ -82,9 +78,9 @@ Checkbox item surrounded in a clickable tile.
 ### Checkbox tile list
 A multiple select question with checkbox tiles.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--tertiary&viewMode=story&args=type%3Aprimary%3Bicon%3A!true" width="100%" height="100"></iframe>
+<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-checkbox--default&viewMode=story&args=tile%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View checkbox list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View checkbox tile list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-checkbox--tile)
 
 #### Figma properties
 | Property | Value |
@@ -131,6 +127,7 @@ Use [USWDS checkbox accessibility tests](https://designsystem.digital.gov/compon
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Checkbox](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=33-1439&t=i4k26YohAESPvEsR-0) | Using button in designs, documentation and best practices on button usage |
+| [Storybook: Checkbox](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-checkbox--docs) | Interactive example, code snippets, see variants |
 | [Fractal: Checkbox](https://innovation.nj.gov/app/njwds/components/detail/checkboxes.html) | Preview button styles, see button code snippet |
 
 ### USWDS links 
