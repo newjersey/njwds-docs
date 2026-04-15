@@ -7,9 +7,9 @@ description: Documentation for step indicator component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Step indicator" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-step-indicator--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View step indicator in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View step indicator in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-step-indicator--docs)
   
 ## Step Indicator Usage
 ### 👍 Use this component for
@@ -42,10 +42,6 @@ description: Documentation for step indicator component.
 ### Segmented Step Indicator
 **Use the centered segmented variant with centered content and headings.** The centered variant is designed to complement centered content and headings. If you have left-aligned content and headings, use the default alignment.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View segmented step indicator in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
 #### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
@@ -64,10 +60,6 @@ description: Documentation for step indicator component.
 
 ### Counter Step Indicator 
 **Use counters to reinforce step progression.** The counter pattern (step numbers in a circle) attracts more attention to the indicator bar, but more strongly communicates step-by-step progression. Use counters when you want to reinforce step progression. Omit them if testing proves that this reinforcement is unnecessary for your audience.
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View counter step indicator in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 #### Figma Type properties
 | Property | Value |
@@ -108,6 +100,7 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Step indicator](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1632-264) | Using in designs |
+| [Storybook: Step indicator](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-step-indicator--docs) | Interactive example, code snippet, variants |
 | [Fractal: Step indicator](https://office-of-innovation.gitbook.io/njwds/step-indicator#release-notes) | Preview styles, see code snippet |
 
 ### USWDS links 
