@@ -9,9 +9,7 @@ description: Documentation of the collection component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View collection in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View collection in USWDS](https://designsystem.digital.gov/components/collection/)
   
 ## Checkbox Usage
 ### 👍 Use this component for
@@ -41,10 +39,6 @@ description: Documentation of the collection component.
 
 ### Default collection item
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View default collection item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -53,20 +47,12 @@ description: Documentation of the collection component.
 
 ### Media collection item
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View media collection item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | media |
 
 ### Calendar collection item
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View calendar collection item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 #### Figma properties
 | Property | Value |
