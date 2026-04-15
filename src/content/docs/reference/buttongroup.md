@@ -7,9 +7,9 @@ description: Documentation for button group component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Button group" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-button-group--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View button group in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View button group in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-button-group--docs)
 
 
 ## Default Button Group Usage
@@ -56,10 +56,11 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 ### Default Button Group
 **Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
+<iframe title="Button group" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-button-group--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View default button group in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View default button group in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/patterns-button-group--default)
+
 
 | Style | Applied Variants | 
 | ----------- | ----------- |
@@ -68,10 +69,10 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 
 ### Segmented Button Group buttons
 **Use for non-primary, but still common, actions on a page.** There can be multiple on a page. Secondary buttons typically trigger actions that happen on the current page. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100" ></iframe>
+<iframe title="Button group" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-button-group--default&viewMode=story&args=segmented%3Atrue" width="100%" height="100" ></iframe>
 
 
-🔗 [View segmented button group in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View button group in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-button-group--docs)
 
 | Style | Applied Variants | 
 | ----------- | ----------- |
@@ -98,6 +99,7 @@ Use the [USWDS button group accessibility tests](https://designsystem.digital.go
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Button Group](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1600-3056&t=8Iz1cfQBJpns25JR-11) | Using in designs |
+| [Storybook: Button Group](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-button-group--docs) | Interactive example, code snippet, variants |
 | [Fractal: Button Group](https://newjersey.github.io/njwds/components/detail/button-groups--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
