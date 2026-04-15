@@ -9,9 +9,7 @@ description: Documentation of the summary box component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View summary box in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View summary box in USWDS](https://designsystem.digital.gov/components/summary-box/)
   
 ## Summary box Usage
 ### 👍 Use this component for
