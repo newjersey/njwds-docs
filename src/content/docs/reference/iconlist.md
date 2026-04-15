@@ -9,11 +9,9 @@ description: Documentation of the icon list component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View icon list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View icon list in USWDS](https://designsystem.digital.gov/components/icon-list/)
   
-## Checkbox Usage
+## Icon List Usage
 ### 👍 Use this component for
 - **Do-and-don’t lists.** Icon lists help reinforce the message of a list item using a visual cue as a progressive enhancement. This can be effective in a list, or pair of lists, that describe actions users should do or not do. A pair of icons with clear and opposite meaning, like `check_circle` and `cancel`, create an effective do-and-don’t list.
 - **Features and metadata.** Use an icon list to enhance a list of features, like a campsite’s amenities or other lists where icons might help users understand content at a glance.
@@ -35,10 +33,6 @@ description: Documentation of the icon list component.
 
 ### Rich content variant
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View icon list item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -51,10 +45,6 @@ description: Documentation of the icon list component.
 
 ### Icon list items size variants
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View icon list item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -65,15 +55,6 @@ description: Documentation of the icon list component.
 | ----------- | ----------- |
 | `usa-icon-list--size-[size]` | Change the size of the text and icon by updating [size] to a font size token. |
 | `[responsive_variant]:usa-icon-list--size-[size]` | Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology. |
-
-## Icon list 
-
-### Rich content variant
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View icon list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
-
 
 ## Accessibility Guidance
 Use [USWDS icon list accessibility tests](https://designsystem.digital.gov/components/icon-list/accessibility-tests) to test implementation.
