@@ -34,7 +34,7 @@ As you customize this form template, make sure it continues to follow the [acces
 
 ## Related 
 - [Name pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/name/)
-- [Text input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs) 
+- [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/) 
 
 ## Resources
 ### NJWDS links 
