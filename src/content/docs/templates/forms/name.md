@@ -6,9 +6,9 @@ description: Form template for inputting name.
 **Collect a full name as separate elements of data.**
 
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Name form" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-name--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View name form template in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View name form template in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-name--docs)
 
 
 ## Name Form Template Usage
@@ -34,13 +34,14 @@ As you customize this form template, make sure it continues to follow the [acces
 
 ## Related 
 - [Name pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/name/)
-- [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/) 
+- [Text input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs) 
 
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
+| [Storybook: Name form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-name--docs) | Interactive example, code snippet, variants |
 | [Fractal: Name form](https://newjersey.github.io/njwds/components/detail/name-form.html) | Preview styles, see code snippet |
 
 ### USWDS links 
