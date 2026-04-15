@@ -3,13 +3,13 @@ title: Side navigation
 description: Documentation for side navigation component.
 ---
 
-**A step indicator updates users on their progress through a multi-step process.**
+**Hierarchical, vertical navigation to place at the side of a page.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Side navigation" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-side-navigation--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View side panel in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View side navigation in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-side-navigation--docs)
   
 ## Side Navigation Usage
 ### 👍 Use this component for
@@ -31,10 +31,6 @@ description: Documentation for side navigation component.
 
 ## Side Nav Item
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View side navigation item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
-
 ### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
@@ -52,10 +48,6 @@ description: Documentation for side navigation component.
 
 ## Side Nav Panel
 The panel appears by default when a site with side navigation is being used on mobile. 
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View side navigation panel in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 ### Figma Type properties
 | Property | Value |
@@ -87,6 +79,7 @@ NJWDS provides a number of CSS classes that can be applied to various elements w
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Side navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=196-330&p=f&t=5K6zTsl37oLtbvIT-0) | Using in designs |
+| [Storybook: Side navigation](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-side-navigation--docs) | Preview styles, see code snippet |
 | [Fractal: Side navigation](https://newjersey.github.io/njwds/components/detail/sidenav--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
