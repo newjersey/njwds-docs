@@ -11,10 +11,11 @@ description: Documentation for alert component.
 
 ###
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Ainfo" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"></iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Ainfo" frameborder="1" scrolling="no" width="100%" height="100%"> </iframe>
+<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%"></iframe>
 
 🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs&args=label:;icon:!true)
+
 🔗 [View site alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
  
