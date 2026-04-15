@@ -35,7 +35,7 @@ description: Documentation for accordion component.
 
 <iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View borderless accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--default
+🔗 [View borderless accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--default)
 
 #### Figma Type properties
 | Property | Value |
@@ -55,7 +55,7 @@ description: Documentation for accordion component.
 
 <iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story&args=bordered%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View bordered accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--bordered
+🔗 [View bordered accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--bordered)
 
 #### Figma Type properties
 | Property | Value |
