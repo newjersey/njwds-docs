@@ -9,9 +9,7 @@ description: Documentation of the pagination component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View pagination in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View pagination in USWDS](https://designsystem.digital.gov/components/pagination/)
   
 ## Pagination Usage
 ### 👍 Use this component for
@@ -40,9 +38,6 @@ description: Documentation of the pagination component.
 
 ### Bounded Pagination
 This version maintains the first and last pages at the start and end of the sequence and collapses pages in between in "..."'s. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View bounded pagination item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 #### Figma properties
 | Property | Value |
@@ -51,9 +46,6 @@ This version maintains the first and last pages at the start and end of the sequ
 
 ### Unbounded Pagination
 This version maintains the first page in the sequence, but compiles all pages after the active set in an "..." at the end. 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View unbounded pagination item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 #### Figma properties
 | Property | Value |
@@ -62,9 +54,6 @@ This version maintains the first page in the sequence, but compiles all pages af
 
 ### Mobile Pagination
 The mobile version of bounded and unbounded pagination simply remove the "Previous" and "Next" actions.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View moble bounded and unbounded pagination item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(danger).html)
 
 #### Figma properties
 | Property | Value |
