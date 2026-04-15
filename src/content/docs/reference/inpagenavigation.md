@@ -9,9 +9,7 @@ description: Documentation for in-page navigation component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View side panel in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View in page navigation in USWDS](https://designsystem.digital.gov/components/in-page-navigation/)
   
 ## In-Page Navigation Usage
 ### 👍 Use this component for
@@ -35,10 +33,6 @@ description: Documentation for in-page navigation component.
 
 
 ## In-Page Nav Item
-
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View side navigation item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
 ### Figma Type properties
 | Property | Value |
@@ -73,7 +67,6 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: In-page navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3019-108&t=OWFjainTs6OfqOdE-0) | Using in designs |
-| [Fractal: In-page navigation](x) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
