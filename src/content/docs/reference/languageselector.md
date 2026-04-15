@@ -9,14 +9,7 @@ description: Documentation for language selector component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-##
-
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"> </iframe>
-
-##
-
-
+🔗 [View language selector in USWDS](https://designsystem.digital.gov/components/language-selector/)
 
 ## Language Selector - 2 languages
 
