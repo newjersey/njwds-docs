@@ -168,7 +168,7 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
 
 #### Default state 
-[The use case for this error state has not yet been determined]
+[The use case for this alert state has not yet been determined]
 
 <iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story" width="100%" height="100"></iframe>
 
@@ -176,7 +176,7 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 
 | Variant | Description |
 | ----------- | ----------- |
-| `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
+| `usa-alert` | Used to communicate emergency information. The alert body will be a light grey color and will not display display an icon. |
 
 ### Dismissable alerts
 🚧 Not present in NJWDS or USWDS, would need custom implementation 🚧
@@ -239,6 +239,7 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using alert in designs, documentation and best practices on alert usage |
+| [Storybook: Alert](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs) | Interactive example, code snippet, variants |
 | [Fractal: Alert](https://innovation.nj.gov/app/njwds/components/detail/alerts--default.html) | Preview alert styles, see alert code snippet |
 
 ### USWDS links 
