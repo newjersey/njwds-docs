@@ -11,10 +11,10 @@ description: Documentation for alert component.
 
 ###
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
+<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Ainfo" frameborder="1" scrolling="no" width="49%" height="100%" align="left"> </iframe>
 <iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="49%" height="100%" align="right"></iframe>
 
-🔗 [View alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs&args=label:;icon:!true)
 🔗 [View site alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
 
  
@@ -82,9 +82,9 @@ Alerts are notifications of high priority since they provide critical informatio
 [Type/size/modifiers] determine the size and amount of information in the alert. 
 
 **Tip:** Slim-icon is the slimmest.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Ainfo%3Bslim%3A!true%3Bheader%3A!false" width="100%" height="100"></iframe>
 
-🔗 [View alert sizes in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs)
 
 #### Figma properties
 | Property | Value |
@@ -114,9 +114,9 @@ Alert states determine alert color / role / level of severity. There are current
 #### Information state
 Give instant feedback about the tasks a user just performed. Its main objective is to confirm or notify tasks. (this seems like success state)
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Ainfo%3Bicon%3A!true" width="100%" height="100"></iframe>
 
-🔗 [View info alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs)
 
 | Variant | Description | 
 | ----------- | ----------- |
@@ -125,9 +125,9 @@ Give instant feedback about the tasks a user just performed. Its main objective 
 #### Success state 
 Confirm that a user’s action was effective, and can have a celebratory tone.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Asuccess%3Bicon%3A!true" width="100%" height="100"></iframe>
 
-🔗 [View success alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs)
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -136,9 +136,9 @@ Confirm that a user’s action was effective, and can have a celebratory tone.
 #### Warning state 
 Inform the user of risks or things to be aware of before taking action. 
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Awarning%3Bicon%3A!true" width="100%" height="100"></iframe>
 
-🔗 [View warning alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs)
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -147,9 +147,9 @@ Inform the user of risks or things to be aware of before taking action.
 #### Error state
 Inform that something went wrong after an action. Learn about errors (link to error documentation)
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story&args=type%3Aerror%3Bicon%3A!true" width="100%" height="100"></iframe>
 
-🔗 [View error alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs)
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -158,9 +158,20 @@ Inform that something went wrong after an action. Learn about errors (link to er
 #### Emergency state 
 Demand immediate action to prevent a serious threat or inform the user of an emergency happening in their context. 
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View emergency alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs)
+
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
+
+#### Default state 
+[The use case for this error state has not yet been determined]
+
+<iframe title="Alert" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--basic&viewMode=story" width="100%" height="100"></iframe>
+
+🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs)
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -170,9 +181,6 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 🚧 Not present in NJWDS or USWDS, would need custom implementation 🚧
 Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the NJWDS team, but is not implemented yet. 
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View dismissable alert in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
 
 #### Figma properties 
 | Property | Value |
