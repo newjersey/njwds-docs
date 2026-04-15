@@ -7,9 +7,9 @@ description: Documentation for time picker component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Time picker" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-time-picker--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View timepicker in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View timepicker in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-time-picker--docs)
 
 
 ## Time picker Usage
@@ -79,6 +79,7 @@ The following properties modify component functionality. These properties can be
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Time picker](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3051-2224&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Time picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-time-picker--docs) | Interactive example, code snippet, variants |
 | [Fractal: Time picker](https://newjersey.github.io/njwds/components/detail/time-picker.html) | Preview styles, see code snippet |
 
 ### USWDS links 
