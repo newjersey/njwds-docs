@@ -40,8 +40,8 @@ We limit the characters in the ZIP code field to numbers and the hyphen (-), fol
 
 
 ## Related
-- [Text input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs)
-- [Select](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-select--docs)
+- [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/)
+- [Select](https://turbo-adventure-n2vkrrm.pages.github.io/reference/select/)
 
 
 ## Resources
