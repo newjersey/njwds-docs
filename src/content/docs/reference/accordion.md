@@ -7,9 +7,9 @@ description: Documentation for accordion component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View accordion in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-accordion--docs)
   
 ## Accordion Usage
 ### 👍 Use this component for
@@ -33,9 +33,9 @@ description: Documentation for accordion component.
 
 ### Borderless Accordions
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View borderless accordion in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View borderless accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--default
 
 #### Figma Type properties
 | Property | Value |
@@ -53,9 +53,9 @@ description: Documentation for accordion component.
 
 ### Bordered Accordions
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story&args=bordered%3Atrue" width="100%" height="100"></iframe>
 
-🔗 [View bordered accordion in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View bordered accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--bordered
 
 #### Figma Type properties
 | Property | Value |
@@ -73,9 +73,8 @@ description: Documentation for accordion component.
 
 ### Multiselectable Accordions
 Add the `data-allow-multiple attribute` to any usa-accordion to create a multiselectable accordion group.
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View multiselectable accordion in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-accordion--docs)
 
 #### Code Variant
 | Name | Class | Description |
@@ -117,6 +116,7 @@ Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/c
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Accordion](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1519-637&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
+| [Storybook: Accordion](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-accordion--docs) | Interactive example, code snippets, variants |
 | [Fractal: Accordion](https://newjersey.github.io/njwds/components/detail/accordion--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
