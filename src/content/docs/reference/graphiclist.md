@@ -5,9 +5,9 @@ description: Documentation for graphic list component.
 
 **Graphic list is an element that can be used in a website to prominently display a few related pieces of information.**
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Graphic list" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-graphiclist--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View graphic list in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View graphic list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-graphiclist--docs)
 
 
 ## Graphic List Usage
@@ -27,11 +27,12 @@ description: Documentation for graphic list component.
 - **Never highlight anything without a goal.** For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.
 
 ## Related
-- [Landing page template](https://designsystem.digital.gov/templates/landing-page/)
+- [Landing page template](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/templates-landing--docs)
 
 ## Resources
 ### NJWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Graphic list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2858-3887&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Graphic list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-graphiclist--docs) | Interactive example, code snippet, variants |
 | [Fractal: Graphic list](https://newjersey.github.io/njwds/components/detail/graphic-list.html) | Preview styles, see code snippet |
