@@ -6,9 +6,9 @@ description: Form template for collecting addresses.
 **Enter a standard U.S. mailing or shipping address.**
 
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Address form" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-address--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View address form template in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View address form template in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-address--docs)
 
 
 ## Address Form Template Usage
@@ -40,8 +40,8 @@ We limit the characters in the ZIP code field to numbers and the hyphen (-), fol
 
 
 ## Related
-- [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/)
-- [Select](https://turbo-adventure-n2vkrrm.pages.github.io/reference/select/)
+- [Text input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs)
+- [Select](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-select--docs)
 
 
 ## Resources
@@ -49,6 +49,7 @@ We limit the characters in the ZIP code field to numbers and the hyphen (-), fol
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma NJWDS: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
+| [Storybook: Address form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-address--docs) | Preview styles, see code snippet |
 | [Fractal: Address form](https://newjersey.github.io/njwds/components/detail/address-form.html) | Preview styles, see code snippet |
 
 ### USWDS links 
