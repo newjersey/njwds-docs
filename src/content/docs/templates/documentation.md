@@ -5,9 +5,9 @@ description: Template for documentation page.
 
 **Present information on a certain theme, topic, or idea.**
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Documentation page" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=templates-documentation--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View documentation page template in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View documentation page template in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/templates-documentation--docs)
 
 
 ## Documentation Template Usage
@@ -24,6 +24,13 @@ description: Template for documentation page.
 ## Content guidelines
 - **Use a precise headline.** A precise headline quickly communicates your page’s purpose. If the page content is especially complex, you may consider using a subheadline to further clarify its meaning.
 - **Write concise copy.** Favor short sentences (and paragraphs) over longer ones, and use straightforward language, avoiding jargon. Remember, copy blocks don’t need to be long to be comprehensive.
+
+## Related 
+- [NJ Banner](https://turbo-adventure-n2vkrrm.pages.github.io/njcomponents/njbanner/)
+- [Header](https://turbo-adventure-n2vkrrm.pages.github.io/reference/header/)
+- [Side navigation](https://turbo-adventure-n2vkrrm.pages.github.io/reference/sidenavigation/)
+- [NJ Footer](https://turbo-adventure-n2vkrrm.pages.github.io/njcomponents/njfooter/)
+- [NJ Identifier](https://turbo-adventure-n2vkrrm.pages.github.io/njcomponents/njidentifier/)
 
 ## Resources
 ### NJWDS links 
