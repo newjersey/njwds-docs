@@ -1,0 +1,101 @@
+---
+// Import components from Starlight
+import { Icon, Badge } from '@astrojs/starlight/components';
+
+interface Props {
+	sublist: any[];
+	nested?: boolean;
+}
+
+const { sublist, nested } = Astro.props;
+
+/**
+ * Recursively flattens sidebar entries into an array of links
+ * Based on Starlight's internal flattenSidebar utility
+ */
+function flattenSidebar(sidebar: any[]): any[] {
+	return sidebar.flatMap((entry: any) =>
+		entry.type === 'group' ? flattenSidebar(entry.entries) : entry
+	);
+}
+
+/**
+ * Sidebar restore point - stores the groupIndex for state persistence
+ * Based on Starlight's internal SidebarRestorePoint component
+ */
+const currentGroupIndexSymbol = Symbol.for('starlight-sidebar-group-index');
+const locals = Astro.locals as any;
+
+// Initialize counter if not set
+if (!(currentGroupIndexSymbol in locals)) {
+	locals[currentGroupIndexSymbol] = 0;
+}
+---
+
+<ul class:list={{ 'usa-sidenav': !nested, 'usa-sidenav__sublist': nested }}>
+	{
+		sublist.map((entry) => {
+			// Get a unique groupIndex for each group
+			const groupIndex = entry.type === 'group' ? locals[currentGroupIndexSymbol]++ : -1;
+
+			return (
+			<li class="usa-sidenav__item">
+				{entry.type === 'link' ? (
+					<a
+						href={entry.href}
+						aria-current={entry.isCurrent && 'page'}
+						class:list={[{ large: !nested }, entry.attrs.class, entry.isCurrent && 'usa-current']}
+						{...entry.attrs}
+					>
+						<span>{entry.label}</span>
+						{entry.badge && (
+							<Badge
+								variant={entry.badge.variant}
+								class={entry.badge.class}
+								text={entry.badge.text}
+							/>
+						)}
+					</a>
+				) : (
+					<div class="sidebar-group" data-sidebar-group>
+						<div class="group-header">
+							<button
+								type="button"
+								class="group-toggle usa-button usa-button--unstyled"
+								aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
+								aria-label={`Toggle ${entry.label} navigation group`}
+								data-group-id={`sidebar-group-${groupIndex}`}
+							>
+								<Icon
+									name={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'down-caret' : 'right-caret'}
+									class="caret"
+									size="1.25rem"
+									aria-hidden="true"
+								/>
+							</button>
+							<span class="group-label">
+								<span class="large">{entry.label}</span>
+								{entry.badge && (
+									<Badge
+										variant={entry.badge.variant}
+										class={entry.badge.class}
+										text={entry.badge.text}
+									/>
+								)}
+							</span>
+						</div>
+						<div
+							class="group-content"
+							id={`sidebar-group-${groupIndex}`}
+							hidden={!(flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed)}
+						>
+							<sl-sidebar-restore data-groupIndex={groupIndex}></sl-sidebar-restore>
+							<Astro.self sublist={entry.entries} nested />
+						</div>
+					</div>
+				)}
+			</li>
+			);
+		})
+	}
+</ul>

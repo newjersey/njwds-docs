@@ -11,6 +11,9 @@ export default defineConfig({
 				'@newjersey/njwds/dist/css/styles.css',
 				'./src/styles/custom.css'
 			],
+			components: {
+				Sidebar: './src/components/overrides/Sidebar.astro',
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{

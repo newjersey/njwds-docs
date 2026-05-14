@@ -1,0 +1,97 @@
+---
+import MobileMenuFooter from 'virtual:starlight/components/MobileMenuFooter';
+import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro';
+import SidebarSublist from './SidebarSublist.astro';
+
+const { sidebar } = Astro.locals.starlightRoute;
+---
+
+<SidebarPersister>
+	<SidebarSublist sublist={sidebar} />
+</SidebarPersister>
+
+<div class="md:sl-hidden">
+	<MobileMenuFooter />
+</div>
+
+<script is:inline>
+	/**
+	 * Enhance sidebar navigation with accessible toggle functionality
+	 * Handles ARIA states, keyboard interaction, and state persistence
+	 */
+	function enhanceSidebarAccessibility() {
+		const toggleButtons = document.querySelectorAll('.group-toggle');
+
+		toggleButtons.forEach((button) => {
+			// Handle click events
+			button.addEventListener('click', () => {
+				toggleGroup(button);
+			});
+
+			// Handle keyboard events
+			button.addEventListener('keydown', (e) => {
+				if (e.key === ' ' || e.key === 'Enter') {
+					e.preventDefault();
+					toggleGroup(button);
+				}
+			});
+		});
+	}
+
+	/**
+	 * Toggle a sidebar group's expanded/collapsed state
+	 */
+	function toggleGroup(button) {
+		const isExpanded = button.getAttribute('aria-expanded') === 'true';
+		const groupId = button.getAttribute('data-group-id');
+		const groupContent = document.getElementById(groupId);
+		const icon = button.querySelector('.caret');
+
+		if (!groupContent) return;
+
+		// Update ARIA state
+		button.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+
+		// Toggle visibility
+		if (isExpanded) {
+			groupContent.setAttribute('hidden', '');
+			// Change icon to right-caret (collapsed)
+			if (icon) {
+				updateIconPath(icon, 'right-caret');
+			}
+		} else {
+			groupContent.removeAttribute('hidden');
+			// Change icon to down-caret (expanded)
+			if (icon) {
+				updateIconPath(icon, 'down-caret');
+			}
+		}
+
+		// Keep focus on the button
+		button.focus();
+	}
+
+	/**
+	 * Update the SVG path for the icon
+	 */
+	function updateIconPath(icon, iconName) {
+		const path = icon.querySelector('path');
+		if (!path) return;
+
+		// Icon paths from Starlight Icons.ts
+		const icons = {
+			'right-caret': 'm14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z',
+			'down-caret': 'M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z'
+		};
+
+		if (icons[iconName]) {
+			path.setAttribute('d', icons[iconName]);
+		}
+	}
+
+	// Run on initial load
+	enhanceSidebarAccessibility();
+
+	// Re-run after view transitions (Astro feature)
+	document.addEventListener('astro:after-swap', enhanceSidebarAccessibility);
+</script>
