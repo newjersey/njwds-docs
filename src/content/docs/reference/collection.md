@@ -1,11 +1,9 @@
 ---
-title: Collection 🚧
+title: Collection 
 description: Documentation of the collection component.
 ---
 
 **A collection displays a compact list of multiple related items like articles or events. The list links each item to its original source.**
-  
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
