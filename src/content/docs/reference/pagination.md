@@ -1,11 +1,9 @@
 ---
-title: Pagination 🚧
+title: Pagination
 description: Documentation of the pagination component.
 ---
 
 **Pagination is navigation for paginated content.**
-
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
