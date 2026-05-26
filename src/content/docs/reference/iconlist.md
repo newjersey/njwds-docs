@@ -1,11 +1,9 @@
 ---
-title: Icon list 🚧
+title: Icon list 
 description: Documentation of the icon list component.
 ---
 
 **An icon list reinforces the meaning and visibility of individual list items with a leading icon.**
-  
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
