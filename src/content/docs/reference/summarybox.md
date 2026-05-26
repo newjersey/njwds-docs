@@ -1,11 +1,9 @@
 ---
-title: Summary box 🚧
+title: Summary box 
 description: Documentation of the summary box component.
 ---
 
 **A summary box highlights key information from a longer page or displays next steps.**
-  
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
