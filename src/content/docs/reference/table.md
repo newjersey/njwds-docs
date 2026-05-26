@@ -1,11 +1,11 @@
 ---
-title: Table 🚧
+title: Table 
 description: Documentation of the table component.
 ---
 
 **A table shows information in columns and rows.**
 
-🚧Some variants of the table are in USWDS, but are not availible in Fractal or Figma. 🚧
+🚧 Some variants of the table are in USWDS, but are not availible in Storybook or Figma. 🚧
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
