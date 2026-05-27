@@ -95,17 +95,17 @@ Use the [USWDS button group accessibility tests](https://designsystem.digital.go
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Button Group](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1600-3056&t=8Iz1cfQBJpns25JR-11) | Using in designs |
+| [Figma Grove: Button Group](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1600-3056&t=8Iz1cfQBJpns25JR-11) | Using in designs |
 | [Storybook: Button Group](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-button-group--docs) | Interactive example, code snippet, variants |
-| [Fractal: Button Group](https://newjersey.github.io/njwds/components/detail/button-groups--default.html) | Preview styles, see code snippet |
+| [Fractal: Button Group](https://newjersey.github.io/Grove/components/detail/button-groups--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Button Group](https://designsystem.digital.gov/components/button-group/) | Reference for additional styles and functionalities  |
-| [USWDS: Button Group utilities](https://designsystem.digital.gov/components/button-group/#package) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Button Group utilities](https://designsystem.digital.gov/components/button-group/#package) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Button Group accessibility tests](https://designsystem.digital.gov/components/button-group/#accessibility-test-status) | Accessibility tests to run for component |
 
