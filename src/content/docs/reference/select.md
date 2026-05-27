@@ -56,12 +56,12 @@ Use [USWDS select accessibility tests](https://designsystem.digital.gov/componen
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Select](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=28-26&p=f&t=ER1CI2PNGfstfiVR-0) | Using in designs |
+| [Figma Grove: Select](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=28-26&p=f&t=ER1CI2PNGfstfiVR-0) | Using in designs |
 | [Storybook: Select](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-select--docs&args=characterCounter:!false) | Interactive preview, code snippet, variants |
-| [Fractal: Select](https://newjersey.github.io/njwds/components/detail/dropdown.html) | Preview styles, see code snippet |
+| [Fractal: Select](https://newjersey.github.io/Grove/components/detail/dropdown.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
