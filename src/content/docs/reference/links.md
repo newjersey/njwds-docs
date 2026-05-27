@@ -126,16 +126,16 @@ Link hover state should be visible on focus. Users should be able to activate ho
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Link](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2776-427&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
-| [Storybook: Link]([https://newjersey.github.io/njwds/components/detail/icon.html](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)) | Interactive example, see code snippet, see variants |
-| [Fractal: Link](https://newjersey.github.io/njwds/components/detail/icon.html) | Preview styles, see code snippet |
+| [Figma Grove: Link](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2776-427&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
+| [Storybook: Link]([https://newjersey.github.io/Grove/components/detail/icon.html](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)) | Interactive example, see code snippet, see variants |
+| [Fractal: Link](https://newjersey.github.io/Grove/components/detail/icon.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Link](https://designsystem.digital.gov/components/link/) | Reference for additional styles and functionalities  |
-| [USWDS: Link](https://designsystem.digital.gov/components/link/#using-the-link-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Link](https://designsystem.digital.gov/components/link/#using-the-link-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Link](https://designsystem.digital.gov/components/link/accessibility-tests) | Accessibility tests to run for icon component |
