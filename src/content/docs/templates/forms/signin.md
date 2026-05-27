@@ -38,12 +38,12 @@ description: Form template for signing in.
 - [Button](https://turbo-adventure-n2vkrrm.pages.github.io/reference/button/)
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
+| [Figma Grove: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
 | [Storybook: Sign in form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-sign-in-form--docs) | Interactive examples, code snippet, variants |
-| [Fractal: Sign in form](https://newjersey.github.io/njwds/components/detail/sign-in-form.html) | Preview styles, see code snippet |
+| [Fractal: Sign in form](https://newjersey.github.io/Grove/components/detail/sign-in-form.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
