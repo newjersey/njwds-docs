@@ -50,10 +50,10 @@ Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/com
 - **Write for your audience.** The summary box is meant to make it easier to understand page content. Don’t leave readers without access to critical information. Check your writing level to ensure it’s easy to read. Search for “readability level tool” to find tools that assess reading level.
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Summary box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1523-124&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Summary box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1523-124&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
