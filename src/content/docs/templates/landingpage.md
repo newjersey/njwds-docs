@@ -37,12 +37,12 @@ description: Template for landing page.
 - [NJ Identifier](https://turbo-adventure-n2vkrrm.pages.github.io/njcomponents/njidentifier/)
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma: Landing page](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3635-262&p=f&t=ZOdFzKwtvvcjAErD-0) | Using in designs |
 | [Storybook: Landing page](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/templates-landing--docs) | Preview styles, see code snippet |
-| [Fractal: Landing page](https://newjersey.github.io/njwds/components/detail/layout--landing.html) | Preview styles, see code snippet |
+| [Fractal: Landing page](https://newjersey.github.io/Grove/components/detail/layout--landing.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
