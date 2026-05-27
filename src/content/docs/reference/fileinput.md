@@ -97,12 +97,12 @@ Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/
 - **Customizing the error message.** Add the data attribute `data-errorMessage` to `usa-file-input` to include a custom error message.
   
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: File input](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1560-480&p=f&t=Yx31eAZO0ULNN6UA-0) | Using file input in designs |
+| [Figma Grove: File input](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1560-480&p=f&t=Yx31eAZO0ULNN6UA-0) | Using file input in designs |
 | [Storybook: File input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs) | Interactive example, code snippets, variants |
-| [Fractal: File input](https://newjersey.github.io/njwds/components/detail/file-input.html) | Preview file picker styles, see code snippet |
+| [Fractal: File input](https://newjersey.github.io/Grove/components/detail/file-input.html) | Preview file picker styles, see code snippet |
 
 
 ### USWDS links 
