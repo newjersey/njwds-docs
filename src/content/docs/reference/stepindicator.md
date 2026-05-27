@@ -96,17 +96,17 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Step indicator](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1632-264) | Using in designs |
+| [Figma Grove: Step indicator](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1632-264) | Using in designs |
 | [Storybook: Step indicator](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-step-indicator--docs) | Interactive example, code snippet, variants |
-| [Fractal: Step indicator](https://office-of-innovation.gitbook.io/njwds/step-indicator#release-notes) | Preview styles, see code snippet |
+| [Fractal: Step indicator](https://office-of-innovation.gitbook.io/Grove/step-indicator#release-notes) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Step indicator](https://designsystem.digital.gov/components/step-indicator/) | Reference for additional styles and functionalities  |
-| [USWDS: Step indicator utilities](https://arc.net/l/quote/mdkxnczb) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Step indicator utilities](https://arc.net/l/quote/mdkxnczb) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Step indicator accessibility tests](https://designsystem.digital.gov/components/step-indicator/accessibility-tests/) | Accessibility tests to run for component |
 
