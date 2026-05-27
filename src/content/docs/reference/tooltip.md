@@ -9,7 +9,7 @@ description: Documentation for tooltip component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View side panel in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View side panel in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
   
 ## Tooltip Usage
 ### 👍 Use this component for
@@ -41,7 +41,7 @@ description: Documentation for tooltip component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View side navigation item in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View side navigation item in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
 
 ### Figma Type properties
 | Property | Value |
@@ -68,14 +68,14 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Tooltip](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2781-1208&t=OWFjainTs6OfqOdE-0) | Using in designs |
-| [Fractal: Tooltip](https://newjersey.github.io/njwds/components/detail/tooltip--default.html) | Preview styles, see code snippet |
+| [Figma Grove: Tooltip](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2781-1208&t=OWFjainTs6OfqOdE-0) | Using in designs |
+| [Fractal: Tooltip](https://newjersey.github.io/Grove/components/detail/tooltip--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Tooltip](https://github.com/newjersey/njwds-sandbox/new/main/src/content/docs/reference) | Reference for additional styles and functionalities  |
+| [USWDS: Tooltip](https://github.com/newjersey/Grove-sandbox/new/main/src/content/docs/reference) | Reference for additional styles and functionalities  |
 | [USWDS: Tooltip accessibility tests](https://designsystem.digital.gov/components/tooltip/accessibility-tests/) | Accessibility tests to run for component |
