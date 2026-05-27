@@ -45,12 +45,12 @@ We limit the characters in the ZIP code field to numbers and the hyphen (-), fol
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
+| [Figma Grove: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
 | [Storybook: Address form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-address--docs) | Preview styles, see code snippet |
-| [Fractal: Address form](https://newjersey.github.io/njwds/components/detail/address-form.html) | Preview styles, see code snippet |
+| [Fractal: Address form](https://newjersey.github.io/Grove/components/detail/address-form.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
