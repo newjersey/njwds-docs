@@ -120,17 +120,17 @@ Use [USWDS modal accessibility tests](https://designsystem.digital.gov/component
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Modal](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=368-9018&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
+| [Figma Grove: Modal](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=368-9018&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
 | [Storybook: Modal](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs) | Interactive example, code snippet, see variants |
-| [Fractal: Modal](https://newjersey.github.io/njwds/components/detail/modal--default.html) | Preview styles, see code snippet |
+| [Fractal: Modal](https://newjersey.github.io/Grove/components/detail/modal--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Modal](https://designsystem.digital.gov/components/modal/) | Reference for additional styles and functionalities  |
-| [USWDS: Modal utilities](https://designsystem.digital.gov/components/modal/#using-the-modal-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Modal utilities](https://designsystem.digital.gov/components/modal/#using-the-modal-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Modal accessibility tests](https://designsystem.digital.gov/components/modal/accessibility-tests/) | Accessibility tests to run for component |
 
