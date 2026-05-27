@@ -75,17 +75,17 @@ The following properties modify component functionality. These properties can be
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Time picker](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3051-2224&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Time picker](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3051-2224&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Time picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-time-picker--docs) | Interactive example, code snippet, variants |
-| [Fractal: Time picker](https://newjersey.github.io/njwds/components/detail/time-picker.html) | Preview styles, see code snippet |
+| [Fractal: Time picker](https://newjersey.github.io/Grove/components/detail/time-picker.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Time picker](https://designsystem.digital.gov/components/time-picker/) | Reference for additional styles and functionalities  |
-| [USWDS: Time picker utilities](https://designsystem.digital.gov/components/time-picker/#using-the-time-picker-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Time picker utilities](https://designsystem.digital.gov/components/time-picker/#using-the-time-picker-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Time picker accessibility tests](https://designsystem.digital.gov/components/time-picker/accessibility-tests) | Accessibility tests to run for time picker component |
 
