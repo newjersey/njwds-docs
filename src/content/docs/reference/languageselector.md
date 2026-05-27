@@ -5,7 +5,7 @@ description: Documentation for language selector component.
 
 **The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in.**
 
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
+🚧 Not present in Grove Storybook, only in USWDS 🚧
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
@@ -72,7 +72,7 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 ## How to use this component
 
 ### General implementation
-- Make the language access button a single, independent element. (Note the language selector buttons are built using the NJWDS button component as the base)
+- Make the language access button a single, independent element. (Note the language selector buttons are built using the Grove button component as the base)
 - Include the language dropdown in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.
 - Take users to an equivalent page that includes the same or similar content.
 - Do not create a dead end for users by taking them to a page with little or no meaningful content.
@@ -80,9 +80,9 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 - Do not combine this element with other navigation items.
 
 ### Using an icon with the language selector
-- The language selector component is built using the NJWDS button as a sub-component and so can be configured to use a leading icon.
+- The language selector component is built using the Grove button as a sub-component and so can be configured to use a leading icon.
 - Using an icon with your language selector is completely optional.
-- When implementing with an icon, it is advised to only use the globe icon titled ‘language’ in NJWDS. This is a widely adopted pattern across the web for language translation.
+- When implementing with an icon, it is advised to only use the globe icon titled ‘language’ in Grove. This is a widely adopted pattern across the web for language translation.
 - Avoid using flag icons with the language selector. Flags represent countries, not the languages spoken within them, and may cause confusion or offense with your users.
 - Note: There are some usability issues when using this icon.
   - A globe icon may not be universally understood as a signifier to change language preferences. This may lead to incorrect usage or hesitation
@@ -129,10 +129,10 @@ Embedding tools onto existing websites requires special consideration regarding 
 | Can the tool detect and adapt to the site's language setting? | If yes, then avoid using a separate selector to minimize user error/confusion. |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Language selector](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1726-757&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
+| [Figma Grove: Language selector](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1726-757&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
