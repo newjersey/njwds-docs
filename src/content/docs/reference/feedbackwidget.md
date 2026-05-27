@@ -1,9 +1,9 @@
 ---
 title: Feedback Widget
-description: Documentation for NJWDS feedback widget component.
+description: Documentation for Grove feedback widget component.
 ---
 
-**Custom NJWDS footer component to collect quantitative and qualitative feedback on a website or web app.**
+**Custom Grove footer component to collect quantitative and qualitative feedback on a website or web app.**
 
 <iframe title="Feedback widget" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-feedback-widget--default&viewMode=story" width="100%" height="100"></iframe>
 
@@ -49,10 +49,10 @@ See the [README for the feedback widget repository](https://github.com/newjersey
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Feedback Widget](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-21115&t=xEncjmi7erLwzVH8-0) | Using feedback widget in designs|
+| [Figma Grove: Feedback Widget](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-21115&t=xEncjmi7erLwzVH8-0) | Using feedback widget in designs|
 | [Storybook: Feedback widget](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-feedback-widget--docs) | Interactive example, code snippets, variants |
-| [Fractal: Feedback widget](https://newjersey.github.io/njwds/components/detail/feedback-widget--success.html) | Preview styles, see code snippets |
+| [Fractal: Feedback widget](https://newjersey.github.io/Grove/components/detail/feedback-widget--success.html) | Preview styles, see code snippets |
 
