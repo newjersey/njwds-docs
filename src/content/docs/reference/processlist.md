@@ -7,7 +7,7 @@ description: Documentation for process list component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🚧 **Not present in NJWDS, only in USWDS** 🚧
+🚧 **Not present in Grove, only in USWDS** 🚧
 
 🔗 [View process list in USWDS](https://designsystem.digital.gov/components/process-list/)
   
@@ -46,15 +46,15 @@ Use [USWDS process list accessibility tests](https://designsystem.digital.gov/co
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Process list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1735-310&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Process list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1735-310&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Process list](https://designsystem.digital.gov/components/process-list/) | Reference for additional styles and functionalities  |
-| [USWDS: Process list utilities](https://designsystem.digital.gov/components/process-list/#using-the-process-list-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Process list utilities](https://designsystem.digital.gov/components/process-list/#using-the-process-list-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Process list accessibility tests](https://designsystem.digital.gov/components/process-list/accessibility-tests/) | Accessibility tests to run for component |
 
