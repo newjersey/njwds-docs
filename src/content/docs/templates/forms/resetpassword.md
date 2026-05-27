@@ -6,7 +6,7 @@ description: Form template for password reset.
 **Reset a password.**
 
 
-<iframe title="Reset password" frameborder="1" style="border: solid #c9c9c9; padding:20" src="hhttps://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-password-reset--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Reset password" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-password-reset--default&viewMode=story" width="100%" height="100"></iframe>
 
 🔗 [View reset password form template in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-password-reset--docs)
 
