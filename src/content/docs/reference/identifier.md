@@ -93,13 +93,13 @@ Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/
 
 ## Resources
 
-### NJWDS links 
+### Grove links 
 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Identifier](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2905-151&p=f&t=Yx31eAZO0ULNN6UA-0) | Using identifier in designs, documentation and best practices on identifier usage |
+| [Figma Grove: Identifier](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2905-151&p=f&t=Yx31eAZO0ULNN6UA-0) | Using identifier in designs, documentation and best practices on identifier usage |
 | [Storybook: Identifier](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-identifier--docs) | Interactive example, code snippet, variants |
-| [Fractal: Identifier](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview identifier styles, see identifier code snippet |
+| [Fractal: Identifier](https://newjersey.github.io/Grove/components/detail/buttons--primary-(light).html) | Preview identifier styles, see identifier code snippet |
 
 ### USWDS links 
 | File | Purpose | 
