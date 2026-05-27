@@ -3,19 +3,19 @@ title: Combo Box
 description: Documentation for combo box component.
 ---
 
-**Combobox is a searchable dropdown, allowing the user to choose from a long list of options.**
+**Combo box is a searchable dropdown, allowing the user to choose from a long list of options.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 ⚠️ **Known accessibility/usability issues ** ⚠️
 
-<iframe title="Combobox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-combobox--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe title="Combo box" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-combobox--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View combobox in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-combobox--docs)
+🔗 [View combo box in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-combobox--docs)
 
 
-## Combobox Usage
-⚠️ Recommendation to use the Select component rather than combobox at this time due to accessibility and usablity issues.
+## Combo box Usage
+⚠️ Recommendation to use the Select component rather than combo box at this time due to accessibility and usablity issues.
 
 ### 👍 Use this component for
 - **More than 15 options.** Use a combo box when there are more than 15 choices in a drop-down list. With so many options, users may find it difficult to navigate with scrolling only.
@@ -48,7 +48,7 @@ description: Documentation for combo box component.
 
 
 ## Accessibility guidance
-Use the [USWDS combobox accessibility tests](https://designsystem.digital.gov/components/combo-box/accessibility-tests) to test combobox implementation.
+Use the [USWDS combo box accessibility tests](https://designsystem.digital.gov/components/combo-box/accessibility-tests) to test combo box implementation.
 - **⚠️Known assistive technology issues.⚠️** Testing with people using assistive technology revealed [usability concerns](https://github.com/uswds/uswds-site/issues/1898) that require additional investigation. At this time, consider using a [Select component](https://designsystem.digital.gov/components/select) instead of a Combo box. More research and testing is planned to better understand and address these accessibility issues. If you would like to contribute to improving this component, please [join USWDS community](https://designsystem.digital.gov/about/community/) if you'd like to share your feedback.
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the accessibility requirements that apply to all form controls.
 - **Always use a label.** Make sure your select element has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the menu read “Select a state” by default).
@@ -56,30 +56,30 @@ Use the [USWDS combobox accessibility tests](https://designsystem.digital.gov/co
 
 ## Code utilities 
 
-### Combobox initialization properties 
+### Combo box initialization properties 
 | Property | Element | Description | 
 | ----------- | ----------- | ----------- |
 | `required` | `select` | The combo box component will be required in terms of native form validation. | 
 | `data-default-value` | `.usa-combo-box` | The combo box will set this value as the default selection if it is found within the select options. |
 
-### Combobox properties 
+### Combo box properties 
 | Property | Element | Description | 
 | ----------- | ----------- | ----------- |
 | `data-filter` | `.usa-combo-box` | The combo box will use this regular expression to filter the combo box options. You are declaring a case insensitive match over the entire option text, which means `^` and `$` are added automatically. You can specify the inputted query with `{{query}}`. You can also declare a custom query filter as a data property as well, which can be used in the custom filter (`data-number-filter="[0-9]"` and then using `data-filter="{{numberFilter}}."` ). The default filter is `.{{query}}.*`, which is a simple “find anywhere within the option” text. | 
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Combobox](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-15781&p=f&t=RTzIimu7ufvk7iQf-0) | Using combobox in designs, documentation and best practices on combobox usage |
-| [Storybook: Combobox](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-combobox--docs) | Interactive example, code snippet, variants |
-| [Fractal: Combobox](https://newjersey.github.io/njwds/components/detail/combo-box--default.html) | Preview combobox styles, see combobox code snippet |
+| [Figma Grove: Combo box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-15781&p=f&t=RTzIimu7ufvk7iQf-0) | Using combo box in designs, documentation and best practices on combo box usage |
+| [Storybook: Combo box](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-combobox--docs) | Interactive example, code snippet, variants |
+| [Fractal: Combo box](https://newjersey.github.io/Grove/components/detail/combo-box--default.html) | Preview combo box styles, see combo box code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: Combobox](https://designsystem.digital.gov/components/combo-box/) | Reference for additional combobox styles and functionalities  |
-| [USWDS: Combobox utilities](https://designsystem.digital.gov/components/combo-box/#using-the-combo-box-component-2) | Utilities to be referenced in combobox styling (may not all apply to NJWDS) |
-| [USWDS: Combobox accessibility tests](https://designsystem.digital.gov/components/combo-box/accessibility-tests/) | Accessibility tests to run for combobox component |
+| [USWDS: Combo box](https://designsystem.digital.gov/components/combo-box/) | Reference for additional combo box styles and functionalities  |
+| [USWDS: Combo box utilities](https://designsystem.digital.gov/components/combo-box/#using-the-combo-box-component-2) | Utilities to be referenced in combo box styling (may not all apply to Grove) |
+| [USWDS: Combo box accessibility tests](https://designsystem.digital.gov/components/combo-box/accessibility-tests/) | Accessibility tests to run for combo box component |
 
