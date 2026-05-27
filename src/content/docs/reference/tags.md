@@ -63,16 +63,16 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 | `.usa-tag--big` | A tag with increased padding and font size. |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Tag](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
+| [Figma Grove: Tag](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
 | [Storybook: Tag](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true) | Interactive example, code snippet, variants |
-| [Fractal: Tag](https://newjersey.github.io/njwds/components/detail/labels--default.html) | Preview styles, see code snippet |
+| [Fractal: Tag](https://newjersey.github.io/Grove/components/detail/labels--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Tag](https://designsystem.digital.gov/components/tag/) | Reference for additional styles and functionalities |
-| [USWDS: Tag utilities](https://designsystem.digital.gov/components/tag/#using-the-tag-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Tag utilities](https://designsystem.digital.gov/components/tag/#using-the-tag-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Tag accessibility tests](https://designsystem.digital.gov/components/tag/accessibility-tests) | Accessibility tests to run for card component |
