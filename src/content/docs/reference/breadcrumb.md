@@ -101,17 +101,17 @@ Use the [USWDS breadcrumb accessibility tests](https://designsystem.digital.gov/
 | Wrapping | `usa-breadcrumb usa-breadcrumb--wrap` | 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Breadcrumb](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2788-628&t=p48LIM8AA1I9QJOL-0) | Using breadcrumb in designs, documentation and best practices on breadcrumb usage |
-| [Storybook: Breadcrumb](https://newjersey.github.io/njwds/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
-| [Fractal: Breadcrumb](https://newjersey.github.io/njwds/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
+| [Figma Grove: Breadcrumb](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2788-628&t=p48LIM8AA1I9QJOL-0) | Using breadcrumb in designs, documentation and best practices on breadcrumb usage |
+| [Storybook: Breadcrumb](https://newjersey.github.io/Grove/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
+| [Fractal: Breadcrumb](https://newjersey.github.io/Grove/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Breadcrumb](https://designsystem.digital.gov/components/breadcrumb/) | Reference for additional breadcrumb styles and functionalities  |
-| [USWDS: Breadcrumb utilities](https://designsystem.digital.gov/components/breadcrumb/#using-the-breadcrumb-component-2) | Utilities to be referenced in breadcrumb styling (may not all apply to NJWDS) |
+| [USWDS: Breadcrumb utilities](https://designsystem.digital.gov/components/breadcrumb/#using-the-breadcrumb-component-2) | Utilities to be referenced in breadcrumb styling (may not all apply to Grove) |
 | [USWDS: Breadcrumb accessibility tests](https://designsystem.digital.gov/components/breadcrumb/accessibility-tests) | Accessibility tests to run for breadcrumb component |
 
