@@ -84,10 +84,10 @@ Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/com
 | `.usa-table--striped` | Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns. |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Table](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3034-1111&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
+| [Figma Grove: Table](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3034-1111&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
 | [Storybook: Table](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs) | Interactive preview, code snippet, variants |
 
 ### USWDS links 
