@@ -108,16 +108,16 @@ Use the [USWDS card accessibility tests](https://designsystem.digital.gov/compon
 | `.usa-card__media--exdent`  | Extends the media element out over the card border. Useful for light-bordered cards. |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Card]([https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1625-667&p=f&t=OWFjainTs6OfqOdE-0)) | Using in designs |
+| [Figma Grove: Card]([https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1625-667&p=f&t=OWFjainTs6OfqOdE-0)) | Using in designs |
 | [Storybook: Card](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs&args=label:;icon:!true) | Interactive example, code snippet, variants |
-| [Fractal: Card](https://newjersey.github.io/njwds/components/detail/card--compare.html) | Preview styles, see code snippet |
+| [Fractal: Card](https://newjersey.github.io/Grove/components/detail/card--compare.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Card](https://designsystem.digital.gov/components/card/) | Reference for additional styles and functionalities  |
-| [USWDS: Card utilities](https://designsystem.digital.gov/components/card/#using-the-card-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Card utilities](https://designsystem.digital.gov/components/card/#using-the-card-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Card accessibility tests](https://designsystem.digital.gov/components/card/accessibility-tests) | Accessibility tests to run for component |
