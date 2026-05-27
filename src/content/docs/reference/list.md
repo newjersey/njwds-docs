@@ -60,16 +60,16 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 | `.usa-list--unstyled` | Removed list style |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
+| [Figma Grove: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
 | [Storybook: List](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs) | Interactive example, see code snippet, see variants |
-| [Fractal: List](https://newjersey.github.io/njwds/components/detail/labels--default.html) | Preview styles, see code snippet |
+| [Fractal: List](https://newjersey.github.io/Grove/components/detail/labels--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2852-3585&p=f&t=Yx31eAZO0ULNN6UA-0) | Reference for additional styles and functionalities |
-| [USWDS: List utilities](https://designsystem.digital.gov/components/list/#using-the-list-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: List utilities](https://designsystem.digital.gov/components/list/#using-the-list-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: List accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests) | Accessibility tests to run for card component |
