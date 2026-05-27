@@ -113,7 +113,7 @@ Use [USWDS radio button accessibility tests](https://designsystem.digital.gov/co
 | Radio button input | `usa-radio__input` | Use this for radio button input. |
 | Radio button label | `usa-radio__label` | Use this for radio button label -- the text next to the checkbox. |
 | Helper text label | `usa-radio__label-description` | Used only for radio button tile. Optional helper text that can be used to describe the label in more detail. To use, put the class on a span and place it inside the label component. (See Fractal for an example). |
-| Error message | `nj-error-message-container` | [Custom NJWDS] Used for error message, combines an icon and the USWDS error message. |
+| Error message | `nj-error-message-container` | [Custom Grove] Used for error message, combines an icon and the USWDS error message. |
 
 
 ### Radio button Variants
@@ -123,18 +123,18 @@ Use [USWDS radio button accessibility tests](https://designsystem.digital.gov/co
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Radio button / tile](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19547&p=f&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
+| [Figma Grove: Radio button / tile](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19547&p=f&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
 | [Storybook: Radio button list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-radio--default) | Interactive example, see code snippet, see variants |
 | [Storybook: Radio button tile list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-radio--tile) | Interactive example, see code snippet, see variants |
-| [Fractal: Radio button](https://newjersey.github.io/njwds/components/detail/radio-buttons--default.html) | Preview styles, see code snippet |
-| [Fractal: Radio button tile](https://newjersey.github.io/njwds/components/detail/radio-buttons--tile.html) | Preview styles, see code snippet |
+| [Fractal: Radio button](https://newjersey.github.io/Grove/components/detail/radio-buttons--default.html) | Preview styles, see code snippet |
+| [Fractal: Radio button tile](https://newjersey.github.io/Grove/components/detail/radio-buttons--tile.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Radio button](https://designsystem.digital.gov/components/radio-buttons/) | Reference for additional radio button styles and functionalities  |
-| [USWDS: Radio button utilities](https://designsystem.digital.gov/components/radio-buttons/#using-the-radio-buttons-component-2)  | Utilities to be referenced in radio button styling (may not all apply to NJWDS) |
+| [USWDS: Radio button utilities](https://designsystem.digital.gov/components/radio-buttons/#using-the-radio-buttons-component-2)  | Utilities to be referenced in radio button styling (may not all apply to Grove) |
 | [USWDS: Radio button accessibility tests](https://designsystem.digital.gov/components/radio-buttons/accessibility-tests) | Accessibility tests to run for radio button component |
