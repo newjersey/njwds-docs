@@ -33,10 +33,10 @@ description: Template for documentation page.
 - [NJ Identifier](https://turbo-adventure-n2vkrrm.pages.github.io/njcomponents/njidentifier/)
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Fractal: Documentation](https://newjersey.github.io/njwds/components/detail/layout--docs.html) | Preview styles, see code snippet |
+| [Fractal: Documentation](https://newjersey.github.io/Grove/components/detail/layout--docs.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
