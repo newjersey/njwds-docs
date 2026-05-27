@@ -71,7 +71,7 @@ Use the [USWDS footer accessibility tests](https://designsystem.digital.gov/comp
 ## Code utilities
 
 ### Footer components
-NJWDS provides a number of CSS classes that can be applied to various elements within the footer to help achieve a more standardized styling and layout
+Grove provides a number of CSS classes that can be applied to various elements within the footer to help achieve a more standardized styling and layout
 
 | Name |	Class	| Description |
 |-------------|--------------|--------------|
@@ -102,17 +102,17 @@ The following classes can be added to the `<footer>` element to determine the st
 
 ## Resources
 
-### NJWDS links 
+### Grove links 
 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Footer](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=512-174&t=iqL6YX4GteFnJQKf-1) | Figma component with variable styles applied |
+| [Figma Grove: Footer](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=512-174&t=iqL6YX4GteFnJQKf-1) | Figma component with variable styles applied |
 | [Fractal: Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs) | Interactive example, code snippet, variants |
-| [Fractal: Footer](https://newjersey.github.io/njwds/components/detail/footer--default.html) | Preview styles, see code snippet |
+| [Fractal: Footer](https://newjersey.github.io/Grove/components/detail/footer--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Footer](https://designsystem.digital.gov/components/footer/) | Reference for additional footer styles and functionalities |
-| [USWDS: Footer utilities](https://designsystem.digital.gov/components/footer/#using-the-footer-component-2) | Utilities to be referenced in footer styling (may not all apply to NJWDS) |
+| [USWDS: Footer utilities](https://designsystem.digital.gov/components/footer/#using-the-footer-component-2) | Utilities to be referenced in footer styling (may not all apply to Grove) |
 | [USWDS: Footer utilities](https://designsystem.digital.gov/components/footer/#using-the-footer-component-2) | Accessibility tests to run for footer component |
