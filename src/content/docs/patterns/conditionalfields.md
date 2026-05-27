@@ -41,7 +41,7 @@ When reveals are expected, live-regions and announcements are unnecessary for sc
 ## Known Issues
 For help with known issues, please reach out to the platform team.
 
-NJWDS and USWDS components do not come with their own conditional styles. The following items are in the NJWDS backlog:
+Grove and USWDS components do not come with their own conditional styles. The following items are in the Grove backlog:
 
 - Radio button group
 - Checkbox group
