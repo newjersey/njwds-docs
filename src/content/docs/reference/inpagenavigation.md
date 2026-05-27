@@ -5,7 +5,7 @@ description: Documentation for in-page navigation component.
 
 **The in-page navigation allows navigation to specific sections on a lengthy content page.**
 
-🚧 Not present in NJWDS Fractal, only in USWDS 🚧
+🚧 Not present in Grove Storybook, only in USWDS 🚧
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
@@ -63,10 +63,10 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: In-page navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3019-108&t=OWFjainTs6OfqOdE-0) | Using in designs |
+| [Figma Grove: In-page navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3019-108&t=OWFjainTs6OfqOdE-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
