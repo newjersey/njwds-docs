@@ -176,8 +176,8 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 | `usa-alert` | Used to communicate emergency information. The alert body will be a light grey color and will not display display an icon. |
 
 ### Dismissable alerts
-🚧 Not present in NJWDS or USWDS, would need custom implementation 🚧
-Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the NJWDS team, but is not implemented yet. 
+🚧 Not present in Grove or USWDS, would need custom implementation 🚧
+Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented yet. 
 
 
 #### Figma properties 
@@ -232,16 +232,16 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using alert in designs, documentation and best practices on alert usage |
+| [Figma Grove: Alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using alert in designs, documentation and best practices on alert usage |
 | [Storybook: Alert](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs) | Interactive example, code snippet, variants |
-| [Fractal: Alert](https://innovation.nj.gov/app/njwds/components/detail/alerts--default.html) | Preview alert styles, see alert code snippet |
+| [Fractal: Alert](https://innovation.nj.gov/app/Grove/components/detail/alerts--default.html) | Preview alert styles, see alert code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Alert](https://designsystem.digital.gov/components/alert/) | Reference for additional styles and functionalities  |
-| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Alert accessibility tests](https://designsystem.digital.gov/components/alert/#accessibility-guidance) | Accessibility tests to run for component |
