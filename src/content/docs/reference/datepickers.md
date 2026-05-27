@@ -136,15 +136,15 @@ These properties must be set before the component is initialized in order to hav
 - Entering a correctly formatted but invalid date (e.g. February 29 on a non-leap year) will cause native form validation error.
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Date pickers](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=39-1651&p=f&t=9zBPMXiCmdIEadOE-0) | Using date pickers in designs |
+| [Figma Grove: Date pickers](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=39-1651&p=f&t=9zBPMXiCmdIEadOE-0) | Using date pickers in designs |
 | [Storybook: Date picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-picker--docs) | Interactive example, code snippet, variants |
 | [Storybook: Memorable date picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-date--docs) | Interactive example, code snippet, variants |
 | [Storybook: Date range picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-date-range-picker--docs) | Interactive example, code snippet, variants |
-| [Fractal: Date picker](https://newjersey.github.io/njwds/components/detail/date-picker--default.html) | Preview date picker styles, see code snippet |
-| [Fractal: Memorable Date picker (Date input)](https://newjersey.github.io/njwds/components/detail/date-input.html) | Preview date picker styles, see code snippet |
+| [Fractal: Date picker](https://newjersey.github.io/Grove/components/detail/date-picker--default.html) | Preview date picker styles, see code snippet |
+| [Fractal: Memorable Date picker (Date input)](https://newjersey.github.io/Grove/components/detail/date-input.html) | Preview date picker styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
