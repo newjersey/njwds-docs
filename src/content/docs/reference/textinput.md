@@ -40,7 +40,7 @@ description: Documentation for text input and area component.
 ## Text Input
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-text-input--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View text input in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View text input in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
 
 ### Text Input Figma Type properties
 | Property | Value |
@@ -88,7 +88,7 @@ The following classes can be added to input elements with class usa-input to adj
 ## Text Area
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View text area in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View text area in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
 
 ### Text Area Figma Type properties
 | Property | Value |
@@ -135,17 +135,17 @@ Use the [USWDS text input / area accessibility tests](https://designsystem.digit
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Text input / area](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19656&p=f&t=xEncjmi7erLwzVH8-0) | Using in designs |
+| [Figma Grove: Text input / area](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19656&p=f&t=xEncjmi7erLwzVH8-0) | Using in designs |
 | [Storybook: Text Input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs) | Interactive preview, code snippet, variants |
 | [Storybook: Text Area](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-textarea--docs&args=characterCounter:!false) | Interactive preview, code snippet, variants |
-| [Fractal: Text input / area](https://newjersey.github.io/njwds/components/detail/text-input.html) | Preview styles, see code snippet |
+| [Fractal: Text input / area](https://newjersey.github.io/Grove/components/detail/text-input.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Text input](https://designsystem.digital.gov/components/text-input/) | Reference for additional styles and functionalities  |
-| [USWDS: Text input utilities](https://designsystem.digital.gov/components/text-input/#using-the-text-input-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Text input utilities](https://designsystem.digital.gov/components/text-input/#using-the-text-input-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Text input accessibility tests](https://designsystem.digital.gov/components/text-input/accessibility-tests)| Accessibility tests to run for component |
