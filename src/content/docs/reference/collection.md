@@ -66,10 +66,10 @@ Use [USWDS collection accessibility tests](https://designsystem.digital.gov/comp
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Collection](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3210-1245&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Collection](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3210-1245&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
