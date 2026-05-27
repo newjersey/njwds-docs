@@ -67,7 +67,7 @@ Use the [USWDS side navigation accessibility tests](https://designsystem.digital
 ## Code 
 
 ### Side Navigation Components
-NJWDS provides a number of CSS classes that can be applied to various elements within the side navigation panel to help achieve a more standardized styling and layout.
+Grove provides a number of CSS classes that can be applied to various elements within the side navigation panel to help achieve a more standardized styling and layout.
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
 | Side Navigation Item | `usa-sidenav__item` | Apply this class to a `<li>` element to designate an item within the side navigation panel. |
@@ -75,17 +75,17 @@ NJWDS provides a number of CSS classes that can be applied to various elements w
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Side navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=196-330&p=f&t=5K6zTsl37oLtbvIT-0) | Using in designs |
+| [Figma Grove: Side navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=196-330&p=f&t=5K6zTsl37oLtbvIT-0) | Using in designs |
 | [Storybook: Side navigation](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-side-navigation--docs) | Preview styles, see code snippet |
-| [Fractal: Side navigation](https://newjersey.github.io/njwds/components/detail/sidenav--default.html) | Preview styles, see code snippet |
+| [Fractal: Side navigation](https://newjersey.github.io/Grove/components/detail/sidenav--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Side navigation](https://designsystem.digital.gov/components/side-navigation/) | Reference for additional styles and functionalities  |
-| [USWDS: Side navigation utilities](https://designsystem.digital.gov/components/side-navigation/#using-the-side-navigation-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Side navigation utilities](https://designsystem.digital.gov/components/side-navigation/#using-the-side-navigation-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Side navigation accessibility tests](https://designsystem.digital.gov/components/side-navigation/accessibility-tests) | Accessibility tests to run for component |
 
