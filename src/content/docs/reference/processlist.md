@@ -7,8 +7,6 @@ description: Documentation for process list component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🚧 **Not present in Grove, only in USWDS** 🚧
-
 🔗 [View process list in USWDS](https://designsystem.digital.gov/components/process-list/)
   
 ## Process List Usage
