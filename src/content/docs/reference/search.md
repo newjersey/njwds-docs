@@ -102,17 +102,17 @@ Use the [USWDS search accessibility tests](https://designsystem.digital.gov/comp
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Search](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-8237&p=f&t=ZOdFzKwtvvcjAErD-0) | Using in designs |
+| [Figma Grove: Search](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-8237&p=f&t=ZOdFzKwtvvcjAErD-0) | Using in designs |
 | [Storybook: Search](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-search--docs) | Interactive example, code snippets, variants |
-| [Fractal: Search](https://newjersey.github.io/njwds/components/detail/search--default.html) | Preview styles, see code snippet |
+| [Fractal: Search](https://newjersey.github.io/Grove/components/detail/search--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Search](https://designsystem.digital.gov/components/search/) | Reference for additional styles and functionalities  |
-| [USWDS: Search utilites](https://designsystem.digital.gov/components/search/#using-the-search-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Search utilites](https://designsystem.digital.gov/components/search/#using-the-search-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Search accessibility tests](https://designsystem.digital.gov/components/search/accessibility-tests/) | Accessibility tests to run for component |
 
