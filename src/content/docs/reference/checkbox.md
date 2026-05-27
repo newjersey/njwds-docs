@@ -113,7 +113,7 @@ Use [USWDS checkbox accessibility tests](https://designsystem.digital.gov/compon
 | Checkbox input | `usa-checkbox__input` | Use this for checkbox input. |
 | Checkbox label | `usa-checkbox__label` | Use this for checkbox label -- the text next to the checkbox. |
 | Helper text label | `usa-checkbox__label-description` | Used only for checkbox tile. Optional helper text that can be used to describe the label in more detail. To use, put the class on a span and place it inside the label component. (See Fractal for an example). |
-| Error message | `nj-error-message-container` | [Custom NJWDS] Used for error message, combines an icon and the USWDS error message. |
+| Error message | `nj-error-message-container` | [Custom Grove] Used for error message, combines an icon and the USWDS error message. |
 
 
 ### Checkbox Variants
@@ -123,16 +123,16 @@ Use [USWDS checkbox accessibility tests](https://designsystem.digital.gov/compon
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Checkbox](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=33-1439&t=i4k26YohAESPvEsR-0) | Using button in designs, documentation and best practices on button usage |
+| [Figma Grove: Checkbox](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=33-1439&t=i4k26YohAESPvEsR-0) | Using button in designs, documentation and best practices on button usage |
 | [Storybook: Checkbox](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-checkbox--docs) | Interactive example, code snippets, see variants |
-| [Fractal: Checkbox](https://innovation.nj.gov/app/njwds/components/detail/checkboxes.html) | Preview button styles, see button code snippet |
+| [Fractal: Checkbox](https://innovation.nj.gov/app/Grove/components/detail/checkboxes.html) | Preview button styles, see button code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Checkbox](https://designsystem.digital.gov/components/checkbox/) | Reference for additional checkbox styles and functionalities  |
-| [USWDS: Checkbox utilities](https://designsystem.digital.gov/components/checkbox/#using-the-checkbox-component-2)  | Utilities to be referenced in checkbox styling (may not all apply to NJWDS) |
+| [USWDS: Checkbox utilities](https://designsystem.digital.gov/components/checkbox/#using-the-checkbox-component-2)  | Utilities to be referenced in checkbox styling (may not all apply to Grove) |
 | [USWDS: Checkbox accessibility tests](https://designsystem.digital.gov/components/checkbox/accessibility-tests/) | Accessibility tests to run for checkbox component |
