@@ -30,10 +30,10 @@ description: Documentation for hero component.
 - [Storybook: Landing page template](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/templates-landing--docs)
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Hero](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2858-3888&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Hero](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2858-3888&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Hero](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-hero--docs) | Interactive example, code snippets, variants |
-| [Fractal: Hero](https://newjersey.github.io/njwds/components/detail/hero.html) | Preview styles, see code snippet |
+| [Fractal: Hero](https://newjersey.github.io/Grove/components/detail/hero.html) | Preview styles, see code snippet |
 
