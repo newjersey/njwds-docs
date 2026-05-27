@@ -112,17 +112,17 @@ Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/c
 | Accordion Content | `usa-accordion__content usa-prose` | Add to `div` for accordion content |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Accordion](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1519-637&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
+| [Figma Grove: Accordion](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1519-637&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
 | [Storybook: Accordion](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-accordion--docs) | Interactive example, code snippets, variants |
-| [Fractal: Accordion](https://newjersey.github.io/njwds/components/detail/accordion--default.html) | Preview styles, see code snippet |
+| [Fractal: Accordion](https://newjersey.github.io/Grove/components/detail/accordion--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Accordion](https://designsystem.digital.gov/components/accordion/) | Reference for additional styles and functionalities  |
-| [USWDS: Accordion utilites](https://designsystem.digital.gov/components/accordion/#using-the-accordion-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Accordion utilites](https://designsystem.digital.gov/components/accordion/#using-the-accordion-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) | Accessibility tests to run for component |
 
