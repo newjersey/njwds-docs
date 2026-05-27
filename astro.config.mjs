@@ -26,10 +26,6 @@ export default defineConfig({
 					autogenerate: { directory: 'styles' },
 				},
 				{
-					label: 'NJWDS Starter Pack',
-					autogenerate: { directory: 'njcomponents' },
-				},
-				{
 					label: 'Components',
 					autogenerate: { directory: 'reference' },
 				},
