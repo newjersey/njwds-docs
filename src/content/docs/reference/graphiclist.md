@@ -30,9 +30,9 @@ description: Documentation for graphic list component.
 - [Landing page template](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/templates-landing--docs)
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Graphic list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2858-3887&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Graphic list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2858-3887&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Graphic list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-graphiclist--docs) | Interactive example, code snippet, variants |
-| [Fractal: Graphic list](https://newjersey.github.io/njwds/components/detail/graphic-list.html) | Preview styles, see code snippet |
+| [Fractal: Graphic list](https://newjersey.github.io/Grove/components/detail/graphic-list.html) | Preview styles, see code snippet |
