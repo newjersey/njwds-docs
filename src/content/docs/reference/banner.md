@@ -1,9 +1,9 @@
 ---
 title: Banner 🚧
-description: Documentation for custom NJWDS banner.
+description: Documentation for custom Grove banner.
 ---
 
-**Custom NJWDS banner component for NJIA-built websites and web apps.**
+**Custom Grove banner component for NJIA-built websites and web apps.**
 
 🚧 Mobile version differences between Figma and Storybook 🚧
 
@@ -40,7 +40,7 @@ description: Documentation for custom NJWDS banner.
 **Note:** While the NJ Site Banner is currently composed of an editable set of elements, we _**strongly**_ encourage you to copy code directly from Fractal when setting up the banner on your page. Because the purpose of the banner is to provide assurance in the reliability of the site, it is important that it remain consistent across official NJ web pages. 
 
 #### Banner / Site Header Components
-NJWDS provides a number of CSS classes that can be applied to various elements within the NJ Site Banner to help achieve a more standardized styling and layout.
+Grove provides a number of CSS classes that can be applied to various elements within the NJ Site Banner to help achieve a more standardized styling and layout.
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
 | Banner Header | `nj-banner__header` | Apply this class to a `<header>` element within the banner to apply standardized padding and colors to all content within the banner. |
@@ -51,12 +51,12 @@ NJWDS provides a number of CSS classes that can be applied to various elements w
 - TBD
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Banner](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=198-798&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Banner](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=198-798&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Banner](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true) | Interactive example, code snippets, variants |
-| [Fractal: Banner](https://newjersey.github.io/njwds/components/detail/banner.html) | Preview styles, see code snippet |
+| [Fractal: Banner](https://newjersey.github.io/Grove/components/detail/banner.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
