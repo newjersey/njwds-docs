@@ -85,7 +85,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
   
-❌ _**Not Supported:** NJWDS does not support select button types from USWDS including accent cool, accent warm, and big._
+❌ _**Not Supported:** Grove does not support select button types from USWDS including accent cool, accent warm, and big._
 
 
 ## Button states
@@ -95,13 +95,13 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | ----------- | ----------- |
 | state | default, hover, active, focus |
 
-**Make sure buttons look selectable.** The NJWDS button component currently supports the following states: 
+**Make sure buttons look selectable.** The Grove button component currently supports the following states: 
 - Default
 - Hover
 - Active
 - Focus
 
-❌ _**Not Supported:** NJWDS does not support a disabled button states from USWDS._
+❌ _**Not Supported:** Grove does not support a disabled button states from USWDS._
 
 
 ## Button modes
@@ -134,9 +134,9 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | Dark Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button--inverse` | Used for dark mode |
-| `nj-button--primary-dark` | [Custom NJWDS] Used for primary dark variant |
+| `nj-button--primary-dark` | [Custom Grove] Used for primary dark variant |
 | `usa-button usa-button--outline usa-button--inverse` | Used for secondary dark variant |
-| `nj-button--unstyled-dark` | [Custom NJWDS] Used for tertiary dark variant |
+| `nj-button--unstyled-dark` | [Custom Grove] Used for tertiary dark variant |
 
 ### Danger mode
 **These buttons should be used if the use case is destructive or irreversible.** This could include actions such as deleting an application.
@@ -148,8 +148,8 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | ----------- | ----------- |
 | `usa-button--secondary` | Used for danger mode |
 | `usa-button usa-button--secondary` | Used for primary danger variant |
-| `nj-button--outline-danger` | [Custom NJWDS] Used for secondary danger variant |
-| `nj-button--unstyled-danger` | [Custom NJWDS] Used for tertiary danger variant |
+| `nj-button--outline-danger` | [Custom Grove] Used for secondary danger variant |
+| `nj-button--unstyled-danger` | [Custom Grove] Used for tertiary danger variant |
 
 
 ## Icons in Buttons
@@ -179,7 +179,7 @@ An icon can be used in place of text to demonstrate a button's meaning.
 ### Code class
 | Icon Variant Class | Description | 
 | ----------- | ----------- |
-| `nj-button--icon` | [Custom NJWDS] Used for buttons containing icons |
+| `nj-button--icon` | [Custom Grove] Used for buttons containing icons |
 
 ✅ _**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
 
@@ -208,17 +208,17 @@ When styling links to look like buttons, remember that screen readers handle lin
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using in designs |
+| [Figma Grove: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using in designs |
 | [Storybook: Button](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=icon:!true) | Interative examples, see code snippet, see variants |
-| [Fractal: Button](https://newjersey.github.io/njwds/components/detail/buttons--primary-(light).html) | Preview styles, see code snippet |
+| [Fractal: Button](https://newjersey.github.io/Grove/components/detail/buttons--primary-(light).html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Button](https://designsystem.digital.gov/components/button/) | Reference for additional styles and functionalities  |
-| [USWDS: Button utilities](https://designsystem.digital.gov/components/button/#using-the-button-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Button utilities](https://designsystem.digital.gov/components/button/#using-the-button-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) | Accessibility tests to run for component |
 
