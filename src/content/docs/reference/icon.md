@@ -45,7 +45,7 @@ description: Documentation for icon component.
 CSS classes can be used to manipulate icon size. By default, icons with the `.usa-icon class` will be `20px` by `20px` in size.
 | Variant | Description |
 | ----------- | ----------- |
-| `nj-icon--size-scale` | [Custom NJWDS] The height and width of the icon will be `1em`. As font size changes, the icon size will scale accordingly. |
+| `nj-icon--size-scale` | [Custom Grove] The height and width of the icon will be `1em`. As font size changes, the icon size will scale accordingly. |
 | `usa-icon--size-3` | The height and width of the icon will be `1.5rem`. |
 | `usa-icon--size-4` | The height and width of the icon will be `2rem`. |
 | `usa-icon--size-5` | The height and width of the icon will be `2.5rem`. |
@@ -79,17 +79,17 @@ Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/compon
 - **Place icons inside links.** If icons accompany a text link, place the icon inside the link to prevent screen readers from announcing the link twice.
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Icon](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2588-22&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Icon](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2588-22&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Icon](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-icon--docs) | Interactive example, code snippet, variants |
-| [Fractal: Icon](https://newjersey.github.io/njwds/components/detail/icon.html) | Preview styles, see code snippet |
+| [Fractal: Icon](https://newjersey.github.io/Grove/components/detail/icon.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Icon](https://designsystem.digital.gov/components/icon/) | Reference for additional styles and functionalities  |
-| [USWDS: Icon](https://designsystem.digital.gov/components/icon/#using-the-icon-component-2) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Icon](https://designsystem.digital.gov/components/icon/#using-the-icon-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Icon](https://designsystem.digital.gov/components/icon/accessibility-tests/) | Accessibility tests to run for icon component |
 
