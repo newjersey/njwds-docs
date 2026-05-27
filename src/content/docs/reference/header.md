@@ -9,7 +9,7 @@ description: Documentation for header component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View header in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View header in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
   
 ## Header Usage
 ### 👍 Use this component for
@@ -41,7 +41,7 @@ description: Documentation for header component.
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View basic header in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View basic header in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
 
 ### Basic Header Usage
 Use the basic header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
@@ -65,7 +65,7 @@ Use the basic header if you have few enough sections in your main navigation to 
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View extended header in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--secondary-(light).html)
+🔗 [View extended header in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--secondary-(light).html)
 
 An extended header allows for the inclusion of more sections in a horizontal navigation. You can customize the header (depending on your site structure) and use it:
 
@@ -131,12 +131,12 @@ The basic header with a megamenu is similar in design to the basic header compon
 
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
 
 #### Search bar
 <iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View search bar in Storybook](https://newjersey.github.io/njwds/components/preview/buttons--primary-(light).html)
+🔗 [View search bar in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
 
 ## Accessibility guidance
 Use the [USWDS header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) to test button implementation.
@@ -171,16 +171,16 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 - [Landing page template](https://designsystem.digital.gov/templates/landing-page/)
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Header](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1910-52&p=f&t=Yx31eAZO0ULNN6UA-0) | Using header in designs, documentation and best practices on button usage |
-| [Fractal: Header](https://newjersey.github.io/njwds/components/detail/header--default.html) | Preview card styles, see card code snippet |
+| [Figma Grove: Header](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1910-52&p=f&t=Yx31eAZO0ULNN6UA-0) | Using header in designs, documentation and best practices on button usage |
+| [Fractal: Header](https://newjersey.github.io/Grove/components/detail/header--default.html) | Preview card styles, see card code snippet |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Header](https://designsystem.digital.gov/components/header/) | Reference for additional styles and functionalities  |
-| [USWDS: Header utilities](https://designsystem.digital.gov/components/header/#implementation) | Utilities to be referenced in styling (may not all apply to NJWDS) |
+| [USWDS: Header utilities](https://designsystem.digital.gov/components/header/#implementation) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) | Accessibility tests to run for header component |
 
