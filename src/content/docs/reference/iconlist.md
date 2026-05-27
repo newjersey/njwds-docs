@@ -81,10 +81,10 @@ Use [USWDS icon list accessibility tests](https://designsystem.digital.gov/compo
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Icon list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2933-672&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma Grove: Icon list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2933-672&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
