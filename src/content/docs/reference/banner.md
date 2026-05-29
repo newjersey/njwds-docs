@@ -2,24 +2,16 @@
 title: Banner 🚧
 description: Documentation for custom Grove banner.
 ---
+> [!WARNING]
+> Mobile version differences between Figma and Storybook
 
 A banner is an official signifier of a website created by the State of New Jersey government, as well as a form of navigation.
 
-{% linkbutton href="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=198-798&t=sh8zRmraTY7zBxeu-1" variant="secondary" icon="figma" iconPlacement="start" %}
-Figma
-{% /linkbutton %}
-
-{% linkbutton href="https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true" variant="primary" icon="storybook" iconPlacement="start" %}
-View in Storybook
-{% /linkbutton %}
-
-🚧 Mobile version differences between Figma and Storybook 🚧
+[Figma](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=198-798&t=sh8zRmraTY7zBxeu-1) [Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true)
 
 <iframe title="Banner" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-banner--default&viewMode=story" width="100%" height="100"></iframe>
 
-{% linkbutton href="https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true" variant="secondary" icon="storybook" iconPlacement="start" %}
-View in Storybook
-{% /linkbutton %}
+[View in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true)
 
 ## Banner Usage
 ### 👍 Use this component for
