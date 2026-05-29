@@ -2,8 +2,7 @@
 title: Banner 🚧
 description: Documentation for custom Grove banner.
 ---
-> [!WARNING]
-> Mobile version differences between Figma and Storybook
+🚧 Mobile version differences between Figma and Storybook 🚧
 
 A banner is an official signifier of a website created by the State of New Jersey government, as well as a form of navigation.
 
