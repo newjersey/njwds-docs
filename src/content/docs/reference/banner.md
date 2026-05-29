@@ -2,9 +2,11 @@
 title: Banner 🚧
 description: Documentation for custom Grove banner.
 ---
+
 import { LinkButton } from '@astrojs/starlight/components';
 
 A banner is an official signifier of a website created by the State of New Jersey government, as well as a form of navigation.
+
 <LinkButton
   href="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=198-798&t=sh8zRmraTY7zBxeu-1"
   variant="secondary"
@@ -13,6 +15,7 @@ A banner is an official signifier of a website created by the State of New Jerse
 >
   Figma
 </LinkButton>
+
 <LinkButton
   href="https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true"
   variant="primary"
