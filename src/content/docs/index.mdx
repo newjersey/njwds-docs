@@ -35,32 +35,90 @@ template: splash # Remove or comment out this line to display the site sidebar o
         <p>Design and code for interface building blocks that can be reused.</p>
       </div>
       <div class="usa-card__footer">
-        <a href="/guides/gettingstarted/">View Components</a>
+        <a class="usa-button usa-button--outline" href="/guides/gettingstarted/">View Components</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">Templates</h2>
+      </header>
+      <div class="usa-card__media usa-card__media--inset">
+      	<div class="usa-card__img">
+			<img alt="A placeholder image" src="./img/card-media-md.png" />
+		</div>
+      </div>
+      <div class="usa-card__body">
+        <p>Page template examples for specific page types include hubs, emails, and authentication.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button usa-button--outline" href="/guides/gettingstarted/">View Templates</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">Patterns</h2>
+      </header>
+      <div class="usa-card__media usa-card__media--inset">
+      	<div class="usa-card__img">
+			<img alt="A placeholder image" src="./img/card-media-md.png" />
+		</div>
+      </div>
+      <div class="usa-card__body">
+        <p>Components and utilities can be combined to solve recurring user needs.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button usa-button--outline" href="/guides/gettingstarted/">View Patterns</a>
       </div>
     </div>
   </li>
 </ul>
 </section>
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+<section>
+<h2>Styles</h2>
+<p>The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
+<a href="/guides/gettingstarted/">View Styles</a>
+</section>
 
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+<section>
+<h2>Content Guides</h2>
+<p>By practicing language in an intentional way, we can provide content that supports resident’s needs and improve their experience on our site.</p>
+<ul class="usa-card-group">
+  <li class="usa-card tablet:grid-col-4  usa-card--media-right">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">Content Guide</h2>
+      </header>
+      <div class="usa-card__media ">
+      	<div class="usa-card__img"><img alt="A placeholder image" src="./img/card-media-sm.png" /></div>
+      </div>
+      <div class="usa-card__body">
+        <p>Our guide for the voice and tone of everything we write.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button usa-button--outline" href="/guides/gettingstarted/">Action</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card tablet:grid-col-4  usa-card--media-right">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h2 class="usa-card__heading">Word List</h2>
+      </header>
+      <div class="usa-card__media ">
+      	<div class="usa-card__img"><img alt="A placeholder image" src="./img/card-media-sm.png" /></div>
+      </div>
+      <div class="usa-card__body">
+        <p>Use our in-house style for common words, so we can use words and labels consistently.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a class="usa-button usa-button--outline" href="/guides/gettingstarted/">Action</a>
+      </div>
+    </div>
+  </li>
+</ul>
+</section>
