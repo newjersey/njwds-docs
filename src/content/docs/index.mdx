@@ -2,19 +2,20 @@
 title: New Jersey Web Design System (NJWDS)
 description: A design system for the State of New Jersey. 
 template: splash # Remove or comment out this line to display the site sidebar on this page.
-hero:
-  tagline: A design system for the State of New Jersey.
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Get started
-      link: /guides/gettingstarted/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
+
+ <section class="usa-hero" aria-label="Introduction" background="your_image.jpg">
+  <div class="grid-container">
+    <div class="usa-hero__callout">
+      <h1 class="usa-hero__heading">
+        <span class="usa-hero__heading--alt">Designed to Serve.</span>
+        Built to Grow.
+      </h1>
+      <p>The official design system for New Jersey. Making it easier for teams to build and scale accessible digital services that solve problems.</p>
+      <a class="usa-button" href="/guides/gettingstarted/">Get started</a>
+    </div>
+  </div>
+</section>
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
