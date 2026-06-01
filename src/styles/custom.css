@@ -2,10 +2,4 @@
 starlight-theme-select {
   display: none !important;
 }
-:root {
-  /* Change the nav bar background color */
-  --sl-color-bg-nav: #193324; 
-  /* Light mode background */
-  --sl-color-gray-6: #FCFCFB; 
-}
 */
