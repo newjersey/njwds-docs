@@ -6,7 +6,6 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Grove',
 			logo: {
         	src: './src/assets/GroveLogo.png', 
 			},
