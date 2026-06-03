@@ -4,7 +4,11 @@ description: A design system for the State of New Jersey.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 ---
 
- <section class="usa-hero" aria-label="Introduction" background="![Illustration of grid with leaves.](../../../assets/Illustration-Cream BG - not to egde 4.png)">
+import { Image } from 'astro:assets';
+import placeholder from '../assets/circle-124.png';
+import heroimage from '../assets/GroveHeroCreamBG.png';
+
+ <section class="usa-hero" aria-label="Introduction" background="{heroimage.src}">
   <div class="grid-container">
     <div class="usa-hero__callout">
       <h1 class="usa-hero__heading">
@@ -129,7 +133,7 @@ template: splash # Remove or comment out this line to display the site sidebar o
 	<div class="grid-container">
 		<div class="usa-graphic-list__row grid-row grid-gap">
 			<div class="usa-media-block tablet:grid-col">
-				<img class="usa-media-block__img" src="../assets/circle-124.png" alt="placeholder image" />
+				<img class="usa-media-block__img" src="{placeholder.src}" alt="placeholder image" />
     			<div class="usa-media-block__body">
       				<h2 class="usa-graphic-list__heading">Figma</h2>
       				<p>Create designs for use in static mockups and prototypes.</p>
@@ -137,7 +141,7 @@ template: splash # Remove or comment out this line to display the site sidebar o
     			</div>
   			</div>
   			<div class="usa-media-block tablet:grid-col">
-    			<img class="usa-media-block__img" src="../assets/circle-124.png" alt="placeholder image" />
+    			<img class="usa-media-block__img" src="{placeholder.src}" alt="placeholder image" />
     			<div class="usa-media-block__body">
       				<h2 class="usa-graphic-list__heading">Storybook</h2>
       				<p>The single source of truth for the codebase's design system.</p>
