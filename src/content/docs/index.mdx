@@ -7,8 +7,16 @@ template: splash # Remove or comment out this line to display the site sidebar o
 import { Image } from 'astro:assets';
 import placeholder from '../../assets/circle-124.png';
 import heroimage from '../../assets/GroveHeroCreamBG.png';
+import componentcard from '../../assets/HomeCardComponent.png';
+import templatecard from '../../assets/HomeCardTemplate.png';
+import patterncard from '../../assets/HomeCardPattern.png';
+import stylesection from '../../assets/HomeSectionStyles.png';
+import contentguide from '../../assets/HomeContentGuide.png';
+import wordlist from '../../assets/HomeWordList.png';
+import graphicfigma from '../../assets/HomeResourcesFigma.png';
+import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
 
- <section class="usa-hero" aria-label="Introduction" background={heroimage.src} style={`background-image:url(${heroimage}.src)`}>
+ <section class="usa-hero" aria-label="Introduction" background={heroimage.src}>
   <div class="grid-container">
     <div class="usa-hero__callout">
       <h1 class="usa-hero__heading">
@@ -32,7 +40,7 @@ import heroimage from '../../assets/GroveHeroCreamBG.png';
       </header>
       <div class="usa-card__media usa-card__media--inset">
       	<div class="usa-card__img">
-			<img alt="A placeholder image" src="./img/card-media-md.png" />
+			<img alt="A placeholder image" src={componentcard}.src />
 		</div>
       </div>
       <div class="usa-card__body">
@@ -50,7 +58,7 @@ import heroimage from '../../assets/GroveHeroCreamBG.png';
       </header>
       <div class="usa-card__media usa-card__media--inset">
       	<div class="usa-card__img">
-			<img alt="A placeholder image" src="./img/card-media-md.png" />
+			<img alt="A placeholder image" src={templatecard}.src />
 		</div>
       </div>
       <div class="usa-card__body">
@@ -68,7 +76,7 @@ import heroimage from '../../assets/GroveHeroCreamBG.png';
       </header>
       <div class="usa-card__media usa-card__media--inset">
       	<div class="usa-card__img">
-			<img alt="A placeholder image" src="./img/card-media-md.png" />
+			<img alt="A placeholder image" src={patterncard}.src />
 		</div>
       </div>
       <div class="usa-card__body">
@@ -98,7 +106,7 @@ import heroimage from '../../assets/GroveHeroCreamBG.png';
         <h2 class="usa-card__heading">Content Guide</h2>
       </header>
       <div class="usa-card__media ">
-      	<div class="usa-card__img"><img alt="A placeholder image" src="./img/card-media-sm.png" /></div>
+      	<div class="usa-card__img"><img alt="A placeholder image" src={contentguide}.src /></div>
       </div>
       <div class="usa-card__body">
         <p>Our guide for the voice and tone of everything we write.</p>
@@ -114,7 +122,7 @@ import heroimage from '../../assets/GroveHeroCreamBG.png';
         <h2 class="usa-card__heading">Word List</h2>
       </header>
       <div class="usa-card__media ">
-      	<div class="usa-card__img"><img alt="A placeholder image" src="./img/card-media-sm.png" /></div>
+      	<div class="usa-card__img"><img alt="A placeholder image" src={wordlist}.src /></div>
       </div>
       <div class="usa-card__body">
         <p>Use our in-house style for common words, so we can use words and labels consistently.</p>
@@ -133,7 +141,7 @@ import heroimage from '../../assets/GroveHeroCreamBG.png';
 	<div class="grid-container">
 		<div class="usa-graphic-list__row grid-row grid-gap">
 			<div class="usa-media-block tablet:grid-col">
-				<img class="usa-media-block__img" src={placeholder.src} alt="placeholder image" />
+				<img class="usa-media-block__img" src={graphicfigma.src} alt="placeholder image" />
     			<div class="usa-media-block__body">
       				<h2 class="usa-graphic-list__heading">Figma</h2>
       				<p>Create designs for use in static mockups and prototypes.</p>
@@ -141,7 +149,7 @@ import heroimage from '../../assets/GroveHeroCreamBG.png';
     			</div>
   			</div>
   			<div class="usa-media-block tablet:grid-col">
-    			<img class="usa-media-block__img" src={placeholder.src} alt="placeholder image" />
+    			<img class="usa-media-block__img" src={graphicstorybook.src} alt="placeholder image" />
     			<div class="usa-media-block__body">
       				<h2 class="usa-graphic-list__heading">Storybook</h2>
       				<p>The single source of truth for the codebase's design system.</p>
