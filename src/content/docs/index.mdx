@@ -17,10 +17,10 @@ template: splash # Remove or comment out this line to display the site sidebar o
   </div>
 </section>
 
-<section>
+<section class="usa-section">
 <h2>Building Blocks</h2>
 <p>The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
-<ul class="usa-card-group">
+<ul class="usa-card-group flex-row margin-top-4">
   <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
     <div class="usa-card__container">
       <header class="usa-card__header">
@@ -78,16 +78,16 @@ template: splash # Remove or comment out this line to display the site sidebar o
 </ul>
 </section>
 
-<section>
+<section class="usa-section">
 <h2>Styles</h2>
 <p>The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
 <a href="/guides/gettingstarted/">View Styles</a>
 </section>
 
-<section>
+<section class="usa-section">
 <h2>Content Guides</h2>
 <p>By practicing language in an intentional way, we can provide content that supports resident’s needs and improve their experience on our site.</p>
-<ul class="usa-card-group">
+<ul class="usa-card-group flex-row margin-top-4">
   <li class="usa-card tablet:grid-col-6  usa-card--media-right">
     <div class="usa-card__container">
       <header class="usa-card__header">
@@ -123,40 +123,28 @@ template: splash # Remove or comment out this line to display the site sidebar o
 </ul>
 </section>
 
-<section>
+<section class="usa-section">
 <h2>Resources</h2>
-<ul class="usa-card-group">
-  <li class="usa-card usa-card--flag tablet:grid-col-6  ">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h2 class="usa-card__heading">Figma</h2>
-      </header>
-      <div class="usa-card__media usa-card__media--inset">
-      	<div class="usa-card__img"><img alt="A placeholder image" src="./img/card-media-lg-flag.png" /></div>
-      </div>
-      <div class="usa-card__body">
-        <p>Create designs for use in static mockups and prototypes.</p>
-      </div>
-      <div class="usa-card__footer">
-        <a href="/guides/gettingstarted/">View style guide</a>
-      </div>
-    </div>
-  </li>
-  <li class="usa-card usa-card--flag tablet:grid-col-6  ">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h2 class="usa-card__heading">Storybook</h2>
-      </header>
-      <div class="usa-card__media usa-card__media--inset">
-      	<div class="usa-card__img"><img alt="A placeholder image" src="./img/card-media-lg-flag.png" /></div>
-      </div>
-      <div class="usa-card__body">
-        <p>The single source of truth for the codebase's design system.</p>
-      </div>
-      <div class="usa-card__footer">
-        <a href="/guides/gettingstarted/">View style guide</a>
-      </div>
-    </div>
-  </li>
-</ul>
+<section class="usa-graphic-list flex-row margin-top-4">
+	<div class="grid-container">
+		<div class="usa-graphic-list__row grid-row grid-gap">
+			<div class="usa-media-block tablet:grid-col">
+				<img class="usa-media-block__img" src="./img/circle-124.png" alt="placeholder image" />
+    			<div class="usa-media-block__body">
+      				<h2 class="usa-graphic-list__heading">Figma</h2>
+      				<p>Create designs for use in static mockups and prototypes.</p>
+					<a href="">View style guide
+    			</div>
+  			</div>
+  			<div class="usa-media-block tablet:grid-col">
+    			<img class="usa-media-block__img" src="./img/circle-124.png" alt="placeholder image" />
+    			<div class="usa-media-block__body">
+      				<h2 class="usa-graphic-list__heading">Storybook</h2>
+      				<p>The single source of truth for the codebase's design system.</p>
+					<a href="">View style guide</a>
+    			</div>
+ 			 </div>
+      	</div>
+	</div>
+</section>
 </section>
