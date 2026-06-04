@@ -1,6 +1,9 @@
 ---
 title: Vision
 description: The north star vision of Grove.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 2
 ---
 
 ## Design System Vision
