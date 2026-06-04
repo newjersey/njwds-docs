@@ -1,6 +1,9 @@
 ---
 title: Getting Started
 description: A guide to getting started with Grove.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 1
 ---
 
 ### For Designers
