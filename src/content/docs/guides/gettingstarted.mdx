@@ -1,0 +1,104 @@
+---
+title: Getting Started
+description: A guide to getting started with Grove.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 1
+---
+
+import { Image } from 'astro:assets';
+import engineer from '../../../GettingStartedEngineer.png';
+import designer from '../../../GettingStartedDesigner.png';
+import content from '../../../GettingStartedContent.png';
+
+<section class="usa-section">
+  <h2>Required Components</h2>
+  <h3>Why have required components?</h3>
+  <p>Required components provide a consistent look and feel across New Jersey State Government websites and digital services that builds trust and credibility with the public.</p>
+  <h3>Which components are required?</h3>
+  <ul class="usa-list">
+    <li>Banner: Indicates that a website is an official New Jersey State Government site</li>
+    <li>Feedback widget: Standardized way of collecting user input on digital services and websites</li>
+    <li>Footer: Identifies the department that owns the digital service or website</li>
+    <li>Identifier: Official New Jersey State wrapper that links back to main NJ websites</li>
+  </ul>
+</section>
+<section class="usa-section">
+  <h2>Guides by role</h2>
+  <ul class="usa-card-group flex-row margin-top-4">
+    <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
+      <div class="usa-card__container">
+        <header class="usa-card__header">
+          <h2 class="usa-card__heading">Engineers</h2>
+        </header>
+        <div class="usa-card__media usa-card__media--inset">
+          <div class="usa-card__img">
+            <img alt="A placeholder image" src={engineer.src} />
+          </div>
+        </div>
+        <div class="usa-card__body">
+          <p>Get started with the Grove code base by installing with npm.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="#engineers" class="usa-button usa-button--outline">Jump to engineering guide</a>
+        </div>
+    </div>
+  </li>
+  <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
+      <div class="usa-card__container">
+        <header class="usa-card__header">
+          <h2 class="usa-card__heading">Designers</h2>
+        </header>
+        <div class="usa-card__media usa-card__media--inset">
+          <div class="usa-card__img">
+            <img alt="A placeholder image" src={designer.src} />
+          </div>
+        </div>
+        <div class="usa-card__body">
+          <p>Get started with the Grove code base by installing with npm.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="designers" class="usa-button usa-button--outline">Jump to design guide</a>
+        </div>
+    </div>
+  </li>
+  <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
+      <div class="usa-card__container">
+        <header class="usa-card__header">
+          <h2 class="usa-card__heading">Content</h2>
+        </header>
+        <div class="usa-card__media usa-card__media--inset">
+          <div class="usa-card__img">
+            <img alt="A placeholder image" src={content.src} />
+          </div>
+        </div>
+        <div class="usa-card__body">
+          <p>Get started with the Grove code base by installing with npm.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="#content" class="usa-button usa-button--outline">Jump to content guide</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+## Engineers
+| File | Contents|
+| ------ | ------ |
+| [njwds](https://github.com/newjersey/njwds) Github repo | Instructions on installation, HTML components and CSS stylesheet |
+| [njwds-components](https://github.com/newjersey/njwds-components) Github repo | [WIP] Stencil library of web components - limited coverage |
+| [njwds-components-lit](https://github.com/newjersey/njwds-components-lit) Github repo | [WIP] Lit library of web components - limited coverage |
+| [USWDS utilities](https://designsystem.digital.gov/utilities/) | Utilities reference for styling HTML components |
+
+## Designers
+| File | Contents|
+| ------ | ------ |
+| [Grove Figma file](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=0-1&p=f&t=bKnF73CGw0X7qNQv-0) | Components, variables, styles, and examples |
+| [USWDS Figma file](https://www.figma.com/design/Tyk2daUBcafXbDWmFvc1OJ/uswds-design-kit-beta?node-id=956-5457&p=f&t=4O0dI7l3rBr6cdIc-0) | Additional components not yet supported in our design system |
+| [USWDS Component Documentation](https://designsystem.digital.gov/components/overview/) | Additional usability and accessibility guidance per component |
+
+## Content
+| File | Contents|
+| ------ | ------ |
+| 🚧 | 🚧 |
