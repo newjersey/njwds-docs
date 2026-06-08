@@ -1,6 +1,23 @@
 /* Override header/banner background color */
 :root {
     --sl-color-bg-nav: #193324;
+    --sl-font: 'Plus Jakarta Sans', sans-serif;
+    --sl-text-h1: 2.5rem;
+    --sl-text-h2: 2rem;
+}
+
+h1 {
+  font-size: var(--sl-text-h1);
+}
+
+h1, h2, h3, h4, h5, h6,
+[class*=font-heading-]{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+starlight-theme-select {
+    display: none !important;
 }
 
 header.header {
@@ -17,6 +34,10 @@ a.site-title {
     gap:0;
     height: 56px;
     background: #fff;
+}
+
+.social-icons::after {
+    display: none;
 }
 
 .social-icons a {
