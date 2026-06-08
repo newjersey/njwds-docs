@@ -8,7 +8,10 @@ export default defineConfig({
 		starlight({
 			title: 'Grove',
 			logo: {
-        	src: './src/assets/GroveLogo.png', 
+        	src: './src/assets/GroveLogo.png',
+			},
+			components: {
+				ThemeProvider: './src/components/ThemeProvider.astro',
 			},
 			customCss: [
 				'@newjersey/njwds/dist/css/styles.css',
