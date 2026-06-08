@@ -30,11 +30,11 @@ const { siteTitle, siteTitleHref } = Astro.locals.starlightRoute;
 			</>
 		)
 	}
-	<div class="title-wrapper font-heading-lg">
+	<div class="title-wrapper font-heading-lx text-bold">
 		<span class:list={{ 'sr-only ': config.logo?.replacesTitle }} translate="no">
 			{siteTitle}
 		</span>
-		<span class="tagline font-sans-xs">Garden State Design System</span>
+		<span class="tagline font-heading-sm text-normal margin-top-05">Garden State Design System</span>
 	</div>
 </a>
 
@@ -44,7 +44,6 @@ const { siteTitle, siteTitleHref } = Astro.locals.starlightRoute;
 			align-items: center;
 			gap: var(--sl-nav-gap);
 			font-size: var(--sl-text-h4);
-			font-weight: 600;
 			color: var(--sl-color-text-accent);
 			text-decoration: none;
 			white-space: nowrap;
@@ -53,16 +52,7 @@ const { siteTitle, siteTitleHref } = Astro.locals.starlightRoute;
 		.title-wrapper {
 			display: flex;
 			flex-direction: column;
-			gap: 0;
-			overflow: hidden;
 			line-height: 1;
-		}
-		.title-wrapper > span {
-			overflow: hidden;
-		}
-		.tagline {
-			margin-top: 5px;
-			font-weight: 400;
 		}
 		img {
 			height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
