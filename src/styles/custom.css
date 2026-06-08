@@ -1,3 +1,29 @@
+/* Override header/banner background color */
+:root {
+    --sl-color-bg-nav: #193324;
+}
+
+header.header {
+  height: 80px;
+}
+
+a.site-title {
+  color:#fff;
+  text-decoration: none;
+  gap: 12px;
+}
+
+.social-icons {
+    gap:0;
+    height: 56px;
+    background: #fff;
+}
+
+.social-icons a {
+    padding: 20px;
+    margin: 0;
+}
+
 .grove__iframe {
     height: 300px;
 }
