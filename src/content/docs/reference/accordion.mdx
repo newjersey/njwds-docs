@@ -3,13 +3,21 @@ title: Accordion
 description: Documentation for accordion component.
 ---
 
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
 **An accordion is a list of headers that hide or reveal additional content when selected.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the default accordion from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-accordion--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-accordion--docs)
+🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`}>View accordion in Storybook</a>
   
 ## Accordion Usage
 ### 👍 Use this component for
@@ -22,7 +30,7 @@ description: Documentation for accordion component.
 
 ### 🚫 What to ensure / avoid
 - **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
-- **Give interactive elements enough space.** Make sure interactive elements within the collapsible region are far enough from the headers that users don’t accidentally trigger a collapse. (The exact distance depends on the device.)
+- **Give interactive elements enough space.** Make sure interactive elements within the collapsible region are far enough from the headers that users don't accidentally trigger a collapse. (The exact distance depends on the device.)
 
 
 ## Content guidelines
@@ -33,9 +41,14 @@ description: Documentation for accordion component.
 
 ### Borderless Accordions
 
-<iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the borderless accordion from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-accordion--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light"></iframe>
 
-🔗 [View borderless accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--default)
+🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--default`}>View borderless accordion in Storybook</a>
 
 #### Figma Type properties
 | Property | Value |
@@ -53,9 +66,15 @@ description: Documentation for accordion component.
 
 ### Bordered Accordions
 
-<iframe title="Accordion" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-accordion--default&viewMode=story&args=bordered%3Atrue" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the bordered accordion from Storybook" 
+    frameborder="0"
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-accordion--default&viewMode=story&args=bordered:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View bordered accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/components-accordion--bordered)
+🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--bordered`}>View bordered accordion in Storybook</a>
 
 #### Figma Type properties
 | Property | Value |
@@ -74,7 +93,7 @@ description: Documentation for accordion component.
 ### Multiselectable Accordions
 Add the `data-allow-multiple attribute` to any usa-accordion to create a multiselectable accordion group.
 
-🔗 [View accordion in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-accordion--docs)
+🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`}>View accordion in Storybook</a>
 
 #### Code Variant
 | Name | Class | Description |
@@ -85,10 +104,10 @@ Add the `data-allow-multiple attribute` to any usa-accordion to create a multise
 ## Accessibility guidance
 Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) to test accordion implementation.
 - **Code header areas in the accordion as buttons.** Using a `<button type="button">` assures accordions are usable with both screen readers and keyboards.
-- **Use meaningful expansion button labels.** Aim for informative labels like “Explore federal compliance checklists” rather than vague ones like “Click here.”
-- **Use `aria-controls` to associate an accordion button with its related content.** Connect an accordion button control with its appropriate content region by referencing the controlled element’s `id` in the button’s `aria-controls` attribute.
-- **Use unique ids.** Each button has a unique name, `aria-controls="[id]"`, that associates the control with the appropriate region by referencing the controlled element’s `id`.
-- **Accordions use javascript to set the `hidden` values of their content areas.** Each content area will have its `hidden` attribute set by the component, depending on its corresponding button’s `aria-expanded` attribute. To ensure your content is accessible in the event that the JavaScript does not load or is disabled, you should not manually set `hidden` on any of your content areas.
+- **Use meaningful expansion button labels.** Aim for informative labels like "Explore federal compliance checklists" rather than vague ones like "Click here."
+- **Use `aria-controls` to associate an accordion button with its related content.** Connect an accordion button control with its appropriate content region by referencing the controlled element's `id` in the button's `aria-controls` attribute.
+- **Use unique ids.** Each button has a unique name, `aria-controls="[id]"`, that associates the control with the appropriate region by referencing the controlled element's `id`.
+- **Accordions use javascript to set the `hidden` values of their content areas.** Each content area will have its `hidden` attribute set by the component, depending on its corresponding button's `aria-expanded` attribute. To ensure your content is accessible in the event that the JavaScript does not load or is disabled, you should not manually set `hidden` on any of your content areas.
 - **You do not need to add text alternatives for the collapsed and expanded accordion states.** These states are set programmatically with JavaScript.
 
 ## Code 
@@ -116,7 +135,7 @@ Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/c
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Accordion](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1519-637&p=f&t=EahLs7a5O0K1GABw-0) | Using in designs |
-| [Storybook: Accordion](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-accordion--docs) | Interactive example, code snippets, variants |
+| <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`}>Storybook: Accordion</a> | Interactive example, code snippets, variants |
 | [Fractal: Accordion](https://newjersey.github.io/Grove/components/detail/accordion--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
@@ -125,4 +144,3 @@ Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/c
 | [USWDS: Accordion](https://designsystem.digital.gov/components/accordion/) | Reference for additional styles and functionalities  |
 | [USWDS: Accordion utilites](https://designsystem.digital.gov/components/accordion/#using-the-accordion-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) | Accessibility tests to run for component |
-
