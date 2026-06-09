@@ -3,6 +3,8 @@ title: Alert
 description: Documentation for alert component.
 ---
 
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
 **Alert options**
 - **Alert:** Alert component used to prominently display timely information to users.
 - **Site Alert:** A site alert communicates urgent sitewide information.
@@ -11,9 +13,15 @@ description: Documentation for alert component.
 
 ###
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-alert--info&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%"> </iframe>
+<iframe 
+    title="Interactive preview of the default accordion from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View alert in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-alert--docs&args=label:;icon:!true)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View accordion in Storybook</a>
 
  
 ## Alert Usage
