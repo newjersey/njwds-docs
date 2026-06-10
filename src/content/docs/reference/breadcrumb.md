@@ -3,13 +3,31 @@ title: Breadcrumb
 description: Documentation for breadcrumb component.
 ---
 
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
 **Breadcrumbs provide secondary navigation to help users understand where they are in a website.**
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-breadcrumb--default&viewMode=story" width="100%" height="100"></iframe>
+import { LinkButton } from '@astrojs/starlight/components';
 
-🔗 [View breadcrumb in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-breadcrumb--docs&args=label:;icon:!true)
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the default breadcrumb from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-breadcrumb--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+ 
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-breadcrumb--docs`}>View breadcrumb in Storybook</a>
 
 
 ## Breadcrumb Usage
@@ -36,9 +54,15 @@ description: Documentation for breadcrumb component.
 ## Breadcrumb Variants
 
 ### Default Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-breadcrumb--default&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View breadcrumb in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-breadcrumb--docs&args=label:;icon:!true)
+<iframe 
+    title="Interactive preview of the default breadcrumb from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-breadcrumb--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+ 
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-breadcrumb--docs`}>View breadcrumb in Storybook</a>
 
 #### Figma proporties
 | Property | Value |
@@ -51,9 +75,15 @@ description: Documentation for breadcrumb component.
 | Default | `usa-breadcrumb` |
 
 ### Wrapping Breadcrumb
-<iframe title="breadcrumb preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-breadcrumb--default&viewMode=story&args=wrap%3Atrue" width="100%" height="100"></iframe>
-
-🔗 [View breadcrumb in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-breadcrumb--docs&args=label:;icon:!true)
+<iframe 
+    title="Interactive preview of the default breadcrumb from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-breadcrumb--default&viewMode=story&args=wrap:!true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+ 
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-breadcrumb--docs`}>View breadcrumb in Storybook</a>
 
 #### Figma proporties
 | Property | Value |
@@ -106,7 +136,6 @@ Use the [USWDS breadcrumb accessibility tests](https://designsystem.digital.gov/
 | ----------- | ----------- |
 | [Figma Grove: Breadcrumb](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2788-628&t=p48LIM8AA1I9QJOL-0) | Using breadcrumb in designs, documentation and best practices on breadcrumb usage |
 | [Storybook: Breadcrumb](https://newjersey.github.io/Grove/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
-| [Fractal: Breadcrumb](https://newjersey.github.io/Grove/components/detail/breadcrumb--default.html) | Preview breadcrumb styles, see breadcrumb code snippet |
 
 ### USWDS links 
 | File | Purpose | 
