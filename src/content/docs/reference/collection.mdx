@@ -7,9 +7,29 @@ description: Documentation of the collection component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🔗 [View collection in USWDS](https://designsystem.digital.gov/components/collection/)
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the collection from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-collection--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
   
-## Checkbox Usage
+## Collection Usage
 ### 👍 Use this component for
 - **To feature content with its metadata.** The collection component is a good option when displaying content that should be accompanied by limited metadata like tags, date/time, or source and attribution.
 - **To group related content together.** The collection component can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.
@@ -37,6 +57,16 @@ description: Documentation of the collection component.
 
 ### Default collection item
 
+<iframe 
+    title="Interactive preview of the collection from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-collection--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
+
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -45,12 +75,32 @@ description: Documentation of the collection component.
 
 ### Media collection item
 
+<iframe 
+    title="Interactive preview of the media collection from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-collection--default&viewMode=story&args=type:media`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
+
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | media |
 
 ### Calendar collection item
+
+<iframe 
+    title="Interactive preview of the calendar collection from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-collection--default&viewMode=story&args=type:calendar`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
 
 #### Figma properties
 | Property | Value |
@@ -70,6 +120,7 @@ Use [USWDS collection accessibility tests](https://designsystem.digital.gov/comp
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Collection](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3210-1245&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Collection](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-collection--docs) | View interactive preview, code snippet, variants |
 
 ### USWDS links 
 | File | Purpose | 
