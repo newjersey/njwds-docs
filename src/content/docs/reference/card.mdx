@@ -7,9 +7,27 @@ description: Documentation for card component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the card from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-card--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
   
 ## Card Usage
 ### 👍 Use this component for
@@ -44,19 +62,31 @@ description: Documentation for card component.
 - **Mobile-first design.** They stack and adapt to mobile screens.
 - **Visual-heavy content** Ideal for image-driven content.
 - **Browsing and discovery.** When users are skimming through items.
-- 
-<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story" width="100%" height="100"></iframe>
 
-🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
+<iframe 
+    title="Interactive preview of the card from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-card--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
 
 
 ### Flag Cards
 - **Desktop/Wide Screens** Better for using horizontal space and reducing vertical scrolling.
 - **Text-Heavy/Detailed Content.** Ideal when information needs to be read rather than just scanned.
 
-<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=layout%3AFlag" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the flag card from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-card--default&viewMode=story&args=layout%3AFlag`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
 
 
 ## Card variants
@@ -72,19 +102,37 @@ description: Documentation for card component.
 
 ### Media
 #### Left or Right Side Media
-<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=layout%3AFlag%3BflagPositionRight%3A!true" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the flag card, right side media from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-card--default&viewMode=story&args=layout%3AFlag%2CflagPositionRight%3Atrue`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
 
 #### Inset Media
-<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=mediaInset%3Atrue" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the inset media card from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-card--default&viewMode=story&args=mediaExtend%3A!false`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
 
 #### No Media
-<iframe title="Card" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-card--default&viewMode=story&args=media%3Afalse" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the no media card from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-card--default&viewMode=story&args=media%3A!false`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View card in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
 
 
 ## Accessibility guidance
@@ -113,7 +161,6 @@ Use the [USWDS card accessibility tests](https://designsystem.digital.gov/compon
 | ----------- | ----------- |
 | [Figma Grove: Card]([https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1625-667&p=f&t=OWFjainTs6OfqOdE-0)) | Using in designs |
 | [Storybook: Card](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-card--docs&args=label:;icon:!true) | Interactive example, code snippet, variants |
-| [Fractal: Card](https://newjersey.github.io/Grove/components/detail/card--compare.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
