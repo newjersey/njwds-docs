@@ -7,9 +7,27 @@ description: Documentation for button component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View button in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=label:Button;type:tertiary;theme:danger;icon:!false)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the default button from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-button--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--default`}>View button in Storybook</a>
   
 ## Button Usage
 ### 👍 Use this component for
@@ -213,7 +231,6 @@ When styling links to look like buttons, remember that screen readers handle lin
 | ----------- | ----------- |
 | [Figma Grove: Button](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-4297&p=f&t=bKnF73CGw0X7qNQv-0) | Using in designs |
 | [Storybook: Button](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-button--docs&args=icon:!true) | Interative examples, see code snippet, see variants |
-| [Fractal: Button](https://newjersey.github.io/Grove/components/detail/buttons--primary-(light).html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
