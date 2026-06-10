@@ -7,9 +7,27 @@ description: Documentation of the checkbox component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-checkbox--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View checkbox in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-checkbox--docs&args=label:Link%20text;external:!false)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the checkbox from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-checkbox--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}>View checkbox in Storybook</a>
   
 ## Checkbox Usage
 ### 👍 Use this component for
@@ -34,9 +52,6 @@ description: Documentation of the checkbox component.
 ## Checkbox Variants
 
 ### Checkbox item
-<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story&args=theme%3Adanger" width="100%" height="100"></iframe>
-
-🔗 [View checkbox in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-checkbox--docs)
 
 #### Figma properties
 | Property | Value |
@@ -46,9 +61,15 @@ description: Documentation of the checkbox component.
 ### Checkbox list
 A multiple select question with checkboxes.
 
-<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-checkbox--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the checkbox from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-checkbox--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View checkbox list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-checkbox--default)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}>View checkbox in Storybook</a>
 
 #### Figma properties
 | Property | Value |
@@ -78,9 +99,15 @@ Checkbox item surrounded in a clickable tile.
 ### Checkbox tile list
 A multiple select question with checkbox tiles.
 
-<iframe title="Checkbox" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-checkbox--default&viewMode=story&args=tile%3Atrue" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the checkbox from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-checkbox--tile&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View checkbox tile list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/story/elements-checkbox--tile)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}>View checkbox in Storybook</a>
 
 #### Figma properties
 | Property | Value |
@@ -112,7 +139,7 @@ Use [USWDS checkbox accessibility tests](https://designsystem.digital.gov/compon
 | Checkbox | `usa-checkbox` | Use this for checkbox |
 | Checkbox input | `usa-checkbox__input` | Use this for checkbox input. |
 | Checkbox label | `usa-checkbox__label` | Use this for checkbox label -- the text next to the checkbox. |
-| Helper text label | `usa-checkbox__label-description` | Used only for checkbox tile. Optional helper text that can be used to describe the label in more detail. To use, put the class on a span and place it inside the label component. (See Fractal for an example). |
+| Helper text label | `usa-checkbox__label-description` | Used only for checkbox tile. Optional helper text that can be used to describe the label in more detail. To use, put the class on a `span` and place it inside the label component. (See Fractal for an example). |
 | Error message | `nj-error-message-container` | [Custom Grove] Used for error message, combines an icon and the USWDS error message. |
 
 
@@ -128,7 +155,6 @@ Use [USWDS checkbox accessibility tests](https://designsystem.digital.gov/compon
 | ----------- | ----------- |
 | [Figma Grove: Checkbox](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=33-1439&t=i4k26YohAESPvEsR-0) | Using button in designs, documentation and best practices on button usage |
 | [Storybook: Checkbox](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-checkbox--docs) | Interactive example, code snippets, see variants |
-| [Fractal: Checkbox](https://innovation.nj.gov/app/Grove/components/detail/checkboxes.html) | Preview button styles, see button code snippet |
 
 ### USWDS links 
 | File | Purpose | 
