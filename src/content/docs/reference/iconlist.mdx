@@ -7,7 +7,29 @@ description: Documentation of the icon list component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🔗 [View icon list in USWDS](https://designsystem.digital.gov/components/icon-list/)
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the icon list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-icon-list--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon-list--docs`}>View icon list in Storybook</a>
   
 ## Icon List Usage
 ### 👍 Use this component for
@@ -31,6 +53,16 @@ description: Documentation of the icon list component.
 
 ### Rich content variant
 
+<iframe 
+    title="Interactive preview of the icon list with rich content from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-icon-list--default&viewMode=story&args=richContent:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon-list--docs`}>View icon list in Storybook</a>
+
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -42,6 +74,16 @@ description: Documentation of the icon list component.
 | `.usa-icon-list--[color]` | Change the color of all the list’s icons by updating [color] to any theme or state color token. |
 
 ### Icon list items size variants
+
+<iframe 
+    title="Interactive preview of the large icon list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-icon-list--default&viewMode=story&args=size:lg`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon-list--docs`}>View icon list in Storybook</a>
 
 #### Figma properties
 | Property | Value |
@@ -85,6 +127,7 @@ Use [USWDS icon list accessibility tests](https://designsystem.digital.gov/compo
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Icon list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2933-672&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Icon list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-icon-list--docs) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
