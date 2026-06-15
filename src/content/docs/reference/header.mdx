@@ -7,9 +7,29 @@ description: Documentation for header component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View header in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the header from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
   
 ## Header Usage
 ### 👍 Use this component for
@@ -37,21 +57,27 @@ description: Documentation for header component.
 | ----------- | ----------- |
 | type | basic, extended |
 
-## Basic Header
+## Default Header
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the header from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View basic header in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
 
-### Basic Header Usage
-Use the basic header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
+### Default Header Usage
+Use the default header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
 
 - **A text or image logo**
 - **With or without dropdown menus**
 - **With or without a search bar**
 - **With or without call-to-action buttons in place of the search bar**
 
-### When to Use the Basic Header
+### When to Use the Default Header
 
 - **Limited sections.** The basic header is great if you have a modest number of sections in your main navigation.
 
@@ -63,9 +89,15 @@ Use the basic header if you have few enough sections in your main navigation to 
 
 ## Extended Header
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--secondary&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the extended header from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--extended&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View extended header in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--secondary-(light).html)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
 
 An extended header allows for the inclusion of more sections in a horizontal navigation. You can customize the header (depending on your site structure) and use it:
 
@@ -95,7 +127,18 @@ An extended header allows for the inclusion of more sections in a horizontal nav
 | site title | [text input] |
 
 ### Megamenu
+
 #### Mega Menu with Extended header
+<iframe 
+    title="Interactive preview of the extended header with megamenu from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--extended&viewMode=story&args=megamenu%3Atrue`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
+
 Like an extended header, an extended header with a megamenu allows for the inclusion of more sections in your horizontal navigation; it also allows you to include more links in your dropdowns. You can customize the header (depending on your site structure) and use it:
 
 - **With a text or image logo**
@@ -115,6 +158,16 @@ Like an extended header, an extended header with a megamenu allows for the inclu
 - **Shallow hierarchy.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a very large number of sub-pages.
 
 #### Mega menu with basic header
+<iframe 
+    title="Interactive preview of the basic header with megamenu from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story&args=megamenu%3Atrue`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
+
 The basic header with a megamenu is similar in design to the basic header component. The megamenu allows for the inclusion of more links in dropdown menus. You can customize this header (depending on your site structure) and use it with:
 
 - **A text or image logo**
@@ -129,14 +182,6 @@ The basic header with a megamenu is similar in design to the basic header compon
 
 - **Not enough content to warrant a megamenu.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a large number of sub-pages.
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View primary (on) light button in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
-
-#### Search bar
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
-
-🔗 [View search bar in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
 
 ## Accessibility guidance
 Use the [USWDS header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) to test button implementation.
@@ -175,7 +220,7 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Header](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1910-52&p=f&t=Yx31eAZO0ULNN6UA-0) | Using header in designs, documentation and best practices on button usage |
-| [Fractal: Header](https://newjersey.github.io/Grove/components/detail/header--default.html) | Preview card styles, see card code snippet |
+| [Storybook: Header](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-header--docs) | Preview card styles, see card code snippet |
 
 ### USWDS links 
 | File | Purpose | 
