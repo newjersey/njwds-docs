@@ -7,9 +7,27 @@ description: Documentation for List component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-list--basic&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
   
 ## List Usage
 ### 👍 Use this component for
@@ -33,19 +51,37 @@ description: Documentation for List component.
 | type | ordered, unordered, unstyled |
 
 ### Ordered
-<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the ordered list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story$args=type:Ordered List`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
 
 ### Unordered
-<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-list--basic&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the ordered list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story$args=type:Unordered List`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
 
 ### Unstyled
-<iframe title="List" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-list--basic&viewMode=story&args=unstyled%3Atrue" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the ordered list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story$args=unstyled:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
 
 ## Accessibility guidance
 Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests) to test implementation.
@@ -65,7 +101,6 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 | ----------- | ----------- |
 | [Figma Grove: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
 | [Storybook: List](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs) | Interactive example, see code snippet, see variants |
-| [Fractal: List](https://newjersey.github.io/Grove/components/detail/labels--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
