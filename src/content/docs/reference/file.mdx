@@ -14,20 +14,27 @@ import { LinkButton } from '@astrojs/starlight/components';
   Figma
 </button>
 
-<button type="button" class="usa-button">
-  Storybook
-</button>
-
 
 <iframe 
     title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
+
+
+<iframe 
+    title="Interactive preview of the file input component from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`}>View file input in Storybook</a>
 
 
 ## File Usage
@@ -46,6 +53,18 @@ import { LinkButton } from '@astrojs/starlight/components';
 - **Use hint text to highlight input restrictions.** Create an element with the `usa-hint` class to explain any file restrictions, such as document types or file size.
 
 
+## File Input Usage
+
+### 👍 Use this component for
+- TBD
+  
+### 👎 Consider something else for
+- TBD
+
+### 🚫 What to ensure / avoid
+- TBD
+
+
 ## Content guidelines
 - TBD
 
@@ -60,14 +79,16 @@ import { LinkButton } from '@astrojs/starlight/components';
 | preview | true, false |
 | number of files | [text input] |
 
-### States
+### File 
 
-#### Default
+#### States
+
+##### Default
 
 <iframe 
     title="Interactive preview of the file component from Storybook" 
     frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file--default&viewMode=story`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
@@ -75,57 +96,83 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
 
 
-#### Error
+##### Error
 
 <iframe 
     title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file--default&viewMode=story&args=error:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
+
+
+#### Amount of Files
+
+##### Single
+
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
+
+
+##### Multiple
+
+
+
+### File Input
+
+#### States
+
+##### Default
+
+<iframe 
+    title="Interactive preview of the file input component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`}>View file component in Storybook</a>
+
+##### Error
+
+<iframe 
+    title="Interactive preview of the file input component from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story&args=error:true`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`}>View file component in Storybook</a>
 
+#### Amount of Files
 
-### Amount of Files
-
-#### Single
+##### Single
 
 <iframe 
-    title="Interactive preview of the file component from Storybook" 
+    title="Interactive preview of the file input component from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file input component in Storybook</a>
 
 
-#### Multiple
-<iframe 
-    title="Interactive preview of the file component from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+##### Multiple
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
-
-
-### Preview Files
-
-<iframe 
-    title="Interactive preview of the file component from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
 
 
 ## Accessibility guidance
@@ -151,7 +198,8 @@ Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: File input](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1560-480&p=f&t=Yx31eAZO0ULNN6UA-0) | Using file input in designs |
-| [Storybook: File input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs) | Interactive example, code snippets, variants |
+| [Storybook: File input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file-input--docs) | Interactive example, code snippets, variants |
+| [Storybook: File](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs) | Interactive example, code snippets, variants |
 
 
 ### USWDS links 
