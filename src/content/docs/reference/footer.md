@@ -7,9 +7,25 @@ description: Documentation for footer component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+
+<iframe 
+    title="Interactive preview of the footer from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-footer--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
   
 ## Footer Use
 ### 👍 Use this component for
@@ -44,23 +60,41 @@ description: Documentation for footer component.
 
 ### Default (Contact Info) 
 
-<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the footer from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-footer--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
 
 
 ### Slim (No Contact Info)
 
-<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story&args=variant%3ASlim" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the slim footer from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-footer--default&viewMode=story&args=variant%3ASlim`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
 
 
 ### Big (Contact Info + Links)
 
-<iframe title="Footer" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-footer--default&viewMode=story&args=variant%3ABig" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the big footer from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-footer--default&viewMode=story&args=variant%3ABig`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View footer in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
 
 
 ## Accessibility guidance
@@ -108,7 +142,6 @@ The following classes can be added to the `<footer>` element to determine the st
 | ----------- | ----------- |
 | [Figma Grove: Footer](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=512-174&t=iqL6YX4GteFnJQKf-1) | Figma component with variable styles applied |
 | [Fractal: Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs) | Interactive example, code snippet, variants |
-| [Fractal: Footer](https://newjersey.github.io/Grove/components/detail/footer--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
