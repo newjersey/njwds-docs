@@ -5,9 +5,29 @@ description: Documentation for graphic list component.
 
 **Graphic list is an element that can be used in a website to prominently display a few related pieces of information.**
 
-<iframe title="Graphic list" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-graphiclist--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View graphic list in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-graphiclist--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the graphic list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-graphic-list--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
 
 
 ## Graphic List Usage
@@ -26,6 +46,24 @@ description: Documentation for graphic list component.
 - **Keep body text to about 30 words.** They can be shorter, but try to be somewhat balanced across all the items in the graphic list.
 - **Never highlight anything without a goal.** For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.
 
+## Graphic List Variants
+
+### Dark Version 
+<iframe 
+    title="Interactive preview of the graphic list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-graphic-list--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
+
+ ### Light Version 
+ TBD
+
+
+
 ## Related
 - [Landing page template](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/templates-landing--docs)
 
@@ -35,4 +73,3 @@ description: Documentation for graphic list component.
 | ----------- | ----------- |
 | [Figma Grove: Graphic list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2858-3887&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Graphic list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-graphiclist--docs) | Interactive example, code snippet, variants |
-| [Fractal: Graphic list](https://newjersey.github.io/Grove/components/detail/graphic-list.html) | Preview styles, see code snippet |
