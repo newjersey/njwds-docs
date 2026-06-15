@@ -7,9 +7,29 @@ description: Documentation for identifier component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Identifier" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-identifier--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View identifier in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-identifier--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the identifier from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`}>View identifier in Storybook</a>
   
 ## Identifier Usage
 ### 👍 Use this component for
@@ -51,19 +71,48 @@ description: Documentation for identifier component.
 | domain address | text field |
 
 ### Language
+
+<iframe 
+    title="Interactive preview of the Spanish identifier from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=language:Spanish`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`}>View identifier in Storybook</a>
+
 - **Use the Spanish version for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
-
-<iframe title="Identifier" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-identifier--default&viewMode=story&args=language%3ASpanish" width="100%" height="100"></iframe>
-
-🔗 [View identifier in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-identifier--docs)
 
 
 ### Agency Logos
+
+<iframe 
+    title="Interactive preview of the multiple agency logos identifier from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=logos:Multiple`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`}>View identifier in Storybook</a>
+
 - **Use an SVG logo if possible.** Ensure the logo is high resolution. We recommend using the SVG version of any logo if you have one. Otherwise, use an image that’s at least 120 pixels tall.
 - **Use logos intended for dark backgrounds if possible.** The identifier has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.
 - **Duplicate the logo element if using multiple logos.** If you’re using multiple logos, duplicate the `usa-identifier__logo` element and link the image to your image source.
   
-### Hiding Taxpayer Disclaimer or NJ.gov
+### Taxpayer Disclaimer or NJ.gov
+
+<iframe 
+    title="Interactive preview of the taxpayer disclaimer identifier from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=showTaxpayerDisclaimer:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`}>View identifier in Storybook</a>
+
 - **If applicable, include any taxpayer disclaimer after the standard text.** If the organization must provide a taxpayer expense disclaimer, include it following the “Official website” text, as a separate sentence. For example, “An official website of [Department]. Produced and published at taxpayer expense.”
 
 
@@ -99,7 +148,6 @@ Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/
 | ----------- | ----------- |
 | [Figma Grove: Identifier](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2905-151&p=f&t=Yx31eAZO0ULNN6UA-0) | Using identifier in designs, documentation and best practices on identifier usage |
 | [Storybook: Identifier](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-identifier--docs) | Interactive example, code snippet, variants |
-| [Fractal: Identifier](https://newjersey.github.io/Grove/components/detail/buttons--primary-(light).html) | Preview identifier styles, see identifier code snippet |
 
 ### USWDS links 
 | File | Purpose | 
