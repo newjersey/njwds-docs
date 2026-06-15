@@ -7,9 +7,27 @@ description: Documentation for modal component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
   
 ## Modal Usage
 ### 👍 Use this component for
@@ -37,9 +55,15 @@ description: Documentation for modal component.
 ## Modal Sizes
 
 ### Default modal
-<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
 
 
 #### Figma Type properties
@@ -54,9 +78,15 @@ description: Documentation for modal component.
 
 
 ### Large modal
-<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story&args=size%3Alarge" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story&args=size:large`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
 
 
 #### Figma Type properties
@@ -71,10 +101,15 @@ description: Documentation for modal component.
   
 
 ## Forced Action Modal
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story&args=forcedAction:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-<iframe title="Modal" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-modal--default&viewMode=story&args=forceAction%3Atrue" width="100%" height="100"></iframe>
-
-🔗 [View modal in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
 
 #### Figma Type properties
 | Property | Value |
@@ -125,7 +160,6 @@ Use [USWDS modal accessibility tests](https://designsystem.digital.gov/component
 | ----------- | ----------- |
 | [Figma Grove: Modal](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=368-9018&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
 | [Storybook: Modal](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs) | Interactive example, code snippet, see variants |
-| [Fractal: Modal](https://newjersey.github.io/Grove/components/detail/modal--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
