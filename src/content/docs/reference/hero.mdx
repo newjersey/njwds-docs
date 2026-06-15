@@ -5,9 +5,29 @@ description: Documentation for hero component.
 
 **Hero is an element that can be used at the top of a website to prominently call out one piece of information and call to action.**
 
-<iframe title="Hero" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-hero--basic&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View hero in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-hero--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the hero from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-hero--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-hero--docs`}>View hero in Storybook</a>
 
 
 ## Hero Usage
@@ -35,5 +55,4 @@ description: Documentation for hero component.
 | ----------- | ----------- |
 | [Figma Grove: Hero](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2858-3888&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Hero](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-hero--docs) | Interactive example, code snippets, variants |
-| [Fractal: Hero](https://newjersey.github.io/Grove/components/detail/hero.html) | Preview styles, see code snippet |
 
