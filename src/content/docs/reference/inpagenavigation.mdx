@@ -9,7 +9,28 @@ description: Documentation for in-page navigation component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🔗 [View in page navigation in USWDS](https://designsystem.digital.gov/components/in-page-navigation/)
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the in-page navigation from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-in-page-navigation--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-in-page-navigation--docs`}>View in-page navigation in Storybook</a>
   
 ## In-Page Navigation Usage
 ### 👍 Use this component for
@@ -66,7 +87,8 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 ### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma Grove: In-page navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3019-108&t=OWFjainTs6OfqOdE-0) | Using in designs |
+| [Figma: In-page navigation](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3019-108&t=OWFjainTs6OfqOdE-0) | Using in designs |
+| [Storybook: In-page navigation](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-in-page-navigation--docs) | Code snippet, interactive preview |
 
 ### USWDS links 
 | File | Purpose | 
