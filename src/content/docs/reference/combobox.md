@@ -9,9 +9,27 @@ description: Documentation for combo box component.
 
 ⚠️ **Known accessibility/usability issues ** ⚠️
 
-<iframe title="Combo box" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-combobox--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View combo box in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-combobox--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the combo box from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-combo-box--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-combo-box--docs`}>View combo box in Storybook</a>
 
 
 ## Combo box Usage
@@ -74,7 +92,6 @@ Use the [USWDS combo box accessibility tests](https://designsystem.digital.gov/c
 | ----------- | ----------- |
 | [Figma Grove: Combo box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-15781&p=f&t=RTzIimu7ufvk7iQf-0) | Using combo box in designs, documentation and best practices on combo box usage |
 | [Storybook: Combo box](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-combobox--docs) | Interactive example, code snippet, variants |
-| [Fractal: Combo box](https://newjersey.github.io/Grove/components/detail/combo-box--default.html) | Preview combo box styles, see combo box code snippet |
 
 ### USWDS links 
 | File | Purpose | 
