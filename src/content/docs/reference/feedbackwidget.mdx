@@ -5,15 +5,38 @@ description: Documentation for Grove feedback widget component.
 
 **Custom Grove footer component to collect quantitative and qualitative feedback on a website or web app.**
 
-<iframe title="Feedback widget" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-feedback-widget--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View NJ feedback widget in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-feedback-widget--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the feedback widget from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-feedback-widget--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-feedback-widget--docs`}>View feedback widget in Storybook</a>
 
 
 ## Feedback Widget Usage
 
 ### 👍 Use this component for
-- **NJIA-built websites and web apps.** Standalone OOI built websites and web apps can gather feedback using the feedback widget. Ex: UI Claim Status Portal, AI Assistant
+- **NJIA-built websites and web apps.** Stand alone NJIA built websites and web apps can gather feedback using the feedback widget. Ex: UI Claim Status Portal, AI Assistant
 - **NJ.gov sites where OOI has embedded a tool.** Ex: Maternity timeline tool
 - **OIT-built OOI-designed information hubs** Ex: Disability Information hub
 
@@ -54,5 +77,4 @@ See the [README for the feedback widget repository](https://github.com/newjersey
 | ----------- | ----------- |
 | [Figma Grove: Feedback Widget](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-21115&t=xEncjmi7erLwzVH8-0) | Using feedback widget in designs|
 | [Storybook: Feedback widget](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-feedback-widget--docs) | Interactive example, code snippets, variants |
-| [Fractal: Feedback widget](https://newjersey.github.io/Grove/components/detail/feedback-widget--success.html) | Preview styles, see code snippets |
 
