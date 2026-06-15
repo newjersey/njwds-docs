@@ -1,16 +1,36 @@
 ---
-title: File Input
+title: File
 description: Documentation for file input.
 ---
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-file--default&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View file input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs)
+import { LinkButton } from '@astrojs/starlight/components';
 
 
-## File Input Usage
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
+
+
+## File Usage
 
 ### 👍 Use this component for
 - **Documents are required.** Ask users to provide files when it’s necessary.
@@ -32,7 +52,7 @@ description: Documentation for file input.
 
 ## Figma properties 
 
-### Input File properties 
+### File properties 
 | Property | Values | 
 | ----------- | ----------- |
 | state | default, error |
@@ -44,38 +64,68 @@ description: Documentation for file input.
 
 #### Default
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-file--default&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View file input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
 
 
 #### Error
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-file--default&viewMode=story&args=error%3Atrue" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story&args=error:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View file input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
 
 
 ### Amount of Files
 
 #### Single
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View file input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
 
 
 #### Multiple
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View file input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
 
 
 ### Preview Files
 
-<iframe src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" frameborder="1" scrolling="no" width="100%" height="100%" align="left"> </iframe>
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View file input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}>View file component in Storybook</a>
 
 
 ## Accessibility guidance
@@ -102,7 +152,6 @@ Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/
 | ----------- | ----------- |
 | [Figma Grove: File input](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1560-480&p=f&t=Yx31eAZO0ULNN6UA-0) | Using file input in designs |
 | [Storybook: File input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs) | Interactive example, code snippets, variants |
-| [Fractal: File input](https://newjersey.github.io/Grove/components/detail/file-input.html) | Preview file picker styles, see code snippet |
 
 
 ### USWDS links 
