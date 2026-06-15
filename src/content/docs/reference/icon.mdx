@@ -42,7 +42,7 @@ import { LinkButton } from '@astrojs/starlight/components';
 ### 👎 Consider something else for
 - **Meaning is ambiguous.** Use icons only in a common or conventional way. Icon utility hinges on people quickly recognizing what each icon means. If you suspect that an icon’s intent isn’t perfectly clear, consider removing it or adding accompanying text.
 - **Compensating for page structure.** Don’t rely on an icon to help draw attention to something important that’s otherwise hard to find. Icons don’t fix unclear page hierarchy or confusing content organization.
-- **You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons for illustrative purposes. For example, don’t use the “visibility” eye icon () to illustrate an actual eye. If you want to enhance the appearance of your content or visually explain a concept, use an illustration instead of an icon.
+- **You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons for illustrative purposes. For example, don’t use the “visibility” eye icon to illustrate an actual eye. If you want to enhance the appearance of your content or visually explain a concept, use an illustration instead of an icon.
 
 ### 🚫 What to ensure / avoid
 - **Combine icons with text.** Only a few icons are consistently understood across the digital-using public of the world, among them home, print, and search. Combine icons with text to improve clarity, and test your icons for recognition and memorability with your particular audience.
@@ -77,7 +77,7 @@ CSS classes can be used to manipulate icon size. By default, icons with the `.us
 
 ## Accessibility guidance
 Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/components/icon/accessibility-tests) to test icon implementation.
-- **Hide decorative icons from screen readers.** Icons are decorative if they don’t provide meaningful information to the user. Usually, decorative icons are accompanied by text. Announcing a decorative icon is redundant and can be annoying. Use the aria-hidden="true" and role="img", as in the following code:
+- **Hide decorative icons from screen readers.** Icons are decorative if they don’t provide meaningful information to the user. Usually, decorative icons are accompanied by text. Announcing a decorative icon is redundant and can be annoying. Use the `aria-hidden="true"` and `role="img"`, as in the following code:
 
 `<a href="https://twitter.com/uswds">
   <svg class="usa-icon" aria-hidden="true" role="img">
