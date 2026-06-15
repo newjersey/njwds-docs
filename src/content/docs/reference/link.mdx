@@ -1,5 +1,5 @@
 ---
-title: Links
+title: Link
 description: Documentation for link component.
 ---
 
@@ -7,9 +7,27 @@ description: Documentation for link component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-link--basic&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the link from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-link--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
 
 
 ## Link Usage
@@ -42,8 +60,13 @@ description: Documentation for link component.
 - **Encode email and phone links.** Some browsers don’t automatically display a clickable link for email addresses or phone numbers, so encode email and phone links with `mailto:` and `tel:`. Be sure to include the country code in phone numbers to support international users.
 
   - **Examples:**  
-    `<a href="mailto:program-team@agency.gov">program-team@agency.gov</a>`  
-    `<a href="tel:1-800-555-1234">1-800-555-1234</a>`
+<pre><code>
+<a href="mailto:program-team@agency.gov">program-team@agency.gov</a>
+</code></pre>
+
+<pre><code>
+<a href="tel:1-800-555-1234">1-800-555-1234</a>
+</code></pre>
 
 - **Check with your IT security department regarding email link best practices.** While displaying email addresses and phone numbers provides a better experience for users, it can also increase spam for the email recipient. One approach is to use a group email address to protect individuals. Another benefit of that approach is the email will remain the same even as staff and organizational structures change. You can also consider using a contact form instead of showing email addresses.
 
@@ -94,23 +117,51 @@ description: Documentation for link component.
 | link text | [link text] |
 
 ### Mode
-#### Default and On-Dark
-<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-link--basic&viewMode=story" width="100%" height="100"></iframe>
+#### Light 
+<iframe 
+    title="Interactive preview of the light mode link from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-link--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
+
+#### Dark
+<iframe 
+    title="Interactive preview of the dark mode link from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-link--default&viewMode=story&args=mode:dark`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
 
 
 ### State
 #### Visited
-<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the link from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-link--default&viewMode=story&args=forceVisited:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
 
-### Icon
-#### External Icon
-<iframe title="Link" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-link--basic&viewMode=story&args=external%3Atrue" width="100%" height="100"></iframe>
+#### External
+<iframe 
+    title="Interactive preview of the external link from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-link--default&viewMode=story&args=external:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View link in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
 
 ## Code utilities
 ### Link variants 
@@ -130,8 +181,7 @@ Link hover state should be visible on focus. Users should be able to activate ho
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Link](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2776-427&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
-| [Storybook: Link]([https://newjersey.github.io/Grove/components/detail/icon.html](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false)) | Interactive example, see code snippet, see variants |
-| [Fractal: Link](https://newjersey.github.io/Grove/components/detail/icon.html) | Preview styles, see code snippet |
+| [Storybook: Link](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-link--docs&args=label:Link%20text;external:!false) | Interactive example, see code snippet, see variants |
 
 ### USWDS links 
 | File | Purpose | 
