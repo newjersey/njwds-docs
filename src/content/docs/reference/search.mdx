@@ -7,9 +7,27 @@ description: Documentation for search component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Search" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-search--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View search in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-search--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the search from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-search--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-search--docs`}>View search in Storybook</a>
   
 ## Search Usage
 ### 👍 Use this component for
@@ -43,9 +61,15 @@ description: Documentation for search component.
 
 ### Default Size
 
-<iframe title="Search" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-search--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the search from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-search--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View search in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-search--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-search--docs`}>View search in Storybook</a>
 
 
 #### Code Variant
@@ -56,9 +80,15 @@ description: Documentation for search component.
 
 ### Small Size
 
-<iframe title="Search" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-search--default&viewMode=story&args=size%3ASmall" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the search from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-search--default&viewMode=story&args=size:Small`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View search in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-search--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-search--docs`}>View search in Storybook</a>
 
 
 #### Code Variant
@@ -69,9 +99,15 @@ description: Documentation for search component.
 
 ### Big Size
 
-<iframe title="Search" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-search--default&viewMode=story&args=size%3ABig" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the search from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-search--default&viewMode=story&args=size:Big`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View search in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-search--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-search--docs`}>View search in Storybook</a>
 
 
 #### Code Variant
@@ -106,8 +142,7 @@ Use the [USWDS search accessibility tests](https://designsystem.digital.gov/comp
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Search](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-8237&p=f&t=ZOdFzKwtvvcjAErD-0) | Using in designs |
-| [Storybook: Search](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-search--docs) | Interactive example, code snippets, variants |
-| [Fractal: Search](https://newjersey.github.io/Grove/components/detail/search--default.html) | Preview styles, see code snippet |
+| [Storybook: Search](https://storybook.grove.nj.gov/?path=/docs/components-search--docs) | Interactive example, code snippets, variants |
 
 ### USWDS links 
 | File | Purpose | 
