@@ -7,7 +7,27 @@ description: Documentation of the summary box component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🔗 [View summary box in USWDS](https://designsystem.digital.gov/components/summary-box/)
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the summary box from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-summary-box--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-summary-box--docs`}>View summary box in Storybook</a>
   
 ## Summary box Usage
 ### 👍 Use this component for
@@ -53,7 +73,8 @@ Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/com
 ### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma Grove: Summary box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1523-124&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Figma: Summary box](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1523-124&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Summary box](https://storybook.grove.nj.gov/?path=/docs/components-summary-box--docs) | Using in designs |
 
 ### USWDS links 
 | File | Purpose | 
