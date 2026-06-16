@@ -7,9 +7,27 @@ description: Documentation for select component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Select preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-select--default&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View select in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-select--docs&args=characterCounter:!false)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the select from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-select--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-select--docs`}>View select in Storybook</a>
 
 ## Select Usage
 
@@ -60,8 +78,7 @@ Use [USWDS select accessibility tests](https://designsystem.digital.gov/componen
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Select](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=28-26&p=f&t=ER1CI2PNGfstfiVR-0) | Using in designs |
-| [Storybook: Select](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-select--docs&args=characterCounter:!false) | Interactive preview, code snippet, variants |
-| [Fractal: Select](https://newjersey.github.io/Grove/components/detail/dropdown.html) | Preview styles, see code snippet |
+| [Storybook: Select](https://storybook.grove.nj.gov/?path=/docs/components-select--docs) | Interactive preview, code snippet, variants |
 
 ### USWDS links 
 | File | Purpose | 
