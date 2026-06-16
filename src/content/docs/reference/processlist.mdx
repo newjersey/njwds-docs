@@ -7,7 +7,27 @@ description: Documentation for process list component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-🔗 [View process list in USWDS](https://designsystem.digital.gov/components/process-list/)
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of process list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-process-list--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`}>View process list in Storybook</a>
   
 ## Process List Usage
 ### 👍 Use this component for
@@ -27,6 +47,44 @@ description: Documentation for process list component.
 ## Content guidelines
 - **Use consistent headings.** Headings should be written with a parallel structure (e.g., all start with an action verb, etc.), including consistent end punctuation, and should be short enough to fit on one line, if possible.
 - **Omit labels with verbose content.** Aim for clear and crisp labels. Omit labels to save space or if the step names are too long to comfortably fit in the step indicator.
+
+## Variants 
+
+### Default 
+
+<iframe 
+    title="Interactive preview of process list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-process-list--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`}>View process list in Storybook</a>
+
+### No Text 
+
+<iframe 
+    title="Interactive preview of process list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-process-list--default&viewMode=story&args=content:false`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`}>View process list in Storybook</a>
+
+### Custom Sizing (Large)
+
+<iframe 
+    title="Interactive preview of process list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-process-list--default&viewMode=story&args=customSizing:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`}>View process list in Storybook</a>
 
 
 ## Figma properties
@@ -48,6 +106,7 @@ Use [USWDS process list accessibility tests](https://designsystem.digital.gov/co
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Process list](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1735-310&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Process list](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-process-list--docs) | Interactive preview, code snippet |
 
 ### USWDS links 
 | File | Purpose | 
