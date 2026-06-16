@@ -9,9 +9,27 @@ description: Documentation of the table component.
 
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View table in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the table from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-table--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}>View table in Storybook</a>
   
 ## Table Usage
 ### 👍 Use this component for
@@ -53,14 +71,27 @@ description: Documentation of the table component.
 
 ## Type
 ### Bordered
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story" width="100%" height="100"></iframe>
+ <iframe 
+    title="Interactive preview of the table from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-table--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View table in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}>View table in Storybook</a>
 
 ### Not Bordered
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-table--basic&viewMode=story&args=border%3Afalse" width="100%" height="100"></iframe>
 
-🔗 [View table in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs)
+<iframe 
+    title="Interactive preview of the table from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-table--default&viewMode=story&args=border:false`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}>View table in Storybook</a>
 
 ## Responsive
 ### Responsive Stacked
