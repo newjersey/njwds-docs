@@ -7,9 +7,27 @@ description: Documentation for tooltip component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View side panel in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the tooltip from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-tooltip--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tooltip--docs`}>View tooltip in Storybook</a>
   
 ## Tooltip Usage
 ### 👍 Use this component for
@@ -39,9 +57,15 @@ description: Documentation for tooltip component.
 
 ## Tooltips
 
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://pr-158.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-button--primary&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the tooltip from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-tooltip--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View side navigation item in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tooltip--docs`}>View tooltip in Storybook</a>
 
 ### Figma Type properties
 | Property | Value |
@@ -64,7 +88,7 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 
 | Class | Description |
 | ----------- | ----------- | ----------- |
-| `"usa-tooltip` | Use for tooltip |
+| `usa-tooltip` | Use for tooltip |
 
 
 ## Resources
@@ -72,7 +96,7 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Tooltip](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2781-1208&t=OWFjainTs6OfqOdE-0) | Using in designs |
-| [Fractal: Tooltip](https://newjersey.github.io/Grove/components/detail/tooltip--default.html) | Preview styles, see code snippet |
+| [Storybook: Tooltip](https://storybook.grove.nj.gov/?path=/docs/components-tooltip--docs) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
