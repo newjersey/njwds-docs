@@ -9,12 +9,42 @@ description: Documentation for text input and area component.
 
 ##
 
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-text-input--default&viewMode=story" frameborder="1" scrolling="no" width="49%" height="200" align="left"> </iframe>
-<iframe src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" frameborder="1" scrolling="no" width="49%" height="600" align="right"> </iframe>
+**Text input options**
+- **Text input:** A single line of user input, with pre-determined width to indicate expected length of input. 
+- **Text area:** An area that accepts multiple lines of user input and can have a character count limit. 
 
-🔗 [View text input in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs)
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View text area in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-textarea--docs)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the text input from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-text-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`}>View text input in Storybook</a>
+
+
+ <iframe 
+    title="Interactive preview of the text area from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-textarea--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`}>View text area in Storybook</a>
   
 ## Text Input or Area Usage
 ### 👍 Use this component for
@@ -38,9 +68,15 @@ description: Documentation for text input and area component.
 
 
 ## Text Input
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-text-input--default&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the text input from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-text-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View text input in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`}>View text input in Storybook</a>
 
 ### Text Input Figma Type properties
 | Property | Value |
@@ -86,9 +122,15 @@ The following classes can be added to input elements with class usa-input to adj
 
 
 ## Text Area
-<iframe title="Button preview" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=elements-textarea--default&viewMode=story" width="100%" height="100"></iframe>
+ <iframe 
+    title="Interactive preview of the text area from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-textarea--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View text area in Storybook](https://newjersey.github.io/Grove/components/preview/buttons--primary-(light).html)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`}>View text area in Storybook</a>
 
 ### Text Area Figma Type properties
 | Property | Value |
@@ -141,7 +183,6 @@ Use the [USWDS text input / area accessibility tests](https://designsystem.digit
 | [Figma Grove: Text input / area](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19656&p=f&t=xEncjmi7erLwzVH8-0) | Using in designs |
 | [Storybook: Text Input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs) | Interactive preview, code snippet, variants |
 | [Storybook: Text Area](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-textarea--docs&args=characterCounter:!false) | Interactive preview, code snippet, variants |
-| [Fractal: Text input / area](https://newjersey.github.io/Grove/components/detail/text-input.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
