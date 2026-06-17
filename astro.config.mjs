@@ -22,29 +22,30 @@ export default defineConfig({
 			],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
+				
 				{
 					label: 'Overview',
-					autogenerate: { directory: 'guides' },
+					items: [{ autogenerate: { directory: 'guides' } }]
 				},
 				{
 					label: 'Content',
-					autogenerate: { directory: 'content' },
+					items: [{ autogenerate: { "directory": "content" } }]
 				},
 				{
 					label: 'Styles',
-					autogenerate: { directory: 'styles' },
+					items: [{ autogenerate: { directory: 'styles' } }]
 				},
 				{
 					label: 'Components',
-					autogenerate: { directory: 'reference' },
+					items: [{ autogenerate: { directory: 'reference' } }]
 				},
 				{
 					label: 'Patterns',
-					autogenerate: { directory: 'patterns' },
+					items: [{ autogenerate: { directory: 'patterns' } }]
 				},
 				{
 					label: 'Templates',
-					autogenerate: { directory: 'templates' },
+					items: [{ autogenerate: { directory: 'templates' } }],
 				},
 			],
 		}),
