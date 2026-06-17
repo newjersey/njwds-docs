@@ -7,9 +7,27 @@ description: Documentation for tag component.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<iframe title="Tag" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-tag--basic&viewMode=story" width="100%" height="100"></iframe>
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-🔗 [View tag in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true)
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the tag from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-tag--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}>View tag in Storybook</a>
   
 ## Tag Usage
 ### 👍 Use this component for
@@ -41,14 +59,26 @@ description: Documentation for tag component.
 | type | default, big |
 
 ### Default Tag
-<iframe title="Tag" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-tag--basic&viewMode=story" width="100%" height="100"></iframe>
+<iframe 
+    title="Interactive preview of the tag from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-tag--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View tag in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}>View tag in Storybook</a>
 
 ### Big Tag
-<iframe title="Tag" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-tag--basic&viewMode=story&args=size%3Abig"></iframe>
+<iframe 
+    title="Interactive preview of the tag from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-tag--default&viewMode=story&args=size:big`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-🔗 [View tag in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true)
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}>View tag in Storybook</a>
 
 
 ## Accessibility guidance
@@ -68,7 +98,6 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 | ----------- | ----------- |
 | [Figma Grove: Tag](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
 | [Storybook: Tag](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-tag--docs&args=icon:!true) | Interactive example, code snippet, variants |
-| [Fractal: Tag](https://newjersey.github.io/Grove/components/detail/labels--default.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 
