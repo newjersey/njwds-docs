@@ -5,7 +5,7 @@ description: Documentation for illustration component.
 
 **Illustration help communicate meaning, demonstrate something complex, or help users visually find what they need.**
   
-🚧 Custom implementation, not in NJWDS Fractal or USWDS 🚧
+🚧 Custom implementation, not in Grove Storybook or USWDS 🚧
 
 ## Illustration Usage
 
@@ -41,7 +41,7 @@ description: Documentation for illustration component.
 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Illustration](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2852-3510&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
+| [Figma Grove: Illustration](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2852-3510&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |

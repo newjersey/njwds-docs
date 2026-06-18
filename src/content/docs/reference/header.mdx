@@ -1,0 +1,231 @@
+---
+title: Header
+description: Documentation for header component.
+---
+
+**A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.**
+  
+✅ _Passed WCAG 2.1 AA (USWDS component)_
+
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+
+<iframe 
+    title="Interactive preview of the header from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
+  
+## Header Usage
+### 👍 Use this component for
+- **Most websites require header navigation.** Most websites require some form of navigation to help users find the information they need. While a horizontal navigation bar is just one option for navigation design, it is one of the most visible and familiar ways of helping users navigate a site.
+
+### 🚫 What to avoid / ensure
+- **List all important website sections as links in the horizontal navigation.**
+- **Dropdown menus help preview lower-level content.** For large websites, use dropdown menus to help users preview lower-level content. If lower-level sections are closely related and users will need to quickly jump between them, consider using a side navigation instead of — or in addition to — a dropdown.
+- **Use short, clear link labels.** Don’t use jargon or unfamiliar terms.
+- **Left-justify.** Left-justified link labels are more easily scannable.
+- **Present links in priority order.** Higher-demand links should appear farther to the left, and lower-demand links should appear farther to the right.
+- **Avoid org-structure navigation.** Don’t model your navigation after your agency’s org structure. Instead, structure it according to the tasks and information your users most frequently need to access.
+- **Highlight the current section.** Show users where they are within the site by highlighting the current section.
+- **Always research your navigation.** Conduct research with your users, and base decisions about your site’s information architecture and navigation structure on your findings. Continue researching to confirm that updates meet your users’ needs.
+
+
+## Content guidelines
+- **?**
+
+
+## Header Types
+
+### Figma Type properties
+| Property | Value |
+| ----------- | ----------- |
+| type | basic, extended |
+
+## Default Header
+
+<iframe 
+    title="Interactive preview of the header from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
+
+### Default Header Usage
+Use the default header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
+
+- **A text or image logo**
+- **With or without dropdown menus**
+- **With or without a search bar**
+- **With or without call-to-action buttons in place of the search bar**
+
+### When to Use the Default Header
+
+- **Limited sections.** The basic header is great if you have a modest number of sections in your main navigation.
+
+- **Shallow hierarchy.** You may also use it if each main section listed in the horizontal navigation has six or fewer subsections that you’d like to include in a dropdown menu.
+
+### When to Consider Something Else
+
+- **Many sections or deep hierarchy.** Consider using the extended header if you have more sections in your horizontal navigation than will fit comfortably next to your logo or if you have complex sections that require the use of a megamenu.
+
+## Extended Header
+
+<iframe 
+    title="Interactive preview of the extended header from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--extended&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
+
+An extended header allows for the inclusion of more sections in a horizontal navigation. You can customize the header (depending on your site structure) and use it:
+
+- **With a text or image logo**
+- **With or without dropdown menus**
+- **With or without the expandable search bar**
+- **With or without call-to-action buttons in place of the secondary links featured in your horizontal navigation**
+
+### When to Use the Extended Header
+
+- **Lots of sections.** Use the extended header if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
+
+- **Secondary links or specific calls to action.** Use the extended header if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example, Log in and Sign up links.
+
+### When to Consider Something Else
+
+- **Simple site needs.** Consider using the basic header if you have less information — the basic header takes up less space.
+
+
+## Header variants
+
+### Figma variant properties
+| Property | Value |
+| ----------- | ----------- |
+| mega menu | true, false |
+| search bar | true, false |
+| site title | [text input] |
+
+### Megamenu
+
+#### Mega Menu with Extended header
+<iframe 
+    title="Interactive preview of the extended header with megamenu from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--extended&viewMode=story&args=megamenu%3Atrue`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
+
+Like an extended header, an extended header with a megamenu allows for the inclusion of more sections in your horizontal navigation; it also allows you to include more links in your dropdowns. You can customize the header (depending on your site structure) and use it:
+
+- **With a text or image logo**
+- **With or without the expandable search bar**
+- **With or without call-to-action buttons in place of the secondary links in the horizontal navigation**
+
+##### When to Use the Extended Header with Megamenu
+
+- **Lots of sections.** Use an extended header with a megamenu if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
+
+- **Secondary links or specific calls to action.** This type of header is also useful if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example, Log in and Sign up links.
+
+- **Deep hierarchy.** Use this type of header if you’d like to include more than six links in any of your dropdowns.
+
+##### When to Consider Something Else
+
+- **Shallow hierarchy.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a very large number of sub-pages.
+
+#### Mega menu with basic header
+<iframe 
+    title="Interactive preview of the basic header with megamenu from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story&args=megamenu%3Atrue`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
+
+The basic header with a megamenu is similar in design to the basic header component. The megamenu allows for the inclusion of more links in dropdown menus. You can customize this header (depending on your site structure) and use it with:
+
+- **A text or image logo**
+- **With or without a search bar**
+- **With or without call-to-action buttons in place of the search bar**
+
+##### When to Use the Basic Header with Megamenu
+
+- **Deep hierarchy.** Use the basic header with a megamenu if you’d like to include more than six links in any of your dropdown menus and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.
+
+##### When to Consider Something Else
+
+- **Not enough content to warrant a megamenu.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a large number of sub-pages.
+
+
+## Accessibility guidance
+Use the [USWDS header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) to test button implementation.
+- **Add a skip navigation link before the header.** Include skip navigation links to allow those using screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skip navigation link. Find more information on skip navigation links at WebAIM.
+- **Ensure your horizontal navigation is keyboard compatible.** Test to make sure users can use Tab to navigate and Space (or Enter) to open pages.
+- **Include tab focus for all top-level navigation items.** This feature will allow keyboard-reliant users to easily navigate interactive items.
+- **Avoid using hover to expand dropdown lists.** Hover is difficult for some users and won't work on touch screens. Dropdowns should expand on click or with keyboard navigation.
+- **Add context by labeling your nav element.** If your page has more than one nav element, use the `aria-label` attribute to help assistive technology users understand the purpose of the navigation.
+- **Use list elements for your navigation links.** This helps screen reader users navigate header content.
+- **Add alt text to your logo image.** If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.
+- **Don't use an H1 for your logo.** If you’re using a logo that’s text, use an `em`, not an `h1`, unless it’s the homepage. Find more information here: [Your Logo is an Image, Not a H1](http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/).
+
+## Code 
+
+### Code Variants
+| Class | Description |  
+| ----------- | ----------- |
+| `$theme-header-font-family` | Font family of the header. |
+| `$theme-header-logo-text-width`| Width of the logo text area at desktop width as a percentage of the total header width. |
+| `$theme-header-max-width`| Maximum width of the header.|
+| `$theme-header-min-width`| Breakpoint at which the non-mobile header is shown. |
+
+### Header Variants
+| Variant                | Description                    |
+|------------------------|--------------------------------|
+| `.usa-header--basic`   | Display a simple header.       |
+| `.usa-header--megamenu`| Display a megamenu.            |
+| `.usa-header--extended`| Display an extended header.    |
+
+## Related
+- [Documentation page template](https://designsystem.digital.gov/templates/documentation-page/)
+- [Landing page template](https://designsystem.digital.gov/templates/landing-page/)
+
+## Resources
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Header](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1910-52&p=f&t=Yx31eAZO0ULNN6UA-0) | Using header in designs, documentation and best practices on button usage |
+| [Storybook: Header](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-header--docs) | Preview card styles, see card code snippet |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Header](https://designsystem.digital.gov/components/header/) | Reference for additional styles and functionalities  |
+| [USWDS: Header utilities](https://designsystem.digital.gov/components/header/#implementation) | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: Header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) | Accessibility tests to run for header component |
+

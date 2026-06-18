@@ -10,7 +10,7 @@ description: Documentation for form structure.
 ## Usage
 ### ✔️ What to do
 - Follow USWDS guidance for structuring complex forms
-- Follow NJWDS guidance for multi-step forms
+- Follow Grove guidance for multi-step forms
 - Use semantic HTML to make forms accessible
 
 ### ❌ What not to do

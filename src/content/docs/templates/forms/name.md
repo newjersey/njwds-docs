@@ -37,12 +37,12 @@ As you customize this form template, make sure it continues to follow the [acces
 - [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/) 
 
 ## Resources
-### NJWDS links 
+### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma NJWDS: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
+| [Figma Grove: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
 | [Storybook: Name form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-name--docs) | Interactive example, code snippet, variants |
-| [Fractal: Name form](https://newjersey.github.io/njwds/components/detail/name-form.html) | Preview styles, see code snippet |
+| [Fractal: Name form](https://newjersey.github.io/Grove/components/detail/name-form.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 

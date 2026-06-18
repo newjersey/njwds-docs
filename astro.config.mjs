@@ -6,43 +6,49 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Grove',
+			logo: {
+        	src: './src/assets/grove-logo-leaves.png',
+			},
+			components: {
+				Head: './src/components/Head.astro',
+				ThemeProvider: './src/components/ThemeProvider.astro',
+				ThemeSelect: './src/components/ThemeSelect.astro',
+				SiteTitle: './src/components/SiteTitle.astro',
+			},
 			customCss: [
 				'@newjersey/njwds/dist/css/styles.css',
-				'./src/styles/custom.css'
+				'./src/styles/custom.css',
 			],
 			components: {
 				Sidebar: './src/components/overrides/Sidebar.astro',
 			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
+				
 				{
 					label: 'Overview',
-					autogenerate: { directory: 'guides' },
+					items: [{ autogenerate: { directory: 'guides' } }]
 				},
 				{
 					label: 'Content',
-					autogenerate: { directory: 'content' },
+					items: [{ autogenerate: { "directory": "content" } }]
 				},
 				{
 					label: 'Styles',
-					autogenerate: { directory: 'styles' },
-				},
-				{
-					label: 'NJWDS Starter Pack',
-					autogenerate: { directory: 'njcomponents' },
+					items: [{ autogenerate: { directory: 'styles' } }]
 				},
 				{
 					label: 'Components',
-					autogenerate: { directory: 'reference' },
+					items: [{ autogenerate: { directory: 'reference' } }]
 				},
 				{
 					label: 'Patterns',
-					autogenerate: { directory: 'patterns' },
+					items: [{ autogenerate: { directory: 'patterns' } }]
 				},
 				{
 					label: 'Templates',
-					autogenerate: { directory: 'templates' },
+					items: [{ autogenerate: { directory: 'templates' } }],
 				},
 			],
 		}),

@@ -1,11 +1,12 @@
 ---
 title: Vision
-description: A guide to getting started with NJWDS.
+description: The north star vision of Grove.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 2
 ---
 
 ## Design System Vision
-[Design system vision doc](https://docs.google.com/document/d/1QYEU_b7Qakffb54IeUMQ3bKqX8d0BgAXDvg9pRGM9J0/edit?tab=t.0)
-
 - Develop and maintain a New Jersey design system that augments the US Web Design System with more practical use cases and variants, as well as sets the visual language for New Jersey digital experiences.
 - Ensure New Jerseyans have a consistent user experience.*
 - Develop and maintain a New Jersey digital design system – in Figma and in code –  with the aim of providing residents a consistent and trustworthy experience of government services.
