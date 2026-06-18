@@ -15,7 +15,9 @@
     --sl-sidebar-pad-x: 0;
 
     --sl-mobile-toc-height: 3.4375rem;
-
+    --grove-logo-text-color: #fff;
+    --sl-nav-pad-x: 1.25rem;
+    
     @media (min-width: 50rem) {
         --sl-nav-height: 5rem;
         --grove-logo-text-size: 1.8125rem; /* 29px */
@@ -24,8 +26,7 @@
         --grove-search-text-color: #000
     }
 
-    --grove-logo-text-color: #fff;
-    --sl-nav-pad-x: 1.25rem;
+
 }
 
 starlight-theme-select {
