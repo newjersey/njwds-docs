@@ -8,10 +8,13 @@ export default defineConfig({
 		starlight({
 			title: 'Grove',
 			logo: {
-        	src: './src/assets/grove-logo-leaves.png',
+        		src: './src/assets/leaves.svg',
+				alt: 'Grove logo: four green leaves arranged in a square pattern (2 by 2)',
 			},
 			components: {
 				Head: './src/components/Head.astro',
+				Header: './src/components/Header.astro',
+				Search: './src/components/Search.astro',
 				ThemeProvider: './src/components/ThemeProvider.astro',
 				ThemeSelect: './src/components/ThemeSelect.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
@@ -20,7 +23,7 @@ export default defineConfig({
 				'@newjersey/njwds/dist/css/styles.css',
 				'./src/styles/custom.css',
 			],
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/newjersey/njwds-docs' }],
 			sidebar: [
 				
 				{
