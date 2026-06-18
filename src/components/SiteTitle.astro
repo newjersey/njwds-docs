@@ -6,60 +6,46 @@ import config from 'virtual:starlight/user-config';
 const { siteTitle, siteTitleHref } = Astro.locals.starlightRoute;
 ---
 
-<a href={siteTitleHref} class="site-title sl-flex">
+<a href={siteTitleHref} class="site-title display-flex flex-align-center text-no-wrap" translate="no">
 	{
-		config.logo && logos.dark && (
+		config.logo && (
 			<>
 				<img
-					class:list={{ 'light:sl-hidden print:hidden': !('src' in config.logo) }}
+					class="site-logo"
 					alt={config.logo.alt}
-					src={logos.dark.src}
-					width={logos.dark.width}
-					height={logos.dark.height}
+					src={logos.light.src}
 				/>
-				{/* Show light alternate if a user configure both light and dark logos. */}
-				{!('src' in config.logo) && (
-					<img
-						class="dark:sl-hidden print:block"
-						alt={config.logo.alt}
-						src={logos.light?.src}
-						width={logos.light?.width}
-						height={logos.light?.height}
-					/>
-				)}
 			</>
 		)
 	}
-	<div class="title-wrapper font-heading-lx text-bold">
-		<span class:list={{ 'sr-only ': config.logo?.replacesTitle }} translate="no">
+	<div class="display-flex flex-column">
+		<span class="site-name text-heavy">
 			{siteTitle}
 		</span>
-		<span class="tagline font-heading-sm text-normal margin-top-05">Garden State Design System</span>
+		<span class="site-tagline text-semibold">Garden State Design System</span>
 	</div>
 </a>
 
 <style>
 	@layer starlight.core {
+
+		.site-logo {
+			width: var(--grove-logo-width);
+			height: auto;
+		}
 		.site-title {
-			align-items: center;
 			gap: var(--sl-nav-gap);
-			font-size: var(--sl-text-h4);
-			color: var(--sl-color-text-accent);
-			text-decoration: none;
-			white-space: nowrap;
+			color: var(--grove-logo-text-color);
 			min-width: 0;
 		}
-		.title-wrapper {
-			display: flex;
-			flex-direction: column;
-			line-height: 1;
+		
+		.site-name {
+			font-size: var(--grove-logo-text-size);
+			line-height: 1em;
 		}
-		img {
-			height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
-			width: auto;
-			max-width: 100%;
-			object-fit: contain;
-			object-position: 0 50%;
+		.site-tagline {
+			font-size: var(--grove-logo-tagline-size);
+			line-height: 1.45em;
 		}
 	}
 </style>
