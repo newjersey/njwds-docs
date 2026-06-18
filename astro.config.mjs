@@ -15,14 +15,12 @@ export default defineConfig({
 				ThemeProvider: './src/components/ThemeProvider.astro',
 				ThemeSelect: './src/components/ThemeSelect.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
+				Sidebar: './src/components/Sidebar.astro',
 			},
 			customCss: [
 				'@newjersey/njwds/dist/css/styles.css',
 				'./src/styles/custom.css',
 			],
-			components: {
-				Sidebar: './src/components/overrides/Sidebar.astro',
-			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				
