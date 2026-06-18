@@ -1,9 +1,71 @@
 /* Override header/banner background color */
 :root {
     --sl-color-bg-nav: #193324;
+    --sl-color-text-accent: red;
     --sl-font: 'Plus Jakarta Sans', sans-serif;
     --sl-text-h1: 2.5rem;
     --sl-text-h2: 2rem;
+    --sl-nav-gap: .75rem;
+
+    --sl-nav-height: 3rem;
+    --grove-logo-text-size: 0.9375rem; /* 15px */
+    --grove-logo-tagline-size: 0.5625rem; /* 9px */
+    --grove-logo-width: 22px;
+    --grove-search-text-color: #fff;
+    --sl-sidebar-pad-x: 0;
+
+    --sl-mobile-toc-height: 3.4375rem;
+
+    @media (min-width: 50rem) {
+        --sl-nav-height: 5rem;
+        --grove-logo-text-size: 1.8125rem; /* 29px */
+        --grove-logo-tagline-size: 0.9375rem; /* 15px */
+        --grove-logo-width: 42px;
+        --grove-search-text-color: #000
+    }
+
+    --grove-logo-text-color: #fff;
+    --sl-nav-pad-x: 1.25rem;
+}
+
+starlight-theme-select {
+    display: none !important;
+}
+
+/* Style the mobile menu button */
+starlight-menu-button button {
+    background-color: #2F4A0B;
+    color: #fff;
+}
+
+/* If you need to be more specific for hover states */
+starlight-menu-button button:hover,
+starlight-menu-button button:focus {
+    background-color: #fff;
+    color: #2F4A0B;
+}
+
+.sidebar summary {
+    list-style: none;
+}
+
+mobile-starlight-toc nav {
+    background-color: #F6F7F9;
+}
+
+mobile-starlight-toc summary {
+    list-style: none;
+    padding: 0.875rem;
+}
+
+mobile-starlight-toc summary::-webkit-details-marker {
+  display: none;
+}
+
+mobile-starlight-toc .display-current {
+  display: block;
+  font-weight: 700;
+  padding-top: 0.3125rem;
 }
 
 h1 {
@@ -14,20 +76,12 @@ h1, h2, h3, h4, h5, h6,
 [class*=font-heading-]{
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
-}
-
-starlight-theme-select {
-    display: none !important;
-}
-
-header.header {
-  height: 80px;
+  font-weight: 600;
 }
 
 a.site-title {
-  color:#fff;
-  text-decoration: none;
-  gap: 12px;
+    color: white;
+    text-decoration: none;
 }
 
 .social-icons {
@@ -55,4 +109,14 @@ a.site-title {
 
 .grove__iframe--short {
     height: 100px;
+}
+
+/* need to add into NJWDS */
+
+.text-semibold {
+    font-weight: 600;
+}
+
+.text-heavy {
+    font-weight: 800;
 }
