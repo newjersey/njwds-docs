@@ -5,10 +5,27 @@ description: Form template for collecting addresses.
 
 **Enter a standard U.S. mailing or shipping address.**
 
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
 
-<iframe title="Address form" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=patterns-address--default&viewMode=story" width="100%" height="100"></iframe>
+import { LinkButton } from '@astrojs/starlight/components';
 
-🔗 [View address form template in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-address--docs)
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the address form template from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=templates-address-form--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-address-form--docs`}>View address form template in Storybook</a>
 
 
 ## Address Form Template Usage
@@ -49,8 +66,8 @@ We limit the characters in the ZIP code field to numbers and the hyphen (-), fol
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
-| [Storybook: Address form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-address--docs) | Preview styles, see code snippet |
-| [Fractal: Address form](https://newjersey.github.io/Grove/components/detail/address-form.html) | Preview styles, see code snippet |
+| [Storybook: Address form](https://storybook.grove.nj.gov/?path=/docs/templates-address-form--docs) | Preview styles, see code snippet |
+
 
 ### USWDS links 
 | File | Purpose | 
