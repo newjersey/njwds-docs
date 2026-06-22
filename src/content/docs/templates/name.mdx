@@ -1,0 +1,66 @@
+---
+title: Name form
+description: Form template for inputting name.
+---
+
+**Collect a full name as separate elements of data.**
+
+import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the name form template from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=templates-name-form--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-name-form--docs`}>View name form template in Storybook</a>
+
+
+## Name Form Template Usage
+
+### 👍 Use this template for
+- **You need separate data elements.** Follow this pattern when you need to ask for a user’s name as part of your service. Only ask for a name if you need it.
+
+### 👎 Consider something else for
+- **You don’t need separate data elements.** If you don’t need to parse out the separate pieces of a person’s name, consider letting them enter it into a single text field.
+
+## 🚫 What to ensure / avoid
+- **Label each field.** Be sure each field is properly labeled.
+- **Avoid select elements.** Leave the title and suffix fields as text boxes instead of offering select menus. There are many possible titles and suffixes; text boxes accommodate them all.
+- **Don’t restrict characters.** Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.
+
+## Content guidelines
+- TBD
+
+## Accessibility guidance
+Follow input guidance. These text fields should follow the [accessibility guidelines for all text inputs](https://designsystem.digital.gov/components/text-input/).
+
+As you customize this form template, make sure it continues to follow the [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+
+## Related 
+- [Name pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/name/)
+- [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/) 
+
+## Resources
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
+| [Storybook: Name form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-name--docs) | Interactive example, code snippet, variants |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Name form](https://designsystem.digital.gov/templates/form-templates/name-form/) | Reference for additional guidance and functionalities  |
