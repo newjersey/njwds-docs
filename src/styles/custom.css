@@ -111,6 +111,13 @@ a.site-title {
     height: 100px;
 }
 
+.main-pane table {
+    width: 100%;
+    display: table;
+    table-layout: auto;
+}
+
+
 /* need to add into NJWDS */
 
 .text-semibold {
@@ -120,3 +127,4 @@ a.site-title {
 .text-heavy {
     font-weight: 800;
 }
+
