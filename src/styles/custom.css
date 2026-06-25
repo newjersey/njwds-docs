@@ -5,12 +5,12 @@
     --sl-font: 'Plus Jakarta Sans', sans-serif;
     --sl-text-h1: 2.5rem;
     --sl-text-h2: 2rem;
-    --sl-nav-gap: .75rem;
+    --sl-nav-gap: 0.625rem;
 
-    --sl-nav-height: 3rem;
-    --grove-logo-text-size: 0.9375rem; /* 15px */
-    --grove-logo-tagline-size: 0.5625rem; /* 9px */
-    --grove-logo-width: 22px;
+    --sl-nav-height: 4rem;
+    --grove-logo-text-size: 1.25rem; /* 20px */
+    --grove-logo-tagline-size: 0.6875rem; /* 11px */
+    --grove-logo-width: 34px;
     --grove-search-text-color: #fff;
     --sl-sidebar-pad-x: 0;
 
