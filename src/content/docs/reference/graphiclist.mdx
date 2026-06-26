@@ -5,29 +5,23 @@ description: Documentation for graphic list component.
 
 **Graphic list is an element that can be used in a website to prominently display a few related pieces of information.**
 
-import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import FigmaStorybookButtonGroup from '@components/FigmaStorybookButtonGroup.astro';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-
-<button type="button" class="usa-button usa-button--outline">
-  Figma
-</button>
-
-<button type="button" class="usa-button">
-  Storybook
-</button>
-
+<FigmaStorybookButtonGroup 
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3643-1721&t=mGoKWCb0ntBD0TDX-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}
+/>
 
 <iframe 
     title="Interactive preview of the graphic list from Storybook" 
     frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-graphic-list--default&viewMode=story`} 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-graphic-list--default&viewMode=story&args=mode:dark`} 
     loading="lazy"
-    class="grove__iframe width-full border border-base-light">
+    class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
+ 🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
 
 
 ## Graphic List Usage
@@ -52,16 +46,22 @@ import { LinkButton } from '@astrojs/starlight/components';
 <iframe 
     title="Interactive preview of the graphic list from Storybook" 
     frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-graphic-list--default&viewMode=story`} 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-graphic-list--default&viewMode=story&args=mode:dark`} 
     loading="lazy"
-    class="grove__iframe width-full border border-base-light">
+    class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
 
  ### Light Version 
- TBD
-
+ 
+ <iframe 
+    title="Interactive preview of the graphic list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-graphic-list--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe--tall width-full border border-base-light">
+</iframe>
 
 
 ## Related

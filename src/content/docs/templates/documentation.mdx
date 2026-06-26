@@ -5,7 +5,7 @@ description: Template for documentation page.
 
 **Present information on a certain theme, topic, or idea.**
 
-import { STORYBOOK_BASE_URL } from '../../../config/storybook';
+import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
@@ -22,7 +22,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=templates-documentation--default&viewMode=story`} 
     loading="lazy"
-    class="grove__iframe width-full border border-base-light">
+    class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-documentation--docs`}>View documentation page template in Storybook</a>
