@@ -1,0 +1,17 @@
+---
+interface Props {
+  figmaUrl: string;
+  storybookUrl: string;
+}
+
+const { figmaUrl, storybookUrl } = Astro.props;
+---
+
+<ul class="usa-button-group margin-top-1">
+  <li class="usa-button-group__item">
+    <a href={figmaUrl} class="usa-button usa-button--outline">Figma</a>
+  </li>
+  <li class="usa-button-group__item">
+    <a href={storybookUrl} class="usa-button">Storybook</a>
+  </li>
+</ul>
