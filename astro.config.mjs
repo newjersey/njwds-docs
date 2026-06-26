@@ -1,17 +1,24 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import remarkGfm from 'remark-gfm';
 
 // https://astro.build/config
 export default defineConfig({
+	markdown: {
+		remarkPlugins: [remarkGfm],
+	},
 	integrations: [
 		starlight({
 			title: 'Grove',
 			logo: {
-        	src: './src/assets/grove-logo-leaves.png',
+        		src: './src/assets/leaves.svg',
+				alt: 'Grove logo: four green leaves arranged in a square pattern (2 by 2)',
 			},
 			components: {
 				Head: './src/components/Head.astro',
+				Header: './src/components/Header.astro',
+				Search: './src/components/Search.astro',
 				ThemeProvider: './src/components/ThemeProvider.astro',
 				ThemeSelect: './src/components/ThemeSelect.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
@@ -20,31 +27,32 @@ export default defineConfig({
 				'@newjersey/njwds/dist/css/styles.css',
 				'./src/styles/custom.css',
 			],
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/newjersey/njwds-docs' }],
 			sidebar: [
+				
 				{
 					label: 'Overview',
-					autogenerate: { directory: 'guides' },
+					items: [{ autogenerate: { directory: 'guides' } }]
 				},
 				{
 					label: 'Content',
-					autogenerate: { directory: 'content' },
+					items: [{ autogenerate: { "directory": "content" } }]
 				},
 				{
 					label: 'Styles',
-					autogenerate: { directory: 'styles' },
+					items: [{ autogenerate: { directory: 'styles' } }]
 				},
 				{
 					label: 'Components',
-					autogenerate: { directory: 'reference' },
+					items: [{ autogenerate: { directory: 'reference' } }]
 				},
 				{
 					label: 'Patterns',
-					autogenerate: { directory: 'patterns' },
+					items: [{ autogenerate: { directory: 'patterns' } }]
 				},
 				{
 					label: 'Templates',
-					autogenerate: { directory: 'templates' },
+					items: [{ autogenerate: { directory: 'templates' } }],
 				},
 			],
 		}),

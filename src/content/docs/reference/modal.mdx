@@ -1,0 +1,170 @@
+---
+title: Modal
+description: Documentation for modal component.
+---
+
+**A modal disables page content and focuses the user's attention on a single task or message.**
+  
+✅ _Passed WCAG 2.1 AA (USWDS component)_
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
+  
+## Modal Usage
+### 👍 Use this component for
+- **Confirmation.** Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. These modals are usually triggered by a user action on the page and offer more than one option to proceed — such as a “yes” and “no” button. They are commonly used to confirm user actions or tasks that can’t be undone. **Examples:** “Your work isn’t saved. Do you want to proceed?”, “Are you sure you want to cancel?”
+- **Acknowledgement before continuing.** These modals are used as a “gate” to prevent users from moving forward without acknowledging or answering specific information in the modal. A key differentiator of these modals is that a user should not be able to close the modal or escape without making a selection — this means the “close” button should be disabled on these modals. It also means there needs to be a clear way to accept or reject the content in the modal. **Examples:** “By using this website, you are agreeing to our privacy policy.”, “Your session is about to timeout. Do you need more time?”, “Are you 65 or older?”
+- **Explanatory content without disrupting a process.** A modal can be used to display information without taking users away from a process or task. These modals usually show optional information to help a user gain further understanding about what they’re doing — for instance, displaying a privacy policy while creating an account or viewing an in-depth definition or explanation while filling out a form. Typically these modals don’t require a user to take action other than closing it.
+
+### 👎 Consider something else for
+- **⚠️Every time!⚠️** Before using a modal, consider whether there’s another component that might be less disruptive for the user. Modals should be a last resort.
+- **Multi-step process.** Avoid complicated user flows in a modal that may take the user away from the original page. A multi-step process is better suited to an individual page, guiding the user and accommodating complexities in the user flow.
+- **Error, success, or warning messages.** When these relate to a form field, these are better displayed in the context of the page (such as showing an error next to a missing required field). When these relate to page-level messages (such as confirming that a form has been successfully submitted), they should appear as an alert at the top of the page where the user is taken next.
+
+### 🚫 What to ensure / avoid
+- **Users should trigger modals.** Modals should appear as a result of an action made by the user or (less commonly) inactivity. A modal should not surprise the user, so don’t automatically display them. Some exceptions would be to alert the user that their authenticated session in a web application is about to expire due to inactivity or if information needs to be displayed when arriving at a webpage for the first time (like accepting the use of cookies).
+- **Choose the modal size that fits your content.** There are two sizes to choose from: default and large. If a modal’s content can’t fit without scrolling, you may need to use the large variant or consider moving the content to its own page.
+- **Limit in-modal interactions.** Avoid using components other than buttons inside the modal. Components such as accordions and form fields often don’t scale well for mobile users and they can easily lose context that they’re viewing a modal. If you need to include links that navigate away from a modal to another webpage, refer to our link guidance about how to handle external links.
+- **Consider what happens when the modal is dismissed.** The page underneath should not reload or change to new content.
+- **Don’t roadblock external links with a modal window or dialog box.** Allow users to follow external links without taking a separate action to acknowledge leaving your site. Roadblock notices result in a poor user experience and are redundant with both the link’s destination context and your site’s policies and notices page (see [USWDS Link guidance](https://designsystem.digital.gov/components/link)).
+
+## Content guidelines
+- **Use clear header and button text.** The header should clearly state what’s happening or what action the modal is prompting the user to do. The button text should indicate what will happen when selected and avoid ambiguity. For example, if a modal asks “Do you want to cancel?” the button options should not be “yes” and “cancel” — instead use something like “Yes, cancel” and “No, don’t cancel.”
+- **Avoid long content that requires scrolling.** If a lot of content is needed, make sure it’s clear that users have to scroll to see all of it. Lengthy content can be problematic because it pushes buttons out of a user’s initial view, which may cause confusion.
+
+
+## Modal Sizes
+
+### Default modal
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
+
+
+#### Figma Type properties
+| Property | Value |
+| ----------- | ----------- |
+| screen size | mobile, desktop-sm |
+
+#### Code Primary Variants
+| Class | Description |
+| ----------- | ----------- |
+| `usa-modal` | Desktop small and mobile sizes. |
+
+
+### Large modal
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story&args=size:large`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
+
+
+#### Figma Type properties
+| Property | Value |
+| ----------- | ----------- |
+| screen size | desktop-lg |
+
+#### Code Primary Variants
+| Class | Description |
+| ----------- | ----------- |
+| `usa-modal usa-modal--lg` | Desktop large size. |
+  
+
+## Forced Action Modal
+<iframe 
+    title="Interactive preview of the modal from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-modal--default&viewMode=story&args=forceAction:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
+
+#### Figma Type properties
+| Property | Value |
+| ----------- | ----------- |
+| forced action | no, yes |
+
+#### Code Primary Variants
+| Class | Description |
+| ----------- | ----------- |
+| `data-force-action` | Added to modal `div` class to remove ability to close modal. |
+
+
+
+## Accessibility guidance
+Use [USWDS modal accessibility tests](https://designsystem.digital.gov/components/modal/accessibility-tests) to test implementation.
+- **Label the modal with its heading.** Use `aria-labelledby=”[id]”` on `.usa-modal` to read out the modal title when opening the modal. The `[id]` should match the value of the `id` attribute on the `usa-modal__heading` element.
+- **Share more context with `aria-describedby`**. Optionally, you may also use `aria-describedby=”[id]”` on `.usa-modal` to associate descriptive text to the modal window so that it’s read when opening the modal. The `id` should belong to a paragraph or a brief piece of content.
+- **Include the “X” close button at the end of the modal code.** CSS will display `.usa-modal__close` at the top right of the modal window, but placing the close button at the bottom of the modal will prevent some screen readers from reading the close button first and allow users to navigate directly to the main content instead.
+- **Ensure keyboard focus is trapped inside the modal.** When using a keyboard to test the modal, ensure focus does not move to the page behind it.
+
+## Code 
+
+### Modal Variants
+| Name | Class | Description |
+| ----------- | ----------- | ----------- |
+| Large | `.usa-modal--lg` | Add the `.usa-modal--lg` class to `.usa-modal` for a larger window and larger heading size on wider screens. |
+| Forced action | `data-force-action` | Add the `data-force-action` class to `.usa-modal` to remove the option to close the modal. |
+
+### Using the modal component
+- **Use unique ids.** Each `.usa-modal` must have a unique id so that openers can associate them with their `aria-controls` attribute.
+- **Openers.** A single modal can have multiple openers. Each opener requires `data-open-modal` and `aria-controls=”[modal_id]”` attributes. Openers can be coded as either `<button>` or `<a>` elements (using `<button>` is preferred).
+- **Disabling close when an action is required.** In instances that a user must make a choice before continuing, you want to prevent them from closing the modal without taking action. Add `data-force-action` attribute to `.usa-modal` to prevent the user from closing the modal without taking an action (i.e. by clicking outside the dialog, or the close button).
+
+### Modal Components
+| Name | Class | Description |
+| ----------- | ----------- | ----------- |
+| Modal | `usa-modal` | Styles a `div` that should contain all other modal components. Place `.usa-modal--lg` on this element. Add an `aria-labelledb`y attribute that refers to  `.usa-modal__heading`'s ID Add an `aria-describedby` attribute that refers to the ID of the element containing the modal description. |
+| Content | `usa-modal__content` | Styles a `div`. Contains: the `.usa-modal__main` element, the `.usa-modal__close button`, unless using data-force-action |
+| Main | `usa-modal__main` | Styles a `div`. Contains: the `.usa-modal__heading` element, the modal description, the `.usa-modal__footer` element |
+| Heading | `usa-modal__heading` | Styles the modal heading. A `h1` element should be used, Its ID should be used for `.usa-modal`'s `aria-labelledby` attribute |
+| Footer | `usa-modal__footer` | Styles a `div`. Should contain the `button` element(s) that close the modal (use the `data-close-modal` attribute). |
+| Close button | `usa-modal__close` | Styles the “X” close `button` at the top right corner of the modal: Include the `data-close-modal` attribute, Include an appropriate `aria-label` (e.g. "Close this window"). Place at the end of the modal code, outside `.usa-modal__main` element but inside `.usa-modal__content` |
+
+
+## Resources
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Modal](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=368-9018&t=l0u4S6aNVryWl3kQ-0) | Using in designs |
+| [Storybook: Modal](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-modal--docs) | Interactive example, code snippet, see variants |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Modal](https://designsystem.digital.gov/components/modal/) | Reference for additional styles and functionalities  |
+| [USWDS: Modal utilities](https://designsystem.digital.gov/components/modal/#using-the-modal-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: Modal accessibility tests](https://designsystem.digital.gov/components/modal/accessibility-tests/) | Accessibility tests to run for component |
+

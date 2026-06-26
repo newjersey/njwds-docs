@@ -1,0 +1,195 @@
+---
+title: Text input and area
+description: Documentation for text input and area component.
+---
+
+**A text input allows users to enter any combination of letters, numbers, or symbols and can span single or multiple lines.**
+  
+✅ _Passed WCAG 2.1 AA (USWDS component)_
+
+##
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+##
+
+**Text input options**
+- **Text input:** A single line of user input, with pre-determined width to indicate expected length of input. 
+- **Text area:** An area that accepts multiple lines of user input and can have a character count limit. 
+
+
+<iframe 
+    title="Interactive preview of the text input from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-text-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`}>View text input in Storybook</a>
+
+
+ <iframe 
+    title="Interactive preview of the text area from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-textarea--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`}>View text area in Storybook</a>
+  
+## Text Input or Area Usage
+### 👍 Use this component for
+- **Unpredictable or freeform responses.** If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
+- **Input simplicity.** When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a date picker.
+- **Pasted content.** When users want to be able to paste in a response.
+
+### 👎 Consider something else for
+- **Predetermined input options.** When users are choosing from a specific set of options.
+
+### 🚫 What to ensure / avoid
+- **Use fields appropriate to the length of the input.** The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
+- **Consider the mobile context.** Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
+- **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.
+- **Avoid placeholder text.** Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+
+
+## Content guidelines
+- **Avoid placeholder text.** Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
+- **Avoid splitting numbers.** Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
+
+
+## Text Input
+<iframe 
+    title="Interactive preview of the text input from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-text-input--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`}>View text input in Storybook</a>
+
+### Text Input Figma Type properties
+| Property | Value |
+| ----------- | ----------- |
+| width | fill, 2xs, xs, sm, md, lg, xl, 2xl |
+| state | default, focus, success, error |
+| label text | [text input] |
+| required | true, false |
+| helper | true, false |
+| helper text | [text input] |
+| prefix | false, true |
+| filled | false, true |
+| suffix | false, true |
+| suffix text | [text input] |
+| character count | false, true |
+| character count text | [text input] |
+
+### Text Input Code 
+#### Components
+| Type | Mode | Applied Variants |
+| ----------- | ----------- | ----------- |
+| Error Message Container | `nj-error-message-container` | Apply this class to a `<div>` element below a text input displaying an error state to style a helpful, succinct error message. This container may include an error alert icon along with some text. |
+
+#### Text Input State Variants
+The following classes can be added to `input` elements with class `usa-input` to signal different states for the text input. These classes will adjust the outline of the input to indicate various states to the user and should be added and toggled on and off as needed.
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-input--success` | Success state for the input |
+| `usa-input--error` | Error state |
+| `usa-focus` | Focus state for the input |
+
+#### Text Input Size Variants
+The following classes can be added to input elements with class usa-input to adjust the size of the input.
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-input--2xs` | Displays a text input with width 5ex |
+| `usa-input--xs` | Displays a text input with width 9ex |
+| `usa-input--sm, usa-input--small` | Displays a text input with width 13ex |
+| `usa-input--md, usa-input--medium` | Displays a text input with width 20ex |
+| `usa-input--lg` | Displays a text input with width 30ex |
+| `usa-input--xl` | Displays a text input with width 40ex |
+| `usa-input--2xl` | Displays a text input with width 50ex |
+
+
+## Text Area
+ <iframe 
+    title="Interactive preview of the text area from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-textarea--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`}>View text area in Storybook</a>
+
+### Text Area Figma Type properties
+| Property | Value |
+| ----------- | ----------- |
+| width | xl, 2xl, fill |
+| state | default, focus, success, error |
+| label text | [text input] |
+| required | true, false |
+| helper | true, false |
+| helper text | [text input] |
+| user input | false, true |
+| user input text | [text input] }
+| character count | false, true |
+| character count text | [text input] |
+| error text | [error text] |
+
+### Text Area Code 
+#### Components
+| Variant | Description |
+| ----------- | ----------- |
+| `for="input-type-textarea"` | Applied to `label` element to use text area variant. |
+
+#### Text Area State Variants
+The following classes can be added to `input` elements with class `usa-input` to signal different states for the text input. These classes will adjust the outline of the input to indicate various states to the user and should be added and toggled on and off as needed.
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-input--success` | Success state for the input |
+| `usa-input--error` | Error state |
+| `usa-focus` | Focus state for the input |
+
+#### Text Area Size Variants
+The following classes can be added to `input` elements with class usa-input to adjust the size of the input.
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-input--xl` | Displays a text input with width 40ex |
+| `usa-input--2xl` | Displays a text input with width 50ex |
+
+
+## Accessibility guidance
+Use the [USWDS text input / area accessibility tests](https://designsystem.digital.gov/components/text-input/accessibility-tests) to test implementation.
+- **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls](https://designsystem.digital.gov/components/form).
+- **Avoid placeholder text.** Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
+- **Avoid splitting numbers.** Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
+
+
+## Resources
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Text input / area](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-19656&p=f&t=xEncjmi7erLwzVH8-0) | Using in designs |
+| [Storybook: Text Input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-text-input--docs) | Interactive preview, code snippet, variants |
+| [Storybook: Text Area](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-textarea--docs&args=characterCounter:!false) | Interactive preview, code snippet, variants |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Text input](https://designsystem.digital.gov/components/text-input/) | Reference for additional styles and functionalities  |
+| [USWDS: Text input utilities](https://designsystem.digital.gov/components/text-input/#using-the-text-input-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: Text input accessibility tests](https://designsystem.digital.gov/components/text-input/accessibility-tests)| Accessibility tests to run for component |

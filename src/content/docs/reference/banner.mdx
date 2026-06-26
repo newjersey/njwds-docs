@@ -3,6 +3,8 @@ title: Banner 🚧
 description: Documentation for custom Grove banner.
 ---
 
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
 🚧 Mobile version differences between Figma and Storybook 🚧
 
 A banner is an official signifier of a website created by the State of New Jersey government, as well as a form of navigation.
@@ -17,9 +19,15 @@ import { LinkButton } from '@astrojs/starlight/components';
   Storybook
 </button>
 
-<iframe title="Banner" frameborder="1" style="border: solid #c9c9c9; padding:20" src="https://main.d6umhtb6a6pvv.amplifyapp.com/iframe.html?id=components-banner--default&viewMode=story" width="100%" height="100"></iframe>
-
-[View in Storybook](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true)
+<iframe 
+    title="Interactive preview of the default accordion from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-banner--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+ 
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-banner--docs`}>View banner in Storybook</a>
 
 ## Banner Usage
 ### 👍 Use this component for
@@ -66,7 +74,6 @@ Grove provides a number of CSS classes that can be applied to various elements w
 | ----------- | ----------- |
 | [Figma Grove: Banner](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=198-798&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
 | [Storybook: Banner](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-banner--docs&args=label:;icon:!true) | Interactive example, code snippets, variants |
-| [Fractal: Banner](https://newjersey.github.io/Grove/components/detail/banner.html) | Preview styles, see code snippet |
 
 ### USWDS links 
 | File | Purpose | 

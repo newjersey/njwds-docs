@@ -1,0 +1,108 @@
+---
+title: Time picker
+description: Documentation for time picker component.
+---
+
+**A time picker helps users select a specific time.**
+  
+✅ _Passed WCAG 2.1 AA (USWDS component)_
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+
+<iframe 
+    title="Interactive preview of the time picker from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-time-picker--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-time-picker--docs`}>View time picker in Storybook</a>
+
+
+## Time picker Usage
+
+### 👍 Use this component for
+- **Scheduling.** Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time in 30-minute blocks.
+
+### 👎 Consider something else for
+- **Exact time.** Plain text input is more appropriate for historical exact times, like time of birth.
+
+## 🚫 What to ensure / avoid
+- **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
+- **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
+- **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`.
+- **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
+- **⚠️Make sure to test.⚠️** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the **“UI of last resort.”** Many users find them confusing and difficult to use.
+
+
+## Content guidelines
+- **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (for example, if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
+- **Always use a label.** Make sure your select element has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the menu read “Select a state” by default).
+
+
+## Figma properties
+
+| Property | Value |
+| ----------- | ----------- |
+| state | default, success, error |
+| label text | [text input] |
+| required | true, false |
+| helper | true, false |
+| helper text | [text input]  |
+| input | true, false |
+| input text | [text input]  |
+| focus | false, true |
+| dropdown | false, true |
+| clear | false, true |
+| error message | [text input]  |
+
+
+## Accessibility guidance
+Use the [USWDS time picker accessibility tests](https://designsystem.digital.gov/components/time-picker/accessibility-tests) to test the implementation.
+- **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls](https://designsystem.digital.gov/components/form).
+- **Always use a label.** Make sure your select element has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the menu read “Select a state” by default).
+- **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
+
+## Code utilities 
+
+### Time picker initialization properties 
+The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
+| Property | Element | Description | 
+| ----------- | ----------- | ----------- |
+| `data-min-time` | `usa-time-picker` | The start time used in the time picker in `hh:mm` 24-hour format. The default is `00:00`. | 
+| `data-max-time` | `usa-time-picker` | The end time used for the time picker in `hh:mm` 24-hour format. The default is `23:59`. |
+| `data-step` | `usa-time-picker` | The number of minutes between options. The minimum is `1` minute and the default is `30` minutes. |
+| `value` | `usa-input` | The default value shown in the time picker.. |
+
+### Time picker properties 
+The following properties modify component functionality. These properties can be set or adjusted at any time before or after initialization in order to have an effect.
+| Property | Element | Description | 
+| ----------- | ----------- | ----------- |
+| `data-filter` | `usa-time-picker` | The time picker will use this regular expression to filter the time picker options. You are declaring a case insensitive match over the entire option text, which means `^` and `$` are added automatically. You can specify the inputted query with `{{query}}`. You can also declare a custom query filter as a data property as well, which can be used in the custom filter (`data-number-filter="[0-9]"` and then using `data-filter="{{numberFilter}}.*"`). The default filter is `.*{{query}}.*`, which is a simple “find anywhere within the option” text. | 
+
+
+## Resources
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Time picker](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3051-2224&p=f&t=p48LIM8AA1I9QJOL-0) | Using in designs |
+| [Storybook: Time picker](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-time-picker--docs) | Interactive example, code snippet, variants |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Time picker](https://designsystem.digital.gov/components/time-picker/) | Reference for additional styles and functionalities  |
+| [USWDS: Time picker utilities](https://designsystem.digital.gov/components/time-picker/#using-the-time-picker-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: Time picker accessibility tests](https://designsystem.digital.gov/components/time-picker/accessibility-tests) | Accessibility tests to run for time picker component |
+
