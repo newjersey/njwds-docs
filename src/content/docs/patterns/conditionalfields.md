@@ -7,7 +7,7 @@ description: Documentation for conditional fields.
   
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
   
-## Error Validation Usage
+## Conditional Fields Usage
 ### ✔️ What to do
 - Use conditional form fields to follow-up on a user's selection.
 - Show reveals after a form field, not before.
