@@ -1,0 +1,112 @@
+---
+title: Color
+description: Documentation of color theme and tokens in Grove.
+---
+
+**Color is an informative and expressive tool. It communicates state, tone, and gives feedback to the user. It should be used with care, but also creativity.**
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+  
+import { LinkButton } from '@astrojs/starlight/components';
+
+<button type="button" class="usa-button usa-button--outline">
+  Figma
+</button>
+
+<button type="button" class="usa-button">
+  Storybook
+</button>
+  
+
+## Theme colors
+Theme color tokens determine Grove’s key color families such as primary and base. Each theme token is drawn from a [USWDS system color token](https://designsystem.digital.gov/design-tokens/color/system-tokens/) and only token-based colors are used in official components.
+
+**Base** is Grove’s neutral color, used in the text color throughout, as well as most surfaces, such as backgrounds, borders, and cards.
+
+**Primary**, **secondary**, and **accent colors** can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (accent-warm and accent-cool). Note that these proportions are for non-base colors. In many cases, the neutral base text color will be the predominant tone on your site.
+
+Each color family usually has seven possible lightness grades, from lightest to darkest.
+
+### Grove theme color tokens
+The color tokens below have been set to theme Grove with USWDS’s theming capabilities.
+
+| Color | Theme token | System token | Value |
+| ----------- | ----------- | ----------- | ----------- |
+| [] | `'white'` | n/a | #ffffff |
+| [] | `'base-lightest'` | `'gray-cool-5'` | #edeff0 |
+| [] | `'base-lighter'` | `'gray-cool-10'` | #dfe1e2 |
+| [] | `'base-light'` | `'gray-cool-20'` | #c6cace |
+| [] | `'base'` | `'gray-cool-50'` | #71767a |
+| [] | `'base-dark'` | `'gray-cool-60'` | #565c65 |
+| [] | `'base-darker'` | `'gray-cool-70'` | #3d4551 |
+| [] | `'base-darkest'` | `'gray-cool-90'` | #1c1d1f |
+| [] | `'ink'` | `'gray-cool-90'` | #1c1d1f |
+| [] | `'primary-lightest'` | `'blue-5v'` | #e8f5ff |
+| [] | `'primary-lighter'` | `'blue-10v'` | #cfe8ff |
+| [] | `'primary-light'` | `'blue-20v'` | #a1d3ff |
+| [] | `'primary'` | `'blue-50v'` | #0076d6 |
+| [] | `'primary-vivid'` | `'blue-warm-60v'` | #0050d8 |
+| [] | `'primary-dark'` | `'blue-60v'` | #005ea2 |
+| [] | `'primary-darker'` | `'blue-70v'` | #0b4778 |
+| [] | `'primary-darkest'` | `'blue-80v'` | #112f4e |
+
+**Note:** Grove does not utilize USWDS’s secondary, accent-warm, or accent-cool color families.
+
+
+## State colors
+State color tokens are designed to be useful and effective for that has states or alerts. Each state token is drawn from a [USWDS system color token](https://designsystem.digital.gov/design-tokens/color/system-tokens/) and and only token-based colors are used in official components.
+
+The state color palette is divided into five high-level role-based color families: info, error, warning, success, and emergency.
+
+Each state color family generally has five possible lightness grades, from lighter to darker.
+
+**Note:** Grove does not utilize the disabled color family as we recommend against the use of disabled states in components.
+
+### Grove state color tokens
+The color tokens below have been set to theme Grove with USWDS’s theming capabilities.
+
+| Color | Theme token | System token | Value |
+| ----------- | ----------- | ----------- | ----------- |
+| [] | `'info-lighter'` | `'cyan-5'` | #e7f6f8 |
+| [] | `'info-light'` | `'cyan-20'` | #99deea |
+| [] | `'info'` | `'cyan-vivid-30v'` | #00bde3 |
+| [] | `'info-dark'` | `'cyan-vivid-40v'` | #009ec1 |
+| [] | `'info-darker'` | `'blue-cool-60'` | #2e6276 |
+| [] | `'error-lighter'` | `'red-warm-10'` | #f4e3db |
+| [] | `'error-light'` | `'red-warm-30v'` | #f39268 |
+| [] | `'error'` | `'red-warm-50v'` | #d54309 |
+| [] | `'error-dark'` | `'red-60v'` | #b50909 |
+| [] | `'error-darker'` | `'red-70'` | #6f3331 |
+| [] | `'warning-lighter'` | `'yellow-5'` | #faf3d1 |
+| [] | `'warning-light'` | `'yellow-10v'` | #fee685 |
+| [] | `'warning'` | `'gold-20v'` | #ffbe2e |
+| [] | `'warning-dark'` | `'gold-30v'` | #e5a000 |
+| [] | `'warning-darker'` | `'gold-50v'` | #936f38 |
+| [] | `'success-lighter'` | `'green-cool-5'` | #ecf3ec |
+| [] | `'success-light'` | `'green-cool-20v'` | #70e17b |
+| [] | `'success'` | `'green-cool-40v'` | #00a91c |
+| [] | `'success-dark'` | `'green-cool-50v'` | #008817 |
+| [] | `'success-darker'` | `'green-cool-60v'` | #216e1f |
+| [] | `'emergency'` | `'red-warm-60v'` | #9c3d10 |
+| [] | `'emergency-dark'` | `'red-warm-80'` | #332d29 |
+
+**Note:** Grove does not utilize the disabled color family as we recommend against the use of disabled states in components.
+
+## System colors 
+System color tokens are a complete palette of color tokens that can be used in projects. Only token-based colors are used in official Grove components.
+
+Full list of USWDS system color tokens:
+- [USWDS system color tokens page](https://designsystem.digital.gov/design-tokens/color/system-tokens/)
+- [Grove Figma Color page](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-867&t=4jNCEHuFmBOcbqfO-0)
+
+## Resources
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Color](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-867&t=4jNCEHuFmBOcbqfO-0) | Using color in designs |
+
+### USWDS links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [USWDS: Color](https://designsystem.digital.gov/design-tokens/color/overview/) | Reference for color design tokens  |
+
