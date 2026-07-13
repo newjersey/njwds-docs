@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import remarkGfm from 'remark-gfm';
+import AutoImport from 'astro-auto-import';
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,6 +11,12 @@ export default defineConfig({
 		remarkPlugins: [remarkGfm],
 	},
 	integrations: [
+		AutoImport({
+			imports: [
+				'./src/components/FigmaStorybookButtonGroup.astro',
+				'./src/components/GroveColorBlock.astro',
+			],
+		}),
 		starlight({
 			title: 'Grove',
 			logo: {
@@ -56,5 +64,6 @@ export default defineConfig({
 				},
 			],
 		}),
+		mdx(),
 	],
 });
