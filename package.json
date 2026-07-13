@@ -13,6 +13,7 @@
     "@astrojs/starlight": "^0.39.3",
     "@newjersey/njwds": "^2.9.1",
     "astro": "^6.4.8",
+    "astro-auto-import": "^0.5.1",
     "remark-gfm": "^4.0.1",
     "sharp": "^0.34.2"
   }

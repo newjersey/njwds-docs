@@ -1,0 +1,27 @@
+---
+/**
+ * Example usage:
+ *
+ * <GroveColorBlock color="#003366" />
+ *
+ * - color: the hex code to display as a small color swatch.
+ * - The hex is exposed to screen readers via aria-label. Pair this with
+ *   visible hex text nearby so colorblind/low-vision users can read the value.
+ */
+interface Props {
+  color?: string;
+}
+
+const { color } = Astro.props;
+---
+
+{color && (
+  <div
+    class="grove-color-block"
+    style={`background-color: ${color};`}
+    role="img"
+    aria-label={`Color swatch for: ${color}`}
+  >
+  </div>
+)}
+
