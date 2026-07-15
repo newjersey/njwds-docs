@@ -16,14 +16,21 @@ import { LinkButton } from '@astrojs/starlight/components';
 <button type="button" class="usa-button">
   Storybook
 </button>
-  
+
+## Using color in Grove 
+Grove has a limited default color palette of mostly functional color used to signify how a user can interact with each component. When it comes to designing full pages in Grove, however, designers are welcome to introduce decorative color schemes utilitizing system colors below. 
+
+When adding in color, consider the 60-30-10 rule: 
+- 60% of the interface is the dominant color (base) for surfaces and backgrounds 
+- 30% is a secondary color (added by designer if desired) for headings, cards, and other elements
+- 10% is an accent or CTA color (primary) for buttons or links
 
 ## Theme colors
 Theme color tokens determine Grove’s key color families such as primary and base. Each theme token is drawn from a [USWDS system color token](https://designsystem.digital.gov/design-tokens/color/system-tokens/) and only token-based colors are used in official components.
 
 **Base** is Grove’s neutral color, used in the text color throughout, as well as most surfaces, such as backgrounds, borders, and cards.
 
-**Primary**, **secondary**, and **accent colors** can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (accent-warm and accent-cool). Note that these proportions are for non-base colors. In many cases, the neutral base text color will be the predominant tone on your site.
+**Primary** is used for interactive elements on the page in Grove -- links, buttons, etc. -- but also can be used as a decorative color for hero sections, typography, illustrations, etc.  
 
 Each color family usually has seven possible lightness grades, from lightest to darkest.
 
