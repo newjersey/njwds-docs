@@ -9,13 +9,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-<button type="button" class="usa-button usa-button--outline">
-  Figma
-</button>
-
-<button type="button" class="usa-button">
-  Storybook
-</button>
+<FigmaStorybookButtonGroup 
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3671-9700&t=27UwGhKCDi5dO9t8-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-documentation--docs`}
+/>
 
 <iframe 
     title="Interactive preview of the documentation page template from Storybook" 
