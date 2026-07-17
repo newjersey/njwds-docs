@@ -91,16 +91,16 @@ Required components provide a consistent look and feel across New Jersey State G
     </li>
   </ul>
 
-## Getting started for engineers
+### Getting started for engineers
 
-### What you'll need to get started
+#### What you'll need to get started
 
 - Node.js (see `.nvmrc` for the project's recommended version)
 - npm
 - Access to the [NJWDS GitHub repository](https://github.com/newjersey/njwds)
 - Familiarity with [USWDS](https://designsystem.digital.gov/) is helpful but not required
 
-### Setting up your first project
+#### Setting up your first project
 
 Grove is published as `@newjersey/njwds` on npm. Install it in your project:
 
@@ -108,7 +108,7 @@ Grove is published as `@newjersey/njwds` on npm. Install it in your project:
 npm install @newjersey/njwds
 ```
 
-#### Add the stylesheet
+##### Add the stylesheet
 
 **HTML project:** link the CSS in your `<head>`:
 
@@ -122,7 +122,7 @@ npm install @newjersey/njwds
 import "@newjersey/njwds/dist/css/styles.css";
 ```
 
-#### Add the JavaScript
+##### Add the JavaScript
 
 > **React projects:** The Grove JavaScript is not currently integrated for React. Import only the CSS 
 > above and implement interactive component behavior as needed on your project.
@@ -144,13 +144,13 @@ Add `uswds.min.js` before the closing `</body>` tag:
 </body>
 ```
 
-#### Use a component
+##### Use a component
 
 Grove extends USWDS. Most components use USWDS HTML markup with NJ-specific CSS classes layered on top. 
 Browse available components in [Storybook](https://storybook.grove.nj.gov) and each story shows the 
 markup you need.
 
-### Best practices
+#### Best practices
 
 - **Use USWDS utility classes** for spacing, color, and typography instead of writing custom CSS. The 
 full utility list is in the [USWDS documentation](https://designsystem.digital.gov/utilities/).
@@ -160,7 +160,7 @@ upgrades and may introduce accessibility regressions.
 - **Check WCAG 2.2 AA compliance** for any custom markup you add around components. The design system 
 handles accessibility within its components; your surrounding HTML is your responsibility.
 
-### Warning signs in a project
+#### Warning signs in a project
 
 These patterns indicate someone has gone off-script and may cause maintenance or accessibility problems:
 
@@ -171,25 +171,25 @@ These patterns indicate someone has gone off-script and may cause maintenance or
 - Inline styles on component elements
 - (On static implementations) JavaScript that manually manipulates component state instead of using the component's built-in API
 
-### Where to get help
+#### Where to get help
 
 - **Slack:** [#grove-all](https://njcio.slack.com/archives/C05CV8H2QJU) — primary support channel for design, engineering, and content questions
 - **GitHub Issues:** [github.com/newjersey/njwds/issues](https://github.com/newjersey/njwds/issues) — bug reports and feature requests
 
-### Not seeing what you need?
+#### Not seeing what you need?
 
 Check the [GitHub Issues](https://github.com/newjersey/njwds/issues) to see if a component or feature is 
 already on the roadmap or being discussed. If not, open a new issue — contributions are welcome. 
 Reach out in [#grove-all](https://njcio.slack.com/archives/C05CV8H2QJU) to discuss before building.
 
-## Getting started for designers
+### Getting started for designers
 | File | Contents|
 | ------ | ------ |
 | [Grove Figma file](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=0-1&p=f&t=bKnF73CGw0X7qNQv-0) | Components, variables, styles, and examples |
 | [USWDS Figma file](https://www.figma.com/design/Tyk2daUBcafXbDWmFvc1OJ/uswds-design-kit-beta?node-id=956-5457&p=f&t=4O0dI7l3rBr6cdIc-0) | Additional components not yet supported in our design system |
 | [USWDS Component Documentation](https://designsystem.digital.gov/components/overview/) | Additional usability and accessibility guidance per component |
 
-## Getting started for content
+### Getting started for content
 | File | Contents|
 | ------ | ------ |
 | 🚧 | 🚧 |
