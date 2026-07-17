@@ -11,13 +11,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-<button type="button" class="usa-button usa-button--outline">
-  Figma
-</button>
-
-<button type="button" class="usa-button">
-  Storybook
-</button>
+<FigmaStorybookButtonGroup 
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-4297&p=f&t=kIkWUxaAUytHfoIV-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}
+/>
 
 <iframe 
     title="Interactive preview of the primary button from Storybook" 
@@ -230,7 +227,7 @@ Use to clarify the purpose of the button further, indicate directionality, etc.
 ### Icon only
 An icon can be used in place of text to demonstrate a button's meaning.
 
-ℹ️ **To use:** Toggle on the leading or trailing icon in the button component and hide the button text from the layer panel.   
+ℹ️ **To use:** Toggle on the leading or trailing icon in the button component and hide the button text from the layer panel. 
 
 ### Figma properties
 | Property | Value |
