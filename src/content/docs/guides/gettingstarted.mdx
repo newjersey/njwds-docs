@@ -33,6 +33,7 @@ Required components provide a consistent look and feel across New Jersey State G
 - Identifier: Official New Jersey State wrapper that links back to main NJ websites
 
 ## Guides by role 
+
   <ul class="usa-card-group flex-row margin-top-4">
     <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
       <div class="usa-card__container">
@@ -48,7 +49,7 @@ Required components provide a consistent look and feel across New Jersey State G
           <p>Get started with the Grove code base by installing with npm.</p>
         </div>
         <div class="usa-card__footer">
-          <a href="#engineers" class="usa-button usa-button--outline">Jump to engineering guide</a>
+          <a href="#getting-started-for-engineers" class="usa-button usa-button--outline">Jump to engineering guide</a>
         </div>
     </div>
   </li>
@@ -91,12 +92,95 @@ Required components provide a consistent look and feel across New Jersey State G
   </ul>
 
 ## Getting started for engineers
-| File | Contents|
-| ------ | ------ |
-| [njwds](https://github.com/newjersey/njwds) Github repo | Instructions on installation, HTML components and CSS stylesheet |
-| [njwds-components](https://github.com/newjersey/njwds-components) Github repo | [WIP] Stencil library of web components - limited coverage |
-| [njwds-components-lit](https://github.com/newjersey/njwds-components-lit) Github repo | [WIP] Lit library of web components - limited coverage |
-| [USWDS utilities](https://designsystem.digital.gov/utilities/) | Utilities reference for styling HTML components |
+
+### What you'll need to get started
+
+- Node.js (see `.nvmrc` for the project's recommended version)
+- npm
+- Access to the [NJWDS GitHub repository](https://github.com/newjersey/njwds)
+- Familiarity with [USWDS](https://designsystem.digital.gov/) is helpful but not required
+
+### Setting up your first project
+
+Grove is published as `@newjersey/njwds` on npm. Install it in your project:
+
+```bash
+npm install @newjersey/njwds
+```
+
+#### Add the stylesheet
+
+**HTML project:** link the CSS in your `<head>`:
+
+```html
+<link rel="stylesheet" href="[path/to/styles.css]" />
+```
+
+**React (or any JS bundler):** import the CSS in your app entry point (e.g. `main.tsx`):
+
+```js
+import "@newjersey/njwds/dist/css/styles.css";
+```
+
+#### Add the JavaScript
+
+> **React projects:** The Grove JavaScript is not currently integrated for React. Import only the CSS 
+> above and implement interactive component behavior as needed on your project.
+
+For plain HTML projects, interactive Grove components (accordions, modals, etc.) require two scripts.
+
+Add `uswds-init.min.js` in the `<head>` — it prevents a flash of unstyled content while the page loads:
+
+```html
+<head>
+  <script src="[path/to/uswds-init.min.js]"></script>
+</head>
+```
+
+Add `uswds.min.js` before the closing `</body>` tag:
+
+```html
+  <script src="[path/to/uswds.min.js]"></script>
+</body>
+```
+
+#### Use a component
+
+Grove extends USWDS. Most components use USWDS HTML markup with NJ-specific CSS classes layered on top. 
+Browse available components in [Storybook](https://storybook.grove.nj.gov) and each story shows the 
+markup you need.
+
+### Best practices
+
+- **Use USWDS utility classes** for spacing, color, and typography instead of writing custom CSS. The 
+full utility list is in the [USWDS documentation](https://designsystem.digital.gov/utilities/).
+- **Don't detach components.** Use components as documented. Modifying component internals breaks future 
+upgrades and may introduce accessibility regressions.
+- **Reference Storybook** before building anything new the component you need likely already exists.
+- **Check WCAG 2.2 AA compliance** for any custom markup you add around components. The design system 
+handles accessibility within its components; your surrounding HTML is your responsibility.
+
+### Warning signs in a project
+
+These patterns indicate someone has gone off-script and may cause maintenance or accessibility problems:
+
+- Hardcoded hex color values instead of classes or variables
+- Fixed pixel dimensions (`width: 400px`) instead of responsive classes
+- Custom-built components that duplicate existing USWDS/Grove components
+- Overriding component styles by targeting internal CSS class names
+- Inline styles on component elements
+- (On static implementations) JavaScript that manually manipulates component state instead of using the component's built-in API
+
+### Where to get help
+
+- **Slack:** [#grove-all](https://njcio.slack.com/archives/C05CV8H2QJU) — primary support channel for design, engineering, and content questions
+- **GitHub Issues:** [github.com/newjersey/njwds/issues](https://github.com/newjersey/njwds/issues) — bug reports and feature requests
+
+### Not seeing what you need?
+
+Check the [GitHub Issues](https://github.com/newjersey/njwds/issues) to see if a component or feature is 
+already on the roadmap or being discussed. If not, open a new issue — contributions are welcome. 
+Reach out in [#grove-all](https://njcio.slack.com/archives/C05CV8H2QJU) to discuss before building.
 
 ## Getting started for designers
 | File | Contents|
