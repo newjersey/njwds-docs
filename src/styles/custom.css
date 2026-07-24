@@ -115,6 +115,10 @@ a.site-title {
     height: 600px;
 }
 
+.grove__iframe--mid {
+    height: 450px;
+}
+
 .grove__iframe--short {
     height: 100px;
 }
