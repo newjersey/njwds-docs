@@ -3,62 +3,54 @@ import heroimage from '../assets/GroveHeroCreamBG.png';
 import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
 
 ---
- <section class="usa-hero grove-hero" aria-label="Introduction" style={`--grove-hero-bg: url(${heroimageMobile.src})`}>
-    <div class="usa-hero__callout grove-hero-callout">
-      <h1 id="_top" tabindex="-1" class="usa-hero__heading grove-hero-h1 text-semibold">
-        <span class="usa-hero__heading--alt grove-hero-primary-color">Designed to Serve.</span>
-        <span class="text-green">Built to Grow.</span>
-      </h1>
-      <p class="text-ink tablet:font-body-lg">The official design system for New Jersey. Making it easier for teams to build and scale accessible digital services that solve problems.</p>
-      <a class="usa-button grove-button-primary" href="/guides/gettingstarted/">Get started</a>
-    </div>
-    <div class="grove-hero_image">
-      <img  src={heroimage.src} alt="" />
-    </div>
+<section class="usa-hero display-flex grove-hero" aria-label="Introduction" style={`--grove-hero-bg: url(${heroimageMobile.src})`}>
+  <div class="usa-hero__callout margin-3 padding-top-8 padding-x-4 padding-bottom-3 tablet:padding-y-8 tablet:padding-right-8 tablet:padding-left-10 tablet:margin-0 grove-hero-callout">
+    <h1 id="_top" tabindex="-1" class="usa-hero__heading text-semibold font-heading-2xl grove-hero-h1">
+      <span class="usa-hero__heading--alt grove-hero-primary-color">Designed to Serve.</span>
+      <span class="text-green">Built to Grow.</span>
+    </h1>
+    <p class="text-ink tablet:font-body-lg">The official design system for New Jersey. Making it easier for teams to build and scale accessible digital services that solve problems.</p>
+    <a class="usa-button grove-button-primary" href="/guides/gettingstarted/">Get started</a>
+  </div>
+  <div class="display-none tablet:display-block grove-hero_image">
+    <img class="height-full width-full" src={heroimage.src} alt="grid with various plant-inspired symbols representing innovation and design" />
+  </div>
 </section>
 
 <style>
-  .grove-hero-h1 {
-    font-size: 2.5rem;
-    @media (min-width: 40rem) {
-      font-size: 3.5rem;
-    };
-  }
-  .grove-hero-primary-color {
-    color: var(--grove-primary-700);
-  }
-
   .grove-hero {
     margin: auto;
     max-width: 87.5rem;
-    display: flex;
     background-image: var(--grove-hero-bg);
     @media (min-width: 40rem) {
       background-image: none;
     };
   }
-  .grove-hero-callout{
+
+  .grove-hero-callout {
     background-color: var(--grove-base-100);
-    margin: 1.5rem;
-    padding: 4rem 2rem 1.5rem;
     @media (min-width: 40rem) {
-      padding: 4rem 4rem 4rem 5rem;
       max-width: 42.5rem;
-      margin: 0;
-    };
+    }
   }
 
-  .grove-hero_image{
-    display: none;
+  .grove-hero-h1 {
     @media (min-width: 40rem) {
-      display: block;
+      font-size: 3.5rem;
+    };
+  }
+  
+  .grove-hero-primary-color {
+    color: var(--grove-primary-700);
+  }
+
+  .grove-hero_image {
+    @media (min-width: 40rem) {
       width: 50%;
     }
     img {
-      width: 100%;                                                                                             
-      height: 100%;                                                                                                          
-      object-fit: cover;                                                                                                     
-    }  
+      object-fit: cover;
+    }
   }
 
   .grove-button-primary {
