@@ -156,23 +156,14 @@ body:has(.grove-home-section-container) {
 
 .grove-home-section {
   max-width: 87.5rem;
-  padding: 3rem 1.5rem;
   margin: auto;
-  @media (min-width: 40rem) {
-    padding: 5rem;
-  }
 }
+
 .grove-card-group  {
-  @media (min-width: 40rem) {
-    > * {
-      margin-bottom: 0;
-    }
-  }
   > *:last-child {
     margin-bottom: 0;
   }
 }
-
 /* need to add into NJWDS */
 
 .text-semibold {
