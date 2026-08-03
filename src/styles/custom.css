@@ -1,63 +1,69 @@
 /* Override header/banner background color */
 :root {
-    --sl-color-bg-nav: #193324;
-    --sl-color-text-accent: red;
-    --sl-font: 'Public Sans';
-    --sl-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    --grove-font-heading: 'Plus Jakarta Sans', var(--sl-font), var(--sl-font-system);
-    --sl-text-h1: 2.5rem;
-    --sl-text-h2: 2rem;
-    --sl-nav-gap: 0.625rem;
+  --grove-primary-500: #466c04; /* USWDS green-60v */
+  --grove-primary-700: #193324; /* USWDS mint-80  */
+  --grove-base-100: #fcfcfb; /* USWDS gray-warm-1  */
+  --grove-base-700: #76766A; /* USWDS gray-warm-50 */
+  --grove-white: #fff; /* USWDS white */
 
-    --sl-nav-height: 4rem;
-    --grove-logo-text-size: 1.25rem; /* 20px */
-    --grove-logo-tagline-size: 0.6875rem; /* 11px */
-    --grove-logo-width: 34px;
-    --grove-search-text-color: #fff;
-    --sl-sidebar-pad-x: 0;
+  --sl-color-bg-nav: var(--grove-primary-700);
+  --sl-color-text-accent: red;
+  --sl-font: 'Public Sans';
+  --sl-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --grove-font-heading: 'Plus Jakarta Sans', var(--sl-font), var(--sl-font-system);
+  --sl-text-h1: 2.5rem;
+  --sl-text-h2: 2rem;
+  --sl-nav-gap: 0.625rem;
+  --sl-nav-pad-x: 1.25rem;
 
-    --sl-mobile-toc-height: 3.4375rem;
+  --sl-nav-height: 4rem;
+  --grove-logo-text-size: 1.25rem; /* 20px */
+  --grove-logo-tagline-size: 0.6875rem; /* 11px */
+  --grove-logo-width: 34px;
+  --grove-logo-text-color: var(--grove-white);
+  --grove-search-text-color: var(--grove-white);
+  --sl-sidebar-pad-x: 0;
 
-    @media (min-width: 50rem) {
-        --sl-nav-height: 5rem;
-        --grove-logo-text-size: 1.8125rem; /* 29px */
-        --grove-logo-tagline-size: 0.9375rem; /* 15px */
-        --grove-logo-width: 42px;
-        --grove-search-text-color: #000
-    }
+  --sl-mobile-toc-height: 3.4375rem;
 
-    --grove-logo-text-color: #fff;
-    --sl-nav-pad-x: 1.25rem;
+  @media (min-width: 50rem) {
+    --sl-nav-height: 5rem;
+    --grove-logo-text-size: 1.8125rem; /* 29px */
+    --grove-logo-tagline-size: 0.9375rem; /* 15px */
+    --grove-logo-width: 42px;
+    --grove-search-text-color: #000;
+  }
+
 }
 
 starlight-theme-select {
-    display: none !important;
+  display: none !important;
 }
 
 /* Style the mobile menu button */
 starlight-menu-button button {
-    background-color: #2F4A0B;
-    color: #fff;
+  background-color: #2F4A0B;
+  color: #fff;
 }
 
 /* If you need to be more specific for hover states */
 starlight-menu-button button:hover,
 starlight-menu-button button:focus {
-    background-color: #fff;
-    color: #2F4A0B;
+  background-color: var(--grove-white);
+  color: #2F4A0B;
 }
 
 .sidebar summary {
-    list-style: none;
+  list-style: none;
 }
 
 mobile-starlight-toc nav {
-    background-color: #F6F7F9;
+  background-color: #F6F7F9;
 }
 
 mobile-starlight-toc summary {
-    list-style: none;
-    padding: 0.875rem;
+  list-style: none;
+  padding: 0.875rem;
 }
 
 mobile-starlight-toc summary::-webkit-details-marker {
@@ -83,64 +89,96 @@ h1, h2, h3, h4, h5, h6,
 
 .site-name,
 .site-tagline {
-    font-family: var(--grove-font-heading);
-    font-optical-sizing: auto;
+  font-family: var(--grove-font-heading);
+  font-optical-sizing: auto;
 }
 
 a.site-title {
-    color: white;
-    text-decoration: none;
+  color: var(--grove-white);
+  text-decoration: none;
 }
 
 .social-icons {
-    gap:0;
-    height: 56px;
-    background: #fff;
+  gap:0;
+  height: 56px;
+  background: var(--grove-white);
 }
 
 .social-icons::after {
-    display: none;
+  display: none;
 }
 
 .social-icons a {
-    padding: 20px;
-    margin: 0;
+  padding: 20px;
+  margin: 0;
 }
 
 .grove__iframe {
-    height: 300px;
+  height: 300px;
 }
 
 .grove__iframe--tall {
-    height: 600px;
+  height: 600px;
 }
 
 .grove__iframe--mid {
-    height: 450px;
+  height: 450px;
 }
 
 .grove__iframe--short {
-    height: 100px;
+  height: 100px;
 }
 
 .main-pane table {
-    width: 100%;
-    display: table;
-    table-layout: auto;
+  width: 100%;
+  display: table;
+  table-layout: auto;
+}
+
+body:has(.grove-home-section-container) {
+  --sl-content-gap-y: 0;
+  --sl-content-width: none;
+  background-color: var(--grove-base-100);
+  .content-panel {
+    padding: 0;
+  }
 }
 
 .grove-color-block {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2px;
+}
+
+.grove-home-section-container{
+  border-top: 0.25px solid var(--grove-base-700);
+}
+
+.grove-home-section {
+  max-width: 87.5rem;
+  padding: 3rem 1.5rem;
+  margin: auto;
+  @media (min-width: 40rem) {
+    padding: 5rem;
+  }
+}
+.grove-card-group  {
+  @media (min-width: 40rem) {
+    > * {
+      margin-bottom: 0;
+    }
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* need to add into NJWDS */
 
 .text-semibold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .text-heavy {
-    font-weight: 800;
+  font-weight: 800;
 }
