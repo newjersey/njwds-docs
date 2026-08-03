@@ -1,0 +1,66 @@
+---
+import heroimage from '../assets/GroveHeroCreamBG.png';
+import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
+
+---
+ <section class="usa-hero grove-hero" aria-label="Introduction" style={`--grove-hero-bg: url(${heroimageMobile.src})`}>
+    <div class="usa-hero__callout grove-callout">
+      <h1 id="_top" tabindex="-1" class="usa-hero__heading font-heading-xl tablet:font-heading-3xl text-semibold">
+        <span class="usa-hero__heading--alt grove-heading-primary">Designed to Serve.</span>
+        <span class="text-green">Built to Grow.</span>
+      </h1>
+      <p class="text-ink tablet:font-body-lg">The official design system for New Jersey. Making it easier for teams to build and scale accessible digital services that solve problems.</p>
+      <a class="usa-button grove-button-primary" href="/guides/gettingstarted/">Get started</a>
+    </div>
+    <div class="grove-hero_image">
+      <img  src={heroimage.src} alt="" />
+    </div>
+</section>
+
+<style>
+  .grove-heading-primary {
+    color: var(--grove-primary-700);
+  }
+  .grove-hero {
+    margin: auto;
+    max-width: 87.5rem;
+    display: flex;
+    justify-content: inline;
+    background-image: var(--grove-hero-bg);
+    @media (min-width: 40rem) {
+      justify-content: flex-start;
+      background-image: none;
+    };
+  }
+  .grove-callout{
+    background-color: var(--grove-gray-warm-1);
+    margin: 1.5rem;
+    padding: 4rem 2rem 1.5rem;
+    @media (min-width: 40rem) {
+      padding: 4rem 4rem 4rem 5rem;
+      max-width: 42.5rem;
+      margin: 0;
+    };
+  }
+
+  .grove-hero_image{
+    display: none;
+    @media (min-width: 40rem) {
+      display: block;
+      width: 50%;
+    }
+    img {
+      width: 100%;                                                                                             
+      height: 100%;                                                                                                          
+      object-fit: cover;                                                                                                     
+    }  
+  }
+
+  .grove-button-primary {
+    background-color: var(--grove-primary-500);
+  }
+
+  .grove-button-primary:hover {
+    background-color: var(--grove-primary-700);
+  }
+</style>
