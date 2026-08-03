@@ -6,7 +6,6 @@
   --grove-base-700: #76766A; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
 
-
   --sl-color-bg-nav: var(--grove-primary-700);
   --sl-color-text-accent: red;
   --sl-font: 'Public Sans';
@@ -50,8 +49,8 @@ starlight-menu-button button {
 /* If you need to be more specific for hover states */
 starlight-menu-button button:hover,
 starlight-menu-button button:focus {
-  background-color: #fff;
-    color: #2F4A0B;
+  background-color: var(--grove-white);
+  color: #2F4A0B;
 }
 
 .sidebar summary {
@@ -95,14 +94,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 a.site-title {
-  color: white;
+  color: var(--grove-white);
   text-decoration: none;
 }
 
 .social-icons {
   gap:0;
   height: 56px;
-  background: #fff;
+  background: var(--grove-white);
 }
 
 .social-icons::after {
