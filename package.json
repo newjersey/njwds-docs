@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.5",
-    "@newjersey/njwds": "^2.9.1",
-    "astro": "^7.1.4",
+    "@newjersey/njwds": "^2.9.2",
+    "astro": "^7.1.6",
     "astro-auto-import": "^0.5.1",
     "remark-gfm": "^4.0.1",
     "sharp": "^0.35.3"
