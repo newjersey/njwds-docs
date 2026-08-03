@@ -1,0 +1,15 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+const { starlightRoute } = Astro.locals;
+const isTitleHidden = starlightRoute.entry.data.hideTitle === true;
+const { title } = starlightRoute.entry.data;
+---
+
+{
+	isTitleHidden ? (
+		<div data-pagefind-meta={`title:${title}`}/>
+	) : (
+		<Default />
+	)
+}
