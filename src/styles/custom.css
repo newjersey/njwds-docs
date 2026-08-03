@@ -2,7 +2,7 @@
 :root {
   --grove-primary-500: #466c04; /* USWDS green-60v */
   --grove-primary-700: #193324; /* USWDS mint-80  */
-  --grove-gray-warm-1: #fcfcfb; /* USWDS gray-warm-1  */
+  --grove-base-100: #fcfcfb; /* USWDS gray-warm-1  */
   --grove-base-700: #76766A; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
 
@@ -138,7 +138,7 @@ a.site-title {
 body:has(.grove-home-section-container) {
   --sl-content-gap-y: 0;
   --sl-content-width: none;
-  background-color: var(--grove-gray-warm-1);
+  background-color: var(--grove-base-100);
   .content-panel {
     padding: 0;
   }
@@ -162,8 +162,15 @@ body:has(.grove-home-section-container) {
     padding: 5rem;
   }
 }
-.grove-card-group > *, .grove-card-group > *:last-child {
+.grove-card-group  {
+  @media (min-width: 40rem) {
+    > * {
+      margin-bottom: 0;
+    }
+  }
+  > *:last-child {
     margin-bottom: 0;
+  }
 }
 
 /* need to add into NJWDS */
