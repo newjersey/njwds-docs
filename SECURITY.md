@@ -2,9 +2,10 @@
 
 ## Reporting a Vulnerability
 
-If you believe you have found a security vulnerability in this design system, please **do not open a public GitHub issue**.
+If you believe you have found a security vulnerability in this design system, please **do not open a
+public GitHub issue**.
 
-Instead, report the to repositiry administrators. 
+Instead, report the to repositiry administrators.
 
 When reporting a vulnerability, please include:
 
@@ -16,7 +17,8 @@ When reporting a vulnerability, please include:
 
 - You should receive an acknowledgment within a reasonable timeframe.
 - The team will evaluate the report and may request additional information.
-- If the vulnerability is confirmed, we will work to address it and release a fix in a supported version.
+- If the vulnerability is confirmed, we will work to address it and release a fix in a supported
+  version.
 - If the report is declined, we will provide a brief explanation where possible.
 
 We appreciate responsible disclosure and efforts to help keep this project and its consumers secure.
@@ -25,7 +27,8 @@ We appreciate responsible disclosure and efforts to help keep this project and i
 
 ## Dependency Security
 
-This project uses automated tooling (such as `npm audit`) to monitor dependencies for known vulnerabilities. Critical vulnerabilities are treated as release-blocking issues.
+This project uses automated tooling (such as `npm audit`) to monitor dependencies for known
+vulnerabilities. Critical vulnerabilities are treated as release-blocking issues.
 
 ---
 

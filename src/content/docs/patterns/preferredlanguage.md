@@ -4,52 +4,69 @@ description: Documentation for preferred language pattern.
 ---
 
 **Help a user to choose the languages they prefer for communication.**
-  
-This pattern allows users to indicate the languages they prefer to use for either written or spoken communications.
-  
+
+This pattern allows users to indicate the languages they prefer to use for either written or spoken
+communications.
+
 ## About this pattern
+
 ### ✔️ What to do
+
 - Do list the languages in their native spelling
 - Capitalize the name of each language (for example, English, Español).
-- Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting in-person communications, such as in a health care setting.
-- Do order the languages alphabetically by the common, native language name. For example:
-العربية (Arabic)
-简体字 (Chinese - Simplified)
-English
-Español (Spanish)
-Français (French)
-Italiano (Italian)
-Pусский (Russian)
-- Provide an “other” selection that allows the user to specify the specific language, if you are committed to supporting their language needs, such as in a health care setting.
+- Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting
+  in-person communications, such as in a health care setting.
+- Do order the languages alphabetically by the common, native language name. For example: العربية
+  (Arabic) 简体字 (Chinese - Simplified) English Español (Spanish) Français (French) Italiano
+  (Italian) Pусский (Russian)
+- Provide an “other” selection that allows the user to specify the specific language, if you are
+  committed to supporting their language needs, such as in a health care setting.
 - Do allow the user to select more than one language.
-- Do consider providing an option for an individual to indicate “I need help completing this form,” if your program can support providing assistance. Some people with limited English-language skills or low literacy may not be able to complete the form themselves.
+- Do consider providing an option for an individual to indicate “I need help completing this form,”
+  if your program can support providing assistance. Some people with limited English-language skills
+  or low literacy may not be able to complete the form themselves.
 
 ### ❌ What not to do
-- Do not include languages other than those you can support.
-- Do not use icons or graphics, since they may mean different things in different languages and cultures.
-- Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. It may not be universally understood that `ES` indicates Spanish.
-- Do not assume that the language a user prefers to speak is the same language they prefer to read.
 
+- Do not include languages other than those you can support.
+- Do not use icons or graphics, since they may mean different things in different languages and
+  cultures.
+- Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic,
+  for example, is spoken in many countries. It may not be universally understood that `ES` indicates
+  Spanish.
+- Do not assume that the language a user prefers to speak is the same language they prefer to read.
 
 ## Usage Guidance
 
 ### Considerations
-Strongly consider providing language to **reassure the user that there are no penalties** associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
 
-Once a user has saved a preference setting other than English, default to their preferred language for future mail or email communications whenever possible.
+Strongly consider providing language to **reassure the user that there are no penalties** associated
+with accessing information or completing forms in languages other than English. Some people with
+limited English-language skills have concerns about stigma or that use of a language other than
+English will impact their immigration status, program eligibility, or future opportunities.
 
-Consider that individuals may have **other challenges in addition to limited English proficiency**, and may require other types of support.
+Once a user has saved a preference setting other than English, default to their preferred language
+for future mail or email communications whenever possible.
 
-Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
+Consider that individuals may have **other challenges in addition to limited English proficiency**,
+and may require other types of support.
+
+Translation and navigation functions in languages other than English should still meet appropriate
+accessibility standards to ensure equal access.
 
 ### Accessibility
-**Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example). See H57: Using the language attribute on the HTML element for more information.
 
-## Related 
+**Use the HTML lang attributes** to set the language of the page (`<html lang='en'>`, for example).
+See H57: Using the language attribute on the HTML element for more information.
+
+## Related
+
 - [Language selector](https://turbo-adventure-n2vkrrm.pages.github.io/reference/languageselector/)
 
 ## Resources
+
 ### USWDS
-| File | Purpose | 
-| ----------- | ----------- |
-| [USWDS Preferred language]([https://accessibility.blog.gov.uk/2021/09/21/an-update-on-the-accessibility-of-conditionally-revealed-questions/](https://designsystem.digital.gov/patterns/select-a-language/language-preferences/)) | Documentation on preferred language pattern. |
+
+| File                                                                                                                                                                                                                                | Purpose                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [USWDS Preferred language](<[https://accessibility.blog.gov.uk/2021/09/21/an-update-on-the-accessibility-of-conditionally-revealed-questions/](https://designsystem.digital.gov/patterns/select-a-language/language-preferences/)>) | Documentation on preferred language pattern. |

@@ -4,104 +4,120 @@ description: Documentation for List component.
 ---
 
 **A list organizes information into discrete sequential sections.**
-  
+
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { STORYBOOK_BASE_URL } from "@config/storybook";
 
-import { LinkButton } from '@astrojs/starlight/components';
+import { LinkButton } from "@astrojs/starlight/components";
 
-<FigmaStorybookButtonGroup 
+<FigmaStorybookButtonGroup
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2852-3585&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}
 />
 
-<iframe 
-    title="Interactive preview of the list from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+<iframe
+  title="Interactive preview of the list from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
-  
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
+
 ## List Usage
+
 ### 👍 Use this component for
-- **Ordered list.** Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
+
+- **Ordered list.** Use an ordered list when you need to display text in some ranking, hierarchy, or
+  series of steps.
 - **Unordered list.** Use unordered lists to display text in no specific order.
 
 ### 👎 Consider something else for
+
 - **If you need to communicate long lists of narrative text.**
 
-
 ## Content guidelines
+
 - **Use sentence case and begin lists with a capital letter.**
 - **Use punctuation appropriate to the text.** Do not leave sentences without periods.
-
 
 ## List Types
 
 ### Figma Type properties
-| Property | Value |
-| ----------- | ----------- |
-| type | ordered, unordered, unstyled |
+
+| Property | Value                        |
+| -------- | ---------------------------- |
+| type     | ordered, unordered, unstyled |
 
 ### Ordered
-<iframe 
-    title="Interactive preview of the ordered list from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story&args=type:Ordered List`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
+<iframe
+  title="Interactive preview of the ordered list from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story&args=type:Ordered List`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
+
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
 
 ### Unordered
-<iframe 
-    title="Interactive preview of the ordered list from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story&args=type:Unordered List`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
+<iframe
+  title="Interactive preview of the ordered list from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story&args=type:Unordered List`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
+
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
 
 ### Unstyled
-<iframe 
-    title="Interactive preview of the ordered list from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story&args=unstyled:true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
+<iframe
+  title="Interactive preview of the ordered list from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-list--default&viewMode=story&args=unstyled:true`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
+
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
 
 ## Accessibility guidance
-Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests) to test implementation.
-- **Remove list styles with the unstyled variant.** For unstyled lists, either add the `.usa-list--unstyled` class or use the Sass mixin: `@include unstyled-list.`
 
-## Code 
+Use the
+[USWDS tag accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests)
+to test implementation.
+
+- **Remove list styles with the unstyled variant.** For unstyled lists, either add the
+  `.usa-list--unstyled` class or use the Sass mixin: `@include unstyled-list.`
+
+## Code
 
 #### Code Variants
-| Class | Description |  
-| ----------- | ----------- |
-| `.usa-list` | List |
+
+| Class                 | Description        |
+| --------------------- | ------------------ |
+| `.usa-list`           | List               |
 | `.usa-list--unstyled` | Removed list style |
 
 ## Resources
-### Grove links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [Figma Grove: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs |
-| [Storybook: List](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs) | Interactive example, see code snippet, see variants |
 
-### USWDS links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [USWDS: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2852-3585&p=f&t=Yx31eAZO0ULNN6UA-0) | Reference for additional styles and functionalities |
-| [USWDS: List utilities](https://designsystem.digital.gov/components/list/#using-the-list-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
-| [USWDS: List accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests) | Accessibility tests to run for card component |
+### Grove links
+
+| File                                                                                                                                 | Purpose                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
+| [Figma Grove: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1862-9015&t=p48LIM8AA1I9QJOL-0) | Using card in designs                               |
+| [Storybook: List](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-list--docs)                                         | Interactive example, see code snippet, see variants |
+
+### USWDS links
+
+| File                                                                                                                               | Purpose                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [USWDS: List](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2852-3585&p=f&t=Yx31eAZO0ULNN6UA-0) | Reference for additional styles and functionalities                |
+| [USWDS: List utilities](https://designsystem.digital.gov/components/list/#using-the-list-component-2)                              | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: List accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests)                            | Accessibility tests to run for card component                      |

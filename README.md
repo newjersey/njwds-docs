@@ -2,10 +2,9 @@
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-This repository contains the documentation website for
-[Grove](https://grove.nj.gov), the design system for the State of New Jersey. The site provides
-guidance for using Grove's styles, components, patterns, and templates to build consistent,
-accessible digital services.
+This repository contains the documentation website for [Grove](https://grove.nj.gov), the design
+system for the State of New Jersey. The site provides guidance for using Grove's styles, components,
+patterns, and templates to build consistent, accessible digital services.
 
 ## Table of Contents
 
@@ -60,11 +59,11 @@ npm ci
 
 Run all commands from the repository root.
 
-| Command                   | Action                                      |
-| :------------------------ | :------------------------------------------ |
-| `npm run dev`             | Start the local development server          |
-| `npm run build`           | Build the production site in `dist/`        |
-| `npm run preview`         | Preview the production build locally        |
+| Command                   | Action                                       |
+| :------------------------ | :------------------------------------------- |
+| `npm run dev`             | Start the local development server           |
+| `npm run build`           | Build the production site in `dist/`         |
+| `npm run preview`         | Preview the production build locally         |
 | `npm run astro -- --help` | Display help for the Astro command-line tool |
 
 After running `npm run dev`, open the local URL shown in the terminal. Astro uses
@@ -106,9 +105,9 @@ New Jerseyans, [join the New Jersey Innovation Authority](https://innovation.nj.
 
 ## Acknowledgements
 
-Grove builds on the work of the
-[United States Web Design System](https://designsystem.digital.gov/) and its community. This
-documentation site also relies on the open-source Astro and Starlight projects.
+Grove builds on the work of the [United States Web Design System](https://designsystem.digital.gov/)
+and its community. This documentation site also relies on the open-source Astro and Starlight
+projects.
 
 ## Disclaimer
 

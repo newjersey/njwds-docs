@@ -4,11 +4,13 @@ description: Documentation for conditional fields.
 ---
 
 **Reveal fields conditionally to manage a form's complexity and relevance for users.**
-  
+
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
-  
+
 ## Conditional Fields Usage
+
 ### ✔️ What to do
+
 - Use conditional form fields to follow-up on a user's selection.
 - Show reveals after a form field, not before.
 - Clearly label revealed fields.
@@ -16,41 +18,57 @@ description: Documentation for conditional fields.
 - Ensure revealed fields are tabbed to after the original field.
 
 ### ❌ What not to do
-- Do not conditionally reveal multiple sections or large amounts of information. Use a separate page instead.
-- Do not reveal content before the form field that triggers it.
-- Do not reveal an unlabeled field, unless it is clear that it shares a label with the original selection.
-- Do not use alerts or announcements for conditional reveals. Content should be expected through clear context, instructions, and focus management.
 
+- Do not conditionally reveal multiple sections or large amounts of information. Use a separate page
+  instead.
+- Do not reveal content before the form field that triggers it.
+- Do not reveal an unlabeled field, unless it is clear that it shares a label with the original
+  selection.
+- Do not use alerts or announcements for conditional reveals. Content should be expected through
+  clear context, instructions, and focus management.
 
 ## Usage Guidance
 
 ### Manage Complexity
+
 ![Flow chart where user selects email and email address form populates](../../../assets/errorvalidation1.png)
 
-Conditional fields are a way to ask users for necessary information, but only when it is relevant to them. By using this pattern, you can avoid cluttering a form with optional or unnecessary fields. 
+Conditional fields are a way to ask users for necessary information, but only when it is relevant to
+them. By using this pattern, you can avoid cluttering a form with optional or unnecessary fields.
 
-Users should not be surprised by the amount of information that is revealed conditionally. In most cases,  a single field or set of questions per form is best. For full forms, or alternate paths, it is recommended to use a separate page instead.
+Users should not be surprised by the amount of information that is revealed conditionally. In most
+cases, a single field or set of questions per form is best. For full forms, or alternate paths, it
+is recommended to use a separate page instead.
 
 ### Set Expectations
-To make conditional fields accessible, they should show up in an expected manner. This can be done by using a standard patterns such as:
+
+To make conditional fields accessible, they should show up in an expected manner. This can be done
+by using a standard patterns such as:
+
 - Revealing a text input after a user selects 'Other'.
 - Providing form instructions that tell users content may change based on their selections.
 
-When reveals are expected, live-regions and announcements are unnecessary for screen reader users. When a form field shows up after the original field, and is next in the focus order, it is generally understood by users.
+When reveals are expected, live-regions and announcements are unnecessary for screen reader users.
+When a form field shows up after the original field, and is next in the focus order, it is generally
+understood by users.
 
 ## Known Issues
+
 For help with known issues, please reach out to the platform team.
 
-Grove and USWDS components do not come with their own conditional styles. The following items are in the Grove backlog:
+Grove and USWDS components do not come with their own conditional styles. The following items are in
+the Grove backlog:
 
 - Radio button group
 - Checkbox group
 
-Teams should explore conditional styles on their own, and connect with the platform team for assistance.
-
+Teams should explore conditional styles on their own, and connect with the platform team for
+assistance.
 
 ## Resources
-### Best Practice Guides 
-| File | Purpose | 
-| ----------- | ----------- |
+
+### Best Practice Guides
+
+| File                                                                                                                                                                                            | Purpose                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | [GOV.UK - An update on the accessibility of conditionally revealed questions](https://accessibility.blog.gov.uk/2021/09/21/an-update-on-the-accessibility-of-conditionally-revealed-questions/) | Research findings on conditional fields. |

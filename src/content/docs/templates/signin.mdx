@@ -5,60 +5,86 @@ description: Form template for signing in.
 
 **Sign a user in to a website or application.**
 
-import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { STORYBOOK_BASE_URL } from "@config/storybook";
 
-import { LinkButton } from '@astrojs/starlight/components';
+import { LinkButton } from "@astrojs/starlight/components";
 
-<FigmaStorybookButtonGroup 
+<FigmaStorybookButtonGroup
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3489-2611&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-sign-in-form--docs`}
 />
 
-<iframe 
-    title="Interactive preview of the sign in form template from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=templates-sign-in-form--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+<iframe
+  title="Interactive preview of the sign in form template from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=templates-sign-in-form--default&viewMode=story`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-sign-in-form--docs`}>View sign in form template in Storybook</a>
-
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-sign-in-form--docs`}>View sign in form
+template in Storybook</a>
 
 ## Sign In Form Template Usage
 
 ### 👍 Use this template for
-- **Accessing customized or private content.** When users expect information to be customized or private, place it behind a sign-in form.
+
+- **Accessing customized or private content.** When users expect information to be customized or
+  private, place it behind a sign-in form.
 
 ### 👎 Consider something else for
-- **Accessing public content.** Allow users to access as much as of your online services as possible without having to sign in. Sign-in forms are a barrier between users and the content they want.
+
+- **Accessing public content.** Allow users to access as much as of your online services as possible
+  without having to sign in. Sign-in forms are a barrier between users and the content they want.
 
 ## 🚫 What to ensure / avoid
-- **Less is more.** Make your explanations concise. Users sign in faster when less text surrounds the form.
-- **Allow email addresses to sign in.** People have an easier time remembering their email address than they do a unique username.
-- **Consider keeping users signed in.** If you must include a sign-in form, consider allowing users to stay logged in (“Remember me”) on trusted computers so they can avoid this barrier in the future.
-- **Make it easy to retrieve forgotten sign-in info.** Most authentication failures occur because a user has forgotten their username or password. This is especially common when a long time passes between visits, as is the case with most federal websites.
-- **Toggle password masking.** Password masking (replacing what the user types with a generic symbol) makes it more likely that users will make mistakes when trying to sign in, and doesn’t offer much in the way of additional security. Allow users to unmask the password field so they can see what they type. This is especially useful on mobile devices, when users are more likely to mistype.
+
+- **Less is more.** Make your explanations concise. Users sign in faster when less text surrounds
+  the form.
+- **Allow email addresses to sign in.** People have an easier time remembering their email address
+  than they do a unique username.
+- **Consider keeping users signed in.** If you must include a sign-in form, consider allowing users
+  to stay logged in (“Remember me”) on trusted computers so they can avoid this barrier in the
+  future.
+- **Make it easy to retrieve forgotten sign-in info.** Most authentication failures occur because a
+  user has forgotten their username or password. This is especially common when a long time passes
+  between visits, as is the case with most federal websites.
+- **Toggle password masking.** Password masking (replacing what the user types with a generic
+  symbol) makes it more likely that users will make mistakes when trying to sign in, and doesn’t
+  offer much in the way of additional security. Allow users to unmask the password field so they can
+  see what they type. This is especially useful on mobile devices, when users are more likely to
+  mistype.
 
 ## Content guidelines
+
 - TBD
 
 ## Accessibility guidance
-- As you customize this form template, make sure it continues to follow the [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
-- **Give adequate advance notice before automatic sign-out.** Don’t automatically sign out a user without giving them 20 seconds’ advance notice to request more time. Users with disabilities sometimes require more time to respond to prompts.
+
+- As you customize this form template, make sure it continues to follow the
+  [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/)
+  and the
+  [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+- **Give adequate advance notice before automatic sign-out.** Don’t automatically sign out a user
+  without giving them 20 seconds’ advance notice to request more time. Users with disabilities
+  sometimes require more time to respond to prompts.
 
 ## Related
+
 - [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/)
 - [Button](https://turbo-adventure-n2vkrrm.pages.github.io/reference/button/)
 
 ## Resources
-### Grove links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [Figma Grove: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs |
-| [Storybook: Sign in form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-sign-in-form--docs) | Interactive examples, code snippet, variants |
 
-### USWDS links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [USWDS: Sign in form](https://designsystem.digital.gov/templates/form-templates/sign-in-form/) | Reference for additional guidance and functionalities  |
+### Grove links
+
+| File                                                                                                                                           | Purpose                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [Figma Grove: Form templates](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2780-5757&t=iRacocAw5caQqBKc-0) | Using form templates in designs              |
+| [Storybook: Sign in form](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/patterns-sign-in-form--docs)                                   | Interactive examples, code snippet, variants |
+
+### USWDS links
+
+| File                                                                                           | Purpose                                               |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [USWDS: Sign in form](https://designsystem.digital.gov/templates/form-templates/sign-in-form/) | Reference for additional guidance and functionalities |

@@ -3,276 +3,360 @@ title: Alert
 description: Documentation for alert component.
 ---
 
-import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { STORYBOOK_BASE_URL } from "@config/storybook";
 
 **Alert options**
+
 - **Alert:** Alert component used to prominently display timely information to users.
 - **Site Alert:** A site alert communicates urgent sitewide information.
-  
+
 ✅ _Passed WCAG 2.1 AA (USWDS component)_
 
-<FigmaStorybookButtonGroup 
+<FigmaStorybookButtonGroup
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}
 />
 
-<iframe 
-    title="Interactive preview of the default accordion from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+<iframe
+  title="Interactive preview of the default accordion from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
 
- 
 ## Alert Usage
+
 ### 👍 Use this component for
-- **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates. 
-- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully. 
+
+- **System status messages.** An alert may be a notification that keeps people informed of the
+  status of the system and may or may not require the user to respond. Such notifications may be
+  errors, warnings, and general updates.
+- **Validation messages.** An alert may be a validation message that informs a user they just took
+  an action that needs to be corrected or a confirmation that a task was completed successfully.
 
 ### 👎 Consider something else for
-- **Informational call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
-- **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this action is what they want.
+
+- **Informational call outs.** Alerts should be reserved for messages that are timely, such as a
+  notification or change on the page. Alerts should not be used for static content that will always
+  be displayed on the page. Consider the summary box or accordion for this.
+- **Destructive actions.** If an action will result in destroying a user’s work (for example,
+  deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to
+  allow the user to confirm that this action is what they want.
 
 ### 🚫 What to ensure / avoid
-- **Validation on long forms.** On long forms, always include in-line validation (error states of form input components) in addition to any error messages that appear at the top of the form (alert component for now, error summary coming soon).
-- **Don't overdo it.** Too many alerts will either overwhelm or annoy the user and are likely to be ignored.
-- **Understand the user's context.** Don’t include alerts that aren’t related to the user’s current goal.
+
+- **Validation on long forms.** On long forms, always include in-line validation (error states of
+  form input components) in addition to any error messages that appear at the top of the form (alert
+  component for now, error summary coming soon).
+- **Don't overdo it.** Too many alerts will either overwhelm or annoy the user and are likely to be
+  ignored.
+- **Understand the user's context.** Don’t include alerts that aren’t related to the user’s current
+  goal.
 
 ## Site Alert Usage
+
 ### 👍 Use this component for
-- **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
-- **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
-  
+
+- **Critical system notifications.** Use a site alert to deliver a static system status update, such
+  as notices about unavailable services or content. Site alerts should appear by default and not in
+  response to an action.
+- **Messages that should be displayed on every page.** A site alert makes critical information
+  obvious and findable on every page.
+
 ### 👎 Consider something else for
-- **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
-- **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages (error states of form input components).
+
+- **Responding to user actions.** Use the alert component for page-level validation messages or to
+  inform a user that a task was completed successfully.
+- **Validating form input.** On most forms, especially longer forms, validation messages should
+  appear inline with error messages (error states of form input components).
 
 ### 🚫 What to avoid
-- **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.
-- **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
-- **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange to draw attention to an emergency-related site alert. However, these colors can produce strong negative emotional reactions such as fear or panic. Positioning the banner at the top of the screen provides enough weight that such strong colors may not be necessary.
 
+- **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one
+  of the first things users see.
+- **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a
+  list of links within a single site alert instead of multiple, stacked alerts.
+- **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange
+  to draw attention to an emergency-related site alert. However, these colors can produce strong
+  negative emotional reactions such as fear or panic. Positioning the banner at the top of the
+  screen provides enough weight that such strong colors may not be necessary.
 
-## Content Guidance 
+## Content Guidance
 
-### Definition 
-Alerts are notifications of high priority since they provide critical information about a user's status, a system event, or a required action. They interrupt the user's flow to draw attention to something important. 
+### Definition
+
+Alerts are notifications of high priority since they provide critical information about a user's
+status, a system event, or a required action. They interrupt the user's flow to draw attention to
+something important.
 
 ### Examples and types
-| Type | Definition | Example |
-| ----------- | ----------- | ----------- |
-| Information | Inform the user of contextual information that might affect their next step. | Processing time typically takes 2-3 weeks. |
-| Success status | Confirm that a user’s action was effective, and can have a celebratory tone. | Order successfully placed! |
-| Warning | Inform the user of risks or caution before taking any decision. | Sorry, this account is inactive. Please check your store’s billing for more information. |
-| Error | Inform that something went wrong after an action. [Learn about errors](https://docs.google.com/document/d/1e-ojlLXcV8XoXKvZwnE-S9XIsE1NL3-M2Tg_mf9jqEg/edit?tab=t.0#heading=h.oc5dzlagmn7b) | The email and password you entered did not match our records. Please double-check and write again. |
-| Emergency | Demand immediate action to prevent a serious threat. Usually written in all caps. | EMERGENCY ALERT: SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
+
+| Type           | Definition                                                                                                                                                                                  | Example                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Information    | Inform the user of contextual information that might affect their next step.                                                                                                                | Processing time typically takes 2-3 weeks.                                                                |
+| Success status | Confirm that a user’s action was effective, and can have a celebratory tone.                                                                                                                | Order successfully placed!                                                                                |
+| Warning        | Inform the user of risks or caution before taking any decision.                                                                                                                             | Sorry, this account is inactive. Please check your store’s billing for more information.                  |
+| Error          | Inform that something went wrong after an action. [Learn about errors](https://docs.google.com/document/d/1e-ojlLXcV8XoXKvZwnE-S9XIsE1NL3-M2Tg_mf9jqEg/edit?tab=t.0#heading=h.oc5dzlagmn7b) | The email and password you entered did not match our records. Please double-check and write again.        |
+| Emergency      | Demand immediate action to prevent a serious threat. Usually written in all caps.                                                                                                           | EMERGENCY ALERT: SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
 
 ### Writing tips
+
 - **Identify the purpose:** what type of alert are you writing?
-- **Be timely:** Alerts should appear when they are most relevant to the user's current context and disappear when no longer needed. 
-- **Maintain tone:** Match the severity of the alert to the tone. Is it informative, warning, celebratory? Don't be alarming, causing stress, sound calm instead.
-- **State the problem or Status Clearly**, using a direct tone and explaining what happened. E.g.: File upload failed. / Profile updated successfully.
-- **Explain the impact if necessary:** Why should the user care? What are the consequences? E.g.: Your changes will be lost if you don't save.
-- **Suggest a solution if applicable:** What can the user do now? E.g.: Please try again. / Review your account settings. / Save
+- **Be timely:** Alerts should appear when they are most relevant to the user's current context and
+  disappear when no longer needed.
+- **Maintain tone:** Match the severity of the alert to the tone. Is it informative, warning,
+  celebratory? Don't be alarming, causing stress, sound calm instead.
+- **State the problem or Status Clearly**, using a direct tone and explaining what happened. E.g.:
+  File upload failed. / Profile updated successfully.
+- **Explain the impact if necessary:** Why should the user care? What are the consequences? E.g.:
+  Your changes will be lost if you don't save.
+- **Suggest a solution if applicable:** What can the user do now? E.g.: Please try again. / Review
+  your account settings. / Save
 - **Keep it brief:** Aim for 1-2 short sentences and use concise button labels.
 
 ### Content structure
+
 1. Headline / Status (Required): What happened or what is the current status?
-2. Brief Explanation / Impact (Required for errors/warnings; Optional for success/info): Why does it matter? Provide essential context.
-3. Call to Action (CTA) / Next Step (Required for actionable alerts; Optional for purely informational): What should the user do now?
-4. Additional Details / Learn More (Optional): For complex issues is genuinely helpful because it is an opportunity to educate the user about the system.
+2. Brief Explanation / Impact (Required for errors/warnings; Optional for success/info): Why does it
+   matter? Provide essential context.
+3. Call to Action (CTA) / Next Step (Required for actionable alerts; Optional for purely
+   informational): What should the user do now?
+4. Additional Details / Learn More (Optional): For complex issues is genuinely helpful because it is
+   an opportunity to educate the user about the system.
 
 ## Alert Variants
 
 ### Size variants
-[Type/size/modifiers] determine the size and amount of information in the alert. 
+
+[Type/size/modifiers] determine the size and amount of information in the alert.
 
 **Tip:** Slim-icon is the slimmest.
 
-<iframe 
-    title="Interactive preview of the default accordion from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=slim%3A!true%3Bheader%3A!false;icon:!true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+<iframe
+  title="Interactive preview of the default accordion from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=slim%3A!true%3Bheader%3A!false;icon:!true`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
-
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
 
 #### Figma properties
-| Property | Value |
-| ----------- | ----------- |
-| icon | true, false |
-| heading | true, false |
-| slim | false, true |
+
+| Property | Value       |
+| -------- | ----------- |
+| icon     | true, false |
+| heading  | true, false |
+| slim     | false, true |
 
 #### Code variants
-The following classes can be added to elements with class usa-alert to modify the size of the alert if needed. They can be used in combination with alert type variant classes to adjust the styling as well.
 
-| Variant | Description |
-| ----------- | ----------- |
-| `usa-alert--slim` | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text.|
+The following classes can be added to elements with class usa-alert to modify the size of the alert
+if needed. They can be used in combination with alert type variant classes to adjust the styling as
+well.
+
+| Variant              | Description                                                                                                                                                                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `usa-alert--slim`    | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text.                                                               |
 | `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
-  
 
 ### Alert states
-Alert states determine alert color / role / level of severity. There are currently 5 alert states.  
+
+Alert states determine alert color / role / level of severity. There are currently 5 alert states.
 
 #### Figma properties
-| Property | Value |
-| ----------- | ----------- |
-| state | info, warning, error, success, emergency |
- 
+
+| Property | Value                                    |
+| -------- | ---------------------------------------- |
+| state    | info, warning, error, success, emergency |
 
 #### Information state
-Give instant feedback about the tasks a user just performed. Its main objective is to confirm or notify tasks. (this seems like success state)
 
-<iframe 
-    title="Interactive preview of the default accordion from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+Give instant feedback about the tasks a user just performed. Its main objective is to confirm or
+notify tasks. (this seems like success state)
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
+<iframe
+  title="Interactive preview of the default accordion from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
-| Variant | Description | 
-| ----------- | ----------- |
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
+
+| Variant           | Description                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------ |
 | `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
 
-#### Success state 
+#### Success state
+
 Confirm that a user’s action was effective, and can have a celebratory tone.
 
-<iframe 
-    title="Interactive preview of the default accordion from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--success&viewMode=story&args=icon:!true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+<iframe
+  title="Interactive preview of the default accordion from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--success&viewMode=story&args=icon:!true`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
 
-
-| Variant | Description |
-| ----------- | ----------- |
+| Variant              | Description                                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- |
 | `usa-alert--success` | Used to communicate a success status. The alert body will be a light green color and display a checkmark icon. |
 
-#### Warning state 
-Inform the user of risks or things to be aware of before taking action. 
+#### Warning state
 
-<iframe 
-    title="Interactive preview of the default accordion from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--warning&viewMode=story&args=icon:!true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+Inform the user of risks or things to be aware of before taking action.
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
+<iframe
+  title="Interactive preview of the default accordion from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--warning&viewMode=story&args=icon:!true`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
 
-| Variant | Description |
-| ----------- | ----------- |
+| Variant              | Description                                                                                                      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | `usa-alert--warning` | Used to communicate warnings. The alert body will be a light yellow color and display a triangular warning icon. |
 
 #### Error state
+
 Inform that something went wrong after an action. Learn about errors (link to error documentation)
 
-<iframe 
-    title="Interactive preview of the default accordion from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--error&viewMode=story&args=icon:!true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
+<iframe
+  title="Interactive preview of the default accordion from Storybook"
+  frameborder="0"
+  src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--error&viewMode=story&args=icon:!true`}
+  loading="lazy"
+  class="grove__iframe width-full border border-base-light"
+></iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
+🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
 
-
-| Variant | Description |
-| ----------- | ----------- |
+| Variant            | Description                                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------- |
 | `usa-alert--error` | Used to communicate errors. The alert body will be a light red color and display a circular error icon. |
 
-#### Emergency state 
-Demand immediate action to prevent a serious threat or inform the user of an emergency happening in their context. 
+#### Emergency state
 
-| Variant | Description |
-| ----------- | ----------- |
+Demand immediate action to prevent a serious threat or inform the user of an emergency happening in
+their context.
+
+| Variant                | Description                                                                                                           |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
-
 
 ### Dismissable alerts
-🚧 Not present in Grove or USWDS, would need custom implementation 🚧
-Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented yet. 
 
+🚧 Not present in Grove or USWDS, would need custom implementation 🚧 Dismissable alerts are used
+for timely notifications that do not need to remain on the page. Allow a user to dismiss a
+notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented
+yet.
 
-#### Figma properties 
-| Property | Value |
-| ----------- | ----------- |
-| dismissable | false, true (⚠️**not implemented in code**)|
+#### Figma properties
+
+| Property    | Value                                       |
+| ----------- | ------------------------------------------- |
+| dismissable | false, true (⚠️**not implemented in code**) |
 
 ## Accessibility Guidance
-Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test alert implementation.
+
+Use
+[USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/)
+to test alert implementation.
 
 ### Avoid using fading alerts
-Since alerts are used to display important and often urgent messages to users, it is important for all users to get a chance to read through them. This means not having error alerts automatically fade out after a set amount of time.
 
-See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) for more information on situations where having disappearing alerts may impede a user's ability to engage with information provided.
+Since alerts are used to display important and often urgent messages to users, it is important for
+all users to get a chance to read through them. This means not having error alerts automatically
+fade out after a set amount of time.
+
+See
+[WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html)
+for more information on situations where having disappearing alerts may impede a user's ability to
+engage with information provided.
 
 #### Alternatives to fading alerts:
-- **Make alerts manually dismissible** — By adding an interactive "close" button to alerts and making them dismissible, users can remove alerts from the screen once they have had ample time to respond to the information provided. This option is especially helpful in situations where multiple alerts may be displayed at once and risk cluttering the screen.
-- **Reduce the number of alerts shown onscreen at once** — It can be especially tempting to have alerts that fade automatically to reduce clutter when many alerts need to be shown onscreen at once. Instead of having alerts fade out automatically, consider if multiple of the alerts displayed can be condensed into a single alert or if there is another way to display the information within the alert.
+
+- **Make alerts manually dismissible** — By adding an interactive "close" button to alerts and
+  making them dismissible, users can remove alerts from the screen once they have had ample time to
+  respond to the information provided. This option is especially helpful in situations where
+  multiple alerts may be displayed at once and risk cluttering the screen.
+- **Reduce the number of alerts shown onscreen at once** — It can be especially tempting to have
+  alerts that fade automatically to reduce clutter when many alerts need to be shown onscreen at
+  once. Instead of having alerts fade out automatically, consider if multiple of the alerts
+  displayed can be condensed into a single alert or if there is another way to display the
+  information within the alert.
 
 ### Additional guidance
-- **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
-- **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate the importance of the alert, choose the appropriate `role` from the [ARIA roles table](https://designsystem.digital.gov/components/alert/#alert-aria-roles) and add it to the `.usa-alert` element.
+
+- **Don’t visually hide alert messages and then make them visible when they are needed.** Users of
+  older assistive technologies may still be able to perceive the alert messages even if they are not
+  currently applicable.
+- **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of
+  time-sensitive and important messages. To elevate the importance of the alert, choose the
+  appropriate `role` from the
+  [ARIA roles table](https://designsystem.digital.gov/components/alert/#alert-aria-roles) and add it
+  to the `.usa-alert` element.
 
 ### Alert ARIA roles
-| Attribute | Use Case | 
-| ----------- | ----------- |
-| `role="alert"` | Important messages that demand the user's immediate attention. **Example:** Error alert |
-| `role="status"` | Messages that provide advisory information but do not have the same urgency as alerts. **Example:** Success alert |
+
+| Attribute       | Use Case                                                                                                                                                                                                                                                                                    |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `role="alert"`  | Important messages that demand the user's immediate attention. **Example:** Error alert                                                                                                                                                                                                     |
+| `role="status"` | Messages that provide advisory information but do not have the same urgency as alerts. **Example:** Success alert                                                                                                                                                                           |
 | `role="region"` | Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow. **Example:** Informative or warning alert **Note:** you must add an appropriate `aria-label` or `aria-labelledby` attribute when using this role. |
 
-## Code utilities 
-### Alert components 
-| Name | Class | Description |
-| ----------- | ----------- | ----------- |
-| Alert Body | `usa-alert__body` | Apply this class to a `<div>` element that has the class `usa-alert` to wrap the contents of the alert. |
+## Code utilities
+
+### Alert components
+
+| Name          | Class                | Description                                                                                              |
+| ------------- | -------------------- | -------------------------------------------------------------------------------------------------------- |
+| Alert Body    | `usa-alert__body`    | Apply this class to a `<div>` element that has the class `usa-alert` to wrap the contents of the alert.  |
 | Alert Heading | `usa-alert__heading` | Apply this class to a heading element within the alert body to style text within the alert as a heading. |
-| Alert Text | `usa-alert__text` | Apply this class to a `<p>` element within the alert body to style the main text of the alert. |
+| Alert Text    | `usa-alert__text`    | Apply this class to a `<p>` element within the alert body to style the main text of the alert.           |
 
 ### Alert State Variants
-| Variant | Description | 
-| ----------- | ----------- |
-| `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
-| `usa-alert--success` | Used to communicate a success status. The alert body will be a light green color and display a checkmark icon. |
-| `usa-alert--warning` | Used to communicate warnings. The alert body will be a light yellow color and display a triangular warning icon. |
-| `usa-alert--error` | Used to communicate errors. The alert body will be a light red color and display a circular error icon. |
+
+| Variant                | Description                                                                                                           |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `usa-alert--info`      | Used to communicate general information. The alert body will be a light blue color and display an info icon.          |
+| `usa-alert--success`   | Used to communicate a success status. The alert body will be a light green color and display a checkmark icon.        |
+| `usa-alert--warning`   | Used to communicate warnings. The alert body will be a light yellow color and display a triangular warning icon.      |
+| `usa-alert--error`     | Used to communicate errors. The alert body will be a light red color and display a circular error icon.               |
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
 
-### Alert Size Variants 
-| Variant | Description | 
-| ----------- | ----------- |
-| `usa-alert--slim` | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text. |
+### Alert Size Variants
+
+| Variant              | Description                                                                                                                                                                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `usa-alert--slim`    | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text.                                                               |
 | `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
 
 ## Resources
-### Grove links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [Figma Grove: Alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using alert in designs, documentation and best practices on alert usage |
-| [Storybook: Alert](${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs) | Interactive example, code snippet, variants |
 
-### USWDS links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [USWDS: Alert](https://designsystem.digital.gov/components/alert/) | Reference for additional styles and functionalities  |
-| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
-| [USWDS: Alert accessibility tests](https://designsystem.digital.gov/components/alert/#accessibility-guidance) | Accessibility tests to run for component |
+### Grove links
+
+| File                                                                                                                                    | Purpose                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [Figma Grove: Alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using alert in designs, documentation and best practices on alert usage |
+| [Storybook: Alert](${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs)                                                            | Interactive example, code snippet, variants                             |
+
+### USWDS links
+
+| File                                                                                                          | Purpose                                                            |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [USWDS: Alert](https://designsystem.digital.gov/components/alert/)                                            | Reference for additional styles and functionalities                |
+| [USWDS: Alert utilities](https://designsystem.digital.gov/components/alert/#using-the-alert-component-2)      | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: Alert accessibility tests](https://designsystem.digital.gov/components/alert/#accessibility-guidance) | Accessibility tests to run for component                           |

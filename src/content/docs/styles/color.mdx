@@ -3,113 +3,135 @@ title: Color
 description: Documentation of color theme and tokens in Grove.
 ---
 
-**Color is an informative and expressive tool. It communicates state, tone, and gives feedback to the user. It should be used with care, but also creativity.**
+**Color is an informative and expressive tool. It communicates state, tone, and gives feedback to
+the user. It should be used with care, but also creativity.**
 
-import { STORYBOOK_BASE_URL } from '@config/storybook';
-  
-import { LinkButton } from '@astrojs/starlight/components';
+import { STORYBOOK_BASE_URL } from "@config/storybook";
 
-<FigmaStorybookButtonGroup 
-  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11&p=f&t=kIkWUxaAUytHfoIV-0"
-/>
+import { LinkButton } from "@astrojs/starlight/components";
 
-## Using color in Grove 
-Grove has a limited default color palette of mostly functional color used to signify how a user can interact with each component. When it comes to designing full pages in Grove, however, designers are welcome to introduce decorative color schemes utilitizing system colors below. 
+<FigmaStorybookButtonGroup figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11&p=f&t=kIkWUxaAUytHfoIV-0" />
 
-When adding in color, consider the 60-30-10 rule: 
-- 60% of the interface is the dominant color (base) for surfaces and backgrounds 
+## Using color in Grove
+
+Grove has a limited default color palette of mostly functional color used to signify how a user can
+interact with each component. When it comes to designing full pages in Grove, however, designers are
+welcome to introduce decorative color schemes utilitizing system colors below.
+
+When adding in color, consider the 60-30-10 rule:
+
+- 60% of the interface is the dominant color (base) for surfaces and backgrounds
 - 30% is a secondary color (added by designer if desired) for headings, cards, and other elements
 - 10% is an accent or CTA color (primary) for buttons or links
 
 ## Theme colors
-Theme color tokens determine Grove’s key color families such as primary and base. Each theme token is drawn from a [USWDS system color token](https://designsystem.digital.gov/design-tokens/color/system-tokens/) and only token-based colors are used in official components.
 
-**Base** is Grove’s neutral color, used in the text color throughout, as well as most surfaces, such as backgrounds, borders, and cards.
+Theme color tokens determine Grove’s key color families such as primary and base. Each theme token
+is drawn from a
+[USWDS system color token](https://designsystem.digital.gov/design-tokens/color/system-tokens/) and
+only token-based colors are used in official components.
 
-**Primary** is used for interactive elements on the page in Grove -- links, buttons, etc. -- but also can be used as a decorative color for hero sections, typography, illustrations, etc.  
+**Base** is Grove’s neutral color, used in the text color throughout, as well as most surfaces, such
+as backgrounds, borders, and cards.
+
+**Primary** is used for interactive elements on the page in Grove -- links, buttons, etc. -- but
+also can be used as a decorative color for hero sections, typography, illustrations, etc.
 
 Each color family usually has seven possible lightness grades, from lightest to darkest.
 
 ### Grove theme color tokens
+
 The color tokens below have been set to theme Grove with USWDS’s theming capabilities.
 
-| Color | Theme token | System token | Value |
-| ----------- | ----------- | ----------- | ----------- |
-| <GroveColorBlock color="#ffffff" /> | `'white'` | n/a | #ffffff |
-| <GroveColorBlock color="#edeff0" /> | `'base-lightest'` | `'gray-cool-5'` | #edeff0 |
-| <GroveColorBlock color="#dfe1e2" /> | `'base-lighter'` | `'gray-cool-10'` | #dfe1e2 |
-| <GroveColorBlock color="#c6cace" /> | `'base-light'` | `'gray-cool-20'` | #c6cace |
-| <GroveColorBlock color="#71767a" /> | `'base'` | `'gray-cool-50'` | #71767a |
-| <GroveColorBlock color="#565c65" /> | `'base-dark'` | `'gray-cool-60'` | #565c65 |
-| <GroveColorBlock color="#3d4551" /> | `'base-darker'` | `'gray-cool-70'` | #3d4551 |
-| <GroveColorBlock color="#1c1d1f" /> | `'base-darkest'` | `'gray-cool-90'` | #1c1d1f |
-| <GroveColorBlock color="#1c1d1f" /> | `'ink'` | `'gray-cool-90'` | #1c1d1f |
-| <GroveColorBlock color="#e8f5ff" /> | `'primary-lightest'` | `'blue-5v'` | #e8f5ff |
-| <GroveColorBlock color="#cfe8ff" /> | `'primary-lighter'` | `'blue-10v'` | #cfe8ff |
-| <GroveColorBlock color="#a1d3ff" /> | `'primary-light'` | `'blue-20v'` | #a1d3ff |
-| <GroveColorBlock color="#0076d6" /> | `'primary'` | `'blue-50v'` | #0076d6 |
-| <GroveColorBlock color="#0050d8" /> | `'primary-vivid'` | `'blue-warm-60v'` | #0050d8 |
-| <GroveColorBlock color="#005ea2" /> | `'primary-dark'` | `'blue-60v'` | #005ea2 |
-| <GroveColorBlock color="#0b4778" /> | `'primary-darker'` | `'blue-70v'` | #0b4778 |
-| <GroveColorBlock color="#112f4e" /> | `'primary-darkest'` | `'blue-80v'` | #112f4e |
+| Color                               | Theme token          | System token      | Value   |
+| ----------------------------------- | -------------------- | ----------------- | ------- |
+| <GroveColorBlock color="#ffffff" /> | `'white'`            | n/a               | #ffffff |
+| <GroveColorBlock color="#edeff0" /> | `'base-lightest'`    | `'gray-cool-5'`   | #edeff0 |
+| <GroveColorBlock color="#dfe1e2" /> | `'base-lighter'`     | `'gray-cool-10'`  | #dfe1e2 |
+| <GroveColorBlock color="#c6cace" /> | `'base-light'`       | `'gray-cool-20'`  | #c6cace |
+| <GroveColorBlock color="#71767a" /> | `'base'`             | `'gray-cool-50'`  | #71767a |
+| <GroveColorBlock color="#565c65" /> | `'base-dark'`        | `'gray-cool-60'`  | #565c65 |
+| <GroveColorBlock color="#3d4551" /> | `'base-darker'`      | `'gray-cool-70'`  | #3d4551 |
+| <GroveColorBlock color="#1c1d1f" /> | `'base-darkest'`     | `'gray-cool-90'`  | #1c1d1f |
+| <GroveColorBlock color="#1c1d1f" /> | `'ink'`              | `'gray-cool-90'`  | #1c1d1f |
+| <GroveColorBlock color="#e8f5ff" /> | `'primary-lightest'` | `'blue-5v'`       | #e8f5ff |
+| <GroveColorBlock color="#cfe8ff" /> | `'primary-lighter'`  | `'blue-10v'`      | #cfe8ff |
+| <GroveColorBlock color="#a1d3ff" /> | `'primary-light'`    | `'blue-20v'`      | #a1d3ff |
+| <GroveColorBlock color="#0076d6" /> | `'primary'`          | `'blue-50v'`      | #0076d6 |
+| <GroveColorBlock color="#0050d8" /> | `'primary-vivid'`    | `'blue-warm-60v'` | #0050d8 |
+| <GroveColorBlock color="#005ea2" /> | `'primary-dark'`     | `'blue-60v'`      | #005ea2 |
+| <GroveColorBlock color="#0b4778" /> | `'primary-darker'`   | `'blue-70v'`      | #0b4778 |
+| <GroveColorBlock color="#112f4e" /> | `'primary-darkest'`  | `'blue-80v'`      | #112f4e |
 
 **Note:** Grove does not utilize USWDS’s secondary, accent-warm, or accent-cool color families.
 
-
 ## State colors
-State color tokens are designed to be useful and effective for that has states or alerts. Each state token is drawn from a [USWDS system color token](https://designsystem.digital.gov/design-tokens/color/system-tokens/) and and only token-based colors are used in official components.
 
-The state color palette is divided into five high-level role-based color families: info, error, warning, success, and emergency.
+State color tokens are designed to be useful and effective for that has states or alerts. Each state
+token is drawn from a
+[USWDS system color token](https://designsystem.digital.gov/design-tokens/color/system-tokens/) and
+and only token-based colors are used in official components.
+
+The state color palette is divided into five high-level role-based color
+families: info, error, warning, success, and emergency.
 
 Each state color family generally has five possible lightness grades, from lighter to darker.
 
-**Note:** Grove does not utilize the disabled color family as we recommend against the use of disabled states in components.
+**Note:** Grove does not utilize the disabled color family as we recommend against the use of
+disabled states in components.
 
 ### Grove state color tokens
+
 The color tokens below have been set to theme Grove with USWDS’s theming capabilities.
 
-| Color | Theme token | System token | Value |
-| ----------- | ----------- | ----------- | ----------- |
-| <GroveColorBlock color="#e7f6f8" /> | `'info-lighter'` | `'cyan-5'` | #e7f6f8 |
-| <GroveColorBlock color="#99deea" /> | `'info-light'` | `'cyan-20'` | #99deea |
-| <GroveColorBlock color="#00bde3" /> | `'info'` | `'cyan-vivid-30v'` | #00bde3 |
-| <GroveColorBlock color="#009ec1" /> | `'info-dark'` | `'cyan-vivid-40v'` | #009ec1 |
-| <GroveColorBlock color="#2e6276" /> | `'info-darker'` | `'blue-cool-60'` | #2e6276 |
-| <GroveColorBlock color="#f4e3db" /> | `'error-lighter'` | `'red-warm-10'` | #f4e3db |
-| <GroveColorBlock color="#f39268" /> | `'error-light'` | `'red-warm-30v'` | #f39268 |
-| <GroveColorBlock color="#d54309" /> | `'error'` | `'red-warm-50v'` | #d54309 |
-| <GroveColorBlock color="#b50909" /> | `'error-dark'` | `'red-60v'` | #b50909 |
-| <GroveColorBlock color="#6f3331" /> | `'error-darker'` | `'red-70'` | #6f3331 |
-| <GroveColorBlock color="#faf3d1" /> | `'warning-lighter'` | `'yellow-5'` | #faf3d1 |
-| <GroveColorBlock color="#fee685" /> | `'warning-light'` | `'yellow-10v'` | #fee685 |
-| <GroveColorBlock color="#ffbe2e" /> | `'warning'` | `'gold-20v'` | #ffbe2e |
-| <GroveColorBlock color="#e5a000" /> | `'warning-dark'` | `'gold-30v'` | #e5a000 |
-| <GroveColorBlock color="#936f38" /> | `'warning-darker'` | `'gold-50v'` | #936f38 |
-| <GroveColorBlock color="#ecf3ec" /> | `'success-lighter'` | `'green-cool-5'` | #ecf3ec |
-| <GroveColorBlock color="#70e17b" /> | `'success-light'` | `'green-cool-20v'` | #70e17b |
-| <GroveColorBlock color="#00a91c" /> | `'success'` | `'green-cool-40v'` | #00a91c |
-| <GroveColorBlock color="#008817" /> | `'success-dark'` | `'green-cool-50v'` | #008817 |
-| <GroveColorBlock color="#216e1f" /> | `'success-darker'` | `'green-cool-60v'` | #216e1f |
-| <GroveColorBlock color="#9c3d10" /> | `'emergency'` | `'red-warm-60v'` | #9c3d10 |
-| <GroveColorBlock color="#332d29" /> | `'emergency-dark'` | `'red-warm-80'` | #332d29 |
+| Color                               | Theme token         | System token       | Value   |
+| ----------------------------------- | ------------------- | ------------------ | ------- |
+| <GroveColorBlock color="#e7f6f8" /> | `'info-lighter'`    | `'cyan-5'`         | #e7f6f8 |
+| <GroveColorBlock color="#99deea" /> | `'info-light'`      | `'cyan-20'`        | #99deea |
+| <GroveColorBlock color="#00bde3" /> | `'info'`            | `'cyan-vivid-30v'` | #00bde3 |
+| <GroveColorBlock color="#009ec1" /> | `'info-dark'`       | `'cyan-vivid-40v'` | #009ec1 |
+| <GroveColorBlock color="#2e6276" /> | `'info-darker'`     | `'blue-cool-60'`   | #2e6276 |
+| <GroveColorBlock color="#f4e3db" /> | `'error-lighter'`   | `'red-warm-10'`    | #f4e3db |
+| <GroveColorBlock color="#f39268" /> | `'error-light'`     | `'red-warm-30v'`   | #f39268 |
+| <GroveColorBlock color="#d54309" /> | `'error'`           | `'red-warm-50v'`   | #d54309 |
+| <GroveColorBlock color="#b50909" /> | `'error-dark'`      | `'red-60v'`        | #b50909 |
+| <GroveColorBlock color="#6f3331" /> | `'error-darker'`    | `'red-70'`         | #6f3331 |
+| <GroveColorBlock color="#faf3d1" /> | `'warning-lighter'` | `'yellow-5'`       | #faf3d1 |
+| <GroveColorBlock color="#fee685" /> | `'warning-light'`   | `'yellow-10v'`     | #fee685 |
+| <GroveColorBlock color="#ffbe2e" /> | `'warning'`         | `'gold-20v'`       | #ffbe2e |
+| <GroveColorBlock color="#e5a000" /> | `'warning-dark'`    | `'gold-30v'`       | #e5a000 |
+| <GroveColorBlock color="#936f38" /> | `'warning-darker'`  | `'gold-50v'`       | #936f38 |
+| <GroveColorBlock color="#ecf3ec" /> | `'success-lighter'` | `'green-cool-5'`   | #ecf3ec |
+| <GroveColorBlock color="#70e17b" /> | `'success-light'`   | `'green-cool-20v'` | #70e17b |
+| <GroveColorBlock color="#00a91c" /> | `'success'`         | `'green-cool-40v'` | #00a91c |
+| <GroveColorBlock color="#008817" /> | `'success-dark'`    | `'green-cool-50v'` | #008817 |
+| <GroveColorBlock color="#216e1f" /> | `'success-darker'`  | `'green-cool-60v'` | #216e1f |
+| <GroveColorBlock color="#9c3d10" /> | `'emergency'`       | `'red-warm-60v'`   | #9c3d10 |
+| <GroveColorBlock color="#332d29" /> | `'emergency-dark'`  | `'red-warm-80'`    | #332d29 |
 
-**Note:** Grove does not utilize the disabled color family as we recommend against the use of disabled states in components.
+**Note:** Grove does not utilize the disabled color family as we recommend against the use of
+disabled states in components.
 
-## System colors 
-System color tokens are a complete palette of color tokens that can be used in projects. Only token-based colors are used in official Grove components.
+## System colors
+
+System color tokens are a complete palette of color tokens that can be used in projects. Only
+token-based colors are used in official Grove components.
 
 Full list of USWDS system color tokens:
+
 - [USWDS system color tokens page](https://designsystem.digital.gov/design-tokens/color/system-tokens/)
 - [Grove Figma Color page](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-867&t=4jNCEHuFmBOcbqfO-0)
 
 ## Resources
-### Grove links 
-| File | Purpose | 
-| ----------- | ----------- |
+
+### Grove links
+
+| File                                                                                                                                           | Purpose                |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
 | [Figma Grove: Color](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-867&t=4jNCEHuFmBOcbqfO-0) | Using color in designs |
 
-### USWDS links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [USWDS: Color](https://designsystem.digital.gov/design-tokens/color/overview/) | Reference for color design tokens  |
+### USWDS links
 
+| File                                                                           | Purpose                           |
+| ------------------------------------------------------------------------------ | --------------------------------- |
+| [USWDS: Color](https://designsystem.digital.gov/design-tokens/color/overview/) | Reference for color design tokens |

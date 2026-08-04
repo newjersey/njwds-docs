@@ -5,139 +5,179 @@ template: splash # Remove or comment out this line to display the site sidebar o
 hideTitle: true
 ---
 
-import { Image } from 'astro:assets';
-import GroveHero from '../../components/GroveHero.astro'
-import placeholder from '../../assets/circle-124.png';
-import componentcard from '../../assets/HomeCardComponent.png';
-import templatecard from '../../assets/HomeCardTemplate.png';
-import patterncard from '../../assets/HomeCardPattern.png';
-import stylesection from '../../assets/HomeSectionStyles.png';
-import contentguide from '../../assets/HomeContentGuide.png';
-import wordlist from '../../assets/HomeWordList.png';
-import graphicfigma from '../../assets/HomeResourcesFigma.png';
-import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
+import { Image } from "astro:assets";
+import GroveHero from "../../components/GroveHero.astro";
+import placeholder from "../../assets/circle-124.png";
+import componentcard from "../../assets/HomeCardComponent.png";
+import templatecard from "../../assets/HomeCardTemplate.png";
+import patterncard from "../../assets/HomeCardPattern.png";
+import stylesection from "../../assets/HomeSectionStyles.png";
+import contentguide from "../../assets/HomeContentGuide.png";
+import wordlist from "../../assets/HomeWordList.png";
+import graphicfigma from "../../assets/HomeResourcesFigma.png";
+import graphicstorybook from "../../assets/HomeResourcesStorybook.png";
 
 <GroveHero />
 <section class="grove-home-section-container">
   <div class="usa-section padding-y-6 padding-x-3 tablet:padding-10 grove-home-section">
-  <h2>Building Blocks</h2>
-  <p class="tablet:font-body-lg">The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
-  <ul class="usa-card-group flex-row margin-top-4 not-content grove-card-group">
-    <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right tablet:margin-bottom-0">
-      <div class="usa-card__container">
-        <header class="usa-card__header">
-          <h2 class="usa-card__heading">Components</h2>
-        </header>
-        <div class="usa-card__media usa-card__media--inset">
-          <div class="usa-card__img">
-            <img alt="" src={componentcard.src} />
+    <h2>Building Blocks</h2>
+    <p class="tablet:font-body-lg">
+      The building blocks and best practices that allow you to spend less time on common UI problems
+      and implementation, and more time solving resident’s needs.
+    </p>
+    <ul class="usa-card-group flex-row margin-top-4 not-content grove-card-group">
+      <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right tablet:margin-bottom-0">
+        <div class="usa-card__container">
+          <header class="usa-card__header">
+            <h2 class="usa-card__heading">Components</h2>
+          </header>
+          <div class="usa-card__media usa-card__media--inset">
+            <div class="usa-card__img">
+              <img alt="" src={componentcard.src} />
+            </div>
+          </div>
+          <div class="usa-card__body">
+            <p>Design and code for interface building blocks that can be reused.</p>
+          </div>
+          <div class="usa-card__footer">
+            <a class="usa-button usa-button--outline" href="/reference/accordion/">
+              View components
+            </a>
           </div>
         </div>
-        <div class="usa-card__body">
-          <p>Design and code for interface building blocks that can be reused.</p>
-        </div>
-        <div class="usa-card__footer">
-          <a class="usa-button usa-button--outline" href="/reference/accordion/">View components</a>
-        </div>
-      </div>
-    </li>
-    <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right tablet:margin-bottom-0">
-      <div class="usa-card__container">
-        <header class="usa-card__header">
-          <h2 class="usa-card__heading">Templates</h2>
-        </header>
-        <div class="usa-card__media usa-card__media--inset">
-          <div class="usa-card__img">
-            <img alt="" src={templatecard.src} />
+      </li>
+      <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right tablet:margin-bottom-0">
+        <div class="usa-card__container">
+          <header class="usa-card__header">
+            <h2 class="usa-card__heading">Templates</h2>
+          </header>
+          <div class="usa-card__media usa-card__media--inset">
+            <div class="usa-card__img">
+              <img alt="" src={templatecard.src} />
+            </div>
+          </div>
+          <div class="usa-card__body">
+            <p>
+              Page template examples for specific page types include hubs, emails, and
+              authentication.
+            </p>
+          </div>
+          <div class="usa-card__footer">
+            <a class="usa-button usa-button--outline" href="/templates/address/">
+              View templates
+            </a>
           </div>
         </div>
-        <div class="usa-card__body">
-          <p>Page template examples for specific page types include hubs, emails, and authentication.</p>
-        </div>
-        <div class="usa-card__footer">
-          <a class="usa-button usa-button--outline" href="/templates/address/">View templates</a>
-        </div>
-      </div>
-    </li>
-    <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
-      <div class="usa-card__container">
-        <header class="usa-card__header">
-          <h2 class="usa-card__heading">Patterns</h2>
-        </header>
-        <div class="usa-card__media usa-card__media--inset">
-          <div class="usa-card__img">
-            <img alt="" src={patterncard.src} />
+      </li>
+      <li class="usa-card tablet:grid-col-4 usa-card--header-first usa-card--media-right">
+        <div class="usa-card__container">
+          <header class="usa-card__header">
+            <h2 class="usa-card__heading">Patterns</h2>
+          </header>
+          <div class="usa-card__media usa-card__media--inset">
+            <div class="usa-card__img">
+              <img alt="" src={patterncard.src} />
+            </div>
+          </div>
+          <div class="usa-card__body">
+            <p>Components and utilities can be combined to solve recurring user needs.</p>
+          </div>
+          <div class="usa-card__footer">
+            <a class="usa-button usa-button--outline" href="/patterns/conditionalfields/">
+              View patterns
+            </a>
           </div>
         </div>
-        <div class="usa-card__body">
-          <p>Components and utilities can be combined to solve recurring user needs.</p>
-        </div>
-        <div class="usa-card__footer">
-          <a class="usa-button usa-button--outline" href="/patterns/conditionalfields/">View patterns</a>
-        </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+    </ul>
   </div>
 </section>
 
 <section class="grove-home-section-container">
   <div class="usa-section padding-y-6 padding-x-3 tablet:padding-10 grove-home-section">
-  <h2>Styles</h2>
-  <p class="tablet:font-body-lg">The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
-  <a href="/styles/typography/">View styles</a>
-</div>
+    <h2>Styles</h2>
+    <p class="tablet:font-body-lg">
+      The building blocks and best practices that allow you to spend less time on common UI problems
+      and implementation, and more time solving resident’s needs.
+    </p>
+    <a href="/styles/typography/">View styles</a>
+  </div>
 </section>
 
 <section class="grove-home-section-container">
   <div class="usa-section padding-y-6 padding-x-3 tablet:padding-10 grove-home-section">
-  <h2>Content Guides</h2>
-  <p class="tablet:font-body-lg">By practicing language in an intentional way, we can provide content that supports resident’s needs and improve their experience on our site.</p>
-  <ul class="usa-card-group flex-row margin-top-4 not-content grove-card-group">
-    <li class="usa-card tablet:grid-col-6  usa-card--media-right">
-      <div class="usa-card__container">
-        <header class="usa-card__header">
-          <h2 class="usa-card__heading">Content Guide</h2>
-        </header>
-        <div class="usa-card__media ">
-          <div class="usa-card__img"><img alt="" src={contentguide.src} /></div>
+    <h2>Content Guides</h2>
+    <p class="tablet:font-body-lg">
+      By practicing language in an intentional way, we can provide content that supports resident’s
+      needs and improve their experience on our site.
+    </p>
+    <ul class="usa-card-group flex-row margin-top-4 not-content grove-card-group">
+      <li class="usa-card tablet:grid-col-6  usa-card--media-right">
+        <div class="usa-card__container">
+          <header class="usa-card__header">
+            <h2 class="usa-card__heading">Content Guide</h2>
+          </header>
+          <div class="usa-card__media ">
+            <div class="usa-card__img">
+              <img alt="" src={contentguide.src} />
+            </div>
+          </div>
+          <div class="usa-card__body">
+            <p>Our guide for the voice and tone of everything we write.</p>
+          </div>
+          <div class="usa-card__footer">
+            <a class="usa-button usa-button--outline " href="/content/errors/">
+              View content guides
+            </a>
+          </div>
         </div>
-        <div class="usa-card__body">
-          <p>Our guide for the voice and tone of everything we write.</p>
-        </div>
-        <div class="usa-card__footer">
-        <a class="usa-button usa-button--outline " href="/content/errors/">View content guides</a>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <section class="grove-home-section-container">
   <div class="usa-section padding-y-6 padding-x-3 tablet:padding-10 grove-home-section">
-  <h2>Resources</h2>
-  <section class="usa-graphic-list flex-row margin-top-4 not-content">
-    <div class="grid-container">
-      <div class="usa-graphic-list__row grid-row grid-gap">
-        <div class="usa-media-block tablet:grid-col">
-          <img class="usa-media-block__img" src={graphicfigma.src} alt="Figma" />
-          <div class="usa-media-block__body">
-            <h2 class="usa-graphic-list__heading">Figma</h2>
-            <p class="tablet:font-body-lg">Create designs for use in static mockups and prototypes.</p>
-            <a class="usa-link usa-link--external" rel="noreferrer" target="_blank" href="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=0-1&p=f&t=0NLDJpE5Kt2hw2Qk-0">View Figma file</a>
+    <h2>Resources</h2>
+    <section class="usa-graphic-list flex-row margin-top-4 not-content">
+      <div class="grid-container">
+        <div class="usa-graphic-list__row grid-row grid-gap">
+          <div class="usa-media-block tablet:grid-col">
+            <img class="usa-media-block__img" src={graphicfigma.src} alt="Figma" />
+            <div class="usa-media-block__body">
+              <h2 class="usa-graphic-list__heading">Figma</h2>
+              <p class="tablet:font-body-lg">
+                Create designs for use in static mockups and prototypes.
+              </p>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=0-1&p=f&t=0NLDJpE5Kt2hw2Qk-0"
+              >
+                View Figma file
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="usa-media-block tablet:grid-col">
-          <img class="usa-media-block__img" src={graphicstorybook.src} alt="Storybook" />
-          <div class="usa-media-block__body">
-            <h2 class="usa-graphic-list__heading">Storybook</h2>
-            <p class="tablet:font-body-lg">The single source of truth for the codebase's design system.</p>
-            <a class="usa-link usa-link--external" rel="noreferrer" target="_blank" href="https://storybook.grove.nj.gov/">View Storybook</a>
+          <div class="usa-media-block tablet:grid-col">
+            <img class="usa-media-block__img" src={graphicstorybook.src} alt="Storybook" />
+            <div class="usa-media-block__body">
+              <h2 class="usa-graphic-list__heading">Storybook</h2>
+              <p class="tablet:font-body-lg">
+                The single source of truth for the codebase's design system.
+              </p>
+              <a
+                class="usa-link usa-link--external"
+                rel="noreferrer"
+                target="_blank"
+                href="https://storybook.grove.nj.gov/"
+              >
+                View Storybook
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 </section>

@@ -2,199 +2,265 @@
 title: Typography
 description: Documentation of typographic settings in Grove.
 ---
+
 <span class="usa-tag">WCAG AA 2.1</span>
 
-**Typefaces and typographic settings to optimize for clarity, consistency, legibility, and adaptability to a variety of visual tones.**
+**Typefaces and typographic settings to optimize for clarity, consistency, legibility, and
+adaptability to a variety of visual tones.**
 
-import { STORYBOOK_BASE_URL } from '@config/storybook';
-  
-import { LinkButton } from '@astrojs/starlight/components';
+import { STORYBOOK_BASE_URL } from "@config/storybook";
 
-<FigmaStorybookButtonGroup 
-  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-3719&p=f&t=kIkWUxaAUytHfoIV-0"
-/>
+import { LinkButton } from "@astrojs/starlight/components";
+
+<FigmaStorybookButtonGroup figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-3719&p=f&t=kIkWUxaAUytHfoIV-0" />
 
 ## Fonts
-**Note:** When designing in Figma, to use typfaces other than Public Sans, apply a text style to the text block you are working with and then change only the typeface, to retain the other typesetting values.
+
+**Note:** When designing in Figma, to use typfaces other than Public Sans, apply a text style to the
+text block you are working with and then change only the typeface, to retain the other typesetting
+values.
 
 ### Public Sans
-Public Sans is the default and recommended typeface for Grove, especially for body copy where legibility is most critical.
+
+Public Sans is the default and recommended typeface for Grove, especially for body copy where
+legibility is most critical.
 
 ### Source Sans Pro
-Source Sans Pro is another great choice for both body copy and headings due to its versatility. It is the default typeface of USWDS.
+
+Source Sans Pro is another great choice for both body copy and headings due to its versatility. It
+is the default typeface of USWDS.
 
 ### Merriweather
-Merriweather is ideal for text-dense design because of its excellent readability across screen sizes while not occupying extra horizontal space.
+
+Merriweather is ideal for text-dense design because of its excellent readability across screen sizes
+while not occupying extra horizontal space.
 
 ### Roboto Mono
+
 Roboto Mono is best purposed for numbers and code because of its consistent spacing.
 
 ### Plus Jakarta Sans
-Plus Jakarta Sans is the typeface used in Grove and NJIA branding. It is best used as a display font for large headings only, due to its stylized nature.
 
+Plus Jakarta Sans is the typeface used in Grove and NJIA branding. It is best used as a display font
+for large headings only, due to its stylized nature.
 
 ### Available fonts
-The following fonts have normalization metadata in USWDS, and are available to settings variables as tokens:
 
-| Token | Value |
-| ----------- | ----------- |
-| `'georgia'` | "Georgia", "Cambria", "Times New Roman", "Times", serif |
-| `'helvetica'` | "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif |
-| `'merriweather'` | "Merriweather Web", "Georgia", "Cambria", "Times New Roman", "Times", serif |
-| `'open-sans'` | "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" |
-| `'public-sans'` | "Public Sans Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" |
-| `'roboto-mono'` | "Roboto Mono Web", "Roboto Mono Web", "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace |
-| `'source-sans-pro'` | "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif |
-| `'system'` | -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" |
-| `'tahoma'` | "Tahoma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" |
-| `'verdana'` | "Verdana", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" |
+The following fonts have normalization metadata in USWDS, and are available to settings variables as
+tokens:
 
+| Token               | Value                                                                                                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `'georgia'`         | "Georgia", "Cambria", "Times New Roman", "Times", serif                                                                                                          |
+| `'helvetica'`       | "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif                                                                                                     |
+| `'merriweather'`    | "Merriweather Web", "Georgia", "Cambria", "Times New Roman", "Times", serif                                                                                      |
+| `'open-sans'`       | "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"       |
+| `'public-sans'`     | "Public Sans Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" |
+| `'roboto-mono'`     | "Roboto Mono Web", "Roboto Mono Web", "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace                                                               |
+| `'source-sans-pro'` | "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif                                                                                  |
+| `'system'`          | -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"                    |
+| `'tahoma'`          | "Tahoma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"          |
+| `'verdana'`         | "Verdana", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"         |
 
-## Font size 
-**Use a comfortable reading size for body text.** For most text, including body copy, use at least an effective size of 16px (font-size 5). Smaller and larger text can be used sparingly for special purposes (like headings, captions, photo credits, footnotes, data tables, or specialized UI elements).
+## Font size
+
+**Use a comfortable reading size for body text.** For most text, including body copy, use at least
+an effective size of 16px (font-size 5). Smaller and larger text can be used sparingly for special
+purposes (like headings, captions, photo credits, footnotes, data tables, or specialized UI
+elements).
 
 **Font size tokens.** The following two points are basic guidelines for selecting font size tokens:
-- Use tokens between font-size 5 and font-size 8 for most running text.
-- Use tokens smaller than font-size 5 more sparingly — for shorter companion text like captions, footnotes, photo credits, or specialized UI elements.
 
-### Theme font size tokens 
-We set these tokens as part of theming Grove. In most circumstances, the theme tokens should be used when typesetting for any project, but when there is need for greater flexibility, system tokens can also be used.
+- Use tokens between font-size 5 and font-size 8 for most running text.
+- Use tokens smaller than font-size 5 more sparingly — for shorter companion text like captions,
+  footnotes, photo credits, or specialized UI elements.
+
+### Theme font size tokens
+
+We set these tokens as part of theming Grove. In most circumstances, the theme tokens should be used
+when typesetting for any project, but when there is need for greater flexibility, system tokens can
+also be used.
 
 | Theme token | System token | Value |
-| ----------- | ----------- | ----------- |
-| `'3xs'` | `2` | 13px |
-| `'2xs'` | `3` | 14px |
-| `'xs'` | `4` | 15px |
-| `'sm'` | `5` | 16px |
-| `'md'` | `6` | 17px |
-| `'lg'` | `9` | 22px |
-| `'xl'` | `12` | 32px |
-| `'2xl'` | `14` | 40px |
-| `'3xl'` | `15` | 48px |
+| ----------- | ------------ | ----- |
+| `'3xs'`     | `2`          | 13px  |
+| `'2xs'`     | `3`          | 14px  |
+| `'xs'`      | `4`          | 15px  |
+| `'sm'`      | `5`          | 16px  |
+| `'md'`      | `6`          | 17px  |
+| `'lg'`      | `9`          | 22px  |
+| `'xl'`      | `12`         | 32px  |
+| `'2xl'`     | `14`         | 40px  |
+| `'3xl'`     | `15`         | 48px  |
 
+### System font size tokens
 
-### System font size tokens 
-We set these tokens as part of theming Grove. In most circumstances, the theme tokens should be used when typesetting for any project, but when there is need for greater flexibility, system tokens can also be used.
+We set these tokens as part of theming Grove. In most circumstances, the theme tokens should be used
+when typesetting for any project, but when there is need for greater flexibility, system tokens can
+also be used.
 
 | System token | Value |
-| ----------- | ----------- |
-| `'micro'` | 10px |
-| `1` | 12px |
-| `2` | 13px |
-| `3` | 14px |
-| `4` | 15px |
-| `5` | 16px |
-| `6` | 17px |
-| `7` | 18px |
-| `8` | 20px |
-| `9` | 22px |
-| `10` | 24px |
-| `11` | 28px |
-| `12` | 32px |
-| `13` | 36px |
-| `14` | 40px |
-| `15` | 48px |
-| `16` | 56px |
-| `17` | 64px |
-| `18` | 80px |
-| `19` | 120px |
-| `20` | 140px |
+| ------------ | ----- |
+| `'micro'`    | 10px  |
+| `1`          | 12px  |
+| `2`          | 13px  |
+| `3`          | 14px  |
+| `4`          | 15px  |
+| `5`          | 16px  |
+| `6`          | 17px  |
+| `7`          | 18px  |
+| `8`          | 20px  |
+| `9`          | 22px  |
+| `10`         | 24px  |
+| `11`         | 28px  |
+| `12`         | 32px  |
+| `13`         | 36px  |
+| `14`         | 40px  |
+| `15`         | 48px  |
+| `16`         | 56px  |
+| `17`         | 64px  |
+| `18`         | 80px  |
+| `19`         | 120px |
+| `20`         | 140px |
 
+## Font weight
 
-## Font weight 
+### Font style best practices
 
-### Font style best practices 
-The style of a typeface affects its readability. In general, serif typefaces are more appropriate for long blocks of text and sans serif typefaces are more appropriate for UIs — but this norm is not a hard-and-fast rule. The conventions of the web are more forgiving of longer, sans serifed texts and serif UIs are not out of the question for sites of a certain tone.
+The style of a typeface affects its readability. In general, serif typefaces are more appropriate
+for long blocks of text and sans serif typefaces are more appropriate for UIs — but this norm is not
+a hard-and-fast rule. The conventions of the web are more forgiving of longer, sans serifed texts
+and serif UIs are not out of the question for sites of a certain tone.
 
-**Serif faces can be a good choice for long texts.** Serif typefaces tend to be designed for readability. While they are most useful for true extended longform reading like novels, nonfiction, and essays, any site that requires long stretches of continuous reading could benefit from using a serif body typeface.
+**Serif faces can be a good choice for long texts.** Serif typefaces tend to be designed for
+readability. While they are most useful for true extended longform reading like novels, nonfiction,
+and essays, any site that requires long stretches of continuous reading could benefit from using a
+serif body typeface.
 
-**Neutral faces can be a good choice for interfaces.** UIs are the practical expression of a site’s organization and functionality. A straightforward and neutral typeface can help the user focus on using the interface as a tool.
+**Neutral faces can be a good choice for interfaces.** UIs are the practical expression of a site’s
+organization and functionality. A straightforward and neutral typeface can help the user focus on
+using the interface as a tool.
 
-**Avoid long sections of italic or bold text.** Both italic and bold text can degrade readability. Both are best used for limited sections of contrast. Consider replacing long sections of bold or italic text with a callout box, a section header, or some other technique that avoids extended stretches of styled text.
+**Avoid long sections of italic or bold text.** Both italic and bold text can degrade readability.
+Both are best used for limited sections of contrast. Consider replacing long sections of bold or
+italic text with a callout box, a section header, or some other technique that avoids extended
+stretches of styled text.
 
-**Avoid long sections of uppercase text.** Uppercase text has a serious negative effect on readability. Unless mandated by law, consider other type treatments for any uppercase text longer than just a few words.
+**Avoid long sections of uppercase text.** Uppercase text has a serious negative effect on
+readability. Unless mandated by law, consider other type treatments for any uppercase text longer
+than just a few words.
 
-### Theme font weight tokens 
-The following font weight tokens have been set in Grove’s theme and are used exclusively in the components and in Figma. 
+### Theme font weight tokens
 
-For full list of system font weight tokens, view [USWDS’s font weight typesetting page](https://designsystem.digital.gov/design-tokens/typesetting/font-weight/).
+The following font weight tokens have been set in Grove’s theme and are used exclusively in the
+components and in Figma.
 
-| Theme token | Value |
-| ----------- | ----------- |
-| `'thin'` | false |
-| `'light'` | false |
-| `'normal'` | 400 |
-| `'medium'` | false |
-| `'semibold'` | 600 |
-| `'bold'` | 700 |
-| `'heavy'` | 800 |
+For full list of system font weight tokens, view
+[USWDS’s font weight typesetting page](https://designsystem.digital.gov/design-tokens/typesetting/font-weight/).
 
+| Theme token  | Value |
+| ------------ | ----- |
+| `'thin'`     | false |
+| `'light'`    | false |
+| `'normal'`   | 400   |
+| `'medium'`   | false |
+| `'semibold'` | 600   |
+| `'bold'`     | 700   |
+| `'heavy'`    | 800   |
 
-## Line length 
+## Line length
 
 ### Line length best practices
-Controlling the length of lines of text (also known as measure) helps readers’ attention flow easily from one line to the next, making reading more natural and comfortable.
 
-**Most lines of text should be 45–90 characters.** The current standard range for readable line length is 45 (measure 1) to 90 characters per line (measure 5). A good target for long texts is 66 characters (measure 2).
+Controlling the length of lines of text (also known as measure) helps readers’ attention flow easily
+from one line to the next, making reading more natural and comfortable.
 
-**Text with greater line height can have a longer measure.** Since one of the functions of measure is to help readers move from one line of text to another more naturally, the effects of a long measure can be lessened by increasing the space between lines. Thus, text with more space between lines can have somewhat longer line length.
+**Most lines of text should be 45–90 characters.** The current standard range for readable line
+length is 45 (measure 1) to 90 characters per line (measure 5). A good target for long texts is 66
+characters (measure 2).
 
-**Short passages can have measure outside the ideal range.** In contexts when users will be reading short passages of text (such as footnotes or alerts), you can safely set somewhat longer or shorter lines than usual.
+**Text with greater line height can have a longer measure.** Since one of the functions of measure
+is to help readers move from one line of text to another more naturally, the effects of a long
+measure can be lessened by increasing the space between lines. Thus, text with more space between
+lines can have somewhat longer line length.
 
-**Large text can have a shorter measure.** Since larger text takes up more screen real estate, it may make sense to assign it a relatively small measure.
+**Short passages can have measure outside the ideal range.** In contexts when users will be reading
+short passages of text (such as footnotes or alerts), you can safely set somewhat longer or shorter
+lines than usual.
+
+**Large text can have a shorter measure.** Since larger text takes up more screen real estate, it
+may make sense to assign it a relatively small measure.
 
 **Measure tokens.** The following three points are basic guidelines for selecting measure tokens:
+
 - Tokens between measure 2 and measure 5 are appropriate for most long-running text.
-- The measure 6 token can be appropriate for shorter blocks of text, like captions of fewer than three lines, or for text that isn’t meant for longform reading.
-- The measure 1 token can be appropriate for helper text (no longer than a paragraph or two) or for larger text (like a subheading or intro text).
+- The measure 6 token can be appropriate for shorter blocks of text, like captions of fewer than
+  three lines, or for text that isn’t meant for longform reading.
+- The measure 1 token can be appropriate for helper text (no longer than a paragraph or two) or for
+  larger text (like a subheading or intro text).
 
-### Measure tokens 
-Grove has 6 measure tokens to control the reading length of lines in a block of text. Measure is output in ex units, where 1ex is equivalent to the height of an 'x' character in the desired font. The first section of each example below is 4 alphabets long.
+### Measure tokens
 
-| Token | Value |
-| ----------- | ----------- |
-| `1` | 44ex |
-| `2` | 60ex |
-| `3` | 64ex |
-| `4` | 68ex |
-| `5` | 72ex |
-| `6` | 88ex |
-| `'none'` | none |
+Grove has 6 measure tokens to control the reading length of lines in a block of text. Measure is
+output in ex units, where 1ex is equivalent to the height of an 'x' character in the desired font.
+The first section of each example below is 4 alphabets long.
 
+| Token    | Value |
+| -------- | ----- |
+| `1`      | 44ex  |
+| `2`      | 60ex  |
+| `3`      | 64ex  |
+| `4`      | 68ex  |
+| `5`      | 72ex  |
+| `6`      | 88ex  |
+| `'none'` | none  |
 
-## Line height 
+## Line height
 
 ### Best practices
-Line height controls the vertical rhythm and density of a block of text. It is written as a unitless multiplier of the text’s font size — for instance, a line height of 1.5 on 16px text results in a line height of 24px.
 
-**Longer texts require more line height.** Headings and other content elements no longer than a line or two can have a line height between 1 (line-height 1) and 1.35 (line-height 3). Longer texts should have a line height of at least 1.5 (line-height 4).
+Line height controls the vertical rhythm and density of a block of text. It is written as a unitless
+multiplier of the text’s font size — for instance, a line height of 1.5 on 16px text results in a
+line height of 24px.
 
-**Longer lines usually require more line height.** Distinguishing between lines of text can be difficult when the eye has to travel from the end of one long line to the beginning of the next. Using more line height makes it easier for readers to distinguish individual lines. Though, somewhat counterintuitively, long lines of text can benefit from slightly less line height than usual, as too much line height can make each individual line appear too prominent.
+**Longer texts require more line height.** Headings and other content elements no longer than a line
+or two can have a line height between 1 (line-height 1) and 1.35 (line-height 3). Longer texts
+should have a line height of at least 1.5 (line-height 4).
 
-**Readable text has a medium density.** Strive for text that appears neither very dense nor loose. The reader typically shouldn’t notice the space between lines of text.
+**Longer lines usually require more line height.** Distinguishing between lines of text can be
+difficult when the eye has to travel from the end of one long line to the beginning of the next.
+Using more line height makes it easier for readers to distinguish individual lines. Though, somewhat
+counterintuitively, long lines of text can benefit from slightly less line height than usual, as too
+much line height can make each individual line appear too prominent.
 
-### Line height tokens 
-Grove has 6 normalized line height tokens to control the amount of space between lines in a block of text.
+**Readable text has a medium density.** Strive for text that appears neither very dense nor loose.
+The reader typically shouldn’t notice the space between lines of text.
 
-| Token | Usage | Output |
-| ----------- | ----------- | ----------- |
-| `1` | buttons, navigation, and text not meant to break over a line | 1 |
-| `2` | headings, introductory (lead or dek) text, no more than 1-2 sentences | 1.15 |
-| `3` | short text (under 1 paragraph), captions, text with a very short or very long measure | 1.35 |
-| `4` | short (1-2 paragraphs) of running text, especially with a short measure | 1.5 |
-| `5` | a good choice for most reading text, especially text meant for extended reading | 1.62 |
-| `6` | shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes| 1.75 |
+### Line height tokens
 
+Grove has 6 normalized line height tokens to control the amount of space between lines in a block of
+text.
+
+| Token | Usage                                                                                    | Output |
+| ----- | ---------------------------------------------------------------------------------------- | ------ |
+| `1`   | buttons, navigation, and text not meant to break over a line                             | 1      |
+| `2`   | headings, introductory (lead or dek) text, no more than 1-2 sentences                    | 1.15   |
+| `3`   | short text (under 1 paragraph), captions, text with a very short or very long measure    | 1.35   |
+| `4`   | short (1-2 paragraphs) of running text, especially with a short measure                  | 1.5    |
+| `5`   | a good choice for most reading text, especially text meant for extended reading          | 1.62   |
+| `6`   | shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes | 1.75   |
 
 ## Resources
-### Grove links 
-| File | Purpose | 
-| ----------- | ----------- |
+
+### Grove links
+
+| File                                                                                                                                                     | Purpose                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
 | [Figma Grove: Typography](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-3719&p=f&t=4jNCEHuFmBOcbqfO-0) | Using text styles in designs |
 
-### USWDS links 
-| File | Purpose | 
-| ----------- | ----------- |
-| [USWDS: Typesetting](https://designsystem.digital.gov/design-tokens/typesetting/overview/) | Reference for typesetting design tokens  |
-| [USWDS: Typography](https://designsystem.digital.gov/components/typography/) | Best practices for typographic choices |
+### USWDS links
 
+| File                                                                                       | Purpose                                 |
+| ------------------------------------------------------------------------------------------ | --------------------------------------- |
+| [USWDS: Typesetting](https://designsystem.digital.gov/design-tokens/typesetting/overview/) | Reference for typesetting design tokens |
+| [USWDS: Typography](https://designsystem.digital.gov/components/typography/)               | Best practices for typographic choices  |
