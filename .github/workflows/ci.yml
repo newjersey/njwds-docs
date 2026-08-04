@@ -29,6 +29,9 @@ jobs:
               run: npm run format:check
               continue-on-error: true
 
+            - name: Check linting
+              run: npm run lint
+
             - name: Astro check (diagnostics, type errors, and template issues)
               run: npm run astro-check
 
