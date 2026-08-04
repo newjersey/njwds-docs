@@ -7,6 +7,7 @@
   --grove-white: #fff; /* USWDS white */
 
   --sl-color-bg-nav: var(--grove-primary-700);
+  --sl-color-text-accent: #ffffff;
   --sl-font: 'Public Sans';
   --sl-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --grove-font-heading: 'Plus Jakarta Sans', var(--sl-font), var(--sl-font-system);
