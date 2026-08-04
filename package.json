@@ -30,9 +30,15 @@
     "eslint": "^10.8.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^1.7.0",
+    "husky": "^9.1.7",
     "jiti": "^2.7.0",
+    "lint-staged": "^17.3.0",
     "prettier": "^3.9.6",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.66.0"
+  },
+    "lint-staged": {
+    "*.{js,ts,astro}": ["eslint --fix", "prettier --write --ignore-unknown"],
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
