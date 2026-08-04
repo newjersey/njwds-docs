@@ -2,7 +2,8 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import prettierConfig from "eslint-config-prettier";
 import globals from "globals";
-import { defineConfig } from "eslint/config";import * as astroParser from 'astro-eslint-parser';
+import { defineConfig } from "eslint/config";
+import * as astroParser from "astro-eslint-parser";
 
 export default defineConfig(
   // 1. Global Ignores (Stand-alone object)
@@ -25,12 +26,12 @@ export default defineConfig(
 
   // 3. Documentation logic for Astro files
   {
-    files: ['**/*.astro'],
+    files: ["**/*.astro"],
     languageOptions: {
       parser: astroParser,
       parserOptions: {
         parser: tseslint.parser,
-        extraFileExtensions: ['.astro'],
+        extraFileExtensions: [".astro"],
       },
       globals: {
         ...globals.browser,
@@ -39,5 +40,5 @@ export default defineConfig(
   },
 
   // 4. Formatting (Always last)
-  prettierConfig
+  prettierConfig,
 );
