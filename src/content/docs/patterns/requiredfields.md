@@ -23,10 +23,10 @@ description: Documentation for required fields.
 
 ![Flow chart where user hits submit on a form and form validation error populates](../../../assets/errorvalidation1.png)
 
-### 👍 Use an asterisk when..
+### Use an asterisk when..
 [USWDS guidance on forms](https://designsystem.digital.gov/templates/form-templates/) recommends tagging required fields using a red asterisk. If you're working on a design that leans heavily on USWDS, it is recommended that you follow that pattern.
 
-### 👎 Don't use an asterisk...
+### Don't use an asterisk...
 If cognitive accessibility or low-tech literacy are concerns for your project, the asterisk may not be a familiar symbol.
 
 #### What to use instead

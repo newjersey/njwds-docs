@@ -27,12 +27,12 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}>View modal in Storybook</a>
   
 ## Modal Usage
-### 👍 Use this component for
+### Use this component for
 - **Confirmation.** Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. These modals are usually triggered by a user action on the page and offer more than one option to proceed — such as a “yes” and “no” button. They are commonly used to confirm user actions or tasks that can’t be undone. **Examples:** “Your work isn’t saved. Do you want to proceed?”, “Are you sure you want to cancel?”
 - **Acknowledgement before continuing.** These modals are used as a “gate” to prevent users from moving forward without acknowledging or answering specific information in the modal. A key differentiator of these modals is that a user should not be able to close the modal or escape without making a selection — this means the “close” button should be disabled on these modals. It also means there needs to be a clear way to accept or reject the content in the modal. **Examples:** “By using this website, you are agreeing to our privacy policy.”, “Your session is about to timeout. Do you need more time?”, “Are you 65 or older?”
 - **Explanatory content without disrupting a process.** A modal can be used to display information without taking users away from a process or task. These modals usually show optional information to help a user gain further understanding about what they’re doing — for instance, displaying a privacy policy while creating an account or viewing an in-depth definition or explanation while filling out a form. Typically these modals don’t require a user to take action other than closing it.
 
-### 👎 Consider something else for
+### Use something else for
 - **⚠️Every time!⚠️** Before using a modal, consider whether there’s another component that might be less disruptive for the user. Modals should be a last resort.
 - **Multi-step process.** Avoid complicated user flows in a modal that may take the user away from the original page. A multi-step process is better suited to an individual page, guiding the user and accommodating complexities in the user flow.
 - **Error, success, or warning messages.** When these relate to a form field, these are better displayed in the context of the page (such as showing an error next to a missing required field). When these relate to page-level messages (such as confirming that a form has been successfully submitted), they should appear as an alert at the top of the page where the user is taken next.
