@@ -142,8 +142,15 @@ a.site-title {
   table-layout: auto;
 }
 
-[data-has-sidebar] .main-pane {
+[data-has-sidebar] .main-frame {
   --sl-content-width: 75rem;
+  --sl-content-pad-x: 4rem;
+  @media (min-width: 70rem) {
+    --sl-mobile-toc-height: 0rem;
+  }
+  .content-panel {
+    padding-block: 0;
+  }
 }
 
 body:has(.grove-home-section-container) {
