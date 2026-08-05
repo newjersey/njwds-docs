@@ -1,14 +1,20 @@
 ---
 import FigmaStorybookButtonGroup from '../components/FigmaStorybookButtonGroup.astro';
+interface Props {
+  name: string;
+  description?: string;
+}
+
+const { name, description } = Astro.props;
 ---
 <section>
     <div class="padding-top-6 padding-bottom-205 tablet:display-flex">
         <div class="flex-fill tablet:margin-right-2">
             <header>
                 <span class="font-body-xs text-base">COMPONENT</span>
-                <h1 class="margin-0">Accordion</h1>
+                <h1 class="margin-0">{name}</h1>
             </header>
-            <p>An accordion is a list of headers that hide or reveal additional content when selected.</p>
+            {Astro.slots.has('description') ? <slot name="description" /> : <p>{description}</p>}
             <div class="width-fit-content">
                 <span class="padding-1 text-white wcag-badge">WCAG 2.1 AA</span>
             </div>

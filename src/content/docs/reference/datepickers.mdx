@@ -1,25 +1,23 @@
 ---
 title: Date Pickers
 description: Documentation for date pickers.
+hideTitle: true
 ---
 
-**Date picker options**
-- **Date Picker:** A date picker helps users select a single date. 
-- **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
-- **Date Range Picker:** A set of date pickers to allow for selecting date ranges.
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
+<ComponentHeader name="Date Pickers">
+    <Fragment slot="description">
+    **Date picker options**
+    - **Date Picker:** A date picker helps users select a single date. 
+    - **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
+    - **Date Range Picker:** A set of date pickers to allow for selecting date ranges.
+    </Fragment>
+</ComponentHeader>
 
 ###
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
-  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-15781&p=f&t=kIkWUxaAUytHfoIV-0"
-  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`}
-/>
 
 <iframe 
     title="Interactive preview of the date picker from Storybook" 
