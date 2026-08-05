@@ -7,15 +7,15 @@ interface Props {
 const { figmaUrl, storybookUrl } = Astro.props;
 ---
 
-<ul class="usa-button-group margin-top-1">
+<ul class="usa-button-group margin-top-1 flex-wrap">
   {figmaUrl && (
     <li class="usa-button-group__item">
-      <a href={figmaUrl} class="usa-button usa-button--outline">Figma</a>
+      <a href={figmaUrl} class="usa-button usa-button--outline grove-button-outline">Figma</a>
     </li>
   )}
   {storybookUrl && (
     <li class="usa-button-group__item">
-      <a href={storybookUrl} class="usa-button">Storybook</a>
+      <a href={storybookUrl} class="usa-button grove-button">Storybook</a>
     </li>
   )}
 </ul>

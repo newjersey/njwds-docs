@@ -161,6 +161,23 @@ body:has(.grove-home-section-container) {
   border-radius: 2px;
 }
 
+.grove-button {
+  background-color: var(--grove-primary-500);
+  &:hover {
+    background-color: var(--grove-primary-700);
+  }
+}
+.grove-button-outline,
+.grove-button-outline:visited {
+  box-shadow: inset 0 0 0 2px var(--grove-primary-500);
+  color: var(--grove-primary-500);
+  accent-color: var(--grove-primary-500);
+  &:hover {
+    box-shadow: inset 0 0 0 2px var(--grove-primary-700);
+    color: var(--grove-primary-700);
+  }
+}
+
 .grove-home-section-container {
   border-top: 0.5px solid var(--grove-base-700);
 }
