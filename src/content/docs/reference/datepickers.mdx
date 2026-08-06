@@ -4,20 +4,20 @@ description: Documentation for date pickers.
 hideTitle: true
 ---
 
-<ComponentHeader name="Date Pickers">
-    <Fragment slot="description">
-    **Date picker options**
-    - **Date Picker:** A date picker helps users select a single date. 
-    - **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
-    - **Date Range Picker:** A set of date pickers to allow for selecting date ranges.
-    </Fragment>
-</ComponentHeader>
-
-###
-
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
+<ComponentHeader
+  name="Date Pickers"
+  description="The date picker, memorable date picker, and date range picker are used for varying use cases of selecting dates."
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-15781&p=f&t=kIkWUxaAUytHfoIV-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`}
+  wcagBadge={false}
+/>
+
+**Date picker options**
+- **Date Picker:** A date picker helps users select a single date. 
+- **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
+- **Date Range Picker:** A set of date pickers to allow for selecting date ranges.
 
 <iframe 
     title="Interactive preview of the date picker from Storybook" 
@@ -75,7 +75,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Familiar dates.** When asking users for a date they know well, or can look up without using a calendar (like a birthday), use a memorable date picker.
@@ -116,7 +116,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
@@ -156,7 +156,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Single dates.** This component does not accommodate single dates.

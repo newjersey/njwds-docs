@@ -1,17 +1,14 @@
 ---
 title: Breadcrumb
 description: Documentation for breadcrumb component.
+hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-**Breadcrumbs provide secondary navigation to help users understand where they are in a website.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
-
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Breadcrumb"
+  description="Breadcrumbs provide secondary navigation to help users understand where they are in a website."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2788-343&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-breadcrumb--docs`}
 />
@@ -39,7 +36,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Simple sites.** If the website is not very deep and the context for the current page is clear from the main navigation.

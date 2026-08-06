@@ -1,17 +1,14 @@
 ---
 title: Collection 
 description: Documentation of the collection component.
+hideTitle: true
 ---
-
-**A collection displays a compact list of multiple related items like articles or events. The list links each item to its original source.**
-
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Collection"
+  description="A collection displays a compact list of multiple related items like articles or events. The list links each item to its original source."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3204-279&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}
 />
@@ -40,7 +37,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Providing an archive of articles or pages.** Consider limiting the number of items in each collection to six or fewer. If you need to allow users to search or browse a larger content catalog, consider using a separate index or archive page.

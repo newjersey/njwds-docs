@@ -1,17 +1,14 @@
 ---
 title: Icon
 description: Documentation for icon component.
+hideTitle: true
 ---
 
-**Icons help communicate meaning, actions, status, or feedback.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
- 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Icon"
+  description="Icons help communicate meaning, actions, status, or feedback."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2588-22&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon--docs`}
 />
@@ -42,7 +39,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Meaning is ambiguous.** Use icons only in a common or conventional way. Icon utility hinges on people quickly recognizing what each icon means. If you suspect that an icon’s intent isn’t perfectly clear, consider removing it or adding accompanying text.

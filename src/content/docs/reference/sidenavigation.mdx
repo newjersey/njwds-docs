@@ -1,17 +1,14 @@
 ---
 title: Side navigation
 description: Documentation for side navigation component.
+hideTitle: true
 ---
-
-**Hierarchical, vertical navigation to place at the side of a page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Side navigation"
+  description="Hierarchical, vertical navigation to place at the side of a page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=196-330&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-side-navigation--docs`}
 />
@@ -37,7 +34,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Small site.** — If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.

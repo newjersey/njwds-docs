@@ -1,17 +1,14 @@
 ---
 title: Time picker
 description: Documentation for time picker component.
+hideTitle: true
 ---
-
-**A time picker helps users select a specific time.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Time picker"
+  description="A time picker helps users select a specific time."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3051-2224&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-time-picker--docs`}
 />
@@ -36,7 +33,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Exact time.** Plain text input is more appropriate for historical exact times, like time of birth.

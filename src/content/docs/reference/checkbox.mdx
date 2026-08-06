@@ -1,17 +1,14 @@
 ---
 title: Checkbox
 description: Documentation of the checkbox component.
+hideTitle: true
 ---
-
-**Checkboxes allow users to select one or more options from a list.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Checkbox"
+  description="Checkboxes allow users to select one or more options from a list."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=32-1420&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}
 />
@@ -37,7 +34,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Single-select only.** If a user can only select one option from a list of many, use radio buttons instead. 

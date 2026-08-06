@@ -3,9 +3,12 @@ import FigmaStorybookButtonGroup from '../components/FigmaStorybookButtonGroup.a
 interface Props {
   name: string;
   description?: string;
+  figmaUrl?: string;
+  storybookUrl?: string;
+  wcagBadge?: boolean;
 }
 
-const { name, description } = Astro.props;
+const { name, description, figmaUrl, storybookUrl, wcagBadge = true } = Astro.props;
 ---
 <section>
     <div class="padding-top-6 padding-bottom-205 tablet:display-flex">
@@ -14,13 +17,15 @@ const { name, description } = Astro.props;
                 <span class="font-body-xs text-base">COMPONENT</span>
                 <h1 class="margin-0">{name}</h1>
             </header>
-            {Astro.slots.has('description') ? <slot name="description" /> : <p>{description}</p>}
-            <div class="width-fit-content">
-                <span class="padding-1 text-white wcag-badge">WCAG 2.1 AA</span>
-            </div>
+            <p>{description}</p>
+            {wcagBadge && (
+                <div class="width-fit-content">
+                    <span class="padding-1 text-white wcag-badge">WCAG 2.1 AA</span>
+                </div>
+            )}
         </div>
         <div class="display-flex flex-align-start">
-            <FigmaStorybookButtonGroup storybookUrl="https://njwds-sandbox.netlify.app/?path=/story/components-accordion--default" figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1519-637&p=f&t=kIkWUxaAUytHfoIV-0"/>
+            <FigmaStorybookButtonGroup figmaUrl={figmaUrl} storybookUrl={storybookUrl}/>
         </div>
     </div>
 </section>

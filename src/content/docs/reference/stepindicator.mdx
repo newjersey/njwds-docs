@@ -1,17 +1,14 @@
 ---
 title: Step Indicator
 description: Documentation for step indicator component.
+hideTitle: true
 ---
-
-**A step indicator updates users on their progress through a multi-step process.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Step Indicator"
+  description="A step indicator updates users on their progress through a multi-step process."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1632-264&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}
 />
@@ -37,7 +34,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Long forms with conditional logic** — Consider another approach if the number of steps might change due to user input.

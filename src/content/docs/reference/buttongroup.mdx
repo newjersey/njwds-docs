@@ -1,17 +1,14 @@
 ---
 title: Button Group
 description: Documentation for button group component.
+hideTitle: true
 ---
-
-**Button group component, used for the visual grouping of buttons for similar actions on a page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Button Group"
+  description="Button group component, used for the visual grouping of buttons for similar actions on a page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1547-1152&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`}
 />
@@ -40,7 +37,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **If actions are not related.** Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.
@@ -61,7 +58,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **No clear relationship.** Consider how placement and alternative structure of unrelated controls can improve usability over placing all actions in a group.
@@ -71,7 +68,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-## 🚫 What to avoid
+##  What to avoid
 <IconList>
     <IconListItem icon="report">
         Avoid burden of choice. Try not to present the user with too many options

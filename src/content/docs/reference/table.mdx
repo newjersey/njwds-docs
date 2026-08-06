@@ -1,22 +1,19 @@
 ---
 title: Table 
 description: Documentation of the table component.
+hideTitle: true
 ---
-
-**A table shows information in columns and rows.**
-
-🚧 Some variants of the table are in USWDS, but are not available in Storybook or Figma. 🚧
-
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Table"
+  description="A table shows information in columns and rows."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3034-1111&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}
 />
+
+🚧 Some variants of the table are in USWDS, but are not available in Storybook or Figma. 🚧
 
 <iframe 
     title="Interactive preview of the table from Storybook" 
@@ -39,7 +36,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Non-tabular data.** Depending on the type of content, consider using other presentation formats, [such as definition lists or hierarchical lists](https://designsystem.digital.gov/components/list).

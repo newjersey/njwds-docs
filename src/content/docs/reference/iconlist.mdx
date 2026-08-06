@@ -1,17 +1,14 @@
 ---
 title: Icon list 
 description: Documentation of the icon list component.
+hideTitle: true
 ---
-
-**An icon list reinforces the meaning and visibility of individual list items with a leading icon.**
-
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Icon list"
+  description="An icon list reinforces the meaning and visibility of individual list items with a leading icon."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2933-672&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon-list--docs`}
 />
@@ -43,7 +40,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Multi-step forms or wizards.** The step indicator is best for communicating progress through a form or process that spans several different pages.

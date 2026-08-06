@@ -13,7 +13,7 @@ description: Documentation for form structure.
 - Follow Grove guidance for multi-step forms
 - Use semantic HTML to make forms accessible
 
-### ❌ What not to do
+###  What not to do
 - ?
 
 

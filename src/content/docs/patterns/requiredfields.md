@@ -14,7 +14,7 @@ description: Documentation for required fields.
 - Use the required attribute for all required form elements.
 - Skip required field indicators for single-input forms and login pages.
 
-### ❌ What not to do
+###  What not to do
 - Do not use symbols without explaining what they mean.
 - Do not mix and match required field indicators in the same design.
 

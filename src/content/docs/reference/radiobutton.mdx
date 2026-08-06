@@ -1,17 +1,14 @@
 ---
 title: Radio button
 description: Documentation for radio button component.
+hideTitle: true
 ---
-
-**Radio buttons allow users to select exactly one choice from a group.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_ 
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Radio button"
+  description="Radio buttons allow users to select exactly one choice from a group."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-19547&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`}
 />
@@ -34,7 +31,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use checkboxes instead.

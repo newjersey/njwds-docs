@@ -15,7 +15,7 @@ description: Documentation for conditional fields.
 - Limit reveals to one section or set of questions.
 - Ensure revealed fields are tabbed to after the original field.
 
-### ❌ What not to do
+###  What not to do
 - Do not conditionally reveal multiple sections or large amounts of information. Use a separate page instead.
 - Do not reveal content before the form field that triggers it.
 - Do not reveal an unlabeled field, unless it is clear that it shares a label with the original selection.

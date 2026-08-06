@@ -1,17 +1,14 @@
 ---
 title: In-page navigation 
 description: Documentation for in-page navigation component.
+hideTitle: true
 ---
-
-**The in-page navigation allows navigation to specific sections on a lengthy content page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="In-page navigation"
+  description="The in-page navigation allows navigation to specific sections on a lengthy content page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3019-77&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-in-page-navigation--docs`}
 />
@@ -34,7 +31,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Short pages.** For pages that require little or no scrolling, in-page navigation is not necessary.

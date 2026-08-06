@@ -1,17 +1,14 @@
 ---
 title: Header
 description: Documentation for header component.
+hideTitle: true
 ---
-
-**A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Header"
+  description="A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1910-52&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}
 />
@@ -34,7 +31,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### 🚫 What to avoid / ensure
+###  What to avoid / ensure
 <IconList>
     <IconListItem icon="report">
         **List all important website sections as links in the horizontal navigation.**

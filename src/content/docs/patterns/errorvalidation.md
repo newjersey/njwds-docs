@@ -14,7 +14,7 @@ description: Documentation for error validation.
 - Validate form fields with complex requirements when losing focus (also referred to as on blur)
 - When validating on blur, only do so if content has been added or changed.
 
-### ❌ What not to do
+###  What not to do
 - Do not validate form fields in real-time.
 - Do not validate empty form fields, unless content has been removed from them.
 
@@ -56,7 +56,7 @@ Use an error summary when a form has three or more errors. The error summary is 
 
 An error summary should follow a main heading on the page, either the H1, or the most relevant heading to the form.
 
-### 🚫 Known Issues
+###  Known Issues
 **For help with known issues, please reach out to the platform team.**
 
 *The error summary is currently being worked on. When the work is completed, components will be available in Figma and Code.*

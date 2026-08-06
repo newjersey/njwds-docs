@@ -1,17 +1,14 @@
 ---
 title: Card
 description: Documentation for card component.
+hideTitle: true
 ---
-
-**Cards contain content and actions about a single subject.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Card"
+  description="Cards contain content and actions about a single subject."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1625-667&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}
 />
@@ -34,7 +31,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Tabular data.** Don’t use a card as a substitute for a table row.
@@ -50,7 +47,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### 🚫 What to avoid / ensure
+###  What to avoid / ensure
 <IconList>
     <IconListItem icon="report">
         **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.

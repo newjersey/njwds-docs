@@ -1,17 +1,14 @@
 ---
 title: Tooltip 
 description: Documentation for tooltip component.
+hideTitle: true
 ---
-
-**A tooltip is a short descriptive message that appears when a user hovers or focuses on an element.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Tooltip"
+  description="A tooltip is a short descriptive message that appears when a user hovers or focuses on an element."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2781-828&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-tooltip--docs`}
 />
@@ -47,7 +44,7 @@ import { LinkButton } from '@astrojs/starlight/components';
 </IconList>
 
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Critical information.** Don’t hide information necessary for completing a task behind an tooltip interaction.

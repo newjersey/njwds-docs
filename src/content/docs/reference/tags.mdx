@@ -1,17 +1,14 @@
 ---
 title: Tag
 description: Documentation for tag component.
+hideTitle: true
 ---
-
-**A tag draws attention to new or categorized content elements.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Tag"
+  description="A tag draws attention to new or categorized content elements."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1862-8993&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}
 />
@@ -40,7 +37,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Confusion with buttons.** Avoid tags if they might appear in the same area of the page as buttons.
@@ -53,7 +50,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### 🚫 What to avoid / ensure
+###  What to avoid / ensure
 <IconList>
     <IconListItem icon="report">
         **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation is not causing frustration.

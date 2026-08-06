@@ -1,20 +1,21 @@
 ---
 title: Alert
 description: Documentation for alert component.
+hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-**Alert options**
-- **Alert:** Alert component used to prominently display timely information to users.
-- **Site Alert:** A site alert communicates urgent sitewide information.
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Alert"
+  description="The alert and site alert are used for varying use cases of displaying timely information to users."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}
 />
+
+**Alert options**
+- **Alert:** Alert component used to prominently display timely information to users.
+- **Site Alert:** A site alert communicates urgent sitewide information.
 
 <iframe 
     title="Interactive preview of the default accordion from Storybook" 
@@ -38,7 +39,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Informational call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
@@ -72,7 +73,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
@@ -82,7 +83,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-### 🚫 What to avoid
+###  What to avoid
 <IconList>
     <IconListItem icon="report">
         **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.

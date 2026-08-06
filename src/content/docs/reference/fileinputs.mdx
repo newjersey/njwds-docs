@@ -1,22 +1,21 @@
 ---
 title: File inputs
 description: Documentation for file input.
+hideTitle: true
 ---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+<ComponentHeader
+  name="File inputs"
+  description="The file and file input are used for varying use cases of uploading files."
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1560-480&p=f&t=kIkWUxaAUytHfoIV-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}
+/>
 
 **File input options**
 - **File:** File input with more complex javascript behavior. 
 - **File input:** Simpler file input with no javascript.
-
-✅ _Passed WCAG 2.1 AA (USWDS component)_
-
-import { STORYBOOK_BASE_URL } from '@config/storybook';
-
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
-  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1560-480&p=f&t=kIkWUxaAUytHfoIV-0"
-  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`}
-/>
 
 <iframe 
     title="Interactive preview of the file component from Storybook" 
@@ -47,7 +46,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Documents are optional.** Avoid asking users to provide documents if you don’t require them.
@@ -82,7 +81,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         TBD

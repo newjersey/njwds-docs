@@ -1,17 +1,14 @@
 ---
 title: Modal
 description: Documentation for modal component.
+hideTitle: true
 ---
-
-**A modal disables page content and focuses the user's attention on a single task or message.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Modal"
+  description="A modal disables page content and focuses the user's attention on a single task or message."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=368-3589&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-modal--docs`}
 />
@@ -40,7 +37,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **⚠️Every time!⚠️** Before using a modal, consider whether there’s another component that might be less disruptive for the user. Modals should be a last resort.

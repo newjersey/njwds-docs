@@ -1,17 +1,14 @@
 ---
 title: Identifier
 description: Documentation for identifier component.
+hideTitle: true
 ---
-
-**The identifier communicates a site’s parent agency and displays agency links required by federal laws and policies.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Identifier"
+  description="The identifier communicates a site’s parent agency and displays agency links required by federal laws and policies."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2905-151&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`}
 />
@@ -37,7 +34,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Any time it would be misleading.** The identifier should be used to reduce confusion. Avoid using the identifier on any site meant only for testing or otherwise not meant to be identified as an official government website.
@@ -47,7 +44,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### 🚫 What to avoid / ensure
+###  What to avoid / ensure
 
 <IconList>
     <IconListItem icon="report">

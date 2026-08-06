@@ -24,7 +24,7 @@ Pусский (Russian)
 - Do allow the user to select more than one language.
 - Do consider providing an option for an individual to indicate “I need help completing this form,” if your program can support providing assistance. Some people with limited English-language skills or low literacy may not be able to complete the form themselves.
 
-### ❌ What not to do
+###  What not to do
 - Do not include languages other than those you can support.
 - Do not use icons or graphics, since they may mean different things in different languages and cultures.
 - Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. It may not be universally understood that `ES` indicates Spanish.

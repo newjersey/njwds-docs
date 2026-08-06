@@ -1,17 +1,14 @@
 ---
 title: Button
 description: Documentation for button component.
+hideTitle: true
 ---
-
-**Button component, used for primary, secondary, and tertiary actions on a page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Button"
+  description="Button component, used for primary, secondary, and tertiary actions on a page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-4297&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}
 />
@@ -34,14 +31,14 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
     </IconListItem>
 </IconList>
 
-### 🚫 What to avoid
+###  What to avoid
 <IconList>
     <IconListItem icon="report">
         **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.

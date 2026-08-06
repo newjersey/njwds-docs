@@ -1,17 +1,17 @@
 ---
 title: Hero
 description: Documentation for hero component.
+hideTitle: true
 ---
-
-**Hero is an element that can be used at the top of a website to prominently call out one piece of information and call to action.**
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Hero"
+  description="Hero is an element that can be used at the top of a website to prominently call out one piece of information and call to action."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2858-3888&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-hero--docs`}
+  wcagBadge={false}
 />
 
 <iframe 
@@ -33,7 +33,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     </IconListItem>
 </IconList>
 
-### Use this component for:
+### Use something else for:
 <IconList>
     <IconListItem icon="close">
         **Any content below the fold.**
