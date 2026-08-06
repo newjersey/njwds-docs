@@ -36,7 +36,7 @@ import { LinkButton } from '@astrojs/starlight/components';
 - **Steps in a sequence.** If you need to indicate progress in a series of steps that must be completed in succession, like an onboarding flow, consider using the step indicator component.
 - **Short collections.** If the length of the entire collection is less than 3-4 screen lengths long, consider showing all the items at once instead of paginating.
 
-### 🚫 What to ensure / avoid
+### Requirements for use:
 - **Show the size of the paginated set.** Users want to know the length of a paginated section. This is most commonly accomplished by always showing the last page as the last item in the pagination navigation. Users should also know if the set is unbounded and has no discrete length. For example, some large search results will not have a “last” page. The USWDS Pagination component will always show the last page of the set as a navigable link, or show an ellipsis at the end of the links if the set is unbounded.
 - **Highlight the current page.** Pagination shows the current page the user is on in relation to the entire collection of pages.
 - **Always include the first, previous, and next pages.** Users should always be able to navigate to each of these pages from any page in the set.

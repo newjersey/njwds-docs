@@ -19,7 +19,7 @@ description: Documentation for illustration component.
 - **Simplicity, clarity and action are Needed.** When meaning is needed to help guide users consider icons, which are ideal for representing simple concepts or actions in a clear and concise manner. They are typically small, easily recognizable, and can quickly convey meaning. Icons are more effective for representing actions or navigation elements that users need to access quickly.
 
 
-### 🚫 What to ensure / avoid
+### Requirements for use:
 - **Use as few visual elements as possible to communicate your message.**
 - **Avoid depicting people in illustrations.** If you need to show people, think carefully about how you represent the people that use your service – do not only show one kind of person. For example, only depicting people of a particular age, gender or ethnicity can exclude people and reinforce negative stereotypes.
 - **Keep size and stroke width consistent.** Do not have icons of varying sizes and stroke widths together on the same page.
