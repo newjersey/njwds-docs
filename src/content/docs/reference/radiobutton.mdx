@@ -27,21 +27,47 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`}>View radio button in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **To display a single selection.** When users need to select only one option from a set of mutually exclusive choices.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To display a single selection.** When users need to select only one option from a set of mutually exclusive choices.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use checkboxes instead.
-- **Limited space.** Consider a select component if you don’t have enough space to list out all available options
-- **Selecting none.** If users should be able to select zero of the options or change their mind and unselect an option, consider using checkboxes. You can also choose to add a “none of the above” option to the radio button group instead.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use checkboxes instead.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Limited space.** Consider a select component if you don’t have enough space to list out all available options
+    </IconListItem>
+    <IconListItem icon="close">
+        **Selecting none.** If users should be able to select zero of the options or change their mind and unselect an option, consider using checkboxes. You can also choose to add a “none of the above” option to the radio button group instead.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Use the label as a target.** Users should be able to select either the text label or the radio button to select or deselect an option.
-- **List items vertically.** Vertically-listed options are easier to read than those that are listed horizontally. A horizontal layout can make it difficult to tell which label belongs to which radio button.
-- **Use adequate spacing.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
-- **Set default values with caution.** Setting a default value can bias a decision, seem pushy, or alienate users who don’t fit your assumptions. Only use a default selection if you have data to back it up.
-- **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
-- **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.
+<IconList>
+    <IconListItem icon="report">
+        **Use the label as a target.** Users should be able to select either the text label or the radio button to select or deselect an option.
+    </IconListItem>
+    <IconListItem icon="report">
+        **List items vertically.** Vertically-listed options are easier to read than those that are listed horizontally. A horizontal layout can make it difficult to tell which label belongs to which radio button.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use adequate spacing.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Set default values with caution.** Setting a default value can bias a decision, seem pushy, or alienate users who don’t fit your assumptions. Only use a default selection if you have data to back it up.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

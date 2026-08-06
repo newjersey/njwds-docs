@@ -39,12 +39,22 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`}>View language selector in Storybook</a>
 
 ### Usage
-#### Use this component for
-- **Two languages are available.** Help users find information in their preferred language when equivalent translated content is available in two languages.
+#### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Two languages are available.** Help users find information in their preferred language when equivalent translated content is available in two languages.
+    </IconListItem>
+</IconList>
 
-#### Use something else for
-- **Limited translated content is available.** Consider using something else if the entirety of your content is not translated to a second language.
-- **When content is available in three or more languages** — see the language selector with three or more languages pattern.
+#### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Limited translated content is available.** Consider using something else if the entirety of your content is not translated to a second language.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When content is available in three or more languages** — see the language selector with three or more languages pattern.
+    </IconListItem>
+</IconList>
 
 ### Content guidelines
 - **Capitalize the name of each language** (for example, English, Español).
@@ -77,12 +87,22 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`}>View language selector in Storybook</a>
 
 ### Usage
-#### Use this component for
-- **Content is available in three or more languages.** Use this component if your site offers equivalent content in three or more languages.
+#### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Content is available in three or more languages.** Use this component if your site offers equivalent content in three or more languages.
+    </IconListItem>
+</IconList>
 
-#### Use something else for
-- **Incomplete content translations.** If your site includes content in three or more languages but the majority of content is not available in each language.
-- **When content is available in only two languages** — see the language selector with two languages pattern.
+#### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Incomplete content translations.** If your site includes content in three or more languages but the majority of content is not available in each language.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When content is available in only two languages** — see the language selector with two languages pattern.
+    </IconListItem>
+</IconList>
 
 ### Content guidelines
 - Label the dropdown menu **Languages** or **Select languages**.

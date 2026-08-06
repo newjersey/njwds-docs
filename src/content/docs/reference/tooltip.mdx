@@ -27,25 +27,57 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tooltip--docs`}>View tooltip in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **Helpful, non-critical information.** Use tooltips to strengthen an existing message.
-- **Enhance confidence.** Use tooltips to increase certainty about an interaction.
-- **Brief descriptions.** Tooltips perform best with succinct helper text.
-- **Icon only buttons.** Tooltips provide essential context to icon only buttons ensuring users understand the action. 
-- **Lack of space.** Tooltips are useful as a last resort for space-constrained UI. Explore other options for keeping content visible without a tooltip.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Helpful, non-critical information.** Use tooltips to strengthen an existing message.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Enhance confidence.** Use tooltips to increase certainty about an interaction.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Brief descriptions.** Tooltips perform best with succinct helper text.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Icon only buttons.** Tooltips provide essential context to icon only buttons ensuring users understand the action. 
+    </IconListItem>
+    <IconListItem icon="check">
+        **Lack of space.** Tooltips are useful as a last resort for space-constrained UI. Explore other options for keeping content visible without a tooltip.
+    </IconListItem>
+</IconList>
 
 
-### Use something else for
-- **Critical information.** Don’t hide information necessary for completing a task behind an tooltip interaction.
-- **Lengthy descriptions.** Tooltips are microcopy, and should be brief. Don’t use a tooltip if you need a lot of text.
-- **Redundant content.** Don’t use a tooltip when its content is repetitive or if usability is obvious.
-- **Sufficient space.** If content can fit outside a tooltip, don’t use a tooltip.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Critical information.** Don’t hide information necessary for completing a task behind an tooltip interaction.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Lengthy descriptions.** Tooltips are microcopy, and should be brief. Don’t use a tooltip if you need a lot of text.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Redundant content.** Don’t use a tooltip when its content is repetitive or if usability is obvious.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Sufficient space.** If content can fit outside a tooltip, don’t use a tooltip.
+    </IconListItem>
+</IconList>
 
 ### ✔️ What to ensure / avoid
-- **Make tooltips discoverable.** A hidden tooltip is unusable. Use tooltips only on elements that appear interactive, like buttons or links.
-- **Avoid collisions.** Be careful not introduce conflicting hover or focus events.
-- **Use consistently.** If using tooltips in one context, use in all similar contexts.
-- **Don’t block content.** Use the data-position attribute to prevent the tooltip from covering other page elements.
+<IconList>
+    <IconListItem icon="report">
+        **Make tooltips discoverable.** A hidden tooltip is unusable. Use tooltips only on elements that appear interactive, like buttons or links.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid collisions.** Be careful not introduce conflicting hover or focus events.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use consistently.** If using tooltips in one context, use in all similar contexts.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t block content.** Use the data-position attribute to prevent the tooltip from covering other page elements.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

@@ -62,18 +62,38 @@ import { LinkButton } from '@astrojs/starlight/components';
 
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`}>View date picker in Storybook</a>
 
-### Use this component for
-- **Scheduling.** When users need to schedule or record an event, and benefit from the context of a calendar.
-- **When the day of the week is important.** When knowing the day of the week helps users choose a specific date.
-- **Date ranges.** This component accommodates selecting date ranges.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Scheduling.** When users need to schedule or record an event, and benefit from the context of a calendar.
+    </IconListItem>
+    <IconListItem icon="check">
+        **When the day of the week is important.** When knowing the day of the week helps users choose a specific date.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Date ranges.** This component accommodates selecting date ranges.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Familiar dates.** When asking users for a date they know well, or can look up without using a calendar (like a birthday), use a memorable date picker.
-- **When the day of the week is irrelevant.** If there’s no benefit to knowing the day of the week for a particular date, consider a memorable date picker.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Familiar dates.** When asking users for a date they know well, or can look up without using a calendar (like a birthday), use a memorable date picker.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When the day of the week is irrelevant.** If there’s no benefit to knowing the day of the week for a particular date, consider a memorable date picker.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Describe the date format.** Provide a hint of `mm/dd/yyyy` to help users enter the proper date format if they opt not to use the date picker.
-- **Always allow a user to type in the date manually.** Usability testing suggests some people prefer manually typing the date rather than using the calendar picker. Whenever possible, keep the keyboard active so people can enter in the date information without having to use the picker.
+<IconList>
+    <IconListItem icon="report">
+        **Describe the date format.** Provide a hint of `mm/dd/yyyy` to help users enter the proper date format if they opt not to use the date picker.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Always allow a user to type in the date manually.** Usability testing suggests some people prefer manually typing the date rather than using the calendar picker. Whenever possible, keep the keyboard active so people can enter in the date information without having to use the picker.
+    </IconListItem>
+</IconList>
 
 
 
@@ -89,16 +109,32 @@ import { LinkButton } from '@astrojs/starlight/components';
 
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-memorable-date-picker--docs`}>View memorable date picker in Storybook</a>
 
-### Use this component for
-- **Appropriate for most dates.** This component is appropriate for most dates.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Appropriate for most dates.** This component is appropriate for most dates.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
-- **Date ranges.** This component does not accommodate date ranges.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Date ranges.** This component does not accommodate date ranges.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
-- **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+<IconList>
+    <IconListItem icon="report">
+        **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+    </IconListItem>
+</IconList>
 
 
 ## Usage Guidelines
@@ -113,15 +149,29 @@ import { LinkButton } from '@astrojs/starlight/components';
 
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-range-picker--docs`}>View date range picker in Storybook</a>
 
-### Use this component for
-- **Date ranges.** This component is appropriate for collecting date ranges, such as availability.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Date ranges.** This component is appropriate for collecting date ranges, such as availability.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Single dates.** This component does not accommodate single dates.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Single dates.** This component does not accommodate single dates.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
-- **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+<IconList>
+    <IconListItem icon="report">
+        **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

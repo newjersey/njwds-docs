@@ -151,6 +151,9 @@ a.site-title {
   .content-panel {
     padding-block: 0;
   }
+  h2 {
+    margin-block: 4rem 2rem;
+  }
 }
 
 body:has(.grove-home-section-container) {

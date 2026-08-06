@@ -29,19 +29,41 @@ import { LinkButton } from '@astrojs/starlight/components';
 
 ## Usage Guidelines
 
-### Use this component for
-- **When orientation matters.** Breadcrumbs show where the current page is located in the website hierarchy. Use a breadcrumb when it’s likely that a user will arrive at an interior page from search or from an outside link.
-- **To facilitate navigation.** Breadcrumbs make it easier to understand complex sites. Use breadcrumbs to reinforce your site’s structure.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **When orientation matters.** Breadcrumbs show where the current page is located in the website hierarchy. Use a breadcrumb when it’s likely that a user will arrive at an interior page from search or from an outside link.
+    </IconListItem>
+    <IconListItem icon="check">
+        **To facilitate navigation.** Breadcrumbs make it easier to understand complex sites. Use breadcrumbs to reinforce your site’s structure.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Simple sites.** If the website is not very deep and the context for the current page is clear from the main navigation.
-- **Landing pages.** Omit breadcrumbs on the homepage of a site. Breadcrumbs could also be omitted from section landing pages. Breadcrumbs are most useful when the hierarchy is not immediately apparent from the main navigation.
-- **Redundant side navigation.** When side navigation is used in combination with main navigation, it may be redundant to include breadcrumbs.
-- **Step-by-step processes.** Use breadcrumbs for hierarchical relationships, not linear relationships (like individual steps in a multi-step process).
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Simple sites.** If the website is not very deep and the context for the current page is clear from the main navigation.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Landing pages.** Omit breadcrumbs on the homepage of a site. Breadcrumbs could also be omitted from section landing pages. Breadcrumbs are most useful when the hierarchy is not immediately apparent from the main navigation.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Redundant side navigation.** When side navigation is used in combination with main navigation, it may be redundant to include breadcrumbs.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Step-by-step processes.** Use breadcrumbs for hierarchical relationships, not linear relationships (like individual steps in a multi-step process).
+    </IconListItem>
+</IconList>
 
 ## Requirements for use:
-- **Consider alternatives to wrapping.** In general, rely on truncating the title of the current page over wrapping breadcrumb text. But usability comes first. Consider alternative approaches if the title of the current page is completely truncated. For example, a mobile-friendly breadcrumb may show only a page’s direct parent. Sites with very long breadcrumb trails might ultimately need to wrap breadcrumbs, or consider flattening the information architecture of the site.
-- **Consider size of tap targets on small widths.** Although breadcrumbs are frequently displayed using smaller text, make sure the text is not too small to select at small widths.
+<IconList>
+    <IconListItem icon="report">
+        **Consider alternatives to wrapping.** In general, rely on truncating the title of the current page over wrapping breadcrumb text. But usability comes first. Consider alternative approaches if the title of the current page is completely truncated. For example, a mobile-friendly breadcrumb may show only a page’s direct parent. Sites with very long breadcrumb trails might ultimately need to wrap breadcrumbs, or consider flattening the information architecture of the site.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Consider size of tap targets on small widths.** Although breadcrumbs are frequently displayed using smaller text, make sure the text is not too small to select at small widths.
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
 - **Use complete page titles.** Use the same wording in breadcrumb text as in the page title.

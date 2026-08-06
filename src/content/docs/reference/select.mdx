@@ -28,20 +28,44 @@ import { LinkButton } from '@astrojs/starlight/components';
 
 ## Usage Guidelines
 
-### Use this component for
-- **⚠️Use sparingly.⚠️** Use the select component only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **⚠️Use sparingly.⚠️** Use the select component only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Fewer than seven options.** Use radio buttons instead.
-- **More than 15 options.** If the list of options is very long, consider using a combo box.
-- **Multi-select.** If you need to allow users to choose more than one option at once. Users often don’t understand how to choose multiple items from select elements. Use checkboxes instead.
-- **Site navigation.** Use the navigation components instead.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Fewer than seven options.** Use radio buttons instead.
+    </IconListItem>
+    <IconListItem icon="close">
+        **More than 15 options.** If the list of options is very long, consider using a combo box.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Multi-select.** If you need to allow users to choose more than one option at once. Users often don’t understand how to choose multiple items from select elements. Use checkboxes instead.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Site navigation.** Use the navigation components instead.
+    </IconListItem>
+</IconList>
 
 ## Requirements for use:
-- **Make sure to test.** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.
-- **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another.
-- **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
-- **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is chosen. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
+<IconList>
+    <IconListItem icon="report">
+        **Make sure to test.** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is chosen. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

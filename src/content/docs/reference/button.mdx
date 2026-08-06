@@ -27,15 +27,29 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **Important actions.** Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Important actions.** Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
+    </IconListItem>
+</IconList>
 
 ### 🚫 What to avoid
-- **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
-- **Avoid disabling buttons.** Disabling buttons is strongly discouraged.
+<IconList>
+    <IconListItem icon="report">
+        **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid disabling buttons.** Disabling buttons is strongly discouraged.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

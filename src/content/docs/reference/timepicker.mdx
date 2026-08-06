@@ -29,18 +29,38 @@ import { LinkButton } from '@astrojs/starlight/components';
 
 ## Usage Guidelines
 
-### Use this component for
-- **Scheduling.** Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time in 30-minute blocks.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Scheduling.** Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time in 30-minute blocks.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Exact time.** Plain text input is more appropriate for historical exact times, like time of birth.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Exact time.** Plain text input is more appropriate for historical exact times, like time of birth.
+    </IconListItem>
+</IconList>
 
 ## Requirements for use:
-- **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
-- **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
-- **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`.
-- **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
-- **⚠️Make sure to test.⚠️** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the **“UI of last resort.”** Many users find them confusing and difficult to use.
+<IconList>
+    <IconListItem icon="report">
+        **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
+    </IconListItem>
+    <IconListItem icon="report">
+        **⚠️Make sure to test.⚠️** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the **“UI of last resort.”** Many users find them confusing and difficult to use.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

@@ -29,20 +29,44 @@ import { LinkButton } from '@astrojs/starlight/components';
 
 ## Usage Guidelines
 
-### Use this component for
-- **Draw attention to actions.** Icons, when paired with text, grab attention and show actions to take. Make sure each icon directly relates to any text it accompanies.
-- **Help readers find key information.** Use icons as scannable, easy-to-understand visual cues for key information, like a phone number or email address.
-- **Enhance an actionable target.** Icons make great touch or click targets. Use an icon for common actions, like opening a menu or sharing an article.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Draw attention to actions.** Icons, when paired with text, grab attention and show actions to take. Make sure each icon directly relates to any text it accompanies.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Help readers find key information.** Use icons as scannable, easy-to-understand visual cues for key information, like a phone number or email address.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Enhance an actionable target.** Icons make great touch or click targets. Use an icon for common actions, like opening a menu or sharing an article.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Meaning is ambiguous.** Use icons only in a common or conventional way. Icon utility hinges on people quickly recognizing what each icon means. If you suspect that an icon’s intent isn’t perfectly clear, consider removing it or adding accompanying text.
-- **Compensating for page structure.** Don’t rely on an icon to help draw attention to something important that’s otherwise hard to find. Icons don’t fix unclear page hierarchy or confusing content organization.
-- **You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons for illustrative purposes. For example, don’t use the “visibility” eye icon to illustrate an actual eye. If you want to enhance the appearance of your content or visually explain a concept, use an illustration instead of an icon.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Meaning is ambiguous.** Use icons only in a common or conventional way. Icon utility hinges on people quickly recognizing what each icon means. If you suspect that an icon’s intent isn’t perfectly clear, consider removing it or adding accompanying text.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Compensating for page structure.** Don’t rely on an icon to help draw attention to something important that’s otherwise hard to find. Icons don’t fix unclear page hierarchy or confusing content organization.
+    </IconListItem>
+    <IconListItem icon="close">
+        **You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons for illustrative purposes. For example, don’t use the “visibility” eye icon to illustrate an actual eye. If you want to enhance the appearance of your content or visually explain a concept, use an illustration instead of an icon.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Combine icons with text.** Only a few icons are consistently understood across the digital-using public of the world, among them home, print, and search. Combine icons with text to improve clarity, and test your icons for recognition and memorability with your particular audience.
-- **Be consistent with icon meaning.** Icons used more than once in an application or site must be used to represent the same thing, and have the same text description in every instance. For example, if an icon of a blank piece of paper means “new document” on most screens, choose a different icon to communicate “reformat document.” Consistency helps people with some cognitive disabilities, helps people who might be distracted or scanning, and creates a better user experience for all.
-- **Combine interactive icons with other components.** If the icon is part of an interactive element, it should be implemented within another functional component. For example, make an icon part of a button or list.
+<IconList>
+    <IconListItem icon="report">
+        **Combine icons with text.** Only a few icons are consistently understood across the digital-using public of the world, among them home, print, and search. Combine icons with text to improve clarity, and test your icons for recognition and memorability with your particular audience.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Be consistent with icon meaning.** Icons used more than once in an application or site must be used to represent the same thing, and have the same text description in every instance. For example, if an icon of a blank piece of paper means “new document” on most screens, choose a different icon to communicate “reformat document.” Consistency helps people with some cognitive disabilities, helps people who might be distracted or scanning, and creates a better user experience for all.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Combine interactive icons with other components.** If the icon is part of an interactive element, it should be implemented within another functional component. For example, make an icon part of a button or list.
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
 - **Combine icons with text.** Only a few icons are consistently understood across the digital-using public of the world, among them home, print, and search. Combine icons with text to improve clarity, and test your icons for recognition and memorability with your particular audience.

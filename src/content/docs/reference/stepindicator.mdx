@@ -27,22 +27,50 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}>View step indicator in Storybook</a> 
   
 ## Usage Guidelines
-### Use this component for
-- **Multiple steps and screens** — Use the step indicator when the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users understand the progression of long forms and reduces uncertainty as they complete each screen.
-- **Linear progression** — The step indicator is designed to complement standard back/next navigation in a linear sequence, not to be navigation of its own.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Multiple steps and screens** — Use the step indicator when the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users understand the progression of long forms and reduces uncertainty as they complete each screen.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Linear progression** — The step indicator is designed to complement standard back/next navigation in a linear sequence, not to be navigation of its own.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Long forms with conditional logic** — Consider another approach if the number of steps might change due to user input.
-- **Nonlinear progression** — The step indicator isn’t appropriate for nonlinear forms or interactions that might be completed in any order.
-- **Very short forms** — Don’t use a step indicator for short forms without chapters or sections. If a form or process has fewer than three sections, don’t use a step indicator.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Long forms with conditional logic** — Consider another approach if the number of steps might change due to user input.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Nonlinear progression** — The step indicator isn’t appropriate for nonlinear forms or interactions that might be completed in any order.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Very short forms** — Don’t use a step indicator for short forms without chapters or sections. If a form or process has fewer than three sections, don’t use a step indicator.
+    </IconListItem>
+</IconList>
 
 ### How to use this component
-- **Indicate where a user is in the process.** Use a color and text treatment for the current step segment that is distinct from both the completed and pending step segments. The current segment should be the most visually prominent segment in the step indicator. Pending segments should be the least visually prominent of the segments, but should still maintain accessible contrast and not appear disabled
-- **Provide navigation separately.** Use navigation like a button group to step forward and backward through a form.
-- **Place a heading directly below the step indicator.** Each step needs an explicit heading. The step indicator segments (even with labels and counters) are not sufficient as a heading for a page or screen.
-- **Pending text should use gray.** Pending text should use the gray family that complements the background and the pending segment colors. Use warm grays with warm backgrounds and segments, and cool grays with cool backgrounds and segments.
-- **The current color can be a contrast color.** The current color can be in the same family as the complete color, or it can be a contrast color that distinguishes itself from the complete color.
-- **Center the heading with utilities.** Use the `flex-justify-center` utility on `usa-step-indicator__header` to center the heading.
+<IconList>
+    <IconListItem icon="report">
+        **Indicate where a user is in the process.** Use a color and text treatment for the current step segment that is distinct from both the completed and pending step segments. The current segment should be the most visually prominent segment in the step indicator. Pending segments should be the least visually prominent of the segments, but should still maintain accessible contrast and not appear disabled
+    </IconListItem>
+    <IconListItem icon="report">
+        **Provide navigation separately.** Use navigation like a button group to step forward and backward through a form.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Place a heading directly below the step indicator.** Each step needs an explicit heading. The step indicator segments (even with labels and counters) are not sufficient as a heading for a page or screen.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Pending text should use gray.** Pending text should use the gray family that complements the background and the pending segment colors. Use warm grays with warm backgrounds and segments, and cool grays with cool backgrounds and segments.
+    </IconListItem>
+    <IconListItem icon="report">
+        **The current color can be a contrast color.** The current color can be in the same family as the complete color, or it can be a contrast color that distinguishes itself from the complete color.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Center the heading with utilities.** Use the `flex-justify-center` utility on `usa-step-indicator__header` to center the heading.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

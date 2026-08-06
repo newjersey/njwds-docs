@@ -27,17 +27,35 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-side-navigation--docs`}>View side navigation in Storybook</a>   
   
 ## Usage Guidelines
-### Use this component for
-- **To display a navigational hierarchy with one to three levels.**
-- **To display the “sub-navigation” within a section of the website.** 
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To display a navigational hierarchy with one to three levels.**
+    </IconListItem>
+    <IconListItem icon="check">
+        **To display the “sub-navigation” within a section of the website.** 
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Small site.** — If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
-- **Existing navigation.** If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Small site.** — If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Existing navigation.** If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Show the current page.** Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
-- **Always test your navigation.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+<IconList>
+    <IconListItem icon="report">
+        **Show the current page.** Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Always test your navigation.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

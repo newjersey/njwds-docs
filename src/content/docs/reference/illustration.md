@@ -9,21 +9,45 @@ description: Documentation for illustration component.
 
 ## Usage Guidelines
 
-### Use this component for
-- **Simplifying complexity or storytelling is needed** Illustrations can depict complex ideas, tell a story, or add emotional depth to content. They are suitable for scenarios where more detailed visual context is beneficial.
-- **Visual engagement is important.** Illustrations can be more visually engaging and can help reinforce branding by adding character and personality to a design.
-- **Explaining concepts or processes.** Use illustrations to explain concepts or processes that are too detailed to be easily conveyed by icons alone.
-- **Highlighting content.** Illustrations can be used to draw attention to specific content, such as in a hero section of a webpage or in educational material, especially when a photo is not availible.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Simplifying complexity or storytelling is needed** Illustrations can depict complex ideas, tell a story, or add emotional depth to content. They are suitable for scenarios where more detailed visual context is beneficial.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Visual engagement is important.** Illustrations can be more visually engaging and can help reinforce branding by adding character and personality to a design.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Explaining concepts or processes.** Use illustrations to explain concepts or processes that are too detailed to be easily conveyed by icons alone.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Highlighting content.** Illustrations can be used to draw attention to specific content, such as in a hero section of a webpage or in educational material, especially when a photo is not availible.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Simplicity, clarity and action are Needed.** When meaning is needed to help guide users consider icons, which are ideal for representing simple concepts or actions in a clear and concise manner. They are typically small, easily recognizable, and can quickly convey meaning. Icons are more effective for representing actions or navigation elements that users need to access quickly.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Simplicity, clarity and action are Needed.** When meaning is needed to help guide users consider icons, which are ideal for representing simple concepts or actions in a clear and concise manner. They are typically small, easily recognizable, and can quickly convey meaning. Icons are more effective for representing actions or navigation elements that users need to access quickly.
+    </IconListItem>
+</IconList>
 
 
 ### Requirements for use:
-- **Use as few visual elements as possible to communicate your message.**
-- **Avoid depicting people in illustrations.** If you need to show people, think carefully about how you represent the people that use your service – do not only show one kind of person. For example, only depicting people of a particular age, gender or ethnicity can exclude people and reinforce negative stereotypes.
-- **Keep size and stroke width consistent.** Do not have icons of varying sizes and stroke widths together on the same page.
-- **Size** TBD
+<IconList>
+    <IconListItem icon="report">
+        **Use as few visual elements as possible to communicate your message.**
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid depicting people in illustrations.** If you need to show people, think carefully about how you represent the people that use your service – do not only show one kind of person. For example, only depicting people of a particular age, gender or ethnicity can exclude people and reinforce negative stereotypes.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Keep size and stroke width consistent.** Do not have icons of varying sizes and stroke widths together on the same page.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Size** TBD
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
 - **Combine icons with text.** Only a few icons are consistently understood across the digital-using public of the world, among them home, print, and search. Combine icons with text to improve clarity, and test your icons for recognition and memorability with your particular audience.

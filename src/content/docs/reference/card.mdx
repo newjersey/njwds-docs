@@ -27,21 +27,47 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **Collections of related content.** Cards help present a collection of related groups of content, like articles or sections of a website.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Collections of related content.** Cards help present a collection of related groups of content, like articles or sections of a website.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Tabular data.** Don’t use a card as a substitute for a table row.
-- **Simple calls to action.** Use a button instead.
-- **Standalone content.** Consider an aside or another standalone element.
-- **Sequential, continuous text.** Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Tabular data.** Don’t use a card as a substitute for a table row.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Simple calls to action.** Use a button instead.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Standalone content.** Consider an aside or another standalone element.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Sequential, continuous text.** Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.
+    </IconListItem>
+</IconList>
 
 ### 🚫 What to avoid / ensure
-- **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.
-- **Don’t use the card component only for decoration.** Use the card component for cards, not for any type of content that’s designed to have a border around it.
-- **Include non-redundant content.** Don’t repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.
-- **Make sure images are properly sized.** Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.
-- **Use simple styling.** Avoid distracting skeumorphism. Don’t include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.
+<IconList>
+    <IconListItem icon="report">
+        **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t use the card component only for decoration.** Use the card component for cards, not for any type of content that’s designed to have a border around it.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Include non-redundant content.** Don’t repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Make sure images are properly sized.** Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use simple styling.** Avoid distracting skeumorphism. Don’t include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

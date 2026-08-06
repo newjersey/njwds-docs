@@ -27,19 +27,41 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`}>View process list in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **Displaying high-level sequential steps.** Use process lists to create a clear hierarchy and help users easily differentiate between individual steps or stages in a process.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Displaying high-level sequential steps.** Use process lists to create a clear hierarchy and help users easily differentiate between individual steps or stages in a process.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Multi-page forms or wizards.** Use the step indicator component to help users work through a form or process that spans several different pages.
-- **When showing current status or progress.** Use the step indicator component to show the user the current step in a multi-step process.
-- **In-page navigation.** Use the side navigation component to display the “sub-navigation” within a section or page of the website.
-- **The steps are non-sequential.** Use unordered lists, graphic lists (coming soon), or icon lists (coming soon) to display text that doesn’t have a clear, logical order to it.
-- **The listed content is meant to improve readability of a complex sentence.** Use the ordered and unordered list components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Multi-page forms or wizards.** Use the step indicator component to help users work through a form or process that spans several different pages.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When showing current status or progress.** Use the step indicator component to show the user the current step in a multi-step process.
+    </IconListItem>
+    <IconListItem icon="close">
+        **In-page navigation.** Use the side navigation component to display the “sub-navigation” within a section or page of the website.
+    </IconListItem>
+    <IconListItem icon="close">
+        **The steps are non-sequential.** Use unordered lists, graphic lists (coming soon), or icon lists (coming soon) to display text that doesn’t have a clear, logical order to it.
+    </IconListItem>
+    <IconListItem icon="close">
+        **The listed content is meant to improve readability of a complex sentence.** Use the ordered and unordered list components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Be thoughtful about the number of steps.** A process list should include between three and ten steps to prevent it from getting too unwieldy or confusing.
-- **Add other types of content as needed.** The body of each list item can be used to display additional rich text content including HTML, images, and other components like buttons, images, simple lists, links, and tables.
+<IconList>
+    <IconListItem icon="report">
+        **Be thoughtful about the number of steps.** A process list should include between three and ten steps to prevent it from getting too unwieldy or confusing.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Add other types of content as needed.** The body of each list item can be used to display additional rich text content including HTML, images, and other components like buttons, images, simple lists, links, and tables.
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
 - **Use consistent headings.** Headings should be written with a parallel structure (e.g., all start with an action verb, etc.), including consistent end punctuation, and should be short enough to fit on one line, if possible.

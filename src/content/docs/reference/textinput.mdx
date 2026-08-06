@@ -47,19 +47,41 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`}>View text area in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **Unpredictable or freeform responses.** If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
-- **Input simplicity.** When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a date picker.
-- **Pasted content.** When users want to be able to paste in a response.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Unpredictable or freeform responses.** If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Input simplicity.** When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a date picker.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Pasted content.** When users want to be able to paste in a response.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Predetermined input options.** When users are choosing from a specific set of options.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Predetermined input options.** When users are choosing from a specific set of options.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Use fields appropriate to the length of the input.** The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
-- **Consider the mobile context.** Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
-- **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.
-- **Avoid placeholder text.** Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+<IconList>
+    <IconListItem icon="report">
+        **Use fields appropriate to the length of the input.** The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Consider the mobile context.** Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid placeholder text.** Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines

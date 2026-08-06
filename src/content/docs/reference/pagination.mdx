@@ -27,24 +27,56 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`}>View pagination in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **Search results.** Pagination is most commonly used with paginated search results. Our Pagination component is designed to work both with results that have a discrete number of results pages (bounded) and those with an uncalculated number of results pages (unbounded). See [Using the Pagination component](https://designsystem.digital.gov/components/pagination/#using-the-pagination-component) in USWDS, for more on bounded and unbounded sets.
-- **Multi-page collections of related items.** Splitting a large collection of related items into individual pages can improve browsability and scannability. Common examples of multi-page collections include articles related to a category or tag, content archives, and history or activity.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Search results.** Pagination is most commonly used with paginated search results. Our Pagination component is designed to work both with results that have a discrete number of results pages (bounded) and those with an uncalculated number of results pages (unbounded). See [Using the Pagination component](https://designsystem.digital.gov/components/pagination/#using-the-pagination-component) in USWDS, for more on bounded and unbounded sets.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Multi-page collections of related items.** Splitting a large collection of related items into individual pages can improve browsability and scannability. Common examples of multi-page collections include articles related to a category or tag, content archives, and history or activity.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Meaningful page groupings.** If you have long content split meaningfully, or grouped by subject or theme, use conventional navigation like Side navigation.
-- **Steps in a sequence.** If you need to indicate progress in a series of steps that must be completed in succession, like an onboarding flow, consider using the step indicator component.
-- **Short collections.** If the length of the entire collection is less than 3-4 screen lengths long, consider showing all the items at once instead of paginating.
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Meaningful page groupings.** If you have long content split meaningfully, or grouped by subject or theme, use conventional navigation like Side navigation.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Steps in a sequence.** If you need to indicate progress in a series of steps that must be completed in succession, like an onboarding flow, consider using the step indicator component.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Short collections.** If the length of the entire collection is less than 3-4 screen lengths long, consider showing all the items at once instead of paginating.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Show the size of the paginated set.** Users want to know the length of a paginated section. This is most commonly accomplished by always showing the last page as the last item in the pagination navigation. Users should also know if the set is unbounded and has no discrete length. For example, some large search results will not have a “last” page. The USWDS Pagination component will always show the last page of the set as a navigable link, or show an ellipsis at the end of the links if the set is unbounded.
-- **Highlight the current page.** Pagination shows the current page the user is on in relation to the entire collection of pages.
-- **Always include the first, previous, and next pages.** Users should always be able to navigate to each of these pages from any page in the set.
-- **Show navigation items in a single line.** Pagination can be hard to understand — and individual items can be more difficult to select — when the items break over one line. Don’t split the navigation items over multiple lines. Avoid using Pagination in any context where it would be more than one line long.
-- **Indicate any missing pages.** Don’t include out-of-sequence items directly adjacent to one another. Whenever there are pages missing — either between two elements, or at the end of an unbounded sequence — indicate the missing pages with an indicator like a non-selectable ellipsis.
-- **Use as few navigation items as possible.** Showing more pages than necessary tends to add complexity and use more space without proportional increases to the component’s functionality. Focus on the essential actions and avoid adding more items to Pagination just to fill space.
-- **Use generous touch targets.** Use touch targets that are big enough to select with any finger and have enough separation to avoid mistakes.
-- **Optimize the number of entries per page.** Consider page load, performance, and the user’s scrolling preferences when determining how many items are displayed on each page. Some paginated content benefits from user control over the number of elements to show on each page.
+<IconList>
+    <IconListItem icon="report">
+        **Show the size of the paginated set.** Users want to know the length of a paginated section. This is most commonly accomplished by always showing the last page as the last item in the pagination navigation. Users should also know if the set is unbounded and has no discrete length. For example, some large search results will not have a “last” page. The USWDS Pagination component will always show the last page of the set as a navigable link, or show an ellipsis at the end of the links if the set is unbounded.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Highlight the current page.** Pagination shows the current page the user is on in relation to the entire collection of pages.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Always include the first, previous, and next pages.** Users should always be able to navigate to each of these pages from any page in the set.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Show navigation items in a single line.** Pagination can be hard to understand — and individual items can be more difficult to select — when the items break over one line. Don’t split the navigation items over multiple lines. Avoid using Pagination in any context where it would be more than one line long.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Indicate any missing pages.** Don’t include out-of-sequence items directly adjacent to one another. Whenever there are pages missing — either between two elements, or at the end of an unbounded sequence — indicate the missing pages with an indicator like a non-selectable ellipsis.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use as few navigation items as possible.** Showing more pages than necessary tends to add complexity and use more space without proportional increases to the component’s functionality. Focus on the essential actions and avoid adding more items to Pagination just to fill space.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use generous touch targets.** Use touch targets that are big enough to select with any finger and have enough separation to avoid mistakes.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Optimize the number of entries per page.** Consider page load, performance, and the user’s scrolling preferences when determining how many items are displayed on each page. Some paginated content benefits from user control over the number of elements to show on each page.
+    </IconListItem>
+</IconList>
 
 ## Content Guidance 
 - TBD

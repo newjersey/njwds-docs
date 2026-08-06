@@ -27,19 +27,41 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}>View checkbox in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **To display multiple answers.** When a user can select any number of choices from a list.
-- **To allow users to toggle answers.** When a user needs to acknowledge acceptance of something (like terms of service) or switch between two opposite states, such as unchecked = “no” and checked = “yes.”
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To display multiple answers.** When a user can select any number of choices from a list.
+    </IconListItem>
+    <IconListItem icon="check">
+        **To allow users to toggle answers.** When a user needs to acknowledge acceptance of something (like terms of service) or switch between two opposite states, such as unchecked = “no” and checked = “yes.”
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Single-select only.** If a user can only select one option from a list of many, use radio buttons instead. 
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Single-select only.** If a user can only select one option from a list of many, use radio buttons instead. 
+    </IconListItem>
+</IconList>
 
 ### Requirements for use:
-- **Make the label selectable.** Users should be able to select either the text label or the checkbox to select or deselect an option.
-- **List options vertically.** Horizontal listings can make it difficult to tell which label pertains to which checkbox.
-- **Use logical labels.** Make sure that the label makes both states — checked and unchecked — clear to the user. If that’s not possible, consider using a radio button with two individual options instead. Then both states can have their own clearly marked label.
-- **Use adequate touch targets.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
-- **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+<IconList>
+    <IconListItem icon="report">
+        **Make the label selectable.** Users should be able to select either the text label or the checkbox to select or deselect an option.
+    </IconListItem>
+    <IconListItem icon="report">
+        **List options vertically.** Horizontal listings can make it difficult to tell which label pertains to which checkbox.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use logical labels.** Make sure that the label makes both states — checked and unchecked — clear to the user. If that’s not possible, consider using a radio button with two individual options instead. Then both states can have their own clearly marked label.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use adequate touch targets.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+    </IconListItem>
+</IconList>
 
 ## Content Guidance 
 - **Use positive statements.** Negative language in labels can be counterintuitive. For example, use “I want to receive a promotional email” instead of “I don’t want to receive a promotional email.”

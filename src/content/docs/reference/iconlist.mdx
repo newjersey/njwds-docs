@@ -27,17 +27,37 @@ import { LinkButton } from '@astrojs/starlight/components';
  🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon-list--docs`}>View icon list in Storybook</a>
   
 ## Usage Guidelines
-### Use this component for
-- **Do-and-don’t lists.** Icon lists help reinforce the message of a list item using a visual cue as a progressive enhancement. This can be effective in a list, or pair of lists, that describe actions users should do or not do. A pair of icons with clear and opposite meaning, like `check_circle` and `cancel`, create an effective do-and-don’t list.
-- **Features and metadata.** Use an icon list to enhance a list of features, like a campsite’s amenities or other lists where icons might help users understand content at a glance.
-- **Important tasks or requirements.** Use an icon list to help users find, distinguish, and verify related steps or tasks that can be completed in any order, like a checklist of items to pack or documents to complete.
-- **Printable checklists.** Users may wish to print a page and use it as a physical checklist. This kind of static checklist is not an interactive form. Use an icon like `check_box_outline_blank` to provide a space for physical checking.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Do-and-don’t lists.** Icon lists help reinforce the message of a list item using a visual cue as a progressive enhancement. This can be effective in a list, or pair of lists, that describe actions users should do or not do. A pair of icons with clear and opposite meaning, like `check_circle` and `cancel`, create an effective do-and-don’t list.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Features and metadata.** Use an icon list to enhance a list of features, like a campsite’s amenities or other lists where icons might help users understand content at a glance.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Important tasks or requirements.** Use an icon list to help users find, distinguish, and verify related steps or tasks that can be completed in any order, like a checklist of items to pack or documents to complete.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Printable checklists.** Users may wish to print a page and use it as a physical checklist. This kind of static checklist is not an interactive form. Use an icon like `check_box_outline_blank` to provide a space for physical checking.
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **Multi-step forms or wizards.** The step indicator is best for communicating progress through a form or process that spans several different pages.
-- **Sequential steps.** Use a standard ordered list or process list if the items must be completed sequentially.
-- **Using complex iconography or graphics.** Use the graphic list if you plan on using different large, complex, or multicolored images with each list item. The icon should only reinforce the text of the list item. If the image needs to convey unique meaning, this is a job for an illustration not an icon.
-- **Improving readability of running text.** The standard unordered list is best for displaying simple lists that are part of running text. 
+### Use this component for:
+<IconList>
+    <IconListItem icon="close">
+        **Multi-step forms or wizards.** The step indicator is best for communicating progress through a form or process that spans several different pages.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Sequential steps.** Use a standard ordered list or process list if the items must be completed sequentially.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Using complex iconography or graphics.** Use the graphic list if you plan on using different large, complex, or multicolored images with each list item. The icon should only reinforce the text of the list item. If the image needs to convey unique meaning, this is a job for an illustration not an icon.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Improving readability of running text.** The standard unordered list is best for displaying simple lists that are part of running text. 
+    </IconListItem>
+</IconList>
 
 ## Content Guidance
 - **Use consistent headings.** Headings should be written with parallel structure. For example, start each with an action verb. When possible, keep headings short enough to fit on one or two lines.
