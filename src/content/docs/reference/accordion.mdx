@@ -18,36 +18,37 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`}>View accordion in Storybook</a>
   
-## Accordion Usage
-### Use this component for
-<ul class="usa-icon-list usa-icon-list--size-lg">
-    <li class="usa-icon-list__item flex-align-center">
-    <div class="usa-icon-list__icon">
-        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-        <use href="/assets/img/sprite.svg#check"></use>
-      </svg>
-    </div>
-    <div class="usa-icon-list__content">If users will only need a few specific pieces of content within a page.</div>
-    </li>
+## Usage Guidelines
+### Use this component for:
 
-    <li class="usa-icon-list__item flex-align-center">
-    <div class="usa-icon-list__icon">
-        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-        <use href="/assets/img/sprite.svg#check"></use>
-        </svg>
-    </div>
-    <div class="usa-icon-list__content">If you have only a small space to display a lot of content.</div>
-    </li>
-</ul>
+<IconList size='lg'>
+    <IconListItem icon="check">
+        **If users will only need a few specific pieces of content within a page.**
+    </IconListItem>
+    <IconListItem icon="check">
+        **If you have only a small space to display a lot of content.**
+    </IconListItem>
+</IconList>
 
-### Use something else for
-- **If users need to see most or all of the information on a page.** Use well-formatted text instead.
-- **If there is not enough content to warrant condensing.** Accordions increase cognitive load and interaction cost because users have to make decisions about what headers to click on.
+### Use something else for:
+<IconList size='lg'>
+    <IconListItem icon="close">
+        **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
+    </IconListItem>
+    <IconListItem icon="close">
+        **If there is not enough content to warrant condensing.** Accordions increase cognitive load and interaction cost because users have to make decisions about what headers to click on.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
-- **Give interactive elements enough space.** Make sure interactive elements within the collapsible region are far enough from the headers that users don't accidentally trigger a collapse. (The exact distance depends on the device.)
-
+### Requirements for use: 
+<IconList size='lg'>
+    <IconListItem icon="report">
+        **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Give interactive elements enough space.** Make sure interactive elements within the collapsible region are far enough from the headers that users don't accidentally trigger a collapse. (The exact distance depends on the device.)
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
 - TBD
