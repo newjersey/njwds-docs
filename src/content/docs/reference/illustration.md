@@ -7,7 +7,7 @@ description: Documentation for illustration component.
   
 🚧 Custom implementation, not in Grove Storybook or USWDS 🚧
 
-## Illustration Usage
+## Usage Guidelines
 
 ### Use this component for
 - **Simplifying complexity or storytelling is needed** Illustrations can depict complex ideas, tell a story, or add emotional depth to content. They are suitable for scenarios where more detailed visual context is beneficial.
