@@ -16,6 +16,7 @@
   --grove-font-heading: "Plus Jakarta Sans", var(--sl-font), var(--sl-font-system);
   --sl-text-h1: 2.5rem;
   --sl-text-h2: 2rem;
+  --sl-text-h3: 1.5rem;
   --sl-nav-gap: 0.625rem;
   --sl-nav-pad-x: 1.25rem;
 
@@ -151,8 +152,17 @@ a.site-title {
   .content-panel {
     padding-block: 0;
   }
-  h2 {
+
+  .level-h2 {
     margin-block: 4rem 2rem;
+    /* make fully global after correcting homepage headings to h3 */
+    h2 {
+      color: var(--grove-primary-500);
+    }
+  }
+
+  .level-h3 {
+    margin-block: 1.5rem 0.625rem;
   }
 }
 
