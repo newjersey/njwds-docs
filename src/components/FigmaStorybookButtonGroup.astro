@@ -1,21 +1,31 @@
 ---
+import figmaIcon from '../assets/figma.png';
+
 interface Props {
   figmaUrl?: string;
   storybookUrl?: string;
 }
 
 const { figmaUrl, storybookUrl } = Astro.props;
+
 ---
 
 <ul class="usa-button-group margin-top-1 flex-wrap">
   {figmaUrl && (
     <li class="usa-button-group__item">
-      <a href={figmaUrl} class="usa-button usa-button--outline grove-button-outline">Figma</a>
-    </li>
-  )}
+      <a href={figmaUrl} class="usa-button usa-button--outline grove-button-outline">
+        <img class="usa-media-block__img" aria-hidden="true" src={figmaIcon.src}/>
+        Figma
+      </a>
+    </li>)}
   {storybookUrl && (
     <li class="usa-button-group__item">
-      <a href={storybookUrl} class="usa-button grove-button">Storybook</a>
+      <a href={storybookUrl} class="usa-button grove-button">
+          <svg class="usa-icon minw-3 minh-3" aria-hidden="true" focusable="false" role="img">
+            <use href={`/assets/img/sprite.svg#code`} />
+          </svg>
+        Storybook
+      </a>
     </li>
   )}
 </ul>
