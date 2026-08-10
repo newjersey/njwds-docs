@@ -147,7 +147,7 @@ a.site-title {
   --sl-content-width: 75rem;
   --sl-content-pad-x: 1.5rem;
   @media (min-width: 40rem) {
-    --sl-content-pad-x: 4rem;
+    --sl-content-pad-x: 2.5rem;
   }
 
   @media (min-width: 70rem) {
