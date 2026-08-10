@@ -2,19 +2,20 @@
 import FigmaStorybookButtonGroup from '../components/FigmaStorybookButtonGroup.astro';
 interface Props {
   name: string;
+  category?: 'COMPONENTS' | 'STYLES' | 'PATTERNS' | 'TEMPLATES'
   description?: string;
   figmaUrl?: string;
   storybookUrl?: string;
   wcagBadge?: boolean;
 }
 
-const { name, description, figmaUrl, storybookUrl, wcagBadge = true } = Astro.props;
+const { name, category, description, figmaUrl, storybookUrl, wcagBadge = true } = Astro.props;
 ---
 <section>
     <div class="padding-top-6 padding-bottom-205 tablet:display-flex">
         <div class="flex-fill tablet:margin-right-2">
             <header>
-                <span class="font-body-xs text-base">COMPONENT</span>
+                {category && (<span class="font-body-xs text-base">{category}</span>)}
                 <h1 class="margin-0">{name}</h1>
             </header>
             <p>{description}</p>

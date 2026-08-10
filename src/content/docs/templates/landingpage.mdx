@@ -1,17 +1,20 @@
 ---
 title: Landing page
 description: Template for landing page.
+hideTitle: true
 ---
-
-**Provide someone’s first impression of your agency or program.**
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-<FigmaStorybookButtonGroup 
+<ComponentHeader
+  name="Landing page"
+  category="TEMPLATES"
+  description="Provide someone’s first impression of your agency or program."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3705-5957&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-landing--docs`}
+  wcagBadge={false}
 />
 
 <iframe 
