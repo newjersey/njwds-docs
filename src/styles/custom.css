@@ -150,7 +150,7 @@ a.site-title {
     --sl-content-pad-x: 2.5rem;
   }
 
-  @media (min-width: 70rem) {
+  @media (min-width: 72rem) {
     --sl-mobile-toc-height: 0rem;
   }
 
