@@ -26,7 +26,6 @@
   --grove-logo-width: 34px;
   --grove-logo-text-color: var(--grove-white);
   --grove-search-text-color: var(--grove-white);
-  --sl-sidebar-pad-x: 0;
 
   --sl-mobile-toc-height: 3.4375rem;
 
@@ -170,7 +169,7 @@ body:has([data-page-header]) .main-frame {
   }
 
   .level-h3 {
-    margin-block: 1.5rem 0.625rem;
+    margin-block: 2rem 0.625rem;
   }
 }
 

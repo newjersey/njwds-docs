@@ -12,15 +12,15 @@ const { figmaUrl, storybookUrl } = Astro.props;
 
 <ul class="usa-button-group margin-top-4 tablet:margin-top-0 flex-wrap tablet:flex-justify-end width-full tablet:width-auto">
   {figmaUrl && (
-    <li class="usa-button-group__item">
-      <a href={figmaUrl} class="usa-button usa-button--outline grove-button-outline">
+    <li class="usa-button-group__item tablet:margin-top-0 tablet:margin-bottom-1">
+      <a href={figmaUrl} class="usa-button usa-button--outline grove-button-outline compact-button">
         <img class="usa-media-block__img" aria-hidden="true" src={figmaIcon.src}/>
         Figma
       </a>
     </li>)}
   {storybookUrl && (
-    <li class="usa-button-group__item">
-      <a href={storybookUrl} class="usa-button grove-button">
+    <li class="usa-button-group__item tablet:margin-top-0 tablet:margin-bottom-1">
+      <a href={storybookUrl} class="usa-button grove-button compact-button">
           <svg class="usa-icon minw-3 minh-3" aria-hidden="true" focusable="false" role="img">
             <use href={`/assets/img/sprite.svg#code`} />
           </svg>
@@ -29,3 +29,9 @@ const { figmaUrl, storybookUrl } = Astro.props;
     </li>
   )}
 </ul>
+
+<style>
+  .compact-button{
+    padding: 0.75rem 1.25rem
+  }
+</style>
