@@ -202,8 +202,6 @@ Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/
 - **Use Proper Labels and Attributes.** Each file input should have a `label` element.** Associate the `label` to your input by defining the value of the label’s `for` attribute with the input’s `id`.
 - **Use as a Progressive Enhancement** The file input component should be a progressive enhancement of `<input type="file" />`. If the component doesn’t initialize, it should still work and appear like a standard file input.
 
-**Known Issues** Screen reader users found it confusing to have both “Drag file here” and “Choose from folder” actions described in a single button. 
-
 ## Code utilities 
 
 ### File input properties 
@@ -212,7 +210,10 @@ Use the [USWDS file input accessibility tests](https://designsystem.digital.gov/
 - **Limit accepted file types with the `accept` attribute.** Add the `accept` attribute to the `input` element when you want to limit the types of files your input can accept. If a user selects a file that does not match the specified type, the file will not be attached and the file input will display an error message. [Learn more about the `accept` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file#accept) [mozilla.org].
 - **Internet Explorer and older versions of Edge.** These browsers do not support dragging items to a file input. Instructions to drag files are removed for these browsers.
 - **Customizing the error message.** Add the data attribute `data-errorMessage` to `usa-file-input` to include a custom error message.
-  
+
+## Known Issues
+Screen reader users found it confusing to have both “Drag file here” and “Choose from folder” actions described in a single button. 
+
 ## Resources
 ### Grove links 
 | File | Purpose | 
