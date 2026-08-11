@@ -18,6 +18,7 @@ export default defineConfig({
         "./src/components/PageHeader.astro",
         "./src/components/IconList.astro",
         "./src/components/IconListItem.astro",
+        "./src/components/ViewStorybookButton.astro",
       ],
     }),
     starlight({
