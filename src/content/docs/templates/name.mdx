@@ -1,17 +1,20 @@
 ---
 title: Name form
 description: Form template for inputting name.
+hideTitle: true
 ---
-
-**Collect a full name as separate elements of data.**
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Name form"
+  category="TEMPLATES"
+  description="Collect a full name as separate elements of data."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3489-2199&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-name-form--docs`}
+  wcagBadge={false}
 />
 
 <iframe 
@@ -22,24 +25,23 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-name-form--docs`}>View name form template in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-name-form--docs`} />
 
 ## Name Form Template Usage
 
-### 👍 Use this template for
+### Use this template for
 - **You need separate data elements.** Follow this pattern when you need to ask for a user’s name as part of your service. Only ask for a name if you need it.
 
-### 👎 Consider something else for
+### Use this component for:
 - **You don’t need separate data elements.** If you don’t need to parse out the separate pieces of a person’s name, consider letting them enter it into a single text field.
 
-## 🚫 What to ensure / avoid
+## Requirements for use:
 - **Label each field.** Be sure each field is properly labeled.
 - **Avoid select elements.** Leave the title and suffix fields as text boxes instead of offering select menus. There are many possible titles and suffixes; text boxes accommodate them all.
 - **Don’t restrict characters.** Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.
 
 ## Content guidelines
-- TBD
+Content guidelines in progress.
 
 ## Accessibility guidance
 Follow input guidance. These text fields should follow the [accessibility guidelines for all text inputs](https://designsystem.digital.gov/components/text-input/).

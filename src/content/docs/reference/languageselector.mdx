@@ -1,17 +1,15 @@
 ---
 title: Language Selector
 description: Documentation for language selector component.
+hideTitle: true
 ---
-
-**The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in.**
-
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Language Selector"
+  category="COMPONENTS"
+  description="The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1726-757&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`}
 />
@@ -24,8 +22,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`}>View language selector in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
 ## Language Selector - 2 languages
 
 <iframe 
@@ -36,15 +33,24 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`}>View language selector in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
+### Usage Guidelines
+#### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Two languages are available.** Help users find information in their preferred language when equivalent translated content is available in two languages.
+    </IconListItem>
+</IconList>
 
-### Usage
-#### 👍 Use this component for
-- **Two languages are available.** Help users find information in their preferred language when equivalent translated content is available in two languages.
-
-#### 👎 Consider something else for
-- **Limited translated content is available.** Consider using something else if the entirety of your content is not translated to a second language.
-- **When content is available in three or more languages** — see the language selector with three or more languages pattern.
+#### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Limited translated content is available.** Consider using something else if the entirety of your content is not translated to a second language.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When content is available in three or more languages** — see the language selector with three or more languages pattern.
+    </IconListItem>
+</IconList>
 
 ### Content guidelines
 - **Capitalize the name of each language** (for example, English, Español).
@@ -74,15 +80,24 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`}>View language selector in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
+### Usage Guidlines
+#### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Content is available in three or more languages.** Use this component if your site offers equivalent content in three or more languages.
+    </IconListItem>
+</IconList>
 
-### Usage
-#### 👍 Use this component for
-- **Content is available in three or more languages.** Use this component if your site offers equivalent content in three or more languages.
-
-#### 👎 Consider something else for
-- **Incomplete content translations.** If your site includes content in three or more languages but the majority of content is not available in each language.
-- **When content is available in only two languages** — see the language selector with two languages pattern.
+#### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Incomplete content translations.** If your site includes content in three or more languages but the majority of content is not available in each language.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When content is available in only two languages** — see the language selector with two languages pattern.
+    </IconListItem>
+</IconList>
 
 ### Content guidelines
 - Label the dropdown menu **Languages** or **Select languages**.
@@ -162,6 +177,9 @@ Embedding tools onto existing websites requires special consideration regarding 
 | Does the site already provide a language switcher that affects all content? | If yes, default to site selector unless the tool has specific requirements. |
 | Is the tool dynamically loading content in a way that needs language-specific data? | If the tool is using a separate CMS or needs to accommodate languages or a multi-lingual content strategy beyond the scope of the site-specific control, then use a separate language selector. |
 | Can the tool detect and adapt to the site's language setting? | If yes, then avoid using a separate selector to minimize user error/confusion. |
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

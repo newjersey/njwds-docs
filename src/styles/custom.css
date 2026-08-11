@@ -1,6 +1,7 @@
 /* Override header/banner background color */
 :root {
   --grove-primary-500: #466c04; /* USWDS green-60v */
+  --grove-primary-600: #2f4a0b; /* USWDS green-70v */
   --grove-primary-700: #193324; /* USWDS mint-80  */
   --grove-base-100: #fcfcfb; /* USWDS gray-warm-1  */
   --grove-base-700: #76766a; /* USWDS gray-warm-50 */
@@ -15,6 +16,7 @@
   --grove-font-heading: "Plus Jakarta Sans", var(--sl-font), var(--sl-font-system);
   --sl-text-h1: 2.5rem;
   --sl-text-h2: 2rem;
+  --sl-text-h3: 1.5rem;
   --sl-nav-gap: 0.625rem;
   --sl-nav-pad-x: 1.25rem;
 
@@ -24,7 +26,6 @@
   --grove-logo-width: 34px;
   --grove-logo-text-color: var(--grove-white);
   --grove-search-text-color: var(--grove-white);
-  --sl-sidebar-pad-x: 0;
 
   --sl-mobile-toc-height: 3.4375rem;
 
@@ -43,7 +44,7 @@ starlight-theme-select {
 
 /* Style the mobile menu button */
 starlight-menu-button button {
-  background-color: #2f4a0b;
+  background-color: var(--grove-primary-600);
   color: #fff;
 }
 
@@ -51,7 +52,7 @@ starlight-menu-button button {
 starlight-menu-button button:hover,
 starlight-menu-button button:focus {
   background-color: var(--grove-white);
-  color: #2f4a0b;
+  color: var(--grove-primary-600);
 }
 
 .sidebar summary {
@@ -141,6 +142,37 @@ a.site-title {
   table-layout: auto;
 }
 
+/* TODO: generalize once content pages are redesigned */
+body:has([data-page-header]) .main-frame {
+  --sl-content-width: 75rem;
+  --sl-content-pad-x: 1.5rem;
+  @media (min-width: 40rem) {
+    --sl-content-pad-x: 2.5rem;
+  }
+
+  @media (min-width: 72rem) {
+    --sl-mobile-toc-height: 0rem;
+  }
+
+  .content-panel {
+    padding-block: 0;
+  }
+  .level-h2 {
+    margin-block: 3rem 2rem;
+    @media (min-width: 40rem) {
+      margin-block: 4rem 2rem;
+    }
+    /* TODO:make fully global after correcting homepage headings to h3 */
+    h2 {
+      color: var(--grove-primary-500);
+    }
+  }
+
+  .level-h3 {
+    margin-block: 2rem 0.625rem;
+  }
+}
+
 body:has(.grove-home-section-container) {
   --sl-content-gap-y: 0;
   --sl-content-width: none;
@@ -154,6 +186,27 @@ body:has(.grove-home-section-container) {
   width: 2rem;
   height: 2rem;
   border-radius: 2px;
+}
+
+.grove-button {
+  background-color: var(--grove-primary-500);
+  &:hover {
+    background-color: var(--grove-primary-700);
+  }
+}
+.grove-button-outline,
+.grove-button-outline:visited {
+  box-shadow: inset 0 0 0 2px var(--grove-primary-600);
+  color: var(--grove-primary-600);
+  accent-color: var(--grove-primary-600);
+  &:hover {
+    box-shadow: inset 0 0 0 2px var(--grove-primary-700);
+    color: var(--grove-primary-700);
+  }
+}
+
+.grove-compact-button {
+  padding: 0.75rem 1.25rem;
 }
 
 .grove-home-section-container {

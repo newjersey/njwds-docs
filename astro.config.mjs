@@ -15,6 +15,10 @@ export default defineConfig({
       imports: [
         "./src/components/FigmaStorybookButtonGroup.astro",
         "./src/components/GroveColorBlock.astro",
+        "./src/components/PageHeader.astro",
+        "./src/components/IconList.astro",
+        "./src/components/IconListItem.astro",
+        "./src/components/ViewStorybookButton.astro",
       ],
     }),
     starlight({
