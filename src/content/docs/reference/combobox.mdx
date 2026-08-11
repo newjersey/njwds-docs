@@ -26,7 +26,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 
 ## Usage Guidelines
-⚠️ Recommendation to use the Select component rather than combo box at this time due to accessibility and usablity issues.
+Recommendation to use the Select component rather than combo box at this time due to accessibility and usablity issues.
 
 ### Use this component for:
 <IconList>
@@ -48,7 +48,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ## Requirements for use:
 <IconList>
     <IconListItem icon="report">
-        **⚠️Make sure to test.⚠️** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the **“UI of last resort.”** Many users find them confusing and difficult to use.
+        **Make sure to test.** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the **“UI of last resort.”** Many users find them confusing and difficult to use.
     </IconListItem>
     <IconListItem icon="report">
         **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
@@ -80,7 +80,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 ## Accessibility guidance
 Use the [USWDS combo box accessibility tests](https://designsystem.digital.gov/components/combo-box/accessibility-tests) to test combo box implementation.
-- **⚠️Known assistive technology issues.⚠️** Testing with people using assistive technology revealed [usability concerns](https://github.com/uswds/uswds-site/issues/1898) that require additional investigation. At this time, consider using a [Select component](https://designsystem.digital.gov/components/select) instead of a Combo box. More research and testing is planned to better understand and address these accessibility issues. If you would like to contribute to improving this component, please [join USWDS community](https://designsystem.digital.gov/about/community/) if you'd like to share your feedback.
+- **Known assistive technology issues.** Testing with people using assistive technology revealed [usability concerns](https://github.com/uswds/uswds-site/issues/1898) that require additional investigation. At this time, consider using a [Select component](https://designsystem.digital.gov/components/select) instead of a Combo box. More research and testing is planned to better understand and address these accessibility issues. If you would like to contribute to improving this component, please [join USWDS community](https://designsystem.digital.gov/about/community/) if you'd like to share your feedback.
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the accessibility requirements that apply to all form controls.
 - **Always use a label.** Make sure your select element has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the menu read “Select a state” by default).
 - **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
