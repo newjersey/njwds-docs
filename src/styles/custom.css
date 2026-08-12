@@ -143,7 +143,7 @@ a.site-title {
 }
 
 /* TODO: generalize once content pages are redesigned */
-body:has([data-page-header]) .main-frame {
+body:has[data-has-sidebar] .main-frame {
   --sl-content-width: 75rem;
   --sl-content-pad-x: 1.5rem;
   @media (min-width: 40rem) {
@@ -157,6 +157,7 @@ body:has([data-page-header]) .main-frame {
   .content-panel {
     padding-block: 0;
   }
+
   .level-h2 {
     margin-block: 3rem 2rem;
     @media (min-width: 40rem) {
@@ -170,6 +171,10 @@ body:has([data-page-header]) .main-frame {
 
   .level-h3 {
     margin-block: 2rem 0.625rem;
+  }
+
+  p {
+    max-width: none;
   }
 }
 
