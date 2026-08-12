@@ -16,6 +16,10 @@ import contentguide from '../../assets/HomeContentGuide.png';
 import wordlist from '../../assets/HomeWordList.png';
 import graphicfigma from '../../assets/HomeResourcesFigma.png';
 import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
+import facebook from '../../assets/facebook.png';
+import twitter from '../../assets/twitter.png';
+import youtube from '../../assets/youtube.png';
+import instagram from '../../assets/instagram.png';
 
 <GroveHero />
 <section class="grove-home-section-container">
@@ -141,215 +145,82 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
   </section>
 </div>
 </section>
-
 <footer class="usa-footer">
   <div class="grid-container usa-footer__return-to-top">
     <a href="#">Return to top</a>
   </div>
-  <div style="background-color: #fbfcfd">
-    <div class="grid-container">
-      <feedback-widget contact-link="mailto:team@innovation.nj.gov">
-    <div class="feedback-container">
-      <div id="ratingPrompt" class="flex-box">
-        <span class="feedback-text">Did you find what you were looking for on this page?</span>
-        <div class="feedback-button-group">
-          <button id="yesButton" class="feedback-button">
-            Yes
-          </button>
-          <button id="noButton" class="feedback-button">
-            No
-          </button>
-        </div>
-      </div>
-      <div id="commentPrompt">
-        <form id="commentForm">
-          <div class="grid-box">
-            <div>
-              <label id="commentPromptText" for="comment" class="feedback-text">Great! We're looking for ways to improve this page — what ideas come to mind?</label>
-              <p class="disclaimer-text">
-                Your feedback helps improve this web page. For specific questions about your situation, <a target="_blank" rel="noopener noreferrer" href="mailto:team@innovation.nj.gov">contact us</a>.
-              </p>
-            </div>
-            <div>
-              <textarea type="text" id="comment" name="comment" class="feedback-input" required=""></textarea>
-              <div id="commentSubmitError" class="error-text">
-                Try again, please. We didn't get your answer because of a technical issue.
-              </div>
-              <button id="commentSubmit" class="feedback-button float-right submit-button" type="submit">
-                Send feedback
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div id="emailPrompt">
-        <form id="emailForm">
-          <div class="grid-box">
-            <div>
-              <div class="feedback-text">Thanks for sharing your thoughts!</div>
-              <p class="disclaimer-text">To hear about paid feedback opportunities in the future, join our user testing list.</p>
-            </div>
-            <div>
-              <label for="email" class="email-label">Email address</label>
-              <input type="email" id="email" name="email" class="feedback-input email-input" required=""/>
-              <div id="emailSubmitError" class="error-text">
-                Try again, please. We didn't get your answer because of a technical issue.
-              </div>
-              <button id="emailSubmit" class="feedback-button float-right submit-button" type="submit">
-                Join the list
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div id="emailConfirmation" class="email-confirmation">
-        <img src="https://beta.nj.gov/files/feedback-widget/check_icon.svg" alt="">
-        <div class="email-confirmation-text">Thanks for signing up!</div>
-      </div>
-    </div>
-    </feedback-widget>
-    </div>
-  </div>
-  <div class="usa-footer__secondary-section">
-    <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
-          <div class="mobile-lg:grid-col-auto">
-            <h3 class="usa-footer__logo-heading">New Jersey Innovation Authority</h3>
-            <p>State of New Jersey</p>
-            <address class="usa-footer__address">
-              P.O. Box 211<br>Trenton, New Jersey 08625-0211
-            </address>
-            <p>
-              <a href="mailto:team@innovation.nj.gov">team@innovation.nj.gov</a>
-            </p>
-            <p>
-              <a class="text-base" href="/tos/">Privacy, Terms &amp; License</a>
-            </p>
-          </div>
-        </div>
-        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-          <div class="usa-footer__social-links grid-row grid-gap-1">
-            <div class="grid-col-auto">
-              <a class="usa-social-link" rel="noopener noopener noreferrer" target="_blank" href="https://github.com/newjersey">
-                <img class="usa-social-link__icon" src="/assets/njwds/dist/img/usa-icons/github.svg" alt="GitHub">
-              </a>
-            </div>
-            <div class="grid-col-auto">
-              <a class="usa-social-link" rel="noopener noopener noreferrer" target="_blank" href="https://www.facebook.com/NJGov/">
-                <img class="usa-social-link__icon" src="/assets/njwds/dist/img/usa-icons/facebook.svg" alt="Facebook">
-              </a>
-            </div>
-            <div class="grid-col-auto">
-              <a class="usa-social-link" rel="noopener noopener noreferrer" target="_blank" href="https://twitter.com/njgov">
-                <img class="usa-social-link__icon" src="/assets/njwds/dist/img/usa-icons/twitter.svg" alt="Twitter">
-              </a>
-            </div>
-            <div class="grid-col-auto">
-              <a class="usa-social-link usa-social-link--linkedin" rel="noopener noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/state-of-new-jersey/">
-                <img class="usa-social-link__icon" src="/assets/njwds/dist/img/usa-icons/linkedin.svg" alt="Linkedin">
-              </a>
-            </div>
-            <div class="grid-col-auto">
-              <a class="usa-social-link" rel="noopener noopener noreferrer" target="_blank" href="https://www.instagram.com/njgov/">
-                <img class="usa-social-link__icon" src="/assets/njwds/dist/img/usa-icons/instagram.svg" alt="Instagram">
-              </a>
-            </div>
-          </div>
-          <div class="usa-sign-up float-right grid-gap-1">
-            <p>
-              <a href="#modal-signup" aria-controls="modal-signup" data-open-modal="" role="button"><svg class="usa-icon nj-icon--size-scale margin-bottom-neg-2px margin-right-05" aria-hidden="true" role="img">
-                  <use xlink:href="/assets/njwds/dist/img/sprite.svg#mail"></use></svg>Sign up for updates</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<div class="usa-identifier">
-  <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
-    <div class="usa-identifier__container">
-      <div class="usa-identifier__logos">
-        <a href="https://nj.gov" class="usa-identifier__logo" target="_blank" rel="noopener noreferrer">
-          <img class="usa-identifier__logo-img" src="/assets/njwds/dist/img/nj-logo-gray-20.png" alt="the State of New Jersey logo" role="img">
-        </a>
-      </div>
-      <div class="usa-identifier__identity" aria-label="Agency description">
-        <p class="usa-identifier__identity-domain"></p>
-        <p class="usa-identifier__identity-disclaimer">
-          An official website of
-          <a href="https://nj.gov" target="_blank" rel="noopener noreferrer">the State of New Jersey</a>
-        </p>
-      </div>
-    </div>
-  </section>
-  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
-    <div class="usa-identifier__container">
-      <ul class="usa-identifier__required-links-list">
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/governor/admin/about/" class="usa-identifier__required-link" target="_blank" rel="noopener noreferrer">
-            Governor Mikie Sherrill
-          </a>
+  <div class="usa-footer__primary-section">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <ul class="grid-row grid-gap">
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="/guides/gettingstarted/">Getting Started</a>
         </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/governor/admin/lt/" class="usa-identifier__required-link" target="_blank" rel="noopener noreferrer">
-            Lt. Governor Dr. Dale G. Caldwell
-          </a>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content margin-top-0">
+          <a class="usa-footer__primary-link" href="/content/overview">Content</a>
         </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            NJ Home
-          </a>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content margin-top-0">
+          <a class="usa-footer__primary-link" href="/styles/typography/">Styles</a>
         </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/nj/gov/njgov/alphaserv.html" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            Services A to Z
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/nj/gov/deptserv/" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            Departments/Agencies
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/faqs/" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            FAQs
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/nj/feedback.html" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            Contact Us
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/nj/privacy.html" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            Privacy Notice
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/nj/legal.html" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            Legal Statement &amp; Disclaimers
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/nj/accessibility.html" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            Accessibility
-          </a>
-        </li>
-        <li class="usa-identifier__required-links-item">
-          <a href="https://nj.gov/opra/" class="usa-identifier__required-link usa-link" target="_blank" rel="noopener noreferrer">
-            Open Public Records Act (OPRA)
-          </a>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content margin-top-0">
+          <a class="usa-footer__primary-link" href="/reference/accordion/">Components</a>
         </li>
       </ul>
-    </div>
-  </nav>
-  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
-    <div class="usa-identifier__container">
-      <div class="usa-identifier__usagov-description">
-        Copyright © 2026 State of New Jersey
+    </nav>
+  </div>
+  <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+            <div class="mobile-lg:grid-col-auto">
+              <img class="usa-footer__logo-img" src="./img/logo-img.png" alt=""/>
+            </div>
+            <div class="mobile-lg:grid-col-auto">
+              <h3 class="usa-footer__logo-heading">New Jersey Innovation Authority</h3>
+            </div>
+          </div>
+          <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+            <div class="usa-footer__social-links grid-row grid-gap-1">
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="https://www.facebook.com/NJGov/" target="_blank" rel="noopener noreferrer">
+                  <image src={facebook.src} alt="Facebook" />
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="https://www.facebook.com/NJGov/" target="_blank" rel="noopener noreferrer">
+                  <image src={twitter.src} alt="Twitter" />
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="https://www.facebook.com/NJGov/" target="_blank" rel="noopener noreferrer">
+                  <image src={youtube.src} alt="Youtube" />
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="https://www.facebook.com/NJGov/" target="_blank" rel="noopener noreferrer">
+                  <image src={instagram.src} alt="Instagram" />
+                </a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="https://www.facebook.com/NJGov/" target="_blank" rel="noopener noreferrer">
+                  <svg class="usa-icon">
+                    <use href="/assets/img/sprite.svg#rss_feed"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="usa-footer__contact-heading">Agency Contact Center</h3>
+            <address class="usa-footer__address">
+              <div class="usa-footer__contact-info grid-row grid-gap">
+                <div class="grid-col-auto">
+                  <a href="tel:1-800-555-5555">(800) CALL-GOVT</a>
+                </div>
+                <div class="grid-col-auto">
+                  <a href="mailto:info@agency.gov">info@agency.gov</a>
+                </div>
+              </div>
+            </address>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-</div>
+ </footer>
