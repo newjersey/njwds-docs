@@ -1,17 +1,15 @@
 ---
 title: Time picker
 description: Documentation for time picker component.
+hideTitle: true
 ---
-
-**A time picker helps users select a specific time.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Time picker"
+  category="COMPONENTS"
+  description="A time picker helps users select a specific time."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3051-2224&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-time-picker--docs`}
 />
@@ -24,23 +22,42 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-time-picker--docs`}>View time picker in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-time-picker--docs`} />
 
+## Usage Guidelines
 
-## Time picker Usage
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Scheduling.** Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time in 30-minute blocks.
+    </IconListItem>
+</IconList>
 
-### 👍 Use this component for
-- **Scheduling.** Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time in 30-minute blocks.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Exact time.** Plain text input is more appropriate for historical exact times, like time of birth.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Exact time.** Plain text input is more appropriate for historical exact times, like time of birth.
-
-## 🚫 What to ensure / avoid
-- **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
-- **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
-- **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`.
-- **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
-- **⚠️Make sure to test.⚠️** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the **“UI of last resort.”** Many users find them confusing and difficult to use.
+## Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Make sure to test.** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the **“UI of last resort.”** Many users find them confusing and difficult to use.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -88,6 +105,9 @@ The following properties modify component functionality. These properties can be
 | ----------- | ----------- | ----------- |
 | `data-filter` | `usa-time-picker` | The time picker will use this regular expression to filter the time picker options. You are declaring a case insensitive match over the entire option text, which means `^` and `$` are added automatically. You can specify the inputted query with `{{query}}`. You can also declare a custom query filter as a data property as well, which can be used in the custom filter (`data-number-filter="[0-9]"` and then using `data-filter="{{numberFilter}}.*"`). The default filter is `.*{{query}}.*`, which is a simple “find anywhere within the option” text. | 
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

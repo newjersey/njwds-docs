@@ -1,17 +1,15 @@
 ---
 title: Header
 description: Documentation for header component.
+hideTitle: true
 ---
-
-**A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Header"
+  category="COMPONENTS"
+  description="A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1910-52&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}
 />
@@ -24,21 +22,42 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
-  
-## Header Usage
-### 👍 Use this component for
-- **Most websites require header navigation.** Most websites require some form of navigation to help users find the information they need. While a horizontal navigation bar is just one option for navigation design, it is one of the most visible and familiar ways of helping users navigate a site.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Most websites require header navigation.** Most websites require some form of navigation to help users find the information they need. While a horizontal navigation bar is just one option for navigation design, it is one of the most visible and familiar ways of helping users navigate a site.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to avoid / ensure
-- **List all important website sections as links in the horizontal navigation.**
-- **Dropdown menus help preview lower-level content.** For large websites, use dropdown menus to help users preview lower-level content. If lower-level sections are closely related and users will need to quickly jump between them, consider using a side navigation instead of — or in addition to — a dropdown.
-- **Use short, clear link labels.** Don’t use jargon or unfamiliar terms.
-- **Left-justify.** Left-justified link labels are more easily scannable.
-- **Present links in priority order.** Higher-demand links should appear farther to the left, and lower-demand links should appear farther to the right.
-- **Avoid org-structure navigation.** Don’t model your navigation after your agency’s org structure. Instead, structure it according to the tasks and information your users most frequently need to access.
-- **Highlight the current section.** Show users where they are within the site by highlighting the current section.
-- **Always research your navigation.** Conduct research with your users, and base decisions about your site’s information architecture and navigation structure on your findings. Continue researching to confirm that updates meet your users’ needs.
+###  What to avoid / ensure
+<IconList>
+    <IconListItem icon="report">
+        **List all important website sections as links in the horizontal navigation.**
+    </IconListItem>
+    <IconListItem icon="report">
+        **Dropdown menus help preview lower-level content.** For large websites, use dropdown menus to help users preview lower-level content. If lower-level sections are closely related and users will need to quickly jump between them, consider using a side navigation instead of — or in addition to — a dropdown.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use short, clear link labels.** Don’t use jargon or unfamiliar terms.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Left-justify.** Left-justified link labels are more easily scannable.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Present links in priority order.** Higher-demand links should appear farther to the left, and lower-demand links should appear farther to the right.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid org-structure navigation.** Don’t model your navigation after your agency’s org structure. Instead, structure it according to the tasks and information your users most frequently need to access.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Highlight the current section.** Show users where they are within the site by highlighting the current section.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Always research your navigation.** Conduct research with your users, and base decisions about your site’s information architecture and navigation structure on your findings. Continue researching to confirm that updates meet your users’ needs.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -62,8 +81,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />
 ### Default Header Usage
 Use the default header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
 
@@ -92,8 +110,7 @@ Use the default header if you have few enough sections in your main navigation t
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />
 An extended header allows for the inclusion of more sections in a horizontal navigation. You can customize the header (depending on your site structure) and use it:
 
 - **With a text or image logo**
@@ -132,8 +149,7 @@ An extended header allows for the inclusion of more sections in a horizontal nav
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />
 Like an extended header, an extended header with a megamenu allows for the inclusion of more sections in your horizontal navigation; it also allows you to include more links in your dropdowns. You can customize the header (depending on your site structure) and use it:
 
 - **With a text or image logo**
@@ -161,8 +177,7 @@ Like an extended header, an extended header with a megamenu allows for the inclu
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`}>View header in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />
 The basic header with a megamenu is similar in design to the basic header component. The megamenu allows for the inclusion of more links in dropdown menus. You can customize this header (depending on your site structure) and use it with:
 
 - **A text or image logo**
@@ -209,6 +224,9 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 ## Related
 - [Documentation page template](https://designsystem.digital.gov/templates/documentation-page/)
 - [Landing page template](https://designsystem.digital.gov/templates/landing-page/)
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

@@ -1,17 +1,15 @@
 ---
 title: Tag
 description: Documentation for tag component.
+hideTitle: true
 ---
-
-**A tag draws attention to new or categorized content elements.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Tag"
+  category="COMPONENTS"
+  description="A tag draws attention to new or categorized content elements."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1862-8993&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}
 />
@@ -24,28 +22,53 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}>View tag in Storybook</a>
-  
-## Tag Usage
-### 👍 Use this component for
-- **To draw attention to new, important content.** Tags can focus attention on important content on that might otherwise be missed.
-- **To filter results with one or more tags.**
-- **To indicate the number of new or unread items within a container.** For example, to indicate the number of unread emails within a person’s inbox.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To draw attention to new, important content.** Tags can focus attention on important content on that might otherwise be missed.
+    </IconListItem>
+    <IconListItem icon="check">
+        **To filter results with one or more tags.**
+    </IconListItem>
+    <IconListItem icon="check">
+        **To indicate the number of new or unread items within a container.** For example, to indicate the number of unread emails within a person’s inbox.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Confusion with buttons.** Avoid tags if they might appear in the same area of the page as buttons.
-- **New or updated content.** To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.
-- **When users already expect content to be updated frequently.** For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Confusion with buttons.** Avoid tags if they might appear in the same area of the page as buttons.
+    </IconListItem>
+    <IconListItem icon="close">
+        **New or updated content.** To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When users already expect content to be updated frequently.** For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to avoid / ensure
-- **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation is not causing frustration.
-- **If your tags aren’t interactive, disable hover, focus, and active styles.**
-- **Don’t mix interactive and static tags.** Once you establish a pattern for how tags behave on your site, users will expect that behavior every time.
-- **Don’t overdo it.** If everything on a page is called out as important, nothing commands unique attention.
+###  What to avoid / ensure
+<IconList>
+    <IconListItem icon="report">
+        **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation is not causing frustration.
+    </IconListItem>
+    <IconListItem icon="report">
+        **If your tags aren’t interactive, disable hover, focus, and active styles.**
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t mix interactive and static tags.** Once you establish a pattern for how tags behave on your site, users will expect that behavior every time.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t overdo it.** If everything on a page is called out as important, nothing commands unique attention.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
-- TBD
+Content guidelines in progress.
 
 
 ## Tag Types
@@ -64,8 +87,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}>View tag in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`} />
 ### Big Tag
 <iframe 
     title="Interactive preview of the tag from Storybook" 
@@ -75,8 +97,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`}>View tag in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-tag--docs`} />
 
 ## Accessibility guidance
 Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/components/tag/accessibility-tests) to test implementation.
@@ -88,6 +109,9 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 | Class | Description |  
 | ----------- | ----------- |
 | `.usa-tag--big` | A tag with increased padding and font size. |
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

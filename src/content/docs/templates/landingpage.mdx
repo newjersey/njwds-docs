@@ -1,17 +1,20 @@
 ---
 title: Landing page
 description: Template for landing page.
+hideTitle: true
 ---
-
-**Provide someone’s first impression of your agency or program.**
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Landing page"
+  category="TEMPLATES"
+  description="Provide someone’s first impression of your agency or program."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3705-5957&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-landing--docs`}
+  wcagBadge={false}
 />
 
 <iframe 
@@ -22,18 +25,17 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-landing--docs`}>View landing page template in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-landing--docs`} />
 
 ## Landing Template Usage
 
-### 👍 Use this template for
+### Use this template for
 - **Introducing a new program.** If you are introducing a new program to the public through a marketing or publicity campaign, a landing page is a good place to point links. It can build on the minimal copy of a campaign without overwhelming readers.
 
-### 👎 Consider something else for
+### Use this component for:
 - **Internal pages.** Don’t use a landing page for standard internal page content. The same things that help people understand basics quickly can become distracting for people who are looking for more depth.
 
-## 🚫 What to ensure / avoid
+## Requirements for use:
 - **Remember to do your research.** The landing page can be a good model for a homepage. But do some research first. What do you have to say? What do your users need to know? Figure these things out. It’s important to know what you have to say about your organization before you settle on a homepage design.
 - **Don’t make it too complicated.** Don’t try to include forms or side navigation. Those components are visually complex, and a landing page works best when content is kept simple.
 - **Simple pages may not need a header.** If you are using the landing page to encourage users to follow a primary call to action, consider getting rid of the header. The less there is to distract people from the most important task, the more often they will do it.

@@ -1,17 +1,15 @@
 ---
 title: Checkbox
 description: Documentation of the checkbox component.
+hideTitle: true
 ---
-
-**Checkboxes allow users to select one or more options from a list.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Checkbox"
+  category="COMPONENTS"
+  description="Checkboxes allow users to select one or more options from a list."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=32-1420&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}
 />
@@ -24,22 +22,43 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}>View checkbox in Storybook</a>
-  
-## Checkbox Usage
-### 👍 Use this component for
-- **To display multiple answers.** When a user can select any number of choices from a list.
-- **To allow users to toggle answers.** When a user needs to acknowledge acceptance of something (like terms of service) or switch between two opposite states, such as unchecked = “no” and checked = “yes.”
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To display multiple answers.** When a user can select any number of choices from a list.
+    </IconListItem>
+    <IconListItem icon="check">
+        **To allow users to toggle answers.** When a user needs to acknowledge acceptance of something (like terms of service) or switch between two opposite states, such as unchecked = “no” and checked = “yes.”
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Single-select only.** If a user can only select one option from a list of many, use radio buttons instead. 
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Single-select only.** If a user can only select one option from a list of many, use radio buttons instead. 
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Make the label selectable.** Users should be able to select either the text label or the checkbox to select or deselect an option.
-- **List options vertically.** Horizontal listings can make it difficult to tell which label pertains to which checkbox.
-- **Use logical labels.** Make sure that the label makes both states — checked and unchecked — clear to the user. If that’s not possible, consider using a radio button with two individual options instead. Then both states can have their own clearly marked label.
-- **Use adequate touch targets.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
-- **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Make the label selectable.** Users should be able to select either the text label or the checkbox to select or deselect an option.
+    </IconListItem>
+    <IconListItem icon="report">
+        **List options vertically.** Horizontal listings can make it difficult to tell which label pertains to which checkbox.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use logical labels.** Make sure that the label makes both states — checked and unchecked — clear to the user. If that’s not possible, consider using a radio button with two individual options instead. Then both states can have their own clearly marked label.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use adequate touch targets.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+    </IconListItem>
+</IconList>
 
 ## Content Guidance 
 - **Use positive statements.** Negative language in labels can be counterintuitive. For example, use “I want to receive a promotional email” instead of “I don’t want to receive a promotional email.”
@@ -66,8 +85,7 @@ A multiple select question with checkboxes.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}>View checkbox in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -104,8 +122,7 @@ A multiple select question with checkbox tiles.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`}>View checkbox in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-checkbox--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -145,6 +162,9 @@ Use [USWDS checkbox accessibility tests](https://designsystem.digital.gov/compon
 | ----------- | ----------- |
 | `usa-checkbox__input--tile` | Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page. |
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 
