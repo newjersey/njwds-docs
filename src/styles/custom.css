@@ -159,6 +159,10 @@ body:has([data-page-header]) .main-frame {
   .content-panel {
     padding-block: 0;
   }
+  .content-panel:last-of-type {
+    padding-block-end: 3rem;
+  }
+
   .level-h2 {
     margin-block: 3rem 2rem;
     @media (min-width: 40rem) {
