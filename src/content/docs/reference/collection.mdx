@@ -1,17 +1,15 @@
 ---
 title: Collection 
 description: Documentation of the collection component.
+hideTitle: true
 ---
-
-**A collection displays a compact list of multiple related items like articles or events. The list links each item to its original source.**
-
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Collection"
+  category="COMPONENTS"
+  description="A collection displays a compact list of multiple related items like articles or events. The list links each item to its original source."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3204-279&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}
 />
@@ -24,24 +22,49 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
-  
-## Collection Usage
-### 👍 Use this component for
-- **To feature content with its metadata.** The collection component is a good option when displaying content that should be accompanied by limited metadata like tags, date/time, or source and attribution.
-- **To group related content together.** The collection component can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.
-- **To collect items from multiple sources.** Use collections when you want to guide users to additional resources available elsewhere. Collections introduce themes that help users find what they’re looking for, including when it’s not on your site.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To feature content with its metadata.** The collection component is a good option when displaying content that should be accompanied by limited metadata like tags, date/time, or source and attribution.
+    </IconListItem>
+    <IconListItem icon="check">
+        **To group related content together.** The collection component can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.
+    </IconListItem>
+    <IconListItem icon="check">
+        **To collect items from multiple sources.** Use collections when you want to guide users to additional resources available elsewhere. Collections introduce themes that help users find what they’re looking for, including when it’s not on your site.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Providing an archive of articles or pages.** Consider limiting the number of items in each collection to six or fewer. If you need to allow users to search or browse a larger content catalog, consider using a separate index or archive page.
-- **When you want to display large images or other media**. Collections are meant to be compact. If you need something with large images or other media, consider using the card component. The card has a bigger footprint and provides more flexibility with large images and other media. 
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Providing an archive of articles or pages.** Consider limiting the number of items in each collection to six or fewer. If you need to allow users to search or browse a larger content catalog, consider using a separate index or archive page.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When you want to display large images or other media**. Collections are meant to be compact. If you need something with large images or other media, consider using the card component. The card has a bigger footprint and provides more flexibility with large images and other media. 
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Use thumbnail images consistently.** If you use a thumbnail image on one item, use a similar kind of image (photo, illustration, etc.) on every item in the collection. Ensure icons or illustrations have clear meaning that add value or context to the content. Avoid repeating placeholder images.
-- **Use a consistent width for images.** Display item images with a consistent width. This promotes consistent alignment and easy scannability.
-- **Provide a button or link to where more articles can be found.** Users may need access to an index or archive where they can find more articles than those listed in the component.
-- **Indicate to the user if they’ll navigate to another website.** A common way to do this is to add the external link class to the heading if the link takes you away from the current site.
-- **Don’t force in-page scrolling.** Display all collection items in a flexible container so it displays without forcing the user to scroll within a component container. You can help prevent this by limiting the number of items in the collection to six or fewer.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Use thumbnail images consistently.** If you use a thumbnail image on one item, use a similar kind of image (photo, illustration, etc.) on every item in the collection. Ensure icons or illustrations have clear meaning that add value or context to the content. Avoid repeating placeholder images.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use a consistent width for images.** Display item images with a consistent width. This promotes consistent alignment and easy scannability.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Provide a button or link to where more articles can be found.** Users may need access to an index or archive where they can find more articles than those listed in the component.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Indicate to the user if they’ll navigate to another website.** A common way to do this is to add the external link class to the heading if the link takes you away from the current site.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t force in-page scrolling.** Display all collection items in a flexible container so it displays without forcing the user to scroll within a component container. You can help prevent this by limiting the number of items in the collection to six or fewer.
+    </IconListItem>
+</IconList>
 
 ## Content Guidance 
 - **Avoid ambiguous, generic article links like “read more.”** The heading for each item should link to the full content. Ensure each heading is clear, concise, and unique so users can quickly understand what the content is about. Don’t include additional links that take users to the same place.
@@ -62,8 +85,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -80,8 +102,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -97,8 +118,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`}>View collection in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -111,6 +131,9 @@ Use [USWDS collection accessibility tests](https://designsystem.digital.gov/comp
 - **Use the appropriate heading level for your page.** Update heading levels based on the content of your page to make sure collection headings are in the correct logical outline order..
 - **Each link should have a unique name.** Those using assistive technology may collect all page links together. Unique names not only help these users distinguish between links, but help all users scan the page. Favor using link text itself to provide a unique name. Using a `title` attribute or `aria-label` to provide a unique name helps users of assistive technology, but doesn’t promote scannability in standard browsers.
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

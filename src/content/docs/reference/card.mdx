@@ -1,17 +1,15 @@
 ---
 title: Card
 description: Documentation for card component.
+hideTitle: true
 ---
-
-**Cards contain content and actions about a single subject.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Card"
+  category="COMPONENTS"
+  description="Cards contain content and actions about a single subject."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1625-667&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}
 />
@@ -24,28 +22,53 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
-  
-## Card Usage
-### 👍 Use this component for
-- **Collections of related content.** Cards help present a collection of related groups of content, like articles or sections of a website.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Collections of related content.** Cards help present a collection of related groups of content, like articles or sections of a website.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Tabular data.** Don’t use a card as a substitute for a table row.
-- **Simple calls to action.** Use a button instead.
-- **Standalone content.** Consider an aside or another standalone element.
-- **Sequential, continuous text.** Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Tabular data.** Don’t use a card as a substitute for a table row.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Simple calls to action.** Use a button instead.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Standalone content.** Consider an aside or another standalone element.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Sequential, continuous text.** Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to avoid / ensure
-- **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.
-- **Don’t use the card component only for decoration.** Use the card component for cards, not for any type of content that’s designed to have a border around it.
-- **Include non-redundant content.** Don’t repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.
-- **Make sure images are properly sized.** Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.
-- **Use simple styling.** Avoid distracting skeumorphism. Don’t include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.
+###  What to avoid / ensure
+<IconList>
+    <IconListItem icon="report">
+        **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t use the card component only for decoration.** Use the card component for cards, not for any type of content that’s designed to have a border around it.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Include non-redundant content.** Don’t repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Make sure images are properly sized.** Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use simple styling.** Avoid distracting skeumorphism. Don’t include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
-- TBD
+Content guidelines in progress.
 
 
 ## Card Types
@@ -68,8 +91,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 
 ### Flag Cards
 - **Desktop/Wide Screens** Better for using horizontal space and reducing vertical scrolling.
@@ -83,8 +105,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 
 ## Card variants
 
@@ -107,8 +128,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 #### Inset Media
 <iframe 
     title="Interactive preview of the inset media card from Storybook" 
@@ -118,8 +138,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 #### No Media
 <iframe 
     title="Interactive preview of the no media card from Storybook" 
@@ -129,8 +148,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`}>View card in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 
 ## Accessibility guidance
 Use the [USWDS card accessibility tests](https://designsystem.digital.gov/components/card/accessibility-tests) to test card implementation.
@@ -151,6 +169,9 @@ Use the [USWDS card accessibility tests](https://designsystem.digital.gov/compon
 | `.usa-card__footer--exdent` | Extends the footer element out over the card border. Useful for light-bordered cards. |
 | `.usa-card__header--exdent` | Extends the header element out over the card border. Useful for light-bordered cards. |
 | `.usa-card__media--exdent`  | Extends the media element out over the card border. Useful for light-bordered cards. |
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

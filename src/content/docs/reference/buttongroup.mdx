@@ -1,17 +1,15 @@
 ---
 title: Button Group
 description: Documentation for button group component.
+hideTitle: true
 ---
-
-**Button group component, used for the visual grouping of buttons for similar actions on a page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Button Group"
+  category="COMPONENTS"
+  description="Button group component, used for the visual grouping of buttons for similar actions on a page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1547-1152&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`}
 />
@@ -24,33 +22,64 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`}>View button group in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`} />
+
+## Default Button Usage Guidelines
 
 
-## Default Button Group Usage
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Actions that have a contextual relationship.** For example, the default button group can be used when a form has both a primary and alternative action.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Stepping through linear content** Buttons in a button group can be used for directional navigation and actions (e.g., “Back,” “Next,” “Continue,” “Skip,” “Cancel.”).
+    </IconListItem>
+</IconList>
 
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **If actions are not related.** Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When mixing destructive and non-destructive actions.** This can lead to input mistakes.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Linking to content.** Buttons in button groups should not be used when text links would be simpler and more contextually appropriate. Grouped buttons such as “Next” and “Previous” are acceptable when content is organized sequentially.
+    </IconListItem>
+</IconList>
 
-### 👍 Use this component for
-- **Actions that have a contextual relationship.** For example, the default button group can be used when a form has both a primary and alternative action.
-- **Stepping through linear content** Buttons in a button group can be used for directional navigation and actions (e.g., “Back,” “Next,” “Continue,” “Skip,” “Cancel.”).
+## Segmented Button Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Categorically related controls.** For example, segmented buttons can be used as a switch between different views.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **If actions are not related.** Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.
-- **When mixing destructive and non-destructive actions.** This can lead to input mistakes.
-- **Linking to content.** Buttons in button groups should not be used when text links would be simpler and more contextually appropriate. Grouped buttons such as “Next” and “Previous” are acceptable when content is organized sequentially.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **No clear relationship.** Consider how placement and alternative structure of unrelated controls can improve usability over placing all actions in a group.
+    </IconListItem>
+    <IconListItem icon="close">
+        **If there are more than three buttons.** Be mindful of how a long list of buttons might appear on small screens. An alternative type of control might be more suitable.
+    </IconListItem>
+</IconList>
 
-## Segmented Button Group Usage
-### 👍 Use this component for
-- **Categorically related controls.** For example, segmented buttons can be used as a switch between different views.
-
-### 👎 Consider something else for
-- **No clear relationship.** Consider how placement and alternative structure of unrelated controls can improve usability over placing all actions in a group.
-- **If there are more than three buttons.** Be mindful of how a long list of buttons might appear on small screens. An alternative type of control might be more suitable.
-
-## 🚫 What to avoid
-- Avoid burden of choice. Try not to present the user with too many options
-- Avoid ambiguity of current state. Make sure current states are clearly communicated and understood.
-- Avoid using more than one primary button per page.
+##  What to avoid
+<IconList>
+    <IconListItem icon="report">
+        Avoid burden of choice. Try not to present the user with too many options
+    </IconListItem>
+    <IconListItem icon="report">
+        Avoid ambiguity of current state. Make sure current states are clearly communicated and understood.
+    </IconListItem>
+    <IconListItem icon="report">
+        Avoid using more than one primary button per page.
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
 - **Use sentence-case** 
@@ -80,8 +109,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`}>View button group in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`} />
 
 | Style | Applied Variants | 
 | ----------- | ----------- |
@@ -99,8 +127,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`}>View button group in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button-group--docs`} />
 | Style | Applied Variants | 
 | ----------- | ----------- |
 | Segmented | `usa-button-group usa-button-group--segmented` |
@@ -120,6 +147,9 @@ Use the [USWDS button group accessibility tests](https://designsystem.digital.go
 | Default | `usa-button-group` | 
 | Segmented | `usa-button-group usa-button-group--segmented` | 
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

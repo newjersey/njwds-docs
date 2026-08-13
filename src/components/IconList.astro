@@ -1,0 +1,10 @@
+---
+interface Props {
+    size?: 'default' | 'md' | 'lg' | 'xl' | '2xl';
+}
+
+const { size = 'default' } = Astro.props;
+---
+<ul class={`usa-icon-list usa-icon-list--size-${size}`}>
+    <slot/>
+</ul>
