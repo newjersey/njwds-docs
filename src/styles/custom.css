@@ -4,6 +4,8 @@
   --grove-primary-600: #2f4a0b; /* USWDS green-70v */
   --grove-primary-700: #193324; /* USWDS mint-80  */
   --grove-base-100: #fcfcfb; /* USWDS gray-warm-1  */
+  --grove-base-200: #f9f9f7;
+  --grove-base-400: #f0f0ec;
   --grove-base-700: #76766a; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
 
@@ -26,7 +28,7 @@
   --grove-logo-width: 34px;
   --grove-logo-text-color: var(--grove-white);
   --grove-search-text-color: var(--grove-white);
-
+  --sl-main-pad: 0;
   --sl-mobile-toc-height: 3.4375rem;
 
   @media (min-width: 50rem) {
@@ -157,6 +159,10 @@ body:has([data-page-header]) .main-frame {
   .content-panel {
     padding-block: 0;
   }
+  .content-panel:last-of-type {
+    padding-block-end: 3rem;
+  }
+
   .level-h2 {
     margin-block: 3rem 2rem;
     @media (min-width: 40rem) {
