@@ -1,17 +1,20 @@
 ---
 title: Documentation page
 description: Template for documentation page.
+hideTitle: true
 ---
-
-**Present information on a certain theme, topic, or idea.**
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Documentation page"
+  category="TEMPLATES"
+  description="Present information on a certain theme, topic, or idea."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3671-9700&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-documentation--docs`}
+  wcagBadge={false}
 />
 
 <iframe 
@@ -22,18 +25,17 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-documentation--docs`}>View documentation page template in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-documentation--docs`} />
 
 ## Documentation Template Usage
 
-### 👍 Use this template for
+### Use this template for
 - **Detailed information on a specific topic.** Use a documentation page if you’re presenting detailed information on a specific topic or theme that has already been contextualized by a landing page. Some topics that can be nicely represented on this type of page include guides or how-tos, technical documentation, and program descriptions — in short, any subject that requires in-depth explanation.
 
-### 👎 Consider something else for
+### Use this component for:
 - **Introducing a new program.** Don’t use a documentation page to introduce your users to your agency or organization — the landing page is better suited to that purpose. The level of detail present on documentation pages can overwhelm users who are just becoming acquainted with your organization.
 
-## 🚫 What to ensure / avoid
+## Requirements for use:
 - See component-specific guidance. For guidance on specific components, see the page for the individual components. Components used in this template: Basic header, Grid, Side navigation, Medium footer
 
 ## Content guidelines

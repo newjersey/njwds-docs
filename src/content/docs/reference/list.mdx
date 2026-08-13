@@ -1,17 +1,15 @@
 ---
 title: List
 description: Documentation for List component.
+hideTitle: true
 ---
-
-**A list organizes information into discrete sequential sections.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="List"
+  category="COMPONENTS"
+  description="A list organizes information into discrete sequential sections."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2852-3585&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}
 />
@@ -24,15 +22,24 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
-  
-## List Usage
-### 👍 Use this component for
-- **Ordered list.** Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
-- **Unordered list.** Use unordered lists to display text in no specific order.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Ordered list.** Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Unordered list.** Use unordered lists to display text in no specific order.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **If you need to communicate long lists of narrative text.**
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **If you need to communicate long lists of narrative text.**
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -56,8 +63,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`} />
 ### Unordered
 <iframe 
     title="Interactive preview of the ordered list from Storybook" 
@@ -67,8 +73,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`} />
 ### Unstyled
 <iframe 
     title="Interactive preview of the ordered list from Storybook" 
@@ -78,8 +83,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`}>View list in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-list--docs`} />
 ## Accessibility guidance
 Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/components/list/accessibility-tests) to test implementation.
 - **Remove list styles with the unstyled variant.** For unstyled lists, either add the `.usa-list--unstyled` class or use the Sass mixin: `@include unstyled-list.`
@@ -91,6 +95,9 @@ Use the [USWDS tag accessibility tests](https://designsystem.digital.gov/compone
 | ----------- | ----------- |
 | `.usa-list` | List |
 | `.usa-list--unstyled` | Removed list style |
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

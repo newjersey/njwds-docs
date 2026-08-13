@@ -1,17 +1,15 @@
 ---
 title: Step Indicator
 description: Documentation for step indicator component.
+hideTitle: true
 ---
-
-**A step indicator updates users on their progress through a multi-step process.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Step Indicator"
+  category="COMPONENTS"
+  description="A step indicator updates users on their progress through a multi-step process."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1632-264&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}
 />
@@ -24,25 +22,52 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}>View step indicator in Storybook</a> 
-  
-## Step Indicator Usage
-### 👍 Use this component for
-- **Multiple steps and screens** — Use the step indicator when the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users understand the progression of long forms and reduces uncertainty as they complete each screen.
-- **Linear progression** — The step indicator is designed to complement standard back/next navigation in a linear sequence, not to be navigation of its own.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Multiple steps and screens** — Use the step indicator when the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users understand the progression of long forms and reduces uncertainty as they complete each screen.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Linear progression** — The step indicator is designed to complement standard back/next navigation in a linear sequence, not to be navigation of its own.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Long forms with conditional logic** — Consider another approach if the number of steps might change due to user input.
-- **Nonlinear progression** — The step indicator isn’t appropriate for nonlinear forms or interactions that might be completed in any order.
-- **Very short forms** — Don’t use a step indicator for short forms without chapters or sections. If a form or process has fewer than three sections, don’t use a step indicator.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Long forms with conditional logic** — Consider another approach if the number of steps might change due to user input.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Nonlinear progression** — The step indicator isn’t appropriate for nonlinear forms or interactions that might be completed in any order.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Very short forms** — Don’t use a step indicator for short forms without chapters or sections. If a form or process has fewer than three sections, don’t use a step indicator.
+    </IconListItem>
+</IconList>
 
 ### How to use this component
-- **Indicate where a user is in the process.** Use a color and text treatment for the current step segment that is distinct from both the completed and pending step segments. The current segment should be the most visually prominent segment in the step indicator. Pending segments should be the least visually prominent of the segments, but should still maintain accessible contrast and not appear disabled
-- **Provide navigation separately.** Use navigation like a button group to step forward and backward through a form.
-- **Place a heading directly below the step indicator.** Each step needs an explicit heading. The step indicator segments (even with labels and counters) are not sufficient as a heading for a page or screen.
-- **Pending text should use gray.** Pending text should use the gray family that complements the background and the pending segment colors. Use warm grays with warm backgrounds and segments, and cool grays with cool backgrounds and segments.
-- **The current color can be a contrast color.** The current color can be in the same family as the complete color, or it can be a contrast color that distinguishes itself from the complete color.
-- **Center the heading with utilities.** Use the `flex-justify-center` utility on `usa-step-indicator__header` to center the heading.
+<IconList>
+    <IconListItem icon="report">
+        **Indicate where a user is in the process.** Use a color and text treatment for the current step segment that is distinct from both the completed and pending step segments. The current segment should be the most visually prominent segment in the step indicator. Pending segments should be the least visually prominent of the segments, but should still maintain accessible contrast and not appear disabled
+    </IconListItem>
+    <IconListItem icon="report">
+        **Provide navigation separately.** Use navigation like a button group to step forward and backward through a form.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Place a heading directly below the step indicator.** Each step needs an explicit heading. The step indicator segments (even with labels and counters) are not sufficient as a heading for a page or screen.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Pending text should use gray.** Pending text should use the gray family that complements the background and the pending segment colors. Use warm grays with warm backgrounds and segments, and cool grays with cool backgrounds and segments.
+    </IconListItem>
+    <IconListItem icon="report">
+        **The current color can be a contrast color.** The current color can be in the same family as the complete color, or it can be a contrast color that distinguishes itself from the complete color.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Center the heading with utilities.** Use the `flex-justify-center` utility on `usa-step-indicator__header` to center the heading.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -63,8 +88,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}>View step indicator in Storybook</a> 
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
 **Use the centered segmented variant with centered content and headings.** The centered variant is designed to complement centered content and headings. If you have left-aligned content and headings, use the default alignment.
 
 #### Figma Type properties
@@ -92,8 +116,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}>View step indicator in Storybook</a> 
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
 **Use counters to reinforce step progression.** The counter pattern (step numbers in a circle) attracts more attention to the indicator bar, but more strongly communicates step-by-step progression. Use counters when you want to reinforce step progression. Omit them if testing proves that this reinforcement is unnecessary for your audience.
 
 #### Small counters 
@@ -106,8 +129,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}>View step indicator in Storybook</a> 
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
 #### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
@@ -133,8 +155,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}>View step indicator in Storybook</a> 
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
 #### Code variant
 | Class | Description |
 | ----------- | ----------- |
@@ -151,8 +172,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`}>View step indicator in Storybook</a> 
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
 #### Code variant
 | Class | Description |
 | ----------- | ----------- |
@@ -177,6 +197,9 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 | `usa-step-indicator--counters-sm` | Show small step counters. |
 | `usa-step-indicator--center` | Center counters and labels in each step. |
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

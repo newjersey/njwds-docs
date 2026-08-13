@@ -1,0 +1,41 @@
+---
+import FigmaStorybookButtonGroup from '../components/FigmaStorybookButtonGroup.astro';
+interface Props {
+  name: string;
+  category?: 'COMPONENTS' | 'STYLES' | 'PATTERNS' | 'TEMPLATES'
+  description?: string;
+  figmaUrl?: string;
+  storybookUrl?: string;
+  wcagBadge?: boolean;
+}
+
+const { name, category, description, figmaUrl, storybookUrl, wcagBadge = true } = Astro.props;
+---
+<section data-page-header>
+    <div class="padding-top-6 padding-bottom-205 tablet:display-flex">
+        <div class="flex-fill tablet:margin-right-2">
+            <header>
+                {category && (<span class="font-body-2xs text-base">{category}</span>)}
+                <h1 class="margin-0">{name}</h1>
+                <p>{description}</p>
+            </header>
+            {wcagBadge && (
+                <div>
+                    <span class="usa-tag font-body-2xs wcag-badge">WCAG 2.1 AA</span>
+                </div>
+            )}
+        </div>
+        <div class="display-flex flex-align-start flush-button-group">
+            <FigmaStorybookButtonGroup figmaUrl={figmaUrl} storybookUrl={storybookUrl}/>
+        </div>
+    </div>
+</section>
+
+<style>
+    .flush-button-group{
+        --sl-content-gap-y:0
+    }
+    .wcag-badge {
+        background-color: var(--grove-primary-600);
+    } 
+</style> 

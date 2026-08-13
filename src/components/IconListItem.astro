@@ -1,0 +1,31 @@
+---
+interface Props {
+  icon: 'check' | 'close' | 'report';
+}
+
+const { icon } = Astro.props;
+
+---
+<li class="usa-icon-list__item list-item-gap">
+    <div class="usa-icon-list__icon margin-top-0">
+        <svg class="usa-icon minw-3 minh-3" aria-hidden="true" focusable="false" role="img">
+            <use href={`/assets/img/sprite.svg#${icon}`}></use>
+        </svg>
+    </div>
+    <div class="usa-icon-list__content margin-y-0 full-length-content">
+        <slot/>
+    </div>
+</li>
+
+<style>
+    .full-length-content {
+        p {
+            max-width: none;
+        }
+    }
+
+    .list-item-gap + .list-item-gap {
+        padding-top: 0rem;
+        margin-top: 0.75rem;
+    }
+</style>

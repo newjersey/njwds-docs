@@ -1,17 +1,15 @@
 ---
 title: In-page navigation 
 description: Documentation for in-page navigation component.
+hideTitle: true
 ---
-
-**The in-page navigation allows navigation to specific sections on a lengthy content page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="In-page navigation"
+  category="COMPONENTS"
+  description="The in-page navigation allows navigation to specific sections on a lengthy content page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3019-77&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-in-page-navigation--docs`}
 />
@@ -24,23 +22,46 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-in-page-navigation--docs`}>View in-page navigation in Storybook</a>
-  
-## In-Page Navigation Usage
-### 👍 Use this component for
-- **Long pages.** In-page navigation can offer a substantial improvement to user experience for pages that include three or more distinct content sections or content that exceeds three or more viewport heights.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-in-page-navigation--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Long pages.** In-page navigation can offer a substantial improvement to user experience for pages that include three or more distinct content sections or content that exceeds three or more viewport heights.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Short pages.** For pages that require little or no scrolling, in-page navigation is not necessary.
-- **Unstructured content.** Pages that lack heading-based hierarchical structures cannot use the in-page navigation component.
-- **Infinite scrolling.** For pages that feature infinite scrolling, in-page navigation is neither a practical nor feasible feature.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Short pages.** For pages that require little or no scrolling, in-page navigation is not necessary.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Unstructured content.** Pages that lack heading-based hierarchical structures cannot use the in-page navigation component.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Infinite scrolling.** For pages that feature infinite scrolling, in-page navigation is neither a practical nor feasible feature.
+    </IconListItem>
+</IconList>
 
-### ✔️ What to ensure / avoid
-- **Display the in-page navigation to the side of the main content.** Visually, place the in-page navigation component after the main content in the language’s natural reading order. For example, for a left-to-right language like English, this component goes to the right of the main content.
-- **Make it stand out.** Site visitors should be able to quickly and easily distinguish in-page navigation from other landmarks on the page. Include borders and well-defined link active states to clearly convey the utility and purpose of the section. Define a consistent width for the in-page navigation component that is sufficiently wide and does not change based on text length.
-- **Use language that matches section headings.** The text of the links displayed within the in-page navigation `aside` should match the heading text of the target sections. By default, the component scans the page for `h2` and `h3` elements within the `main` element, automatically creates the in-page navigation block, and dynamically inserts the text to match the section headings.
-- **Don’t include the page `h1` in the navigation.** Each page should have a single `h1` to describe its contents. It would be redundant to include this heading level in the in-page navigation.
-- **In-page navigation heading.** Inform users that they will scroll down on the same page by including in-page navigation under a descriptive title such as “On this page,” “In this article,” or “Table of contents.”
+### What to ensure / avoid
+<IconList>
+    <IconListItem icon="report">
+        **Display the in-page navigation to the side of the main content.** Visually, place the in-page navigation component after the main content in the language’s natural reading order. For example, for a left-to-right language like English, this component goes to the right of the main content.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Make it stand out.** Site visitors should be able to quickly and easily distinguish in-page navigation from other landmarks on the page. Include borders and well-defined link active states to clearly convey the utility and purpose of the section. Define a consistent width for the in-page navigation component that is sufficiently wide and does not change based on text length.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use language that matches section headings.** The text of the links displayed within the in-page navigation `aside` should match the heading text of the target sections. By default, the component scans the page for `h2` and `h3` elements within the `main` element, automatically creates the in-page navigation block, and dynamically inserts the text to match the section headings.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t include the page `h1` in the navigation.** Each page should have a single `h1` to describe its contents. It would be redundant to include this heading level in the in-page navigation.
+    </IconListItem>
+    <IconListItem icon="report">
+        **In-page navigation heading.** Inform users that they will scroll down on the same page by including in-page navigation under a descriptive title such as “On this page,” “In this article,” or “Table of contents.”
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -76,6 +97,9 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 | ----------- | ----------- | ----------- |
 | In page navigation | `usa-in-page-navigation` | Use for the in page navigation component |
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

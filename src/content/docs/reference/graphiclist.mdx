@@ -1,15 +1,18 @@
 ---
 title: Graphic list
 description: Documentation for graphic list component.
+hideTitle: true
 ---
-
-**Graphic list is an element that can be used in a website to prominently display a few related pieces of information.**
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Graphic list"
+  category="COMPONENTS"
+  description="Graphic list is an element that can be used in a website to prominently display a few related pieces of information."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3643-1721&t=mGoKWCb0ntBD0TDX-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}
+  wcagBadge={false}
 />
 
 <iframe 
@@ -20,19 +23,31 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
- 🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`} />
 
 
-## Graphic List Usage!!
+## Graphic List Usage
 
-### 👍 Use this component for
-- **Related information** on a website that you'd like to draw attention to.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Related information** on a website that you'd like to draw attention to.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Menus, navigation, or interactive items.**
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Menus, navigation, or interactive items.**
+    </IconListItem>
+</IconList>
 
-## 🚫 What to ensure / avoid
-- **Present information in pairs.** Can be as few as 2 items, or as many as 6.
+## Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Present information in pairs.** Can be as few as 2 items, or as many as 6.
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
 - **Keep heading length to 6 or fewer words.**
@@ -50,7 +65,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`} />
 
  ### Light Version 
  
@@ -62,10 +77,13 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
-🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`}>View graphic list in Storybook</a>
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-graphic-list--docs`} />
 
 ## Related
 - [Landing page template](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/templates-landing--docs)
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

@@ -1,20 +1,22 @@
 ---
 title: Alert
 description: Documentation for alert component.
+hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-**Alert options**
-- **Alert:** Alert component used to prominently display timely information to users.
-- **Site Alert:** A site alert communicates urgent sitewide information.
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Alert"
+  category="COMPONENTS"
+  description="The alert and site alert are used for varying use cases of displaying timely information to users."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}
 />
+
+**Alert options**
+- **Alert:** Alert component used to prominently display timely information to users.
+- **Site Alert:** A site alert communicates urgent sitewide information.
 
 <iframe 
     title="Interactive preview of the default accordion from Storybook" 
@@ -24,36 +26,75 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
  
-## Alert Usage
-### 👍 Use this component for
-- **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates. 
-- **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully. 
+## Alert Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **System status messages.** An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates. 
+    </IconListItem>
+    <IconListItem icon="check">
+        **Validation messages.** An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully. 
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Informational call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
-- **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this action is what they want.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Informational call outs.** Alerts should be reserved for messages that are timely, such as a notification or change on the page. Alerts should not be used for static content that will always be displayed on the page. Consider the summary box or accordion for this. 
+    </IconListItem>
+    <IconListItem icon="close">
+        **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this action is what they want.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Validation on long forms.** On long forms, always include in-line validation (error states of form input components) in addition to any error messages that appear at the top of the form (alert component for now, error summary coming soon).
-- **Don't overdo it.** Too many alerts will either overwhelm or annoy the user and are likely to be ignored.
-- **Understand the user's context.** Don’t include alerts that aren’t related to the user’s current goal.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Validation on long forms.** On long forms, always include in-line validation (error states of form input components) in addition to any error messages that appear at the top of the form (alert component for now, error summary coming soon).
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don't overdo it.** Too many alerts will either overwhelm or annoy the user and are likely to be ignored.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Understand the user's context.** Don’t include alerts that aren’t related to the user’s current goal.
+    </IconListItem>
+</IconList>
 
-## Site Alert Usage
-### 👍 Use this component for
-- **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
-- **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
-  
-### 👎 Consider something else for
-- **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
-- **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages (error states of form input components).
+## Site Alert Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to avoid
-- **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.
-- **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
-- **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange to draw attention to an emergency-related site alert. However, these colors can produce strong negative emotional reactions such as fear or panic. Positioning the banner at the top of the screen provides enough weight that such strong colors may not be necessary.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages (error states of form input components).
+    </IconListItem>
+</IconList>
+
+###  What to avoid
+<IconList>
+    <IconListItem icon="report">
+        **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange to draw attention to an emergency-related site alert. However, these colors can produce strong negative emotional reactions such as fear or panic. Positioning the banner at the top of the screen provides enough weight that such strong colors may not be necessary.
+    </IconListItem>
+</IconList>
 
 
 ## Content Guidance 
@@ -100,8 +141,7 @@ Alerts are notifications of high priority since they provide critical informatio
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 #### Figma properties
 | Property | Value |
@@ -139,8 +179,7 @@ Give instant feedback about the tasks a user just performed. Its main objective 
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 | Variant | Description | 
 | ----------- | ----------- |
 | `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
@@ -156,8 +195,7 @@ Confirm that a user’s action was effective, and can have a celebratory tone.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -174,8 +212,7 @@ Inform the user of risks or things to be aware of before taking action.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -192,8 +229,7 @@ Inform that something went wrong after an action. Learn about errors (link to er
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}>View alert in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -208,14 +244,14 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 
 
 ### Dismissable alerts
-🚧 Not present in Grove or USWDS, would need custom implementation 🚧
+Not present in Grove or USWDS, would need custom implementation
 Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented yet. 
 
 
 #### Figma properties 
 | Property | Value |
 | ----------- | ----------- |
-| dismissable | false, true (⚠️**not implemented in code**)|
+| dismissable | false, true (**not implemented in code**)|
 
 ## Accessibility Guidance
 Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test alert implementation.
@@ -262,6 +298,9 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | ----------- | ----------- |
 | `usa-alert--slim` | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text. |
 | `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 
