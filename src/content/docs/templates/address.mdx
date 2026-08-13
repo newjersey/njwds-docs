@@ -1,17 +1,20 @@
 ---
 title: Address form
 description: Form template for collecting addresses.
+hideTitle: true
 ---
-
-**Enter a standard U.S. mailing or shipping address.**
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 import { LinkButton } from '@astrojs/starlight/components';
 
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Address form"
+  category="TEMPLATES"
+  description="Enter a standard U.S. mailing or shipping address."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3489-2149&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-address-form--docs`}
+  wcagBadge={false}
 />
 
 <iframe 
@@ -22,24 +25,23 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/templates-address-form--docs`}>View address form template in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-address-form--docs`} />
 
 ## Address Form Template Usage
 
-### 👍 Use this template for
+### Use this template for
 - **You need separate data elements.** When you need to be able to parse out the specific parts of a mailing address.
 
-### 👎 Consider something else for
+### Use this component for:
 - **Nonstandard addresses.** This template covers domestic U.S. addresses, including the U.S. territories and military outposts. If you need to collect addresses that may not fit this format, such as international addresses for citizens living overseas, you will need to use something else.
 - **You don’t need separate data elements.** If you don’t need to be able to parse out the individual pieces of an address, consider letting users type the entire address into one large text area.
 
-## 🚫 What to ensure / avoid
+## Requirements for use:
 - **Consider using an input mask.** In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be #####-#### so that the ZIP code maps to users’ experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
 - **Support both five- and nine-digit ZIP codes.** Some addresses require a nine-digit ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
 
 ## Content guidelines
-- TBD
+Content guidelines in progress.
 
 ## Accessibility guidance
 As you customize this form template, make sure it continues to follow the [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).

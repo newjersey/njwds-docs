@@ -1,18 +1,15 @@
 ---
 title: Footer
 description: Documentation for footer component.
+hideTitle: true
 ---
-
-**A footer serves site visitors who arrive at the bottom of a page without finding what they want.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Footer"
+  category="COMPONENTS"
+  description="A footer serves site visitors who arrive at the bottom of a page without finding what they want."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=512-174&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}
 />
@@ -25,27 +22,50 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
-  
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />  
 ## Footer Use
-### 👍 Use this component for
-- **Big footer.** Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.
-- **Medium footer.** Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.
-- **Slim footer.** Use the slim footer when you only want to offer a few footer links and nothing else.
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Big footer.** Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Medium footer.** Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Slim footer.** Use the slim footer when you only want to offer a few footer links and nothing else.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Medium footer.** Use the big footer when your footer has more than five links.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Medium footer.** Use the big footer when your footer has more than five links.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to avoid / ensure
-- **Curate your footer.** Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.
-- **The footer doesn’t need to mirror the header.** Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).
-- **Include newsletter signup.** Include the newsletter signup if one of your website’s goals is getting visitors to sign up for a newsletter.
-- **Avoid stale social media accounts.** Link only to social media your agency updates frequently or uses to communicate with customers.
-- **Limit contact information to email and phone.** Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.
+###  What to avoid / ensure
+<IconList>
+    <IconListItem icon="report">
+        **Curate your footer.** Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.
+    </IconListItem>
+    <IconListItem icon="report">
+        **The footer doesn’t need to mirror the header.** Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).
+    </IconListItem>
+    <IconListItem icon="report">
+        **Include newsletter signup.** Include the newsletter signup if one of your website’s goals is getting visitors to sign up for a newsletter.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid stale social media accounts.** Link only to social media your agency updates frequently or uses to communicate with customers.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Limit contact information to email and phone.** Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
-- TBD
+Content guidelines in progress.
 
 
 ## Identifier States
@@ -68,8 +88,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
 
 ### Slim (No Contact Info)
 
@@ -81,8 +100,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
 
 ### Big (Contact Info + Links)
 
@@ -94,8 +112,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`}>View footer in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
 
 ## Accessibility guidance
 Use the [USWDS footer accessibility tests](https://designsystem.digital.gov/components/footer/accessibility-tests/) to test footer implementation.
@@ -133,6 +150,9 @@ The following classes can be added to the `<footer>` element to determine the st
 | `usa-footer--slim` | Elements within the footer will be styled with a "slim" look: Logo images will be smaller, Nav menus will have less padding, and Contact links will have less padding |
 | `usa-footer--big` | A multi-column footer that expands and collapses on mobile. Elements within the footer will be styled with a more spacious look: Nav menus will have more padding, Links within nav menus will have more padding, Nav menus may be sorted into vertical lists of "topics" that each contain a list of related links |
 
+
+## Known Issues
+None
 
 ## Resources
 

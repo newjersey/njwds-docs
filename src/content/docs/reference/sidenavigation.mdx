@@ -1,17 +1,15 @@
 ---
 title: Side navigation
 description: Documentation for side navigation component.
+hideTitle: true
 ---
-
-**Hierarchical, vertical navigation to place at the side of a page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Side navigation"
+  category="COMPONENTS"
+  description="Hierarchical, vertical navigation to place at the side of a page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=196-330&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-side-navigation--docs`}
 />
@@ -24,20 +22,37 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-side-navigation--docs`}>View side navigation in Storybook</a>   
-  
-## Side Navigation Usage
-### 👍 Use this component for
-- **To display a navigational hierarchy with one to three levels.**
-- **To display the “sub-navigation” within a section of the website.** 
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-side-navigation--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To display a navigational hierarchy with one to three levels.**
+    </IconListItem>
+    <IconListItem icon="check">
+        **To display the “sub-navigation” within a section of the website.** 
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Small site.** — If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
-- **Existing navigation.** If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Small site.** — If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Existing navigation.** If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Show the current page.** Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
-- **Always test your navigation.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Show the current page.** Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Always test your navigation.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -88,6 +103,9 @@ Grove provides a number of CSS classes that can be applied to various elements w
 | Side Navigation Item | `usa-sidenav__item` | Apply this class to a `<li>` element to designate an item within the side navigation panel. |
 | Side Navigation Sublist | `usa-sidenav__sublist` | Apply this class to a `<ul>` element to designate a nested list of "child links" to be nested under a parent link within the sidenav. |
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

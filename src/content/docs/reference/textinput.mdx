@@ -1,24 +1,18 @@
 ---
 title: Text input and area
 description: Documentation for text input and area component.
+hideTitle: true
 ---
-
-**A text input allows users to enter any combination of letters, numbers, or symbols and can span single or multiple lines.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
-
-##
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Text input and area"
+  category="COMPONENTS"
+  description="The text input and text area are used for varying use cases of entering any combination of letters, numbers, or symbols, spanning single or multiple lines."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-19656&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`}
 />
-
-##
 
 **Text input options**
 - **Text input:** A single line of user input, with pre-determined width to indicate expected length of input. 
@@ -33,8 +27,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`}>View text input in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`} />
 
  <iframe 
     title="Interactive preview of the text area from Storybook" 
@@ -44,22 +37,43 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`}>View text area in Storybook</a>
-  
-## Text Input or Area Usage
-### 👍 Use this component for
-- **Unpredictable or freeform responses.** If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
-- **Input simplicity.** When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a date picker.
-- **Pasted content.** When users want to be able to paste in a response.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Unpredictable or freeform responses.** If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Input simplicity.** When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a date picker.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Pasted content.** When users want to be able to paste in a response.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Predetermined input options.** When users are choosing from a specific set of options.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Predetermined input options.** When users are choosing from a specific set of options.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Use fields appropriate to the length of the input.** The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
-- **Consider the mobile context.** Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
-- **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.
-- **Avoid placeholder text.** Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Use fields appropriate to the length of the input.** The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Consider the mobile context.** Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid placeholder text.** Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -76,8 +90,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`}>View text input in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`} />
 ### Text Input Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
@@ -130,8 +143,7 @@ The following classes can be added to input elements with class usa-input to adj
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`}>View text area in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`} />
 ### Text Area Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
@@ -175,6 +187,9 @@ Use the [USWDS text input / area accessibility tests](https://designsystem.digit
 - **Avoid placeholder text.** Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
 - **Avoid splitting numbers.** Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

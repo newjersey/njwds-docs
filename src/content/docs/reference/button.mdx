@@ -1,17 +1,15 @@
 ---
 title: Button
 description: Documentation for button component.
+hideTitle: true
 ---
-
-**Button component, used for primary, secondary, and tertiary actions on a page.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Button"
+  category="COMPONENTS"
+  description="Button component, used for primary, secondary, and tertiary actions on a page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-4297&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}
 />
@@ -24,18 +22,31 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
-  
-## Button Usage
-### 👍 Use this component for
-- **Important actions.** Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Important actions.** Use buttons for the most important actions you want users to take on your site, such as Download, Sign up, or Log out.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Linking between a site’s pages.** Use regular links instead. Buttons can be used for navigation between pages within a form flow but otherwise use links.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to avoid
-- **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
-- **Avoid disabling buttons.** Disabling buttons is strongly discouraged.
+###  What to avoid
+<IconList>
+    <IconListItem icon="report">
+        **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid disabling buttons.** Disabling buttons is strongly discouraged.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -67,8 +78,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 #### Code Primary Variants
 | Type | Mode | Applied Variants |
 | ----------- | ----------- | ----------- |
@@ -87,8 +97,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--secondary`}>View button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--secondary`} />
 
 #### Code Secondary Variants
 | Type | Mode | Applied Variants |
@@ -108,8 +117,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 
 #### Code Tertiary Variants
 | Type | Mode | Applied Variants |
@@ -118,7 +126,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 | tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
   
-❌ _**Not Supported:** Grove does not support select button types from USWDS including accent cool, accent warm, and big._
+_**Not Supported:** Grove does not support select button types from USWDS including accent cool, accent warm, and big._
 
 
 ## Button states
@@ -134,7 +142,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
 - Active
 - Focus
 
-❌ _**Not Supported:** Grove does not support a disabled button states from USWDS._
+_**Not Supported:** Grove does not support a disabled button states from USWDS._
 
 
 ## Button modes
@@ -155,8 +163,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 | Light Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button` | Used for primary type |
@@ -175,8 +182,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 | Dark Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button--inverse` | Used for dark mode |
@@ -195,8 +201,7 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 | Danger Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button--secondary` | Used for danger mode |
@@ -218,8 +223,7 @@ Use to clarify the purpose of the button further, indicate directionality, etc.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`}>View button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
   
 ℹ️ **To use:** Toggle on the leading or trailing icon in the button component.
 
@@ -241,7 +245,7 @@ An icon can be used in place of text to demonstrate a button's meaning.
 | ----------- | ----------- |
 | `nj-button--icon` | [Custom Grove] Used for buttons containing icons |
 
-✅ _**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
+_**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
 
 ## Accessibility guidance
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
@@ -266,6 +270,9 @@ When styling links to look like buttons, remember that screen readers handle lin
 | tertiary | light | `usa-button usa-button--unstyled` |
 | tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

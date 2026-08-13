@@ -1,17 +1,15 @@
 ---
 title: Radio button
 description: Documentation for radio button component.
+hideTitle: true
 ---
-
-**Radio buttons allow users to select exactly one choice from a group.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_ 
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Radio button"
+  category="COMPONENTS"
+  description="Radio buttons allow users to select exactly one choice from a group."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-19547&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`}
 />
@@ -24,24 +22,49 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`}>View radio button in Storybook</a>
-  
-## Radio Button Usage
-### 👍 Use this component for
-- **To display a single selection.** When users need to select only one option from a set of mutually exclusive choices.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **To display a single selection.** When users need to select only one option from a set of mutually exclusive choices.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use checkboxes instead.
-- **Limited space.** Consider a select component if you don’t have enough space to list out all available options
-- **Selecting none.** If users should be able to select zero of the options or change their mind and unselect an option, consider using checkboxes. You can also choose to add a “none of the above” option to the radio button group instead.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use checkboxes instead.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Limited space.** Consider a select component if you don’t have enough space to list out all available options
+    </IconListItem>
+    <IconListItem icon="close">
+        **Selecting none.** If users should be able to select zero of the options or change their mind and unselect an option, consider using checkboxes. You can also choose to add a “none of the above” option to the radio button group instead.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Use the label as a target.** Users should be able to select either the text label or the radio button to select or deselect an option.
-- **List items vertically.** Vertically-listed options are easier to read than those that are listed horizontally. A horizontal layout can make it difficult to tell which label belongs to which radio button.
-- **Use adequate spacing.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
-- **Set default values with caution.** Setting a default value can bias a decision, seem pushy, or alienate users who don’t fit your assumptions. Only use a default selection if you have data to back it up.
-- **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
-- **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Use the label as a target.** Users should be able to select either the text label or the radio button to select or deselect an option.
+    </IconListItem>
+    <IconListItem icon="report">
+        **List items vertically.** Vertically-listed options are easier to read than those that are listed horizontally. A horizontal layout can make it difficult to tell which label belongs to which radio button.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use adequate spacing.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Set default values with caution.** Setting a default value can bias a decision, seem pushy, or alienate users who don’t fit your assumptions. Only use a default selection if you have data to back it up.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -68,8 +91,7 @@ A radio button question with multiple options.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`}>View radio button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -107,8 +129,7 @@ A multiple select question with checkbox tiles.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`}>View radio button in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -148,6 +169,9 @@ Use [USWDS radio button accessibility tests](https://designsystem.digital.gov/co
 | ----------- | ----------- |
 | `usa-radio__input--tile` | Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page. |
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

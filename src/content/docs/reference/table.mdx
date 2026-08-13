@@ -1,22 +1,20 @@
 ---
 title: Table 
 description: Documentation of the table component.
+hideTitle: true
 ---
-
-**A table shows information in columns and rows.**
-
-🚧 Some variants of the table are in USWDS, but are not available in Storybook or Figma. 🚧
-
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Table"
+  category="COMPONENTS"
+  description="A table shows information in columns and rows."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3034-1111&p=f&t=27UwGhKCDi5dO9t8-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}
 />
+
+Some variants of the table are in USWDS, but are not available in Storybook or Figma.
 
 <iframe 
     title="Interactive preview of the table from Storybook" 
@@ -26,36 +24,77 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}>View table in Storybook</a>
-  
-## Table Usage
-### 👍 Use this component for
-- **Displaying tabular data.** When you need to display tabular information, such as statistical data.
-- **Displaying directories.** When listing locations or resources that have similarly structured content for many items.
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />  
+## Usage Guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Displaying tabular data.** When you need to display tabular information, such as statistical data.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Displaying directories.** When listing locations or resources that have similarly structured content for many items.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Non-tabular data.** Depending on the type of content, consider using other presentation formats, [such as definition lists or hierarchical lists](https://designsystem.digital.gov/components/list).
-- **Robust data visualization.** If you need to display more complex relationships or [data visualizations](https://designsystem.digital.gov/components/data-visualizations/), consider a bar graph, infographic, or other type of chart.
-- **Dashboards** and other layouts. Don’t use tables in place of a [layout grid](https://designsystem.digital.gov/utilities/layout-grid/). Table content should follow a consistent structure using headers and logical columns and rows.
-- **Long-form content.** Table cell content should be brief and scannable. If you find yourself drafting multiple bullet points or paragraphs within a single table cell, the content is likely better off under conventional page headers or in an accordion.
-- **Groups of items with different structures.** Consider a [list](https://designsystem.digital.gov/components/list) or [cards](https://designsystem.digital.gov/components/card/) for content items that don’t follow a consistent pattern.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Non-tabular data.** Depending on the type of content, consider using other presentation formats, [such as definition lists or hierarchical lists](https://designsystem.digital.gov/components/list).
+    </IconListItem>
+    <IconListItem icon="close">
+        **Robust data visualization.** If you need to display more complex relationships or [data visualizations](https://designsystem.digital.gov/components/data-visualizations/), consider a bar graph, infographic, or other type of chart.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Dashboards** and other layouts. Don’t use tables in place of a [layout grid](https://designsystem.digital.gov/utilities/layout-grid/). Table content should follow a consistent structure using headers and logical columns and rows.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Long-form content.** Table cell content should be brief and scannable. If you find yourself drafting multiple bullet points or paragraphs within a single table cell, the content is likely better off under conventional page headers or in an accordion.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Groups of items with different structures.** Consider a [list](https://designsystem.digital.gov/components/list) or [cards](https://designsystem.digital.gov/components/card/) for content items that don’t follow a consistent pattern.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Tables are great at displaying data and complex information.** Minimal visual styling helps surface this information more easily.
-- **Always use a header row.** Use plain language and short labels to define the type of information that can be found in each column or row. For more complex table structures, review the [WCAG accessibility recommendations for tables](https://www.w3.org/WAI/tutorials/tables/).
-- **Predictably format columns.** Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared. For example, if most of the rows in a table show a count in days, don’t have some rows that count by weeks.
-- **Right-align numerical data.** Align numbers that represent a sum to the right using the [text alignment utilities](https://designsystem.digital.gov/utilities/paragraph-styles/#text-align) on the table cells.
-- **Use a monospace font for numerical data.** For even better readability of dense, numerical data, consider formatting numbers that convey amounts, such as percentages, currency, or tallies, in a [monospace](https://designsystem.digital.gov/design-tokens/typesetting/font-family) font. (There’s no need to apply monospace formatting or alignment to phone numbers, zip codes, dates, or other number content that can’t be totaled.)
-- **Attribute table data in a caption.** If your table includes information from a specific source or contains frequently updated content, provide the source and/or last updated date. This clarification is especially useful if your table summarizes data from a more extensive source.
-- **Consider a small-screen experience.** On mobile devices and other small screens, numerical data across many columns can be easier to understand if the table scrolls horizontally. Directory lists are more readable if the rows display in a stacked layout. For tables with more than two columns, make sure you choose either a scrollable or a stacked variant.
-- **Minimize the number of columns.** It’s easier for users to read down a long list of rows than it is to read across a long list of columns. Eliminate columns when possible, or consider swapping the columns and rows to improve scannability.
-- **Enable sort where useful.** Add row sorting to individual columns of long tables where the data can be logically ordered either alphabetically or numerically.
-- **Don’t use row sorting with merged cells.** Sorting won’t work properly if your table contains `colspan` or `rowspan` attributes on the cells.
-- **Don’t use row sorting with the mobile stacked variants.** Sorting won’t work properly with these variants because the column headers at the top of the table don’t appear at narrow widths and are instead moved into the cell content in each row.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Tables are great at displaying data and complex information.** Minimal visual styling helps surface this information more easily.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Always use a header row.** Use plain language and short labels to define the type of information that can be found in each column or row. For more complex table structures, review the [WCAG accessibility recommendations for tables](https://www.w3.org/WAI/tutorials/tables/).
+    </IconListItem>
+    <IconListItem icon="report">
+        **Predictably format columns.** Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared. For example, if most of the rows in a table show a count in days, don’t have some rows that count by weeks.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Right-align numerical data.** Align numbers that represent a sum to the right using the [text alignment utilities](https://designsystem.digital.gov/utilities/paragraph-styles/#text-align) on the table cells.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use a monospace font for numerical data.** For even better readability of dense, numerical data, consider formatting numbers that convey amounts, such as percentages, currency, or tallies, in a [monospace](https://designsystem.digital.gov/design-tokens/typesetting/font-family) font. (There’s no need to apply monospace formatting or alignment to phone numbers, zip codes, dates, or other number content that can’t be totaled.)
+    </IconListItem>
+    <IconListItem icon="report">
+        **Attribute table data in a caption.** If your table includes information from a specific source or contains frequently updated content, provide the source and/or last updated date. This clarification is especially useful if your table summarizes data from a more extensive source.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Consider a small-screen experience.** On mobile devices and other small screens, numerical data across many columns can be easier to understand if the table scrolls horizontally. Directory lists are more readable if the rows display in a stacked layout. For tables with more than two columns, make sure you choose either a scrollable or a stacked variant.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Minimize the number of columns.** It’s easier for users to read down a long list of rows than it is to read across a long list of columns. Eliminate columns when possible, or consider swapping the columns and rows to improve scannability.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Enable sort where useful.** Add row sorting to individual columns of long tables where the data can be logically ordered either alphabetically or numerically.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t use row sorting with merged cells.** Sorting won’t work properly if your table contains `colspan` or `rowspan` attributes on the cells.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t use row sorting with the mobile stacked variants.** Sorting won’t work properly with these variants because the column headers at the top of the table don’t appear at narrow widths and are instead moved into the cell content in each row.
+    </IconListItem>
+</IconList>
 
 
 ## Content Guidance 
-- TBD
+Content guidance in progress.
 
 
 ## States
@@ -79,8 +118,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}>View table in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />
 ### Borderless
 
 <iframe 
@@ -91,8 +129,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}>View borderless table in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />
 ### Compact
 
 <iframe 
@@ -103,8 +140,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/story/components-table--compact`}>View compact table in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--compact`} />
 ### Striped
 
 <iframe 
@@ -115,8 +151,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/story/components-table--striped`}>View striped table in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--striped`} />
 ### Scrollable
 
 <iframe 
@@ -127,8 +162,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/story/components-table--scrollable`}>View scrollable table in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--scrollable`} />
 ### Responsive stacked
 
 <iframe 
@@ -139,8 +173,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-half border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/story/components-table--responsive`}>View responsive table in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--responsive`} />
 ### Sortable
 
 <iframe 
@@ -151,8 +184,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sortable`}>View sortable table in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sortable`} />
 ### Sticky table header
 
 <iframe 
@@ -163,8 +195,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sticky-headers`}>View sticky table header in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sticky-headers`} />
 ## Accessibility Guidance
 
 Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/components/table/accessibility-tests) to test implementation.
@@ -183,6 +214,9 @@ Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/com
 | `.usa-table--stacked-header`| Stacks the table cells on narrow screens and visually promotes the first cell of every row into a “header” for that group. Preferred for directories and other lists where the first cell of every row is a name. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header. |
 | `.usa-table--sticky-header`| Allows the table header element to stick to the top of the page as the user scrolls. Preferred for long tables with many rows. This variant is not compatible with the scrollable and stacked table variants.|
 | `.usa-table--striped` | Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns. |
+
+## Known Issues
+None
 
 ## Resources
 
