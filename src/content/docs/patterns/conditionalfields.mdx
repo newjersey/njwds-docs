@@ -1,21 +1,27 @@
 ---
 title: Conditional Fields
 description: Documentation for conditional fields.
+hideTitle: true
 ---
 
-**Reveal fields conditionally to manage a form's complexity and relevance for users.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+
+<PageHeader
+  name="Conditional Fields"
+  category="STYLES"
+  description="Reveal fields conditionally to manage a form's complexity and relevance for users."
+/>
   
 ## Conditional Fields Usage
-### ✔️ What to do
+### What to do
 - Use conditional form fields to follow-up on a user's selection.
 - Show reveals after a form field, not before.
 - Clearly label revealed fields.
 - Limit reveals to one section or set of questions.
 - Ensure revealed fields are tabbed to after the original field.
 
-### ❌ What not to do
+###  What not to do
 - Do not conditionally reveal multiple sections or large amounts of information. Use a separate page instead.
 - Do not reveal content before the form field that triggers it.
 - Do not reveal an unlabeled field, unless it is clear that it shares a label with the original selection.
@@ -37,16 +43,6 @@ To make conditional fields accessible, they should show up in an expected manner
 - Providing form instructions that tell users content may change based on their selections.
 
 When reveals are expected, live-regions and announcements are unnecessary for screen reader users. When a form field shows up after the original field, and is next in the focus order, it is generally understood by users.
-
-## Known Issues
-For help with known issues, please reach out to the platform team.
-
-Grove and USWDS components do not come with their own conditional styles. The following items are in the Grove backlog:
-
-- Radio button group
-- Checkbox group
-
-Teams should explore conditional styles on their own, and connect with the platform team for assistance.
 
 
 ## Resources

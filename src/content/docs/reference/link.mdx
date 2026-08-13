@@ -1,17 +1,15 @@
 ---
 title: Link
 description: Documentation for link component.
+hideTitle: true
 ---
-
-**A link connects users to a different page or further information.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Link"
+  category="COMPONENTS"
+  description="A link connects users to a different page or further information."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2776-427&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}
 />
@@ -24,39 +22,69 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`} />
 
+## Usage Guidelines
 
-## Link Usage
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Navigation** to another page within a website or an external website
+    </IconListItem>
+    <IconListItem icon="check">
+        **Access** a file or email address
+    </IconListItem>
+</IconList>
 
-### 👍 Use this component for
-- **Navigation** to another page within a website or an external website
-- **Access** a file or email address
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Tertiary actions** within a page (ex: Print, Cancel)
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Tertiary actions** within a page (ex: Print, Cancel)
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Clearly identify external links.** The external link icon is a good way to communicate that a link is external.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t rely on only color to distinguish links.** Include an underline or bottom border on text links, in addition to a consistent link color. 
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don’t block external links with disruptive notifications.** Allow users to follow external links without taking a separate action to acknowledge leaving your site. Roadblock notices, such as modals and dialog boxes, result in a poor user experience. Instead, communicate about a link’s destination through descriptive link text and external link indicators. Use your site’s policy and notices page to provide important information about non-government sites without disrupting the user experience (see content guidance for more).
+    </IconListItem>
+    <IconListItem icon="report">
+        **Simplify link placement in body text.** A link requires mental effort, which affects readability. Reduce the number of links in a single sentence to simplify its message. Consider placing links at the beginning or end of sentences to improve readability.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Link directly to the most relevant page.** Avoid links to pages that require further user action to locate the intended information.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Notify users about non-government links.** Review [this resource on Digital.gov](https://digital.gov/resources/required-web-content-and-links) for guidance on non-federal link requirements.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Indicate nonpublic links that require authentication.** Use text or an indicator like a lock icon to signal any link that is not available publicly. This includes links behind a login or other authentication like a paywall.
 
-### 🚫 What to ensure / avoid
-- **Clearly identify external links.** The external link icon is a good way to communicate that a link is external.
-- **Don’t rely on only color to distinguish links.** Include an underline or bottom border on text links, in addition to a consistent link color. 
-- **Don’t block external links with disruptive notifications.** Allow users to follow external links without taking a separate action to acknowledge leaving your site. Roadblock notices, such as modals and dialog boxes, result in a poor user experience. Instead, communicate about a link’s destination through descriptive link text and external link indicators. Use your site’s policy and notices page to provide important information about non-government sites without disrupting the user experience (see content guidance for more).
-- **Simplify link placement in body text.** A link requires mental effort, which affects readability. Reduce the number of links in a single sentence to simplify its message. Consider placing links at the beginning or end of sentences to improve readability.
-- **Link directly to the most relevant page.** Avoid links to pages that require further user action to locate the intended information.
-- **Notify users about non-government links.** Review [this resource on Digital.gov](https://digital.gov/resources/required-web-content-and-links) for guidance on non-federal link requirements.
-- **Indicate nonpublic links that require authentication.** Use text or an indicator like a lock icon to signal any link that is not available publicly. This includes links behind a login or other authentication like a paywall.
+      - **Example 1:**  
+        We’ve documented our research in the [raw research notes](javascript:void(0)) .
 
-  - **Example 1:**  
-    We’ve documented our research in the [raw research notes 🔒](javascript:void(0)) .
+      - **Example 2:**  
+        We’ve documented our research in the [raw research notes](javascript:void(0)) (requires login).
+    </IconListItem>
+    <IconListItem icon="report">
+        **If you use an external link indicator, use it consistently for all text links.**  If users learn to associate an external link with the indicator, they will also appropriately expect that text links without an indicator are not external links. Icon- or image-only links like social share buttons or logos do not need the same treatment as text links.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Add `rel="noreferrer"` to external links.** Setting `noreferrer` on links prevents the browser from leaking information about the original web address.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Add a non-endorsement statement to your site.** Your “Policy and Notices” page should explain to users that your agency does not endorse the information on any linked non-federal site. See, for example, [USA.gov’s linking policy](https://www.usa.gov/linking-policy). In addition to this site-level notice, consider adding additional non-endorsement statements on individual pages with non-federal links.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Encode email and phone links.** Some browsers don’t automatically display a clickable link for email addresses or phone numbers, so encode email and phone links with `mailto:` and `tel:`. Be sure to include the country code in phone numbers to support international users.
 
-  - **Example 2:**  
-    We’ve documented our research in the [raw research notes](javascript:void(0)) (requires login).
-
-- **If you use an external link indicator, use it consistently for all text links.**  If users learn to associate an external link with the indicator, they will also appropriately expect that text links without an indicator are not external links. Icon- or image-only links like social share buttons or logos do not need the same treatment as text links.
-- **Add `rel="noreferrer"` to external links.** Setting `noreferrer` on links prevents the browser from leaking information about the original web address.
-- **Add a non-endorsement statement to your site.** Your “Policy and Notices” page should explain to users that your agency does not endorse the information on any linked non-federal site. See, for example, [USA.gov’s linking policy](https://www.usa.gov/linking-policy). In addition to this site-level notice, consider adding additional non-endorsement statements on individual pages with non-federal links.
-- **Encode email and phone links.** Some browsers don’t automatically display a clickable link for email addresses or phone numbers, so encode email and phone links with `mailto:` and `tel:`. Be sure to include the country code in phone numbers to support international users.
-
-  - **Examples:**  
+      - **Examples:**  
 <pre><code>
 <a href="mailto:program-team@agency.gov">program-team@agency.gov</a>
 </code></pre>
@@ -64,8 +92,11 @@ import { LinkButton } from '@astrojs/starlight/components';
 <pre><code>
 <a href="tel:1-800-555-1234">1-800-555-1234</a>
 </code></pre>
-
-- **Check with your IT security department regarding email link best practices.** While displaying email addresses and phone numbers provides a better experience for users, it can also increase spam for the email recipient. One approach is to use a group email address to protect individuals. Another benefit of that approach is the email will remain the same even as staff and organizational structures change. You can also consider using a contact form instead of showing email addresses.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Check with your IT security department regarding email link best practices.** While displaying email addresses and phone numbers provides a better experience for users, it can also increase spam for the email recipient. One approach is to use a group email address to protect individuals. Another benefit of that approach is the email will remain the same even as staff and organizational structures change. You can also consider using a contact form instead of showing email addresses.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -123,8 +154,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`} />
 #### Dark
 <iframe 
     title="Interactive preview of the dark mode link from Storybook" 
@@ -134,8 +164,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`} />
 
 ### State
 #### Visited
@@ -147,8 +176,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`} />
 #### External
 <iframe 
     title="Interactive preview of the external link from Storybook" 
@@ -158,8 +186,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`}>View link in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-link--docs`} />
 ## Code utilities
 ### Link variants 
 | Variant | Description |
@@ -172,6 +199,9 @@ Use the [USWDS link accessibility tests](https://designsystem.digital.gov/compon
 - **Allow keyboard navigation of links.** Users should be able to navigate between links by using the “Tab” key. They should be able to activate a link by pressing the “Enter” key.
 Link hover state should be visible on focus. Users should be able to activate hover and focus states with both a mouse and a keyboard.
 
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

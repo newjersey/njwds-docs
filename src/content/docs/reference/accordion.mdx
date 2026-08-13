@@ -1,15 +1,15 @@
 ---
 title: Accordion
 description: Documentation for accordion component.
+hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
-**An accordion is a list of headers that hide or reveal additional content when selected.**
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
-
-<FigmaStorybookButtonGroup 
+<PageHeader
+  name="Accordion"
+  category="COMPONENTS"
+  description="An accordion is a list of headers that hide or reveal additional content when selected."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1519-637&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`}
 />
@@ -22,24 +22,44 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
-🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`}>View accordion in Storybook</a>
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`} />
   
-## Accordion Usage
-### 👍 Use this component for
-- **If users will only need a few specific pieces of content within a page.**
-- **If you have only a small space to display a lot of content.**
+## Usage Guidelines
+### Use this component for:
 
-### 👎 Consider something else for
-- **If users need to see most or all of the information on a page.** Use well-formatted text instead.
-- **If there is not enough content to warrant condensing.** Accordions increase cognitive load and interaction cost because users have to make decisions about what headers to click on.
+<IconList>
+    <IconListItem icon="check">
+        **If users will only need a few specific pieces of content within a page.**
+    </IconListItem>
+    <IconListItem icon="check">
+        **If you have only a small space to display a lot of content.**
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
-- **Give interactive elements enough space.** Make sure interactive elements within the collapsible region are far enough from the headers that users don't accidentally trigger a collapse. (The exact distance depends on the device.)
+### Use something else for:
 
+<IconList>
+    <IconListItem icon="close">
+        **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
+    </IconListItem>
+    <IconListItem icon="close">
+        **If there is not enough content to warrant condensing.** Accordions increase cognitive load and interaction cost because users have to make decisions about what headers to click on.
+    </IconListItem>
+</IconList>
+
+### Requirements for use:
+
+<IconList>
+    <IconListItem icon="report">
+        **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Give interactive elements enough space.** Make sure interactive elements within the collapsible region are far enough from the headers that users don't accidentally trigger a collapse. (The exact distance depends on the device.)
+    </IconListItem>
+</IconList>
 
 ## Content guidelines
-- TBD
+Content guidelines in progress.
 
 
 ## Accordion Variants
@@ -53,7 +73,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     loading="lazy"
     class="grove__iframe width-full border border-base-light"></iframe>
 
-🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--default`}>View borderless accordion in Storybook</a>
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--default`} />
 
 #### Figma Type properties
 
@@ -81,7 +101,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
-🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--bordered`}>View bordered accordion in Storybook</a>
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--bordered`} />
 
 #### Figma Type properties
 
@@ -102,7 +122,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ### Multiselectable Accordions
 Add the `data-allow-multiple attribute` to any usa-accordion to create a multiselectable accordion group.
 
-🔗 <a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`}>View accordion in Storybook</a>
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`} />
 
 #### Code Variant
 
@@ -140,6 +160,9 @@ Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/c
 | Accordion Heading | `usa-accordion__heading` | Add to `h2` for accordion title |
 | Accordion Button | `usa-accordion__button` | Add to `button` for accordion button |
 | Accordion Content | `usa-accordion__content usa-prose` | Add to `div` for accordion content |
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 

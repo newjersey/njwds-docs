@@ -1,25 +1,24 @@
 ---
 title: Date Pickers
 description: Documentation for date pickers.
+hideTitle: true
 ---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+<PageHeader
+  name="Date Pickers"
+  category="COMPONENTS"
+  description="The date picker, memorable date picker, and date range picker are used for varying use cases of selecting dates."
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-15781&p=f&t=kIkWUxaAUytHfoIV-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`}
+  wcagBadge={false}
+/>
 
 **Date picker options**
 - **Date Picker:** A date picker helps users select a single date. 
 - **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
 - **Date Range Picker:** A set of date pickers to allow for selecting date ranges.
-  
-✅ _Passed WCAG 2.1 AA (USWDS component)_
-
-###
-
-import { STORYBOOK_BASE_URL } from '@config/storybook';
-
-import { LinkButton } from '@astrojs/starlight/components';
-
-<FigmaStorybookButtonGroup 
-  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-15781&p=f&t=kIkWUxaAUytHfoIV-0"
-  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`}
-/>
 
 <iframe 
     title="Interactive preview of the date picker from Storybook" 
@@ -29,8 +28,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`}>View date picker in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`} />
  <iframe 
     title="Interactive preview of the memorable date picker from Storybook" 
     frameborder="0" 
@@ -39,8 +37,7 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-memorable-date-picker--docs`}>View memorable date picker in Storybook</a>
-
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-memorable-date-picker--docs`} />
  <iframe 
     title="Interactive preview of the date range picker from Storybook" 
     frameborder="0" 
@@ -49,10 +46,9 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-range-picker--docs`}>View date range picker in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-range-picker--docs`} />
 
-
-## Date Picker Usage
+## Date Picker Usage Guidelines
 
 <iframe 
     title="Interactive preview of the date picker from Storybook" 
@@ -62,24 +58,43 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`}>View date picker in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`} />
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Scheduling.** When users need to schedule or record an event, and benefit from the context of a calendar.
+    </IconListItem>
+    <IconListItem icon="check">
+        **When the day of the week is important.** When knowing the day of the week helps users choose a specific date.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Date ranges.** This component accommodates selecting date ranges.
+    </IconListItem>
+</IconList>
 
-### 👍 Use this component for
-- **Scheduling.** When users need to schedule or record an event, and benefit from the context of a calendar.
-- **When the day of the week is important.** When knowing the day of the week helps users choose a specific date.
-- **Date ranges.** This component accommodates selecting date ranges.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Familiar dates.** When asking users for a date they know well, or can look up without using a calendar (like a birthday), use a memorable date picker.
+    </IconListItem>
+    <IconListItem icon="close">
+        **When the day of the week is irrelevant.** If there’s no benefit to knowing the day of the week for a particular date, consider a memorable date picker.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Familiar dates.** When asking users for a date they know well, or can look up without using a calendar (like a birthday), use a memorable date picker.
-- **When the day of the week is irrelevant.** If there’s no benefit to knowing the day of the week for a particular date, consider a memorable date picker.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Describe the date format.** Provide a hint of `mm/dd/yyyy` to help users enter the proper date format if they opt not to use the date picker.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Always allow a user to type in the date manually.** Usability testing suggests some people prefer manually typing the date rather than using the calendar picker. Whenever possible, keep the keyboard active so people can enter in the date information without having to use the picker.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Describe the date format.** Provide a hint of `mm/dd/yyyy` to help users enter the proper date format if they opt not to use the date picker.
-- **Always allow a user to type in the date manually.** Usability testing suggests some people prefer manually typing the date rather than using the calendar picker. Whenever possible, keep the keyboard active so people can enter in the date information without having to use the picker.
 
 
-
-## Memorable Date Picker Usage
+## Memorable Date Usage Guidelines
 
  <iframe 
     title="Interactive preview of the memorable date picker from Storybook" 
@@ -89,21 +104,36 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-memorable-date-picker--docs`}>View memorable date picker in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-memorable-date-picker--docs`} />
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Appropriate for most dates.** This component is appropriate for most dates.
+    </IconListItem>
+</IconList>
 
-### 👍 Use this component for
-- **Appropriate for most dates.** This component is appropriate for most dates.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Date ranges.** This component does not accommodate date ranges.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
-- **Date ranges.** This component does not accommodate date ranges.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+    </IconListItem>
+</IconList>
 
-### 🚫 What to ensure / avoid
-- **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
-- **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
 
-
-## Date Range Picker Usage
+## Date Range Usage Guidelines
 
  <iframe 
     title="Interactive preview of the date range picker from Storybook" 
@@ -113,17 +143,30 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- 🔗<a href={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-range-picker--docs`}>View date range picker in Storybook</a>
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-range-picker--docs`} />
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Date ranges.** This component is appropriate for collecting date ranges, such as availability.
+    </IconListItem>
+</IconList>
 
-### 👍 Use this component for
-- **Date ranges.** This component is appropriate for collecting date ranges, such as availability.
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Single dates.** This component does not accommodate single dates.
+    </IconListItem>
+</IconList>
 
-### 👎 Consider something else for
-- **Single dates.** This component does not accommodate single dates.
-
-### 🚫 What to ensure / avoid
-- **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
-- **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Label each field.** Be sure each field is properly labeled — some countries enter dates in day, month, year order.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
@@ -160,7 +203,7 @@ import { LinkButton } from '@astrojs/starlight/components';
 
 ## Accessibility guidance
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
-- **⚠️Known assistive technology issues.⚠️** Testing with people using assistive technology revealed [usability concerns](https://github.com/uswds/uswds-site/issues/1898) that require additional investigation. At this time, consider using a [Select component](https://designsystem.digital.gov/components/select) instead of a Combo box. More research and testing is planned to better understand and address these accessibility issues. If you would like to contribute to improving this component, please [join USWDS community](https://designsystem.digital.gov/about/community/) if you'd like to share your feedback.
+- **Known assistive technology issues.** Testing with people using assistive technology revealed [usability concerns](https://github.com/uswds/uswds-site/issues/1898) that require additional investigation. At this time, consider using a [Select component](https://designsystem.digital.gov/components/select) instead of a Combo box. More research and testing is planned to better understand and address these accessibility issues. If you would like to contribute to improving this component, please [join USWDS community](https://designsystem.digital.gov/about/community/) if you'd like to share your feedback.
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the accessibility requirements that apply to all form controls.
 - **Always use a label.** Make sure your select element has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the menu read “Select a state” by default).
 - **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
@@ -185,6 +228,9 @@ These properties must be set before the component is initialized in order to hav
 
 ### Other notes on form validation behavior 
 - Entering a correctly formatted but invalid date (e.g. February 29 on a non-leap year) will cause native form validation error.
+
+## Known Issues
+None
 
 ## Resources
 ### Grove links 
