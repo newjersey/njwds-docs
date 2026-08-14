@@ -82,11 +82,18 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
 </section>
 
 <section class="grove-home-section-container">
-  <div class="usa-section padding-y-6 padding-x-3 tablet:padding-10 grove-home-section">
-  <h2>Styles</h2>
-  <p class="tablet:font-body-lg">The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
-  <a href="/styles/typography/">View styles</a>
-</div>
+  <div class="grove-home-section">
+    <div class="grid-row">
+      <div class="tablet:grid-col-6 padding-y-6 padding-x-3 tablet:padding-y-10 tablet:padding-left-10 tablet:padding-right-0 display-flex flex-column flex-justify-center">
+        <h2>Styles</h2>
+        <p class="tablet:font-body-lg">The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
+        <a href="/styles/typography/">View styles</a>
+      </div>
+      <div class="tablet:grid-col-6">
+        <img alt="three boxes: cords being connecting, gardening with shovel, and hand switching toggles" src={stylesection.src} />
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="grove-home-section-container">
