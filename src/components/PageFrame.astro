@@ -7,10 +7,10 @@ import GroveFooter from './GroveFooter.astro';
 const { hasSidebar } = Astro.locals.starlightRoute;
 ---
 
-<div class="page sl-flex">
+<div class="page sl-flex position-relative">
 	<header class="header"><slot name="header" /></header>
-	{
-		hasSidebar && (
+	<div class="sl-flex flex-fill">
+		{hasSidebar && (
 			<nav class="sidebar print:hidden" aria-label={Astro.locals.t('sidebarNav.accessibleLabel')}>
 				<MobileMenuToggle />
 				<div id="starlight__sidebar" class="sidebar-pane">
@@ -19,10 +19,11 @@ const { hasSidebar } = Astro.locals.starlightRoute;
 					</div>
 				</div>
 			</nav>
-		)
-	}
-	<div class="main-frame"><slot /></div>
-	<div class="grove-page-footer print:hidden">
+			)
+		}
+		<div class="main-frame"><slot /></div>
+	</div>
+	<div class="grove-page-footer print:hidden position-sticky">
 		<GroveFooter />
 	</div>
 </div>
@@ -94,9 +95,16 @@ const { hasSidebar } = Astro.locals.starlightRoute;
 			:global([data-has-sidebar]) .header {
 				padding-inline-end: var(--sl-nav-pad-x);
 			}
+			.main-frame {
+				padding-inline-start: 0;
+			}
 			.sidebar-pane {
 				--sl-sidebar-visibility: visible;
+				position: sticky;
+				inset: auto;
+				top: var(--sl-nav-height);
 				width: var(--sl-sidebar-width);
+				height: calc(100vh - var(--sl-nav-height));
 				background-color: var(--sl-color-bg-sidebar);
 				border-inline-end: 1px solid var(--sl-color-hairline-shade);
 			}
