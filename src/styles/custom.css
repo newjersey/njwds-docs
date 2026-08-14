@@ -144,6 +144,15 @@ a.site-title {
   table-layout: auto;
 }
 
+@media (min-width: 72rem) {
+  .right-sidebar {
+    position: sticky;
+    top: var(--sl-nav-height);
+    padding-top: 0;
+    height: calc(100vh - var(--sl-nav-height));
+  }
+}
+
 /* TODO: generalize once content pages are redesigned */
 body:has([data-page-header]) .main-frame {
   --sl-content-width: 75rem;
@@ -154,12 +163,6 @@ body:has([data-page-header]) .main-frame {
 
   @media (min-width: 72rem) {
     --sl-mobile-toc-height: 0rem;
-    .right-sidebar {
-      position: sticky;
-      top: var(--sl-nav-height);
-      padding-top: 0;
-      height: calc(100vh - var(--sl-nav-height));
-    }
   }
 
   .content-panel {
