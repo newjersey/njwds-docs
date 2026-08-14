@@ -233,6 +233,10 @@ body:has(.grove-home-section-container) {
   margin: auto;
 }
 
+.grove-styles-image img {
+  object-fit: cover;
+  object-position: right;
+}
 .grove-card-group {
   > *:last-child {
     margin-bottom: 0;
