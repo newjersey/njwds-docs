@@ -144,8 +144,7 @@ a.site-title {
   table-layout: auto;
 }
 
-/* TODO: generalize once content pages are redesigned */
-body:has[data-has-sidebar] .main-frame {
+[data-has-sidebar] .main-frame {
   --sl-content-width: 75rem;
   --sl-content-pad-x: 1.5rem;
   @media (min-width: 40rem) {

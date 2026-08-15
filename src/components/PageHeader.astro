@@ -17,7 +17,7 @@ const { name, category, description, figmaUrl, storybookUrl, wcagBadge = true } 
             <header>
                 {category && (<span class="font-body-2xs text-base">{category}</span>)}
                 <h1 class="margin-0">{name}</h1>
-                <p>{description}</p>
+                {description && (<p>{description}</p>)}
             </header>
             {wcagBadge && (
                 <div>
