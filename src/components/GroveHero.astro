@@ -19,6 +19,8 @@ import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
 
 <style>
   .grove-hero {
+    --grove-hero-callout-width: 42.5rem;
+    position: relative;
     margin: auto;
     max-width: 87.5rem;
     background-image: var(--grove-hero-bg);
@@ -31,7 +33,7 @@ import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
     background-color: var(--grove-base-100);
     @media (min-width: 40rem) {
       border-right: 0.5px solid var(--grove-base-700);
-      max-width: 42.5rem;
+      max-width: min(var(--grove-hero-callout-width), 75%);
     }
   }
 
@@ -47,7 +49,12 @@ import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
 
   .grove-hero_image {
     @media (min-width: 40rem) {
-      width: 50%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: min(var(--grove-hero-callout-width), 75%);
+      right: calc((100% - 100vw) / 2);
     }
     img {
       object-fit: cover;
