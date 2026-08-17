@@ -241,3 +241,7 @@ body:has(.grove-home-section-container) {
 .text-heavy {
   font-weight: 800;
 }
+
+.grove-striped-table tbody tr:nth-child(odd) th {
+  background-color: #edeff0;
+}
