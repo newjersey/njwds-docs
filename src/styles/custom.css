@@ -245,3 +245,7 @@ body:has(.grove-home-section-container) {
 .grove-striped-table tbody tr:nth-child(odd) th {
   background-color: #edeff0;
 }
+
+.grove-getting-started-card {
+  min-width: 16rem;
+}
