@@ -234,10 +234,10 @@ body:has(.grove-home-section-container) {
 }
 
 .grove-styles-text {
-  min-width: 32rem;
   z-index: 1;
   background-color: var(--grove-base-100);
   @media (min-width: 40rem) {
+    min-width: 32rem;
     max-width: var(--grove-styles-text-width);
   }
 }
