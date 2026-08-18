@@ -269,6 +269,12 @@ body:has(.grove-home-section-container) {
   }
 }
 
+.grove-resource-media-block {
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+}
+
 /* need to add into NJWDS */
 
 .text-semibold {

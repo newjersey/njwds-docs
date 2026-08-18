@@ -127,9 +127,9 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
   <section class="usa-graphic-list flex-row margin-top-4 not-content">
     <div class="grid-container">
       <div class="usa-graphic-list__row grid-row grid-gap">
-        <div class="usa-media-block tablet:grid-col">
-          <img class="usa-media-block__img" src={graphicfigma.src} alt="Figma" />
-          <div class="usa-media-block__body display-flex flex-column height-full">
+        <div class="usa-media-block desktop:grid-col flex-column grove-resource-media-block">
+          <img class="usa-media-block__img margin-bottom-3 tablet:margin-bottom-0" src={graphicfigma.src} alt="Figma" />
+          <div class="usa-media-block__body display-flex flex-column flex-justify-center desktop:height-full">
             <h2 class="usa-graphic-list__heading">Figma</h2>
             <p class="flex-fill">Create designs for use in static mockups and prototypes.</p>
             <div class="margin-top-105">
@@ -137,9 +137,9 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
             </div>
           </div>
         </div>
-        <div class="usa-media-block tablet:grid-col">
-          <img class="usa-media-block__img" src={graphicstorybook.src} alt="Storybook" />
-          <div class="usa-media-block__body display-flex flex-column height-full">
+        <div class="usa-media-block desktop:grid-col margin-top-6 desktop:margin-top-0 flex-column grove-resource-media-block">
+          <img class="usa-media-block__img margin-bottom-3 tablet:margin-bottom-0" src={graphicstorybook.src} alt="Storybook" />
+          <div class="usa-media-block__body display-flex flex-column flex-justify-center desktop:height-full">
             <h2 class="usa-graphic-list__heading">Storybook</h2>
             <p class="flex-fill">The single source of truth for the codebase's design system.</p>
             <div class="margin-top-105">
