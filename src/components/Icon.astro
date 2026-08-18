@@ -1,0 +1,15 @@
+---
+interface Props {
+  icon: 'check' | 'close' | 'campaign' | 'construction';
+}
+
+const { icon } = Astro.props;
+---
+<svg class="usa-icon usa-icon--size-3 align" aria-hidden="true" focusable="false" role="img"><use href=`/assets/img/sprite.svg#${icon}`></use></svg>
+
+<style>
+    .align{
+        vertical-align: middle;
+        margin-top: -0.25rem;
+    }
+</style>
