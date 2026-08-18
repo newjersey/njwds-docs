@@ -1,10 +1,8 @@
 ---
 import heroimage from '../assets/GroveHeroCreamBG.png';
-import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
-
 ---
-<section class="usa-hero display-flex grove-hero" aria-label="Introduction" style={`--grove-hero-bg: url(${heroimageMobile.src})`}>
-  <div class="usa-hero__callout margin-3 padding-top-8 padding-x-4 padding-bottom-3 tablet:padding-10 tablet:margin-0 grove-hero-callout">
+<section class="usa-hero display-flex grove-hero" aria-label="Introduction">
+  <div class="usa-hero__callout margin-3 padding-y-4 padding-x-0 tablet:padding-10 tablet:margin-0 grove-hero-callout">
     <h1 id="_top" tabindex="-1" class="usa-hero__heading text-semibold font-heading-2xl grove-hero-h1">
       <span class="usa-hero__heading--alt grove-hero-primary-color">Designed to serve.</span>
       <span class="text-green">Built to grow.</span>
@@ -24,7 +22,7 @@ import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
     margin: auto;
     max-width: 87.5rem;
     background-image: var(--grove-hero-bg);
-    @media (min-width: 40rem) {
+    @media (min-width: var(--grove-hero-callout-width)) {
       background-image: none;
     };
   }
@@ -33,7 +31,7 @@ import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
     background-color: var(--grove-base-100);
     @media (min-width: 40rem) {
       border-right: 0.5px solid var(--grove-base-700);
-      max-width: min(var(--grove-hero-callout-width), 75%);
+      max-width: var(--grove-hero-callout-width);
     }
   }
 
@@ -53,7 +51,7 @@ import heroimageMobile from '../assets/GroveHeroCreamBGMobile.png';
       z-index: -1;
       top: 0;
       bottom: 0;
-      left: min(var(--grove-hero-callout-width), 75%);
+      left: var(--grove-hero-callout-width);
       right: calc((100% - 100vw) / 2);
     }
     img {

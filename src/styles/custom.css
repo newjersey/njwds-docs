@@ -233,9 +233,28 @@ body:has(.grove-home-section-container) {
   margin: auto;
 }
 
-.grove-styles-image img {
-  object-fit: cover;
-  object-position: right;
+.grove-styles-text {
+  min-width: 32rem;
+  z-index: 1;
+  background-color: var(--grove-base-100);
+  @media (min-width: 40rem) {
+    max-width: var(--grove-styles-text-width);
+  }
+}
+
+.grove-styles-image {
+  @media (min-width: 40rem) {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 32rem;
+  }
+  img {
+    object-fit: cover;
+    object-position: right;
+  }
 }
 .grove-card-group {
   > *:last-child {
