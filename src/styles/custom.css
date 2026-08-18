@@ -254,5 +254,7 @@ body:has(.grove-home-section-container) {
 }
 
 .grove-getting-started-card {
-  min-width: 16rem;
+  @media (min-width: 40rem) {
+    width: 15.375rem;
+  }
 }
