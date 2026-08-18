@@ -261,6 +261,10 @@ body:has(.grove-home-section-container) {
     margin-bottom: 0;
   }
 }
+
+.grove-card-img {
+  height: 8rem;
+}
 /* need to add into NJWDS */
 
 .text-semibold {
