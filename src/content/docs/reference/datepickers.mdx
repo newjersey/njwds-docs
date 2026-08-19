@@ -19,33 +19,6 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 - **Memorable Date Picker/Date Input:** A select for month followed by two text fields is the easiest way for users to enter most dates.
 - **Date Range Picker:** A set of date pickers to allow for selecting date ranges.
 
-<iframe 
-    title="Interactive preview of the date picker from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-date-picker--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-picker--docs`} />
- <iframe 
-    title="Interactive preview of the memorable date picker from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-memorable-date-picker--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-memorable-date-picker--docs`} />
- <iframe 
-    title="Interactive preview of the date range picker from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-date-range-picker--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-date-range-picker--docs`} />
 
 ## Date Picker Usage Guidelines
 
@@ -91,6 +64,20 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
+### Figma properties 
+| Property | Values | 
+| ----------- | ----------- |
+| state | default, focus, success, open, selected, error |
+| label text | [text input] |
+| required | true, false |
+| helper | true, false |
+| helper text | [text input] |
+| input | true, false | 
+| input text | [text input] |
+| focus | false, true | 
+| calendar | false, true | 
+| error text | [text input] |
+
 
 
 ## Memorable Date Usage Guidelines
@@ -104,6 +91,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-memorable-date-picker--docs`} />
+
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -130,6 +118,16 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
         **Avoid select elements for day or year.** It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
     </IconListItem>
 </IconList>
+
+### Figma properties 
+| Property | Values | 
+| ----------- | ----------- |
+| state | default, focus, success, open, selected, error |
+| label text | [text input] |
+| required | true, false |
+| helper | true, false |
+| helper text | [text input] |
+| error text | [text input] |
 
 
 ## Date Range Usage Guidelines
@@ -171,33 +169,6 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ## Content guidelines
 - **Avoid placeholder text.** Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
 - **Avoid splitting numbers.** Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
-
-
-## Figma properties 
-
-### Date Picker Figma properties 
-| Property | Values | 
-| ----------- | ----------- |
-| state | default, focus, success, open, selected, error |
-| label text | [text input] |
-| required | true, false |
-| helper | true, false |
-| helper text | [text input] |
-| input | true, false | 
-| input text | [text input] |
-| focus | false, true | 
-| calendar | false, true | 
-| error text | [text input] |
-
-### Memborable Date Picker Figma properties 
-| Property | Values | 
-| ----------- | ----------- |
-| state | default, focus, success, open, selected, error |
-| label text | [text input] |
-| required | true, false |
-| helper | true, false |
-| helper text | [text input] |
-| error text | [text input] |
 
 
 ## Accessibility guidance
