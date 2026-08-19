@@ -12,9 +12,10 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'pr-review')
     uses: newjersey/innovation-shared-actions/.github/workflows/pickaroo.yml@main
     with:
-      include_teams: "innovation-engineering-resx"
+      include_teams: "innovation-engineering-resx bloomicorn-platform-eng"
       number_of_reviewers: 1
       channel_id: "C0590CD1EE8" # resx-eng
+      slack_as_author: true
     secrets: inherit
   pr-show:
     if: contains(github.event.pull_request.labels.*.name, 'pr-show')
@@ -22,4 +23,5 @@ jobs:
     with:
       show: true
       channel_id: "C0590CD1EE8" # resx-eng
+      slack_as_author: true
     secrets: inherit
