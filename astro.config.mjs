@@ -36,6 +36,7 @@ export default defineConfig({
         ThemeSelect: "./src/components/ThemeSelect.astro",
         SiteTitle: "./src/components/SiteTitle.astro",
         PageFrame: "./src/components/PageFrame.astro",
+        Footer: "./src/components/Footer.astro",
       },
       customCss: ["@newjersey/njwds/dist/css/styles.css", "./src/styles/custom.css"],
       social: [

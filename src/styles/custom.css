@@ -139,9 +139,9 @@ a.site-title {
 }
 
 .main-pane table {
+  display: block;
+  overflow: auto;
   width: 100%;
-  display: table;
-  table-layout: auto;
 }
 
 @media (min-width: 72rem) {
@@ -233,11 +233,48 @@ body:has(.grove-home-section-container) {
   margin: auto;
 }
 
+.grove-styles-text {
+  z-index: 1;
+  background-color: var(--grove-base-100);
+  @media (min-width: 40rem) {
+    min-width: 32rem;
+    max-width: var(--grove-styles-text-width);
+  }
+}
+
+.grove-styles-image {
+  @media (min-width: 40rem) {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 32rem;
+  }
+  img {
+    object-fit: cover;
+    object-position: right;
+  }
+}
 .grove-card-group {
   > *:last-child {
     margin-bottom: 0;
   }
 }
+
+.grove-card-img {
+  height: 8rem;
+  @media (min-width: 40rem) {
+    height: auto;
+  }
+}
+
+.grove-resource-media-block {
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+}
+
 /* need to add into NJWDS */
 
 .text-semibold {
