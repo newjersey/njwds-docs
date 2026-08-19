@@ -145,6 +145,15 @@ a.site-title {
   width: 100%;
 }
 
+@media (min-width: 72rem) {
+  .right-sidebar {
+    position: sticky;
+    top: var(--sl-nav-height);
+    padding-top: 0;
+    height: calc(100vh - var(--sl-nav-height));
+  }
+}
+
 [data-has-sidebar] .main-frame {
   --sl-content-width: 75rem;
   --sl-content-pad-x: 1.5rem;
