@@ -143,6 +143,9 @@ a.site-title {
   display: block;
   overflow: auto;
   width: 100%;
+  @media (min-width: 30rem) {
+    display: table;
+  }
 }
 
 @media (min-width: 72rem) {
