@@ -201,10 +201,6 @@ a.site-title {
   .level-h3 {
     margin-block: 2rem 0.625rem;
   }
-
-  p {
-    max-width: none;
-  }
 }
 
 body {
