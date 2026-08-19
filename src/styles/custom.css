@@ -196,7 +196,6 @@ a.site-title {
     @media (min-width: 40rem) {
       margin-block: 4rem 2rem;
     }
-    /* TODO:make fully global after correcting homepage headings to h3 */
   }
 
   .level-h3 {
