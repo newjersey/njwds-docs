@@ -61,7 +61,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 
 ## Content guidelines
-- **?**
+- **Use short, descriptive navigation labels.** Prefer words that match the terms people use when looking for the linked content.
+- **Order links by user need.** Put the most important and frequently used destinations first.
+- **Keep labels consistent.** Use the same destination name in the header, page title, breadcrumbs, and related navigation.
 
 
 ## Header Types
@@ -192,6 +194,24 @@ The basic header with a megamenu is similar in design to the basic header compon
 
 - **Not enough content to warrant a megamenu.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a large number of sub-pages.
 
+### Header with language selector
+
+<iframe
+    title="Interactive preview of the header with a language selector from Storybook"
+    frameborder="0"
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--with-language-selector&viewMode=story`}
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-header--with-language-selector`} />
+
+Compose the language selector as an independent disclosure within the header. Keep it visually aligned with the primary navigation without including unrelated navigation links in the language menu.
+
+- Give the mobile menu and every nested disclosure a unique `id`, and connect each controlling button with `aria-controls`.
+- Keep the selector visible within the viewport at mobile and desktop widths. Confirm that adding it does not displace the search or other header controls.
+- Close the innermost open disclosure first. When Escape closes the language selector, return focus to its button and leave the surrounding mobile navigation open.
+- Test the composed header with a keyboard at each responsive breakpoint and in both left-to-right and right-to-left layouts.
 
 ## Accessibility guidance
 Use the [USWDS header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) to test button implementation.
@@ -200,6 +220,8 @@ Use the [USWDS header accessibility tests](https://designsystem.digital.gov/comp
 - **Include tab focus for all top-level navigation items.** This feature will allow keyboard-reliant users to easily navigate interactive items.
 - **Avoid using hover to expand dropdown lists.** Hover is difficult for some users and won't work on touch screens. Dropdowns should expand on click or with keyboard navigation.
 - **Add context by labeling your nav element.** If your page has more than one nav element, use the `aria-label` attribute to help assistive technology users understand the purpose of the navigation.
+- **Connect disclosure controls to their content.** Use unique IDs and `aria-controls` for the mobile menu, navigation, and any nested disclosures. Keep `aria-expanded` synchronized with the visible state.
+- **Restore focus when a disclosure closes.** Escape should close the active disclosure and return focus to the button that opened it.
 - **Use list elements for your navigation links.** This helps screen reader users navigate header content.
 - **Add alt text to your logo image.** If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.
 - **Don't use an H1 for your logo.** If you’re using a logo that’s text, use an `em`, not an `h1`, unless it’s the homepage. Find more information here: [Your Logo is an Image, Not a H1](http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/).
@@ -233,7 +255,7 @@ None
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Header](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1910-52&p=f&t=Yx31eAZO0ULNN6UA-0) | Using header in designs, documentation and best practices on button usage |
-| [Storybook: Header](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-header--docs) | Preview card styles, see card code snippet |
+| [Storybook: Header](https://storybook.grove.nj.gov/?path=/docs/components-header--docs) | Preview header styles, code snippets, and variants |
 
 ### USWDS links 
 | File | Purpose | 
@@ -241,4 +263,3 @@ None
 | [USWDS: Header](https://designsystem.digital.gov/components/header/) | Reference for additional styles and functionalities  |
 | [USWDS: Header utilities](https://designsystem.digital.gov/components/header/#implementation) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Header accessibility tests](https://designsystem.digital.gov/components/header/accessibility-tests) | Accessibility tests to run for header component |
-
