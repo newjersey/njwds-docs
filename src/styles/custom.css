@@ -21,6 +21,7 @@
   --sl-text-h1: 2.5rem;
   --sl-text-h2: 2rem;
   --sl-text-h3: 1.5rem;
+  --sl-text-h4: 1.125rem;
   --sl-nav-gap: 0.625rem;
   --sl-nav-pad-x: 1.25rem;
 
@@ -87,14 +88,6 @@ mobile-starlight-toc .display-current {
   font-size: var(--sl-text-h3);
 }
 
-h1 {
-  font-size: var(--sl-text-h1);
-}
-
-h2 {
-  color: var(--grove-primary-500);
-}
-
 h1,
 h2,
 h3,
@@ -105,6 +98,18 @@ h6,
   font-family: var(--grove-font-heading);
   font-optical-sizing: auto;
   font-weight: 600;
+}
+
+h1 {
+  font-size: var(--sl-text-h1);
+}
+
+h2 {
+  color: var(--grove-primary-500);
+}
+
+h4 {
+  font-weight: 700;
 }
 
 p,
