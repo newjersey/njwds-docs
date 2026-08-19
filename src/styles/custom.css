@@ -8,6 +8,7 @@
   --grove-base-400: #f0f0ec;
   --grove-base-700: #76766a; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
+  --grove-tr-bg: #edeff0; /* USWDS gray-cool-5 */
 
   --sl-color-bg-nav: var(--grove-primary-700);
   --sl-color-text-accent: #ffffff;
@@ -47,7 +48,7 @@ starlight-theme-select {
 /* Style the mobile menu button */
 starlight-menu-button button {
   background-color: var(--grove-primary-600);
-  color: #fff;
+  color: var(--grove-white);
 }
 
 /* If you need to be more specific for hover states */
@@ -142,6 +143,9 @@ a.site-title {
   display: block;
   overflow: auto;
   width: 100%;
+  @media (min-width: 30rem) {
+    display: table;
+  }
 }
 
 @media (min-width: 72rem) {
@@ -153,8 +157,7 @@ a.site-title {
   }
 }
 
-/* TODO: generalize once content pages are redesigned */
-body:has([data-page-header]) .main-frame {
+[data-has-sidebar] .main-frame {
   --sl-content-width: 75rem;
   --sl-content-pad-x: 1.5rem;
   @media (min-width: 40rem) {
@@ -172,6 +175,13 @@ body:has([data-page-header]) .main-frame {
     padding-block-end: 3rem;
   }
 
+  .content-panel:first-of-type {
+    padding-block-start: 1.75rem;
+    @media (min-width: 72rem) {
+      padding-block-start: 0rem;
+    }
+  }
+
   .level-h2 {
     margin-block: 3rem 2rem;
     @media (min-width: 40rem) {
@@ -185,6 +195,10 @@ body:has([data-page-header]) .main-frame {
 
   .level-h3 {
     margin-block: 2rem 0.625rem;
+  }
+
+  p {
+    max-width: none;
   }
 }
 
@@ -283,4 +297,14 @@ body:has(.grove-home-section-container) {
 
 .text-heavy {
   font-weight: 800;
+}
+
+.grove-striped-table tbody tr:nth-child(odd) th {
+  background-color: var(--grove-tr-bg);
+}
+
+.grove-getting-started-card {
+  @media (min-width: 40rem) {
+    width: 15.375rem;
+  }
 }
