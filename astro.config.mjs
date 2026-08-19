@@ -16,6 +16,7 @@ export default defineConfig({
         "./src/components/FigmaStorybookButtonGroup.astro",
         "./src/components/GroveColorBlock.astro",
         "./src/components/PageHeader.astro",
+        "./src/components/Icon.astro",
         "./src/components/IconList.astro",
         "./src/components/IconListItem.astro",
         "./src/components/ViewStorybookButton.astro",
@@ -36,6 +37,7 @@ export default defineConfig({
         ThemeSelect: "./src/components/ThemeSelect.astro",
         SiteTitle: "./src/components/SiteTitle.astro",
         PageFrame: "./src/components/PageFrame.astro",
+        Footer: "./src/components/Footer.astro",
       },
       customCss: ["@newjersey/njwds/dist/css/styles.css", "./src/styles/custom.css"],
       social: [
