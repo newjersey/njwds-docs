@@ -242,15 +242,16 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
 
 
-### Dismissable alerts
-Not present in Grove or USWDS, would need custom implementation
-Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented yet. 
+### Dismissible alerts
+Dismissible alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented yet. 
+
+**Note:** Dismissible alerts are not currently present in Grove or USWDS, would need custom implementation
 
 
 #### Figma properties 
 | Property | Value |
 | ----------- | ----------- |
-| dismissable | false, true (**not implemented in code**)|
+| dismissible | false, true (**not implemented in code**)|
 
 ## Accessibility Guidance
 Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test alert implementation.
@@ -299,7 +300,8 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
 
 ## Known Issues
-None
+- Emergency alert variant is not currently available in Grove storybook, though it is still accessible using the emergency variant above.
+- Dismissible alerts are not currently available in Grove, but are a recognized use case.
 
 ## Resources
 ### Grove links 
