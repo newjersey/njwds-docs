@@ -28,7 +28,7 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
           <h2 class="usa-card__heading">Components</h2>
         </header>
         <div class="usa-card__media usa-card__media--inset">
-          <div class="usa-card__img">
+          <div class="usa-card__img grove-card-img">
             <img alt="" src={componentcard.src} />
           </div>
         </div>
@@ -46,7 +46,7 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
           <h2 class="usa-card__heading">Templates</h2>
         </header>
         <div class="usa-card__media usa-card__media--inset">
-          <div class="usa-card__img">
+          <div class="usa-card__img grove-card-img">
             <img alt="" src={templatecard.src} />
           </div>
         </div>
@@ -64,7 +64,7 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
           <h2 class="usa-card__heading">Patterns</h2>
         </header>
         <div class="usa-card__media usa-card__media--inset">
-          <div class="usa-card__img">
+          <div class="usa-card__img grove-card-img">
             <img alt="" src={patterncard.src} />
           </div>
         </div>
@@ -81,11 +81,18 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
 </section>
 
 <section class="grove-home-section-container">
-  <div class="usa-section padding-y-6 padding-x-3 tablet:padding-10 grove-home-section">
-  <h2>Styles</h2>
-  <p class="tablet:font-body-lg">The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
-  <a href="/styles/typography/">View styles</a>
-</div>
+  <div class="grove-home-section">
+    <div class="grid-row position-relative">
+      <div class="tablet:grid-col-6 padding-top-3 padding-bottom-6 padding-x-3 tablet:padding-x-10 tablet:padding-y-15 display-flex flex-column flex-justify-center order-last tablet:order-initial grove-styles-text">
+        <h2>Styles</h2>
+        <p class="tablet:font-body-lg">The building blocks and best practices that allow you to spend less time on common UI problems and implementation, and more time solving resident’s needs.</p>
+        <a href="/styles/typography/">View styles</a>
+      </div>
+      <div class="tablet:grid-col-6 order-first padding-x-3 padding-top-3 tablet:padding-0 tablet:order-initial grove-styles-image">
+        <img class="height-full width-full block" alt="three boxes: cords being connecting, gardening with shovel, and hand switching toggles" src={stylesection.src} />
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="grove-home-section-container">
@@ -114,29 +121,33 @@ import graphicstorybook from '../../assets/HomeResourcesStorybook.png';
 </section>
 
 <section class="grove-home-section-container">
-  <div class="usa-section padding-y-6 padding-x-3 tablet:padding-10 grove-home-section">
+  <div class="usa-section maxw-desktop margin-x-auto padding-y-6 padding-x-3 tablet:padding-10">
   <h2>Resources</h2>
   <section class="usa-graphic-list flex-row margin-top-4 not-content">
-    <div class="grid-container">
-      <div class="usa-graphic-list__row grid-row grid-gap">
-        <div class="usa-media-block tablet:grid-col">
-          <img class="usa-media-block__img" src={graphicfigma.src} alt="Figma" />
-          <div class="usa-media-block__body">
+    <div class="padding-x-1">
+      <div class="usa-graphic-list__row grid-row desktop:grid-gap-6">
+        <div class="usa-media-block desktop:grid-col margin-top-2 desktop:margin-top-0 flex-column grove-resource-media-block">
+          <img class="usa-media-block__img margin-bottom-3 tablet:margin-bottom-0" src={graphicfigma.src} alt="Figma" />
+          <div class="usa-media-block__body display-flex flex-column flex-justify-center desktop:height-full">
             <h2 class="usa-graphic-list__heading">Figma</h2>
-            <p class="tablet:font-body-lg">Create designs for use in static mockups and prototypes.</p>
-            <a class="usa-link usa-link--external" rel="noreferrer" target="_blank" href="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=0-1&p=f&t=0NLDJpE5Kt2hw2Qk-0">View Figma file</a>
+            <p class="flex-fill">Create designs for use in static mockups and prototypes.</p>
+            <div class="margin-top-105">
+              <a class="usa-link usa-link--external" rel="noreferrer" target="_blank" href="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=0-1&p=f&t=0NLDJpE5Kt2hw2Qk-0">View Figma file</a>
+            </div>
           </div>
         </div>
-        <div class="usa-media-block tablet:grid-col">
-          <img class="usa-media-block__img" src={graphicstorybook.src} alt="Storybook" />
-          <div class="usa-media-block__body">
+        <div class="usa-media-block desktop:grid-col margin-top-0 tablet:margin-top-6 desktop:margin-top-0 flex-column grove-resource-media-block">
+          <img class="usa-media-block__img margin-bottom-3 tablet:margin-bottom-0" src={graphicstorybook.src} alt="Storybook" />
+          <div class="usa-media-block__body display-flex flex-column flex-justify-center desktop:height-full">
             <h2 class="usa-graphic-list__heading">Storybook</h2>
-            <p class="tablet:font-body-lg">The single source of truth for the codebase's design system.</p>
-            <a class="usa-link usa-link--external" rel="noreferrer" target="_blank" href="https://storybook.grove.nj.gov/">View Storybook</a>
+            <p class="flex-fill">The single source of truth for the codebase's design system.</p>
+            <div class="margin-top-105">
+              <a class="usa-link usa-link--external" rel="noreferrer" target="_blank" href="https://storybook.grove.nj.gov/">View Storybook</a>
+            </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </div>
 </section>
