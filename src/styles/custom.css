@@ -30,6 +30,7 @@
   --grove-logo-width: 34px;
   --grove-logo-text-color: var(--grove-white);
   --grove-search-text-color: var(--grove-white);
+  --grove-line-length: 88ex; /* USWDS size 6 */
   --sl-main-pad: 0;
   --sl-mobile-toc-height: 3.4375rem;
 
@@ -106,6 +107,11 @@ h6,
   font-weight: 600;
 }
 
+p,
+li {
+  max-width: var(--grove-line-length);
+}
+
 .site-name,
 .site-tagline {
   font-family: var(--grove-font-heading);
@@ -148,21 +154,23 @@ a.site-title {
   height: 100px;
 }
 
+body {
+  background-color: var(--grove-base-100);
+  :has(.grove-home-section-container) {
+    --sl-content-gap-y: 0;
+    --sl-content-width: none;
+    .content-panel {
+      padding: 0;
+    }
+  }
+}
+
 .main-pane table {
   display: block;
   overflow: auto;
   width: 100%;
   @media (min-width: 30rem) {
     display: table;
-  }
-}
-
-@media (min-width: 72rem) {
-  .right-sidebar {
-    position: sticky;
-    top: var(--sl-nav-height);
-    padding-top: 0;
-    height: calc(100vh - var(--sl-nav-height));
   }
 }
 
@@ -203,19 +211,12 @@ a.site-title {
   }
 }
 
-p,
-li {
-  max-width: 88ex;
-}
-
-body {
-  background-color: var(--grove-base-100);
-  :has(.grove-home-section-container) {
-    --sl-content-gap-y: 0;
-    --sl-content-width: none;
-    .content-panel {
-      padding: 0;
-    }
+@media (min-width: 72rem) {
+  .right-sidebar {
+    position: sticky;
+    top: var(--sl-nav-height);
+    padding-top: 0;
+    height: calc(100vh - var(--sl-nav-height));
   }
 }
 
@@ -284,6 +285,12 @@ body {
   }
 }
 
+.grove-getting-started-card {
+  @media (min-width: 40rem) {
+    width: 15.375rem;
+  }
+}
+
 .grove-card-img {
   height: 8rem;
   @media (min-width: 40rem) {
@@ -296,6 +303,9 @@ body {
     flex-direction: row;
   }
 }
+.grove-striped-table tbody tr:nth-child(odd) th {
+  background-color: var(--grove-tr-bg);
+}
 
 /* need to add into NJWDS */
 
@@ -305,14 +315,4 @@ body {
 
 .text-heavy {
   font-weight: 800;
-}
-
-.grove-striped-table tbody tr:nth-child(odd) th {
-  background-color: var(--grove-tr-bg);
-}
-
-.grove-getting-started-card {
-  @media (min-width: 40rem) {
-    width: 15.375rem;
-  }
 }
