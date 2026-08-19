@@ -39,7 +39,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 ###  What to avoid
 <IconList>
-    <IconListItem icon="report">
+  <IconListItem icon="report">
+        **Avoid using multiple primary buttons.** There should only be one primary button per page. This should guide the user to the one main or recommended action to take on that page.
+    </IconListItem>    
+<IconListItem icon="report">
         **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
     </IconListItem>
     <IconListItem icon="report">
@@ -244,7 +247,7 @@ An icon can be used in place of text to demonstrate a button's meaning.
 | ----------- | ----------- |
 | `nj-button--icon` | [Custom Grove] Used for buttons containing icons |
 
-_**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
+_**Note:** Ensure the icon has a universal meaning and is properly labeled with alt text._
 
 ## Accessibility guidance
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
@@ -271,7 +274,7 @@ When styling links to look like buttons, remember that screen readers handle lin
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
 
 ## Known Issues
-None
+- The focus state of the button is not currently accessible on a dark background. This is in our backlog to fix. 
 
 ## Resources
 ### Grove links 
