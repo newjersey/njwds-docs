@@ -25,7 +25,7 @@ const { name, category, description, figmaUrl, storybookUrl, wcagBadge = true } 
                 </div>
             )}
         </div>
-        {figmaUrl || storybookUrl &&
+        {(figmaUrl || storybookUrl) &&
          (<div class="display-flex flex-align-start flush-button-group">
             <FigmaStorybookButtonGroup figmaUrl={figmaUrl} storybookUrl={storybookUrl}/>
         </div>)}
