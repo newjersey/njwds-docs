@@ -139,9 +139,9 @@ a.site-title {
 }
 
 .main-pane table {
+  display: block;
+  overflow: auto;
   width: 100%;
-  display: table;
-  table-layout: auto;
 }
 
 @media (min-width: 72rem) {
