@@ -203,6 +203,11 @@ a.site-title {
   }
 }
 
+p,
+li {
+  max-width: 88ex;
+}
+
 body {
   background-color: var(--grove-base-100);
   :has(.grove-home-section-container) {
