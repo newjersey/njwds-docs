@@ -8,6 +8,7 @@
   --grove-base-400: #f0f0ec;
   --grove-base-700: #76766a; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
+  --grove-tr-bg: #edeff0; /* USWDS gray-cool-5 */
 
   --sl-color-bg-nav: var(--grove-primary-700);
   --sl-color-text-accent: #ffffff;
@@ -47,7 +48,7 @@ starlight-theme-select {
 /* Style the mobile menu button */
 starlight-menu-button button {
   background-color: var(--grove-primary-600);
-  color: #fff;
+  color: var(--grove-white);
 }
 
 /* If you need to be more specific for hover states */
@@ -287,7 +288,7 @@ body:has(.grove-home-section-container) {
 }
 
 .grove-striped-table tbody tr:nth-child(odd) th {
-  background-color: #edeff0;
+  background-color: var(--grove-tr-bg);
 }
 
 .grove-getting-started-card {
