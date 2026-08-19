@@ -25,9 +25,10 @@ const { name, category, description, figmaUrl, storybookUrl, wcagBadge = true } 
                 </div>
             )}
         </div>
-        <div class="display-flex flex-align-start flush-button-group">
+        {figmaUrl || storybookUrl &&
+         (<div class="display-flex flex-align-start flush-button-group">
             <FigmaStorybookButtonGroup figmaUrl={figmaUrl} storybookUrl={storybookUrl}/>
-        </div>
+        </div>)}
     </div>
 </section>
 
