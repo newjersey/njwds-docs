@@ -10,6 +10,7 @@
   --grove-white: #fff; /* USWDS white */
   --grove-tr-bg: #edeff0; /* USWDS gray-cool-5 */
 
+  --sl-color-bg: var(--grove-base-100);
   --sl-color-bg-nav: var(--grove-primary-700);
   --sl-color-text-accent: #ffffff;
   --sl-font: "Public Sans";
@@ -80,9 +81,17 @@ mobile-starlight-toc .display-current {
   font-weight: 700;
   padding-top: 0.3125rem;
 }
+.right-sidebar-panel h2 {
+  color: #454545;
+  font-size: var(--sl-text-h3);
+}
 
 h1 {
   font-size: var(--sl-text-h1);
+}
+
+h2 {
+  color: var(--grove-primary-500);
 }
 
 h1,
@@ -188,9 +197,6 @@ a.site-title {
       margin-block: 4rem 2rem;
     }
     /* TODO:make fully global after correcting homepage headings to h3 */
-    h2 {
-      color: var(--grove-primary-500);
-    }
   }
 
   .level-h3 {
@@ -202,12 +208,14 @@ a.site-title {
   }
 }
 
-body:has(.grove-home-section-container) {
-  --sl-content-gap-y: 0;
-  --sl-content-width: none;
+body {
   background-color: var(--grove-base-100);
-  .content-panel {
-    padding: 0;
+  :has(.grove-home-section-container) {
+    --sl-content-gap-y: 0;
+    --sl-content-width: none;
+    .content-panel {
+      padding: 0;
+    }
   }
 }
 
