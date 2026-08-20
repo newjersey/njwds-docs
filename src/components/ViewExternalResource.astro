@@ -1,0 +1,18 @@
+---
+import figmaIcon from '../assets/figma.svg';
+
+type Props =
+  | { storybookUrl: string; figmaUrl?: never }
+  | { storybookUrl?: never; figmaUrl: string };
+
+const { storybookUrl, figmaUrl } = Astro.props;
+const href = storybookUrl ?? figmaUrl;
+const label = storybookUrl ? "View in Storybook" : "View in Figma";
+---
+
+<a class=`usa-button usa-button--outline grove-button-outline ${storybookUrl ? "margin-top-205" : "margin-top-4"}` href={href}>
+    <svg class="usa-icon minw-3 minh-3" aria-hidden="true" focusable="false" role="img">
+        <use href={figmaUrl ? figmaIcon.src : `/assets/img/sprite.svg#code`} />
+    </svg>
+    {label}
+</a>
