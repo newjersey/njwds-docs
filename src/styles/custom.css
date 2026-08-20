@@ -86,7 +86,8 @@ mobile-starlight-toc .display-current {
 }
 .right-sidebar-panel h2 {
   color: #454545;
-  font-size: var(--sl-text-h3);
+  font-size: var(--sl-text-h4);
+  font-weight: 700;
 }
 
 h1,
