@@ -22,7 +22,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 </iframe>
 
  <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />  
+
 ## Usage guidelines
+
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -37,6 +39,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 <IconList>
     <IconListItem icon="close">
         **Long forms with conditional logic** — Consider another approach if the number of steps might change due to user input.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Displaying high-level sequential steps.** Use the [process list](https://grove.nj.gov/reference/processlist/) component instead to create a clear hierarchy and help users easily differentiate between individual steps or stages in a process.
     </IconListItem>
     <IconListItem icon="close">
         **Nonlinear progression** — The step indicator isn’t appropriate for nonlinear forms or interactions that might be completed in any order.
@@ -79,6 +84,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ## Step indicator types
 
 ### Segmented step indicator
+
+**Use the centered segmented variant with centered content and headings.** The centered variant is designed to complement centered content and headings. If you have left-aligned content and headings, use the default alignment.
+
 <iframe 
     title="Interactive preview of the step indicator from Storybook" 
     frameborder="0" 
@@ -88,7 +96,6 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 </iframe>
 
  <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
-**Use the centered segmented variant with centered content and headings.** The centered variant is designed to complement centered content and headings. If you have left-aligned content and headings, use the default alignment.
 
 #### Figma properties
 | Property | Value |
@@ -109,6 +116,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 - **Pending segments can use gray or complete family.** Pending segments can use gray, just as with pending text, but they can also use a light grade of the complete color family.
 
 ### Counter step indicator 
+**Use counters to reinforce step progression.** The counter pattern (step numbers in a circle) attracts more attention to the indicator bar, but more strongly communicates step-by-step progression. Use counters when you want to reinforce step progression. Omit them if testing proves that this reinforcement is unnecessary for your audience.
+
 <iframe 
     title="Interactive preview of the counter step indicator from Storybook" 
     frameborder="0" 
@@ -117,8 +126,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
-**Use counters to reinforce step progression.** The counter pattern (step numbers in a circle) attracts more attention to the indicator bar, but more strongly communicates step-by-step progression. Use counters when you want to reinforce step progression. Omit them if testing proves that this reinforcement is unnecessary for your audience.
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
 
 #### Small counters 
 
@@ -131,6 +139,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 </iframe>
 
  <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-step-indicator--docs`} />
+ 
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -202,7 +211,7 @@ Use the [USWDS button accessibility tests](https://designsystem.digital.gov/comp
 
 
 ## Known issues
-None
+- No labels variant of the step indicator is missing screen reader voiceover on bar segment status. A ticket has been filed with USWDS and is on the Grove backlog. 
 
 ## Resources
 ### Grove links 
