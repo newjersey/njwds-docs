@@ -8,6 +8,7 @@
   --grove-base-400: #f0f0ec;
   --grove-base-700: #76766a; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
+  --grove-ink: #1c1d1f; /* USWDS ink */
   --grove-tr-bg: #edeff0; /* USWDS gray-cool-5 */
 
   --sl-color-bg: var(--grove-base-100);
@@ -98,6 +99,14 @@ h6,
   font-family: var(--grove-font-heading);
   font-optical-sizing: auto;
   font-weight: 600;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--grove-ink);
 }
 
 h1 {
