@@ -1,6 +1,6 @@
 ---
 title: File inputs
-description: Documentation for file input.
+description: Documentation for file inputs.
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -26,17 +26,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`} />
-<iframe 
-    title="Interactive preview of the file input component from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`} />
-
-## File Usage Guidelines
+## Usage Guidelines
 
 ### Use this component for:
 <IconList>
@@ -71,24 +62,22 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-## File Input Usage Guidelines
-Usage guidelines in progress.
-
 ## Content guidelines
 Content guidelines in progress.
 
-## Figma properties 
+## File Input Variants 
 
-### File properties 
+### File
 
-| Property | Values | 
-| ----------- | ----------- |
-| state | default, error |
-| files | single, multiple|
-| preview | true, false |
-| number of files | [text input] |
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file--default&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-### File 
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`} />
 
 #### States
 
@@ -103,6 +92,7 @@ Content guidelines in progress.
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`} />
+
 ##### Error
 
 <iframe 
@@ -114,6 +104,7 @@ Content guidelines in progress.
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`} />
+
 #### Amount of Files
 
 ##### Single
@@ -130,7 +121,24 @@ Content guidelines in progress.
 
 ##### Multiple
 
-Variant in progress.
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file--default&viewMode=story&args=multipleFiles:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`} />
+
+#### Figma properties  
+
+| Property | Values | 
+| ----------- | ----------- |
+| state | default, error |
+| files | single, multiple|
+| preview | true, false |
+| number of files | [text input] |
 
 
 ### File Input
@@ -140,7 +148,7 @@ Variant in progress.
 ##### Default
 
 <iframe 
-    title="Interactive preview of the file input component from Storybook" 
+    title="Interactive preview of the file component from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
     loading="lazy"
@@ -148,10 +156,11 @@ Variant in progress.
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`} />
+
 ##### Error
 
 <iframe 
-    title="Interactive preview of the file input component from Storybook" 
+    title="Interactive preview of the file component from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story&args=error:true`} 
     loading="lazy"
@@ -159,23 +168,35 @@ Variant in progress.
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`} />
+
 #### Amount of Files
 
 ##### Single
 
 <iframe 
-    title="Interactive preview of the file input component from Storybook" 
+    title="Interactive preview of the file component from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file--docs`} />
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`} />
 
 ##### Multiple
 
-Variant in progress.
+<iframe 
+    title="Interactive preview of the file component from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-file-input--default&viewMode=story&args=multipleFiles:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-file-input--docs`} />
+
+#### Figma properties 
+File input Figma component in progress.
 
 
 ## Accessibility guidance
@@ -199,7 +220,7 @@ Screen reader users found it confusing to have both “Drag file here” and “
 ### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Figma Grove: File input](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1560-480&p=f&t=Yx31eAZO0ULNN6UA-0) | Using file input in designs |
+| [Figma Grove: File](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=1560-480&p=f&t=Yx31eAZO0ULNN6UA-0) | Using file input in designs |
 | [Storybook: File input](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file-input--docs) | Interactive example, code snippets, variants |
 | [Storybook: File](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-file--docs) | Interactive example, code snippets, variants |
 
