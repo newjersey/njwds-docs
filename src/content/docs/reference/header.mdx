@@ -22,7 +22,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />  
-## Usage Guidelines
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -30,7 +30,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-###  What to avoid / ensure
+## Requirements for use
 <IconList>
     <IconListItem icon="report">
         **List all important website sections as links in the horizontal navigation.**
@@ -60,17 +60,12 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 
 ## Content guidelines
-- **?**
+Content guidelines in progress.
 
 
 ## Header Types
 
-### Figma Type properties
-| Property | Value |
-| ----------- | ----------- |
-| type | basic, extended |
-
-## Default Header
+### Default Header
 
 <iframe 
     title="Interactive preview of the header from Storybook" 
@@ -81,7 +76,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 </iframe>
 
  <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />
-### Default Header Usage
+
+#### Default Header Usage
 Use the default header if you have few enough sections in your main navigation to fit comfortably next to your logo; this decision will depend on the length of your text and whether you include a search bar. You can customize the header (depending on your site structure) and use it with:
 
 - **A text or image logo**
@@ -89,17 +85,52 @@ Use the default header if you have few enough sections in your main navigation t
 - **With or without a search bar**
 - **With or without call-to-action buttons in place of the search bar**
 
-### When to Use the Default Header
+#### When to Use the Default Header
 
 - **Limited sections.** The basic header is great if you have a modest number of sections in your main navigation.
 
 - **Shallow hierarchy.** You may also use it if each main section listed in the horizontal navigation has six or fewer subsections that you’d like to include in a dropdown menu.
 
-### When to Consider Something Else
+#### When to Consider Something Else
 
 - **Many sections or deep hierarchy.** Consider using the extended header if you have more sections in your horizontal navigation than will fit comfortably next to your logo or if you have complex sections that require the use of a megamenu.
 
-## Extended Header
+#### Figma property
+| Property | Value |
+| ----------- | ----------- |
+| type | basic |
+
+#### Megamenu variant 
+<iframe 
+    title="Interactive preview of the basic header with megamenu from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story&args=megamenu%3Atrue`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />
+The basic header with a megamenu is similar in design to the basic header component. The megamenu allows for the inclusion of more links in dropdown menus. You can customize this header (depending on your site structure) and use it with:
+
+- **A text or image logo**
+- **With or without a search bar**
+- **With or without call-to-action buttons in place of the search bar**
+
+##### When to Use the Default Header with Megamenu
+
+- **Deep hierarchy.** Use the basic header with a megamenu if you’d like to include more than six links in any of your dropdown menus and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.
+
+##### When to Consider Something Else
+
+- **Not enough content to warrant a megamenu.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a large number of sub-pages.
+
+##### Figma properties
+| Property | Value |
+| ----------- | ----------- |
+| mega menu | true, false |
+
+
+### Extended Header
 
 <iframe 
     title="Interactive preview of the extended header from Storybook" 
@@ -117,29 +148,25 @@ An extended header allows for the inclusion of more sections in a horizontal nav
 - **With or without the expandable search bar**
 - **With or without call-to-action buttons in place of the secondary links featured in your horizontal navigation**
 
-### When to Use the Extended Header
+#### When to Use the Extended Header
 
 - **Lots of sections.** Use the extended header if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
 
 - **Secondary links or specific calls to action.** Use the extended header if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example, Log in and Sign up links.
 
-### When to Consider Something Else
+#### When to Consider Something Else
 
 - **Simple site needs.** Consider using the basic header if you have less information — the basic header takes up less space.
 
 
-## Header variants
-
-### Figma variant properties
+#### Figma Type properties
 | Property | Value |
 | ----------- | ----------- |
-| mega menu | true, false |
-| search bar | true, false |
-| site title | [text input] |
+| type | extended |
 
-### Megamenu
 
-#### Mega Menu with Extended header
+#### Megamenu variant 
+
 <iframe 
     title="Interactive preview of the extended header with megamenu from Storybook" 
     frameborder="0" 
@@ -167,29 +194,10 @@ Like an extended header, an extended header with a megamenu allows for the inclu
 
 - **Shallow hierarchy.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a very large number of sub-pages.
 
-#### Mega menu with basic header
-<iframe 
-    title="Interactive preview of the basic header with megamenu from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-header--default&viewMode=story&args=megamenu%3Atrue`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-header--docs`} />
-The basic header with a megamenu is similar in design to the basic header component. The megamenu allows for the inclusion of more links in dropdown menus. You can customize this header (depending on your site structure) and use it with:
-
-- **A text or image logo**
-- **With or without a search bar**
-- **With or without call-to-action buttons in place of the search bar**
-
-##### When to Use the Basic Header with Megamenu
-
-- **Deep hierarchy.** Use the basic header with a megamenu if you’d like to include more than six links in any of your dropdown menus and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.
-
-##### When to Consider Something Else
-
-- **Not enough content to warrant a megamenu.** Consider using a basic dropdown, rather than a megamenu, unless you need to link to a large number of sub-pages.
+##### Figma variant properties
+| Property | Value |
+| ----------- | ----------- |
+| mega menu | true, false |
 
 
 ## Accessibility guidance
