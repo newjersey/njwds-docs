@@ -61,11 +61,21 @@ if (!(currentGroupIndexSymbol in locals)) {
 						<div class="group-header">
 							<button
 								type="button"
-								class="group-toggle usa-button usa-button--unstyled"
+								class="usa-button usa-button--unstyled width-full grove-no-radius"
 								aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
 								aria-label={`Toggle ${entry.label} navigation group`}
 								data-group-id={`sidebar-group-${groupIndex}`}
 							>
+								<span class="group-label">
+									<span class="large">{entry.label}</span>
+									{entry.badge && (
+										<Badge
+											variant={entry.badge.variant}
+											class={entry.badge.class}
+											text={entry.badge.text}
+										/>
+									)}
+								</span>
 								<Icon
 									name={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'down-caret' : 'right-caret'}
 									class="caret"
@@ -73,16 +83,6 @@ if (!(currentGroupIndexSymbol in locals)) {
 									aria-hidden="true"
 								/>
 							</button>
-							<span class="group-label">
-								<span class="large">{entry.label}</span>
-								{entry.badge && (
-									<Badge
-										variant={entry.badge.variant}
-										class={entry.badge.class}
-										text={entry.badge.text}
-									/>
-								)}
-							</span>
 						</div>
 						<div
 							class="group-content"
@@ -99,3 +99,9 @@ if (!(currentGroupIndexSymbol in locals)) {
 		})
 	}
 </ul>
+
+<style>
+	.grove-no-radius:focus {
+		border-radius: 0;
+	}
+</style>

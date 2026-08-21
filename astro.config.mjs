@@ -47,26 +47,32 @@ export default defineConfig({
       sidebar: [
         {
           label: "Overview",
+          collapsed: true,
           items: [{ autogenerate: { directory: "guides" } }],
         },
         {
           label: "Content",
+          collapsed: true,
           items: [{ autogenerate: { directory: "content" } }],
         },
         {
           label: "Styles",
+          collapsed: true,
           items: [{ autogenerate: { directory: "styles" } }],
         },
         {
           label: "Components",
+          collapsed: true,
           items: [{ autogenerate: { directory: "reference" } }],
         },
         {
           label: "Patterns",
+          collapsed: true,
           items: [{ autogenerate: { directory: "patterns" } }],
         },
         {
           label: "Templates",
+          collapsed: true,
           items: [{ autogenerate: { directory: "templates" } }],
         },
       ],
