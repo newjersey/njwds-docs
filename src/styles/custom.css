@@ -255,8 +255,8 @@ body {
   color: var(--grove-primary-600);
   accent-color: var(--grove-primary-600);
   &:hover {
-    box-shadow: inset 0 0 0 2px var(--grove-primary-700);
-    color: var(--grove-primary-700);
+    box-shadow: inset 0 0 0 2px var(--grove-primary-500);
+    color: var(--grove-primary-500);
   }
 }
 
