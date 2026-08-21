@@ -23,6 +23,8 @@
   --sl-text-h2: 2rem;
   --sl-text-h3: 1.5rem;
   --sl-text-h4: 1.125rem;
+  --sl-text-h5: 1rem;
+  --sl-text-h6: 0.875rem;
   --sl-nav-gap: 0.625rem;
   --sl-nav-pad-x: 1.25rem;
 
@@ -99,7 +101,7 @@ h6,
 [class*="font-heading-"] {
   font-family: var(--grove-font-heading);
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h1,
@@ -118,13 +120,13 @@ h2 {
   color: var(--grove-primary-500);
 }
 
-h4 {
-  font-weight: 700;
-}
-
 p,
 li {
   max-width: var(--grove-line-length);
+}
+
+a + iframe {
+  margin-top: var(--sl-content-gap-y);
 }
 
 .site-name,

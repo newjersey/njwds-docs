@@ -21,8 +21,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />  
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />  
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -65,7 +65,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-## Content Guidance 
+## Content guidance 
 - **Avoid ambiguous, generic article links like “read more.”** The heading for each item should link to the full content. Ensure each heading is clear, concise, and unique so users can quickly understand what the content is about. Don’t include additional links that take users to the same place.
 - **Use a descriptive title.** The collection’s title should make the collection’s theme clear — for example, “Recent posts,” “How-to videos,” or “Resources about flu shots.”
 - **Provide a strong “information scent” for each article.** Use headings, teaser text, a thumbnail image, and meta information effectively to help users understand the value of each item and choose which ones to visit.
@@ -84,12 +84,13 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | default |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3204-279&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Media collection item
 
@@ -101,11 +102,13 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | media |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3204-279&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Calendar collection item
 
@@ -117,21 +120,22 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-collection--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | calendar | media |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3204-279&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
-## Accessibility Guidance
+## Accessibility guidance
 Use [USWDS collection accessibility tests](https://designsystem.digital.gov/components/collection/accessibility-tests) to test implementation.
 - **Use unordered lists and list items.** Use a `ul` for a collection and an `li` for each item. This allows screen readers to enumerate the items in the collection and allows shortcuts between list items.
 - **Use the appropriate heading level for your page.** Update heading levels based on the content of your page to make sure collection headings are in the correct logical outline order..
 - **Each link should have a unique name.** Those using assistive technology may collect all page links together. Unique names not only help these users distinguish between links, but help all users scan the page. Favor using link text itself to provide a unique name. Using a `title` attribute or `aria-label` to provide a unique name helps users of assistive technology, but doesn’t promote scannability in standard browsers.
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
