@@ -16,27 +16,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 **Text input options**
 - **Text input:** A single line of user input, with pre-determined width to indicate expected length of input. 
 - **Text area:** An area that accepts multiple lines of user input and can have a character count limit. 
-
-
-<iframe 
-    title="Interactive preview of the text input from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-text-input--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-text-input--docs`} />
-
- <iframe 
-    title="Interactive preview of the text area from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-textarea--default&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-textarea--docs`} />  
+ 
 ## Usage Guidelines
 ### Use this component for:
 <IconList>
@@ -54,7 +34,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ### Use something else for:
 <IconList>
     <IconListItem icon="close">
-        **Predetermined input options.** When users are choosing from a specific set of options.
+        **Predetermined input options.** When users are choosing from a specific set of options. In these cases, use [checkboxes](https://grove.nj.gov/reference/checkbox/), [radio buttons](https://grove.nj.gov/reference/radiobutton/), [select](https://grove.nj.gov/reference/select/), or [combo box](https://grove.nj.gov/reference/combobox/). 
     </IconListItem>
 </IconList>
 
@@ -73,14 +53,15 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
         **Avoid placeholder text.** Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
     </IconListItem>
 </IconList>
-
+_**Note:** Placeholder text has been removed from text inputs and text areas in Grove._
 
 ## Content guidelines
-- **Avoid placeholder text.** Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
+- **Avoid placeholder text.** Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio. (**Note:** Placeholder text has been removed from text inputs and text areas in Grove.)
 - **Avoid splitting numbers.** Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
 
 
 ## Text Input
+A single line of user input, with pre-determined width to indicate expected length of input.
 <iframe 
     title="Interactive preview of the text input from Storybook" 
     frameborder="0" 
@@ -134,6 +115,7 @@ The following classes can be added to input elements with class usa-input to adj
 
 
 ## Text Area
+An area that accepts multiple lines of user input and can have a character count limit.
  <iframe 
     title="Interactive preview of the text area from Storybook" 
     frameborder="0" 
