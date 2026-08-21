@@ -125,6 +125,10 @@ li {
   max-width: var(--grove-line-length);
 }
 
+a + iframe {
+  margin-top: var(--sl-content-gap-y);
+}
+
 .site-name,
 .site-tagline {
   font-family: var(--grove-font-heading);
