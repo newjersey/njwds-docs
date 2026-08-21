@@ -21,7 +21,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />  
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />  
 
 ## Usage guidelines
 
@@ -92,12 +92,14 @@ This version maintains the first and last pages at the start and end of the sequ
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
 
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | bounded |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2803-7462&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Unbounded pagination
 This version maintains the first page in the sequence, but compiles all pages after the active set in an "..." at the end. 
@@ -110,12 +112,14 @@ This version maintains the first page in the sequence, but compiles all pages af
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
 
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | unbounded |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2803-7462&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Mobile pagination
 The mobile version of bounded and unbounded pagination simply remove the "Previous" and "Next" actions.
@@ -125,6 +129,8 @@ The mobile version of bounded and unbounded pagination simply remove the "Previo
 | ----------- | ----------- |
 | type | bounded, unbounded |
 | mobile | true |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2803-7462&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ## How to use the component 
 Unlike many USWDS components, pagination includes behaviors we cannot build into the HTML, CSS, and JavaScript we ship with the design system. **Developers will need to build these behaviors into their pagination templates.** We’ve outlined these behaviors below, and included them in the Twig templates for Pagination in our source code.
