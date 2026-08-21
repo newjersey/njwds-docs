@@ -35,6 +35,7 @@ export default defineConfig({
         Search: "./src/components/Search.astro",
         ThemeProvider: "./src/components/ThemeProvider.astro",
         ThemeSelect: "./src/components/ThemeSelect.astro",
+        Sidebar: "./src/components/Sidebar.astro",
         SiteTitle: "./src/components/SiteTitle.astro",
         PageFrame: "./src/components/PageFrame.astro",
         Footer: "./src/components/Footer.astro",
