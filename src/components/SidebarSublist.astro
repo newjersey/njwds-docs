@@ -61,7 +61,7 @@ if (!(currentGroupIndexSymbol in locals)) {
 						<div class="group-header">
 							<button
 								type="button"
-								class="usa-button usa-button--unstyled width-full grove-no-radius"
+								class="usa-button usa-button--unstyled group-toggle padding-2 width-full"
 								aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
 								aria-label={`Toggle ${entry.label} navigation group`}
 								data-group-id={`sidebar-group-${groupIndex}`}
@@ -101,7 +101,10 @@ if (!(currentGroupIndexSymbol in locals)) {
 </ul>
 
 <style>
-	.grove-no-radius:focus {
-		border-radius: 0;
-	}
+    .group-toggle{
+        padding: 1rem;
+        :focus {
+            border-radius: 0;
+        }
+    }
 </style>
