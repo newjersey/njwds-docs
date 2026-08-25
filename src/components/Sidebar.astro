@@ -58,14 +58,10 @@ const { sidebar } = Astro.locals.starlightRoute;
 			collapseSiblingGroups(button);
 		}
 		setGroupExpanded(button, !isExpanded);
-
-		// Keep focus on the button
-		button.focus();
 	}
 
 	/**
-	 * Collapse all other group-toggle buttons that are siblings of the given
-	 * button (i.e. belong to the same parent list), so only one section is
+	 * Collapse all other group-toggle buttons so only one section is
 	 * open at a time within that level.
 	 */
 	function collapseSiblingGroups(button) {
@@ -73,7 +69,7 @@ const { sidebar } = Astro.locals.starlightRoute;
 		if (!parentList) return;
 
 		const siblingButtons = parentList.querySelectorAll(
-			':scope > li > .sidebar-group > .group-header > .group-toggle'
+			':scope > li > .sidebar-group > .group-header .group-toggle'
 		);
 
 		siblingButtons.forEach((siblingButton) => {
