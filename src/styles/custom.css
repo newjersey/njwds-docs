@@ -9,6 +9,7 @@
   --grove-base-700: #76766a; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
   --grove-ink: #1c1d1f; /* USWDS ink */
+  --grove-link: #005ea2; /* USWDS blue-60v */
   --grove-tr-bg: #edeff0; /* USWDS gray-cool-5 */
   --grove-gray-70: #454545; /* USWDS gray-70 */
 
@@ -94,15 +95,19 @@ mobile-starlight-toc .display-current {
     font-weight: 700;
   }
 
-  li > a:hover {
-    background-color: #f0f0f0;
-  }
-
   a {
     text-decoration: none;
     [style="--depth: 0;"] {
       font-weight: 700;
     }
+  }
+
+  li > a:hover {
+    background-color: #f0f0f0;
+  }
+
+  a:visited {
+    color: var(--grove-link);
   }
 }
 
