@@ -63,7 +63,7 @@ if (!(currentGroupIndexSymbol in locals)) {
 							<button
 								type="button"
 								id={`sidebar-group-toggle-${groupIndex}`}
-								class="usa-button usa-button--unstyled group-toggle padding-2 width-full"
+								class="usa-button usa-button--unstyled group-toggle width-full"
 								aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
 								aria-controls={`sidebar-group-${groupIndex}`}
 								data-group-id={`sidebar-group-${groupIndex}`}
@@ -89,8 +89,6 @@ if (!(currentGroupIndexSymbol in locals)) {
 						<div
 							class="group-content"
 							id={`sidebar-group-${groupIndex}`}
-							role="region"
-							aria-labelledby={`sidebar-group-toggle-${groupIndex}`}
 							hidden={!(flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed)}
 						>
 							<sl-sidebar-restore data-groupIndex={groupIndex}></sl-sidebar-restore>
