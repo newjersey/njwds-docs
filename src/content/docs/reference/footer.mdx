@@ -123,11 +123,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 Footer implementations should meet [WCAG 2.2 Level AA](https://www.w3.org/TR/WCAG22/) and pass the [USWDS footer accessibility tests](https://designsystem.digital.gov/components/footer/accessibility-tests/). USWDS tests the component in isolation, so test the assembled footer again within the application where it will be used.
 
 - **Use semantic landmarks and lists.** Put footer navigation inside a labeled `nav` element and represent each related group of links as a list. Give every navigation landmark a distinct accessible name when the page contains more than one.
-- **Preserve a logical focus order.** Pressing Tab should move through footer links and controls in the same order they are presented visually.
-- **Keep focus visible.** Do not remove Grove or browser focus indicators. Keyboard users must be able to identify the active link or control.
-- **Use accessible accordions.** When big-footer navigation collapses at narrow widths, each disclosure must meet the Grove accordion requirements, expose its expanded state, and operate with a keyboard.
-- **Provide meaningful link and image names.** Link text must identify its destination. Logo alternative text should identify the represented organization, while decorative social media images should be hidden from assistive technology when the link already has an accessible name.
-- **Do not rely on color or position.** Links and section relationships must remain understandable without color and when content changes layout.
+- **Use accessible accordions.** When big-footer navigation collapses at narrow widths, each disclosure must meet the [Grove accordion requirements](https://grove.nj.gov/reference/accordion/#accessibility-guidance).
+- **Provide a meaningful link experience.** Pressing Tab should move through footer links in the same order they appear visually, and each link must meet the [Grove link requirements](https://grove.nj.gov/reference/link/#accessibility-guidance).
+- **Do not rely on color or position.** Section relationships must remain understandable without color and when content changes layout.
 
 ### Responsive reflow
 
