@@ -21,13 +21,43 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe--tall width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-prose--docs`} />
-## Known Issues
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-prose--docs`} />
+
+## Usage guidelines
+
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Long form content on websites** the `prose` attribute automatically applies Grove type styles to headings and body text.
+    </IconListItem>
+</IconList>
+
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Content within components.** Any content within components will not need the `prose` attribute to be applied.
+    </IconListItem>
+</IconList>
+
+## Requirements for use:
+Requirements for use in progress.
+
+## Content guidelines
+Content guidelines in progress.
+
+## Accessibility guidelines
+- Make sure to use correctly ordered heading semantic tags in your content, ex: `<h1>`, `<h2>`,`<h3>`
+
+## Related
+- [Documentation page template](https://grove.nj.gov/templates/documentation/)
+
+## Known issues
 None
 
 ## Resources
 
 | File | Purpose | 
 | ----------- | ----------- |
-| [Storybook: Prose](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-prose--docs) | Interactive example, code snippets, variants |
+| [Figma: Prose](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=5145-2054&t=oJkD4A574k5aPp81-0) | Using in designs |
+| [Storybook: Prose](https://storybook.grove.nj.gov/?path=/docs/components-prose--docs) | Interactive example, code snippets, variants |
 

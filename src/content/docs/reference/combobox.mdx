@@ -1,17 +1,19 @@
 ---
-title: Combo Box
+title: Combo box
 description: Documentation for combo box component.
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 <PageHeader
-  name="Combo Box"
+  name="Combo box"
   category="COMPONENTS"
   description="Combo box is a searchable dropdown, allowing the user to choose from a long list of options."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-15781&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-combo-box--docs`}
 />
+
+**Note:** Combo box use not recommended. Recommendation to use the Select component rather than combo box at this time due to accessibility and usablity issues.
 
 <iframe 
     title="Interactive preview of the combo box from Storybook" 
@@ -21,10 +23,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-combo-box--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-combo-box--docs`} />
 
-## Usage Guidelines
-Recommendation to use the Select component rather than combo box at this time due to accessibility and usablity issues.
+## Usage guidelines
+**Combo box use not recommended:** Recommendation to use the Select component rather than combo box at this time due to accessibility and usablity issues.
 
 ### Use this component for:
 <IconList>
@@ -75,6 +77,7 @@ Recommendation to use the Select component rather than combo box at this time du
 | helper text | [text input]  |
 | error text | [text input]  |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-15781&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ## Accessibility guidance
 Use the [USWDS combo box accessibility tests](https://designsystem.digital.gov/components/combo-box/accessibility-tests) to test combo box implementation.
@@ -97,8 +100,8 @@ Use the [USWDS combo box accessibility tests](https://designsystem.digital.gov/c
 | `data-filter` | `.usa-combo-box` | The combo box will use this regular expression to filter the combo box options. You are declaring a case insensitive match over the entire option text, which means `^` and `$` are added automatically. You can specify the inputted query with `{{query}}`. You can also declare a custom query filter as a data property as well, which can be used in the custom filter (`data-number-filter="[0-9]"` and then using `data-filter="{{numberFilter}}."` ). The default filter is `.{{query}}.*`, which is a simple “find anywhere within the option” text. | 
 
 
-## Known Issues
-None
+## Known issues
+- **Usability and accessibility issues:** Combo box use not recommended. Recommendation to use the Select component rather than combo box at this time due to accessibility and usablity issues.
 
 ## Resources
 ### Grove links 

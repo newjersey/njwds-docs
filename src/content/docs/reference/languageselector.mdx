@@ -1,12 +1,12 @@
 ---
-title: Language Selector
+title: Language selector
 description: Documentation for language selector component.
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 <PageHeader
-  name="Language Selector"
+  name="Language selector"
   category="COMPONENTS"
   description="The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1726-757&p=f&t=kIkWUxaAUytHfoIV-0"
@@ -21,8 +21,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
-## Language Selector - 2 languages
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
+
+## Language selector - 2 languages
 
 <iframe 
     title="Interactive preview of the language selector from Storybook" 
@@ -32,8 +33,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
-### Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
+
+### Usage guidelines
 #### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -63,13 +65,15 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 | language | (en) English, (es) Spanish |
 | button type | secondary, tertiary |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1726-757&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
 ### Accessibility guidance
 Use the [USWDS language selector accessibility tests](https://designsystem.digital.gov/components/language-selector/accessibility-tests/) to test language selector implementation.
 - **Color contrast:** There should be enough color contrast between the button, the text inside the button, and the background to ensure readability.
 - **The language of each page should be identified using the HTML lang attribute** (`<html lang="en">`, for example). Please see [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html).
 
 
-## Language Selector - 3+ languages
+## Language selector - 3+ languages
 
 <iframe 
     title="Interactive preview of the language selector from Storybook" 
@@ -79,8 +83,9 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
-### Usage Guidlines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-language-selector--docs`} />
+
+### Usage guidelines
 #### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -110,6 +115,8 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 | ----------- | ----------- |
 | button type | secondary, tertiary |
 | state | closed, open |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1726-757&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Accessibility guidance
 Use the [USWDS language selector accessibility tests](https://designsystem.digital.gov/components/language-selector/accessibility-tests/) to test language selector implementation.
@@ -141,7 +148,7 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 ### Language selector placement 
 For the best experience, place your language selector in a prominent area of your application. Headers or above-the-fold areas are widely adopted for this reason. Side menus on mobile can also be used; however, this impacts the visibility of the language selector.
 
-#### Web - Navigation Banner
+#### Web - navigation banner
 
 ![Web banner with language toggle in secondary button style.](../../../assets/language4.png)
 
@@ -157,7 +164,7 @@ Link styling can be used when the language controls need to be placed in a secti
 
 Icons with the link variant can make the language selector more distinct in a crowded UI.
 
-#### Mobile - Side navigation 
+#### Mobile - side navigation 
 
 ![Mobile navigation with language toggle in secondary style.](../../../assets/language7.png)
 
@@ -177,10 +184,11 @@ Embedding tools onto existing websites requires special consideration regarding 
 | Is the tool dynamically loading content in a way that needs language-specific data? | If the tool is using a separate CMS or needs to accommodate languages or a multi-lingual content strategy beyond the scope of the site-specific control, then use a separate language selector. |
 | Can the tool detect and adapt to the site's language setting? | If yes, then avoid using a separate selector to minimize user error/confusion. |
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
+
 ### Grove links 
 | File | Purpose | 
 | ----------- | ----------- |

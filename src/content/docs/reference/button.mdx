@@ -21,8 +21,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />  
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />  
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -39,7 +39,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 ###  What to avoid
 <IconList>
-    <IconListItem icon="report">
+  <IconListItem icon="report">
+        **Avoid using multiple primary buttons.** There should only be one primary button per page. This should guide the user to the one main or recommended action to take on that page.
+    </IconListItem>    
+<IconListItem icon="report">
         **Avoid using too many buttons on a page.** This can disrupt visual hierarchy. Some common component alternatives include: side navigation, icons, and in-page navigation.
     </IconListItem>
     <IconListItem icon="report">
@@ -59,12 +62,14 @@ Make the first word of the button’s text a verb. For example, instead of Compl
 Consider adding an icon to signal specific actions (Download, Open in a new window, etc).
 
 
-## Button Types
+## Button types
 
-### Figma Type properties
+### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | primary, secondary, tertiary |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-4297&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Primary buttons
 **Use it as the main action that users will take on a page.** Also, use primary buttons to take the user to the next step in a process such as to trigger page transition or next step. There should only be one primary button per page. 
@@ -77,8 +82,8 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
-#### Code Primary Variants
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
+#### Code primary variants
 | Type | Mode | Applied Variants |
 | ----------- | ----------- | ----------- |
 | primary | light | `usa-button` |
@@ -96,9 +101,9 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--secondary`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--secondary`} />
 
-#### Code Secondary Variants
+#### Code secondary variants
 | Type | Mode | Applied Variants |
 | ----------- | ----------- | ----------- |
 | secondary | light | `usa-button usa-button--outline` |
@@ -116,9 +121,9 @@ Consider adding an icon to signal specific actions (Download, Open in a new wind
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 
-#### Code Tertiary Variants
+#### Code tertiary variants
 | Type | Mode | Applied Variants |
 | ----------- | ----------- | ----------- |
 | tertiary | light | `usa-button usa-button--unstyled` |
@@ -162,7 +167,7 @@ _**Not Supported:** Grove does not support a disabled button states from USWDS._
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 | Light Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button` | Used for primary type |
@@ -181,7 +186,7 @@ _**Not Supported:** Grove does not support a disabled button states from USWDS._
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 | Dark Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button--inverse` | Used for dark mode |
@@ -200,7 +205,7 @@ _**Not Supported:** Grove does not support a disabled button states from USWDS._
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
 | Danger Variant Class | Description | 
 | ----------- | ----------- |
 | `usa-button--secondary` | Used for danger mode |
@@ -209,7 +214,7 @@ _**Not Supported:** Grove does not support a disabled button states from USWDS._
 | `nj-button--unstyled-danger` | [Custom Grove] Used for tertiary danger variant |
 
 
-## Icons in Buttons
+## Icons in buttons
 
 ### Icon with text
 Use to clarify the purpose of the button further, indicate directionality, etc.
@@ -222,7 +227,7 @@ Use to clarify the purpose of the button further, indicate directionality, etc.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-button--docs`} />
   
 ℹ️ **To use:** Toggle on the leading or trailing icon in the button component.
 
@@ -239,12 +244,14 @@ An icon can be used in place of text to demonstrate a button's meaning.
 | trailing icon | true, false (default) |
 | icon | (instance swap) |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-4297&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
 ### Code class
 | Icon Variant Class | Description | 
 | ----------- | ----------- |
 | `nj-button--icon` | [Custom Grove] Used for buttons containing icons |
 
-_**Note: Ensure the icon has a universal meaning and is properly labeled with alt text.**_
+_**Note:** Ensure the icon has a universal meaning and is properly labeled with alt text._
 
 ## Accessibility guidance
 Use the [USWDS button accessibility tests](https://designsystem.digital.gov/components/button/accessibility-tests/) to test button implementation.
@@ -256,7 +263,7 @@ When styling links to look like buttons, remember that screen readers handle lin
 
 ## Code 
 
-### Button Variants
+### Button variants
 
 | Type | Mode | Applied Variants |
 | ----------- | ----------- | ----------- |
@@ -270,8 +277,8 @@ When styling links to look like buttons, remember that screen readers handle lin
 | tertiary | dark | `usa-button usa-button--unstyled nj-button--unstyled-dark` |
 | tertiary | danger | `usa-button usa-button--unstyled nj-button--unstyled-danger` |
 
-## Known Issues
-None
+## Known issues
+- The focus state of the button is not currently accessible on a dark background. This is in our backlog to fix. 
 
 ## Resources
 ### Grove links 

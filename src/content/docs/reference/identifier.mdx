@@ -21,12 +21,13 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />  
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />  
+
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
-        **To identify the highest-level agency** associated with a site or service. The identifier is a complement to the [NJ Banner](https://turbo-adventure-n2vkrrm.pages.github.io/njcomponents/njbanner/). Use the identifier to tell users what parent agency is responsible for your website. Consider the parent agency the highest-level agency associated with a site or service. If your site is the primary site associated with an agency, you can still use the identifier.
+        **To identify the highest-level agency** associated with a site or service. The identifier is a complement to the [Banner](https://grove.nj.gov/reference/banner/). Use the identifier to tell users what parent agency is responsible for your website. Consider the parent agency the highest-level agency associated with a site or service. If your site is the primary site associated with an agency, you can still use the identifier.
     </IconListItem>
     <IconListItem icon="check">
         **To display links required by federal laws and policies.** The identifier includes [links required on all government sites](https://digital.gov/resources/required-web-content-and-links/).
@@ -43,8 +44,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-###  What to avoid / ensure
-
+### Requirements for use
 <IconList>
     <IconListItem icon="report">
         **Use the identifier component for required links.** If your site already includes the federally required links in its site footer, remove them in favor of the links in the identifier. This assures that site visitors find the required links in a consistent location from site to site.
@@ -75,9 +75,59 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 Content guidelines in progress.
 
 
-## Identifier States
+## Identifier variants
 
-### Figma Type properties
+### Language
+**Use the Spanish version for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
+
+<iframe 
+    title="Interactive preview of the Spanish identifier from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=language:Spanish`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />
+
+
+### Agency logos
+- **Use an SVG logo if possible.** Ensure the logo is high resolution. We recommend using the SVG version of any logo if you have one. Otherwise, use an image that’s at least 120 pixels tall.
+- **Use logos intended for dark backgrounds if possible.** The identifier has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.
+- **Duplicate the logo element if using multiple logos.** If you’re using multiple logos, duplicate the `usa-identifier__logo` element and link the image to your image source.
+
+<iframe 
+    title="Interactive preview of the multiple agency logos identifier from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=logos:Multiple`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />
+
+  
+### Taxpayer disclaimer or NJ.gov
+- **If applicable, include any taxpayer disclaimer after the standard text.** If the organization must provide a taxpayer expense disclaimer, include it following the “Official website” text, as a separate sentence. For example, “An official website of [Department]. Produced and published at taxpayer expense.”
+
+<iframe 
+    title="Interactive preview of the taxpayer disclaimer identifier from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=showTaxpayerDisclaimer:true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />
+
+
+## Accessibility guidance
+Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/components/identifier/accessibility-tests) to test identifier implementation.
+- **Use proper landmarks for each identifier section.** Each identifier section should be either a `section` or a `nav`, and include an appropriate `aria-label` property.
+- **Add an `alt` attribute to each logo image.** Use `[Agency shortname] logo` as the alt text for each logo image you add.
+- **Use image role for any SVG images.** Use `role="img"` with any SVG logo image.
+
+## Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | screen size | mobile, tablet, desktop |
@@ -89,54 +139,7 @@ Content guidelines in progress.
 | masthead text | text field |
 | domain address | text field |
 
-### Language
-
-<iframe 
-    title="Interactive preview of the Spanish identifier from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=language:Spanish`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />
-- **Use the Spanish version for Spanish-language sites.** If you have an official Spanish-language website, use the Spanish version of the identifier.
-
-
-### Agency Logos
-
-<iframe 
-    title="Interactive preview of the multiple agency logos identifier from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=logos:Multiple`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />
-- **Use an SVG logo if possible.** Ensure the logo is high resolution. We recommend using the SVG version of any logo if you have one. Otherwise, use an image that’s at least 120 pixels tall.
-- **Use logos intended for dark backgrounds if possible.** The identifier has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.
-- **Duplicate the logo element if using multiple logos.** If you’re using multiple logos, duplicate the `usa-identifier__logo` element and link the image to your image source.
-  
-### Taxpayer Disclaimer or NJ.gov
-
-<iframe 
-    title="Interactive preview of the taxpayer disclaimer identifier from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-identifier--default&viewMode=story&args=showTaxpayerDisclaimer:true`} 
-    loading="lazy"
-    class="grove__iframe width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-identifier--docs`} />
-- **If applicable, include any taxpayer disclaimer after the standard text.** If the organization must provide a taxpayer expense disclaimer, include it following the “Official website” text, as a separate sentence. For example, “An official website of [Department]. Produced and published at taxpayer expense.”
-
-
-## Accessibility guidance
-Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/components/identifier/accessibility-tests) to test identifier implementation.
-- **Use proper landmarks for each identifier section.** Each identifier section should be either a `section` or a `nav`, and include an appropriate `aria-label` property.
-- **Add an `alt` attribute to each logo image.** Use `[Agency shortname] logo` as the alt text for each logo image you add.
-- **Use image role for any SVG images.** Use `role="img"` with any SVG logo image.
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2905-151&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ## Code utilities
 
@@ -156,7 +159,7 @@ Use the [USWDS identifier accessibility tests](https://designsystem.digital.gov/
 | link item | `usa-identifier__required-links-item` | Use for link item |
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
