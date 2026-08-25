@@ -60,33 +60,31 @@ if (!(currentGroupIndexSymbol in locals)) {
 				) : (
 					<div class="sidebar-group border-y border-1px" data-sidebar-group>
 						<div class="group-header">
-							<h2>
-								<button
-									type="button"
-									id={`sidebar-group-toggle-${groupIndex}`}
-									class="usa-button usa-button--unstyled group-toggle padding-2 width-full"
-									aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
-									aria-controls={`sidebar-group-${groupIndex}`}
-									data-group-id={`sidebar-group-${groupIndex}`}
-								>
-									<span class="group-label">
-										<span class="large">{entry.label}</span>
-										{entry.badge && (
-											<Badge
-												variant={entry.badge.variant}
-												class={entry.badge.class}
-												text={entry.badge.text}
-											/>
-										)}
-									</span>
-									<Icon
-										name={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'down-caret' : 'right-caret'}
-										class="caret"
-										size="1.25rem"
-										aria-hidden="true"
-									/>
-								</button>
-							</h2>
+							<button
+								type="button"
+								id={`sidebar-group-toggle-${groupIndex}`}
+								class="usa-button usa-button--unstyled group-toggle padding-2 width-full"
+								aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
+								aria-controls={`sidebar-group-${groupIndex}`}
+								data-group-id={`sidebar-group-${groupIndex}`}
+							>
+								<span class="group-label">
+									<span class="large">{entry.label}</span>
+									{entry.badge && (
+										<Badge
+											variant={entry.badge.variant}
+											class={entry.badge.class}
+											text={entry.badge.text}
+										/>
+									)}
+								</span>
+								<Icon
+									name={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'down-caret' : 'right-caret'}
+									class="caret"
+									size="1.25rem"
+									aria-hidden="true"
+								/>
+							</button>
 						</div>
 						<div
 							class="group-content"

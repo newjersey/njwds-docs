@@ -68,7 +68,7 @@ const { sidebar } = Astro.locals.starlightRoute;
 		if (!parentList) return;
 
 		const siblingButtons = parentList.querySelectorAll(
-			':scope > li > .sidebar-group > .group-header .group-toggle'
+			':scope > li > .sidebar-group > .group-header > .group-toggle'
 		);
 
 		siblingButtons.forEach((siblingButton) => {
