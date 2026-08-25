@@ -17,10 +17,9 @@ const { sidebar } = Astro.locals.starlightRoute;
 
 <script is:inline>
 	/**
-	 * Enhance sidebar navigation with accessible toggle functionality
-	 * Handles ARIA states, keyboard interaction, and state persistence
+	 * Enhance sidebar navigation with keyboard interactivity
 	 */
-	function enhanceSidebarAccessibility() {
+	function addInteractivity() {
 		const toggleButtons = document.querySelectorAll('.group-toggle');
 
 		toggleButtons.forEach((button) => {
@@ -99,8 +98,8 @@ const { sidebar } = Astro.locals.starlightRoute;
 	}
 
 	// Run on initial load
-	enhanceSidebarAccessibility();
+	addInteractivity();
 
 	// Re-run after view transitions (Astro feature)
-	document.addEventListener('astro:after-swap', enhanceSidebarAccessibility);
+	document.addEventListener('astro:after-swap', addInteractivity);
 </script>
