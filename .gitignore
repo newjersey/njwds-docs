@@ -19,3 +19,6 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# PR review setup data (personal, always current)
+.claude/pr-review-data/

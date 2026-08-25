@@ -21,8 +21,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />  
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />  
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -70,14 +70,16 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 Content guidelines in progress.
 
 
-## Card Types
+## Card types
 
-### Figma Type properties
+### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | default, flag |
 
-### Default Card
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1625-667&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+### Default card
 - **Mobile-first design.** They stack and adapt to mobile screens.
 - **Visual-heavy content** Ideal for image-driven content.
 - **Browsing and discovery.** When users are skimming through items.
@@ -90,9 +92,9 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 
-### Flag Cards
+### Flag cards
 - **Desktop/Wide Screens** Better for using horizontal space and reducing vertical scrolling.
 - **Text-Heavy/Detailed Content.** Ideal when information needs to be read rather than just scanned.
 
@@ -104,7 +106,7 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 
 ## Card variants
 
@@ -118,7 +120,7 @@ Content guidelines in progress.
 | media | true, false |
 
 ### Media
-#### Left or Right Side Media
+#### Left or right side media
 <iframe 
     title="Interactive preview of the flag card, right side media from Storybook" 
     frameborder="0" 
@@ -127,8 +129,8 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
-#### Inset Media
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
+#### Inset media
 <iframe 
     title="Interactive preview of the inset media card from Storybook" 
     frameborder="0" 
@@ -137,8 +139,8 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
-#### No Media
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
+#### No media
 <iframe 
     title="Interactive preview of the no media card from Storybook" 
     frameborder="0" 
@@ -147,7 +149,7 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-card--docs`} />
 
 ## Accessibility guidance
 Use the [USWDS card accessibility tests](https://designsystem.digital.gov/components/card/accessibility-tests) to test card implementation.
@@ -157,7 +159,7 @@ Use the [USWDS card accessibility tests](https://designsystem.digital.gov/compon
 
 ## Code 
 
-### Code Variants
+### Code variants
 | Class | Description |  
 | ----------- | ----------- |
 | `.usa-card--flag` | Display in a horizontal (“flag”) orientation at a specified width (`$theme-card-flag-min-width`).|
@@ -169,8 +171,8 @@ Use the [USWDS card accessibility tests](https://designsystem.digital.gov/compon
 | `.usa-card__header--exdent` | Extends the header element out over the card border. Useful for light-bordered cards. |
 | `.usa-card__media--exdent`  | Extends the media element out over the card border. Useful for light-bordered cards. |
 
-## Known Issues
-None
+## Known issues
+- **Min width:** The card component currently does not have a min width, which can lead to the cards shrinking to an unreadable size on some layouts. It is in our backlog to fix. 
 
 ## Resources
 ### Grove links 

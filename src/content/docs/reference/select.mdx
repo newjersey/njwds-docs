@@ -21,8 +21,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-select--docs`} />
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-select--docs`} />
+ 
+## Usage guidelines
 
 ### Use this component for:
 <IconList>
@@ -34,16 +35,16 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ### Use something else for:
 <IconList>
     <IconListItem icon="close">
-        **Fewer than seven options.** Use radio buttons instead.
+        **Fewer than seven options.** Use [radio buttons](https://grove.nj.gov/reference/radiobutton/) instead.
     </IconListItem>
     <IconListItem icon="close">
-        **More than 15 options.** If the list of options is very long, consider using a combo box.
+        **More than 15 options.** If the list of options is very long, you could consider using a [combo box](https://grove.nj.gov/reference/combobox/), but proceed with caution as there are known accessibility issues with that component.
     </IconListItem>
     <IconListItem icon="close">
-        **Multi-select.** If you need to allow users to choose more than one option at once. Users often don’t understand how to choose multiple items from select elements. Use checkboxes instead.
+        **Multi-select.** If you need to allow users to choose more than one option at once. Users often don’t understand how to choose multiple items from select elements. Use [checkboxes](https://grove.nj.gov/reference/checkbox/) instead.
     </IconListItem>
     <IconListItem icon="close">
-        **Site navigation.** Use the navigation components instead.
+        **Site navigation.** Use the navigation components instead, such as the [header](https://grove.nj.gov/reference/header/), [breadcrumb](https://grove.nj.gov/reference/breadcrumb/), [side navigation](https://grove.nj.gov/reference/sidenavigation/), or [in-page navigation](https://grove.nj.gov/reference/inpagenavigation/).
     </IconListItem>
 </IconList>
 
@@ -53,7 +54,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
         **Make sure to test.** Test select menus thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.
     </IconListItem>
     <IconListItem icon="report">
-        **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another.
+        **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another. See [conditional fields pattern](https://grove.nj.gov/patterns/conditionalfields/) for more guidance.
     </IconListItem>
     <IconListItem icon="report">
         **Use a good default.** When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
@@ -81,6 +82,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 | helper text | [text input]  |
 | error text | [text input]  |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=28-26&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ## Accessibility guidance
 Use [USWDS select accessibility tests](https://designsystem.digital.gov/components/select/accessibility-tests) to test implementation.
@@ -90,7 +92,7 @@ Use [USWDS select accessibility tests](https://designsystem.digital.gov/componen
 - **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another.
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources

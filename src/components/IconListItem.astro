@@ -12,18 +12,17 @@ const { icon } = Astro.props;
             <use href={`/assets/img/sprite.svg#${icon}`}></use>
         </svg>
     </div>
-    <div class="usa-icon-list__content margin-y-0 full-length-content">
+    <div class="usa-icon-list__content margin-y-0 grove-line-length">
         <slot/>
     </div>
 </li>
 
 <style>
-    .full-length-content {
+    .grove-line-length {
         p {
-            max-width: none;
+            max-width: var(--grove-line-length);
         }
     }
-
     .list-item-gap + .list-item-gap {
         padding-top: 0rem;
         margin-top: 0.75rem;

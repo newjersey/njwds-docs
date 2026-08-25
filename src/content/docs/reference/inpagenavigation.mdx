@@ -21,8 +21,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-in-page-navigation--docs`} />  
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-in-page-navigation--docs`} />  
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -43,7 +43,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-### What to ensure / avoid
+### Requirements of use
 <IconList>
     <IconListItem icon="report">
         **Display the in-page navigation to the side of the main content.** Visually, place the in-page navigation component after the main content in the language’s natural reading order. For example, for a left-to-right language like English, this component goes to the right of the main content.
@@ -67,14 +67,16 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 - **Keep the navigation links short.** They can be shorter derivatives of section titles themselves.
 
 
-## In-Page Nav Item
+## In-page navigation item
 
-### Figma Type properties
+### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | level | 1, 2 |
 | active | inactive, active |
 | nav text | [text input] |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3019-77&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Code components
 | Name | Class | Description |
@@ -90,14 +92,14 @@ Use the [USWDS in-page navigation accessibility tests](https://designsystem.digi
 
 ## Code 
 
-### In-page Navigation Components
+### In-page navigation components
 
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
 | In page navigation | `usa-in-page-navigation` | Use for the in page navigation component |
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
@@ -110,5 +112,5 @@ None
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
-| [USWDS: In-Page navigation](https://designsystem.digital.gov/components/in-page-navigation/) | Reference for additional styles and functionalities  |
-| [USWDS: In-Page navigation accessibility tests](https://designsystem.digital.gov/components/in-page-navigation/accessibility-tests/) | Accessibility tests to run for component |
+| [USWDS: In-page navigation](https://designsystem.digital.gov/components/in-page-navigation/) | Reference for additional styles and functionalities  |
+| [USWDS: In-page navigation accessibility tests](https://designsystem.digital.gov/components/in-page-navigation/accessibility-tests/) | Accessibility tests to run for component |
