@@ -93,6 +93,11 @@ mobile-starlight-toc .display-current {
     font-size: var(--sl-text-h4);
     font-weight: 700;
   }
+
+  li > a:hover {
+    background-color: #f0f0f0;
+  }
+
   a {
     text-decoration: none;
     [style="--depth: 0;"] {
