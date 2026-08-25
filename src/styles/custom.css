@@ -86,10 +86,16 @@ mobile-starlight-toc .display-current {
   font-weight: 700;
   padding-top: 0.3125rem;
 }
-.right-sidebar-panel h2 {
-  color: #454545;
-  font-size: var(--sl-text-h4);
-  font-weight: 700;
+.right-sidebar-panel {
+  h2 {
+    color: #454545;
+    font-size: var(--sl-text-h4);
+    font-weight: 700;
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+  }
 }
 
 h1,
