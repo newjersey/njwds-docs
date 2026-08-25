@@ -115,20 +115,26 @@ if (!(currentGroupIndexSymbol in locals)) {
 	.usa-sidenav a.grove-sidenav-link:not(.usa-button):not(.usa-current),	
 	.usa-sidenav a.grove-sidenav-link.usa-current:not(.usa-button) {
 		color: #005ea2;
-		font-size: 1rem;
 	}
 
 	.group-label, .caret {
 		color: var(--grove-gray-70);
 	}
+
 	.group-toggle {
 		padding: 1rem;
 		border-radius: 0;
 		text-decoration: none;
 	}
+	.usa-sidenav .group-toggle:hover {
+		background-color: #f0f0f0;
+		text-decoration: none;
+	}
+
     .group-toggle:not([disabled]):focus {
 		outline-offset: -0.25rem;
     }
+	
 	.sidebar-group {
 		border-color: var(--sl-color-hairline-shade);
 	}

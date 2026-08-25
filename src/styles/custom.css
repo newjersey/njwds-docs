@@ -94,8 +94,10 @@ mobile-starlight-toc .display-current {
     font-weight: 700;
   }
   a {
-    font-size: 1rem;
     text-decoration: none;
+    [style="--depth: 0;"] {
+      font-weight: 700;
+    }
   }
 }
 
