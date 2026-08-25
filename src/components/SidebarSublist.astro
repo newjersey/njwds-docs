@@ -52,7 +52,7 @@ if (!(currentGroupIndexSymbol in locals)) {
 						{entry.badge && (
 							<Badge
 								variant={entry.badge.variant}
-								class={entry.badge.class}
+								class:list={[entry.badge.class, "margin-left-1"]}
 								text={entry.badge.text}
 							/>
 						)}
