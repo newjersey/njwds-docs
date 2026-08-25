@@ -1,4 +1,5 @@
 ---
+/* eslint-disable @typescript-eslint/no-explicit-any */		
 // Import components from Starlight
 import { Icon, Badge } from '@astrojs/starlight/components';
 
@@ -32,19 +33,19 @@ if (!(currentGroupIndexSymbol in locals)) {
 }
 ---
 
-<ul class:list={{ 'usa-sidenav': !nested, 'usa-sidenav__sublist': nested }}>
+<ul class:list={[ {'usa-sidenav': !nested}, {'usa-sidenav__sublist': nested}, "grove-side-nav" ]}>
 	{
 		sublist.map((entry) => {
 			// Get a unique groupIndex for each group
 			const groupIndex = entry.type === 'group' ? locals[currentGroupIndexSymbol]++ : -1;
 
 			return (
-			<li class="usa-sidenav__item">
+			<li class="usa-sidenav__item border-0">
 				{entry.type === 'link' ? (
 					<a
 						href={entry.href}
 						aria-current={entry.isCurrent && 'page'}
-						class:list={[{ large: !nested }, entry.attrs.class, entry.isCurrent && 'usa-current']}
+						class:list={[{ large: !nested }, entry.attrs.class, entry.isCurrent && 'usa-current', "grove-inner-outline"]}
 						{...entry.attrs}
 					>
 						<span>{entry.label}</span>
@@ -57,32 +58,35 @@ if (!(currentGroupIndexSymbol in locals)) {
 						)}
 					</a>
 				) : (
-					<div class="sidebar-group" data-sidebar-group>
+					<div class="sidebar-group border-y border-1px" data-sidebar-group>
 						<div class="group-header">
-							<button
-								type="button"
-								class="usa-button usa-button--unstyled group-toggle padding-2 width-full"
-								aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
-								aria-label={`Toggle ${entry.label} navigation group`}
-								data-group-id={`sidebar-group-${groupIndex}`}
-							>
-								<span class="group-label">
-									<span class="large">{entry.label}</span>
-									{entry.badge && (
-										<Badge
-											variant={entry.badge.variant}
-											class={entry.badge.class}
-											text={entry.badge.text}
-										/>
-									)}
-								</span>
-								<Icon
-									name={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'down-caret' : 'right-caret'}
-									class="caret"
-									size="1.25rem"
-									aria-hidden="true"
-								/>
-							</button>
+							<h2>
+								<button
+									type="button"
+									class="usa-button usa-button--unstyled group-toggle padding-2 width-full"
+									aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
+									aria-controls={`sidebar-group-${groupIndex}`}
+									aria-label={`Toggle ${entry.label} navigation group`}
+									data-group-id={`sidebar-group-${groupIndex}`}
+								>
+									<span class="group-label">
+										<span class="large">{entry.label}</span>
+										{entry.badge && (
+											<Badge
+												variant={entry.badge.variant}
+												class={entry.badge.class}
+												text={entry.badge.text}
+											/>
+										)}
+									</span>
+									<Icon
+										name={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'down-caret' : 'right-caret'}
+										class="caret"
+										size="1.25rem"
+										aria-hidden="true"
+									/>
+								</button>
+							</h2>
 						</div>
 						<div
 							class="group-content"
@@ -101,10 +105,27 @@ if (!(currentGroupIndexSymbol in locals)) {
 </ul>
 
 <style>
-    .group-toggle{
-        padding: 1rem;
-        :focus {
-            border-radius: 0;
-        }
+	.usa-sidenav a.grove-inner-outline:focus:not(.usa-button):not(.usa-current),
+	.usa-sidenav a.grove-inner-outline.usa-current:focus:not(.usa-button) {
+		outline-offset: -0.25rem;
+	}
+	.usa-sidenav a.grove-inner-outline:not(.usa-button):not(.usa-current),	
+	.usa-sidenav a.grove-inner-outline.usa-current:not(.usa-button) {
+		color: #005ea2;
+	}
+
+	.group-label, .caret{
+		color: #454545;
+	}
+	.group-toggle {
+		padding: 1rem;
+		border-radius: 0;
+		text-decoration: none;
+	}
+    .group-toggle:not([disabled]):focus {
+		outline-offset: -0.25rem;
     }
+	.sidebar-group{
+		border-color: var(--sl-color-hairline-shade);
+	}
 </style>
