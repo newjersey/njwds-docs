@@ -1,0 +1,142 @@
+---
+/* eslint-disable @typescript-eslint/no-explicit-any */		
+// Import components from Starlight
+import { Icon, Badge } from '@astrojs/starlight/components';
+
+interface Props {
+	sublist: any[];
+	nested?: boolean;
+}
+
+const { sublist, nested } = Astro.props;
+
+/**
+ * Recursively flattens sidebar entries into an array of links
+ * Based on Starlight's internal flattenSidebar utility
+ */
+function flattenSidebar(sidebar: any[]): any[] {
+	return sidebar.flatMap((entry: any) =>
+		entry.type === 'group' ? flattenSidebar(entry.entries) : entry
+	);
+}
+
+/**
+ * Sidebar restore point - stores the groupIndex for state persistence
+ * Based on Starlight's internal SidebarRestorePoint component
+ */
+const currentGroupIndexSymbol = Symbol.for('starlight-sidebar-group-index');
+const locals = Astro.locals as any;
+
+// Initialize counter if not set
+if (!(currentGroupIndexSymbol in locals)) {
+	locals[currentGroupIndexSymbol] = 0;
+}
+---
+
+<ul class:list={[ {'usa-sidenav': !nested}, {'usa-sidenav__sublist': nested} ]}>
+	{
+		sublist.map((entry) => {
+			// Get a unique groupIndex for each group
+			const groupIndex = entry.type === 'group' ? locals[currentGroupIndexSymbol]++ : -1;
+
+			return (
+			<li class="usa-sidenav__item border-0">
+				{entry.type === 'link' ? (
+					<a
+						href={entry.href}
+						aria-current={entry.isCurrent && 'page'}
+						class:list={[{ large: !nested }, entry.attrs.class, entry.isCurrent && 'usa-current', "grove-sidenav-link"]}
+						{...entry.attrs}
+					>
+						<span>{entry.label}</span>
+						{entry.badge && (
+							<Badge
+								variant={entry.badge.variant}
+								class:list={[entry.badge.class, "margin-left-1"]}
+								text={entry.badge.text}
+							/>
+						)}
+					</a>
+				) : (
+					<div class="sidebar-group border-y border-1px" data-sidebar-group>
+						<div class="group-header">
+							<button
+								type="button"
+								id={`sidebar-group-toggle-${groupIndex}`}
+								class="usa-button usa-button--unstyled group-toggle width-full"
+								aria-expanded={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'true' : 'false'}
+								aria-controls={`sidebar-group-${groupIndex}`}
+								data-group-id={`sidebar-group-${groupIndex}`}
+							>
+								<span class="group-label">
+									<span class="large">{entry.label}</span>
+									{entry.badge && (
+										<Badge
+											variant={entry.badge.variant}
+											class={entry.badge.class}
+											text={entry.badge.text}
+										/>
+									)}
+								</span>
+								<Icon
+									name={flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed ? 'down-caret' : 'right-caret'}
+									class="caret"
+									size="1.25rem"
+									aria-hidden="true"
+								/>
+							</button>
+						</div>
+						<div
+							class="group-content"
+							id={`sidebar-group-${groupIndex}`}
+							hidden={!(flattenSidebar(entry.entries).some((i: any) => i.isCurrent) || !entry.collapsed)}
+						>
+							<sl-sidebar-restore data-groupIndex={groupIndex}></sl-sidebar-restore>
+							<Astro.self sublist={entry.entries} nested />
+						</div>
+					</div>
+				)}
+			</li>
+			);
+		})
+	}
+</ul>
+
+<style>
+	.usa-sidenav a.grove-sidenav-link:focus:not(.usa-button):not(.usa-current),
+	.usa-sidenav a.grove-sidenav-link.usa-current:focus:not(.usa-button) {
+		outline-offset: -0.25rem;
+	}
+
+	.usa-sidenav a.grove-sidenav-link:not(.usa-button):not(.usa-current),	
+	.usa-sidenav a.grove-sidenav-link.usa-current:not(.usa-button) {
+		color: var(--grove-link);
+	}
+
+	.usa-sidenav__item:last-child > a.grove-sidenav-link {
+		margin-bottom: 0.5rem;
+	}
+
+
+	.group-label, .caret {
+		color: var(--grove-gray-70);
+	}
+
+	.group-toggle {
+		padding: 1rem;
+		border-radius: 0;
+		text-decoration: none;
+	}
+	.usa-sidenav .group-toggle:hover {
+		background-color: #f0f0f0;
+		text-decoration: none;
+	}
+
+    .group-toggle:not([disabled]):focus {
+		outline-offset: -0.25rem;
+    }
+	
+	.sidebar-group {
+		border-color: var(--sl-color-hairline-shade);
+	}
+</style>
