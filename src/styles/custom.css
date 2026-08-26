@@ -10,7 +10,7 @@
   --grove-white: #fff; /* USWDS white */
   --grove-ink: #1c1d1f; /* USWDS ink */
   --grove-link: #005ea2; /* USWDS blue-60v */
-  --grove-tr-bg: #edeff0; /* USWDS gray-cool-5 */
+  --grove-gray-cool-5: #edeff0; /* USWDS gray-cool-5 */
   --grove-gray-70: #454545; /* USWDS gray-70 */
 
   --sl-color-bg: var(--grove-base-100);
@@ -340,7 +340,7 @@ body {
   }
 }
 .grove-striped-table tbody tr:nth-child(odd) th {
-  background-color: var(--grove-tr-bg);
+  background-color: var(--grove-gray-cool-5);
 }
 
 /* need to add into NJWDS */

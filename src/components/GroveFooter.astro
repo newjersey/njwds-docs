@@ -10,6 +10,7 @@ import x from '../assets/x.svg';
 
 
 <footer class="usa-footer">
+  <feedback-widget class="grove-feedback-widget" show-comment-disclaimer="false"/>
   <div class="grove-footer-base-xlight-bg">
     <div class="grid-container usa-footer__return-to-top">
       <a href="#">Return to top</a>
@@ -199,4 +200,18 @@ import x from '../assets/x.svg';
     .grove-footer-primary-bg {
         background-color: var(--grove-primary-700);
     }
+    :global(.grove-feedback-widget) {
+      .feedback-container {
+        background-color: var(--grove-gray-cool-5);
+        padding-inline: 1.5rem;
+        padding-block: 1rem;
+      }
+      .feedback-button-group {
+        flex-wrap: nowrap;
+      }
+    }
 </style>
+
+<script>
+  import "@newjersey/feedback-widget/feedback-widget.min.js";
+</script>
