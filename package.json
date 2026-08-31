@@ -19,7 +19,7 @@
     "@newjersey/feedback-widget": "^0.7.1",
     "@newjersey/njwds": "^2.9.2",
     "astro": "^7.2.9",
-    "astro-auto-import": "^0.5.1",
+    "astro-auto-import": "^0.6.0",
     "remark-gfm": "^4.0.1",
     "sharp": "^0.35.3"
   },
