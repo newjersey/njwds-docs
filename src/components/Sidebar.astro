@@ -1,0 +1,105 @@
+---
+// @ts-expect-error - Virtual module provided by Starlight
+import MobileMenuFooter from 'virtual:starlight/components/MobileMenuFooter';
+import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro';
+import SidebarSublist from './SidebarSublist.astro';
+
+const { sidebar } = Astro.locals.starlightRoute;
+---
+
+<SidebarPersister>
+	<SidebarSublist sublist={sidebar} />
+</SidebarPersister>
+
+<div class="md:sl-hidden">
+	<MobileMenuFooter />
+</div>
+
+<script is:inline>
+	/**
+	 * Enhance sidebar navigation with keyboard interactivity
+	 */
+	function addInteractivity() {
+		const toggleButtons = document.querySelectorAll('.group-toggle');
+
+		toggleButtons.forEach((button) => {
+			// Handle click events
+			button.addEventListener('click', () => {
+				toggleGroup(button);
+			});
+		});
+	}
+
+	/**
+	 * Expand or collapse a single group-toggle button, updating its ARIA
+	 * state, content visibility, and caret icon.
+	 */
+	function setGroupExpanded(button, expand) {
+		const groupContent = document.getElementById(button.getAttribute('data-group-id'));
+		const icon = button.querySelector('.caret');
+
+		if (!groupContent) return;
+
+		button.setAttribute('aria-expanded', expand ? 'true' : 'false');
+		groupContent.toggleAttribute('hidden', !expand);
+		if (icon) {
+			updateIconPath(icon, expand ? 'down-caret' : 'right-caret');
+		}
+	}
+
+	/**
+	 * Toggle a sidebar group's expanded/collapsed state
+	 */
+	function toggleGroup(button) {
+		const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+		if (!isExpanded) {
+			collapseSiblingGroups(button);
+		}
+		setGroupExpanded(button, !isExpanded);
+	}
+
+	/**
+	 * Collapse all other group-toggle buttons so only one section is
+	 * open at a time within that level.
+	 */
+	function collapseSiblingGroups(button) {
+		const parentList = button.closest('li')?.parentElement;
+		if (!parentList) return;
+
+		const siblingButtons = parentList.querySelectorAll(
+			':scope > li > .sidebar-group > .group-header > .group-toggle'
+		);
+
+		siblingButtons.forEach((siblingButton) => {
+			if (siblingButton === button) return;
+			if (siblingButton.getAttribute('aria-expanded') !== 'true') return;
+
+			setGroupExpanded(siblingButton, false);
+		});
+	}
+
+	/**
+	 * Update the SVG path for the icon
+	 */
+	function updateIconPath(icon, iconName) {
+		const path = icon.querySelector('path');
+		if (!path) return;
+
+		// Icon paths from Starlight Icons.ts
+		const icons = {
+			'right-caret': 'm14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z',
+			'down-caret': 'M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z'
+		};
+
+		if (icons[iconName]) {
+			path.setAttribute('d', icons[iconName]);
+		}
+	}
+
+	// Run on initial load
+	addInteractivity();
+
+	// Re-run after view transitions (Astro feature)
+	document.addEventListener('astro:after-swap', addInteractivity);
+</script>
