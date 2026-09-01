@@ -5,6 +5,8 @@ import remarkGfm from "remark-gfm";
 import AutoImport from "astro-auto-import";
 import mdx from "@astrojs/mdx";
 
+const googleAnalyticsId = "G-Z04BPLB04T";
+
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -24,6 +26,25 @@ export default defineConfig({
     }),
     starlight({
       title: "Grove",
+      head: [
+        {
+          tag: "script",
+          attrs: {
+            src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
+          }
+        },
+        {
+          tag: "script",
+          attrs: {},
+          content: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${googleAnalyticsId}');
+          `
+        }
+      ],
       logo: {
         src: "./src/assets/leaves.svg",
         alt: "Grove logo: four green leaves arranged in a square pattern (2 by 2)",
