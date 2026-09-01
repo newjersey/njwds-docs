@@ -31,7 +31,7 @@ export default defineConfig({
           tag: "script",
           attrs: {
             src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
-          }
+          },
         },
         {
           tag: "script",
@@ -42,8 +42,8 @@ export default defineConfig({
           gtag('js', new Date());
 
           gtag('config', '${googleAnalyticsId}');
-          `
-        }
+          `,
+        },
       ],
       logo: {
         src: "./src/assets/leaves.svg",
