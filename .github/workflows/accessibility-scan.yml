@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   accessibility-scan:
-    name: Accessibility scan
+    name: Accessibility scan (${{ github.event_name == 'pull_request' && 'PR' || 'main' }})
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -27,8 +27,9 @@ jobs:
           cache: "npm"
 
       - name: Cache node_modules
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         id: node-modules-cache
+        if: github.event_name == 'pull_request'
         with:
           path: node_modules
           key: node-modules-${{ runner.os }}-${{ hashFiles('.nvmrc') }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
@@ -42,7 +43,7 @@ jobs:
         run: echo "version=$(npm ls @playwright/test --json | node -pe 'JSON.parse(require("fs").readFileSync(0)).dependencies["@playwright/test"].version')" >> "$GITHUB_OUTPUT"
 
       - name: Cache Playwright browsers
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         id: playwright-cache
         with:
           path: ~/.cache/ms-playwright
@@ -63,7 +64,7 @@ jobs:
         run: npm run test:a11y
 
       - name: Upload accessibility report
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         if: always()
         with:
           name: accessibility-report
