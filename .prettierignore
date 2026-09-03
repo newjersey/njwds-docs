@@ -7,3 +7,6 @@ bun.lockb
 *.yml
 *.md
 *.mdx
+
+playwright-report/
+test-results/
