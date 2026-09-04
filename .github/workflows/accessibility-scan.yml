@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   accessibility-scan:
@@ -58,9 +59,47 @@ jobs:
         run: npm run test:a11y
 
       - name: Upload accessibility report
+        id: upload-report
         uses: actions/upload-artifact@v6
         if: always()
         with:
           name: accessibility-report
           path: playwright-report/
           retention-days: 30
+
+      - name: Comment on PR
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          REPORT_URL: ${{ steps.upload-report.outputs.artifact-url }}
+        with:
+          script: |
+            const marker = "<!-- accessibility-scan-comment -->";
+            const body = [
+              marker,
+              "### Accessibility scan failed",
+              `[Download the report](${process.env.REPORT_URL}) for violation details.`,
+            ].join("\n");
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find((comment) => comment.body?.includes(marker));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
