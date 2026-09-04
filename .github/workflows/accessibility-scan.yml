@@ -2,6 +2,7 @@ name: "Accessibility Scan"
 
 on:
   pull_request:
+    types: [labeled, synchronize]
     branches:
       - "main"
   push:
@@ -13,7 +14,9 @@ permissions:
 
 jobs:
   accessibility-scan:
-    name: Accessibility scan (${{ github.event_name == 'pull_request' && 'PR' || 'main' }})
+    name: Accessibility scan
+    if: github.event_name == 'push' || contains(github.event.pull_request.labels.*.name, 'accessibility-scan')
+
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -26,17 +29,8 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "npm"
 
-      - name: Cache node_modules
-        uses: actions/cache@v5
-        id: node-modules-cache
-        if: github.event_name == 'pull_request'
-        with:
-          path: node_modules
-          key: node-modules-${{ runner.os }}-${{ hashFiles('.nvmrc') }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
-
       - name: Install dependencies
         run: npm ci
-        if: steps.node-modules-cache.outputs.cache-hit != 'true'
 
       - name: Get installed Playwright version
         id: playwright-version
