@@ -11,7 +11,6 @@ permissions:
 
 jobs:
   npm-audit:
-    uses: newjersey/innovation-shared-actions/.github/workflows/npm-audit.yml@chore/convert-npm-audit-to-action
-    with:
+    uses: newjersey/innovation-shared-actions/.github/workflows/npm-audit.yml@feat/npm-audit-support-pnpm
       node-version: ".nvmrc"
       audit-level: "critical"
