@@ -1,5 +1,5 @@
 import type { Locator } from "@playwright/test";
-import { attachResults, expect, settle, test } from "./axe-test";
+import { expect, expectNoViolations, settle, test } from "./axe-test";
 
 test("splash page has no sidebar toggle", async ({ page }) => {
   await page.goto("/");
@@ -46,8 +46,7 @@ test.describe("page interactivity", () => {
       await expect(sidebar.getByRole("button", { expanded: false })).toHaveCount(count);
 
       const accessibilityScanResults = await makeAxeBuilder().analyze();
-      await attachResults(testInfo, accessibilityScanResults);
-      expect(accessibilityScanResults.violations).toEqual([]);
+      await expectNoViolations(testInfo, accessibilityScanResults);
     });
 
     test("only one section open at a time", async () => {
@@ -77,8 +76,7 @@ test.describe("page interactivity", () => {
     await expect(dialog).toBeVisible();
 
     const accessibilityScanResults = await makeAxeBuilder().analyze();
-    await attachResults(testInfo, accessibilityScanResults);
-    expect(accessibilityScanResults.violations).toEqual([]);
+    await expectNoViolations(testInfo, accessibilityScanResults);
   });
 
   test("feedback widget expanded", async ({ page, makeAxeBuilder }, testInfo) => {
@@ -87,8 +85,7 @@ test.describe("page interactivity", () => {
     await expect(feedbackWidget.getByRole("textbox")).toBeVisible();
 
     const accessibilityScanResults = await makeAxeBuilder().analyze();
-    await attachResults(testInfo, accessibilityScanResults);
-    expect(accessibilityScanResults.violations).toEqual([]);
+    await expectNoViolations(testInfo, accessibilityScanResults);
   });
 
   test.describe("mobile viewport", () => {
@@ -110,8 +107,7 @@ test.describe("page interactivity", () => {
       await expect(sidebar).toBeVisible();
 
       const accessibilityScanResults = await makeAxeBuilder().analyze();
-      await attachResults(testInfo, accessibilityScanResults);
-      expect(accessibilityScanResults.violations).toEqual([]);
+      await expectNoViolations(testInfo, accessibilityScanResults);
     });
 
     test("mobile table of contents open", async ({ page, makeAxeBuilder }, testInfo) => {
@@ -123,8 +119,7 @@ test.describe("page interactivity", () => {
       await expect(toc).toHaveAttribute("open", "");
 
       const accessibilityScanResults = await makeAxeBuilder().analyze();
-      await attachResults(testInfo, accessibilityScanResults);
-      expect(accessibilityScanResults.violations).toEqual([]);
+      await expectNoViolations(testInfo, accessibilityScanResults);
     });
   });
 });

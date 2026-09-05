@@ -1,4 +1,4 @@
-import { attachResults, expect, settle, test } from "./axe-test";
+import { expectNoViolations, settle, test } from "./axe-test";
 import { NOT_FOUND_PROBE_ROUTE, routes } from "./routes";
 
 test.describe("pages", () => {
@@ -8,9 +8,7 @@ test.describe("pages", () => {
       await settle(page);
 
       const accessibilityScanResults = await makeAxeBuilder().analyze();
-      await attachResults(testInfo, accessibilityScanResults);
-
-      expect(accessibilityScanResults.violations).toEqual([]);
+      await expectNoViolations(testInfo, accessibilityScanResults);
     });
   }
 
@@ -19,8 +17,6 @@ test.describe("pages", () => {
     await settle(page);
 
     const accessibilityScanResults = await makeAxeBuilder().analyze();
-    await attachResults(testInfo, accessibilityScanResults);
-
-    expect(accessibilityScanResults.violations).toEqual([]);
+    await expectNoViolations(testInfo, accessibilityScanResults);
   });
 });
