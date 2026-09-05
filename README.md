@@ -92,10 +92,9 @@ when a change affects the rendered interface.
 To report a security vulnerability, follow the instructions in [SECURITY.md](SECURITY.md) instead of
 opening a public issue.
 
-### Accessibility testing
+### Testing
 
-The [Accessibility Scan](.github/workflows/accessibility-scan.yml) workflow runs axe-core against
-every page of the built site. It runs on pushes to `main` or PRs labeled `accessibility-scan`. Only `critical` violations fail the check (see `SEVERITY_THRESHOLD` in [tests/a11y/axe-test.ts](tests/a11y/axe-test.ts)), but all violations are still recorded. Each run uploads an `accessibility-report` artifact that can be found within the CI output, as a comment on failing PRs, or locally with `npm run test:a11y:report` after running ``npm run test:a11y`.
+The [Accessibility Scan](.github/workflows/accessibility-scan.yml) workflow runs axe-core against every page of the built site and tests basic site interactions. It runs on pushes to `main` or PRs labeled `accessibility-scan`. Only `critical` violations fail the check (see `SEVERITY_THRESHOLD` in [tests/a11y/axe-test.ts](tests/a11y/axe-test.ts)), but all violations are still recorded and easily visible in the Github Action summary. Each run uploads an `accessibility-report` artifact that can be found within the CI output, as a comment on failing PRs, or locally with `npm run test:a11y:report` after running ``npm run test:a11y`.
 
 ## License
 
