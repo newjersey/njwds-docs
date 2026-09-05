@@ -1,7 +1,8 @@
+import { appendFile } from "node:fs/promises";
 import { expect, test as base } from "@playwright/test";
 import type { Page, TestInfo } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import type { AxeResults, ImpactValue } from "axe-core";
+import type { AxeResults, ImpactValue, Result } from "axe-core";
 
 const WCAG_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22a", "wcag22aa"];
 // Ignore storybook embeds
@@ -38,13 +39,36 @@ export async function attachResults(testInfo: TestInfo, results: AxeResults): Pr
   });
 }
 
+function describeViolation(testInfo: TestInfo, violation: Result): string {
+  const elementCount = violation.nodes.length;
+  const elements = `${elementCount} element${elementCount === 1 ? "" : "s"}`;
+  return `${violation.impact} \`${violation.id}\` on \`${testInfo.title}\` — ${violation.help} (${elements})`;
+}
+
 export async function expectNoViolations(testInfo: TestInfo, results: AxeResults): Promise<void> {
   await attachResults(testInfo, results);
 
   const thresholdIndex = IMPACT_LEVELS.indexOf(SEVERITY_THRESHOLD);
-  const reportableViolations = results.violations.filter(
+  const blockingViolations = results.violations.filter(
     (violation) => violation.impact && IMPACT_LEVELS.indexOf(violation.impact) >= thresholdIndex,
   );
+  const warnViolations = results.violations.filter(
+    (violation) => violation.impact && IMPACT_LEVELS.indexOf(violation.impact) < thresholdIndex,
+  );
 
-  expect(reportableViolations).toEqual([]);
+  for (const violation of warnViolations) {
+    testInfo.annotations.push({
+      type: `a11y-${violation.impact}`,
+      description: describeViolation(testInfo, violation),
+    });
+  }
+
+  if (process.env.GITHUB_STEP_SUMMARY && warnViolations.length > 0) {
+    const lines = warnViolations.map(
+      (violation) => `- ⚠️ ${describeViolation(testInfo, violation)} (non-blocking)`,
+    );
+    await appendFile(process.env.GITHUB_STEP_SUMMARY, lines.join("\n") + "\n");
+  }
+
+  expect(blockingViolations).toEqual([]);
 }
