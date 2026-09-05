@@ -1,4 +1,3 @@
-import { appendFile } from "node:fs/promises";
 import { expect, test as base } from "@playwright/test";
 import type { Page, TestInfo } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -61,13 +60,6 @@ export async function expectNoViolations(testInfo: TestInfo, results: AxeResults
       type: `a11y-${violation.impact}`,
       description: describeViolation(testInfo, violation),
     });
-  }
-
-  if (process.env.GITHUB_STEP_SUMMARY && warnViolations.length > 0) {
-    const lines = warnViolations.map(
-      (violation) => `- ⚠️ ${describeViolation(testInfo, violation)} (non-blocking)`,
-    );
-    await appendFile(process.env.GITHUB_STEP_SUMMARY, lines.join("\n") + "\n");
   }
 
   expect(blockingViolations).toEqual([]);

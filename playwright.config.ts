@@ -9,7 +9,11 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   timeout: 60_000,
   expect: { timeout: 10_000 },
-  reporter: [["list"], ["html", { outputFolder: "playwright-report", open: "never" }]],
+  reporter: [
+    [process.env.CI ? "github" : "list"],
+    ["html", { outputFolder: "playwright-report", open: "never" }],
+    ["./tests/a11y/warnings-reporter.ts"],
+  ],
   use: {
     baseURL: BASE_URL,
     viewport: { width: 1280, height: 800 },
