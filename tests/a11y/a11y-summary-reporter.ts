@@ -36,6 +36,11 @@ export default class AccessibilitySummaryReporter implements Reporter {
   }
 
   async onEnd(): Promise<void> {
+    const outputFile = process.env.GITHUB_OUTPUT;
+    if (outputFile) {
+      await appendFile(outputFile, `findings=${this.findings.length > 0}\n`);
+    }
+
     const summaryFile = process.env.GITHUB_STEP_SUMMARY;
     if (!summaryFile || this.findings.length === 0) return;
 

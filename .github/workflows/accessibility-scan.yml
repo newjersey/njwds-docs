@@ -66,16 +66,21 @@ jobs:
         run: npx playwright install-deps chromium
         if: steps.playwright-cache.outputs.cache-hit == 'true'
 
-      - name: Run astro build
-        run: npm run build
+      - name: Run astro build (with retry)
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 5
+          max_attempts: 3
+          command: npm run build
 
       - name: Run accessibility scan
+        id: a11y-scan
         run: npm run test:a11y
 
       - name: Upload accessibility report
         id: upload-report
         uses: actions/upload-artifact@v6
-        if: always()
+        if: failure() || steps.a11y-scan.outputs.findings == 'true'
         with:
           name: accessibility-report
           path: playwright-report/
