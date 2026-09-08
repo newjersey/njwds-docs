@@ -3,7 +3,6 @@ import type { Reporter, TestCase, TestResult } from "@playwright/test/reporter";
 
 const BLOCKING_PREFIX = "a11y-blocking-";
 const WARNING_PREFIX = "a11y-";
-// most to least severe; anything unrecognized sorts last
 const SEVERITY_ORDER = ["critical", "serious", "moderate", "minor"];
 
 type Finding = {
@@ -48,7 +47,7 @@ export default class AccessibilitySummaryReporter implements Reporter {
       (a, b) => SEVERITY_ORDER.indexOf(a.severity) - SEVERITY_ORDER.indexOf(b.severity),
     );
 
-    const lines = [
+    const resultsFormatted = [
       "### Accessibility scan results",
       "",
       "Items marked ❌ failed the scan and items marked ⚠️ are below the failure threshold in `tests/a11y/axe-test.ts`.",
@@ -56,6 +55,6 @@ export default class AccessibilitySummaryReporter implements Reporter {
       ...sorted.map((finding) => `- ${finding.isBlocking ? "❌" : "⚠️"} ${finding.description}`),
       "",
     ];
-    await appendFile(summaryFile, lines.join("\n"));
+    await appendFile(summaryFile, resultsFormatted.join("\n"));
   }
 }
