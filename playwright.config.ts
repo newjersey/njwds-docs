@@ -10,7 +10,8 @@ export default defineConfig({
   timeout: 60_000,
   expect: { timeout: 10_000 },
   reporter: [
-    [process.env.CI ? "github" : "list"],
+    ["list"],
+    ...(process.env.CI ? [["github"] as const] : []),
     ["html", { outputFolder: "playwright-report", open: "never" }],
     ["./tests/a11y/a11y-summary-reporter.ts"],
   ],
