@@ -92,7 +92,7 @@ jobs:
             const body = [
               marker,
               "#### Accessibility scan failed 🚨",
-              `[Download the report](${process.env.REPORT_URL}) for violation details.`,
+              `[Download the report](${process.env.REPORT_URL}) for violation details or view the workflow summary for an overview of findings.`,
             ].join("\n");
 
             const { data: comments } = await github.rest.issues.listComments({
