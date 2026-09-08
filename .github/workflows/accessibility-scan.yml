@@ -1,3 +1,4 @@
+# Average Github Action runtime is ~4 mins (occassionaly dependency downloads inflate time past 5 mins)
 name: "Accessibility Scan"
 
 on:

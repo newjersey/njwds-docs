@@ -12,7 +12,7 @@ export default defineConfig({
   reporter: [
     [process.env.CI ? "github" : "list"],
     ["html", { outputFolder: "playwright-report", open: "never" }],
-    ["./tests/a11y/warnings-reporter.ts"],
+    ["./tests/a11y/a11y-summary-reporter.ts"],
   ],
   use: {
     baseURL: BASE_URL,

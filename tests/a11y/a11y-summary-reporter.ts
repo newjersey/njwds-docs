@@ -12,7 +12,7 @@ type Finding = {
   isBlocking: boolean;
 };
 
-export default class AccessibilityWarningsReporter implements Reporter {
+export default class AccessibilitySummaryReporter implements Reporter {
   private findings: Finding[] = [];
 
   onTestEnd(test: TestCase, result: TestResult): void {
@@ -46,7 +46,7 @@ export default class AccessibilityWarningsReporter implements Reporter {
     const lines = [
       "### Accessibility scan results",
       "",
-      "Items marked ❌ failed the build; items marked ⚠️ are below the failure threshold in `tests/a11y/axe-test.ts` and did not fail the build.",
+      "Items marked ❌ failed the scan and items marked ⚠️ are below the failure threshold in `tests/a11y/axe-test.ts`.",
       "",
       ...sorted.map((finding) => `- ${finding.isBlocking ? "❌" : "⚠️"} ${finding.description}`),
       "",
