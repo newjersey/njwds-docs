@@ -1,29 +1,54 @@
 import { appendFile } from "node:fs/promises";
 import type { Reporter, TestCase, TestResult } from "@playwright/test/reporter";
 
-const ANNOTATION_PREFIX = "a11y-";
+const BLOCKING_PREFIX = "a11y-blocking-";
+const WARNING_PREFIX = "a11y-";
+// most to least severe; anything unrecognized sorts last
+const SEVERITY_ORDER = ["critical", "serious", "moderate", "minor"];
+
+type Finding = {
+  severity: string;
+  description: string;
+  isBlocking: boolean;
+};
 
 export default class AccessibilityWarningsReporter implements Reporter {
-  private warnings: string[] = [];
+  private findings: Finding[] = [];
 
   onTestEnd(test: TestCase, result: TestResult): void {
-    for (const annotation of result.annotations) {
-      if (annotation.type.startsWith(ANNOTATION_PREFIX) && annotation.description) {
-        this.warnings.push(annotation.description);
+    result.annotations.forEach((annotation) => {
+      if (!annotation.description) return;
+
+      if (annotation.type.startsWith(BLOCKING_PREFIX)) {
+        this.findings.push({
+          severity: annotation.type.slice(BLOCKING_PREFIX.length),
+          description: annotation.description,
+          isBlocking: true,
+        });
+      } else if (annotation.type.startsWith(WARNING_PREFIX)) {
+        this.findings.push({
+          severity: annotation.type.slice(WARNING_PREFIX.length),
+          description: annotation.description,
+          isBlocking: false,
+        });
       }
-    }
+    });
   }
 
   async onEnd(): Promise<void> {
     const summaryFile = process.env.GITHUB_STEP_SUMMARY;
-    if (!summaryFile || this.warnings.length === 0) return;
+    if (!summaryFile || this.findings.length === 0) return;
+
+    const sorted = [...this.findings].sort(
+      (a, b) => SEVERITY_ORDER.indexOf(a.severity) - SEVERITY_ORDER.indexOf(b.severity),
+    );
 
     const lines = [
-      "### Accessibility warnings (non-blocking)",
+      "### Accessibility scan results",
       "",
-      "These violations are below the failure threshold in `tests/a11y/axe-test.ts` and did not fail the build.",
+      "Items marked ❌ failed the build; items marked ⚠️ are below the failure threshold in `tests/a11y/axe-test.ts` and did not fail the build.",
       "",
-      ...this.warnings.map((warning) => `- ⚠️ ${warning}`),
+      ...sorted.map((finding) => `- ${finding.isBlocking ? "❌" : "⚠️"} ${finding.description}`),
       "",
     ];
     await appendFile(summaryFile, lines.join("\n"));

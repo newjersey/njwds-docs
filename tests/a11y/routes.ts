@@ -7,7 +7,7 @@ const NOT_FOUND_FILE = "404.html";
 
 export const NOT_FOUND_PROBE_ROUTE = "/a11y-scan-missing-page-probe/";
 
-function toRoute(relativePath: string): string {
+const toRoute = (relativePath: string): string => {
   const segments = relativePath.split(sep);
   const file = segments.pop() ?? "";
 
@@ -16,9 +16,9 @@ function toRoute(relativePath: string): string {
   }
 
   return segments.length === 0 ? "/" : `/${segments.join("/")}/`;
-}
+};
 
-function discoverRoutes(): string[] {
+const discoverRoutes = (): string[] => {
   if (!existsSync(DIST_DIR)) {
     throw new Error(
       `Accessibility scan found no build output at "${DIST_DIR}". Run "npm run build" first.`,
@@ -41,6 +41,6 @@ function discoverRoutes(): string[] {
   }
 
   return routes;
-}
+};
 
 export const routes = discoverRoutes();
