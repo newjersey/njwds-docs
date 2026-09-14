@@ -11,11 +11,13 @@
     "lint": "eslint",
     "preview": "astro preview",
     "astro": "astro",
-    "astro-check": "astro check"
+    "astro-check": "astro check",
+    "test:a11y": "playwright test",
+    "test:a11y:report": "playwright show-report"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.2.4",
-    "@astrojs/starlight": "^0.41.9",
+    "@astrojs/starlight": "^0.42.0",
     "@newjersey/feedback-widget": "^0.7.1",
     "@newjersey/njwds": "^2.9.2",
     "astro": "^7.2.9",
@@ -25,10 +27,13 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "^4.13.0",
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.62.1",
     "@types/eslint__js": "^9.14.0",
     "astro-eslint-parser": "^3.1.0",
     "eslint": "^10.9.1",
+    "axe-core": "^4.13.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^3.1.0",
     "husky": "^9.1.7",
