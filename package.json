@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.1",
-    "@astrojs/starlight": "^0.42.0",
+    "@astrojs/starlight": "^0.42.1",
     "@newjersey/feedback-widget": "^0.7.1",
     "@newjersey/njwds": "^2.9.2",
-    "astro": "^7.3.1",
+    "astro": "^7.3.3",
     "astro-auto-import": "^0.6.0",
     "remark-gfm": "^4.0.1",
     "sharp": "^0.35.3"
@@ -39,7 +39,7 @@
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
     "lint-staged": "^17.4.1",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.8",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.69.0"
   },
