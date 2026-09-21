@@ -146,18 +146,14 @@ Add the `data-allow-multiple attribute` to any usa-accordion to create a multise
 
 ## Accessibility guidance
 Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) to test accordion implementation.
-- **Code header areas in the accordion as buttons.** Using a `<button type="button">` assures accordions are usable with both screen readers and keyboards.
-- **Use meaningful expansion button labels.** Aim for informative labels like "Explore federal compliance checklists" rather than vague ones like "Click here."
-- **Use `aria-controls` to associate an accordion button with its related content.** Connect an accordion button control with its appropriate content region by referencing the controlled element's `id` in the button's `aria-controls` attribute.
-- **Use unique ids.** Each button has a unique name, `aria-controls="[id]"`, that associates the control with the appropriate region by referencing the controlled element's `id`.
-- **Accordions use javascript to set the `hidden` values of their content areas.** Each content area will have its `hidden` attribute set by the component, depending on its corresponding button's `aria-expanded` attribute. To ensure your content is accessible in the event that the JavaScript does not load or is disabled, you should not manually set `hidden` on any of your content areas.
-- **You do not need to add text alternatives for the collapsed and expanded accordion states.** These states are set programmatically with JavaScript.
+- **Leverage semantic HTML before turning to ARIA** Much of the accessibility and functionality of the accordion is provided by the semantic `<details>` and `<summary>` elements. Attributes like `aria-expanded` and `aria-controls` are not necessary when using these elements.
+- **Expansion is driven by the open attribute.** To programmatically open or close accordion sections, use the open boolean attribute on the `details` element rather than using `hidden` or setting `aria-expanded`.
 
 ## Code 
 
 ### Guidance 
-- **Multiselectable accordion groups.** Add the `data-allow-multiple attribute` to any usa-accordion to create a multiselectable accordion group.
-- **Default an accordion button to open.** Add the `aria-expanded="true"` attribute to any `usa-accordion__button` to have that section open by default at page load. When the accordion is initialized, the JavaScript will automatically add `aria-expanded="false"` attribute to all other accordion buttons.
+- **Controlling accordion group behavior with `name`.** Including the same `name` attribute on multiple `<detail>` elements will allow one accordion in the group to be open at once and excluding the `name` attribute will create a multiselectable accordion group.
+- **Default an accordion button to open.** Add the `open` attribute to any `usa-accordion__button` to have that section open by default at page load.
 
 ### Accordion variants 
 
