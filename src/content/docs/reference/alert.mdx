@@ -18,7 +18,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 - **Site Alert:** A site alert communicates urgent sitewide information.
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the default alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`} 
     loading="lazy"
@@ -133,7 +133,7 @@ Alerts are notifications of high priority since they provide critical informatio
 **Tip:** Slim-icon is the slimmest.
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the slim-icon alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=slim%3A!true%3Bheader%3A!false;icon:!true`} 
     loading="lazy"
@@ -174,7 +174,7 @@ Alert states determine alert color / role / level of severity. There are current
 Give instant feedback about the tasks a user just performed. Its main objective is to confirm or notify tasks. (this seems like success state)
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the information alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`} 
     loading="lazy"
@@ -191,7 +191,7 @@ Give instant feedback about the tasks a user just performed. Its main objective 
 Confirm that a user’s action was effective, and can have a celebratory tone.
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the success alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--success&viewMode=story&args=icon:!true`} 
     loading="lazy"
@@ -208,7 +208,7 @@ Confirm that a user’s action was effective, and can have a celebratory tone.
 Inform the user of risks or things to be aware of before taking action. 
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the warning alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--warning&viewMode=story&args=icon:!true`} 
     loading="lazy"
@@ -225,7 +225,7 @@ Inform the user of risks or things to be aware of before taking action.
 Inform that something went wrong after an action. Learn about errors (link to error documentation)
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the error alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--error&viewMode=story&args=icon:!true`} 
     loading="lazy"
@@ -247,15 +247,27 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 
 
 ### Dismissible alerts
-Dismissible alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented yet. 
+Dismissible alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate.
 
-**Note:** Dismissible alerts are not currently present in Grove or USWDS, would need custom implementation
+<iframe 
+    title="Interactive preview of the dismissible alert from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--dismissible&viewMode=story&args=icon:!true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--dismissible`} />
+
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-alert--dismissible` | Used for timely notifications that do not need to remain on the page. The alert will have a clickable close icon in the top right corner that allows the user to dismiss the alert. |
 
 
 #### Figma properties 
 | Property | Value |
 | ----------- | ----------- |
-| dismissible | false, true (**not implemented in code**)|
+| dismissible | false, true |
 
 <ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
