@@ -54,14 +54,14 @@ starlight-theme-select {
 }
 
 /* Style the mobile menu button */
-starlight-menu-button button {
+.sl-menu-button {
   background-color: var(--grove-primary-600);
   color: var(--grove-white);
 }
 
 /* If you need to be more specific for hover states */
-starlight-menu-button button:hover,
-starlight-menu-button button:focus {
+.sl-menu-button:hover,
+.sl-menu-button:focus {
   background-color: var(--grove-white);
   color: var(--grove-primary-600);
 }
