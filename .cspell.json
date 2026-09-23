@@ -1,17 +1,7 @@
 {
-  // Current version of the configuration format (always 0.2)
-  "version": "0.2",
-  
-  // The primary locale for spellchecking
+  "version": "0.2", 
   "language": "en",
-  
-  // Words that are allowed in this project (case-insensitive by default)
-  "words": [],
-  
-  // Specific words to bypass, even if they match forbidden or custom rules
   "ignoreWords": [],
-  
-  // Files, folders, and patterns that CSpell should entirely ignore
   "ignorePaths": [
     "node_modules/**",
     ".git/**",
@@ -20,8 +10,6 @@
     "*.min.js",
     ".cspell.json"
   ],
-  
-  // Activates specific pre-installed dictionaries
   "dictionaries": [
     "typescript",
     "node",
@@ -33,8 +21,6 @@
     "fonts",
     "project-words"
   ],
-
-  // Defines the custom "project-words" dictionary used above
   "dictionaryDefinitions": [
     {
       "name": "project-words",
@@ -42,8 +28,6 @@
       "addWords": true
     }
   ],
-
-  // Configures overrides or adjustments for specific programming languages
   "languageSettings": [
     {
       "languageId": "javascript",
@@ -54,7 +38,6 @@
       ]
     }
   ],
-
   "overrides": [
     {
       "filename": "**/*.{mdx,astro}",
@@ -62,8 +45,6 @@
       "allowCompoundWords": true
     }
   ],
-
-  // Advanced: Ignore blocks of text matching specific regex patterns (e.g., UUIDs or URLs)
   "ignoreRegExpList": [
     "/[a-f0-9]{32}/i",
     "/%[0-9A-Fa-f]{2}/g"
