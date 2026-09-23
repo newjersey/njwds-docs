@@ -4,7 +4,7 @@
 
 If you believe you have found a security vulnerability in this design system, please **do not open a public GitHub issue**.
 
-Instead, report the to repositiry administrators. 
+Instead, report the to repository administrators. 
 
 When reporting a vulnerability, please include:
 

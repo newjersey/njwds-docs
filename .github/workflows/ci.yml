@@ -36,3 +36,6 @@ jobs:
 
             - name: Run astro build
               run: npm run build
+
+            - name: Run spelling check
+              run: npm run test:spelling
