@@ -8,6 +8,7 @@
     "dist/**",
     "coverage/**",
     "*.min.js",
+    "src/content/docs/content/spelling.mdx",
     ".cspell.json"
   ],
   "dictionaries": [
