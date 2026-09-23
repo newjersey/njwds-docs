@@ -1,5 +1,5 @@
 {
-  "version": "0.2", 
+  "version": "0.2",
   "language": "en",
   "ignoreWords": [],
   "ignorePaths": [
@@ -32,10 +32,7 @@
     {
       "languageId": "javascript",
       "allowCompoundWords": true,
-      "dictionaries": [
-        "typescript",
-        "html"
-      ]
+      "dictionaries": ["typescript", "html"]
     }
   ],
   "overrides": [
@@ -45,8 +42,5 @@
       "allowCompoundWords": true
     }
   ],
-  "ignoreRegExpList": [
-    "/[a-f0-9]{32}/i",
-    "/%[0-9A-Fa-f]{2}/g"
-  ]
+  "ignoreRegExpList": ["/[a-f0-9]{32}/i", "/%[0-9A-Fa-f]{2}/g"]
 }
