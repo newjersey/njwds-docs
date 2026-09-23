@@ -97,13 +97,9 @@ test.describe("page interactivity", () => {
         .getByRole("button", { name: "Menu" });
       await expect(navToggle).toBeVisible();
 
-      // handles starlight implementation of aria-expanded on button wrapper
-      const menuButton = page.locator("starlight-menu-button");
-      await expect(menuButton).not.toHaveAttribute("aria-expanded", "true");
-      await navToggle.click();
-      await expect(menuButton).toHaveAttribute("aria-expanded", "true");
-
       const sidebar = page.locator("#starlight__sidebar");
+      await expect(sidebar).toBeHidden();
+      await navToggle.click();
       await expect(sidebar).toBeVisible();
 
       const accessibilityScanResults = await makeAxeBuilder().analyze();
