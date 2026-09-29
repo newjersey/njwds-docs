@@ -18,10 +18,10 @@
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.1",
-    "@astrojs/starlight": "^0.42.1",
+    "@astrojs/starlight": "^0.42.4",
     "@newjersey/feedback-widget": "^0.7.1",
-    "@newjersey/njwds": "^2.9.2",
-    "astro": "^7.3.3",
+    "@newjersey/njwds": "^2.10.0",
+    "astro": "^7.3.5",
     "astro-auto-import": "^0.6.0",
     "remark-gfm": "^4.0.1",
     "sharp": "^0.35.3"
@@ -34,16 +34,16 @@
     "@types/eslint__js": "^9.14.0",
     "astro-eslint-parser": "^3.1.0",
     "axe-core": "^4.13.0",
-    "cspell": "^10.3.3",
+    "cspell": "^10.3.4",
     "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^3.1.0",
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
     "lint-staged": "^17.4.1",
-    "prettier": "^3.9.8",
+    "prettier": "^3.9.9",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.70.0"
+    "typescript-eslint": "^8.70.1"
   },
   "allow-scripts": true,
   "lint-staged": {
