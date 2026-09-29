@@ -3,6 +3,10 @@ dist/
 # generated types
 .astro/
 
+# accessibility scan output
+playwright-report/
+test-results/
+
 # dependencies
 node_modules/
 
@@ -19,3 +23,6 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# PR review setup data (personal, always current)
+.claude/pr-review-data/

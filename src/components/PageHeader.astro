@@ -12,12 +12,12 @@ interface Props {
 const { name, category, description, figmaUrl, storybookUrl, wcagBadge = true } = Astro.props;
 ---
 <section data-page-header>
-    <div class="padding-top-6 padding-bottom-205 tablet:display-flex">
+    <div class="padding-bottom-205 padding-top-4 tablet:padding-top-6 tablet:display-flex">
         <div class="flex-fill tablet:margin-right-2">
             <header>
-                {category && (<span class="font-body-2xs text-base">{category}</span>)}
-                <h1 class="margin-0">{name}</h1>
-                <p>{description}</p>
+                {category && (<span class="font-body-2xs text-base-dark">{category}</span>)}
+                <h1 id="_top" class="margin-0">{name}</h1>
+                {description && (<p>{description}</p>)}
             </header>
             {wcagBadge && (
                 <div>
@@ -25,9 +25,10 @@ const { name, category, description, figmaUrl, storybookUrl, wcagBadge = true } 
                 </div>
             )}
         </div>
-        <div class="display-flex flex-align-start flush-button-group">
+        {(figmaUrl || storybookUrl) &&
+         (<div class="display-flex flex-align-start flush-button-group">
             <FigmaStorybookButtonGroup figmaUrl={figmaUrl} storybookUrl={storybookUrl}/>
-        </div>
+        </div>)}
     </div>
 </section>
 

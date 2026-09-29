@@ -1,7 +1,6 @@
 ---
 title: Alert
 description: Documentation for alert component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -9,26 +8,22 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 <PageHeader
   name="Alert"
   category="COMPONENTS"
-  description="The alert and site alert are used for varying use cases of displaying timely information to users."
+  description="The alert is used to display timely information to users."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}
 />
 
-**Alert options**
-- **Alert:** Alert component used to prominently display timely information to users.
-- **Site Alert:** A site alert communicates urgent sitewide information.
-
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the default alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
  
-## Alert Usage Guidelines
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -62,42 +57,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-## Site Alert Usage Guidelines
-### Use this component for:
-<IconList>
-    <IconListItem icon="check">
-        **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
-    </IconListItem>
-    <IconListItem icon="check">
-        **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
-    </IconListItem>
-</IconList>
-
-### Use something else for:
-<IconList>
-    <IconListItem icon="close">
-        **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
-    </IconListItem>
-    <IconListItem icon="close">
-        **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages (error states of form input components).
-    </IconListItem>
-</IconList>
-
-###  What to avoid
-<IconList>
-    <IconListItem icon="report">
-        **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.
-    </IconListItem>
-    <IconListItem icon="report">
-        **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
-    </IconListItem>
-    <IconListItem icon="report">
-        **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange to draw attention to an emergency-related site alert. However, these colors can produce strong negative emotional reactions such as fear or panic. Positioning the banner at the top of the screen provides enough weight that such strong colors may not be necessary.
-    </IconListItem>
-</IconList>
-
-
-## Content Guidance 
+## Content guidance 
 
 ### Definition 
 Alerts are notifications of high priority since they provide critical information about a user's status, a system event, or a required action. They interrupt the user's flow to draw attention to something important. 
@@ -126,7 +86,7 @@ Alerts are notifications of high priority since they provide critical informatio
 3. Call to Action (CTA) / Next Step (Required for actionable alerts; Optional for purely informational): What should the user do now?
 4. Additional Details / Learn More (Optional): For complex issues is genuinely helpful because it is an opportunity to educate the user about the system.
 
-## Alert Variants
+## Alert variants
 
 ### Size variants
 [Type/size/modifiers] determine the size and amount of information in the alert. 
@@ -134,14 +94,14 @@ Alerts are notifications of high priority since they provide critical informatio
 **Tip:** Slim-icon is the slimmest.
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the slim-icon alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=slim%3A!true%3Bheader%3A!false;icon:!true`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 #### Figma properties
 | Property | Value |
@@ -149,6 +109,8 @@ Alerts are notifications of high priority since they provide critical informatio
 | icon | true, false |
 | heading | true, false |
 | slim | false, true |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 #### Code variants
 The following classes can be added to elements with class usa-alert to modify the size of the alert if needed. They can be used in combination with alert type variant classes to adjust the styling as well.
@@ -166,20 +128,22 @@ Alert states determine alert color / role / level of severity. There are current
 | Property | Value |
 | ----------- | ----------- |
 | state | info, warning, error, success, emergency |
- 
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 #### Information state
 Give instant feedback about the tasks a user just performed. Its main objective is to confirm or notify tasks. (this seems like success state)
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the information alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--info&viewMode=story&args=icon:!true`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
+ 
 | Variant | Description | 
 | ----------- | ----------- |
 | `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
@@ -188,14 +152,14 @@ Give instant feedback about the tasks a user just performed. Its main objective 
 Confirm that a user’s action was effective, and can have a celebratory tone.
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the success alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--success&viewMode=story&args=icon:!true`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -205,14 +169,14 @@ Confirm that a user’s action was effective, and can have a celebratory tone.
 Inform the user of risks or things to be aware of before taking action. 
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the warning alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--warning&viewMode=story&args=icon:!true`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -222,14 +186,14 @@ Inform the user of risks or things to be aware of before taking action.
 Inform that something went wrong after an action. Learn about errors (link to error documentation)
 
 <iframe 
-    title="Interactive preview of the default accordion from Storybook" 
+    title="Interactive preview of the error alert from Storybook" 
     frameborder="0" 
     src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--error&viewMode=story&args=icon:!true`} 
     loading="lazy"
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
 
 | Variant | Description |
 | ----------- | ----------- |
@@ -243,17 +207,32 @@ Demand immediate action to prevent a serious threat or inform the user of an eme
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
 
 
-### Dismissable alerts
-Not present in Grove or USWDS, would need custom implementation
-Dismissable alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate. This is in the roadmap for the Grove team, but is not implemented yet. 
+### Dismissible alerts
+Dismissible alerts are used for timely notifications that do not need to remain on the page. Allow a user to dismiss a notification whenever appropriate.
+
+<iframe 
+    title="Interactive preview of the dismissible alert from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-alert--dismissible&viewMode=story&args=icon:!true`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--dismissible`} />
+
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-alert--dismissible` | Used for timely notifications that do not need to remain on the page. The alert will have a clickable close icon in the top right corner that allows the user to dismiss the alert. |
 
 
 #### Figma properties 
 | Property | Value |
 | ----------- | ----------- |
-| dismissable | false, true (**not implemented in code**)|
+| dismissible | false, true |
 
-## Accessibility Guidance
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+## Accessibility guidance
 Use [USWDS alert accessibility tests](https://designsystem.digital.gov/components/alert/accessibility-tests/) to test alert implementation.
 
 ### Avoid using fading alerts
@@ -284,7 +263,7 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | Alert Heading | `usa-alert__heading` | Apply this class to a heading element within the alert body to style text within the alert as a heading. |
 | Alert Text | `usa-alert__text` | Apply this class to a `<p>` element within the alert body to style the main text of the alert. |
 
-### Alert State Variants
+### Alert state variants
 | Variant | Description | 
 | ----------- | ----------- |
 | `usa-alert--info` | Used to communicate general information. The alert body will be a light blue color and display an info icon. |
@@ -293,14 +272,15 @@ See [WCAG 2.0 Success Criterion 2.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG2
 | `usa-alert--error` | Used to communicate errors. The alert body will be a light red color and display a circular error icon. |
 | `usa-alert--emergency` | Used to communicate emergency information. The alert body will be a deep red color and display a circular error icon. |
 
-### Alert Size Variants 
+### Alert size variants 
 | Variant | Description | 
 | ----------- | ----------- |
 | `usa-alert--slim` | Used to display the "slim" version of the alert with decreased padding and margins around alert text. Ideally, alerts using the slim class should not have header text. |
 | `usa-alert--no-icon` | Used to display the alert without icons within it. This class can be used with both the regular and slim variants of the icon component. In both cases, the alert will look identical to its default state but with the icon removed. |
 
-## Known Issues
-None
+## Known issues
+- Emergency alert variant is not currently available in Grove storybook, though it is still accessible using the emergency variant above.
+- Dismissible alerts are not currently available in Grove, but are a recognized use case.
 
 ## Resources
 ### Grove links 

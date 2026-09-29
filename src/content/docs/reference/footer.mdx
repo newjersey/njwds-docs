@@ -1,7 +1,6 @@
 ---
 title: Footer
 description: Documentation for footer component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -22,8 +21,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />  
-## Footer Use
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />  
+## Footer use
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -65,12 +64,16 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 
 ## Content guidelines
-Content guidelines in progress.
+- **Use descriptive link labels.** Link text should identify the destination without relying on surrounding content.
+- **Keep navigation concise.** Include high-demand destinations and required policy links rather than repeating every link from the header.
+- **Use current contact information.** Provide monitored email addresses and telephone numbers, and review them regularly.
+- **Name social media destinations.** Each social media link needs an accessible name that identifies the service and account.
+- **Use plain language.** Keep headings, contact labels, and calls to action short and specific.
 
 
-## Identifier States
+## Identifier states
 
-### Figma Type properties
+### Figma properties
 | Property | Value | Description |
 | ----------- | ----------- | ----------- |
 | screen size | mobile, tablet, desktop | Breakpoint-based layout variations optimized for mobile, tablet, and desktop. |
@@ -78,7 +81,9 @@ Content guidelines in progress.
 | sign up form | true, false | Option to hide sign up form on complex footer type. |
 | socials | true, false | Option to hide socials on with-contact and complex footer types. |
 
-### Default (Contact Info) 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=512-174&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+### Default (contact info) 
 
 <iframe 
     title="Interactive preview of the footer from Storybook" 
@@ -88,9 +93,9 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
 
-### Slim (No Contact Info)
+### Slim (no contact info)
 
 <iframe 
     title="Interactive preview of the slim footer from Storybook" 
@@ -100,9 +105,9 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
 
-### Big (Contact Info + Links)
+### Big (contact info + links)
 
 <iframe 
     title="Interactive preview of the big footer from Storybook" 
@@ -112,17 +117,38 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-footer--docs`} />
 
 ## Accessibility guidance
-Use the [USWDS footer accessibility tests](https://designsystem.digital.gov/components/footer/accessibility-tests/) to test footer implementation.
-- **Use tab focus.** Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.
-- **Use accessible accordions.** On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the “Accordion” section.
+Footer implementations should meet [WCAG 2.2 Level AA](https://www.w3.org/TR/WCAG22/) and pass the [USWDS footer accessibility tests](https://designsystem.digital.gov/components/footer/accessibility-tests/). USWDS tests the component in isolation, so test the assembled footer again within the application where it will be used.
+
+- **Use semantic landmarks and lists.** Put footer navigation inside a labeled `nav` element and represent each related group of links as a list. Give every navigation landmark a distinct accessible name when the page contains more than one.
+- **Use accessible accordions.** When big-footer navigation collapses at narrow widths, each disclosure must meet the [Grove accordion accessibility requirements](https://grove.nj.gov/reference/accordion/#accessibility-guidance).
+- **Provide a meaningful link experience.** Pressing Tab should move through footer links in the same order they appear visually, and each link must meet the [Grove link accessibility requirements](https://grove.nj.gov/reference/link/#accessibility-guidance).
+- **Do not rely on color or position.** Section relationships must remain understandable without color and when content changes layout.
+
+### Responsive reflow
+
+The footer must reflow without two-dimensional page scrolling at a viewport width of 320 CSS pixels, the width used by [WCAG 2.2 Success Criterion 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow). Do not use `overflow-x: hidden` to conceal content that extends outside the viewport.
+
+- Test the slim, default, and big variants at mobile, tablet, and desktop widths.
+- Confirm that the page `scrollWidth` does not exceed its `clientWidth` at 320 CSS pixels.
+- Test at 400% browser zoom and verify that footer content remains available without horizontal page scrolling.
+- Check long navigation labels, contact information, and localized content because they may overflow even when English example content does not.
 
 ## Code utilities
 
+### Responsive layout
+
+Use Grove and USWDS grid utilities instead of custom layout CSS:
+
+- Put any guttered `grid-row` inside a `grid-container` so the row's negative gutter margins are balanced by container padding.
+- Apply larger grid gaps at the breakpoint where columns begin, such as `mobile-lg:grid-gap`, instead of applying them to the single-column mobile layout.
+- Keep footer content within the Grove containers. Do not override component internals with fixed widths or negative margins.
+- Treat horizontal overflow as a layout defect. Fix the container, grid, or content constraint that causes it instead of clipping the page.
+
 ### Footer components
-Grove provides a number of CSS classes that can be applied to various elements within the footer to help achieve a more standardized styling and layout
+Grove provides a number of CSS classes that can be applied to various elements within the footer to help achieve a more standardized styling and layout.
 
 | Name |	Class	| Description |
 |-------------|--------------|--------------|
@@ -133,7 +159,7 @@ Grove provides a number of CSS classes that can be applied to various elements w
 | Collapsible primary content | `usa-footer__primary-content--collapsible`| Apply this class to a `<section>` element that also has the `usa-footer__primary-content` class applied to designate that the content should collapse on mobile views. Note: This class should only be used within the `usa-footer--big` variant of the footer. |
 | Primary link  | `usa-footer__primary-link`| Apply this class to header elements to create headings for lists of links within a nav menu. It should be contained within the primary content of the footer. Note: This class should only be used within the `usa-footer--big` variant of the footer. |
 | Secondary link | `usa-footer__secondary-link`| Apply this class to elements to create links within a nav menu. If the primary link class is used, elements that have this class applied may be nested within a list element below the primary link. Note: This class should only be used within the `usa-footer--big` variant of the footer. |
-| Secondary section | `usa-footer__primary-section`| Apply this class to a `<div>` element to designate the secondary section of the footer. This section may contain elements such as a logo, contact links, and social links. |
+| Secondary section | `usa-footer__secondary-section`| Apply this class to a `<div>` element to designate the secondary section of the footer. This section may contain elements such as a logo, contact links, and social links. |
 | Footer logo | `usa-footer__logo`| Apply this class to a `<div>` element containing the logo image and logo header to add an appropriate style and layout to these elements. |
 | Footer logo image | `usa-footer__logo-img`| Apply this class to an `<img>` element containing the logo image. |
 | Footer logo heading | `usa-footer__logo-heading`  | Apply this class to a header element containing the logo heading. The logo heading should describe the entity represented by the logo image (for example, "State of New Jersey" or "Office of Innovation"). |
@@ -151,7 +177,7 @@ The following classes can be added to the `<footer>` element to determine the st
 | `usa-footer--big` | A multi-column footer that expands and collapses on mobile. Elements within the footer will be styled with a more spacious look: Nav menus will have more padding, Links within nav menus will have more padding, Nav menus may be sorted into vertical lists of "topics" that each contain a list of related links |
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
@@ -161,11 +187,11 @@ None
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Footer](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=512-174&t=iqL6YX4GteFnJQKf-1) | Figma component with variable styles applied |
-| [Storybook: Footer](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-footer--docs) | Interactive example, code snippet, variants |
+| [Storybook: Footer](https://storybook.grove.nj.gov/?path=/docs/components-footer--docs) | Interactive example, code snippet, variants |
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Footer](https://designsystem.digital.gov/components/footer/) | Reference for additional footer styles and functionalities |
 | [USWDS: Footer utilities](https://designsystem.digital.gov/components/footer/#using-the-footer-component-2) | Utilities to be referenced in footer styling (may not all apply to Grove) |
-| [USWDS: Footer utilities](https://designsystem.digital.gov/components/footer/#using-the-footer-component-2) | Accessibility tests to run for footer component |
+| [USWDS: Footer accessibility tests](https://designsystem.digital.gov/components/footer/accessibility-tests/) | Accessibility tests to run for the footer component |

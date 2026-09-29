@@ -1,7 +1,6 @@
 ---
 title: Pagination
 description: Documentation of the pagination component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -22,8 +21,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />  
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />  
+
+## Usage guidelines
+
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -75,12 +76,12 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     </IconListItem>
 </IconList>
 
-## Content Guidance 
+## Content guidance 
 Content guidance in progress.
 
-## Pagination Variants
+## Pagination variants
 
-### Bounded Pagination
+### Bounded pagination
 This version maintains the first and last pages at the start and end of the sequence and collapses pages in between in "..."'s. 
 
 <iframe 
@@ -91,13 +92,16 @@ This version maintains the first and last pages at the start and end of the sequ
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
+
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | bounded |
 
-### Unbounded Pagination
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2803-7462&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+### Unbounded pagination
 This version maintains the first page in the sequence, but compiles all pages after the active set in an "..." at the end. 
 
 <iframe 
@@ -108,13 +112,16 @@ This version maintains the first page in the sequence, but compiles all pages af
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-pagination--docs`} />
+
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
 | type | unbounded |
 
-### Mobile Pagination
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2803-7462&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+### Mobile pagination
 The mobile version of bounded and unbounded pagination simply remove the "Previous" and "Next" actions.
 
 #### Figma properties
@@ -123,8 +130,10 @@ The mobile version of bounded and unbounded pagination simply remove the "Previo
 | type | bounded, unbounded |
 | mobile | true |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2803-7462&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
 ## How to use the component 
-Unlike many USWDS components, Pagination includes behaviors we cannot build into the HTML, CSS, and JavaScript we ship with the design system. Developers will need to build these behaviors into their Pagination templates. We’ve outlined these behaviors below, and included them in the Twig templates for Pagination in our source code.
+Unlike many USWDS components, pagination includes behaviors we cannot build into the HTML, CSS, and JavaScript we ship with the design system. **Developers will need to build these behaviors into their pagination templates.** We’ve outlined these behaviors below, and included them in the Twig templates for Pagination in our source code.
 - Set the current page item. Use the usa-current class to highlight the currently active page.
 - Pair with the Collection component. To display related items like articles or events in a compact list, consider using Pagination with the Collection component, which offers short descriptions and then directs users to the original source.
 - Bounded and unbounded sets. The USWDS Pagination component is designed to work with both paginated sets that have a discrete number of pages (most paginated content) and those that do not. Bounded sets have a discrete number of pages and each page is potentially equally relevant (such as a set of blog posts sorted chronologically). Unbounded sets (often returned as a search result) are large sets sorted by relevance, where deeper pages have less relevance. Unbounded sets show no last page.
@@ -152,7 +161,7 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
 - **Unbounded** sets always show an overflow indicator in Slot 7.
 - **Unbounded** sets use Slot 4 as the current page for pages 4 and higher.
 
-## Accessibility Guidance
+## Accessibility guidance
 Use [USWDS accordion accessibility tests](https://designsystem.digital.gov/components/pagination/accessibility-tests) to test implementation.
 - **Use the `<nav>` element.** Use a wrapping `<nav>` element to identify Pagination as a navigation section to screen readers and other assistive technologies.
 - **Use a unique, descriptive ARIA label for the `<nav>` element.** Provide a descriptive ARIA label for any Pagination component’s `<nav>` element that describes its purpose. For example, if the pagination component is used to navigate through a set of search results, an appropriate label could be `aria-label="search results page"`. If you use more than one Pagination component on a page, each will need a unique ARIA label.
@@ -164,7 +173,7 @@ Use [USWDS accordion accessibility tests](https://designsystem.digital.gov/compo
 - **Avoid large horizontal gaps between elements.** Users with limited vision or mobility may stop scanning and miss an element if there’s too much horizontal space between it and the previous element in the reading order.
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
@@ -179,4 +188,4 @@ None
 | ----------- | ----------- |
 | [USWDS: Pagination](https://designsystem.digital.gov/components/pagination/) | Reference for additional styles and functionalities  |
 | [USWDS: Pagination guidance](https://designsystem.digital.gov/components/pagination/#using-the-pagination-component-2) | Guidance on how to code the behavior of this component |
-| [USWDS: Pagination Accessibililty tests](https://designsystem.digital.gov/components/pagination/accessibility-tests) | Accessibility tests to run for component |
+| [USWDS: Pagination accessibility tests](https://designsystem.digital.gov/components/pagination/accessibility-tests) | Accessibility tests to run for component |

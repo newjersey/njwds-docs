@@ -1,7 +1,6 @@
 ---
 title: Icon
 description: Documentation for icon component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -22,10 +21,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
-<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon--docs`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-icon--docs`} />
 
 
-## Usage Guidelines
+## Usage guidelines
 
 ### Use this component for:
 <IconList>
@@ -77,6 +76,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 | size | 12, 16, 20, 24, 32, 40, 48, 56, 64 |
 | icon | [icon swap] |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2588-22&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
 ## Code utilities
 ### Icon size variants 
 CSS classes can be used to manipulate icon size. By default, icons with the `.usa-icon class` will be `20px` by `20px` in size.
@@ -119,7 +120,7 @@ Use the [USWDS icon accessibility tests](https://designsystem.digital.gov/compon
 - **Check for good color contrast.** Make sure that the icon has a minimum contrast ratio of 3:1 against its background. See the USWDS color and accessibility page as well as WCAG 2.1 Techniques: Ensuring that a contrast ratio of 3:1 is provided for icons for more information.
 - **Place icons inside links.** If icons accompany a text link, place the icon inside the link to prevent screen readers from announcing the link twice.
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
@@ -133,6 +134,6 @@ None
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Icon](https://designsystem.digital.gov/components/icon/) | Reference for additional styles and functionalities  |
-| [USWDS: Icon](https://designsystem.digital.gov/components/icon/#using-the-icon-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
-| [USWDS: Icon](https://designsystem.digital.gov/components/icon/accessibility-tests/) | Accessibility tests to run for icon component |
+| [USWDS: Icon utilities](https://designsystem.digital.gov/components/icon/#using-the-icon-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: Icon accessibility tests](https://designsystem.digital.gov/components/icon/accessibility-tests/) | Accessibility tests to run for icon component |
 

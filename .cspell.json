@@ -1,0 +1,47 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignoreWords": [],
+  "ignorePaths": [
+    "node_modules/**",
+    ".git/**",
+    "dist/**",
+    "coverage/**",
+    "*.min.js",
+    "src/content/docs/content/spelling.mdx",
+    ".cspell.json"
+  ],
+  "dictionaries": [
+    "typescript",
+    "node",
+    "npm",
+    "filetypes",
+    "html",
+    "css",
+    "bash",
+    "fonts",
+    "project-words"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./project-words.txt",
+      "addWords": true
+    }
+  ],
+  "languageSettings": [
+    {
+      "languageId": "javascript",
+      "allowCompoundWords": true,
+      "dictionaries": ["typescript", "html"]
+    }
+  ],
+  "overrides": [
+    {
+      "filename": "**/*.{mdx,astro}",
+      "languageId": "typescript",
+      "allowCompoundWords": true
+    }
+  ],
+  "ignoreRegExpList": ["/[a-f0-9]{32}/i", "/%[0-9A-Fa-f]{2}/g"]
+}
