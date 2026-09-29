@@ -125,8 +125,6 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 - **All logically related items/links must be presented as an HTML unordered list.** Please see [H48: Using ol, ul and dl for lists or groups of links](https://www.w3.org/WAI/WCAG21/Techniques/html/H48.html).
 - **Identify each change in language.** Put the native language name and its translated name in separate elements with the correct `lang` attribute. Add `dir="rtl"` to right-to-left names and isolate bidirectional text so punctuation and translated labels remain in the intended order. Please see [H58: Using language attributes to identify changes in the human language](https://www.w3.org/WAI/WCAG21/Techniques/html/H58.html).
 - **Identify the destination language.** Add `hreflang` to each language link so assistive technology can identify the language of the destination.
-- **Identify the current language.** Use `aria-current="page"` on the link for the current localized page, or render the current language as non-link text.
-- **Use unique disclosure relationships.** Give each language menu a unique `id` and reference it from its button with `aria-controls`. This is required when a page contains more than one selector.
 - **Preserve keyboard focus.** When Escape closes the language menu, return focus to its button. If the selector is inside another disclosure, such as a mobile header menu, Escape should close the innermost open disclosure first.
 
 ## How to use this component
