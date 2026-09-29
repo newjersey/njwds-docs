@@ -1,0 +1,239 @@
+---
+title: Site alert
+description: Documentation for site alert component.
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+<PageHeader
+  name="Site alert"
+  category="COMPONENTS"
+  description="A site alert communicates urgent sitewide information."
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-site-alert--docs`}
+/>
+
+**Note:** A site alert is a persistent, sitewide message that appears by default on every page. For page-level validation messages or to confirm a completed task, use the [Alert](/reference/alert/) component instead.
+
+<iframe 
+    title="Interactive preview of the default site alert from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-site-alert--info&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-site-alert--docs`} />
+
+## Usage guidelines
+### Use this component for:
+<IconList>
+    <IconListItem icon="check">
+        **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
+    </IconListItem>
+    <IconListItem icon="check">
+        **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
+    </IconListItem>
+</IconList>
+
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages (error states of form input components).
+    </IconListItem>
+</IconList>
+
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Place prominently.** Use a full-width site alert positioned near the top of the page so it's one of the first things users see.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange to draw attention to an emergency-related site alert. However, these colors can produce strong negative emotional reactions such as fear or panic. Positioning the banner at the top of the screen provides enough weight that such strong colors may not be necessary.
+    </IconListItem>
+</IconList>
+
+## Content guidance
+
+### Definition
+Site alerts are the highest-priority notification available, since they are shown by default on every page rather than in response to a user's action. They communicate sitewide information that all users need to see, regardless of what they came to the site to do.
+
+### Examples and types
+| Type | Definition | Example |
+| ----------- | ----------- | ----------- |
+| Information | Inform users of contextual information about site status that applies across every page. | Scheduled maintenance will occur tonight from 10 PM to 2 AM. Some services may be unavailable. |
+| Emergency | Demand immediate action to prevent a serious threat. Usually written in all caps. | EMERGENCY ALERT: SEEK SHELTER IMMEDIATELY. AVOID OUTDOOR ACTIVITIES. STAY INDOORS UNTIL THE STORM PASSES. |
+
+### Writing tips
+- **Identify the purpose:** Is this a routine status update or an emergency that demands immediate action?
+- **Be timely:** Site alerts should appear as soon as they're relevant and be removed as soon as the situation is resolved, since they are visible by default on every page.
+- **Maintain tone:** Match the severity of the message to its tone. Routine updates should stay calm and informative; emergencies should be direct and urgent.
+- **Keep it brief:** Aim for 1-2 short sentences. 
+
+See the [Alert writing tips](/reference/alert/#writing-tips) for more general guidance on writing effective alert content.
+
+### Content structure
+1. Headline / Status (Required): What is happening or what is the current sitewide status?
+2. Brief Explanation / Impact (Optional; recommended for emergencies): Why does it matter, and who is affected?
+3. Call to Action / Next Step (Optional): If action is needed, what should the user do? If you have more than one item to communicate, use a single list of links rather than stacking multiple site alerts.
+
+## Site alert variants
+
+### Size variants
+[Slim/header/icon/list] determine the size and amount of information in the site alert.
+
+**Tip:** Slim is the smallest, and always hides the header and list.
+
+<iframe 
+    title="Interactive preview of the slim site alert from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-site-alert--slim&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-site-alert--docs`} />
+
+#### Figma properties
+| Property | Value |
+| ----------- | ----------- |
+| icon | true, false |
+| header | true, false |
+| slim | false, true |
+| list | false, true |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+#### Code variants
+The following classes can be added to elements with class `usa-site-alert` to modify the size of the site alert if needed. They can be used in combination with the site alert state variant classes to adjust the styling as well.
+
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-site-alert--slim` | Used to display the "slim" version of the site alert with decreased padding and margins. Slim site alerts do not display a header or a list, regardless of other settings. |
+| `usa-site-alert--no-icon` | Used to display the site alert without an icon. The site alert will look identical to its default state but with the icon removed. |
+
+### Site alert states
+Site alert states determine site alert color / role / level of severity. There are currently 2 site alert states.
+
+#### Figma properties
+| Property | Value |
+| ----------- | ----------- |
+| state | info, emergency |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+#### Information state
+Deliver a static system status update, such as a notice about unavailable services or content.
+
+<iframe 
+    title="Interactive preview of the information site alert from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-site-alert--info&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-site-alert--docs`} />
+
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-site-alert--info` | Used to communicate general sitewide information. The site alert body will be a light blue color and display an info icon. |
+
+#### Emergency state
+Demand immediate action to prevent a serious threat or inform the user of an emergency happening in their context.
+
+<iframe 
+    title="Interactive preview of the emergency site alert from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-site-alert--emergency&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-site-alert--docs`} />
+
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-site-alert--emergency` | Used to communicate emergency information. The site alert body will be a deep red color and display a circular error icon. |
+
+### Site alert with list
+If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
+
+<iframe 
+    title="Interactive preview of the site alert with a list from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-site-alert--with-list&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-site-alert--docs`} />
+
+| Variant | Description |
+| ----------- | ----------- |
+| `list` | Replaces the site alert's text with a `usa-list` of links. Not available on slim site alerts. |
+
+#### Figma properties
+| Property | Value |
+| ----------- | ----------- |
+| list | false, true |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+## Accessibility guidance
+Use [USWDS site alert accessibility tests](https://designsystem.digital.gov/components/site-alert/accessibility-tests/) to test site alert implementation.
+
+### Additional guidance
+- **Don't visually hide site alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive the messages even if they are not currently applicable. Fully remove site alert messages when they're not needed.
+- **Include a descriptive ARIA label.** Add an `aria-label` or `aria-labelledby` attribute to the `.usa-site-alert` element so it appears in the landmarks menu, and so assistive technology users can easily find and understand its top-level information. Grove's site alert markup sets `aria-label="Site alert"` by default.
+- **Add an ARIA role to dynamically-updated site alerts.** For important, time-sensitive site alerts that receive new content mid-session (for example, an updated emergency alert), add an ARIA `role` attribute that will notify users of the change.
+
+### Site alert ARIA roles
+| Attribute | Use Case |
+| ----------- | ----------- |
+| `role="alert"` | Important messages that demand the user's immediate attention. **Example:** Emergency site alert |
+| `role="status"` | Messages that provide advisory information but do not have the same urgency as alerts. **Example:** Information site alert |
+
+## Code utilities
+### Site alert components
+| Name | Class | Description |
+| ----------- | ----------- | ----------- |
+| Site Alert | `usa-site-alert` | Apply this class to the outermost element (a `<section>`) that wraps the site alert. |
+| Alert | `usa-alert` | Apply this class to a `<div>` nested within `usa-site-alert` to wrap the alert body. |
+| Alert Body | `usa-alert__body` | Apply this class to a `<div>` element that has the class `usa-alert` to wrap the contents of the site alert. |
+| Alert Heading | `usa-alert__heading` | Apply this class to a heading element within the alert body to style text within the site alert as a heading. |
+| Alert Text | `usa-alert__text` | Apply this class to a `<p>` element within the alert body to style the main text of the site alert. |
+
+### Site alert state variants
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-site-alert--info` | Used to communicate general sitewide information. The site alert body will be a light blue color and display an info icon. |
+| `usa-site-alert--emergency` | Used to communicate emergency information. The site alert body will be a deep red color and display a circular error icon. |
+
+### Site alert size variants
+| Variant | Description |
+| ----------- | ----------- |
+| `usa-site-alert--slim` | Used to display the "slim" version of the site alert with decreased padding and margins. Slim site alerts do not display a header or a list, regardless of other settings. |
+| `usa-site-alert--no-icon` | Used to display the site alert without an icon. The site alert will look identical to its default state but with the icon removed. |
+
+## Known issues
+- The slim variant always suppresses the heading and list, even if those settings are otherwise enabled.
+
+## Resources
+### Grove links
+| File | Purpose |
+| ----------- | ----------- |
+| [Figma Grove: Site alert](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-11924&p=f&t=qKul5VXnOnWmuFAb-0) | Using site alert in designs, documentation and best practices on alert usage |
+| [Storybook: Site alert](https://storybook.grove.nj.gov/?path=/docs/components-site-alert--docs) | Interactive example, code snippet, variants |
+
+### USWDS links
+| File | Purpose |
+| ----------- | ----------- |
+| [USWDS: Site alert](https://designsystem.digital.gov/components/site-alert/) | Reference for additional styles and functionalities |
+| [USWDS: Site alert accessibility tests](https://designsystem.digital.gov/components/site-alert/accessibility-tests/) | Accessibility tests to run for component |

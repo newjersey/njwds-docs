@@ -8,14 +8,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 <PageHeader
   name="Alert"
   category="COMPONENTS"
-  description="The alert and site alert are used for varying use cases of displaying timely information to users."
+  description="The alert is used to display timely information to users."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-11924&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`}
 />
-
-**Alert options**
-- **Alert:** Alert component used to prominently display timely information to users.
-- **Site Alert:** A site alert communicates urgent site wide information.
 
 <iframe 
     title="Interactive preview of the default alert from Storybook" 
@@ -27,7 +23,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
  <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-alert--docs`} />
  
-## Alert usage guidelines
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -60,41 +56,6 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
         **Understand the user's context.** Don’t include alerts that aren’t related to the user’s current goal.
     </IconListItem>
 </IconList>
-
-## Site alert usage guidelines
-### Use this component for:
-<IconList>
-    <IconListItem icon="check">
-        **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
-    </IconListItem>
-    <IconListItem icon="check">
-        **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.
-    </IconListItem>
-</IconList>
-
-### Use something else for:
-<IconList>
-    <IconListItem icon="close">
-        **Responding to user actions.** Use the alert component for page-level validation messages or to inform a user that a task was completed successfully.
-    </IconListItem>
-    <IconListItem icon="close">
-        **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages (error states of form input components).
-    </IconListItem>
-</IconList>
-
-###  What to avoid
-<IconList>
-    <IconListItem icon="report">
-        **Place prominently.** Use a full-width site alert positioned near the top of the page so it’s one of the first things users see.
-    </IconListItem>
-    <IconListItem icon="report">
-        **Avoid stacking multiple site alerts.** If you need to convey more than one message, provide a list of links within a single site alert instead of multiple, stacked alerts.
-    </IconListItem>
-    <IconListItem icon="report">
-        **Avoid overwhelming use of color.** It may be tempting to make heavy use of bright red or orange to draw attention to an emergency-related site alert. However, these colors can produce strong negative emotional reactions such as fear or panic. Positioning the banner at the top of the screen provides enough weight that such strong colors may not be necessary.
-    </IconListItem>
-</IconList>
-
 
 ## Content guidance 
 
