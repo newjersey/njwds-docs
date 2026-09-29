@@ -144,18 +144,6 @@ Content guidance in progress.
 
 <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--striped`} />
 
-### Scrollable
-
-<iframe 
-    title="Interactive preview of the scrollable table from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-table--scrollable&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe--mid width-full border border-base-light">
-</iframe>
-
-<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--scrollable`} />
-
 ### Responsive stacked
 
 <iframe 
@@ -205,7 +193,7 @@ Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/com
 |----------|----------|
 | `.usa-table--borderless`| Removes the outer table borders, retaining only a single bottom border on each row. Best for tables with more text than numbers. |
 | `.usa-table--compact` | Reduces the row height and vertical spacing to display more table rows within a limited space. Should only be used with dense, numerical data, not text content. Pairs well with scrollable and striped variants, but is not suitable for use with stacked variants. |
-| `.usa-table-container--scrollable > .usa-table` | Add the `usa-table-container--scrollable` class to a container around any `usa-table` to apply a horizontal scrollbar if the columns exceed the available width. Ideal for dense tables with many columns.|
+| `.usa-table-container--scrollable > .usa-table` | Ensure the `usa-table-container--scrollable` class is on the container around `usa-table` to apply a horizontal scrollbar if the columns exceed the available width. Applied to the default component and ideal for the accessibility of dense tables with many columns.|
 | `.usa-table--stacked`| Stacks the table cells on narrow screens. Ideal for tables that contain more text information than numerical data. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header. |
 | `.usa-table--stacked-header`| Stacks the table cells on narrow screens and visually promotes the first cell of every row into a “header” for that group. Preferred for directories and other lists where the first cell of every row is a name. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header. |
 | `.usa-table--sticky-header`| Allows the table header element to stick to the top of the page as the user scrolls. Preferred for long tables with many rows. This variant is not compatible with the scrollable and stacked table variants.|
