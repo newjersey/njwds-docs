@@ -123,7 +123,9 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 - **Color contrast:** There should be enough color contrast between the button, the text inside the button, and the background to ensure readability.
 - **The language of each page should be identified using the HTML lang attribute** (`<html lang="en">`, for example). Please see [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html).
 - **All logically related items/links must be presented as an HTML unordered list.** Please see [H48: Using ol, ul and dl for lists or groups of links](https://www.w3.org/WAI/WCAG21/Techniques/html/H48.html).
-- **Language links should contain a span element with the lang attribute.** Every language link in the language selector dropdown that is different from content of the current page, should be defined using the lang attribute on a `<span>` tag wrapping the relevant text (e.g., `<span lang="es">Hola</span> means Hello.`). Please see [H58: Using language attributes to identify changes in the human language](https://www.w3.org/WAI/WCAG21/Techniques/html/H58.html).
+- **Identify each change in language.** Put the native language name and its translated name in separate elements with the correct `lang` attribute. Add `dir="rtl"` to right-to-left names and isolate bidirectional text so punctuation and translated labels remain in the intended order. Please see [H58: Using language attributes to identify changes in the human language](https://www.w3.org/WAI/WCAG21/Techniques/html/H58.html).
+- **Identify the destination language.** Add `hreflang` to each language link so assistive technology can identify the language of the destination.
+- **Preserve keyboard focus.** When Escape closes the language menu, return focus to its button. If the selector is inside another disclosure, such as a mobile header menu, Escape should close the innermost open disclosure first.
 
 ## How to use this component
 
@@ -131,9 +133,10 @@ Use the [USWDS language selector accessibility tests](https://designsystem.digit
 - Make the language access button a single, independent element. (Note the language selector buttons are built using the Grove button component as the base)
 - Include the language dropdown in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.
 - Take users to an equivalent page that includes the same or similar content.
+- Update the document `lang` and `dir` attributes when navigating to the localized page.
 - Do not create a dead end for users by taking them to a page with little or no meaningful content.
 - Avoid auto-redirecting language based on detecting location or browser settings. This can be confusing and disorienting.
-- Do not combine this element with other navigation items.
+- Keep the selector as an independent disclosure even when it is visually composed with header navigation. Do not present unrelated navigation links as language options.
 
 ### Using an icon with the language selector
 - The language selector component is built using the Grove button as a sub-component and so can be configured to use a leading icon.
@@ -200,4 +203,3 @@ None
 | ----------- | ----------- |
 | [USWDS: Language selector](https://designsystem.digital.gov/components/language-selector/) | Reference for additional styles and functionalities  |
 | [USWDS: Language selector accessibility tests](https://designsystem.digital.gov/components/language-selector/accessibility-tests/) | Accessibility tests to run for component |
-
