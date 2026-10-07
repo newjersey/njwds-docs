@@ -4,9 +4,16 @@
   --grove-primary-600: #2f4a0b; /* USWDS green-70v */
   --grove-primary-700: #193324; /* USWDS mint-80  */
   --grove-base-100: #fcfcfb; /* USWDS gray-warm-1  */
+  --grove-base-200: #f9f9f7;
+  --grove-base-400: #f0f0ec;
   --grove-base-700: #76766a; /* USWDS gray-warm-50 */
   --grove-white: #fff; /* USWDS white */
+  --grove-ink: #1c1d1f; /* USWDS ink */
+  --grove-link: #005ea2; /* USWDS blue-60v */
+  --grove-gray-cool-5: #edeff0; /* USWDS gray-cool-5 */
+  --grove-gray-70: #454545; /* USWDS gray-70 */
 
+  --sl-color-bg: var(--grove-base-100);
   --sl-color-bg-nav: var(--grove-primary-700);
   --sl-color-text-accent: #ffffff;
   --sl-font: "Public Sans";
@@ -17,6 +24,9 @@
   --sl-text-h1: 2.5rem;
   --sl-text-h2: 2rem;
   --sl-text-h3: 1.5rem;
+  --sl-text-h4: 1.125rem;
+  --sl-text-h5: 1rem;
+  --sl-text-h6: 0.875rem;
   --sl-nav-gap: 0.625rem;
   --sl-nav-pad-x: 1.25rem;
 
@@ -26,7 +36,8 @@
   --grove-logo-width: 34px;
   --grove-logo-text-color: var(--grove-white);
   --grove-search-text-color: var(--grove-white);
-
+  --grove-line-length: 88ex; /* USWDS size 6 */
+  --sl-main-pad: 0;
   --sl-mobile-toc-height: 3.4375rem;
 
   @media (min-width: 50rem) {
@@ -43,14 +54,14 @@ starlight-theme-select {
 }
 
 /* Style the mobile menu button */
-starlight-menu-button button {
+.sl-menu-button {
   background-color: var(--grove-primary-600);
-  color: #fff;
+  color: var(--grove-white);
 }
 
 /* If you need to be more specific for hover states */
-starlight-menu-button button:hover,
-starlight-menu-button button:focus {
+.sl-menu-button:hover,
+.sl-menu-button:focus {
   background-color: var(--grove-white);
   color: var(--grove-primary-600);
 }
@@ -77,9 +88,27 @@ mobile-starlight-toc .display-current {
   font-weight: 700;
   padding-top: 0.3125rem;
 }
+.right-sidebar-panel {
+  h2 {
+    color: var(--grove-gray-70);
+    font-size: var(--sl-text-h4);
+    font-weight: 700;
+  }
 
-h1 {
-  font-size: var(--sl-text-h1);
+  a {
+    text-decoration: none;
+    [style="--depth: 0;"] {
+      font-weight: 700;
+    }
+  }
+
+  li > a:hover {
+    background-color: #f0f0f0;
+  }
+
+  a:visited {
+    color: var(--grove-link);
+  }
 }
 
 h1,
@@ -91,7 +120,32 @@ h6,
 [class*="font-heading-"] {
   font-family: var(--grove-font-heading);
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--grove-ink);
+}
+
+h1 {
+  font-size: var(--sl-text-h1);
+}
+
+h2 {
+  color: var(--grove-primary-500);
+}
+
+p,
+li {
+  max-width: var(--grove-line-length);
+}
+
+a + iframe {
+  margin-top: var(--sl-content-gap-y);
 }
 
 .site-name,
@@ -136,14 +190,27 @@ a.site-title {
   height: 100px;
 }
 
-.main-pane table {
-  width: 100%;
-  display: table;
-  table-layout: auto;
+body {
+  background-color: var(--grove-base-100);
+  :has(.grove-home-section-container) {
+    --sl-content-gap-y: 0;
+    --sl-content-width: none;
+    .content-panel {
+      padding: 0;
+    }
+  }
 }
 
-/* TODO: generalize once content pages are redesigned */
-body:has([data-page-header]) .main-frame {
+.main-pane table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  @media (min-width: 30rem) {
+    display: table;
+  }
+}
+
+[data-has-sidebar] .main-frame {
   --sl-content-width: 75rem;
   --sl-content-pad-x: 1.5rem;
   @media (min-width: 40rem) {
@@ -157,14 +224,21 @@ body:has([data-page-header]) .main-frame {
   .content-panel {
     padding-block: 0;
   }
+  .content-panel:last-of-type {
+    padding-block-end: 3rem;
+  }
+
+  .content-panel:first-of-type {
+    padding-block-start: 1.75rem;
+    @media (min-width: 72rem) {
+      padding-block-start: 0rem;
+    }
+  }
+
   .level-h2 {
     margin-block: 3rem 2rem;
     @media (min-width: 40rem) {
       margin-block: 4rem 2rem;
-    }
-    /* TODO:make fully global after correcting homepage headings to h3 */
-    h2 {
-      color: var(--grove-primary-500);
     }
   }
 
@@ -173,12 +247,12 @@ body:has([data-page-header]) .main-frame {
   }
 }
 
-body:has(.grove-home-section-container) {
-  --sl-content-gap-y: 0;
-  --sl-content-width: none;
-  background-color: var(--grove-base-100);
-  .content-panel {
-    padding: 0;
+@media (min-width: 72rem) {
+  .right-sidebar {
+    position: sticky;
+    top: var(--sl-nav-height);
+    padding-top: 0;
+    height: calc(100vh - var(--sl-nav-height));
   }
 }
 
@@ -200,8 +274,8 @@ body:has(.grove-home-section-container) {
   color: var(--grove-primary-600);
   accent-color: var(--grove-primary-600);
   &:hover {
-    box-shadow: inset 0 0 0 2px var(--grove-primary-700);
-    color: var(--grove-primary-700);
+    box-shadow: inset 0 0 0 2px var(--grove-primary-500);
+    color: var(--grove-primary-500);
   }
 }
 
@@ -218,11 +292,57 @@ body:has(.grove-home-section-container) {
   margin: auto;
 }
 
+.grove-styles-text {
+  z-index: 1;
+  background-color: var(--grove-base-100);
+  @media (min-width: 40rem) {
+    min-width: 32rem;
+    max-width: var(--grove-styles-text-width);
+  }
+}
+
+.grove-styles-image {
+  @media (min-width: 40rem) {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 32rem;
+  }
+  img {
+    object-fit: cover;
+    object-position: right;
+  }
+}
 .grove-card-group {
   > *:last-child {
     margin-bottom: 0;
   }
 }
+
+.grove-getting-started-card {
+  @media (min-width: 40rem) {
+    width: 15.375rem;
+  }
+}
+
+.grove-card-img {
+  height: 8rem;
+  @media (min-width: 40rem) {
+    height: auto;
+  }
+}
+
+.grove-resource-media-block {
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+}
+.grove-striped-table tbody tr:nth-child(odd) th {
+  background-color: var(--grove-gray-cool-5);
+}
+
 /* need to add into NJWDS */
 
 .text-semibold {

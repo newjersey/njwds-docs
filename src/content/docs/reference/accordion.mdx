@@ -1,7 +1,6 @@
 ---
 title: Accordion
 description: Documentation for accordion component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -22,9 +21,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
-<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`} />
   
-## Usage Guidelines
+## Usage guidelines
 ### Use this component for:
 
 <IconList>
@@ -45,6 +44,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     <IconListItem icon="close">
         **If there is not enough content to warrant condensing.** Accordions increase cognitive load and interaction cost because users have to make decisions about what headers to click on.
     </IconListItem>
+    <IconListItem icon="close">
+        **Tables, diagrams, or complex information.** In-depth informational content such as data tables or infographics don't work well inside accordions due to their cognitive load and likelihood of multiple scrolling behavior. These should be placed outside of accordions on a page. 
+    </IconListItem>
 </IconList>
 
 ### Requirements for use:
@@ -62,9 +64,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 Content guidelines in progress.
 
 
-## Accordion Variants
+## Accordion variants
 
-### Borderless Accordions
+### Borderless accordions
 
 <iframe 
     title="Interactive preview of the borderless accordion from Storybook" 
@@ -73,9 +75,9 @@ Content guidelines in progress.
     loading="lazy"
     class="grove__iframe width-full border border-base-light"></iframe>
 
-<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--default`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--default`} />
 
-#### Figma Type properties
+#### Figma properties
 
 | Property | Value |
 | :--- | :--- |
@@ -83,15 +85,16 @@ Content guidelines in progress.
 | type | borderless |
 | title | [text input] |
 | content | [text input] |
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1519-637&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
-#### Code Variant
+#### Code variant
 
 | Name | Class | Description |
 | --- | --- | --- |
 | Borderless Accordion | `usa-accordion` | Add to `div` class for borderless accordion |
 
 
-### Bordered Accordions
+### Bordered accordions
 
 <iframe 
     title="Interactive preview of the bordered accordion from Storybook" 
@@ -101,9 +104,9 @@ Content guidelines in progress.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
-<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--bordered`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-accordion--bordered`} />
 
-#### Figma Type properties
+#### Figma properties
 
 | Property | Value |
 | ----------- | ----------- |
@@ -112,19 +115,29 @@ Content guidelines in progress.
 | title | [text input] |
 | content | [text input] |
 
-#### Code Variant
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1519-637&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
+#### Code variant
 
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
 | Bordered Accordion | `usa-accordion usa-accordion--bordered` | Add to `div` class for bordered accordion |
 
 
-### Multiselectable Accordions
+### Multiselectable accordions
 Add the `data-allow-multiple attribute` to any usa-accordion to create a multiselectable accordion group.
 
-<ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--docs`} />
+<iframe 
+    title="Interactive preview of the multiselectable accordion from Storybook" 
+    frameborder="0"
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-accordion--multiple&viewMode=story`} 
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
 
-#### Code Variant
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-accordion--multiple`} />
+
+#### Code variant
 
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
@@ -133,20 +146,16 @@ Add the `data-allow-multiple attribute` to any usa-accordion to create a multise
 
 ## Accessibility guidance
 Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) to test accordion implementation.
-- **Code header areas in the accordion as buttons.** Using a `<button type="button">` assures accordions are usable with both screen readers and keyboards.
-- **Use meaningful expansion button labels.** Aim for informative labels like "Explore federal compliance checklists" rather than vague ones like "Click here."
-- **Use `aria-controls` to associate an accordion button with its related content.** Connect an accordion button control with its appropriate content region by referencing the controlled element's `id` in the button's `aria-controls` attribute.
-- **Use unique ids.** Each button has a unique name, `aria-controls="[id]"`, that associates the control with the appropriate region by referencing the controlled element's `id`.
-- **Accordions use javascript to set the `hidden` values of their content areas.** Each content area will have its `hidden` attribute set by the component, depending on its corresponding button's `aria-expanded` attribute. To ensure your content is accessible in the event that the JavaScript does not load or is disabled, you should not manually set `hidden` on any of your content areas.
-- **You do not need to add text alternatives for the collapsed and expanded accordion states.** These states are set programmatically with JavaScript.
+- **Leverage semantic HTML before turning to ARIA** Much of the accessibility and functionality of the accordion is provided by the semantic `<details>` and `<summary>` elements. Attributes like `aria-expanded` and `aria-controls` are not necessary when using these elements.
+- **Expansion is driven by the open attribute.** To programmatically open or close accordion sections, use the open boolean attribute on the `details` element rather than using `hidden` or setting `aria-expanded`.
 
 ## Code 
 
 ### Guidance 
-- **Multiselectable accordion groups.** Add the `data-allow-multiple attribute` to any usa-accordion to create a multiselectable accordion group.
-- **Default an accordion button to open.** Add the `aria-expanded="true"` attribute to any `usa-accordion__button` to have that section open by default at page load. When the accordion is initialized, the JavaScript will automatically add `aria-expanded="false"` attribute to all other accordion buttons.
+- **Controlling accordion group behavior with `name`.** Including the same `name` attribute on multiple `<detail>` elements will allow one accordion in the group to be open at once and excluding the `name` attribute will create a multiselectable accordion group.
+- **Default an accordion button to open.** Add the `open` attribute to any `usa-accordion__button` to have that section open by default at page load.
 
-### Accordion Variants 
+### Accordion variants 
 
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
@@ -154,14 +163,14 @@ Use the [USWDS accordion accessibility tests](https://designsystem.digital.gov/c
 | Bordered | `usa-accordion usa-accordion--bordered` | Add to `div` class for bordered accordion |
 | Multiselectable | `aria-multiselectable="true"` | Add to `div` class for multiselectable accordion (can be added to bordered or borderless styles) |
 
-### Accordion Components
+### Accordion components
 | Name | Class | Description |
 | ----------- | ----------- | ----------- |
 | Accordion Heading | `usa-accordion__heading` | Add to `h2` for accordion title |
 | Accordion Button | `usa-accordion__button` | Add to `button` for accordion button |
 | Accordion Content | `usa-accordion__content usa-prose` | Add to `div` for accordion content |
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
@@ -178,5 +187,5 @@ None
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Accordion](https://designsystem.digital.gov/components/accordion/) | Reference for additional styles and functionalities  |
-| [USWDS: Accordion utilites](https://designsystem.digital.gov/components/accordion/#using-the-accordion-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
+| [USWDS: Accordion utilities](https://designsystem.digital.gov/components/accordion/#using-the-accordion-component-2) | Utilities to be referenced in styling (may not all apply to Grove) |
 | [USWDS: Accordion accessibility tests](https://designsystem.digital.gov/components/accordion/accessibility-tests) | Accessibility tests to run for component |

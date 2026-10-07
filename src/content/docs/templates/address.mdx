@@ -1,7 +1,6 @@
 ---
 title: Address form
 description: Form template for collecting addresses.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -25,9 +24,9 @@ import { LinkButton } from '@astrojs/starlight/components';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-address-form--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/templates-address-form--docs`} />
 
-## Address Form Template Usage
+## Address form template usage
 
 ### Use this template for
 - **You need separate data elements.** When you need to be able to parse out the specific parts of a mailing address.
@@ -37,8 +36,7 @@ import { LinkButton } from '@astrojs/starlight/components';
 - **You don’t need separate data elements.** If you don’t need to be able to parse out the individual pieces of an address, consider letting users type the entire address into one large text area.
 
 ## Requirements for use:
-- **Consider using an input mask.** In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be #####-#### so that the ZIP code maps to users’ experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
-- **Support both five- and nine-digit ZIP codes.** Some addresses require a nine-digit ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
+- **Support both five- and nine-digit ZIP codes.** Some addresses require a nine-digit ZIP code. 
 
 ## Content guidelines
 Content guidelines in progress.
@@ -56,8 +54,8 @@ We limit the characters in the ZIP code field to numbers and the hyphen (-), fol
 
 
 ## Related
-- [Text input](https://turbo-adventure-n2vkrrm.pages.github.io/reference/textinput/)
-- [Select](https://turbo-adventure-n2vkrrm.pages.github.io/reference/select/)
+- [Text input](https://grove.nj.gov/reference/textinput/)
+- [Select](https://grove.nj.gov/reference/select/)
 
 
 ## Resources

@@ -1,7 +1,6 @@
 ---
 title: Radio button
 description: Documentation for radio button component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -22,8 +21,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />  
-## Usage Guidelines
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />  
+
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -34,13 +34,13 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ### Use something else for:
 <IconList>
     <IconListItem icon="close">
-        **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use checkboxes instead.
+        **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use [checkboxes](https://grove.nj.gov/reference/checkbox/) instead.
     </IconListItem>
     <IconListItem icon="close">
-        **Limited space.** Consider a select component if you don’t have enough space to list out all available options
+        **Limited space.** Consider a [select](https://grove.nj.gov/reference/select/) component if you don’t have enough space to list out all available options
     </IconListItem>
     <IconListItem icon="close">
-        **Selecting none.** If users should be able to select zero of the options or change their mind and unselect an option, consider using checkboxes. You can also choose to add a “none of the above” option to the radio button group instead.
+        **Selecting none.** If users should be able to select zero of the options or change their mind and unselect an option, consider using [checkboxes](https://grove.nj.gov/reference/checkbox/). You can also choose to add a “none of the above” option to the radio button group instead.
     </IconListItem>
 </IconList>
 
@@ -71,7 +71,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 - **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.
 
 
-## Radio Button Variants
+## Radio button variants
 
 ### Radio button 
 
@@ -79,6 +79,8 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 | Property | Value |
 | ----------- | ----------- |
 | state | selected, selected-focused, unselected, unselected-focused, error |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-19547&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ### Radio button list
 A radio button question with multiple options.
@@ -91,7 +93,7 @@ A radio button question with multiple options.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -103,6 +105,8 @@ A radio button question with multiple options.
 | helper text | [text input] |
 | error text | [text input] |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-19547&p=f&t=kIkWUxaAUytHfoIV-0"/>
+
 ### Radio button tile
 Radio button surrounded in a clickable tile.
 
@@ -112,6 +116,8 @@ Radio button surrounded in a clickable tile.
 | state | selected, unselected, selected-focused, unselected-focused, error |
 | helper | false, true | 
 | helper text | [text input] |
+
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-19547&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 #### Code variant
 | Variant | Description |
@@ -129,7 +135,7 @@ A multiple select question with checkbox tiles.
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-radio--docs`} />
 #### Figma properties
 | Property | Value |
 | ----------- | ----------- |
@@ -141,8 +147,9 @@ A multiple select question with checkbox tiles.
 | helper text | [text input] |
 | error text | [text input] |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-19547&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
-## Accessibility Guidance
+## Accessibility guidance
 Use [USWDS radio button accessibility tests](https://designsystem.digital.gov/components/radio-buttons/accessibility-tests) to test implementation.
 
 - **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls](https://designsystem.digital.gov/components/form).
@@ -164,13 +171,13 @@ Use [USWDS radio button accessibility tests](https://designsystem.digital.gov/co
 | Error message | `nj-error-message-container` | [Custom Grove] Used for error message, combines an icon and the USWDS error message. |
 
 
-### Radio button Variants
+### Radio button variants
 | Variant | Description | 
 | ----------- | ----------- |
 | `usa-radio__input--tile` | Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page. |
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources

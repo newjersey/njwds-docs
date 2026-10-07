@@ -11,37 +11,50 @@
     "lint": "eslint",
     "preview": "astro preview",
     "astro": "astro",
-    "astro-check": "astro check"
+    "astro-check": "astro check",
+    "test:a11y": "playwright test",
+    "test:a11y:report": "playwright show-report",
+    "test:spelling": "cspell '**/*.{astro,ts,js,md,mdx}' --color --config .cspell.json"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.2.2",
-    "@astrojs/starlight": "^0.41.5",
-    "@newjersey/njwds": "^2.9.2",
-    "astro": "^7.1.6",
-    "astro-auto-import": "^0.5.1",
+    "@astrojs/markdown-remark": "^7.3.1",
+    "@astrojs/starlight": "^0.42.5",
+    "@newjersey/feedback-widget": "^0.7.1",
+    "@newjersey/njwds": "^2.10.1",
+    "astro": "^7.3.5",
+    "astro-auto-import": "^0.6.0",
     "remark-gfm": "^4.0.1",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "^4.13.0",
     "@eslint/js": "^10.0.1",
-    "@types/eslint__js": "^8.42.3",
-    "astro-eslint-parser": "^1.4.0",
-    "eslint": "^10.8.0",
+    "@playwright/test": "^1.63.0",
+    "@types/eslint__js": "^9.14.0",
+    "astro-eslint-parser": "^3.2.0",
+    "axe-core": "^4.13.0",
+    "cspell": "^10.3.6",
+    "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-astro": "^3.2.1",
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
-    "lint-staged": "^17.3.0",
-    "prettier": "^3.9.6",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.9",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.66.0"
+    "typescript-eslint": "^8.71.0"
   },
+  "allow-scripts": true,
   "lint-staged": {
     "*.{js,ts,astro}": [
       "eslint --fix",
       "prettier --write --ignore-unknown"
     ],
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "fsevents@2.3.3": true
   }
 }

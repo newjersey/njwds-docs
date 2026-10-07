@@ -1,7 +1,6 @@
 ---
 title: Table 
 description: Documentation of the table component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -14,8 +13,6 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`}
 />
 
-Some variants of the table are in USWDS, but are not available in Storybook or Figma.
-
 <iframe 
     title="Interactive preview of the table from Storybook" 
     frameborder="0" 
@@ -24,8 +21,9 @@ Some variants of the table are in USWDS, but are not available in Storybook or F
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />  
-## Usage Guidelines
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />  
+
+## Usage guidelines
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -93,20 +91,11 @@ Some variants of the table are in USWDS, but are not available in Storybook or F
 </IconList>
 
 
-## Content Guidance 
+## Content guidance 
 Content guidance in progress.
 
 
-## States
-
-### Figma properties
-
-| Property | Value |
-| ----------- | ----------- |
-| border | true, false |
-| screen size | desktop, mobile |
-
-## Types
+## Table variants
 
 ### Bordered
 
@@ -118,7 +107,7 @@ Content guidance in progress.
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />
 ### Borderless
 
 <iframe 
@@ -129,7 +118,8 @@ Content guidance in progress.
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-table--docs`} />
+
 ### Compact
 
 <iframe 
@@ -140,7 +130,8 @@ Content guidance in progress.
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--compact`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--compact`} />
+
 ### Striped
 
 <iframe 
@@ -151,18 +142,8 @@ Content guidance in progress.
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--striped`} />
-### Scrollable
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--striped`} />
 
-<iframe 
-    title="Interactive preview of the scrollable table from Storybook" 
-    frameborder="0" 
-    src={`${STORYBOOK_BASE_URL}/iframe.html?id=components-table--scrollable&viewMode=story`} 
-    loading="lazy"
-    class="grove__iframe--mid width-full border border-base-light">
-</iframe>
-
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--scrollable`} />
 ### Responsive stacked
 
 <iframe 
@@ -173,7 +154,8 @@ Content guidance in progress.
     class="grove__iframe--mid width-half border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--responsive`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--responsive`} />
+
 ### Sortable
 
 <iframe 
@@ -184,7 +166,8 @@ Content guidance in progress.
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sortable`} />
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sortable`} />
+
 ### Sticky table header
 
 <iframe 
@@ -195,27 +178,28 @@ Content guidance in progress.
     class="grove__iframe--mid width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sticky-headers`} />
-## Accessibility Guidance
+<ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/story/components-table--sticky-headers`} />
+
+## Accessibility guidance
 
 Use [USWDS summary box accessibility tests](https://designsystem.digital.gov/components/table/accessibility-tests) to test implementation.
 - **Write for your audience.** The summary box is meant to make it easier to understand page content. Don't leave readers without access to critical information. Check your writing level to ensure it’s easy to read. Search for “readability level tool” to find tools that assess reading level.
 
 ## Code
 
-### Code Utilties
+### Code utilities
 
 | Table variants | Description  |
 |----------|----------|
 | `.usa-table--borderless`| Removes the outer table borders, retaining only a single bottom border on each row. Best for tables with more text than numbers. |
 | `.usa-table--compact` | Reduces the row height and vertical spacing to display more table rows within a limited space. Should only be used with dense, numerical data, not text content. Pairs well with scrollable and striped variants, but is not suitable for use with stacked variants. |
-| `.usa-table-container--scrollable > .usa-table` | Add the `usa-table-container--scrollable` class to a container around any `usa-table` to apply a horizontal scrollbar if the columns exceed the available width. Ideal for dense tables with many columns.|
+| `.usa-table-container--scrollable > .usa-table` | Ensure the `usa-table-container--scrollable` class is on the container around `usa-table` to apply a horizontal scrollbar if the columns exceed the available width. Applied to the default component and ideal for the accessibility of dense tables with many columns.|
 | `.usa-table--stacked`| Stacks the table cells on narrow screens. Ideal for tables that contain more text information than numerical data. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header. |
 | `.usa-table--stacked-header`| Stacks the table cells on narrow screens and visually promotes the first cell of every row into a “header” for that group. Preferred for directories and other lists where the first cell of every row is a name. If you use this variant, you must ensure there is a `data-label` attribute on each cell of the table that matches the column header. |
 | `.usa-table--sticky-header`| Allows the table header element to stick to the top of the page as the user scrolls. Preferred for long tables with many rows. This variant is not compatible with the scrollable and stacked table variants.|
 | `.usa-table--striped` | Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns. |
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
@@ -225,7 +209,7 @@ None
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Table](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=3034-1111&p=f&t=Yx31eAZO0ULNN6UA-0) | Using in designs |
-| [Storybook: Table](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/elements-table--docs) | Interactive preview, code snippet, variants |
+| [Storybook: Table](https://storybook.grove.nj.gov/?path=/docs/components-table--docs) | Interactive preview, code snippet, variants |
 
 ### USWDS links 
 

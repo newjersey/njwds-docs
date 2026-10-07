@@ -60,12 +60,14 @@ npm ci
 
 Run all commands from the repository root.
 
-| Command                   | Action                                      |
-| :------------------------ | :------------------------------------------ |
-| `npm run dev`             | Start the local development server          |
-| `npm run build`           | Build the production site in `dist/`        |
-| `npm run preview`         | Preview the production build locally        |
-| `npm run astro -- --help` | Display help for the Astro command-line tool |
+| Command                    | Action                                                |
+| :------------------------- | :-----------------------------------------------------|
+| `npm run dev`              | Start the local development server                    |
+| `npm run build`            | Build the production site in `dist/`                  |
+| `npm run preview`          | Preview the production build locally                  |
+| `npm run astro -- --help`  | Display help for the Astro command-line tool          |
+| `npm run test:a11y`        | Run the accessibility scan against the built site     |
+| `npm run test:a11y:report` | Open the HTML report from the last accessibility scan |
 
 After running `npm run dev`, open the local URL shown in the terminal. Astro uses
 `http://localhost:4321` by default.
@@ -89,6 +91,10 @@ when a change affects the rendered interface.
 
 To report a security vulnerability, follow the instructions in [SECURITY.md](SECURITY.md) instead of
 opening a public issue.
+
+### Testing
+
+The [Accessibility Scan](.github/workflows/accessibility-scan.yml) workflow runs axe-core against every page of the built site and tests basic site interactions. It runs on pushes to `main` or PRs labeled `accessibility-scan`. Only `critical` violations fail the check (see `SEVERITY_THRESHOLD` in [tests/a11y/axe-test.ts](tests/a11y/axe-test.ts)), but all violations are still recorded and easily visible in the Github Action summary. Each run uploads an `accessibility-report` artifact that can be found within the CI output, as a comment on failing PRs, or locally with `npm run test:a11y:report` after running ``npm run test:a11y`.
 
 ## License
 

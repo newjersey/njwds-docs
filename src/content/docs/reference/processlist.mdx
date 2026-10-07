@@ -1,7 +1,6 @@
 ---
 title: Process list
 description: Documentation for process list component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -22,8 +21,10 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />  
-## Usage Guidelines
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />  
+
+## Usage guidelines
+
 ### Use this component for:
 <IconList>
     <IconListItem icon="check">
@@ -34,19 +35,19 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ### Use something else for:
 <IconList>
     <IconListItem icon="close">
-        **Multi-page forms or wizards.** Use the step indicator component to help users work through a form or process that spans several different pages.
+        **Multi-page forms or wizards.** Use the [step indicator](https://grove.nj.gov/reference/stepindicator/) component to help users work through a form or process that spans several different pages.
     </IconListItem>
     <IconListItem icon="close">
-        **When showing current status or progress.** Use the step indicator component to show the user the current step in a multi-step process.
+        **When showing current status or progress.** Use the [step indicator](https://grove.nj.gov/reference/stepindicator/) component to show the user the current step in a multi-step process.
     </IconListItem>
     <IconListItem icon="close">
-        **In-page navigation.** Use the side navigation component to display the “sub-navigation” within a section or page of the website.
+        **In-page navigation.** Use the [in-page navigation component](https://grove.nj.gov/reference/inpagenavigation/) to display the “sub-navigation” within a section or page of the website.
     </IconListItem>
     <IconListItem icon="close">
-        **The steps are non-sequential.** Use unordered lists, graphic lists (coming soon), or icon lists (coming soon) to display text that doesn’t have a clear, logical order to it.
+        **The steps are non-sequential.** Use [unordered lists](https://grove.nj.gov/reference/list/), [graphic lists](https://grove.nj.gov/reference/graphiclist/), or [icon lists](https://grove.nj.gov/reference/iconlist/) to display text that doesn’t have a clear, logical order to it.
     </IconListItem>
     <IconListItem icon="close">
-        **The listed content is meant to improve readability of a complex sentence.** Use the ordered and unordered list components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
+        **The listed content is meant to improve readability of a complex sentence.** Use the [ordered and unordered list](https://grove.nj.gov/reference/list/) components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
     </IconListItem>
 </IconList>
 
@@ -76,8 +77,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />
-### No Text 
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />
+
+### No text 
 
 <iframe 
     title="Interactive preview of process list from Storybook" 
@@ -87,8 +89,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />
-### Custom Sizing (Large)
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />
+
+### Custom sizing (large)
 
 <iframe 
     title="Interactive preview of process list from Storybook" 
@@ -98,7 +101,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-process-list--docs`} />
 
 ## Figma properties
 | Property | Value |
@@ -108,13 +111,14 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 | body text | true, false |
 | text | [text input] |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=1735-310&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ## Accessibility guidance
 Use [USWDS process list accessibility tests](https://designsystem.digital.gov/components/process-list/accessibility-tests/) to test process list implementation.
 - **Use semantic heading levels.** Though our default code uses an `<h4>`, use the correct heading level with the class name `usa-process-list__heading` in your own implementation.
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources

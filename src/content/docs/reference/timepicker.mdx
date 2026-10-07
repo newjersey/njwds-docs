@@ -1,7 +1,6 @@
 ---
 title: Time picker
 description: Documentation for time picker component.
-hideTitle: true
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -22,9 +21,9 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
     class="grove__iframe width-full border border-base-light">
 </iframe>
 
- <ViewStorybookButton storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-time-picker--docs`} />
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/components-time-picker--docs`} />
 
-## Usage Guidelines
+## Usage guidelines
 
 ### Use this component for:
 <IconList>
@@ -43,7 +42,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 ## Requirements for use:
 <IconList>
     <IconListItem icon="report">
-        **Use option strings familiar to users.** The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
+        **Use option strings familiar to users.** The [combo box](https://grove.nj.gov/reference/combobox/) filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: District of Columbia (DC)).
     </IconListItem>
     <IconListItem icon="report">
         **Avoid dependent options.** Avoid making options in one select menu change based on the input to another. Users often don’t understand how choosing an item in one impacts another
@@ -81,6 +80,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 | clear | false, true |
 | error message | [text input]  |
 
+<ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=3051-2224&p=f&t=27UwGhKCDi5dO9t8-0"/>
 
 ## Accessibility guidance
 Use the [USWDS time picker accessibility tests](https://designsystem.digital.gov/components/time-picker/accessibility-tests) to test the implementation.
@@ -106,7 +106,7 @@ The following properties modify component functionality. These properties can be
 | `data-filter` | `usa-time-picker` | The time picker will use this regular expression to filter the time picker options. You are declaring a case insensitive match over the entire option text, which means `^` and `$` are added automatically. You can specify the inputted query with `{{query}}`. You can also declare a custom query filter as a data property as well, which can be used in the custom filter (`data-number-filter="[0-9]"` and then using `data-filter="{{numberFilter}}.*"`). The default filter is `.*{{query}}.*`, which is a simple “find anywhere within the option” text. | 
 
 
-## Known Issues
+## Known issues
 None
 
 ## Resources
