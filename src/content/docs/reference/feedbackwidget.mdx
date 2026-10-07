@@ -75,10 +75,33 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 <ViewExternalResource figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2-20690&p=f&t=kIkWUxaAUytHfoIV-0"/>
 
 ## Accessibility guidance
-Accessibility guidance in progress.
+- **Use the complete interaction flow.** Test the rating, comment, optional email, confirmation, loading, and error states with a keyboard and assistive technology.
+- **Keep labels and instructions visible.** Do not rely on placeholder text or color to identify fields, validation errors, or submission status.
+- **Preserve focus visibility.** Confirm that focus remains visible and follows the active step after each submission.
+- **Test in context.** Run automated accessibility checks and manual keyboard tests at mobile and desktop widths. The application remains responsible for testing the assembled page.
 
 ## Code guidance
-See the [README for the feedback widget repository](https://github.com/newjersey/feedback-widget/blob/main/README.md) for documentation on feedback widget settings and other technical documentation.
+See the [README for the feedback widget repository](https://github.com/newjersey/feedback-widget/blob/main/README.md) for installation instructions and the current package contract.
+
+### Configuration attributes
+
+Custom element attributes use kebab-case strings. Configure only the behavior your service has approved:
+
+| Attribute | Purpose |
+| ----------- | ----------- |
+| `contact-link` | Sets the destination for people who need help with a specific question. |
+| `only-save-rating-to-analytics` | Sends ratings without comments only to analytics when set to `"true"`. |
+| `show-comment-disclaimer` | Shows or hides the message directing specific questions to the contact link. |
+| `skip-email-step` | Skips the optional user-testing email prompt when set to `"true"`. |
+
+### Application integration
+
+- **Load the custom element in the browser.** Server-rendered applications should import the widget from a client-only boundary because the package registers a browser custom element.
+- **Support only documented languages.** The widget provides English and Spanish content. Send the documented `changeLanguage` custom event with `"en"` or `"es"` when the application language changes. Do not show an English fallback on a page in an unsupported language.
+- **Make enablement an application decision.** The widget transmits the page URL, rating, optional comment, and optional email to the feedback service. Confirm the collection policy, contact destination, analytics behavior, and email step before enabling it.
+- **Review Content Security Policy settings.** Allow the feedback API in `connect-src` and, when loading from a CDN, allow the pinned script source.
+- **Do not nest the widget inside a form.** The component contains its own form elements, and nested forms are invalid HTML.
+- **Mock submissions in automated tests.** Intercept every feedback API request so accessibility and interaction tests never transmit ratings, comments, or email addresses.
 
 
 ## Known issues
@@ -89,5 +112,4 @@ See the [README for the feedback widget repository](https://github.com/newjersey
 | File | Purpose | 
 | ----------- | ----------- |
 | [Figma Grove: Feedback Widget](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/NJ-Web-Design-System?node-id=2-21115&t=xEncjmi7erLwzVH8-0) | Using feedback widget in designs|
-| [Storybook: Feedback widget](https://main.d6umhtb6a6pvv.amplifyapp.com/?path=/docs/components-feedback-widget--docs) | Interactive example, code snippets, variants |
-
+| [Storybook: Feedback widget](https://storybook.grove.nj.gov/?path=/docs/components-feedback-widget--docs) | Interactive example, code snippets, variants |
