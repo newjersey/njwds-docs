@@ -96,6 +96,11 @@ export default defineConfig({
           collapsed: true,
           items: [{ autogenerate: { directory: "templates" } }],
         },
+        {
+          label: "Utilities",
+          collapsed: true,
+          items: [{ autogenerate: { directory: "utilities" } }],
+        },
       ],
     }),
     mdx(),
