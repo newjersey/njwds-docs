@@ -7,8 +7,316 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 import { LinkButton } from '@astrojs/starlight/components';
 
 <PageHeader
-  name={frontmatter.title}
-  description={frontmatter.description}
+  name={Color}
+  description={Change the color of text and the background color of an item.}
   wcagBadge={false} />
 
-Color content here.
+CSS Properties: `background-color` `color` 
+
+## Examples and usage 
+Utilities, values, and variants may be activated and deactivated in **advanced settings.** 
+
+### Text color 
+CSS PROPERTY: `color` 
+
+#### Project theme colors: 
+**Read more about project theme colors**
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#f0f0f0" /> | `.text-base-lightest` | #f0f0f0 |
+| <GroveColorBlock color="#dfe1e2" /> | `.text-base-lighter` | #dfe1e2 |
+| <GroveColorBlock color="#a9aeb1" /> | `.text-base-light` | #a9aeb1 |
+| <GroveColorBlock color="#71767a" /> | `.text-base` | #71767a |
+| <GroveColorBlock color="#565c65" /> | `.text-base-dark` | #565c65 |
+| <GroveColorBlock color="#3d4551" /> | `.text-base-darker` | #3d4551 |
+| <GroveColorBlock color="#1b1b1b" /> | `.text-base-darkest` | #1b1b1b |
+| <GroveColorBlock color="#1b1b1b" /> | `.text-ink` | #1b1b1b |
+| <GroveColorBlock color="#d9e8f6" /> | `.text-primary-lighter` | #d9e8f6 |
+| <GroveColorBlock color="#73b3e7" /> | `.text-primary-light` | #73b3e7 |
+| <GroveColorBlock color="#005ea2" /> | `.text-primary` | #005ea2 |
+| <GroveColorBlock color="#0050d8" /> | `.text-primary-vivid` | #0050d8 |
+| <GroveColorBlock color="#1a4480" /> | `.text-primary-dark` | #1a4480 |
+| <GroveColorBlock color="#162e51" /> | `.text-primary-darker | #162e51 |
+| <GroveColorBlock color="#f3e1e4" /> | `.text-secondary-lighter` | #f3e1e4 |
+| <GroveColorBlock color="#f2938c" /> | `.text-secondary-light` | #f2938c |
+| <GroveColorBlock color="#d83933" /> | `.text-secondary` | #d83933 |
+| <GroveColorBlock color="#e41d3d" /> | `.text-secondary-vivid` | #e41d3d |
+| <GroveColorBlock color="#b50909" /> | `.text-secondary-dark` | #b50909 |
+| <GroveColorBlock color="#8b0a03" /> | `.text-secondary-darker` | #8b0a03 |
+| <GroveColorBlock color="#e1f3f8" /> | `.text-accent-cool-lighter` | #e1f3f8 |
+| <GroveColorBlock color="#97d4ea" /> | `.text-accent-cool-light` | #97d4ea |
+| <GroveColorBlock color="#00bde3" /> | `.text-accent-cool` | #00bde3 |
+| <GroveColorBlock color="#28a0cb" /> | `.text-accent-cool-dark` | #28a0cb |
+| <GroveColorBlock color="#07648d" /> | `.text-accent-cool-darker` | #07648d |
+| <GroveColorBlock color="#f2e4d4" /> | `.text-accent-warm-lighter` | #f2e4d4 |
+| <GroveColorBlock color="#ffbc78" /> | `.text-accent-warm-light` | #ffbc78 |
+| <GroveColorBlock color="#fa9441" /> | `.text-accent-warm` | #fa9441 |
+| <GroveColorBlock color="#c05600" /> | `.text-accent-warm-dark` | #c05600 |
+| <GroveColorBlock color="#775540" /> | `.text-accent-warm-darker` | #775540 |
+
+#### Grayscale palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#ffffff" /> | `.text-white` | #ffffff |
+| <GroveColorBlock color="#f0f0f0" /> | `.text-gray-5` | #f0f0f0 |
+| <GroveColorBlock color="#e6e6e6" /> | `.text-gray-10` | #e6e6e6 |
+| <GroveColorBlock color="#adadad" /> | `.text-gray-30` | #adadad |
+| <GroveColorBlock color="#757575" /> | `.text-gray-50` | #757575 |
+| <GroveColorBlock color="#454545" /> | `.text-gray-70` | #454545 |
+| <GroveColorBlock color="#171717" /> | `.text-gray-90` | #171717 |
+| <GroveColorBlock color="#000000" /> | `.text-black` | #000000 |
+
+#### Basic palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#e52207" /> | `.text-red` | #e52207 |
+| <GroveColorBlock color="#e66f0e" /> | `.text-orange` | #e66f0e |
+| <GroveColorBlock color="#ffbe2e" /> | `.text-gold` | #ffbe2e |
+| <GroveColorBlock color="#fee685" /> | `.text-yellow` | #fee685 |
+| <GroveColorBlock color="#538200" /> | `.text-green` | #538200 |
+| <GroveColorBlock color="#04c585" /> | `.text-mint` | #04c585 |
+| <GroveColorBlock color="#009ec1" /> | `.text-cyan` | #009ec1 |
+| <GroveColorBlock color="#0076d6" /> | `.text-blue` | #0076d6 |
+| <GroveColorBlock color="#676cc8" /> | `.text-indigo` | #676cc8 |
+| <GroveColorBlock color="#8168b3" /> | `.text-violet` | #8168b3 |
+| <GroveColorBlock color="#d72d79" /> | `.text-magenta` | #d72d79 |
+
+
+### Background color 
+CSS PROPERTY: `background-color` 
+
+#### Project theme colors: 
+**Read more about project theme colors**
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#f0f0f0" /> | `.bg-base-lightest` | #f0f0f0 |
+| <GroveColorBlock color="#dfe1e2" /> | `.bg-base-lighter` | #dfe1e2 |
+| <GroveColorBlock color="#a9aeb1" /> | `.bg-base-light` | #a9aeb1 |
+| <GroveColorBlock color="#71767a" /> | `.bg-base` | #71767a |
+| <GroveColorBlock color="#565c65" /> | `.bg-base-dark` | #565c65 |
+| <GroveColorBlock color="#3d4551" /> | `.bg-base-darker` | #3d4551 |
+| <GroveColorBlock color="#1b1b1b" /> | `.bg-base-darkest` | #1b1b1b |
+| <GroveColorBlock color="#1b1b1b" /> | `.bg-ink` | #1b1b1b |
+| <GroveColorBlock color="#d9e8f6" /> | `.bg-primary-lighter` | #d9e8f6 |
+| <GroveColorBlock color="#73b3e7" /> | `.bg-primary-light` | #73b3e7 |
+| <GroveColorBlock color="#005ea2" /> | `.bg-primary` | #005ea2 |
+| <GroveColorBlock color="#0050d8" /> | `.bg-primary-vivid` | #0050d8 |
+| <GroveColorBlock color="#1a4480" /> | `.bg-primary-dark` | #1a4480 |
+| <GroveColorBlock color="#162e51" /> | `.bg-primary-darker | #162e51 |
+| <GroveColorBlock color="#f3e1e4" /> | `.bg-secondary-lighter` | #f3e1e4 |
+| <GroveColorBlock color="#f2938c" /> | `.bg-secondary-light` | #f2938c |
+| <GroveColorBlock color="#d83933" /> | `.bg-secondary` | #d83933 |
+| <GroveColorBlock color="#e41d3d" /> | `.bg-secondary-vivid` | #e41d3d |
+| <GroveColorBlock color="#b50909" /> | `.bg-secondary-dark` | #b50909 |
+| <GroveColorBlock color="#8b0a03" /> | `.bg-secondary-darker` | #8b0a03 |
+| <GroveColorBlock color="#e1f3f8" /> | `.bg-accent-cool-lighter` | #e1f3f8 |
+| <GroveColorBlock color="#97d4ea" /> | `.bg-accent-cool-light` | #97d4ea |
+| <GroveColorBlock color="#00bde3" /> | `.bg-accent-cool` | #00bde3 |
+| <GroveColorBlock color="#28a0cb" /> | `.bg-accent-cool-dark` | #28a0cb |
+| <GroveColorBlock color="#07648d" /> | `.bg-accent-cool-darker` | #07648d |
+| <GroveColorBlock color="#f2e4d4" /> | `.bg-accent-warm-lighter` | #f2e4d4 |
+| <GroveColorBlock color="#ffbc78" /> | `.bg-accent-warm-light` | #ffbc78 |
+| <GroveColorBlock color="#fa9441" /> | `.bg-accent-warm` | #fa9441 |
+| <GroveColorBlock color="#c05600" /> | `.bg-accent-warm-dark` | #c05600 |
+| <GroveColorBlock color="#775540" /> | `.bg-accent-warm-darker` | #775540 |
+
+#### Grayscale palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#ffffff" /> | `.bg-white` | #ffffff |
+| <GroveColorBlock color="#f0f0f0" /> | `.bg-gray-5` | #f0f0f0 |
+| <GroveColorBlock color="#e6e6e6" /> | `.bg-gray-10` | #e6e6e6 |
+| <GroveColorBlock color="#adadad" /> | `.bg-gray-30` | #adadad |
+| <GroveColorBlock color="#757575" /> | `.bg-gray-50` | #757575 |
+| <GroveColorBlock color="#454545" /> | `.bg-gray-70` | #454545 |
+| <GroveColorBlock color="#171717" /> | `.bg-gray-90` | #171717 |
+| <GroveColorBlock color="#000000" /> | `.bg-black` | #000000 |
+
+
+#### Basic palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#e52207" /> | `.bg-red` | #e52207 |
+| <GroveColorBlock color="#e66f0e" /> | `.bg-orange` | #e66f0e |
+| <GroveColorBlock color="#ffbe2e" /> | `.bg-gold` | #ffbe2e |
+| <GroveColorBlock color="#fee685" /> | `.bg-yellow` | #fee685 |
+| <GroveColorBlock color="#538200" /> | `.bg-green` | #538200 |
+| <GroveColorBlock color="#04c585" /> | `.bg-mint` | #04c585 |
+| <GroveColorBlock color="#009ec1" /> | `.bg-cyan` | #009ec1 |
+| <GroveColorBlock color="#0076d6" /> | `.bg-blue` | #0076d6 |
+| <GroveColorBlock color="#676cc8" /> | `.bg-indigo` | #676cc8 |
+| <GroveColorBlock color="#8168b3" /> | `.bg-violet` | #8168b3 |
+| <GroveColorBlock color="#d72d79" /> | `.bg-magenta` | #d72d79 |
+
+
+## Utility mixins 
+Utilities may be used in component Sass with **utility mixins**. Highlighted `tokens` are the USWDS design tokens that serve as the foundation for all design system styles. Each `token` is also a documentation link. Consult the **Design tokens section** for more information on tokens and how to use them in USWDS.
+
+| Color | Name | Example |
+| ----------- | ----------- |  ----------- |
+| .text-`color` | u-text(`color`) | @include u-text('primary-darker') |
+| .bg-`color` | u-bg(`color`) | @include u-bg('primary-darker') |
+
+### Using utility mixins 
+- Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (`05`) values like `'05'`, `'105'`, and `'205'` which should be treated as strings.
+- String tokens for half values (`05`) and negative values (like `neg-1`) may also be written with their unquoted number token equivalent: `0.5`, `1.5`, `2.5`, `-1`, `-1.5`, etc.
+- If multiple utilities share the same prefix (ex: `.text-` or `.flex-`) or a single utility accepts multiple kinds of values (ex: `.border` accepts both border weight and border color), their shared mixin can accept multiple comma-separated values: `u-text('primary-darkest', 'no-underline', 'bold') or u-border-top(2px, 'accent-warm')`.
+- Output any utility mixin as `!important` by appending `!important` to the mixin’s argument list: `u-bg('red-warm-50v', !important)`.
+
+## Advanced settings 
+
+### Responsive variants 
+
+Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+`.tablet:padding-y-2`
+
+**Output** 
+```scss
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+```
+
+Set up which breakpoints are available to USWDS utilities by setting the `$theme-utility-breakpoints` variable in your **USWDS settings configuration**.
+
+| Breakpoint name | Width | Default |
+| ----------- | ----------- |  ----------- |
+| card | 160px | false |
+| card-lg | 240px | false | 
+| mobile | 320px | false | 
+| mobile-lg | 480px | `true` | 
+| tablet | 640px | `true` | 
+| tablet-lg | 880px | false | 
+| desktop | 1024px | `true` | 
+| desktop-lg | 1200px | false | 
+| widescreen | 1400px | false | 
+
+Set whether a utility family outputs with responsive variants by setting the value of `$[utility_family]-settings.responsive` in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+**Example:** 
+```scss 
+@use "uswds-core" with (
+    $background-color-settings: (
+      responsive: true
+    )
+  );
+```
+
+| Utility variable | Default |
+| ----------- | ----------- |
+| `$background-color-settings.responsive` | false |
+| `$color-settings.responsive` | false |
+
+
+### State variants 
+Use a state prefix separated with a `:` to target a utility in a specific state.
+
+**Example:** 
+`.hover:bg-primary-vivid` 
+
+**Output:** 
+`.hover\:bg-primary-vivid:hover { background-color: #0052de; }`
+
+Set whether a utility outputs a specific state variant by setting the value of the `$[utility_family]-settings.[state]` variable in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+**Example:** 
+```scss
+@use "uswds-core" with (
+  $background-color-settings: (
+    active: true
+  )
+);
+```
+
+| Utility variable | active | focus | hover | visited |
+| ----------- | ----------- |
+| `$background-color-settings` | false | false | `true` | false |
+| `$color-settings` | false | false | `true` | false |
+
+
+### Output control 
+Control whether or not to output any USWDS utility family by setting the value of the `$[utility_family]-settings.output` variable in your **USWDS settings configuration**.
+
+A value of `true` will output the utility family and any variants. A value of `false` prevents the output of the family and any variants.
+
+| Utility variable | Default |
+| ----------- | ----------- |
+| `$background-color-settings.output` | `true` |
+| `$color-settings.output` | `true` |
+
+
+### Custom values
+By default, USWDS utilities output the standard values listed in the **standard output table**. Customize and refine any utility family’s specific values by editing the `$[utility_family]-manual-values` and `$[utility_family]-palettes` variables in your **USWDS settings configuration**.
+
+#### Manual values
+Specify manual values as unique `key:value` pairs using the `$[utility_family]-manual-values` map, where the `key` is the utility’s value suffix, and the `value` is what the utility will output.
+
+**Example**
+```scss
+$width-manual-values: (
+  'tab': 4ch,
+);
+```
+
+**Output**
+```scss
+.width-tab { width: 4ch; }
+```
+
+#### Palettes
+Palettes are predefined groups of values. Add palettes to the `$[utility_family]-palettes` list variable in your **USWDS settings configuration** to add those values to the utility family.
+
+**Example**
+```scss
+$background-color-palettes: (
+  'palette-color-red-medium',
+  'palette-color-red-medium-vivid' // note: no trailing comma
+);
+```
+
+**Output**
+```scss
+.bg-red-40 { background-color: #ed6b61; }
+.bg-red-50 { background-color: #d83731; }
+.bg-red-60 { background-color: #ab3a3a; }
+.bg-red-40v { background-color: #ff5c48; }
+.bg-red-50v { background-color: #e82207; }
+.bg-red-60v { background-color: #c31f0a; }
+```
+
+##### Global color palettes
+Any palette added to the `$global-color-palettes` list in your your **USWDS settings configuration** will output in the background color, text color, border color, and text decoration color utilities.
+
+##### Color palettes
+In the following table, `family` indicates a specific unquoted system color family token (like `blue-warm`) as documented on the *system color tokens page*.
+
+| Palette name | Palette contents |
+| ----------- | ----------- |
+| 'palette-color' | All color tokens |
+| 'palette-color-default' | System default color tokens |
+| 'palette-color-theme' | All theme color tokens |
+| 'palette-color-state' | All state color tokens |
+| 'palette-color-grayscale' | gray-5, gray-10, gray-30, gray-50, gray-70, gray-90
+| 'palette-color-basic' | All basic colors |
+| 'palette-color-system' | All grades in **all system color tokens** |
+| 'palette-color-system-`family`' | All grades in the specified family |
+| 'palette-color-system-`family`-light' | Grades 5, 10, 20, 30 |
+| 'palette-color-system-`family`-light-vivid' | Grades 5v, 10v, 20v, 30v |
+| 'palette-color-system-`family`-medium' | Grades 40, 50, 60 |
+| 'palette-color-system-`family`-medium-vivid' | Grades 40v, 50v, 60v |
+| 'palette-color-system-`family`-dark' | Grades 70, 80, 90 |
+| 'palette-color-system-`family`-dark-vivid' | Grades 70v, 80v, 90v |
+| 'palette-color-system-`family`-standard' | Grades 5, 10, 20, 30, 40, 50, 60, 70, 80, 90 |
+| 'palette-color-system-`family`-vivid' | Grades 5v, 10v, 20v, 30v, 40v, 50v, 60v, 70v, 80v, 90v |
+
