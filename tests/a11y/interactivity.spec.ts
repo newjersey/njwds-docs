@@ -25,7 +25,7 @@ test.describe("page interactivity", () => {
 
     test("all toggles rendered", async () => {
       const count = await toggles.count();
-      expect(count).toEqual(6);
+      expect(count).toEqual(7);
     });
 
     test("current section expanded by default", async () => {
