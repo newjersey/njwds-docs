@@ -1,24 +1,180 @@
 ---
 title: Overview
 description: Documentation of utilities in Grove.
+sidebar:
+  order: 1
 ---
 
+import { STORYBOOK_BASE_URL } from '@config/storybook';
 import { LinkButton } from '@astrojs/starlight/components';
 
 <PageHeader
-  name="Overview"
-  category="UTILITIES"
-  description="Utilities are simple HTML classes typically scoped to a single CSS property, like `border-style` or `background-color`. Utilities can be used additively to style an object from scratch or to override a style defined in component CSS."
-  wcagBadge={false}
-/>
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
 
-## H2 
-Text
+## Introducing utilities
 
+Utilities are simple HTML classes typically scoped to a single CSS property, like `border-style` or `background-color`. Utilities can be used additively to style an object from scratch or to override a style defined in component CSS. Utilities allow designers and developers to build and test new designs and components without abstracting their work into traditional semantic names or altering production CSS.
 
-### H3
-Text
+They also make it possible to create element-specific overrides without writing high-specificity variants into component CSS.
 
+## Utility naming
+Most USWDS utilities are built to assign a single CSS property a single value. Our utilities are named `.[base]-[value]`, where `[base]` is often the name of the CSS property the utility targets and the parts of the utility name are separated by a hyphen. For example, `margin-top-2`. Our utility classes are designed to make sense at a glance to anyone familiar with standard CSS properties.
+
+For a complete list of the utilities and their bases, see each utility’s documentation page, or the **Modules table, below**.
+
+The utility values are drawn from your project theme-settings tokens but can be extended to include additional values drawn from our palette of common units (like px, em, ch, and percentages) as well as the broader USWDS system palette of colors, grid spacing, and font scale. (Each utility’s **Advanced settings** section provides more information on customization.)
+
+| USWDS utility | Sass | 
+| ----------- | ----------- |
+| .bg-primary-darker | background-color: color('primary-darker') |
+| .bg-red-50v | background-color: color('red-50v') |
+| .text-underline | text-decoration: underline |
+| .margin-x-auto | margin-left: auto; margin-right: auto; |
+| .padding-bottom-1 | padding-bottom: units(1) |
+
+	
+## Utilities package, modules, and settings
+USWDS provides a useful default set of utilities that developers can extend and modify in their project’s settings to suit their project’s needs and their development preferences.
+
+Utilities are included by default as part of the `uswds` bundle package that most projects use. (**Read more about packages here**.)
+
+If you unbundle your project’s packages, include utilities with the uswds-utilities package. This package includes all of the USWDS utilities available to the design system. Each utility is configured differently — some have responsive and state variants enabled. Each utility’s default output is documented on its documentation page.
+
+**The entire package is 198 KB uncompressed.**
+
+Include the uswds-utilities package in your project’s Sass entry point with a module forward:
+
+`@forward "uswds-utilities";`
+
+### Settings
+You can further customize utility output with USWDS settings. Add settings from the table below to your `uswds-core` module initialization. For more information on configuring USWDS settings, visit the settings page. Here’s an example:
+
+```scss
+@use "uswds-core" with (
+  $utilities-use-important: true,
+  $output-these-utilities:(
+    "background-color",
+    "color",
+    "display",
+    "margin",
+    "padding",
+  ),
+  $theme-utility-breakpoints: (
+    "mobile-lg": false,
+  ),
+  $color-settings: (
+    "hover": false,
+  ),
+  $color-palettes: (
+    "palette-color-theme"
+  ),
+);
+```
+
+| Name | Variable | Default | Type | Description | 
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| Utilities use !important | `$utilities-use-important` | `false` | boolean | 
+Output all utilities with `!important`. This can be necessary if you intend utilities to override existing styles. |
+| Utilities uselist | `$output-these-utilities` | `default` | list | 
+Include a list of all utility modules to output. Ex: `("align-items", "border", "margin", "padding"). default` includes all utilities. |
+| Utility breakpoints | `$theme-utility-breakpoints` |   | map | 
+Set which mobile-first breakpoints are output for the utilities. |
+|  | "card" | `false`  | boolean |  |
+|  | "card-lg" | `false`  | boolean |  |
+|  | "mobile" | `false`  | boolean |  |
+|  | "mobile-lg" | `true`  | boolean |  |
+|  | "tablet" | `true`  | boolean |  |
+|  | "tablet-lg" | `false`  | boolean |  |
+|  | "desktop" | `true`  | boolean |  |
+|  | "desktop-lg" | `false`  | boolean |  |
+|  | "widescreen" | `false`  | boolean |  |
+| Custom breakpoints | `$theme-utility-breakpoints-custom` |   | map | 
+Set additional custom mobile-first breakpoints to be output for the utilities. Values must be passed in with `px` values inside a Sass map. |
+| Global color palettes | `$global-color-palettes` |   | palettes | 
+Any palettes added to this list will output in the the following utilities: `background-color`, `border-color`, `color`, `text-decoration-color`. |
+| Utility settings | `$[utility-module]-settings` |   | map | 
+Control the output of a [utility-module] and its responsive and state variants. |
+|  | "output" | – | boolean | Output the utility. |
+|  | "responsive" | – | boolean | Output the responsive variants. |
+|  | "active" | – | boolean | Output the `active:` state variant. |
+|  | "focus" | – | boolean | Output the `focus:` variant. |
+|  | "hover" | – | boolean | Output the `hover:` variant. |
+|  | "visited" | – | boolean | Output the `visited:` variant. |
+| Utility palettes | `$[utility-module]-palettes` | "palette-[utility-module]-default" | palettes | 
+Utilities output with the values set in the palettes list. |
+| Utility manual values | `$[utility-module]-manual-values` |   | map | 
+Utilities output with the tokens and values set in the manual values map. |
+|   | [token name] |  [token value] | map | 
+Add a map of manual tokens and values in the form `name: value`. |
+
+### Modules
+Each utility module referenced in **the settings section, above**, can accept one of the utility module names outlined in the following table. The more utilities your project uses, the larger the utilities CSS will be.
+
+The size of each module will change based on its module settings. For instance, if a module is set to output responsive classes and state variants, it will be much larger than if it includes only the base classes and no variants.
+
+| Utility module name | Class base | Gzip size | Default full size | 
+| ----------- | ----------- | ----------- | ----------- |
+| add-aspect | add-aspect- | 0.08 KB | 0.44 KB |
+| add-list-reset | add-list-reset | 0.02 KB | 0.12 KB |
+| align-items | flex- | 0.04 KB | 0.24 KB |
+| align-self | flex- | 0.06 KB | 0.31 KB |
+| background-color | bg- | 1.0 KB | 5.4 KB |
+| border | border- | 4.35 KB | 23.5 KB |
+| border-color| border- | 4.35 KB | 23.5 KB |
+| border-radius | border- | 1.61 KB | 8.7 KB |
+| border-style | border- | 0.03 KB | 0.14 KB |
+| border-width | border- | 0.56 KB | 3 KB |
+| bottom | bottom- | 0.18 KB | 0.96 KB |
+| box-shadow | shadow- | 0.06 KB | 0.33 KB |
+| circle | circle- | 0.19 KB | 1 KB |
+| clearfix | clearfix | 0.02 KB | 0.09 KB |
+| color | text- | 0.37 KB | 2 KB |
+| cursor | cursor- | 0.07 KB | 0.39 KB |
+| display | display- | 0.28 KB | 1.5 KB |
+| flex | flex- | 0.06 KB | 0.33 KB |
+| flex-direction | flex- | 0.02 KB | 0.1 KB |
+| flex-wrap | flex- | 0.02 KB | 0.1 KB |
+| float | float- | 0.02 KB | 0.1 KB |
+| font | font- | 2.41 KB | 13 KB |
+| font-family | font-family- | 0.37 KB | 2 KB | 
+| font-feature | text- | 0.03 KB | 0.14 KB |
+| font-style | text- | 0.02 KB | 0.11 KB |
+| font-weight | text- | 0.1 KB | 0.54 KB |
+| height | height- | 0.11 KB | 0.6 KB |
+| justify-content | flex- | 0.18 KB | 0.95 KB |
+| left | left- | 0.08 KB | 0.44 KB |
+| letter-spacing | text-ls- | 0.05 KB | 0.28 KB |
+| line-height | line-height- | 1.61 KB | 8.7 KB |
+| margin | margin- | 0.8 KB | 4.35 KB |
+| margin-horizontal | margin- | 4.02 KB | 21.75 KB |
+| margin-vertical | margin- | 4.02 KB | 21.75 KB |
+| max-height | maxh- | 0.12 KB | 0.65 KB |
+| max-width | maxw- | 0.13 KB | 0.72 KB |
+| measure | measure- | 0.18 KB | 0.98 KB |
+| min-height | minh- | 0.13 KB | 0.72 KB |
+| min-width | minw- | 0.07 KB | 0.4 KB |
+| opacity | opacity- | 0.24 KB | 1.3 KB |
+| order | order- | 0.26 KB | 1.4 KB |
+| outline | outline- | 0.03 KB | 0.18 KB |
+| outline-color | outline- | 0.56 KB | 3 KB |
+| overflow | overflow- | 0.09 KB | 0.46 KB |
+| padding | padding- | 4.02 KB | 21.75 KB |
+| pin | pin- | 0.06 KB | 0.35 KB |
+| position | position- | 0.04 KB | 0.21 KB |
+| right | right- | 0.09 KB | 0.47 KB |
+| square | square- | 0.14 KB | 0.73 KB |
+| text-align | text- | 0.03 KB | 0.16 KB |
+| text-decoration | underline- | 0.06 KB | 0.32 KB |
+| text-decoration-color | text- | 2.33 KB | 12.6 KB |
+| text-indent | text-indent- | 0.19 KB | 1 KB |
+| text-transform | text- | 0.04 KB | 0.2 KB |
+| top | top- | 0.07 KB | 0.4 KB |
+| vertical-align | text- | 0.06 KB | 0.32 KB |
+| whitespace | text- | 0.04 KB | 0.2 KB |
+| width | width- | 0.56 KB | 3 KB |
+| z-index | z- | 0.04 KB | 0.22 KB |
 
 ## Resources
 ### Grove links 
@@ -30,4 +186,3 @@ Text
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Utilities](https://designsystem.digital.gov/utilities/) | Reference for utilities in USWDS  |
-
