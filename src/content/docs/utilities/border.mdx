@@ -1,6 +1,6 @@
 ---
 title: Border
-description: TBD
+description: Set width, color, style, and radius of an item’s borders
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -11,4 +11,15 @@ import { LinkButton } from '@astrojs/starlight/components';
   description={frontmatter.description}
   wcagBadge={false} />
 
-Border content here.
+
+## Examples and usage 
+Utilities, values, and variants may be activated and deactivated in **advanced settings**.
+
+### Border 
+CSS Property: `border`, `border-bottom`, `border-left`, `border-right`, `border-top`
+
+**Note:** The `border` utilities apply a solid border of specified width. If no width is specified, the utilities apply a solid `1px` border.
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.margin-0` | `0` | <div class="bg-secondary-light padding-0"><div class="square-4 border-1px bg-white"></div></div> |
