@@ -1,0 +1,502 @@
+---
+title: Border
+description: Set width, color, style, and radius of an item’s borders
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+
+## Examples and usage 
+Utilities, values, and variants may be activated and deactivated in **advanced settings**.
+
+### Border 
+CSS Property: `border`, `border-bottom`, `border-left`, `border-right`, `border-top`
+
+**Note:** The `border` utilities apply a solid border of specified width. If no width is specified, the utilities apply a solid `1px` border.
+
+| Name | Preview |
+| ----------- | ----------- |
+| `.border` | <div class="border square-8 bg-base-lightest"></div> |
+| `.border-top` | <div class="border-top square-8 bg-base-lightest"></div> |
+| `.border-bottom` | <div class="border-bottom square-8 bg-base-lightest"></div> |
+| `.border-left` | <div class="border-left square-8 bg-base-lightest"></div> |
+| `.border-right` | <div class="border-right square-8 bg-base-lightest"></div> |
+| `.border-x` | <div class="border-x square-8 bg-base-lightest"></div> |
+| `.border-y` | <div class="y-right square-8 bg-base-lightest"></div> |
+
+#### Border on all sides
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border` | 1px | <div class="border square-8 bg-base-lightest"></div> |
+| `.border-0` | 0 | <div class="border-0 square-8 bg-base-lightest"></div> |
+| `.border-1px` | 1px | <div class="border-1px square-8 bg-base-lightest"></div> |
+| `.border-2px` | 2px | <div class="border-2px square-8 bg-base-lightest"></div> |
+| `.border-05` | 4px | <div class="border-05 square-8 bg-base-lightest"></div> |
+| `.border-1` | 8px | <div class="border-1 square-8 bg-base-lightest"></div> |
+| `.border-105` | 12px | <div class="border-105 square-8 bg-base-lightest"></div> |
+| `.border-2` | 16px | <div class="border-2 square-8 bg-base-lightest"></div> |
+| `.border-205` | 20px | <div class="border-205 square-8 bg-base-lightest"></div> |
+| `.border-3` | 24px | <div class="border-3 square-8 bg-base-lightest"></div> |
+
+
+#### Border on the top
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-top` | 1px | <div class="border-top square-8 bg-base-lightest"></div> |
+| `.border-top-0` | 0 | <div class="border-top-0 square-8 bg-base-lightest"></div> |
+| `.border-top-1px` | 1px | <div class="border-top-1px square-8 bg-base-lightest"></div> |
+| `.border-top-2px` | 2px | <div class="border-top-2px square-8 bg-base-lightest"></div> |
+| `.border-top-05` | 4px | <div class="border-top-05 square-8 bg-base-lightest"></div> |
+| `.border-top-1` | 8px | <div class="border-top-1 square-8 bg-base-lightest"></div> |
+| `.border-top-105` | 12px | <div class="border-top-105 square-8 bg-base-lightest"></div> |
+| `.border-top-2` | 16px | <div class="border-top-2 square-8 bg-base-lightest"></div> |
+| `.border-top-205` | 20px | <div class="border-top-205 square-8 bg-base-lightest"></div> |
+| `.border-top-3` | 24px | <div class="border-top-3 square-8 bg-base-lightest"></div> |
+
+
+#### Border on the bottom
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-bottom` | 1px | <div class="border-bottom square-8 bg-base-lightest"></div> |
+| `.border-bottom-0` | 0 | <div class="border-bottom-0 square-8 bg-base-lightest"></div> |
+| `.border-bottom-1px` | 1px | <div class="border-bottom-1px square-8 bg-base-lightest"></div> |
+| `.border-bottom-2px` | 2px | <div class="border-bottom-2px square-8 bg-base-lightest"></div> |
+| `.border-bottom-05` | 4px | <div class="border-bottom-05 square-8 bg-base-lightest"></div> |
+| `.border-bottom-1` | 8px | <div class="border-bottom-1 square-8 bg-base-lightest"></div> |
+| `.border-bottom-105` | 12px | <div class="border-bottom-105 square-8 bg-base-lightest"></div> |
+| `.border-bottom-2` | 16px | <div class="border-bottom-2 square-8 bg-base-lightest"></div> |
+| `.border-bottom-205` | 20px | <div class="border-bottom-205 square-8 bg-base-lightest"></div> |
+| `.border-bottom-3` | 24px | <div class="border-bottom-3 square-8 bg-base-lightest"></div> |
+
+
+#### Border on the left
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-left` | 1px | <div class="border-left square-8 bg-base-lightest"></div> |
+| `.border-left-0` | 0 | <div class="border-left-0 square-8 bg-base-lightest"></div> |
+| `.border-left-1px` | 1px | <div class="border-left-1px square-8 bg-base-lightest"></div> |
+| `.border-left-2px` | 2px | <div class="border-left-2px square-8 bg-base-lightest"></div> |
+| `.border-left-05` | 4px | <div class="border-left-05 square-8 bg-base-lightest"></div> |
+| `.border-left-1` | 8px | <div class="border-left-1 square-8 bg-base-lightest"></div> |
+| `.border-left-105` | 12px | <div class="border-left-105 square-8 bg-base-lightest"></div> |
+| `.border-left-2` | 16px | <div class="border-left-2 square-8 bg-base-lightest"></div> |
+| `.border-left-205` | 20px | <div class="border-left-205 square-8 bg-base-lightest"></div> |
+| `.border-left-3` | 24px | <div class="border-left-3 square-8 bg-base-lightest"></div> |
+
+
+#### Border on the right
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-right` | 1px | <div class="border-right square-8 bg-base-lightest"></div> |
+| `.border-right-0` | 0 | <div class="border-right-0 square-8 bg-base-lightest"></div> |
+| `.border-right-1px` | 1px | <div class="border-right-1px square-8 bg-base-lightest"></div> |
+| `.border-right-2px` | 2px | <div class="border-right-2px square-8 bg-base-lightest"></div> |
+| `.border-right-05` | 4px | <div class="border-right-05 square-8 bg-base-lightest"></div> |
+| `.border-right-1` | 8px | <div class="border-right-1 square-8 bg-base-lightest"></div> |
+| `.border-right-105` | 12px | <div class="border-right-105 square-8 bg-base-lightest"></div> |
+| `.border-right-2` | 16px | <div class="border-right-2 square-8 bg-base-lightest"></div> |
+| `.border-right-205` | 20px | <div class="border-right-205 square-8 bg-base-lightest"></div> |
+| `.border-right-3` | 24px | <div class="border-right-3 square-8 bg-base-lightest"></div> |
+
+
+#### Border on the left and right
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-x` | 1px | <div class="border-x square-8 bg-base-lightest"></div> |
+| `.border-x-0` | 0 | <div class="border-x-0 square-8 bg-base-lightest"></div> |
+| `.border-x-1px` | 1px | <div class="border-x-1px square-8 bg-base-lightest"></div> |
+| `.border-x-2px` | 2px | <div class="border-x-2px square-8 bg-base-lightest"></div> |
+| `.border-x-05` | 4px | <div class="border-x-05 square-8 bg-base-lightest"></div> |
+| `.border-x-1` | 8px | <div class="border-x-1 square-8 bg-base-lightest"></div> |
+| `.border-x-105` | 12px | <div class="border-x-105 square-8 bg-base-lightest"></div> |
+| `.border-x-2` | 16px | <div class="border-x-2 square-8 bg-base-lightest"></div> |
+| `.border-x-205` | 20px | <div class="border-x-205 square-8 bg-base-lightest"></div> |
+| `.border-x-3` | 24px | <div class="border-x-3 square-8 bg-base-lightest"></div> |
+
+
+#### Border on the top and bottom
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-y` | 1px | <div class="border-y square-8 bg-base-lightest"></div> |
+| `.border-y-0` | 0 | <div class="border-y-0 square-8 bg-base-lightest"></div> |
+| `.border-y-1px` | 1px | <div class="border-y-1px square-8 bg-base-lightest"></div> |
+| `.border-y-2px` | 2px | <div class="border-y-2px square-8 bg-base-lightest"></div> |
+| `.border-y-05` | 4px | <div class="border-y-05 square-8 bg-base-lightest"></div> |
+| `.border-y-1` | 8px | <div class="border-y-1 square-8 bg-base-lightest"></div> |
+| `.border-y-105` | 12px | <div class="border-y-105 square-8 bg-base-lightest"></div> |
+| `.border-y-2` | 16px | <div class="border-y-2 square-8 bg-base-lightest"></div> |
+| `.border-y-205` | 20px | <div class="border-y-205 square-8 bg-base-lightest"></div> |
+| `.border-y-3` | 24px | <div class="border-y-3 square-8 bg-base-lightest"></div> |
+
+
+### Border style
+CSS Property: `border-style`
+
+| Name | Preview |
+| ----------- | ----------- |
+| `.border.border-solid` | <div class="border border-solid square-8 bg-base-lightest"></div> |
+| `.border.border-dashed` | <div class="border border-dashed square-8 bg-base-lightest"></div> |
+| `.border.border-dotted` | <div class="border border-dotted square-8 bg-base-lightest"></div> |
+
+
+### Border style
+CSS Property: `border-width`
+
+**Note:** The `border-width` utilities apply only the `border-width` property to an item.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.border-width-0` | `0` |
+| `.border-width-1px` | `1px` |
+| `.border-width-2px` | `2px` |
+| `.border-width-05` | `4px` |
+| `.border-width-1` | `8px` |
+| `.border-width-105` | `12px` |
+| `.border-width-2` | `16px` |
+| `.border-width-205` | `20px` |
+| `.border-width-3` | `24px` |
+| `.border-top-width-0` | `0` |
+| `.border-top-width-1px` | `1px` |
+| `.border-top-width-2px` | `2px` |
+| `.border-top-width-05` | `4px` |
+| `.border-top-width-1` | `8px` |
+| `.border-top-width-105` | `12px` |
+| `.border-top-width-2` | `16px` |
+| `.border-top-width-205` | `20px` |
+| `.border-top-width-3` | `24px` |
+| `.border-bottom-width-0` | `0` |
+| `.border-bottom-width-1px` | `1px` |
+| `.border-bottom-width-2px` | `2px` |
+| `.border-bottom-width-05` | `4px` |
+| `.border-bottom-width-1` | `8px` |
+| `.border-bottom-width-105` | `12px` |
+| `.border-bottom-width-2` | `16px` |
+| `.border-bottom-width-205` | `20px` |
+| `.border-bottom-width-3` | `24px` |
+| `.border-left-width-0` | `0` |
+| `.border-left-width-1px` | `1px` |
+| `.border-left-width-2px` | `2px` |
+| `.border-left-width-05` | `4px` |
+| `.border-left-width-1` | `8px` |
+| `.border-left-width-105` | `12px` |
+| `.border-left-width-2` | `16px` |
+| `.border-left-width-205` | `20px` |
+| `.border-left-width-3` | `24px` |
+| `.border-right-width-0` | `0` |
+| `.border-right-width-1px` | `1px` |
+| `.border-right-width-2px` | `2px` |
+| `.border-right-width-05` | `4px` |
+| `.border-right-width-1` | `8px` |
+| `.border-right-width-105` | `12px` |
+| `.border-right-width-2` | `16px` |
+| `.border-right-width-205` | `20px` |
+| `.border-right-width-3` | `24px` |
+| `.border-x-width-0` | `0` |
+| `.border-x-width-1px` | `1px` |
+| `.border-x-width-2px` | `2px` |
+| `.border-x-width-05` | `4px` |
+| `.border-x-width-1` | `8px` |
+| `.border-x-width-105` | `12px` |
+| `.border-x-width-2` | `16px` |
+| `.border-x-width-205` | `20px` |
+| `.border-x-width-3` | `24px` |
+| `.border-y-width-0` | `0` |
+| `.border-y-width-1px` | `1px` |
+| `.border-y-width-2px` | `2px` |
+| `.border-y-width-05` | `4px` |
+| `.border-y-width-1` | `8px` |
+| `.border-y-width-105` | `12px` |
+| `.border-y-width-2` | `16px` |
+| `.border-y-width-205` | `20px` |
+| `.border-y-width-3` | `24px` |
+
+
+### Border color
+CSS Property: `border-color`
+
+| Preview | Name |
+| ----------- | ----------- |
+| <div class="square-3 radius-sm display-block border-1px border-transparent"></div> | `.border-transparent` |
+| <div class="square-3 radius-sm display-block border-1px border-black"></div> | `.border-black` |
+| <div class="square-3 radius-sm display-block border-1px border-white"></div> | `.border-white` |
+| <div class="square-3 radius-sm display-block border-1px border-base-lightest"></div> | `.border-base-lightest` |
+| <div class="square-3 radius-sm display-block border-1px border-base-lighter"></div> | `.border-base-lighter` |
+| <div class="square-3 radius-sm display-block border-1px border-base-light"></div> | `.border-base-light` |
+| <div class="square-3 radius-sm display-block border-1px border-base"></div> | `.border-base` |
+| <div class="square-3 radius-sm display-block border-1px border-base-dark"></div> | `.border-base-dark` |
+| <div class="square-3 radius-sm display-block border-1px border-base-darker"></div> | `.border-base-darker` |
+| <div class="square-3 radius-sm display-block border-1px border-base-darkest"></div> | `.border-base-darkest` |
+| <div class="square-3 radius-sm display-block border-1px border-ink"></div> | `.border-ink` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-lighter"></div> | `.border-primary-lighter` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-light"></div> | `.border-primary-light` |
+| <div class="square-3 radius-sm display-block border-1px border-primary"></div> | `.border-primary` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-vivid"></div> | `.border-primary-vivid` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-dark"></div> | `.border-primary-dark` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-darker"></div> | `.border-primary-darker` |
+| <div class="square-3 radius-sm display-block border-1px border-white"></div> | `.border-white` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-5"></div> | `.border-gray-5` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-10"></div> | `.border-gray-10` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-30"></div> | `.border-gray-30` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-50"></div> | `.border-gray-50` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-70"></div> | `.border-gray-70` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-90"></div> | `.border-gray-90` |
+| <div class="square-3 radius-sm display-block border-1px border-black"></div> | `.border-black` |
+| <div class="square-3 radius-sm display-block border-1px border-red"></div> | `.border-red` |
+| <div class="square-3 radius-sm display-block border-1px border-orange"></div> | `.border-orange` |
+| <div class="square-3 radius-sm display-block border-1px border-gold"></div> | `.border-gold` |
+| <div class="square-3 radius-sm display-block border-1px border-yellow"></div> | `.border-yellow` |
+| <div class="square-3 radius-sm display-block border-1px border-green"></div> | `.border-green` |
+| <div class="square-3 radius-sm display-block border-1px border-mint"></div> | `.border-mint` |
+| <div class="square-3 radius-sm display-block border-1px border-cyan"></div> | `.border-cyan` |
+| <div class="square-3 radius-sm display-block border-1px border-blue"></div> | `.border-blue` |
+| <div class="square-3 radius-sm display-block border-1px border-indigo"></div> | `.border-indigo` |
+| <div class="square-3 radius-sm display-block border-1px border-violet"></div> | `.border-violet` |
+| <div class="square-3 radius-sm display-block border-1px border-magenta"></div> | `.border-magenta` |
+
+
+### Border radius
+CSS Property: `border-radius`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.radius-0` | 0 | <div class="bg-secondary-light height-8 width-15 radius-0"></div> |
+| `.radius-sm` | 2px | <div class="bg-secondary-light height-8 width-15 radius-sm"></div> |
+| `.radius-md` | 4px | <div class="bg-secondary-light height-8 width-15 radius-md"></div> |
+| `.radius-lg` | 8px | <div class="bg-secondary-light height-8 width-15 radius-lg"></div> |
+| `.radius-pill` | 99rem | <div class="bg-secondary-light height-8 width-15 radius-pill"></div> |
+| `.radius-top-0` | 0 | <div class="bg-secondary-light height-8 width-15 radius-top-0"></div> |
+| `.radius-top-sm` | 2px | <div class="bg-secondary-light height-8 width-15 radius-top-sm"></div> |
+| `.radius-top-md` | 4px | <div class="bg-secondary-light height-8 width-15 radius-top-md"></div> |
+| `.radius-top-lg` | 8px | <div class="bg-secondary-light height-8 width-15 radius-top-lg"></div> |
+| `.radius-top-pill` | 99rem | <div class="bg-secondary-light height-8 width-15 radius-top-pill"></div> |
+| `.radius-bottom-0` | 0 | <div class="bg-secondary-light height-8 width-15 radius-bottom-0"></div> |
+| `.radius-bottom-sm` | 2px | <div class="bg-secondary-light height-8 width-15 radius-bottom-sm"></div> |
+| `.radius-bottom-md` | 4px | <div class="bg-secondary-light height-8 width-15 radius-bottom-md"></div> |
+| `.radius-bottom-lg` | 8px | <div class="bg-secondary-light height-8 width-15 radius-bottom-lg"></div> |
+| `.radius-bottom-pill` | 99rem | <div class="bg-secondary-light height-8 width-15 radius-bottom-pill"></div> |
+| `.radius-left-0` | 0 | <div class="bg-secondary-light height-8 width-15 radius-left-0"></div> |
+| `.radius-left-sm` | 2px | <div class="bg-secondary-light height-8 width-15 radius-left-sm"></div> |
+| `.radius-left-md` | 4px | <div class="bg-secondary-light height-8 width-15 radius-left-md"></div> |
+| `.radius-left-lg` | 8px | <div class="bg-secondary-light height-8 width-15 radius-left-lg"></div> |
+| `.radius-left-pill` | 99rem | <div class="bg-secondary-light height-8 width-15 radius-left-pill"></div> |
+| `.radius-right-0` | 0 | <div class="bg-secondary-light height-8 width-15 radius-right-0"></div> |
+| `.radius-right-sm` | 2px | <div class="bg-secondary-light height-8 width-15 radius-right-sm"></div> |
+| `.radius-right-md` | 4px | <div class="bg-secondary-light height-8 width-15 radius-right-md"></div> |
+| `.radius-right-lg` | 8px | <div class="bg-secondary-light height-8 width-15 radius-right-lg"></div> |
+| `.radius-right-pill` | 99rem | <div class="bg-secondary-light height-8 width-15 radius-right-pill"></div> |
+
+
+## Utility mixins 
+Utilities may be used in component Sass with **utility mixins**. Highlighted tokens are the USWDS design `tokens` that serve as the foundation for all design system styles. Each `token` is also a documentation link. Consult the **Design tokens section** for more information on tokens and how to use them in USWDS.
+
+| Utility | Mixin | Example |
+| ----------- | ----------- | ----------- |
+| .border-`units` | u-border(`units`) | @include u-border(2px) |
+| .border-`modifier`-`units` | u-border-`modifier`(`units`) | @include u-border-y(1) |
+| .border-`color` | u-border(`color`) | @include u-border('primary-vivid') |
+| .border-`style` | u-border(`modifier`) | @include u-border('dotted') |
+| .border-`radius` | u-border(`radius`) | @include u-border('sm') |
+| .border-`modifier`-`radius` | u-border-`modifier`(`radius`) | @include u-radius-left('pill') |
+
+### Using utility mixins
+- Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (`05`) values like `'05'`, `'105'`, and `'205'` which should be treated as strings.
+- String tokens for half values (`05`) and negative values (like `neg-1`)may also be written with their unquoted number token equivalent: `0.5`, `1.5`, `2.5`, `-1`, `-1.5`, etc
+- If multiple utilities share the same prefix (ex: `.text-` or `.flex-`) or a single utility accepts multiple kinds of values (ex: `.border` accepts both border weight and border color), their shared mixin can accept multiple comma-separated values: `u-text('primary-darkest', 'no-underline', 'bold')` or `u-border-top(2px, 'accent-warm')`.
+- Output any utility mixin as `!important` by appending `!important` to the mixin’s argument list: `u-bg('red-warm-50v', !important)`.
+
+
+## Advanced settings
+### Responsive variants
+Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+`.tablet:padding-y-2`
+
+**Output**
+```scss
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+```
+
+Set up which breakpoints are available to USWDS utilities by setting the `$theme-utility-breakpoints` variable in your **USWDS settings configuration**.
+
+| Breakpoint name | Width | Default |
+| ----------- | ----------- | ----------- |
+| card | 160px | false |
+| card-lg | 240px | false |
+| mobile | 320px | false |
+| mobile-lg | 480px | `true` |
+| tablet | 640px | `true` |
+| tablet-lg | 880px | false |
+| desktop | 1024px | `true` |
+| desktop-lg | 1200px | false |
+| widescreen | 1400px | false |
+
+Set whether a utility family outputs with responsive variants by setting the value of $[utility_family]-settings.responsive in your USWDS settings configuration. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+**Example**
+
+```scss
+  @use "uswds-core" with (
+    $background-color-settings: (
+      responsive: true
+    )
+  );
+```
+
+| Utility | Default |
+| ----------- | ----------- |
+| $border-settings.responsive | `true` |
+| $border-style-settings.responsive | `true` |
+| $border-width-settings.responsive | `true` |
+| $border-color-settings.responsive | `true` |
+| $border-radius-settings.responsive | `true` |
+
+
+### State variants
+Use a state prefix separated with a : to target a utility in a specific state.
+
+**Example**
+`.hover:bg-primary-vivid`
+
+**Output**
+`.hover\:bg-primary-vivid:hover { background-color: #0052de; }`
+
+Set whether a utility outputs a specific state variant by setting the value of the `$[utility_family]-settings.[state]` variable in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+**Example**
+```scss
+@use "uswds-core" with (
+  $background-color-settings: (
+    active: true
+  )
+);
+```
+
+| Utility variable | active | focus | hover | visited |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| $border-settings | false | false | `true` | false |
+| $border-style-settings | false | false | false | false |
+| $border-width-settings | false | false | false | false |
+| $border-color-settings | false | false | `true` | false |
+| $border-radius-settings | false | false | false | false |
+
+
+### Output control
+Control whether or not to output any USWDS utility family by setting the value of the `$[utility_family]-settings.output` variable in your **USWDS settings configuration**.
+
+A value of `true` will output the utility family and any variants. A value of `false` prevents the output of the family and any variants.
+
+| Utility variable | Default |
+| ----------- | ----------- |
+| $border-settings.output | `true` |
+| $border-style-settings.output | `true` |
+| $border-width-settings.output | `true` |
+| $border-color-settings.output | `true` |
+| $border-radius-settings.output | `true` |
+
+
+### Custom values
+By default, USWDS utilities output the standard values listed in the **standard output table**. Customize and refine any utility family’s specific values by editing the `$[utility_family]-manual-values and $[utility_family]-palettes` variables in your **USWDS settings configuration**.
+
+#### Manual values
+Specify manual values as unique `key:value` pairs using the `$[utility_family]-manual-values` map, where the key is the utility’s value suffix, and the `value` is what the utility will output.
+
+**Example**
+```scss
+$width-manual-values: (
+  'tab': 4ch,
+);
+```
+
+**Output**
+`.width-tab { width: 4ch; }`
+
+#### Palettes
+Palettes are predefined groups of values. Add palettes to the `$[utility_family]-palettes` list variable in your **USWDS settings configuration** to add those values to the utility family.
+
+**Example**
+```scss
+$border-color-palettes: (
+  'palette-color-blue-warm-medium-vivid' // note: no trailing comma
+);
+```
+
+**Output**
+```scss
+.border-blue-warm-40v { border-color: #5E99FF; }
+.border-blue-warm-50v { border-color: #2673DF; }
+.border-blue-warm-60v { border-color: #0052DE; }
+```
+
+#### Default palettes
+| Palette name | Palette contents |
+| ----------- | ----------- |
+| 'palette-border-default' | border default tokens |
+| 'palette-border-style-default' | border-style default tokens |
+| 'palette-border-width-default' | border-width default tokens |
+| 'palette-border-color-default' | border-color default tokens |
+| 'palette-border-radius-default' | border-radius default tokens |
+
+#### Spacing and units
+| Palette name | Palette contents |
+| ----------- | ----------- |
+| 'palette-units' | All spacing unit tokens (system, ch, em, percentage) |
+| 'palette-units-system' | All system spacing unit tokens |
+| 'palette-units-system-breakpoints' | All named spacing unit tokens: card, card-lg, mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, widescreen |
+| 'palette-units-system-positive' | All positive spacing unit tokens |
+| 'palette-units-system-positive-smaller' | 1px, 2px |
+| 'palette-units-system-positive-small' | 05, 1, 105, 2, 205, 3 |
+| 'palette-units-system-positive-medium' | 4, 5, 6, 7, 8, 9, 10, 15 |
+| 'palette-units-system-positive-large' | card, card-lg, mobile |
+| 'palette-units-system-positive-larger' | mobile-lg, tablet, tablet-lg |
+| 'palette-units-system-positive-largest' | desktop, desktop-lg, widescreen |
+| 'palette-units-system-negative' | All negative spacing values |
+| 'palette-units-system-negative-smaller' | neg-1px, neg-2px |
+| 'palette-units-system-negative-small' | neg-05, neg-1, neg-105, neg-2, neg-205, neg-3 |
+| 'palette-units-ch' | 05ch, 1ch, 105ch, 2ch, 3ch, 4ch, 5ch, neg-05ch, neg-1ch, neg-105ch, neg-2ch, neg-3ch, neg-4ch, neg-5ch |
+| 'palette-units-ch-positive' | 05ch, 1ch, 105ch, 2ch, 3ch, 4ch, 5ch |
+| 'palette-units-ch-negative' | neg-05ch, neg-1ch, neg-105ch, neg-2ch, neg-3ch, neg-4ch, neg-5ch |
+| 'palette-units-em' | 05em, 1em, 105em, 2em, 3em, 4em, 5em, 6em, 7em, 8em, 9em, 10em |
+| 'palette-units-percentage' | 10ct, 20ct, 25ct, 30ct, 33ct, 40ct, 50ct, 60ct, 66ct, 75ct, 80ct, 90ct, 100ct |
+| 'palette-units-0' | 0 | 
+
+
+#### Color palettes 
+In the following table, `family` indicates a specific unquoted system color family token (like `blue-warm`) as documented on the **system color tokens page**.
+
+| Palette name | Palette contents |
+| ----------- | ----------- |
+| 'palette-color' | All color tokens |
+| 'palette-color-default' | System default color tokens |
+| 'palette-color-theme' | All **theme color tokens** |
+| 'palette-color-state' | All **state color tokens** |
+| 'palette-color-grayscale' | gray-5, gray-10, gray-30, gray-50, gray-70, gray-90 |
+| 'palette-color-basic' | All basic colors |
+| 'palette-color-system' | All grades in **all system color tokens** |
+| 'palette-color-system-`family`' | All grades in the specified family |
+| 'palette-color-system-`family`-light' | Grades 5, 10, 20, 30 |
+| 'palette-color-system-`family`-light-vivid' | Grades 5v, 10v, 20v, 30v |
+| 'palette-color-system-`family`-medium' | Grades 40, 50, 60 |
+| 'palette-color-system-`family`-medium-vivid' | Grades 40v, 50v, 60v |
+| 'palette-color-system-`family`-dark' | Grades 70, 80, 90 |
+| 'palette-color-system-`family`-dark-vivid' | Grades 70v, 80v, 90v |
+| 'palette-color-system-`family`-standard' | Grades 5, 10, 20, 30, 40, 50, 60, 70, 80, 90 |
+| 'palette-color-system-`family`-vivid' | Grades 5v, 10v, 20v, 30v, 40v, 50v, 60v, 70v, 80v, 90v |

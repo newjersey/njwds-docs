@@ -1,0 +1,660 @@
+---
+title: Display
+description: Control the position and display characteristics of an item
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+CSS Properties: `bottom` `display` `left` `opacity` `overflow` `position` `right` `top` `z-index`
+
+##Examples and usage
+Utilities, values, and variants may be activated and deactivated in **advanced settings**.
+
+### Display 
+CSS Property: `display`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.display-block` | block | <div class="display-block bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3"></div> |
+| `.display-flex` | flex | <div class="display-flex bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3"></div> |
+| `.display-inline` | inline | <div class="display-inline bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3"></div> |
+| `.display-inline-block` | inline-block | <div class="display-inline-block bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3"></div> |
+| `.display-inline-flex` | inline-flex | <div class="display-inline-flex bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3"></div> |
+| `.display-none` | none |   |
+| `.display-table-cell` | table-cell | <div class="display-table-cell bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3"></div> |
+
+#### Code 
+```html 
+<div class="display-block border-1px ...">.display-block</div>
+<div class="display-flex border-1px ...">.display-flex</div>
+<div class="display-inline border-1px ...">.display-inline</div>
+<div class="display-inline-block border-1px ...">.display-inline-block</div>
+<div class="display-inline-flex border-1px ...">.display-inline-flex</div>
+<div class="display-none ...">.display-none</div>
+<div class="display-table">
+  <div class="display-table-row">
+    <div class="display-table-cell border-1px ...">.display-table-cell</div>
+    <div class="display-table-cell border-1px ...">.display-table-cell</div>
+  </div>
+</div>
+```
+
+### Opacity 
+CSS Property: `opacity`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.opacity-0` | 0 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-0 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-0 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-10` | 0.1 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-10 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-10 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-20` | 0.2 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-20 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-20 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-30` | 0.3 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-30 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-30 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-40` | 0.4 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-40 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-40 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-50` | 0.5 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-50 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-50 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-60` | 0.6 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-60 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-60 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-70` | 0.7 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-70 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-70 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-80` | 0.8 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-80 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-80 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-90` | 0.9 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-90 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-90 height-05 bg-black radius-right-pill"></div></div> |
+| `.opacity-100` | 1 | <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center"><div class="grid-col opacity-100 height-05 bg-white radius-left-pill"></div><div class="grid-col opacity-100 height-05 bg-black radius-right-pill"></div></div> |
+
+
+### Overflow 
+CSS Property: `overflow`
+
+**Note:** **Per the W3C overflow spec:** The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.
+
+Any element that includes scrollable content must also be selectable with the keyboard. Add a `tabindex="0"` property to elements that include scrollable content.
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.overflow-visible` | visible | <div class="overflow-visible square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-x-visible` | visible | <div class="overflow-x-visible square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-y-visible` | visible | <div class="overflow-y-visible square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-hidden` | hidden | <div class="overflow-hidden square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-x-hidden` | hidden | <div class="overflow-x-hidden square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-y-hidden` | hidden | <div class="overflow-y-hidden square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-scroll` | scroll | <div class="overflow-scroll square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-x-scroll` | scroll | <div class="overflow-x-scroll square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-y-scroll` | scroll | <div class="overflow-y-scroll square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-auto` | auto | <div class="overflow-auto square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-x-auto` | auto | <div class="overflow-x-auto square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+| `.overflow-y-auto` | auto | <div class="overflow-y-auto square-card border-1px border-secondary-light padding-2 margin-y-1"><div class="square-card bg-primary-lighter"></div></div> |
+
+
+### Position 
+CSS Property: `position` 
+
+| Name | 
+| ----------- |
+| .position-absolute |
+| .position-fixed |
+| .position-relative |
+| .position-static |
+| .position-sticky |
+
+#### Example: Relative, static, and absolute positioning
+
+<div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
+  <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink">
+    <p class="margin-0 font-lang-2xs text-ink">
+      <span class="utility-class text-ink">.position-static</span>
+    </p>
+    <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink">
+      <p class="margin-0 font-lang-2xs">
+        <span class="utility-class">.position-absolute</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
+  <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink">
+    <p class="margin-0 font-lang-2xs text-ink">
+      <span class="utility-class text-ink">.position-static</span>
+    </p>
+    <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink">
+      <p class="margin-0 font-lang-2xs">
+        <span class="utility-class">.position-absolute</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+##### Code 
+```html
+<div class="position-relative">
+  <div class="position-static">
+    <div class="position-absolute bottom-0 left-0">
+      .position-absolute
+    </div>
+  </div>
+</div>
+
+<div class="position-relative">
+  <div class="position-relative">
+    <div class="position-absolute bottom-0 left-0">
+      .position-absolute
+    </div>
+  </div>
+</div>
+```
+
+#### Example: Fixed positioning 
+<div class="radius-md overflow-hidden margin-y-2 border-1px border-secondary-light">
+  <div class="position-relative height-mobile">
+    <span class="utility-class">.position-fixed</span>
+  </div>
+  <div class="position-absolute pin-all overflow-auto padding-top-7 padding-x-3 text-ink">
+    <div class="measure-6">
+      <p class="text-ink">
+        <span class="display-inline-block bg-ink text-white padding-x-1 font-lang-2xs text-bold">Scroll me!           </span>
+      </p>
+      <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+      <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+      <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+      <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+      <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+    </div>
+  </div>
+</div>
+
+##### Code 
+```html
+<div class="position-relative">
+  <div class="position-fixed pin-top bg-secondary-light">
+    .position-fixed
+  </div>
+</div>
+```
+
+#### Example: Sticky positioning 
+
+<div class="height-mobile position-relative overflow-hidden border border-secondary-light radius-md">
+  <div class="pin-all overflow-scroll padding-x-2">
+    <div>
+      <div class="position-sticky top-0 bg-secondary-light padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">
+        Sticky Heading 1 
+        <span class="utility-class text-normal">
+        .position-sticky
+        </span>
+      </div>
+      <p class="text-ink padding-x-2">
+        <span class="display-inline-block bg-ink text-white padding-x-1 font-lang-2xs text-bold">Scroll me!
+        </span>
+      </p>  
+      <p class="line-height-sans-6 padding-x-2">
+        Thish-yer Smiley had a mare the boys called her the fifteen- minute nag, but that was only in fun, you know, because, of course, she was faster than that and he used to win money on that horse, for all she was so slow and always had the asthma, or the distemper, or the consumption, or something of that kind. They used to give her two or three hundred yards start, and then pass her under way; but always at the fag-end of the race she'd get excited and desperate- like, and come cavorting and straddling up, and scattering her legs around limber, sometimes in the air, and sometimes out to one side amongst the fences, and kicking up m-o-r-e dust, and raising m-o-r-e racket with her coughing and sneezing and blowing her nose and always fetch up at the stand just about a neck ahead, as near as you could cipher it down.
+      </p>
+    </div>
+    <div>
+      <div class="position-sticky top-0 bg-secondary-light padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">
+        Sticky Heading 1 
+        <span class="utility-class text-normal">
+        .position-sticky
+        </span>
+      </div>
+      <p class="text-ink padding-x-2">
+        <span class="display-inline-block bg-ink text-white padding-x-1 font-lang-2xs text-bold">Scroll me!
+        </span>
+      </p>  
+      <p class="line-height-sans-6 padding-x-2">
+        Thish-yer Smiley had a mare the boys called her the fifteen- minute nag, but that was only in fun, you know, because, of course, she was faster than that and he used to win money on that horse, for all she was so slow and always had the asthma, or the distemper, or the consumption, or something of that kind. They used to give her two or three hundred yards start, and then pass her under way; but always at the fag-end of the race she'd get excited and desperate- like, and come cavorting and straddling up, and scattering her legs around limber, sometimes in the air, and sometimes out to one side amongst the fences, and kicking up m-o-r-e dust, and raising m-o-r-e racket with her coughing and sneezing and blowing her nose and always fetch up at the stand just about a neck ahead, as near as you could cipher it down.
+      </p>
+    </div>
+    <div>
+      <div class="position-sticky top-0 bg-secondary-light padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">
+        Sticky Heading 1 
+        <span class="utility-class text-normal">
+        .position-sticky
+        </span>
+      </div>
+      <p class="text-ink padding-x-2">
+        <span class="display-inline-block bg-ink text-white padding-x-1 font-lang-2xs text-bold">Scroll me!
+        </span>
+      </p>  
+      <p class="line-height-sans-6 padding-x-2">
+        Thish-yer Smiley had a mare the boys called her the fifteen- minute nag, but that was only in fun, you know, because, of course, she was faster than that and he used to win money on that horse, for all she was so slow and always had the asthma, or the distemper, or the consumption, or something of that kind. They used to give her two or three hundred yards start, and then pass her under way; but always at the fag-end of the race she'd get excited and desperate- like, and come cavorting and straddling up, and scattering her legs around limber, sometimes in the air, and sometimes out to one side amongst the fences, and kicking up m-o-r-e dust, and raising m-o-r-e racket with her coughing and sneezing and blowing her nose and always fetch up at the stand just about a neck ahead, as near as you could cipher it down.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+##### Code 
+```html
+<div class="position-relative overflow-scroll">
+  <div>
+    <div class="position-sticky bg-secondary-light">Sticky Heading 1</div>
+    <p>...</p>
+  </div>
+  <div>
+    <div class="position-sticky bg-gold">Sticky Heading 2</div>
+    <p>...</p>
+  </div>
+  <div>
+    <div class="position-sticky bg-yellow">Sticky Heading 3</div>
+    <p>...</p>
+  </div>
+  <div>
+    <div class="position-sticky bg-orange">Sticky Heading 4</div>
+    <p>...</p>
+  </div>
+</div>
+```
+
+### Relative position 
+CSS Property: `top`, `bottom`, `left`, `right`
+
+| Name | Value |
+| ----------- | ----------- |
+| `.top-auto` | auto |
+| `.top-neg-3` | -24px |
+| `.top-neg-205` | -20px |
+| .top-neg-2 | -16px |
+| .top-neg-105 | -12px |
+| .top-neg-1 | -8px |
+| .top-neg-05 | -4px |
+| .top-neg-2px | -2px |
+| .top-neg-1px | -1px |
+| .top-0 | 0 |
+| .top-1px | 1px |
+| .top-2px | 2px |
+| .top-05 | 4px |
+| .top-1 | 8px |
+| .top-105 | 12px |
+| .top-2 | 16px |
+| .top-205 | 20px |
+| .top-3 | 24px |
+| .top-full | 100% |
+| .right-auto | auto |
+| .right-neg-3 | -24px |
+| .right-neg-205 | -20px |
+| .right-neg-2 | -16px |
+| .right-neg-105 | -12px |
+| .right-neg-1 | -8px |
+| .right-neg-05 | -4px |
+| .right-neg-2px | -2px |
+| .right-neg-1px | -1px |
+| .right-0 | 0 |
+| .right-1px | 1px |
+| .right-2px | 2px |
+| .right-05 | 4px |
+| .right-1 | 8px |
+| .right-105 | 12px |
+| .right-2 | 16px |
+| .right-205 | 20px |
+| .right-3 | 24px |
+| .right-full | 100% |
+| .bottom-auto | auto |
+| .bottom-neg-3 | -24px |
+| .bottom-neg-205 | -20px |
+| .bottom-neg-2 | -16px |
+| .bottom-neg-105 | -12px |
+| .bottom-neg-1 | -8px |
+| .bottom-neg-05 | -4px |
+| .bottom-neg-2px | -2px |
+| .bottom-neg-1px | -1px |
+| .bottom-0 | 0 |
+| .bottom-1px | 1px |
+| .bottom-2px | 2px |
+| .bottom-05 | 4px |
+| .bottom-1 | 8px |
+| .bottom-105 | 12px |
+| .bottom-2 | 16px |
+| .bottom-205 | 20px |
+| .bottom-3 | 24px |
+| .bottom-full | 100% |
+| .left-auto | auto |
+| .left-neg-3 | -24px |
+| .left-neg-205 | -20px |
+| .left-neg-2 | -16px |
+| .left-neg-105 | -12px |
+| .left-neg-1 | -8px |
+| .left-neg-05 | -4px |
+| .left-neg-2px | -2px |
+| .left-neg-1px | -1px |
+| .left-0 | 0 |
+| .left-1px | 1px |
+| .left-2px | 2px |
+| .left-05 | 4px |
+| .left-1 | 8px |
+| .left-105 | 12px |
+| .left-2 | 16px |
+| .left-205 | 20px |
+| .left-3 | 24px |
+| .left-full | 100% |
+
+
+### Pin 
+The `pin` utilities position an item absolutely to the specified side.
+
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-top bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-top</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-bottom bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-bottom</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-left bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-left</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-right bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-right</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-x bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-x</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-y bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-y</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-all bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-all</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-none bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-none</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-top.pin-x bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-top.pin-x</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-bottom.pin-x bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-bottom.pin-x</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-left.pin-y bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-left.pin-y</span>
+    </div> 
+  </div>
+</div>
+<div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+  <div class="pin-right.pin-y bg-secondary-light padding-2 text-ink">
+    <div class="margin-0 font-lang-2xs">
+      <span class="utility-class">.pin-right.pin-y</span>
+    </div> 
+  </div>
+</div>
+
+### Z-index 
+CSS Property: `z-index` 
+
+<section class="utility-examples position-relative padding-bottom-1">
+  <div class="bg-white border border-ink radius-lg width-card-lg padding-2  minh-10 margin-left-0 display-flex flex-justify flex-align-start z-auto">
+    <span class="utility-class">.z-auto</span>
+     <span class="utility-value">auto</span>
+  </div>
+  <div class="bg-white border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-top position-relative shadow-3">
+    <span class="utility-class">.z-top</span>
+     <span class="utility-value">99999</span>
+  </div>
+  <div class="bg-gray-1 border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-500 position-relative shadow-3">
+    <span class="utility-class">.z-500</span>
+     <span class="utility-value">500</span>
+  </div>
+  <div class="bg-gray-10 border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-400 position-relative shadow-3">
+    <span class="utility-class">.z-400</span>
+     <span class="utility-value">400</span>
+  </div>
+  <div class="bg-gray-30 border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-300 position-relative shadow-3">
+    <span class="utility-class">.z-300</span>
+     <span class="utility-value">300</span>
+  </div>
+  <div class="bg-gray-50 border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-200 position-relative shadow-3">
+    <span class="utility-class">.z-200</span>
+     <span class="utility-value">200</span>
+  </div>
+  <div class="bg-gray-70 border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-100 position-relative shadow-3">
+    <span class="utility-class">.z-100</span>
+     <span class="utility-value">100</span>
+  </div>
+  <div class="bg-gray-90 border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-0 position-relative shadow-3">
+    <span class="utility-class">.z-0</span>
+     <span class="utility-value">0</span>
+  </div>
+  <div class="bg-black border border-ink radius-lg width-card-lg padding-2 padding-top-5 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-neg-3 z-bottom position-relative shadow-3">
+    <span class="utility-class">.z-bottom</span>
+     <span class="utility-value">-100</span>
+  </div>
+</section>
+
+
+## Utility mixins
+Utilities may be used in component Sass with **utility mixins**. Highlighted `tokens` are the USWDS design tokens that serve as the foundation for all design system styles. Each `token` is also a documentation link. Consult the **Design tokens section** for more information on tokens and how to use them in USWDS.
+
+| Utility | Mixin | Example |
+| ----------- | ----------- | ----------- |
+| .display-value | u-display(value) | @include u-display('block') |
+| .opacity-opacity | u-opacity(opacity) | @include u-opacity(0) |
+| .overflow-modifier-value | u-overflow-modifier(value) | @include u-overflow-x('hidden') |
+| .position-value | u-position(value) | @include u-position('relative') |
+| .bottom-units | u-bottom(units) | @include u-bottom('auto') |
+| .left-units | u-left(units) | @include u-left(-2px) |
+| .right-units | u-right(units) | @include u-right('full') |
+| .top-units | u-top(units) | @include u-top('05') |
+| .pin-value | u-pin-value | @include u-pin-x |
+
+### Using utility mixins
+- Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (`05`) values like `'05'`, `'105'`, and `'205'` which should be treated as strings.
+- String tokens for half values (`05`) and negative values (like `neg-1`)may also be written with their unquoted number token equivalent: `0.5`, `1.5`, `2.5`, `-1`, `-1.5`, etc
+- If multiple utilities share the same prefix (ex: `.text-` or `.flex-`) or a single utility accepts multiple kinds of values (ex: `.border` accepts both border weight and border color), their shared mixin can accept multiple comma-separated values: `u-text('primary-darkest', 'no-underline', 'bold')` or `u-border-top(2px, 'accent-warm')`.
+- Output any utility mixin as `!important` by appending `!important` to the mixin’s argument list: `u-bg('red-warm-50v', !important)`.
+
+
+## Advanced settings
+### Responsive variants
+Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+`.tablet:padding-y-2`
+
+**Output**
+```scss
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+```
+
+Set up which breakpoints are available to USWDS utilities by setting the `$theme-utility-breakpoints` variable in your **USWDS settings configuration**.
+
+| Breakpoint name | Width | Default |
+| ----------- | ----------- | ----------- |
+| card | 160px | false |
+| card-lg | 240px | false |
+| mobile | 320px | false |
+| mobile-lg | 480px | true |
+| tablet | 640px | true |
+| tablet-lg | 880px | false |
+| desktop | 1024px | true |
+| desktop-lg | 1200px | false |
+| widescreen | 1400px | false |
+
+Set whether a utility family outputs with responsive variants by setting the value of `$[utility_family]-settings.responsive` in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+**Example**
+```scss
+  @use "uswds-core" with (
+    $background-color-settings: (
+      responsive: true
+    )
+  );
+```     
+| Breakpoint name | Width |
+| ----------- | ----------- |
+| $display-settings.responsive | true |
+| $opacity-settings.responsive | false |
+| $overflow-settings.responsive | false |
+| $position-settings.responsive | false |
+| $bottom-settings.responsive | false |
+| $left-settings.responsive | false |
+| $right-settings.responsive | false |
+| $top-settings.responsive | false |
+| $pin-settings.responsive | false |
+| $z-index-settings.responsive | false |
+
+### State variants
+Use a state prefix separated with a `:` to target a utility in a specific state.
+
+**Example**
+`.hover:bg-primary-vivid`
+
+**Output**
+`.hover\:bg-primary-vivid:hover { background-color: #0052de; }`
+
+Set whether a utility outputs a specific state variant by setting the value of the `$[utility_family]-settings.[state]` variable in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+Example
+@use "uswds-core" with (
+  $background-color-settings: (
+    active: true
+  )
+);
+
+| Utility variable | active | focus | hover | visited |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| $display-settings | false | false | false | false |
+| $opacity-settings | false | false | false | false |
+| $overflow-settings | false | false | false | false |
+| $position-settings | false | false | false | false |
+| $bottom-settings | false | false | false | false |
+| $left-settings | false | false | false | false |
+| $right-settings | false | false | false | false |
+| $top-settings | false | false | false | false |
+| $pin-settings | false | false | false | false |
+| $z-index-settings | false | false | false | false |
+
+### Output control
+Control whether or not to output any USWDS utility family by setting the value of the `$[utility_family]-settings.output` variable in your **USWDS settings configuration**.
+
+A value of `true` will output the utility family and any variants. A value of `false` prevents the output of the family and any variants.
+
+| Utility variable | Default |
+| ----------- | ----------- |
+| $display-settings.output | true |
+| $opacity-settings.output | true |
+| $overflow-settings.output | true |
+| $position-settings.output | true |
+| $bottom-settings.output | true |
+| $left-settings.output | true |
+| $right-settings.output | true |
+| $top-settings.output | true |
+| $pin-settings.output | true |
+| $z-index-settings.output | true |
+
+### Custom values
+By default, USWDS utilities output the standard values listed in the **standard output table**. Customize and refine any utility family’s specific values by editing the `$[utility_family]-manual-values` and `$[utility_family]-palettes` variables in your **USWDS settings configuration**.
+
+#### Manual values
+Specify manual values as unique `key:value` pairs using the `$[utility_family]-manual-values` map, where the `key` is the utility’s value suffix, and the `value` is what the utility will output.
+
+**Example**
+```scss
+$width-manual-values: (
+  'tab': 4ch,
+);
+```
+
+**Output**
+`.width-tab { width: 4ch; }`
+
+#### Palettes
+Palettes are predefined groups of values. Add palettes to the `$[utility_family]-palettes` list variable in your **USWDS settings configuration** to add those values to the utility family.
+
+**Example**
+```scss
+$top-palettes: (
+  'palette-units-system-smaller',
+  'palette-units-system-smaller-negative', // note: no trailing comma
+);
+```
+
+**Output**
+```scss
+.top-1px     { margin: 1px; }
+.top-2px     { margin: 2px; }
+.top-neg-1px { margin: -1px; }
+.top-neg-2px { margin: -2px; }
+```
+
+#### Default palettes
+| Palette name | Palette contents |
+| ----------- | ----------- |
+| 'palette-display-default' | display default tokens |
+| 'palette-opacity-default' | opacity default tokens |
+| 'palette-overflow-default' | overflow default tokens |
+| 'palette-position-default' | position default tokens |
+| 'palette-bottom-default' | bottom default tokens |
+| 'palette-left-default' | left default tokens |
+| 'palette-right-default' | right default tokens |
+| 'palette-top-default' | top default tokens |
+| 'palette-pin-default' | pin default tokens |
+| 'palette-z-index-default' | z-index default tokens |
+
+#### Spacing and units
+| Palette name | Palette contents |
+| ----------- | ----------- |
+| 'palette-units' | All spacing unit tokens (system, ch, em, percentage) |
+| 'palette-units-system' | All system spacing unit tokens |
+| 'palette-units-system-breakpoints' | All named spacing unit tokens: card, card-lg, mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, widescreen |
+| 'palette-units-system-positive' | All positive spacing unit tokens |
+| 'palette-units-system-positive-smaller' | 1px, 2px |
+| 'palette-units-system-positive-small' | 05, 1, 105, 2, 205, 3 |
+| 'palette-units-system-positive-medium' | 4, 5, 6, 7, 8, 9, 10, 15 |
+| 'palette-units-system-positive-large' | card, card-lg, mobile |
+| 'palette-units-system-positive-larger' | mobile-lg, tablet, tablet-lg |
+| 'palette-units-system-positive-largest' | desktop, desktop-lg, widescreen |
+| 'palette-units-system-negative' | All negative spacing values |
+| 'palette-units-system-negative-smaller' | neg-1px, neg-2px |
+| 'palette-units-system-negative-small' | neg-05, neg-1, neg-105, neg-2, neg-205, neg-3 |
+| 'palette-units-ch' | 05ch, 1ch, 105ch, 2ch, 3ch, 4ch, 5ch, neg-05ch, neg-1ch, neg-105ch, neg-2ch, neg-3ch, neg-4ch, neg-5ch |
+| 'palette-units-ch-positive' | 05ch, 1ch, 105ch, 2ch, 3ch, 4ch, 5ch |
+| 'palette-units-ch-negative' | neg-05ch, neg-1ch, neg-105ch, neg-2ch, neg-3ch, neg-4ch, neg-5ch |
+| 'palette-units-em' | 05em, 1em, 105em, 2em, 3em, 4em, 5em, 6em, 7em, 8em, 9em, 10em |
+| 'palette-units-percentage' | 10ct, 20ct, 25ct, 30ct, 33ct, 40ct, 50ct, 60ct, 66ct, 75ct, 80ct, 90ct, 100ct |
+| 'palette-units-0' | 0 |
+
