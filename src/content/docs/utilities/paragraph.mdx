@@ -1,6 +1,6 @@
 ---
 title: Paragraph styles
-description: TBD
+description: Change the appearance of a block of text.
 ---
 
 import { STORYBOOK_BASE_URL } from '@config/storybook';
@@ -11,4 +11,277 @@ import { LinkButton } from '@astrojs/starlight/components';
   description={frontmatter.description}
   wcagBadge={false} />
 
-Paragraph styles content here.
+CSS Properties: `line-height` `max-width` `text-align` `text-indent`
+
+## Examples and usage
+Utilities, values, and variants may be activated and deactivated in **advanced settings**.
+
+### Line height
+CSS property: `line-height`
+
+#### line-height-mono
+(Shown: Roboto Mono) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.line-height-mono-1` | 1.05 | <p class="font-mono-md line-height-mono-1 margin-top-0 text-bold>Mark Twain</p>  |
+| `.line-height-mono-2` | 1.21 | <p class="font-mono-md line-height-mono-2 margin-top-0 text-bold>The Celebrated Jumping Frog of Calaveras County</p>  |
+| `.line-height-mono-3` | 1.42 | <p class="font-mono-md line-height-mono-3 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-mono-4` | 1.57 | <p class="font-mono-md line-height-mono-4 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-mono-5` | 1.7 | <p class="font-mono-md line-height-mono-5 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-mono-6` | 1.84 | <p class="font-mono-md line-height-mono-6 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+
+#### line-height-sans
+(Shown: Source Sans Pro) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.line-height-sans-1` | 0.94 | <p class="font-sans-md line-height-sans-1 margin-top-0 text-bold>Mark Twain</p>  |
+| `.line-height-sans-2` | 1.08 | <p class="font-sans-md line-height-sans-2 margin-top-0 text-bold>The Celebrated Jumping Frog of Calaveras County</p>  |
+| `.line-height-sans-3` | 1.27 | <p class="font-sans-md line-height-sans-3 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-sans-4` | 1.41 | <p class="font-sans-md line-height-sans-4 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-sans-5` | 1.52 | <p class="font-sans-md line-height-sans-5 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-sans-6` | 1.64 | <p class="font-sans-md line-height-sans-6 margin-top-0 text-bold>In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+
+
+#### line-height-serif
+(Shown: Merriweather) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.line-height-serif-1` | 1.02 | <p class="font-serif-md line-height-serif-1 margin-top-0 text-bold">Mark Twain</p>  |
+| `.line-height-serif-2` | 1.18 | <p class="font-serif-md line-height-serif-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>  |
+| `.line-height-serif-3` | 1.38 | <p class="font-serif-md line-height-serif-3 margin-top-0 text-bold">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-serif-4` | 1.54 | <p class="font-serif-md line-height-serif-4 margin-top-0 text-bold">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-serif-5` | 1.66 | <p class="font-serif-md line-height-serif-5 margin-top-0 text-bold">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.line-height-serif-6` | 1.79 | <p class="font-serif-md line-height-serif-6 margin-top-0 text-bold">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+
+
+### Measure
+CSS Property: `max-width`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.measure-1` | 44ex | <p class="font-serif-md line-height-serif-4 margin-top-0 measure-1 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.measure-2` | 60ex | <p class="font-serif-md line-height-serif-4 margin-top-0 measure-2 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.measure-3` | 64ex | <p class="font-serif-md line-height-serif-4 margin-top-0 measure-3 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.measure-4` | 68ex | <p class="font-serif-md line-height-serif-4 margin-top-0 measure-4 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.measure-5` | 72ex | <p class="font-serif-md line-height-serif-4 margin-top-0 measure-5 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.measure-6` | 88ex | <p class="font-serif-md line-height-serif-4 margin-top-0 measure-6 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.measure-none` | none | <p class="font-serif-md line-height-serif-4 margin-top-0 measure-none border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+
+
+### Text alignment
+CSS Property: `text-align`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.text-left` | left | <p class="font-serif-2xs line-height-serif-4 margin-top-0 measure-4 text-left">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-center` | center | <p class="font-serif-2xs line-height-serif-4 margin-top-0 measure-4 text-center">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-right` | right | <p class="font-serif-2xs line-height-serif-4 margin-top-0 measure-4 text-right">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-justify` | justify | <p class="font-serif-2xs line-height-serif-4 margin-top-0 measure-4 text-justify">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+
+
+### Text indent
+CSS Property: `text-indent`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.text-indent-neg-9` | -72px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-8` | -64px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-7` | -56px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-6` | -48px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-5` | -40px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-3` | -24px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-205` | -20px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-2` | -16px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-105` | -12px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-1` | -8px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-05` | -4px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-2px` | -2px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-2px">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-neg-1px` | -1px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-1px">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-0` | 0 | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-1px` | 1px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-1px">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-2px` | 2px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-2px">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-05` | 42px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-1` | 8px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-105` | 12px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-2` | 16px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-205` | 20px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-3` | 24px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-4` | 32px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-5` | 40px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-6` | 48px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-7` | 56px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-8` | 64px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+| `.text-indent-9` | 72px | <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>  |
+
+
+## Utility mixins
+Utilities may be used in component Sass with **utility mixins**. Highlighted `tokens` are the USWDS design tokens that serve as the foundation for all design system styles. Each `token` is also a documentation link. Consult the **Design tokens section** for more information on tokens and how to use them in USWDS.
+
+| Utility | Mixin | Example |
+| ----------- | ----------- | ----------- |
+| .line-height-`family-line-height` | u-line-height(`family`, `line-height`) | @include u-line-height('heading', 2) |
+| .measure-`measure` | u-measure(`measure`) | @include u-measure(6) |
+| .text-`alignment` | u-text('`alignment`') | @include u-text('right') |
+| .text-indent-`units` | u-text-indent(`units`) | @include u-text-indent(-4) |
+
+### Using utility mixins
+- Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (`05`) values like `'05'`, `'105'`, and `'205'` which should be treated as strings.
+- String tokens for half values (`05`) and negative values (like `neg-1`)may also be written with their unquoted number token equivalent: `0.5`, `1.5`, `2.5`, `-1`, `-1.5`, etc
+- If multiple utilities share the same prefix (ex: `.text-` or `.flex-`) or a single utility accepts multiple kinds of values (ex: `.border` accepts both border weight and border color), their shared mixin can accept multiple comma-separated values: `u-text('primary-darkest', 'no-underline', 'bold')` or `u-border-top(2px, 'accent-warm')`.
+- Output any utility mixin as `!important` by appending `!important` to the mixin’s argument list: `u-bg('red-warm-50v', !important)`.
+
+
+## Advanced settings
+### Responsive variants
+Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+`.tablet:padding-y-2`
+
+**Output**
+```scss
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+```
+
+Set up which breakpoints are available to USWDS utilities by setting the `$theme-utility-breakpoints` variable in your **USWDS settings configuration**.
+
+| Breakpoint name | Width | Default |
+| ----------- | ----------- | ----------- |
+| card | 160px | false |
+| card-lg | 240px | false |
+| mobile | 320px | false |
+| mobile-lg | 480px | true |
+| tablet | 640px | true |
+| tablet-lg | 880px | false |
+| desktop | 1024px | true |
+| desktop-lg | 1200px | false |
+| widescreen | 1400px | false |
+
+Set whether a utility family outputs with responsive variants by setting the value of `$[utility_family]-settings.responsive` in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+**Example**
+```scss
+  @use "uswds-core" with (
+    $background-color-settings: (
+      responsive: true
+    )
+  );
+```      
+
+| Utility variable | Default |
+| ----------- | ----------- |
+| $line-height-settings.responsive | true |
+| $measure-settings.responsive | true |
+| $text-align-settings.responsive | false |
+| $text-indent-settings.responsive | false |
+
+
+###State variants
+Use a state prefix separated with a `:` to target a utility in a specific state.
+
+**Example**
+`.hover:bg-primary-vivid`
+
+**Output**
+```scss
+.hover\:bg-primary-vivid:hover { background-color: #0052de; }
+```
+
+Set whether a utility outputs a specific state variant by setting the value of the `$[utility_family]-settings.[state]` variable in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
+
+**Example**
+```scss
+@use "uswds-core" with (
+  $background-color-settings: (
+    active: true
+  )
+);
+```
+
+| Utility variable | active | focus | hover | visited |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| $line-height-settings | false | false | false | false |
+| $measure-settings | false | false | false | false |
+| $text-align-settings | false | false | false | false |
+| $text-indent-settings | false | false | false | false |
+
+
+### Output control
+Control whether or not to output any USWDS utility family by setting the value of the `$[utility_family]-settings.output` variable in your **USWDS settings configuration**.
+
+A value of `true` will output the utility family and any variants. A value of `false` prevents the output of the family and any variants.
+
+| Utility variable | Default |
+| ----------- | ----------- |
+| $line-height-settings.output | true |
+| $measure-settings.output | true |
+| $text-align-settings.output | true |
+| $text-indent-settings.output | true |
+
+### Custom values
+By default, USWDS utilities output the standard values listed in the **standard output table**. Customize and refine any utility family’s specific values by editing the `$[utility_family]-manual-values` and `$[utility_family]-palettes` variables in your **USWDS settings configuration**.
+
+#### Manual values
+Specify manual values as unique `key:value` pairs using the `$[utility_family]-manual-values` map, where the `key` is the utility’s value suffix, and the `value` is what the utility will output.
+
+**Example**
+```scss
+$width-manual-values: (
+  'tab': 4ch,
+);
+```
+
+**Output**
+`.width-tab { width: 4ch; }`
+
+#### Palettes
+Palettes are predefined groups of values. Add palettes to the `$[utility_family]-palettes` list variable in your **USWDS settings configuration** to add those values to the utility family.
+
+**Example**
+```scss
+$text-indent-palettes: (
+  'palette-units-small-negative' // note: no trailing comma
+);
+```
+
+**Output**
+```scss
+.text-indent-neg-05  { text-indent: -.25rem; }
+.text-indent-neg-1   { text-indent: -.5rem; }
+.text-indent-neg-105 { text-indent: -.75rem; }
+.text-indent-neg-2   { text-indent: -1rem; }
+.text-indent-neg-205 { text-indent: -1.25rem; }
+.text-indent-neg-3   { text-indent: -1.5rem; }
+```
+
+#### Spacing and units
+| Palette name | Palette content |
+| ----------- | ----------- |
+| 'palette-units' | All spacing unit tokens (system, ch, em, percentage) |
+| 'palette-units-system' | All system spacing unit tokens |
+| 'palette-units-system-breakpoints' | All named spacing unit tokens: card, card-lg, mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, widescreen |
+| 'palette-units-system-positive' | All positive spacing unit tokens |
+| 'palette-units-system-positive-smaller' | 1px, 2px |
+| 'palette-units-system-positive-small' | 05, 1, 105, 2, 205, 3 |
+| 'palette-units-system-positive-medium' | 4, 5, 6, 7, 8, 9, 10, 15 |
+| 'palette-units-system-positive-large' | card, card-lg, mobile |
+| 'palette-units-system-positive-larger' | mobile-lg, tablet, tablet-lg |
+| 'palette-units-system-positive-largest' | desktop, desktop-lg, widescreen |
+| 'palette-units-system-negative' | All negative spacing values |
+| 'palette-units-system-negative-smaller' | neg-1px, neg-2px |
+| 'palette-units-system-negative-small' | neg-05, neg-1, neg-105, neg-2, neg-205, neg-3 |
+| 'palette-units-ch' | 05ch, 1ch, 105ch, 2ch, 3ch, 4ch, 5ch, neg-05ch, neg-1ch, neg-105ch, neg-2ch, neg-3ch, neg-4ch, neg-5ch |
+| 'palette-units-ch-positive' | 05ch, 1ch, 105ch, 2ch, 3ch, 4ch, 5ch |
+| 'palette-units-ch-negative' | neg-05ch, neg-1ch, neg-105ch, neg-2ch, neg-3ch, neg-4ch, neg-5ch |
+| 'palette-units-em' | 05em, 1em, 105em, 2em, 3em, 4em, 5em, 6em, 7em, 8em, 9em, 10em |
+| 'palette-units-percentage' | 10ct, 20ct, 25ct, 30ct, 33ct, 40ct, 50ct, 60ct, 66ct, 75ct, 80ct, 90ct, 100ct |
+| 'palette-units-0' | 0 |
+
