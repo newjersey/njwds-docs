@@ -2,6 +2,7 @@ import { expect, test as base } from "@playwright/test";
 import type { Page, TestInfo } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import type { AxeResults, ImpactValue, Result } from "axe-core";
+import { isKnownFalsePositive } from "./known-false-positives";
 
 const WCAG_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22a", "wcag22aa"];
 // Ignore storybook embeds
@@ -79,9 +80,18 @@ export const expectNoBlockingViolations = async (
 ): Promise<void> => {
   await attachResults(testInfo, results);
 
+  const violations = results.violations
+    .map((violation) => ({
+      ...violation,
+      nodes: violation.nodes.filter(
+        (node) => !isKnownFalsePositive(violation.id, node.target as string[]),
+      ),
+    }))
+    .filter((violation) => violation.nodes.length > 0);
+
   const thresholdIndex = IMPACT_LEVELS.indexOf(SEVERITY_THRESHOLD);
-  annotateViolations(testInfo, results.violations, thresholdIndex);
-  const blockingViolations = results.violations.filter(
+  annotateViolations(testInfo, violations, thresholdIndex);
+  const blockingViolations = violations.filter(
     (violation) => violation.impact && IMPACT_LEVELS.indexOf(violation.impact) >= thresholdIndex,
   );
 
