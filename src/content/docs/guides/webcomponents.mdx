@@ -1,0 +1,118 @@
+---
+title: Using web components
+description: How to add Grove web components to a project with npm, React, or the CDN.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 2
+---
+
+<PageHeader
+  name="Using web components"
+  description="Add Grove web components to your project with npm, React, or the CDN."
+  wcagBadge={false}
+  />
+
+## What is a Grove web component?
+
+Grove web components are custom HTML elements prefixed with `grove-` (for example, `<grove-divider>`). They work in plain HTML, in any JavaScript framework, and in React through Grove's React components.
+
+Each web component also has a matching CSS class (for example, `.grove-divider`) in Grove's stylesheet. Use the class when you only need the styling and want to keep a plain HTML element.
+
+Each web component's page in the Components section shows the tag, React, and CSS class options it offers.
+
+## Install with npm
+
+Use npm if your project has a bundler (Vite, webpack, Next.js, and similar). Your bundle includes only the components you import, and they share Lit with the rest of your app.
+
+```bash
+npm install @newjersey/njwds
+```
+
+Import a component once in your app entry point to register it, then use the tag anywhere:
+
+```ts
+import "@newjersey/njwds/web-components/grove-divider"; // one component
+import "@newjersey/njwds"; // or every component
+```
+
+```html
+<grove-divider></grove-divider>
+```
+
+> **TypeScript projects using `"moduleResolution": "node"`:** the `web-components/<tag>` path won't resolve types. Import from `"@newjersey/njwds"` instead, or use the full path `"@newjersey/njwds/dist/web-components/grove-divider/index.js"`.
+
+## Use in React
+
+React 17 and later can use Grove's React components, which wrap the web components with typed props. Install `@lit/react` alongside Grove:
+
+```bash
+npm install @newjersey/njwds @lit/react
+```
+
+```tsx
+import { GroveDivider } from "@newjersey/njwds/react";
+
+export function Page() {
+  return <GroveDivider />;
+}
+```
+
+Apps that don't use React don't need `@lit/react`; the web component imports above keep working without it.
+
+- **Build error:** if your build fails with `"createComponent" is not exported by "__vite-optional-peer-dep:@lit/react:@newjersey/njwds"`, install `@lit/react`.
+- **TypeScript:** `@newjersey/njwds/react` needs `"moduleResolution"` set to `"bundler"`, `"node16"`, or `"nodenext"`. Projects created with `create-vite` or `create-next-app` already use `"bundler"`.
+
+### React 16
+
+Use the web component directly. Import it once (`import "@newjersey/njwds/web-components/grove-divider";`) and render `<grove-divider />`. TypeScript projects need to declare the tag once, in any `.d.ts` file in the project:
+
+```ts
+import type { DetailedHTMLProps, HTMLAttributes } from "react";
+import type { GroveDivider } from "@newjersey/njwds";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "grove-divider": DetailedHTMLProps<HTMLAttributes<GroveDivider>, GroveDivider>;
+    }
+  }
+}
+```
+
+## Use from the CDN
+
+For pages without a bundler (legacy applications, prototypes), one script registers every Grove web component, with Lit included. Load it once, then use the tags anywhere:
+
+```html
+<script src="https://cdn.grove.nj.gov/<version>/web-components/grove.min.js"
+        integrity="sha384-<hash>"
+        crossorigin="anonymous"
+        defer></script>
+
+<grove-divider></grove-divider>
+```
+
+- **Use a version number in production.** Versioned URLs never change, so they can be paired with a [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) hash. Each release's hashes are in the `sri-hashes.txt` asset on its [GitHub release](https://github.com/newjersey/njwds/releases).
+- **Use `latest` only for prototypes.** `https://cdn.grove.nj.gov/latest/web-components/grove.min.js` always points to the newest release, so it can't be paired with a fixed SRI hash.
+- **Place it where you like.** It works as a classic script or with `type="module"`, in the `<head>` (with `defer`) or at the end of the `<body>`.
+- **Keep the rest of Grove.** It doesn't replace `css/styles.css` or `js/uswds.min.js`; keep those for the rest of Grove's components.
+- **Loading Grove twice is safe.** If another copy of Grove's web components is already on the page, the first registration wins and the console shows a warning naming the tag, instead of the page throwing an error.
+- **Have a bundler? Use npm instead.** The npm package shares Lit with your app and only includes the components you import.
+
+## Customize with CSS custom properties
+
+Web components can be themed with CSS custom properties named `--grove-<component>-<css-property>` (for example, `--grove-divider-color`). Each component's page lists the properties it supports.
+
+```css
+/* Remove the divider's vertical margin inside cards */
+.usa-card grove-divider {
+  --grove-divider-margin-block: 0;
+}
+```
+
+Tag names and custom property names are part of Grove's public API, so renaming either is a breaking change.
+
+## Where to get help
+
+- **Slack:** [#grove-all](https://njcio.slack.com/archives/C05CV8H2QJU) — primary support channel for design, engineering, and content questions
+- **GitHub Issues:** [github.com/newjersey/njwds/issues](https://github.com/newjersey/njwds/issues) — bug reports and feature requests

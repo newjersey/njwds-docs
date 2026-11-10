@@ -130,8 +130,9 @@ import "@newjersey/njwds/dist/css/styles.css";
 
 #### Add the JavaScript
 
-> **React projects:** The Grove JavaScript is not currently integrated for React. Import only the CSS 
-> above and implement interactive component behavior as needed on your project.
+> **React projects:** The Grove JavaScript below (`uswds.min.js`) is not currently integrated for React. Import only the CSS 
+> above and implement interactive component behavior as needed on your project. Grove's web components do work in 
+> React; see [Using web components](/guides/webcomponents/).
 
 For plain HTML projects, interactive Grove components (accordions, modals, etc.) require two scripts.
 
@@ -150,11 +151,30 @@ Add `uswds.min.js` before the closing `</body>` tag:
 </body>
 ```
 
+#### Or load Grove from the CDN
+
+Projects that don't use npm can load the same files from `https://cdn.grove.nj.gov/<version>/` (for example, 
+`css/styles.css`, `js/uswds-init.min.js`, and `js/uswds.min.js`). Use a version number in production and add a 
+[Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) hash; each 
+release's hashes are in the `sri-hashes.txt` asset on its [GitHub release](https://github.com/newjersey/njwds/releases). 
+`https://cdn.grove.nj.gov/latest/` always points to the newest release, but it can't be paired with a fixed SRI hash, 
+so use it only for prototypes.
+
+```html
+<link rel="stylesheet"
+      href="https://cdn.grove.nj.gov/<version>/css/styles.css"
+      integrity="sha384-<hash>"
+      crossorigin="anonymous">
+```
+
 #### Use a component
 
 Grove extends USWDS. Most components use USWDS HTML markup with NJ-specific CSS classes layered on top. 
 Browse available components in [Storybook](https://storybook.grove.nj.gov) and each story shows the 
 markup you need.
+
+Some components are also available as web components (tags starting with `grove-`, like `<grove-divider>`) 
+and React components. See [Using web components](/guides/webcomponents/) to add them with npm, React, or the CDN.
 
 ### Best practices
 
