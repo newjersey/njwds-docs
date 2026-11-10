@@ -32,7 +32,7 @@ Utilities, values, and variants may be activated and deactivated in **advanced s
 ### Default output 
 | Utility | Output |
 | ----------- | ----------- |
-| .clearfix | ::after { clear: both; content: ""; display: block; } |
+| .clearfix | `::after { clear: both; content: ""; display: block; }` |
 
 
 ## Utility mixins
@@ -40,7 +40,7 @@ Utilities may be used in component Sass with **utility mixins**. Highlighted `to
 
 | Utility | Mixin | Example |
 | ----------- | ----------- | ----------- |
-| .cleafix | clearfix | @include clearfix |
+| .clearfix | clearfix | `@include clearfix` |
 
 ### Using utility mixins
 - Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (`05`) values like `'05'`, `'105'`, and `'205'` which should be treated as strings.
