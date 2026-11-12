@@ -102,8 +102,7 @@ Required components provide a consistent look and feel across New Jersey State G
 ### What you'll need to get started
 
 - Node.js (see `.nvmrc` for the project's recommended version)
-- npm
-- Access to the [NJWDS GitHub repository](https://github.com/newjersey/njwds)
+- npm (or a similar package manager)
 - Familiarity with [USWDS](https://designsystem.digital.gov/) is helpful but not required
 
 ### Setting up your first project
@@ -128,11 +127,10 @@ npm install @newjersey/njwds
 import "@newjersey/njwds/dist/css/styles.css";
 ```
 
-#### Add the JavaScript
+#### Add the USWDS JavaScript
 
 > **React projects:** The Grove JavaScript below (`uswds.min.js`) is not currently integrated for React. Import only the CSS 
-> above and implement interactive component behavior as needed on your project. Grove's web components do work in 
-> React; see [Using web components](/guides/webcomponents/).
+> above and implement interactive component behavior as needed on your project. 
 
 For plain HTML projects, interactive Grove components (accordions, modals, etc.) require two scripts.
 
@@ -167,11 +165,13 @@ so use it only for prototypes.
       crossorigin="anonymous">
 ```
 
-#### Use a component
+#### Use an HTML component
 
 Grove extends USWDS. Most components use USWDS HTML markup with NJ-specific CSS classes layered on top. 
 Browse available components in [Storybook](https://storybook.grove.nj.gov) and each story shows the 
 markup you need.
+
+#### Use a Grove Web component
 
 Some components are also available as web components (tags starting with `grove-`, like `<grove-divider>`) 
 and React components. See [Using web components](/guides/webcomponents/) to add them with npm, React, or the CDN.
