@@ -353,12 +353,11 @@ body {
   font-weight: 800;
 }
 
-
-.docs-grid-example .grid-row:not([class*=grid-gap]) [class*=grid-col] {
+.docs-grid-example .grid-row:not([class*="grid-gap"]) [class*="grid-col"] {
   border: 1px solid;
   padding: 1rem;
 }
-.docs-grid-example [class*=grid-col] {
+.docs-grid-example [class*="grid-col"] {
   background-color: #e1e7f1;
   text-align: center;
 }
