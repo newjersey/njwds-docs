@@ -62,12 +62,14 @@ You can use predefined grid classes (like `grid-col-4`) for presentational marku
 
 `.grid-col` and `.grid-col-fill` items flex to fill the available space as illustrated in the following example row and code.
 
-<div class="grid-container">
-  <div class="grid-row">
-    <div class="grid-col-auto">.grid-col-auto</div>
-    <div class="grid-col">.grid-col</div>
-    <div class="grid-col-fill">.grid-col-fill</div>
-    <div class="grid-col-auto">.grid-col-auto</div>
+<div class="docs-grid-example">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-auto">.grid-col-auto</div>
+      <div class="grid-col">.grid-col</div>
+      <div class="grid-col-fill">.grid-col-fill</div>
+      <div class="grid-col-auto">.grid-col-auto</div>
+    </div>
   </div>
 </div>
 
@@ -89,18 +91,21 @@ For columns that should maintain the same proportion at any viewport width, use 
 
 `.grid-col-[1-12]` sets a fixed width of [n] grid columns in a 12-column grid.
 
-<div class="grid-row">
-  <div class="grid-col-1">.grid-col-1</div>
-  <div class="grid-col-2">.grid-col-2</div>
-  <div class="grid-col-3">.grid-col-3</div>
-  <div class="grid-col-4">.grid-col-4</div>
-  <div class="grid-col-2">.grid-col-2</div>
-</div>
+<div class="docs-grid-example">
+  <div class="grid-row">
+    <div class="grid-col-1">.grid-col-1</div>
+    <div class="grid-col-2">.grid-col-2</div>
+    <div class="grid-col-3">.grid-col-3</div>
+    <div class="grid-col-4">.grid-col-4</div>
+    <div class="grid-col-2">.grid-col-2</div>
+  </div>
 
-<div class="grid-row">
-  <div class="grid-col-8">.grid-col-8</div>
-  <div class="grid-col-2">.grid-col-2</div>
-  <div class="grid-col-2">.grid-col-2</div>
+
+  <div class="grid-row">
+    <div class="grid-col-8">.grid-col-8</div>
+    <div class="grid-col-2">.grid-col-2</div>
+    <div class="grid-col-2">.grid-col-2</div>
+  </div>
 </div>
 
 ```html
@@ -122,15 +127,17 @@ For columns that should maintain the same proportion at any viewport width, use 
 ### Stacked columns at narrow widths
 Columns are full-width until the narrowest breakpoint specified in a `.grid-col` class. For instance, using a single set of `tablet:grid-col-*` classes, you can create a basic grid system that starts out stacked before displaying as columns at the tablet breakpoint (`tablet:`) as illustrated in the following rows and corresponding code.
 
-<div class="grid-row">
-  <div class="tablet:grid-col">.tablet:grid-col</div>
-  <div class="tablet:grid-col">.tablet:grid-col</div>
-  <div class="tablet:grid-col">.tablet:grid-col</div>
-</div>
+<div class="docs-grid-example">
+  <div class="grid-row">
+    <div class="tablet:grid-col">.tablet:grid-col</div>
+    <div class="tablet:grid-col">.tablet:grid-col</div>
+    <div class="tablet:grid-col">.tablet:grid-col</div>
+  </div>
 
-<div class="grid-row">
-  <div class="tablet:grid-col-4">.tablet:grid-col-4</div>
-  <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
+  <div class="grid-row">
+    <div class="tablet:grid-col-4">.tablet:grid-col-4</div>
+    <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
+  </div>
 </div>
 
 ```html
@@ -149,20 +156,22 @@ Columns are full-width until the narrowest breakpoint specified in a `.grid-col`
 ### Mix and match
 Don’t want your columns to simply stack in some breakpoints? Use a combination of different classes for each breakpoint as needed. See the following example rows and corresponding code for a better idea of how it all works.
 
-<div class="grid-row">
-  <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
-  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
-</div>
+<div class="docs-grid-example">
+  <div class="grid-row">
+    <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
+    <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+  </div>
 
-<div class="grid-row">
-  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
-  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
-  <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
-</div>
+  <div class="grid-row">
+    <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+    <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+    <div class="grid-col-6 tablet:grid-col-4">.grid-col-6 .tablet:grid-col-4</div>
+  </div>
 
-<div class="grid-row">
-  <div class="grid-col-6">.grid-col-6</div>
-  <div class="grid-col-6">.grid-col-6</div>
+  <div class="grid-row">
+    <div class="grid-col-6">.grid-col-6</div>
+    <div class="grid-col-6">.grid-col-6</div>
+  </div>
 </div>
 
 ```html
@@ -189,8 +198,10 @@ Don’t want your columns to simply stack in some breakpoints? Use a combination
 ## Offsetting columns
 `.grid-offset-[1-12]` offsets an item by the specified number of grid columns as shown in the following example.
 
-<div class="grid-row">
-  <div class="grid-col-8 grid-offset-4">.grid-col-8.grid-offset-4</div>
+<div class="docs-grid-example">
+  <div class="grid-row">
+    <div class="grid-col-8 grid-offset-4">.grid-col-8.grid-offset-4</div>
+  </div>
 </div>
 
 ```html
@@ -202,10 +213,12 @@ Don’t want your columns to simply stack in some breakpoints? Use a combination
 ## Column wrapping
 Items wrap when the sum of the grid columns is more than 12 as shown in the following example.
 
-<div class="grid-row">
-  <div class="grid-col-8">.grid-col-8</div>
-  <div class="grid-col-3">.grid-col-3</div>
-  <div class="grid-col-5">.grid-col-5</div>
+<div class="docs-grid-example">
+  <div class="grid-row">
+    <div class="grid-col-8">.grid-col-8</div>
+    <div class="grid-col-3">.grid-col-3</div>
+    <div class="grid-col-5">.grid-col-5</div>
+  </div>
 </div>
 
 ```html
@@ -220,6 +233,7 @@ Items wrap when the sum of the grid columns is more than 12 as shown in the foll
 ### Default gutter
 Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 2 units and 4 units at `desktop` and higher. Customize the width of the gap by adjusting the value of `$theme-column-gap` in project settings as shown in the following example.
 
+<div class="docs-grid-example">
 <div class="grid-row grid-gap">
   <div class="grid-col-4">
     <div>.grid-col-4</div>
@@ -230,6 +244,7 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   <div class="grid-col-4">
     <div>.grid-col-4</div>
   </div>
+</div>
 </div>
 
 ```html
@@ -248,6 +263,7 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 
 ### Large gutter
 `grid-gap-lg` adds a larger gap (or gutter) between each column in a row than `grid-gap`. The default large-gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of `$theme-column-gap-lg` in project settings. There is also a `.grid-gap-sm` (2px) set with `$theme-column-gap-sm`. Also, you can add the following system values with `grid-gap`:
+
 - `grid-gap-2px`
 - `grid-gap-05`
 - `grid-gap-1`
@@ -258,6 +274,8 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 - `grid-gap-6`
 
 The following example row and code illustrate large gutters.
+
+<div class="docs-grid-example">
 <div class="grid-row grid-gap-lg">
   <div class="grid-col-4">
     <div>.grid-col-4</div>
@@ -268,6 +286,7 @@ The following example row and code illustrate large gutters.
   <div class="grid-col-4">
     <div>.grid-col-4</div>
   </div>
+</div>
 </div>
 
 ```html
