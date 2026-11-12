@@ -28,6 +28,8 @@ scannability
 sidenav
 skeuomorphism
 sublist
+tbottom
+ttop
 Tullio
 uncalculated
 usagov
