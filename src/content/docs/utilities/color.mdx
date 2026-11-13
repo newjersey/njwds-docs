@@ -11,16 +11,13 @@ import { LinkButton } from '@astrojs/starlight/components';
   description={frontmatter.description}
   wcagBadge={false} />
 
-CSS Properties: `background-color` `color` 
-
-## Examples and usage 
-Utilities, values, and variants may be activated and deactivated in **advanced settings.** 
+## Basic settings 
 
 ### Text color 
+
 CSS PROPERTY: `color` 
 
-#### Project theme colors: 
-**Read more about project theme colors**
+#### Project theme colors
 
 | Color | Name | Value |
 | ----------- | ----------- | ----------- |
@@ -83,7 +80,6 @@ CSS PROPERTY: `color`
 | <GroveColorBlock color="#676cc8" /> | `.text-indigo` | #676cc8 |
 | <GroveColorBlock color="#8168b3" /> | `.text-violet` | #8168b3 |
 | <GroveColorBlock color="#d72d79" /> | `.text-magenta` | #d72d79 |
-
 
 ### Background color 
 CSS PROPERTY: `background-color` 
@@ -154,70 +150,7 @@ CSS PROPERTY: `background-color`
 | <GroveColorBlock color="#8168b3" /> | `.bg-violet` | #8168b3 |
 | <GroveColorBlock color="#d72d79" /> | `.bg-magenta` | #d72d79 |
 
-
-## Utility mixins 
-Utilities may be used in component Sass with **utility mixins**. Highlighted `tokens` are the USWDS design tokens that serve as the foundation for all design system styles. Each `token` is also a documentation link. Consult the **Design tokens section** for more information on tokens and how to use them in USWDS.
-
-| Color | Name | Example |
-| ----------- | ----------- |  ----------- |
-| .text-`color` | u-text(`color`) | @include u-text('primary-darker') |
-| .bg-`color` | u-bg(`color`) | @include u-bg('primary-darker') |
-
-### Using utility mixins 
-- Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (`05`) values like `'05'`, `'105'`, and `'205'` which should be treated as strings.
-- String tokens for half values (`05`) and negative values (like `neg-1`) may also be written with their unquoted number token equivalent: `0.5`, `1.5`, `2.5`, `-1`, `-1.5`, etc.
-- If multiple utilities share the same prefix (ex: `.text-` or `.flex-`) or a single utility accepts multiple kinds of values (ex: `.border` accepts both border weight and border color), their shared mixin can accept multiple comma-separated values: `u-text('primary-darkest', 'no-underline', 'bold') or u-border-top(2px, 'accent-warm')`.
-- Output any utility mixin as `!important` by appending `!important` to the mixin’s argument list: `u-bg('red-warm-50v', !important)`.
-
 ## Advanced settings 
-
-### Responsive variants 
-
-Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
-
-**Example**
-`.tablet:padding-y-2`
-
-**Output** 
-```scss
-@media screen and (min-width: 640px) {
-  .tablet\:padding-y-2 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-```
-
-Set up which breakpoints are available to USWDS utilities by setting the `$theme-utility-breakpoints` variable in your **USWDS settings configuration**.
-
-| Breakpoint name | Width | Default |
-| ----------- | ----------- |  ----------- |
-| card | 160px | false |
-| card-lg | 240px | false | 
-| mobile | 320px | false | 
-| mobile-lg | 480px | `true` | 
-| tablet | 640px | `true` | 
-| tablet-lg | 880px | false | 
-| desktop | 1024px | `true` | 
-| desktop-lg | 1200px | false | 
-| widescreen | 1400px | false | 
-
-Set whether a utility family outputs with responsive variants by setting the value of `$[utility_family]-settings.responsive` in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
-
-**Example:** 
-```scss 
-@use "uswds-core" with (
-    $background-color-settings: (
-      responsive: true
-    )
-  );
-```
-
-| Utility variable | Default |
-| ----------- | ----------- |
-| `$background-color-settings.responsive` | false |
-| `$color-settings.responsive` | false |
-
 
 ### State variants 
 Use a state prefix separated with a `:` to target a utility in a specific state.
@@ -227,96 +160,3 @@ Use a state prefix separated with a `:` to target a utility in a specific state.
 
 **Output:** 
 `.hover\:bg-primary-vivid:hover { background-color: #0052de; }`
-
-Set whether a utility outputs a specific state variant by setting the value of the `$[utility_family]-settings.[state]` variable in your **USWDS settings configuration**. When modifying settings stored as a map, undefined map elements will keep their default values.
-
-**Example:** 
-```scss
-@use "uswds-core" with (
-  $background-color-settings: (
-    active: true
-  )
-);
-```
-
-| Utility variable | active | focus | hover | visited |
-| ----------- | ----------- |
-| `$background-color-settings` | false | false | `true` | false |
-| `$color-settings` | false | false | `true` | false |
-
-
-### Output control 
-Control whether or not to output any USWDS utility family by setting the value of the `$[utility_family]-settings.output` variable in your **USWDS settings configuration**.
-
-A value of `true` will output the utility family and any variants. A value of `false` prevents the output of the family and any variants.
-
-| Utility variable | Default |
-| ----------- | ----------- |
-| `$background-color-settings.output` | `true` |
-| `$color-settings.output` | `true` |
-
-
-### Custom values
-By default, USWDS utilities output the standard values listed in the **standard output table**. Customize and refine any utility family’s specific values by editing the `$[utility_family]-manual-values` and `$[utility_family]-palettes` variables in your **USWDS settings configuration**.
-
-#### Manual values
-Specify manual values as unique `key:value` pairs using the `$[utility_family]-manual-values` map, where the `key` is the utility’s value suffix, and the `value` is what the utility will output.
-
-**Example**
-```scss
-$width-manual-values: (
-  'tab': 4ch,
-);
-```
-
-**Output**
-```scss
-.width-tab { width: 4ch; }
-```
-
-#### Palettes
-Palettes are predefined groups of values. Add palettes to the `$[utility_family]-palettes` list variable in your **USWDS settings configuration** to add those values to the utility family.
-
-**Example**
-```scss
-$background-color-palettes: (
-  'palette-color-red-medium',
-  'palette-color-red-medium-vivid' // note: no trailing comma
-);
-```
-
-**Output**
-```scss
-.bg-red-40 { background-color: #ed6b61; }
-.bg-red-50 { background-color: #d83731; }
-.bg-red-60 { background-color: #ab3a3a; }
-.bg-red-40v { background-color: #ff5c48; }
-.bg-red-50v { background-color: #e82207; }
-.bg-red-60v { background-color: #c31f0a; }
-```
-
-##### Global color palettes
-Any palette added to the `$global-color-palettes` list in your your **USWDS settings configuration** will output in the background color, text color, border color, and text decoration color utilities.
-
-##### Color palettes
-In the following table, `family` indicates a specific unquoted system color family token (like `blue-warm`) as documented on the *system color tokens page*.
-
-| Palette name | Palette contents |
-| ----------- | ----------- |
-| 'palette-color' | All color tokens |
-| 'palette-color-default' | System default color tokens |
-| 'palette-color-theme' | All theme color tokens |
-| 'palette-color-state' | All state color tokens |
-| 'palette-color-grayscale' | gray-5, gray-10, gray-30, gray-50, gray-70, gray-90
-| 'palette-color-basic' | All basic colors |
-| 'palette-color-system' | All grades in **all system color tokens** |
-| 'palette-color-system-`family`' | All grades in the specified family |
-| 'palette-color-system-`family`-light' | Grades 5, 10, 20, 30 |
-| 'palette-color-system-`family`-light-vivid' | Grades 5v, 10v, 20v, 30v |
-| 'palette-color-system-`family`-medium' | Grades 40, 50, 60 |
-| 'palette-color-system-`family`-medium-vivid' | Grades 40v, 50v, 60v |
-| 'palette-color-system-`family`-dark' | Grades 70, 80, 90 |
-| 'palette-color-system-`family`-dark-vivid' | Grades 70v, 80v, 90v |
-| 'palette-color-system-`family`-standard' | Grades 5, 10, 20, 30, 40, 50, 60, 70, 80, 90 |
-| 'palette-color-system-`family`-vivid' | Grades 5v, 10v, 20v, 30v, 40v, 50v, 60v, 70v, 80v, 90v |
-
