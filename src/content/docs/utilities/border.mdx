@@ -1,0 +1,332 @@
+---
+title: Border
+description: Set width, color, style, and radius of an item’s borders
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+## Basic settings 
+CSS Property: `border`, `border-bottom`, `border-left`, `border-right`, `border-top`
+
+**Note:** The `border` utilities apply a solid border of specified width. If no width is specified, the utilities apply a solid `1px` border.
+
+| Name | Preview |
+| ----------- | ----------- |
+| `.border` | <div class="border square-8 bg-base-lightest"></div> |
+| `.border-top` | <div class="border-top square-8 bg-base-lightest"></div> |
+| `.border-bottom` | <div class="border-bottom square-8 bg-base-lightest"></div> |
+| `.border-left` | <div class="border-left square-8 bg-base-lightest"></div> |
+| `.border-right` | <div class="border-right square-8 bg-base-lightest"></div> |
+
+### Border on all sides
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border` | 1px | <div class="border square-8 bg-base-lightest"></div> |
+| `.border-0` | 0 | <div class="border-0 square-8 bg-base-lightest"></div> |
+| `.border-1px` | 1px | <div class="border-1px square-8 bg-base-lightest"></div> |
+| `.border-2px` | 2px | <div class="border-2px square-8 bg-base-lightest"></div> |
+| `.border-05` | 4px | <div class="border-05 square-8 bg-base-lightest"></div> |
+| `.border-1` | 8px | <div class="border-1 square-8 bg-base-lightest"></div> |
+| `.border-105` | 12px | <div class="border-105 square-8 bg-base-lightest"></div> |
+| `.border-2` | 16px | <div class="border-2 square-8 bg-base-lightest"></div> |
+| `.border-205` | 20px | <div class="border-205 square-8 bg-base-lightest"></div> |
+| `.border-3` | 24px | <div class="border-3 square-8 bg-base-lightest"></div> |
+
+
+### Border on the top
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-top` | 1px | <div class="border-top square-8 bg-base-lightest"></div> |
+| `.border-top-0` | 0 | <div class="border-top-0 square-8 bg-base-lightest"></div> |
+| `.border-top-1px` | 1px | <div class="border-top-1px square-8 bg-base-lightest"></div> |
+| `.border-top-2px` | 2px | <div class="border-top-2px square-8 bg-base-lightest"></div> |
+| `.border-top-05` | 4px | <div class="border-top-05 square-8 bg-base-lightest"></div> |
+| `.border-top-1` | 8px | <div class="border-top-1 square-8 bg-base-lightest"></div> |
+| `.border-top-105` | 12px | <div class="border-top-105 square-8 bg-base-lightest"></div> |
+| `.border-top-2` | 16px | <div class="border-top-2 square-8 bg-base-lightest"></div> |
+| `.border-top-205` | 20px | <div class="border-top-205 square-8 bg-base-lightest"></div> |
+| `.border-top-3` | 24px | <div class="border-top-3 square-8 bg-base-lightest"></div> |
+
+
+### Border on the bottom
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-bottom` | 1px | <div class="border-bottom square-8 bg-base-lightest"></div> |
+| `.border-bottom-0` | 0 | <div class="border-bottom-0 square-8 bg-base-lightest"></div> |
+| `.border-bottom-1px` | 1px | <div class="border-bottom-1px square-8 bg-base-lightest"></div> |
+| `.border-bottom-2px` | 2px | <div class="border-bottom-2px square-8 bg-base-lightest"></div> |
+| `.border-bottom-05` | 4px | <div class="border-bottom-05 square-8 bg-base-lightest"></div> |
+| `.border-bottom-1` | 8px | <div class="border-bottom-1 square-8 bg-base-lightest"></div> |
+| `.border-bottom-105` | 12px | <div class="border-bottom-105 square-8 bg-base-lightest"></div> |
+| `.border-bottom-2` | 16px | <div class="border-bottom-2 square-8 bg-base-lightest"></div> |
+| `.border-bottom-205` | 20px | <div class="border-bottom-205 square-8 bg-base-lightest"></div> |
+| `.border-bottom-3` | 24px | <div class="border-bottom-3 square-8 bg-base-lightest"></div> |
+
+
+### Border on the left
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-left` | 1px | <div class="border-left square-8 bg-base-lightest"></div> |
+| `.border-left-0` | 0 | <div class="border-left-0 square-8 bg-base-lightest"></div> |
+| `.border-left-1px` | 1px | <div class="border-left-1px square-8 bg-base-lightest"></div> |
+| `.border-left-2px` | 2px | <div class="border-left-2px square-8 bg-base-lightest"></div> |
+| `.border-left-05` | 4px | <div class="border-left-05 square-8 bg-base-lightest"></div> |
+| `.border-left-1` | 8px | <div class="border-left-1 square-8 bg-base-lightest"></div> |
+| `.border-left-105` | 12px | <div class="border-left-105 square-8 bg-base-lightest"></div> |
+| `.border-left-2` | 16px | <div class="border-left-2 square-8 bg-base-lightest"></div> |
+| `.border-left-205` | 20px | <div class="border-left-205 square-8 bg-base-lightest"></div> |
+| `.border-left-3` | 24px | <div class="border-left-3 square-8 bg-base-lightest"></div> |
+
+### Border on the right
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-right` | 1px | <div class="border-right square-8 bg-base-lightest"></div> |
+| `.border-right-0` | 0 | <div class="border-right-0 square-8 bg-base-lightest"></div> |
+| `.border-right-1px` | 1px | <div class="border-right-1px square-8 bg-base-lightest"></div> |
+| `.border-right-2px` | 2px | <div class="border-right-2px square-8 bg-base-lightest"></div> |
+| `.border-right-05` | 4px | <div class="border-right-05 square-8 bg-base-lightest"></div> |
+| `.border-right-1` | 8px | <div class="border-right-1 square-8 bg-base-lightest"></div> |
+| `.border-right-105` | 12px | <div class="border-right-105 square-8 bg-base-lightest"></div> |
+| `.border-right-2` | 16px | <div class="border-right-2 square-8 bg-base-lightest"></div> |
+| `.border-right-205` | 20px | <div class="border-right-205 square-8 bg-base-lightest"></div> |
+| `.border-right-3` | 24px | <div class="border-right-3 square-8 bg-base-lightest"></div> |
+
+
+### Border on the left and right
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-x` | 1px | <div class="border-x square-8 bg-base-lightest"></div> |
+| `.border-x-0` | 0 | <div class="border-x-0 square-8 bg-base-lightest"></div> |
+| `.border-x-1px` | 1px | <div class="border-x-1px square-8 bg-base-lightest"></div> |
+| `.border-x-2px` | 2px | <div class="border-x-2px square-8 bg-base-lightest"></div> |
+| `.border-x-05` | 4px | <div class="border-x-05 square-8 bg-base-lightest"></div> |
+| `.border-x-1` | 8px | <div class="border-x-1 square-8 bg-base-lightest"></div> |
+| `.border-x-105` | 12px | <div class="border-x-105 square-8 bg-base-lightest"></div> |
+| `.border-x-2` | 16px | <div class="border-x-2 square-8 bg-base-lightest"></div> |
+| `.border-x-205` | 20px | <div class="border-x-205 square-8 bg-base-lightest"></div> |
+| `.border-x-3` | 24px | <div class="border-x-3 square-8 bg-base-lightest"></div> |
+
+
+### Border on the top and bottom
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.border-y` | 1px | <div class="border-y square-8 bg-base-lightest"></div> |
+| `.border-y-0` | 0 | <div class="border-y-0 square-8 bg-base-lightest"></div> |
+| `.border-y-1px` | 1px | <div class="border-y-1px square-8 bg-base-lightest"></div> |
+| `.border-y-2px` | 2px | <div class="border-y-2px square-8 bg-base-lightest"></div> |
+| `.border-y-05` | 4px | <div class="border-y-05 square-8 bg-base-lightest"></div> |
+| `.border-y-1` | 8px | <div class="border-y-1 square-8 bg-base-lightest"></div> |
+| `.border-y-105` | 12px | <div class="border-y-105 square-8 bg-base-lightest"></div> |
+| `.border-y-2` | 16px | <div class="border-y-2 square-8 bg-base-lightest"></div> |
+| `.border-y-205` | 20px | <div class="border-y-205 square-8 bg-base-lightest"></div> |
+| `.border-y-3` | 24px | <div class="border-y-3 square-8 bg-base-lightest"></div> |
+
+### Border width
+
+CSS Property: `border-style`
+
+| Name | Preview |
+| ----------- | ----------- |
+| `.border.border-solid` | <div class="border border-solid square-8 bg-base-lightest"></div> |
+| `.border.border-dashed` | <div class="border border-dashed square-8 bg-base-lightest"></div> |
+| `.border.border-dotted` | <div class="border border-dotted square-8 bg-base-lightest"></div> |
+
+### Border style
+
+CSS Property: `border-width`
+
+**Note:** The `border-width` utilities apply only the `border-width` property to an item.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.border-width-0` | `0` |
+| `.border-width-1px` | `1px` |
+| `.border-width-2px` | `2px` |
+| `.border-width-05` | `4px` |
+| `.border-width-1` | `8px` |
+| `.border-width-105` | `12px` |
+| `.border-width-2` | `16px` |
+| `.border-width-205` | `20px` |
+| `.border-width-3` | `24px` |
+| `.border-top-width-0` | `0` |
+| `.border-top-width-1px` | `1px` |
+| `.border-top-width-2px` | `2px` |
+| `.border-top-width-05` | `4px` |
+| `.border-top-width-1` | `8px` |
+| `.border-top-width-105` | `12px` |
+| `.border-top-width-2` | `16px` |
+| `.border-top-width-205` | `20px` |
+| `.border-top-width-3` | `24px` |
+| `.border-bottom-width-0` | `0` |
+| `.border-bottom-width-1px` | `1px` |
+| `.border-bottom-width-2px` | `2px` |
+| `.border-bottom-width-05` | `4px` |
+| `.border-bottom-width-1` | `8px` |
+| `.border-bottom-width-105` | `12px` |
+| `.border-bottom-width-2` | `16px` |
+| `.border-bottom-width-205` | `20px` |
+| `.border-bottom-width-3` | `24px` |
+| `.border-left-width-0` | `0` |
+| `.border-left-width-1px` | `1px` |
+| `.border-left-width-2px` | `2px` |
+| `.border-left-width-05` | `4px` |
+| `.border-left-width-1` | `8px` |
+| `.border-left-width-105` | `12px` |
+| `.border-left-width-2` | `16px` |
+| `.border-left-width-205` | `20px` |
+| `.border-left-width-3` | `24px` |
+| `.border-right-width-0` | `0` |
+| `.border-right-width-1px` | `1px` |
+| `.border-right-width-2px` | `2px` |
+| `.border-right-width-05` | `4px` |
+| `.border-right-width-1` | `8px` |
+| `.border-right-width-105` | `12px` |
+| `.border-right-width-2` | `16px` |
+| `.border-right-width-205` | `20px` |
+| `.border-right-width-3` | `24px` |
+| `.border-x-width-0` | `0` |
+| `.border-x-width-1px` | `1px` |
+| `.border-x-width-2px` | `2px` |
+| `.border-x-width-05` | `4px` |
+| `.border-x-width-1` | `8px` |
+| `.border-x-width-105` | `12px` |
+| `.border-x-width-2` | `16px` |
+| `.border-x-width-205` | `20px` |
+| `.border-x-width-3` | `24px` |
+| `.border-y-width-0` | `0` |
+| `.border-y-width-1px` | `1px` |
+| `.border-y-width-2px` | `2px` |
+| `.border-y-width-05` | `4px` |
+| `.border-y-width-1` | `8px` |
+| `.border-y-width-105` | `12px` |
+| `.border-y-width-2` | `16px` |
+| `.border-y-width-205` | `20px` |
+| `.border-y-width-3` | `24px` |
+
+### Border color
+
+CSS Property: `border-color`
+
+| Preview | Name |
+| ----------- | ----------- |
+| <div class="square-3 radius-sm display-block border-1px border-transparent"></div> | `.border-transparent` |
+| <div class="square-3 radius-sm display-block border-1px border-black"></div> | `.border-black` |
+| <div class="square-3 radius-sm display-block border-1px border-white"></div> | `.border-white` |
+| <div class="square-3 radius-sm display-block border-1px border-base-lightest"></div> | `.border-base-lightest` |
+| <div class="square-3 radius-sm display-block border-1px border-base-lighter"></div> | `.border-base-lighter` |
+| <div class="square-3 radius-sm display-block border-1px border-base-light"></div> | `.border-base-light` |
+| <div class="square-3 radius-sm display-block border-1px border-base"></div> | `.border-base` |
+| <div class="square-3 radius-sm display-block border-1px border-base-dark"></div> | `.border-base-dark` |
+| <div class="square-3 radius-sm display-block border-1px border-base-darker"></div> | `.border-base-darker` |
+| <div class="square-3 radius-sm display-block border-1px border-base-darkest"></div> | `.border-base-darkest` |
+| <div class="square-3 radius-sm display-block border-1px border-ink"></div> | `.border-ink` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-lighter"></div> | `.border-primary-lighter` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-light"></div> | `.border-primary-light` |
+| <div class="square-3 radius-sm display-block border-1px border-primary"></div> | `.border-primary` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-vivid"></div> | `.border-primary-vivid` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-dark"></div> | `.border-primary-dark` |
+| <div class="square-3 radius-sm display-block border-1px border-primary-darker"></div> | `.border-primary-darker` |
+| <div class="square-3 radius-sm display-block border-1px border-white"></div> | `.border-white` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-5"></div> | `.border-gray-5` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-10"></div> | `.border-gray-10` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-30"></div> | `.border-gray-30` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-50"></div> | `.border-gray-50` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-70"></div> | `.border-gray-70` |
+| <div class="square-3 radius-sm display-block border-1px border-gray-90"></div> | `.border-gray-90` |
+| <div class="square-3 radius-sm display-block border-1px border-black"></div> | `.border-black` |
+| <div class="square-3 radius-sm display-block border-1px border-red"></div> | `.border-red` |
+| <div class="square-3 radius-sm display-block border-1px border-orange"></div> | `.border-orange` |
+| <div class="square-3 radius-sm display-block border-1px border-gold"></div> | `.border-gold` |
+| <div class="square-3 radius-sm display-block border-1px border-yellow"></div> | `.border-yellow` |
+| <div class="square-3 radius-sm display-block border-1px border-green"></div> | `.border-green` |
+| <div class="square-3 radius-sm display-block border-1px border-mint"></div> | `.border-mint` |
+| <div class="square-3 radius-sm display-block border-1px border-cyan"></div> | `.border-cyan` |
+| <div class="square-3 radius-sm display-block border-1px border-blue"></div> | `.border-blue` |
+| <div class="square-3 radius-sm display-block border-1px border-indigo"></div> | `.border-indigo` |
+| <div class="square-3 radius-sm display-block border-1px border-violet"></div> | `.border-violet` |
+| <div class="square-3 radius-sm display-block border-1px border-magenta"></div> | `.border-magenta` |
+
+
+### Border radius
+
+CSS Property: `border-radius`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.radius-0` | 0 | <GroveRadiusBlock radius="radius-0" /> |
+| `.radius-sm` | 2px | <GroveRadiusBlock radius="radius-sm" /> |
+| `.radius-md` | 4px | <GroveRadiusBlock radius="radius-md" /> |
+| `.radius-lg` | 8px | <GroveRadiusBlock radius="radius-lg" /> |
+| `.radius-pill` | 99rem | <GroveRadiusBlock radius="radius-pill" /> |
+| `.radius-top-0` | 0 | <GroveRadiusBlock radius="radius-top-0" /> |
+| `.radius-top-sm` | 2px | <GroveRadiusBlock radius="radius-top-sm" /> |
+| `.radius-top-md` | 4px | <GroveRadiusBlock radius="radius-top-md" /> |
+| `.radius-top-lg` | 8px | <GroveRadiusBlock radius="radius-top-lg" /> |
+| `.radius-top-pill` | 99rem | <GroveRadiusBlock radius="radius-top-pill" /> |
+| `.radius-bottom-0` | 0 | <GroveRadiusBlock radius="radius-bottom-0" /> |
+| `.radius-bottom-sm` | 2px | <GroveRadiusBlock radius="radius-bottom-sm" /> |
+| `.radius-bottom-md` | 4px | <GroveRadiusBlock radius="radius-bottom-md" /> |
+| `.radius-bottom-lg` | 8px | <GroveRadiusBlock radius="radius-bottom-lg" /> |
+| `.radius-bottom-pill` | 99rem | <GroveRadiusBlock radius="radius-bottom-pill" /> |
+| `.radius-left-0` | 0 | <GroveRadiusBlock radius="radius-left-0" /> |
+| `.radius-left-sm` | 2px | <GroveRadiusBlock radius="radius-left-sm" /> |
+| `.radius-left-md` | 4px | <GroveRadiusBlock radius="radius-left-md" /> |
+| `.radius-left-lg` | 8px | <GroveRadiusBlock radius="radius-left-lg" /> |
+| `.radius-left-pill` | 99rem | <GroveRadiusBlock radius="radius-left-pill" /> |
+| `.radius-right-0` | 0 | <GroveRadiusBlock radius="radius-right-0" /> |
+| `.radius-right-sm` | 2px | <GroveRadiusBlock radius="radius-right-sm" /> |
+| `.radius-right-md` | 4px | <GroveRadiusBlock radius="radius-right-md" /> |
+| `.radius-right-lg` | 8px | <GroveRadiusBlock radius="radius-right-lg" /> |
+| `.radius-right-pill` | 99rem | <GroveRadiusBlock radius="radius-right-pill" /> |
+
+## Advanced settings
+
+### Responsive variants
+
+Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+`.tablet:padding-y-2`
+
+**Output**
+```css
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+```
+
+| Breakpoint name | Width | Default |
+| ----------- | ----------- | ----------- |
+| mobile-lg | 480px | `true` |
+| tablet | 640px | `true` |
+| desktop | 1024px | `true` |
+
+
+### State variants
+Use a state prefix separated with a : to target a utility in a specific state.
+
+**Example**
+```css
+.hover:bg-primary-vivid`
+```
+
+**Output**
+```css
+`.hover\:bg-primary-vivid:hover { background-color: #0052de; }
+```
