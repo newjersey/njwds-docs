@@ -1,0 +1,22 @@
+---
+title: Clearfix
+description: Clear any floated elements
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+## Basic settings 
+
+### Code 
+```html
+<div class="clearfix">
+  <span class="float-left">.float-left</span>
+  <span class="float-right">.float-right</span>
+</div>
+```
