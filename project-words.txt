@@ -20,6 +20,7 @@ megamenu
 minh
 minw
 maxw
+maxh
 newjersey
 njwds
 Rachele
@@ -28,6 +29,8 @@ scannability
 sidenav
 skeuomorphism
 sublist
+tbottom
+ttop
 Tullio
 uncalculated
 usagov
