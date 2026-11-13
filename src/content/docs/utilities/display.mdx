@@ -1,0 +1,206 @@
+---
+title: Display
+description: Control the position and display characteristics of an item
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+CSS Properties: `bottom` `display` `left` `opacity` `overflow` `position` `right` `top` `z-index`
+
+## Basic settings
+
+### Display 
+CSS Property: `display`
+
+| Name | Value |
+| ----------- | ----------- |
+| `.display-block` | block |
+| `.display-flex` | flex |
+| `.display-inline` | inline |
+| `.display-inline-block` | inline-block |
+| `.display-inline-flex` | inline-flex |
+| `.display-none` | none |
+| `.display-table-cell` | table-cell |
+
+### Opacity 
+CSS Property: `opacity`
+
+| Name | Value |
+| ----------- | ----------- |
+| `.opacity-0` | 0 |
+| `.opacity-10` | 0.1 |
+| `.opacity-20` | 0.2 |
+| `.opacity-30` | 0.3 |
+| `.opacity-40` | 0.4 |
+| `.opacity-50` | 0.5 |
+| `.opacity-60` | 0.6 |
+| `.opacity-70` | 0.7 |
+| `.opacity-80` | 0.8 |
+| `.opacity-90` | 0.9 |
+| `.opacity-100` | 1 |
+
+### Overflow 
+CSS Property: `overflow`
+
+| Name | Value |
+| ----------- | ----------- |
+| `.overflow-visible` | visible |
+| `.overflow-x-visible` | visible |
+| `.overflow-y-visible` | visible |
+| `.overflow-hidden` | hidden |
+| `.overflow-x-hidden` | hidden |
+| `.overflow-y-hidden` | hidden |
+| `.overflow-scroll` | scroll |
+| `.overflow-x-scroll` | scroll |
+| `.overflow-y-scroll` | scroll |
+| `.overflow-auto` | auto |
+| `.overflow-x-auto` | auto |
+| `.overflow-y-auto` | auto |
+
+### Position types
+CSS Property: `position` 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.position-absolute` | absolute |
+| `.position-fixed` | fixed |
+| `.position-relative` | relative |
+| `.position-static` | static |
+| `.position-sticky` | sticky |
+
+### Position values
+CSS Property: `top`, `bottom`, `left`, `right`
+
+| Name | Value |
+| ----------- | ----------- |
+| `.top-auto` | auto |
+| `.top-neg-3` | -24px |
+| `.top-neg-205` | -20px |
+| `.top-neg-2` | -16px |
+| `.top-neg-105` | -12px |
+| `.top-neg-1` | -8px |
+| `.top-neg-05` | -4px |
+| `.top-neg-2px` | -2px |
+| `.top-neg-1px` | -1px |
+| `.top-0` | 0 |
+| `.top-1px` | 1px |
+| `.top-2px` | 2px |
+| `.top-05` | 4px |
+| `.top-1` | 8px |
+| `.top-105` | 12px |
+| `.top-2` | 16px |
+| `.top-205` | 20px |
+| `.top-3` | 24px |
+| `.top-full` | 100% |
+| `.right-auto` | auto |
+| `.right-neg-3` | -24px |
+| `.right-neg-205` | -20px |
+| `.right-neg-2` | -16px |
+| `.right-neg-105` | -12px |
+| `.right-neg-1` | -8px |
+| `.right-neg-05` | -4px |
+| `.right-neg-2px` | -2px |
+| `.right-neg-1px` | -1px |
+| `.right-0` | 0 |
+| `.right-1px` | 1px |
+| `.right-2px` | 2px |
+| `.right-05` | 4px |
+| `.right-1` | 8px |
+| `.right-105` | 12px |
+| `.right-2` | 16px |
+| `.right-205` | 20px |
+| `.right-3` | 24px |
+| `.right-full` | 100% |
+| `.bottom-auto` | auto |
+| `.bottom-neg-3` | -24px |
+| `.bottom-neg-205` | -20px |
+| `.bottom-neg-2` | -16px |
+| `.bottom-neg-105` | -12px |
+| `.bottom-neg-1` | -8px |
+| `.bottom-neg-05` | -4px |
+| `.bottom-neg-2px` | -2px |
+| `.bottom-neg-1px` | -1px |
+| `.bottom-0` | 0 |
+| `.bottom-1px` | 1px |
+| `.bottom-2px` | 2px |
+| `.bottom-05` | 4px |
+| `.bottom-1` | 8px |
+| `.bottom-105` | 12px |
+| `.bottom-2` | 16px |
+| `.bottom-205` | 20px |
+| `.bottom-3` | 24px |
+| `.bottom-full` | 100% |
+| `.left-auto` | auto |
+| `.left-neg-3` | -24px |
+| `.left-neg-205` | -20px |
+| `.left-neg-2` | -16px |
+| `.left-neg-105` | -12px |
+| `.left-neg-1` | -8px |
+| `.left-neg-05` | -4px |
+| `.left-neg-2px` | -2px |
+| `.left-neg-1px` | -1px |
+| `.left-0` | 0 |
+| `.left-1px` | 1px |
+| `.left-2px` | 2px |
+| `.left-05` | 4px |
+| `.left-1` | 8px |
+| `.left-105` | 12px |
+| `.left-2` | 16px |
+| `.left-205` | 20px |
+| `.left-3` | 24px |
+| `.left-full` | 100% |
+
+### Pin 
+The `pin` utilities position an item absolutely to the specified side.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.pin-top` | top: 0 |
+| `.pin-bottom` | bottom: 0 |
+| `.pin-left` | left: 0 |
+| `.pin-right` | right: 0 |
+| `.pin-x` | left: 0; right: 0 |
+| `.pin-y` | top: 0; bottom: 0 |
+| `.pin-all` | top: 0; right: 0; bottom: 0; left: 0 |
+| `.pin-none` | top: auto; right: auto; bottom: auto; left: auto |
+
+### Z-index 
+CSS Property: `z-index` 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.z-auto` | auto |
+| `.z-top` | 99999 |
+| `.z-500` | 500 |
+| `.z-400` | 400 |
+| `.z-300` | 300 |
+| `.z-200` | 200 |
+| `.z-100` | 100 |
+| `.z-0` | 0 |
+| `.z-bottom` | -1000 |
+
+## Advanced settings
+
+### Responsive variants
+
+Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+
+`.tablet:display-none`
+
+**Output**
+
+```scss
+@media screen and (min-width: 640px) {
+  .tablet\:display-none {
+    display: none;
+  }
+}
+```
