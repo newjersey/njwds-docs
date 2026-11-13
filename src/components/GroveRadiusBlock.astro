@@ -1,0 +1,23 @@
+---
+/**
+ * Example usage:
+ *
+ * <GroveRadiusBlock radius="radius-sm" />
+ *
+ * - radius: the CSS border-radius value to display as a small swatch.
+ * - The radius is exposed to screen readers via aria-label. Pair this with
+ *   visible text nearby so users can read the value.
+ */
+interface Props {
+  radius?: string;
+}
+
+const { radius } = Astro.props;
+---
+
+{radius && (
+    <div 
+        class={`bg-secondary-light height-8 width-15 ${radius}`}>
+    </div>
+)}
+

@@ -17,6 +17,7 @@ export default defineConfig({
       imports: [
         "./src/components/FigmaStorybookButtonGroup.astro",
         "./src/components/GroveColorBlock.astro",
+        "./src/components/GroveRadiusBlock.astro",
         "./src/components/PageHeader.astro",
         "./src/components/Icon.astro",
         "./src/components/IconList.astro",
