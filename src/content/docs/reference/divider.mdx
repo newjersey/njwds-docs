@@ -1,0 +1,99 @@
+---
+title: Divider
+description: Documentation for divider component.
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+<PageHeader
+  name="Divider"
+  category="COMPONENTS"
+  description="A divider separates content or sections within a page."
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2776-427&p=f&t=kIkWUxaAUytHfoIV-0"
+  storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/web-components-divider--docs`}
+/>
+
+<iframe 
+    title="Interactive preview of the divider from Storybook" 
+    frameborder="0" 
+    src={`${STORYBOOK_BASE_URL}/iframe.html?id=web-components-divider--default&viewMode=story`}
+    loading="lazy"
+    class="grove__iframe width-full border border-base-light">
+</iframe>
+
+ <ViewExternalResource storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/web-components-divider--docs`} />
+
+## Usage guidelines
+
+[Using web components](/guides/webcomponents/)
+
+### Use this component for
+
+TBD
+
+### Requirements for use
+
+TBD
+
+
+## Content guidelines
+
+TBD
+
+
+## Using this component
+
+The divider is available as a web component, a React component, and a CSS class. See [Using web components](/guides/webcomponents/) to set up npm, React, or the CDN first.
+
+### Web component
+
+```html
+<grove-divider></grove-divider>
+```
+
+### React
+
+```tsx
+import { GroveDivider } from "@newjersey/njwds/react";
+
+<GroveDivider />
+```
+
+### CSS class
+
+Grove's stylesheet includes the same styles as a class, so a plain `<hr>` needs no JavaScript:
+
+```html
+<hr class="grove-divider" />
+```
+
+### Customization
+
+The web component and the CSS class both support these CSS custom properties:
+
+| Custom property | Default |
+| ----------- | ----------- |
+| `--grove-divider-color` | The theme's `base` color |
+| `--grove-divider-margin-block` | `units(3)` on mobile, `units(6)` from the tablet breakpoint |
+| `--grove-divider-margin-inline` | `units(2.5)` on mobile, `units(15)` from the tablet breakpoint |
+
+Setting a margin property replaces the responsive default at every screen size.
+
+
+## Accessibility guidance
+
+TBD
+
+## Known issues
+
+None
+
+## Resources
+
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Divider](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2776-427&p=f&t=kIkWUxaAUytHfoIV-0) | Using in designs |
+| [Storybook: Divider web component](https://storybook.grove.nj.gov/?path=/docs/web-components-divider--docs) | Interactive example, see code snippet |
+| [Storybook: Divider React component](https://storybook.grove.nj.gov/?path=/docs/react-components-divider--docs) | Interactive example, see code snippet |
+| [Using web components](/guides/webcomponents/) | Setting up npm, React, or the CDN |
