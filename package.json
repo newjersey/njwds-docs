@@ -21,7 +21,7 @@
     "@astrojs/starlight": "^0.42.9",
     "@newjersey/feedback-widget": "^0.8.3",
     "@newjersey/njwds": "^2.11.1",
-    "astro": "^7.4.5",
+    "astro": "^7.4.12",
     "astro-auto-import": "^0.6.0",
     "remark-gfm": "^4.0.1",
     "sharp": "^0.35.5"
