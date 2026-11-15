@@ -30,7 +30,7 @@
     "@astrojs/check": "^0.9.12",
     "@axe-core/playwright": "^4.14.0",
     "@eslint/js": "^10.0.1",
-    "@playwright/test": "^1.64.1",
+    "@playwright/test": "^1.65.0",
     "@types/eslint__js": "^9.14.0",
     "astro-eslint-parser": "^3.2.0",
     "axe-core": "^4.14.0",
