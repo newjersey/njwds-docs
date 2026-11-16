@@ -1,0 +1,21 @@
+---
+title: List reset
+description: Reset default list styling
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+## Examples and usage 
+
+### List reset 
+
+| Name | Preview |
+| ----------- | ----------- |
+| `default` | <ul><li>Red apples</li><li>Yellow bananas</li><li>Purple eggplants</li></ul> |
+| `.add-list-reset` | <ul class="add-list-reset"><li>Red apples</li><li>Yellow bananas</li><li>Purple eggplants</li></ul> |

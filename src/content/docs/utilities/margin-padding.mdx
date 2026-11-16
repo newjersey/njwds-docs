@@ -1,0 +1,463 @@
+---
+title: Margin and padding
+description: Change the spacing around an item and inside an item.
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+CSS Properties: `margin` `padding` 
+
+## Basic settings
+
+### Margin 
+CSS Property: `margin` 
+
+#### Margin on all sides 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.margin-0` | `0` |
+| `.margin-1px` | `1px` |
+| `.margin-2px` | `2px` |
+| `.margin-05` | `4px` |
+| `.margin-1` | `8px` |
+| `.margin-105` | `12px` |
+| `.margin-2` | `16px` |
+| `.margin-205` | `20px` |
+| `.margin-3` | `24px` |
+| `.margin-4` | `32px` |
+| `.margin-5` | `40px` |
+| `.margin-6` | `48px` |
+| `.margin-7` | `56px` |
+| `.margin-8` | `64px` |
+| `.margin-9` | `72px` |
+| `.margin-10` | `80px` |
+| `.margin-15` | `120px` |
+
+
+#### Margin bottom 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.margin-bottom-neg-15` | `-120px` |
+| `.margin-bottom-neg-10` | `-80px` |
+| `.margin-bottom-neg-9` | `-72px` | 
+| `.margin-bottom-neg-8` | `-64px` |
+| `.margin-bottom-neg-7` | `-56px` |
+| `.margin-bottom-neg-6` | `-48px` |
+| `.margin-bottom-neg-5` | `-40px` |
+| `.margin-bottom-neg-4` | `-32px` |
+| `.margin-bottom-neg-3` | `-24px` |
+| `.margin-bottom-neg-205` | `-20px` |
+| `.margin-bottom-neg-2` | `-16px` |
+| `.margin-bottom-neg-105` | `-12px` |
+| `.margin-bottom-neg-1` | `-8px` |
+| `.margin-bottom-neg-05` | `-4px` |
+| `.margin-bottom-neg-2px` | `-2px` |
+| `.margin-bottom-neg-1px` | `-1px` |
+| `.margin-bottom-0` | `0` |
+| `.margin-bottom-1px` | `1px` |
+| `.margin-bottom-2px` | `2px` |
+| `.margin-bottom-05` | `4px` |
+| `.margin-bottom-1` | `8px` |
+| `.margin-bottom-105` | `12px` |
+| `.margin-bottom-2` | `16px` |
+| `.margin-bottom-205` | `20px` |
+| `.margin-bottom-3` | `24px` |
+| `.margin-bottom-4` | `32px` |
+| `.margin-bottom-5` | `40px` |
+| `.margin-bottom-6` | `48px` |
+| `.margin-bottom-7` | `56px` |
+| `.margin-bottom-8` | `64px` |
+| `.margin-bottom-9` | `72px` |
+| `.margin-bottom-10` | `80px` |
+| `.margin-bottom-15` | `120px` |
+
+
+#### Margin top 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.margin-top-neg-15` | `-120px` |
+| `.margin-top-neg-10` | `-80px` |
+| `.margin-top-neg-9` | `-72px` |
+| `.margin-top-neg-8` | `-64px` |
+| `.margin-top-neg-7` | `-56px` |
+| `.margin-top-neg-6` | `-48px` |
+| `.margin-top-neg-5` | `-40px` |
+| `.margin-top-neg-4` | `-32px` |
+| `.margin-top-neg-3` | `-24px` |
+| `.margin-top-neg-205` | `-20px` |
+| `.margin-top-neg-2` | `-16px` |
+| `.margin-top-neg-105` | `-12px` |
+| `.margin-top-neg-1` | `-8px` |
+| `.margin-top-neg-05` | `-4px` |
+| `.margin-top-neg-2px` | `-2px` |
+| `.margin-top-neg-1px` | `-1px` |
+| `.margin-top-neg-0` | `0` |
+| `.margin-top-1px` | `1px` |
+| `.margin-top-2px` | `2px` |
+| `.margin-top-05` | `4px` |
+| `.margin-top-1` | `8px` |
+| `.margin-top-105` | `12px` |
+| `.margin-top-2` | `16px` |
+| `.margin-top-205` | `20px` |
+| `.margin-top-3` | `24px` |
+| `.margin-top-4` | `32px` |
+| `.margin-top-5` | `40px` |
+| `.margin-top-6` | `48px` |
+| `.margin-top-7` | `56px` |
+| `.margin-top-8` | `64px` |
+| `.margin-top-9` | `72px` |
+| `.margin-top-10` | `80px` |
+| `.margin-top-15` | `120px` |
+
+
+#### Margin left 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.margin-left-neg-15` | `-120px` |
+| `.margin-left-neg-10` | `-80px` |
+| `.margin-left-neg-9` | `-72px` |
+| `.margin-left-neg-8` | `-64px` |
+| `.margin-left-neg-7` | `-56px` |
+| `.margin-left-neg-6` | `-48px` |
+| `.margin-left-neg-5` | `-40px` |
+| `.margin-left-neg-4` | `-32px` |
+| `.margin-left-neg-3` | `-24px` |
+| `.margin-left-neg-205` | `-20px` |
+| `.margin-left-neg-2` | `-16px` |
+| `.margin-left-neg-105` | `-12px` |
+| `.margin-left-neg-1` | `-8px` |
+| `.margin-left-neg-05` | `-4px` |
+| `.margin-left-neg-2px` | `-2px` |
+| `.margin-left-neg-1px` | `-1px` |
+| `.margin-left-0` | `0` |
+| `.margin-left-1px` | `1px` |
+| `.margin-left-2px` | `2px` |
+| `.margin-left-05` | `4px` |
+| `.margin-left-1` | `8px` |
+| `.margin-left-105` | `12px` |
+| `.margin-left-2` | `16px` |
+| `.margin-left-205` | `20px` |
+| `.margin-left-3` | `24px` |
+| `.margin-left-4` | `32px` |
+| `.margin-left-5` | `40px` |
+| `.margin-left-6` | `48px` |
+| `.margin-left-7` | `56px` |
+| `.margin-left-8` | `64px` |
+| `.margin-left-9` | `72px` |
+| `.margin-left-10` | `80px` |
+| `.margin-left-15` | `120px` |
+| `.margin-left-auto` | `auto` |
+
+
+#### Margin left 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.margin-right-neg-15` | `-120px` |
+| `.margin-right-neg-10` | `-80px` |
+| `.margin-right-neg-9` | `-72px` |
+| `.margin-right-neg-8` | `-64px` |
+| `.margin-right-neg-7` | `-56px` |
+| `.margin-right-neg-6` | `-48px` |
+| `.margin-right-neg-5` | `-40px` |
+| `.margin-right-neg-4` | `-32px` |
+| `.margin-right-neg-3` | `-24px` |
+| `.margin-right-neg-205` | `-20px` |
+| `.margin-right-neg-2` | `-16px` |
+| `.margin-right-neg-105` | `-12px` |
+| `.margin-right-neg-1` | `-8px` |
+| `.margin-right-neg-05` | `-4px` |
+| `.margin-right-neg-2px` | `-2px` |
+| `.margin-right-neg-1px` | `-1px` |
+| `.margin-right-0` | `0` |
+| `.margin-right-1px` | `1px` |
+| `.margin-right-2px` | `2px` |
+| `.margin-right-05` | `4px` |
+| `.margin-right-1` | `8px` |
+| `.margin-right-2` | `16px` |
+| `.margin-right-205` | `20px` |
+| `.margin-right-3` | `24px` |
+| `.margin-right-4` | `32px` |
+| `.margin-right-5` | `40px` |
+| `.margin-right-6` | `48px` |
+| `.margin-right-7` | `56px` |
+| `.margin-right-8` | `64px` |
+| `.margin-right-9` | `72px` |
+| `.margin-right-10` | `80px` |
+| `.margin-right-15` | `120px` |
+| `.margin-right-auto` | `auto` |
+
+
+
+#### Margin left and right
+
+| Name | Value |
+| ----------- | ----------- |
+| `.margin-x-neg-15` | `-120px` |
+| `.margin-x-neg-10` | `-80px` | 
+| `.margin-x-neg-9` | `-72px` | 
+| `.margin-x-neg-8` | `-64px` | 
+| `.margin-x-neg-7` | `-56px` | 
+| `.margin-x-neg-6` | `-48px` | 
+| `.margin-x-neg-5` | `-40px` | 
+| `.margin-x-neg-4` | `-32px` | 
+| `.margin-x-neg-3` | `-24px` | 
+| `.margin-x-neg-205` | `-20px` | 
+| `.margin-x-neg-2` | `-16px` | 
+| `.margin-x-neg-105` | `-12px` | 
+| `.margin-x-neg-1` | `-8px` | 
+| `.margin-x-neg-05` | `-4px` | 
+| `.margin-x-neg-2px` | `-2px` | 
+| `.margin-x-neg-1px` | `-1px` | 
+| `.margin-x-0` | `0` | 
+| `.margin-x-1px` | `1px` | 
+| `.margin-x-2px` | `2px` | 
+| `.margin-x-05` | `4px` | 
+| `.margin-x-1` | `8px` |
+| `.margin-x-105` | `12px` |
+| `.margin-x-2` | `16px` | 
+| `.margin-x-205` | `20px` | 
+| `.margin-x-3` | `24px` | 
+| `.margin-x-4` | `32px` | 
+| `.margin-x-5` | `40px` | 
+| `.margin-x-6` | `48px` | 
+| `.margin-x-7` | `56px` | 
+| `.margin-x-8` | `64px` | 
+| `.margin-x-9` | `72px` | 
+| `.margin-x-10` | `80px` | 
+| `.margin-x-15` | `120px` | 
+| `.margin-x-auto` | `auto` | 
+
+
+
+#### Margin bottom and top
+
+| Name | Value |
+| ----------- | ----------- |
+| `.margin-y-neg-15` | `-120px` |
+| `.margin-y-neg-10` | `-80px` |
+| `.margin-y-neg-9` | `-72px` |
+| `.margin-y-neg-8` | `-64px` |
+| `.margin-y-neg-7` | `-56px` |
+| `.margin-y-neg-6` | `-48px` |
+| `.margin-y-neg-5` | `-40px` |
+| `.margin-y-neg-4` | `-32px` |
+| `.margin-y-neg-3` | `-24px` |
+| `.margin-y-neg-205` | `-20px` |
+| `.margin-y-neg-2` | `-16px` |
+| `.margin-y-neg-105` | `-12px` |
+| `.margin-y-neg-1` | `-8px` |
+| `.margin-y-neg-05` | `-4px` |
+| `.margin-y-neg-2px` | `-2px` |
+| `.margin-y-neg-1px` | `-1px` |
+| `.margin-y-neg-0` | `0` |
+| `.margin-y-1px` | `1px` |
+| `.margin-y-2px` | `2px` |
+| `.margin-y-05` | `4px` |
+| `.margin-y-1` | `8px` |
+| `.margin-y-105` | `12px` |
+| `.margin-y-2` | `16px` |
+| `.margin-y-205` | `20px` |
+| `.margin-y-3` | `24px` |
+| `.margin-y-4` | `32px` |
+| `.margin-y-5` | `40px` |
+| `.margin-y-6` | `48px` |
+| `.margin-y-7` | `56px` |
+| `.margin-y-8` | `64px` |
+| `.margin-y-9` | `72px` |
+| `.margin-y-10` | `80px` |
+| `.margin-y-15` | `120px` |
+
+
+### Padding 
+CSS Property: `padding` 
+
+#### Padding on all sides 
+
+| Name | Value |
+| ----------- | ----------- |
+| `.padding-0` | `0` |
+| `.padding-1px` | `1px` |
+| `.padding-2px` | `2px` |
+| `.padding-05` | `4px` |
+| `.padding-1` | `8px` |
+| `.padding-105` | `12px` |
+| `.padding-2` | `16px` |
+| `.padding-205` | `20px` |
+| `.padding-3` | `24px` |
+| `.padding-4` | `32px` |
+| `.padding-5` | `40px` |
+| `.padding-6` | `48px` |
+| `.padding-7` | `56px` |
+| `.padding-8` | `64px` |
+| `.padding-9` | `72px` |
+| `.padding-10` | `80px` |
+| `.padding-15` | `16px` |
+
+
+#### Padding bottom
+
+| Name | Value |
+| ----------- | ----------- |
+| `.padding-bottom-0` | `0` |
+| `.padding-bottom-1px` | `1px` |
+| `.padding-bottom-2px` | `2px` |
+| `.padding-bottom-05` | `4px` |
+| `.padding-bottom-1` | `8px` |
+| `.padding-bottom-105` | `12px` |
+| `.padding-bottom-2` | `16px` |
+| `.padding-bottom-205` | `20px` |
+| `.padding-bottom-3` | `24px` |
+| `.padding-bottom-4` | `32px` |
+| `.padding-bottom-5` | `40px` |
+| `.padding-bottom-6` | `48px` |
+| `.padding-bottom-7` | `56px` |
+| `.padding-bottom-8` | `64px` |
+| `.padding-bottom-9` | `72px` |
+| `.padding-bottom-10` | `80px` |
+| `.padding-bottom-15` | `120px` |
+
+
+#### Padding top
+
+| Name | Value |
+| ----------- | ----------- |
+| `.padding-top-0` | `0` |
+| `.padding-top-1px` | `1px` |
+| `.padding-top-2px` | `2px` |
+| `.padding-top-05` | `4px` |
+| `.padding-top-1` | `8px` |
+| `.padding-top-105` | `12px` |
+| `.padding-top-2` | `16px` |
+| `.padding-top-205` | `20px` |
+| `.padding-top-3` | `24px` |
+| `.padding-top-4` | `32px` |
+| `.padding-top-5` | `40px` |
+| `.padding-top-6` | `48px` |
+| `.padding-top-7` | `56px` |
+| `.padding-top-8` | `64px` |
+| `.padding-top-9` | `72px` |
+| `.padding-top-10` | `80px` |
+| `.padding-top-15` | `120px` |
+
+
+
+#### Padding left
+
+| Name | Value |
+| ----------- | ----------- |
+| `.padding-left-0` | `0` |
+| `.padding-left-1px` | `1px` |
+| `.padding-left-2px` | `2px` |
+| `.padding-left-05` | `4px` |
+| `.padding-left-1` | `8px` |
+| `.padding-left-105` | `12px` |
+| `.padding-left-2` | `16px` |
+| `.padding-left-205` | `20px` |
+| `.padding-left-3` | `24px` |
+| `.padding-left-4` | `32px` |
+| `.padding-left-5` | `40px` |
+| `.padding-left-6` | `48px` |
+| `.padding-left-7` | `56px` |
+| `.padding-left-8` | `64px` |
+| `.padding-left-9` | `72px` |
+| `.padding-left-10` | `80px` |
+| `.padding-left-15` | `120px` |
+
+
+#### Padding right
+
+| Name | Value |
+| ----------- | ----------- |
+| `.padding-right-0` | `0` |
+| `.padding-right-1px` | `1px` |
+| `.padding-right-2px` | `2px` |
+| `.padding-right-05` | `4px` |
+| `.padding-right-1` | `8px` |
+| `.padding-right-105` | `12px` |
+| `.padding-right-2` | `16px` |
+| `.padding-right-205` | `20px` |
+| `.padding-right-3` | `24px` |
+| `.padding-right-4` | `32px` |
+| `.padding-right-5` | `40px` |
+| `.padding-right-6` | `48px` |
+| `.padding-right-7` | `56px` |
+| `.padding-right-8` | `64px` |
+| `.padding-right-9` | `72px` |
+| `.padding-right-10` | `80px` |
+| `.padding-right-15` | `120px` |
+
+
+
+#### Padding left and right
+
+| Name | Value |
+| ----------- | ----------- |
+| `.padding-x-0` | `0` |
+| `.padding-x-1px` | `1px` |
+| `.padding-x-2px` | `2px` |
+| `.padding-x-05` | `4px` |
+| `.padding-x-1` | `8px` |
+| `.padding-x-105` | `12px` |
+| `.padding-x-2` | `16px` |
+| `.padding-x-205` | `20px` |
+| `.padding-x-3` | `24px` |
+| `.padding-x-4` | `32px` |
+| `.padding-x-5` | `40px` |
+| `.padding-x-6` | `48px` |
+| `.padding-x-7` | `56px` |
+| `.padding-x-8` | `64px` |
+| `.padding-x-9` | `72px` |
+| `.padding-x-10` | `80px` |
+| `.padding-x-15` | `120px` |
+
+
+#### Padding bottom and top
+
+| Name | Value |
+| ----------- | ----------- |
+| `.padding-y-0` | `0` |
+| `.padding-y-1px` | `1px` |
+| `.padding-y-2px` | `2px` |
+| `.padding-y-05` | `4px` |
+| `.padding-y-1` | `8px` |
+| `.padding-y-105` | `12px` |
+| `.padding-y-2` | `16px` |
+| `.padding-y-205` | `20px` |
+| `.padding-y-3` | `24px` |
+| `.padding-y-4` | `32px` |
+| `.padding-y-5` | `40px` |
+| `.padding-y-6` | `48px` |
+| `.padding-y-7` | `56px` |
+| `.padding-y-8` | `64px` |
+| `.padding-y-9` | `72px` |
+| `.padding-y-10` | `80px` |
+| `.padding-y-15` | `120px` |
+
+## Advanced settings
+
+### Responsive variants
+Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+`.tablet:padding-y-2`
+
+**Output**
+```scss
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+```
