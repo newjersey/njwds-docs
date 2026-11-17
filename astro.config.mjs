@@ -35,10 +35,10 @@ export default defineConfig({
           },
         },
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            src: '/src/scripts/global.js',
-            type: 'module',
+            src: "/src/scripts/global.js",
+            type: "module",
           },
         },
         {
