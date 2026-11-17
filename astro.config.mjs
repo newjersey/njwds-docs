@@ -36,13 +36,6 @@ export default defineConfig({
         },
         {
           tag: "script",
-          attrs: {
-            src: "/src/scripts/global.js",
-            type: "module",
-          },
-        },
-        {
-          tag: "script",
           attrs: {},
           content: `
           window.dataLayer = window.dataLayer || [];
