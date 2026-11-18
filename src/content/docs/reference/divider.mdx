@@ -8,7 +8,7 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 <PageHeader
   name="Divider"
   category="COMPONENTS"
-  description="A divider separates content or sections within a page."
+  description="A divider is used sparingly to separate sections of content within a page."
   figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=2776-427&p=f&t=kIkWUxaAUytHfoIV-0"
   storybookUrl={`${STORYBOOK_BASE_URL}/?path=/docs/web-components-divider--docs`}
 />
@@ -25,20 +25,39 @@ import { STORYBOOK_BASE_URL } from '@config/storybook';
 
 ## Usage guidelines
 
-[Using web components](/guides/webcomponents/)
-
 ### Use this component for
+<IconList>
+    <IconListItem icon="check">
+        **Separating content into sections,** when spacing alone isn’t enough.
+    </IconListItem>
+    <IconListItem icon="check">
+        **To group related content together.** The collection component can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.
+    </IconListItem>
+</IconList>
 
-TBD
+### Use something else for for
+<IconList>
+    <IconListItem icon="close">
+        **Separating individual items** The divider should not be used to separate individual items. Use spacing instead to distinguish between items.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Separating side-by-side content.** The divider is not meant for vertical use separating content next to each other. Use spacing instead or consider putting content into the card component.
+    </IconListItem>
+</IconList>
 
 ### Requirements for use
-
-TBD
+<IconList>
+    <IconListItem icon="report">
+        **Consistent spacing.** Ensure consistent padding and margin above and below dividers to avoid crowding.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don't overuse dividers** within a page, which reduces scannability.
+    </IconListItem>
+</IconList>
 
 
 ## Content guidelines
-
-TBD
+In progress.
 
 
 ## Using this component
@@ -81,11 +100,18 @@ Setting a margin property replaces the responsive default at every screen size.
 
 
 ## Accessibility guidance
+### Decorative vs semantic dividers
+Not all dividers should be announced to screen readers. Most dividers are decorative when used alongside headings or within well-structured content.
 
-TBD
+#### Use aria-hidden="true" for decorative dividers when:
+- The divider only provides visual separation
+- Content structure is already clear through headings or other markup
+
+#### Do not use aria-hidden="true" for semantic dividers when:
+- The divider marks a significant topic change meaningful to non-visual users
+- The divider is the primary indicator of a content boundary
 
 ## Known issues
-
 None
 
 ## Resources
