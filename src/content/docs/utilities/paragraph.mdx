@@ -1,0 +1,118 @@
+---
+title: Paragraph styles
+description: Change the appearance of a block of text.
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+export const displayContent = 'In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend\'s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+CSS Properties: `line-height` `max-width` `text-align` `text-indent`
+
+
+
+## Basic settings
+
+### Line height
+CSS property: `line-height`
+
+#### line-height-mono
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.line-height-mono-1` | 1.05 | <p class="font-mono-md line-height-mono-1 margin-top-0 text-bold">Mark Twain</p>  |
+| `.line-height-mono-2` | 1.21 | <p class="font-mono-md line-height-mono-2 margin-top-0 text-bold">The Celebrated Jumping Frog of the County</p>  |
+| `.line-height-mono-3` | 1.42 | <p class="font-mono-md line-height-mono-3 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-mono-4` | 1.57 | <p class="font-mono-md line-height-mono-4 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-mono-5` | 1.7 | <p class="font-mono-md line-height-mono-5 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-mono-6` | 1.84 | <p class="font-mono-md line-height-mono-6 margin-top-0 text-bold">{displayContent}</p>  |
+
+#### line-height-sans
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.line-height-sans-1` | 0.94 | <p class="font-sans-md line-height-sans-1 margin-top-0 text-bold">Mark Twain</p>  |
+| `.line-height-sans-2` | 1.08 | <p class="font-sans-md line-height-sans-2 margin-top-0 text-bold">The Celebrated Jumping Frog of the County</p>  |
+| `.line-height-sans-3` | 1.27 | <p class="font-sans-md line-height-sans-3 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-sans-4` | 1.41 | <p class="font-sans-md line-height-sans-4 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-sans-5` | 1.52 | <p class="font-sans-md line-height-sans-5 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-sans-6` | 1.64 | <p class="font-sans-md line-height-sans-6 margin-top-0 text-bold">{displayContent}</p>  |
+
+
+#### line-height-serif
+(Shown: Merriweather) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.line-height-serif-1` | 1.02 | <p class="font-serif-md line-height-serif-1 margin-top-0 text-bold">Mark Twain</p>  |
+| `.line-height-serif-2` | 1.18 | <p class="font-serif-md line-height-serif-2 margin-top-0 text-bold">The Celebrated Jumping Frog of the County</p>  |
+| `.line-height-serif-3` | 1.38 | <p class="font-serif-md line-height-serif-3 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-serif-4` | 1.54 | <p class="font-serif-md line-height-serif-4 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-serif-5` | 1.66 | <p class="font-serif-md line-height-serif-5 margin-top-0 text-bold">{displayContent}</p>  |
+| `.line-height-serif-6` | 1.79 | <p class="font-serif-md line-height-serif-6 margin-top-0 text-bold">{displayContent}</p>  |
+
+
+### Measure
+CSS Property: `max-width`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.measure-1` | 44ex | <p class="measure-1">{displayContent}</p>  |
+| `.measure-2` | 60ex | <p class="measure-2">{displayContent}</p>  |
+| `.measure-3` | 64ex | <p class="measure-3">{displayContent}</p>  |
+| `.measure-4` | 68ex | <p class="measure-4">{displayContent}</p>  |
+| `.measure-5` | 72ex | <p class="measure-5">{displayContent}</p>  |
+| `.measure-6` | 88ex | <p class="measure-6">{displayContent}</p>  |
+| `.measure-none` | none | <p class="measure-none">{displayContent}</p>  |
+
+
+### Text alignment
+CSS Property: `text-align`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.text-left` | left | <p class="text-left">{displayContent}</p>  |
+| `.text-center` | center | <p class="text-center">{displayContent}</p>  |
+| `.text-right` | right | <p class="text-right">{displayContent}</p>  |
+| `.text-justify` | justify | <p class="text-justify">{displayContent}</p>  |
+
+
+### Text indent
+CSS Property: `text-indent`
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.text-indent-neg-9` | -72px | <p class="padding-left-9 text-indent-neg-9">{displayContent}</p>  |
+| `.text-indent-neg-8` | -64px | <p class="padding-left-9 text-indent-neg-8">{displayContent}</p>  |
+| `.text-indent-neg-7` | -56px | <p class="padding-left-9 text-indent-neg-7">{displayContent}</p>  |
+| `.text-indent-neg-6` | -48px | <p class="padding-left-9 text-indent-neg-6">{displayContent}</p>  |
+| `.text-indent-neg-5` | -40px | <p class="padding-left-9 text-indent-neg-5">{displayContent}</p>  |
+| `.text-indent-neg-3` | -24px | <p class="padding-left-9 text-indent-neg-3">{displayContent}</p>  |
+| `.text-indent-neg-205` | -20px | <p class="padding-left-9 text-indent-neg-205">{displayContent}</p>  |
+| `.text-indent-neg-2` | -16px | <p class="padding-left-9 text-indent-neg-2">{displayContent}</p>  |
+| `.text-indent-neg-105` | -12px | <p class="padding-left-9 text-indent-neg-105">{displayContent}</p>  |
+| `.text-indent-neg-1` | -8px | <p class="padding-left-9 text-indent-neg-1">{displayContent}</p>  |
+| `.text-indent-neg-05` | -4px | <p class="padding-left-9 text-indent-neg-05">{displayContent}</p>  |
+| `.text-indent-neg-2px` | -2px | <p class="padding-left-9 text-indent-neg-2px">{displayContent}</p>  |
+| `.text-indent-neg-1px` | -1px | <p class="padding-left-9 text-indent-neg-1px">{displayContent}</p>  |
+| `.text-indent-0` | 0 | <p class="padding-left-9 text-indent-0">{displayContent}</p>  |
+| `.text-indent-1px` | 1px | <p class="padding-left-9 text-indent-1px">{displayContent}</p>  |
+| `.text-indent-2px` | 2px | <p class="padding-left-9 text-indent-2px">{displayContent}</p>  |
+| `.text-indent-05` | 4px | <p class="padding-left-9 text-indent-05">{displayContent}</p>  |
+| `.text-indent-1` | 8px | <p class="padding-left-9 text-indent-1">{displayContent}</p>  |
+| `.text-indent-105` | 12px | <p class="padding-left-9 text-indent-105">{displayContent}</p>  |
+| `.text-indent-2` | 16px | <p class="padding-left-9 text-indent-2">{displayContent}</p>  |
+| `.text-indent-205` | 20px | <p class="padding-left-9 text-indent-205">{displayContent}</p>  |
+| `.text-indent-3` | 24px | <p class="padding-left-9 text-indent-3">{displayContent}</p>  |
+| `.text-indent-4` | 32px | <p class="padding-left-9 text-indent-4">{displayContent}</p>  |
+| `.text-indent-5` | 40px | <p class="padding-left-9 text-indent-5">{displayContent}</p>  |
+| `.text-indent-6` | 48px | <p class="padding-left-9 text-indent-6">{displayContent}</p>  |
+| `.text-indent-7` | 56px | <p class="padding-left-9 text-indent-7">{displayContent}</p>  |
+| `.text-indent-8` | 64px | <p class="padding-left-9 text-indent-8">{displayContent}</p>  |
+| `.text-indent-9` | 72px | <p class="padding-left-9 text-indent-9">{displayContent}</p>  |
