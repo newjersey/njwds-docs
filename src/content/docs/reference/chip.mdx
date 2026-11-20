@@ -1,0 +1,104 @@
+---
+title: Chip
+description: Documentation for chip component.
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+
+<PageHeader
+  name="Chip"
+  category="COMPONENTS"
+  description="A chip indicates the current status of content, processes, or items."
+  figmaUrl="https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=6063-3830&p=f&t=0t5Wpso08EIqCYFA-0"
+/>
+
+ 
+## Usage guidelines
+### Use this component for:
+<IconList> 
+  <IconListItem icon="check">
+        **To communicate current state or progress.** Chips help users quickly understand the status of an item, process, or workflow, such as “Pending,” “Approved,” or “Error,” at a glance. 
+    </IconListItem>
+     <IconListItem icon="check">
+        **Status updates within containers.** Chips indicate status within containers such as cards, tables, or other UI elements. 
+    </IconListItem> 
+    <IconListItem icon="check">
+        **To indicate urgency or required action.** Use warning or error chips to signal items that need attention or immediate action, helping users prioritize tasks. 
+    </IconListItem>
+    <IconListItem icon="check">
+        **To provide scannable feedback at a glance.** Chips combine color, icons, and short labels to communicate meaning consistently, making it easier to scan lists, tables, or dashboards. 
+    </IconListItem>
+</IconList>
+
+### Use something else for:
+<IconList>
+    <IconListItem icon="close">
+        **Titles.** The chip should not be the primary identifier of content. Use page title or card title instead.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Labeling or categorizing.** Use the [tag](https://grove.nj.gov/reference/tags/) component for labeling or categorizing items. 
+    </IconListItem>
+    <IconListItem icon="close">
+        **Non-semantic colors.** Use the [tag](https://grove.nj.gov/reference/tags/) component when color isn’t tied to urgency or meaning.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Showing filters applied.** Use the [tag](https://grove.nj.gov/reference/tags/) component to display filters applied.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Interactive actions.** The chip should never be clickable. Use the [button](https://grove.nj.gov/reference/button/) component instead for interactive actions on a page.
+    </IconListItem>
+    <IconListItem icon="close">
+        **Temporary feedback.** Use the [dismissable alert](https://grove.nj.gov/reference/alert/#dismissible-alerts) instead for brief, dismissable feedback messages.
+    </IconListItem>
+</IconList>
+
+### Requirements for use:
+<IconList>
+    <IconListItem icon="report">
+        **Keep text short.** Text inside chips should only be 1-3 words. For longer or more complex concepts, consider other components such as the alert, summary box, accordion or card.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Don't overdo it.** If everything is called out as important with a chip, it will overwhelm the user.
+    </IconListItem>
+    <IconListItem icon="report">
+        **Use semantic colors consistently.** Apply the same color meanings across all components (chips, alerts, etc.) to create a cohesive experience for users.
+    </IconListItem>
+</IconList>
+
+## Content guidance 
+- **Use sentence case.** While Tags without status are capitalized, status tags use sentence case to improve readability in case the status text is longer than 1–2 words.
+- **Keep text short.** Text inside chips should only be 1-3 words. For longer or more complex concepts, consider other components such as the alert, summary box, accordion or card.
+- **Don't use a "."** The word or phrase inside a chip does not need a "." after it
+
+## Chip variants  
+
+### Chip states
+Chip states determine chip color / role / level of severity. There are currently 5 chip states.  
+
+#### Information state
+Use the informational status to provide helpful information, but does not require action and does not have negative consequences. For example: "In progress". 
+
+#### Success state 
+Use the success state to indicate a positive or completed state. For example "Approved".
+
+#### Warning state 
+Use the warning status to warn a user, such as when there are negative consequences, when action is needed or when an action cannot continue. For example: "More information needed".
+
+#### Error state
+Use the error status to indicate critical issues, failure states, or items that require immediate attention. For example: "Failed".
+
+#### Neutral state 
+Use the Neutral status when a state or condition doesn’t fit the informational, warning, success, or error semantic colors, such as an inactive, draft, or default state that doesn’t need the user’s attention. For example: "Draft". 
+
+
+## Accessibility guidance
+In progress.
+
+## Known issues
+None
+
+## Resources
+### Grove links 
+| File | Purpose | 
+| ----------- | ----------- |
+| [Figma Grove: Chip](https://www.figma.com/design/z8CI77qQvbffkCslHANatK/Grove--Garden-State-Design-System?node-id=6063-3830&p=f&t=0t5Wpso08EIqCYFA-0) | Using in designs, documentation and best practices on usage |
