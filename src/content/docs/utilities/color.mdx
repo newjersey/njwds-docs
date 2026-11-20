@@ -1,0 +1,162 @@
+---
+title: Color
+description: Change the color of text and the background color of an item.
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+## Basic settings 
+
+### Text color 
+
+CSS PROPERTY: `color` 
+
+#### Project theme colors
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#f0f0f0" /> | `.text-base-lightest` | #f0f0f0 |
+| <GroveColorBlock color="#dfe1e2" /> | `.text-base-lighter` | #dfe1e2 |
+| <GroveColorBlock color="#a9aeb1" /> | `.text-base-light` | #a9aeb1 |
+| <GroveColorBlock color="#71767a" /> | `.text-base` | #71767a |
+| <GroveColorBlock color="#565c65" /> | `.text-base-dark` | #565c65 |
+| <GroveColorBlock color="#3d4551" /> | `.text-base-darker` | #3d4551 |
+| <GroveColorBlock color="#1b1b1b" /> | `.text-base-darkest` | #1b1b1b |
+| <GroveColorBlock color="#1b1b1b" /> | `.text-ink` | #1b1b1b |
+| <GroveColorBlock color="#d9e8f6" /> | `.text-primary-lighter` | #d9e8f6 |
+| <GroveColorBlock color="#73b3e7" /> | `.text-primary-light` | #73b3e7 |
+| <GroveColorBlock color="#005ea2" /> | `.text-primary` | #005ea2 |
+| <GroveColorBlock color="#0050d8" /> | `.text-primary-vivid` | #0050d8 |
+| <GroveColorBlock color="#1a4480" /> | `.text-primary-dark` | #1a4480 |
+| <GroveColorBlock color="#162e51" /> | `.text-primary-darker` | #162e51 |
+| <GroveColorBlock color="#f3e1e4" /> | `.text-secondary-lighter` | #f3e1e4 |
+| <GroveColorBlock color="#f2938c" /> | `.text-secondary-light` | #f2938c |
+| <GroveColorBlock color="#d83933" /> | `.text-secondary` | #d83933 |
+| <GroveColorBlock color="#e41d3d" /> | `.text-secondary-vivid` | #e41d3d |
+| <GroveColorBlock color="#b50909" /> | `.text-secondary-dark` | #b50909 |
+| <GroveColorBlock color="#8b0a03" /> | `.text-secondary-darker` | #8b0a03 |
+| <GroveColorBlock color="#e1f3f8" /> | `.text-accent-cool-lighter` | #e1f3f8 |
+| <GroveColorBlock color="#97d4ea" /> | `.text-accent-cool-light` | #97d4ea |
+| <GroveColorBlock color="#00bde3" /> | `.text-accent-cool` | #00bde3 |
+| <GroveColorBlock color="#28a0cb" /> | `.text-accent-cool-dark` | #28a0cb |
+| <GroveColorBlock color="#07648d" /> | `.text-accent-cool-darker` | #07648d |
+| <GroveColorBlock color="#f2e4d4" /> | `.text-accent-warm-lighter` | #f2e4d4 |
+| <GroveColorBlock color="#ffbc78" /> | `.text-accent-warm-light` | #ffbc78 |
+| <GroveColorBlock color="#fa9441" /> | `.text-accent-warm` | #fa9441 |
+| <GroveColorBlock color="#c05600" /> | `.text-accent-warm-dark` | #c05600 |
+| <GroveColorBlock color="#775540" /> | `.text-accent-warm-darker` | #775540 |
+
+#### Grayscale palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#ffffff" /> | `.text-white` | #ffffff |
+| <GroveColorBlock color="#f0f0f0" /> | `.text-gray-5` | #f0f0f0 |
+| <GroveColorBlock color="#e6e6e6" /> | `.text-gray-10` | #e6e6e6 |
+| <GroveColorBlock color="#adadad" /> | `.text-gray-30` | #adadad |
+| <GroveColorBlock color="#757575" /> | `.text-gray-50` | #757575 |
+| <GroveColorBlock color="#454545" /> | `.text-gray-70` | #454545 |
+| <GroveColorBlock color="#171717" /> | `.text-gray-90` | #171717 |
+| <GroveColorBlock color="#000000" /> | `.text-black` | #000000 |
+
+#### Basic palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#e52207" /> | `.text-red` | #e52207 |
+| <GroveColorBlock color="#e66f0e" /> | `.text-orange` | #e66f0e |
+| <GroveColorBlock color="#ffbe2e" /> | `.text-gold` | #ffbe2e |
+| <GroveColorBlock color="#fee685" /> | `.text-yellow` | #fee685 |
+| <GroveColorBlock color="#538200" /> | `.text-green` | #538200 |
+| <GroveColorBlock color="#04c585" /> | `.text-mint` | #04c585 |
+| <GroveColorBlock color="#009ec1" /> | `.text-cyan` | #009ec1 |
+| <GroveColorBlock color="#0076d6" /> | `.text-blue` | #0076d6 |
+| <GroveColorBlock color="#676cc8" /> | `.text-indigo` | #676cc8 |
+| <GroveColorBlock color="#8168b3" /> | `.text-violet` | #8168b3 |
+| <GroveColorBlock color="#d72d79" /> | `.text-magenta` | #d72d79 |
+
+### Background color 
+CSS PROPERTY: `background-color` 
+
+#### Project theme colors: 
+**Read more about project theme colors**
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#f0f0f0" /> | `.bg-base-lightest` | #f0f0f0 |
+| <GroveColorBlock color="#dfe1e2" /> | `.bg-base-lighter` | #dfe1e2 |
+| <GroveColorBlock color="#a9aeb1" /> | `.bg-base-light` | #a9aeb1 |
+| <GroveColorBlock color="#71767a" /> | `.bg-base` | #71767a |
+| <GroveColorBlock color="#565c65" /> | `.bg-base-dark` | #565c65 |
+| <GroveColorBlock color="#3d4551" /> | `.bg-base-darker` | #3d4551 |
+| <GroveColorBlock color="#1b1b1b" /> | `.bg-base-darkest` | #1b1b1b |
+| <GroveColorBlock color="#1b1b1b" /> | `.bg-ink` | #1b1b1b |
+| <GroveColorBlock color="#d9e8f6" /> | `.bg-primary-lighter` | #d9e8f6 |
+| <GroveColorBlock color="#73b3e7" /> | `.bg-primary-light` | #73b3e7 |
+| <GroveColorBlock color="#005ea2" /> | `.bg-primary` | #005ea2 |
+| <GroveColorBlock color="#0050d8" /> | `.bg-primary-vivid` | #0050d8 |
+| <GroveColorBlock color="#1a4480" /> | `.bg-primary-dark` | #1a4480 |
+| <GroveColorBlock color="#162e51" /> | `.bg-primary-darker` | #162e51 |
+| <GroveColorBlock color="#f3e1e4" /> | `.bg-secondary-lighter` | #f3e1e4 |
+| <GroveColorBlock color="#f2938c" /> | `.bg-secondary-light` | #f2938c |
+| <GroveColorBlock color="#d83933" /> | `.bg-secondary` | #d83933 |
+| <GroveColorBlock color="#e41d3d" /> | `.bg-secondary-vivid` | #e41d3d |
+| <GroveColorBlock color="#b50909" /> | `.bg-secondary-dark` | #b50909 |
+| <GroveColorBlock color="#8b0a03" /> | `.bg-secondary-darker` | #8b0a03 |
+| <GroveColorBlock color="#e1f3f8" /> | `.bg-accent-cool-lighter` | #e1f3f8 |
+| <GroveColorBlock color="#97d4ea" /> | `.bg-accent-cool-light` | #97d4ea |
+| <GroveColorBlock color="#00bde3" /> | `.bg-accent-cool` | #00bde3 |
+| <GroveColorBlock color="#28a0cb" /> | `.bg-accent-cool-dark` | #28a0cb |
+| <GroveColorBlock color="#07648d" /> | `.bg-accent-cool-darker` | #07648d |
+| <GroveColorBlock color="#f2e4d4" /> | `.bg-accent-warm-lighter` | #f2e4d4 |
+| <GroveColorBlock color="#ffbc78" /> | `.bg-accent-warm-light` | #ffbc78 |
+| <GroveColorBlock color="#fa9441" /> | `.bg-accent-warm` | #fa9441 |
+| <GroveColorBlock color="#c05600" /> | `.bg-accent-warm-dark` | #c05600 |
+| <GroveColorBlock color="#775540" /> | `.bg-accent-warm-darker` | #775540 |
+
+#### Grayscale palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#ffffff" /> | `.bg-white` | #ffffff |
+| <GroveColorBlock color="#f0f0f0" /> | `.bg-gray-5` | #f0f0f0 |
+| <GroveColorBlock color="#e6e6e6" /> | `.bg-gray-10` | #e6e6e6 |
+| <GroveColorBlock color="#adadad" /> | `.bg-gray-30` | #adadad |
+| <GroveColorBlock color="#757575" /> | `.bg-gray-50` | #757575 |
+| <GroveColorBlock color="#454545" /> | `.bg-gray-70` | #454545 |
+| <GroveColorBlock color="#171717" /> | `.bg-gray-90` | #171717 |
+| <GroveColorBlock color="#000000" /> | `.bg-black` | #000000 |
+
+
+#### Basic palette
+
+| Color | Name | Value |
+| ----------- | ----------- | ----------- |
+| <GroveColorBlock color="#e52207" /> | `.bg-red` | #e52207 |
+| <GroveColorBlock color="#e66f0e" /> | `.bg-orange` | #e66f0e |
+| <GroveColorBlock color="#ffbe2e" /> | `.bg-gold` | #ffbe2e |
+| <GroveColorBlock color="#fee685" /> | `.bg-yellow` | #fee685 |
+| <GroveColorBlock color="#538200" /> | `.bg-green` | #538200 |
+| <GroveColorBlock color="#04c585" /> | `.bg-mint` | #04c585 |
+| <GroveColorBlock color="#009ec1" /> | `.bg-cyan` | #009ec1 |
+| <GroveColorBlock color="#0076d6" /> | `.bg-blue` | #0076d6 |
+| <GroveColorBlock color="#676cc8" /> | `.bg-indigo` | #676cc8 |
+| <GroveColorBlock color="#8168b3" /> | `.bg-violet` | #8168b3 |
+| <GroveColorBlock color="#d72d79" /> | `.bg-magenta` | #d72d79 |
+
+## Advanced settings 
+
+### State variants 
+Use a state prefix separated with a `:` to target a utility in a specific state.
+
+**Example:** 
+`.hover:bg-primary-vivid` 
+
+**Output:** 
+`.hover\:bg-primary-vivid:hover { background-color: #0052de; }`
