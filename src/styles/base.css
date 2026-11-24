@@ -1,0 +1,59 @@
+/* Site-wide element styles: headings, readable line length, page background, tables */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[class*="font-heading-"] {
+  font-family: var(--grove-font-heading);
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--grove-ink);
+}
+
+h1 {
+  font-size: var(--sl-text-h1);
+}
+
+h2 {
+  color: var(--grove-primary-500);
+}
+
+p,
+li {
+  max-width: var(--grove-line-length);
+}
+
+a + iframe {
+  margin-top: var(--sl-content-gap-y);
+}
+
+body {
+  background-color: var(--grove-base-100);
+  /* Full-bleed layout for the homepage sections */
+  :has(.grove-home-section-container) {
+    --sl-content-gap-y: 0;
+    --sl-content-width: none;
+    .content-panel {
+      padding: 0;
+    }
+  }
+}
+
+/* Wide tables scroll horizontally on small screens */
+.main-pane table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  @media (min-width: 30rem) {
+    display: table;
+  }
+}
