@@ -5,31 +5,25 @@ sidebar:
   order: 1
 ---
 
+import { STORYBOOK_BASE_URL } from '@config/storybook';
 import { LinkButton } from '@astrojs/starlight/components';
 
 <PageHeader
-  name="Overview"
-  category="UTILITIES"
-  description="Utilities are simple HTML classes typically scoped to a single CSS property, like `border-style` or `background-color`. Utilities can be used additively to style an object from scratch or to override a style defined in component CSS."
-  wcagBadge={false}
-/>
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
 
-## H2 
-Text
+## Introducing utilities
 
+Utilities are simple HTML classes typically scoped to a single CSS property, like `border-style` or `background-color`. Utilities can be used additively to style an object from scratch or to override a style defined in component CSS. Utilities allow designers and developers to build and test new designs and components without abstracting their work into traditional semantic names or altering production CSS.
 
-### H3
-Text
+They also make it possible to create element-specific overrides without writing high-specificity variants into component CSS.
 
+## Utility naming
 
-## Resources
-### Grove links 
-| File | Purpose | 
-| ----------- | ----------- |
-| ... | ... |
+Most utilities are built to assign a single CSS property a single value. Our utilities are named `.[base]-[value]`, where `[base]` is often the name of the CSS property the utility targets and the parts of the utility name are separated by a hyphen. For example, `margin-top-2`. Utility classes are designed to make sense at a glance to anyone familiar with standard CSS properties.
 
 ### USWDS links 
 | File | Purpose | 
 | ----------- | ----------- |
 | [USWDS: Utilities](https://designsystem.digital.gov/utilities/) | Reference for utilities in USWDS  |
-
