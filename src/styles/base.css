@@ -48,6 +48,14 @@ body {
   }
 }
 
+code, pre {
+  font-family: var(--grove-font-mono);
+}
+
+table code {
+  font-size: var(--sl-text-sm);
+}
+
 /* Wide tables scroll horizontally on small screens */
 .main-pane table {
   display: block;
