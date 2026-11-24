@@ -1,0 +1,50 @@
+/* Grove color, type, and layout tokens, plus the Starlight variables they drive */
+:root {
+  --grove-primary-500: #466c04; /* USWDS green-60v */
+  --grove-primary-600: #2f4a0b; /* USWDS green-70v */
+  --grove-primary-700: #193324; /* USWDS mint-80  */
+  --grove-base-100: #fcfcfb; /* USWDS gray-warm-1  */
+  --grove-base-200: #f9f9f7;
+  --grove-base-400: #f0f0ec;
+  --grove-base-700: #76766a; /* USWDS gray-warm-50 */
+  --grove-white: #fff; /* USWDS white */
+  --grove-ink: #1c1d1f; /* USWDS ink */
+  --grove-link: #005ea2; /* USWDS blue-60v */
+  --grove-gray-cool-5: #edeff0; /* USWDS gray-cool-5 */
+  --grove-gray-70: #454545; /* USWDS gray-70 */
+
+  --sl-color-bg: var(--grove-base-100);
+  --sl-color-bg-nav: var(--grove-primary-700);
+  --sl-color-text-accent: #ffffff;
+  --sl-font: "Public Sans";
+  --sl-font-system:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --grove-font-heading: "Plus Jakarta Sans", var(--sl-font), var(--sl-font-system);
+  --sl-text-h1: 2.5rem;
+  --sl-text-h2: 2rem;
+  --sl-text-h3: 1.5rem;
+  --sl-text-h4: 1.125rem;
+  --sl-text-h5: 1rem;
+  --sl-text-h6: 0.875rem;
+  --sl-nav-gap: 0.625rem;
+  --sl-nav-pad-x: 1.25rem;
+
+  --sl-nav-height: 4rem;
+  --grove-logo-text-size: 1.25rem; /* 20px */
+  --grove-logo-tagline-size: 0.6875rem; /* 11px */
+  --grove-logo-width: 34px;
+  --grove-logo-text-color: var(--grove-white);
+  --grove-search-text-color: var(--grove-white);
+  --grove-line-length: 88ex; /* USWDS size 6 */
+  --sl-main-pad: 0;
+  --sl-mobile-toc-height: 3.4375rem;
+
+  @media (min-width: 50rem) {
+    --sl-nav-height: 5rem;
+    --grove-logo-text-size: 1.8125rem; /* 29px */
+    --grove-logo-tagline-size: 0.9375rem; /* 15px */
+    --grove-logo-width: 42px;
+    --grove-search-text-color: #000;
+  }
+}

@@ -1,0 +1,8 @@
+/* Utilities NJWDS doesn't provide yet; remove each once it ships upstream */
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-heavy {
+  font-weight: 800;
+}
