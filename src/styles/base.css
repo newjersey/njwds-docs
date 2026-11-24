@@ -48,7 +48,8 @@ body {
   }
 }
 
-code, pre {
+code,
+pre {
   font-family: var(--grove-font-mono);
 }
 
