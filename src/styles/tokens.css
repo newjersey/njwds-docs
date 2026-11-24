@@ -21,6 +21,7 @@
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --grove-font-heading: "Plus Jakarta Sans", var(--sl-font), var(--sl-font-system);
+  --grove-font-mono: "Roboto Mono Web", monospace;
   --sl-text-h1: 2.5rem;
   --sl-text-h2: 2rem;
   --sl-text-h3: 1.5rem;
