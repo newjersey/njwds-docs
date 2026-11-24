@@ -26,3 +26,4 @@ pnpm-debug.log*
 
 # PR review setup data (personal, always current)
 .claude/pr-review-data/
+docs/superpowers
