@@ -1,0 +1,57 @@
+/* Homepage and Getting Started page sections */
+.grove-home-section-container {
+  border-top: 0.5px solid var(--grove-base-700);
+}
+
+.grove-home-section {
+  max-width: 87.5rem;
+  margin: auto;
+}
+
+.grove-styles-text {
+  z-index: 1;
+  background-color: var(--grove-base-100);
+  @media (min-width: 40rem) {
+    min-width: 32rem;
+    max-width: var(--grove-styles-text-width);
+  }
+}
+
+.grove-styles-image {
+  @media (min-width: 40rem) {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 32rem;
+  }
+  img {
+    object-fit: cover;
+    object-position: right;
+  }
+}
+.grove-card-group {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.grove-getting-started-card {
+  @media (min-width: 40rem) {
+    width: 15.375rem;
+  }
+}
+
+.grove-card-img {
+  height: 8rem;
+  @media (min-width: 40rem) {
+    height: auto;
+  }
+}
+
+.grove-resource-media-block {
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+}
