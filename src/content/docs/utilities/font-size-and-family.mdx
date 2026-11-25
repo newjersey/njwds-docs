@@ -1,0 +1,185 @@
+---
+title: Font size and family
+description: Set the font size and the font family together.
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+CSS Properties: `font-family` `font-size`
+
+## Basic settings 
+
+### Font size
+CSS Property: `font-size`
+
+Sets the font size and font family together. The first part of the class name picks the font, either by type (`mono`, `sans`, `serif`) or by role (`body`, `heading`, `ui`, `code`, `alt`). The second part picks the size, from `3xs` to `3xl`. Each typeface's sizes are adjusted so text looks about the same size across fonts. Sizes are set in `rem`, so they grow when someone increases their browser's default text size.
+
+#### font-mono 
+(Shown: Roboto Mono) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-mono-3xs` | `12.32px` | <div class="font-mono-3xs">Trenton</div> |
+| `font-mono-2xs` | `13.28px` | <div class="font-mono-2xs">Trenton</div> |
+| `font-mono-xs` | `14.24px` | <div class="font-mono-xs">Trenton</div> |
+| `font-mono-sm` | `15.2px` | <div class="font-mono-sm">Trenton</div> |
+| `font-mono-md` | `17.12px` | <div class="font-mono-md">Trenton</div> |
+| `font-mono-lg` | `20.96px` | <div class="font-mono-lg">Trenton</div> |
+| `font-mono-xl` | `30.56px` | <div class="font-mono-xl">Trenton</div> |
+| `font-mono-2xl` | `38.08px` | <div class="font-mono-2xl">Trenton</div> |
+| `font-mono-3xl` | `45.76px` | <div class="font-mono-3xl">Trenton</div> |
+
+
+#### font-sans 
+(Shown: Source Sans Pro) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-sans-3xs` | `12.96px` | <div class="font-sans-3xs">Trenton</div> |
+| `font-sans-2xs` | `14.08px` | <div class="font-sans-2xs">Trenton</div> |
+| `font-sans-xs` | `15.04px` | <div class="font-sans-xs">Trenton</div> |
+| `font-sans-sm` | `16.0px` | <div class="font-sans-sm">Trenton</div> |
+| `font-sans-md` | `18.08px` | <div class="font-sans-md">Trenton</div> |
+| `font-sans-lg` | `22.08px` | <div class="font-sans-lg">Trenton</div> |
+| `font-sans-xl` | `32px` | <div class="font-sans-xl">Trenton</div> |
+| `font-sans-2xl` | `40px` | <div class="font-sans-2xl">Trenton</div> |
+| `font-sans-3xl` | `48px` | <div class="font-sans-3xl">Trenton</div> |
+
+
+#### font-serif 
+(Shown: Merriweather) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-serif-3xs` | `12.64px` | <div class="font-sans-3xs">Trenton</div> |
+| `font-serif-2xs` | `13.6px` | <div class="font-sans-2xs">Trenton</div> |
+| `font-serif-xs` | `14.56px` | <div class="font-sans-xs">Trenton</div> |
+| `font-serif-sm` | `15.68px` | <div class="font-sans-sm">Trenton</div> |
+| `font-serif-md` | `17.6px` | <div class="font-sans-md">Trenton</div> |
+| `font-serif-lg` | `21.44px` | <div class="font-sans-lg">Trenton</div> |
+| `font-serif-xl` | `31.2px` | <div class="font-sans-xl">Trenton</div> |
+| `font-serif-2xl` | `39.04px` | <div class="font-sans-2xl">Trenton</div> |
+| `font-serif-3xl` | `46.88px` | <div class="font-sans-3xl">Trenton</div> |
+
+#### font-alt 
+(Shown: Merriweather) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-alt-3xs` | `12.64px` | <div class="font-alt-3xs">Trenton</div> |
+| `font-alt-2xs` | `13.6px` | <div class="font-alt-2xs">Trenton</div> |
+| `font-alt-xs` | `14.56px` | <div class="font-alt-xs">Trenton</div> |
+| `font-alt-sm` | `15.68px` | <div class="font-alt-sm">Trenton</div> |
+| `font-alt-md` | `17.6px` | <div class="font-alt-md">Trenton</div> |
+| `font-alt-lg` | `21.44px` | <div class="font-alt-lg">Trenton</div> |
+| `font-alt-xl` | `31.2px` | <div class="font-alt-xl">Trenton</div> |
+| `font-alt-2xl` | `39.04px` | <div class="font-alt-2xl">Trenton</div> |
+| `font-alt-3xl` | `46.88px` | <div class="font-alt-3xl">Trenton</div> |
+
+
+#### font-body 
+(Shown: Source Sans Pro) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-body-3xs` | `12.96px` | <div class="font-body-3xs">Trenton</div> |
+| `font-body-2xs` | `14.08px` | <div class="font-body-2xs">Trenton</div> |
+| `font-body-xs` | `15.04px` | <div class="font-body-xs">Trenton</div> |
+| `font-body-sm` | `16px` | <div class="font-body-sm">Trenton</div> |
+| `font-body-md` | `18.1px` | <div class="font-body-md">Trenton</div> |
+| `font-body-lg` | `23.4px` | <div class="font-body-lg">Trenton</div> |
+| `font-body-xl` | `34.1px` | <div class="font-body-xl">Trenton</div> |
+| `font-body-2xl` | `42.6px` | <div class="font-body-2xl">Trenton</div> |
+| `font-body-3xl` | `51.1px` | <div class="font-body-3xl">Trenton</div> |
+
+
+#### font-code 
+(Shown: Roboto Mono) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-code-3xs` | `12.4px` | <div class="font-code-3xs">Trenton</div> |
+| `font-code-2xs` | `13.3px` | <div class="font-code-2xs">Trenton</div> |
+| `font-code-xs` | `14.3px` | <div class="font-code-xs">Trenton</div> |
+| `font-code-sm` | `15.2px` | <div class="font-code-sm">Trenton</div> |
+| `font-code-md` | `16.2px` | <div class="font-code-md">Trenton</div> |
+| `font-code-lg` | `21.0px` | <div class="font-code-lg">Trenton</div> |
+| `font-code-xl` | `30.5px` | <div class="font-code-xl">Trenton</div> |
+| `font-code-2xl` | `38.1px` | <div class="font-code-2xl">Trenton</div> |
+| `font-code-3xl` | `45.7px` | <div class="font-code-3xl">Trenton</div> |
+
+
+#### font-heading 
+(Shown: Merriweather) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-heading-3xs` | `12.7px` | <div class="font-heading-3xs">Trenton</div> |
+| `font-heading-2xs` | `13.7px` | <div class="font-heading-2xs">Trenton</div> |
+| `font-heading-xs` | `14.6px` | <div class="font-heading-xs">Trenton</div> |
+| `font-heading-sm` | `15.6px` | <div class="font-heading-sm">Trenton</div> |
+| `font-heading-md` | `16.6px` | <div class="font-heading-md">Trenton</div> |
+| `font-heading-lg` | `21.5px` | <div class="font-heading-lg">Trenton</div> |
+| `font-heading-xl` | `31.2px` | <div class="font-heading-xl">Trenton</div> |
+| `font-heading-2xl` | `39.0px` | <div class="font-heading-2xl">Trenton</div> |
+| `font-heading-3xl` | `46.8px` | <div class="font-heading-3xl">Trenton</div> |
+
+
+#### font-ui 
+(Shown: Source Sans Pro) 
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `font-ui-3xs` | `12.96px` | <div class="font-ui-3xs">Trenton</div> |
+| `font-ui-2xs` | `14.08px` | <div class="font-ui-2xs">Trenton</div> |
+| `font-ui-xs` | `15.04px` | <div class="font-ui-xs">Trenton</div> |
+| `font-ui-sm` | `16px` | <div class="font-ui-sm">Trenton</div> |
+| `font-ui-md` | `18.08px` | <div class="font-ui-md">Trenton</div> |
+| `font-ui-lg` | `22.08px` | <div class="font-ui-lg">Trenton</div> |
+| `font-ui-xl` | `33px` | <div class="font-ui-xl">Trenton</div> |
+| `font-ui-2xl` | `40px` | <div class="font-ui-2xl">Trenton</div> |
+| `font-ui-3xl` | `48px` | <div class="font-ui-3xl">Trenton</div> |
+
+### Font family 
+CSS Property: `font-family` 
+
+Sets only the typeface, without changing the font size. Type-based classes name the kind of font. Role-based classes name how the text is used, so text keeps the right font if the design system changes the typeface for that role. Each font family includes system fallback fonts in case the web font doesn't load.
+
+#### Type-based 
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.font-family-mono` | `Roboto Mono Web` | <div class="font-family-mono">Trenton</div> |
+| `.font-family-sans` | `Public Sans Web` | <div class="font-family-sans">Trenton</div> |
+| `.font-family-serif` | `Merriweather Web` | <div class="font-family-serif">Trenton</div> |
+
+#### Role-based 
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.font-family-alt` | `Merriweather Web` | <div class="font-family-alt">Trenton</div> |
+| `.font-family-body` | `Public Sans Web` | <div class="font-family-body">Trenton</div> |
+| `.font-family-code` | `Roboto Mono Web` | <div class="font-family-code">Trenton</div> |
+| `.font-family-heading` | `Public Sans Web` | <div class="font-family-heading">Trenton</div> |
+| `.font-family-ui` | `Public Sans Web` | <div class="font-family-ui">Trenton</div> |
+
+## Advanced settings
+### Responsive variants
+Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+
+**Example**
+`.tablet:font-body-lg`
+
+#### Output
+
+```css
+@media screen and (min-width: 640px) {
+  .tablet\:font-body-lg {
+    font-size: 1.25rem;
+  }
+}
+```
