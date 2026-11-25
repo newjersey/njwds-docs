@@ -11,31 +11,28 @@ import { LinkButton } from '@astrojs/starlight/components';
   description={frontmatter.description}
   wcagBadge={false} />
 
-CSS Properties: `font-feature-settings` `font-style` `font-weight` `letter-spacing` `text-decoration` `text-decoration-color` `text-transform` `vertical-align` `white-space`
+CSS Properties: `font-feature-settings` `font-style` `font-weight` `letter-spacing` `text-decoration` `text-transform` `vertical-align` `white-space`
 
 ## Basic settings
 
 ### Font style
 CSS Property: `font-style`
 
-| Name |
-| ----------- |
-| <p class="utility-example-container text-italic">.text-italic</p> |
-| <p class="utility-example-container text-italic">.text-no-italic</p> |
-
+| Name | Value |
+| ----------- | ----------- |
+| `.text-italic` | italic |
+| `.text-no-italic` | none |
 
 ### Font weight
 CSS Property: `font-weight`
 
-| Name |
-| ----------- |
-| <p class="utility-example-container text-thin">.text-thin</p> |
-| <p class="utility-example-container text-light">.text-light</p> |
-| <p class="utility-example-container text-normal">.text-normal</p> |
-| <p class="utility-example-container text-medium">.text-medium (Note: not included in default set)</p> |
-| <p class="utility-example-container text-semibold">.text-semibold</p> |
-| <p class="utility-example-container text-bold">.text-bold</p> |
-| <p class="utility-example-container text-heavy">.text-heavy</p> |
+| Name | Value |
+| ----------- | ----------- |
+| <p class="utility-example-container text-light">.text-light</p> | 300 |
+| <p class="utility-example-container text-normal">.text-normal</p> | 400 |
+| <p class="utility-example-container text-semibold">.text-semibold</p> | 600 |
+| <p class="utility-example-container text-bold">.text-bold</p> | 700 |
+| <p class="utility-example-container text-heavy">.text-heavy</p> | 800 |
 
 
 ### Letterspacing
@@ -54,144 +51,57 @@ CSS Property: `letter-spacing`
 ### Tabular numerals
 CSS Property: `font-feature-settings`
 
-<div class="utility-example-container">
-<p class="font-lang-8 text-tabular margin-0">123,456,789</p>
-<p class="font-lang-8 text-tabular margin-0">825,489,012</p>
-<p class="font-lang-8 text-tabular margin-0">112,051,928</p>
-</div> 
+Activates two OpenType typographic features (assuming the active font supports them):
 
-`.text-tabular`
+- **Tabular Figures ("tnum" 1)**: Forces all numbers (0-9) to share the exact same horizontal width. This keeps columns aligned in data tables and prevents horizontal layout jitter in live-updating counters or timers.
+- **Kerning ("kern" 1)**: Applies the font's built-in spacing adjustments between specific character pairs (such as "AV" or "To") to eliminate awkward visual gaps.
 
-Note: not included in default set 
-
-<div class="utility-example-container">
-<p class="font-lang-8 text-no-tabular margin-0">123,456,789</p>
-<p class="font-lang-8 text-no-tabular margin-0">825,489,012</p>
-<p class="font-lang-8 text-no-tabular margin-0">112,051,928</p>
-</div> 
-
-`.text-no-tabular`
-
+| Name | Preview |
+| ----------- | ----------- |
+| `.text-tabular` | <p class="text-tabular margin-0">825,489,012</p><p class="text-tabular margin-0">112,051,928</p> |
+| `.text-no-tabular` | <p class="text-no-tabular margin-0">825,489,012</p><p class="text-no-tabular margin-0">112,051,928</p> |
 
 ### Text decoration
 CSS Property: `text-decoration`
 
-| Name |
-| ----------- |
-| <p class="utility-example-container text-underline">.text-underline</p> |
-| <p class="utility-example-container text-strike">.text-strike</p> |
-| <p class="utility-example-container text-no-strike">.text-no-strike</p> |
-| <p class="utility-example-container text-no-underline">.text-no-underline</p> |
-
-
-### Text decoration color
-CSS Property: `text-decoration-color`
-
-| Name |
-| ----------- |
-| <span class="text-underline underline-default-base-lightest">.underline-base-lightest.text-underline</span> |
-| <span class="text-underline underline-default-base-lighter">.underline-base-lighter.text-underline</span> |
-| <span class="text-underline underline-default-base-light">.underline-base-light.text-underline</span> |
-| <span class="text-underline underline-default-base">.underline-base.text-underline</span> |
-| <span class="text-underline underline-default-base-dark">.underline-base-dark.text-underline</span> |
-| <span class="text-underline underline-default-base-darker">.underline-base-darker.text-underline</span> |
-| <span class="text-underline underline-default-base-darkest">.underline-base-darkest.text-underline</span> |
-| <span class="text-underline underline-default-ink">.underline-ink.text-underline</span> |
-| <span class="text-underline underline-default-primary-lighter">.underline-primary-lighter.text-underline</span> |
-| <span class="text-underline underline-default-primary-light">.underline-primary-light.text-underline</span> |
-| <span class="text-underline underline-default-primary">.underline-primary.text-underline</span> |
-| <span class="text-underline underline-default-primary-vivid">.underline-primary-vivid.text-underline</span> |
-| <span class="text-underline underline-default-primary-dark">.underline-primary-dark.text-underline</span> |
-| <span class="text-underline underline-default-primary-darker">.underline-primary-darker.text-underline</span> |
-
+| Name | Value |
+| ----------- | ----------- |
+| `.text-underline` | underline |
+| `.text-strike` | line-through |
+| `.text-no-strike` | none |
+| `.text-no-underline` | none |
 
 ### Uppercase and lowercase
 CSS Property: `text-transform`
 
-| Name |
-| ----------- |
-| <p class="utility-example-container text-uppercase">.TEXT-UPPERCASE</p> |
-| <p class="utility-example-container text-lowercase">.text-lowercase</p> |
-| <p class="utility-example-container text-no-uppercase">.text-no-uppercase</p> |
-| <p class="utility-example-container text-no-lowercase">.text-no-lowercase</p> |
-
+| Name | Value |
+| ----------- | ----------- |
+| `.text-uppercase` | uppercase |
+| `.text-lowercase` | lowercase |
+| `.text-no-uppercase` | none |
+| `.text-no-lowercase` | none |
 
 ### Vertical alignment
 CSS Property: `vertical-align`
 
-| Name |
-| ----------- |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-baseline"></span><span class="text-baseline text-red">.text-baseline</span></p> |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-bottom"></span><span class="text-bottom text-red">.text-bottom</span></p> |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-middle"></span><span class="text-middle text-red">.text-middle</span></p> |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-sub"></span><span class="text-sub text-red">.text-sub</span></p> |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-super"></span><span class="text-super text-red">.text-super</span></p> |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-tbottom"></span><span class="text-tbottom text-red">.text-tbottom</span></p> |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-ttop"></span><span class="text-ttop text-red">.text-ttop</span></p> |
-| <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span><span class="text-top text-red">.text-top</span></p> |
-
+| Name | Value |
+| ----------- | ----------- |
+| `.text-baseline` | baseline |
+| `.text-bottom` | bottom |
+| `.text-middle` | middle |
+| `.text-sub` | sub |
+| `.text-super` | super |
+| `.text-tbottom` | text-bottom |
+| `.text-ttop` | text-top |
+| `.text-top` | top |
 
 ### Whitespace formatting
 CSS Property: `white-space`
 
-| Name |
-| ----------- |
-| <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"><span class="text-pre"><span class="text-red">.text-pre</span> formatted line   with     multiple       spaces</span><span class="text-baseline text-red">.text-baseline</span></span></p> |
-| <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"><span class="text-pre-line"><span class="text-red">.text-pre-line</span> formatted line   with     multiple       spaces</span><span class="text-baseline text-red">.text-baseline</span></span></p> |
-| <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"><span class="text-pre-wrap"><span class="text-red">.text-pre-wrap</span> formatted line   with     multiple       spaces</span><span class="text-baseline text-red">.text-baseline</span></span></p> |
-| <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"><span class="text-wrap"><span class="text-red">.text-wrap</span> formatted line   with     multiple       spaces</span><span class="text-baseline text-red">.text-baseline</span></span></p> |
-| <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"><span class="text-no-wrap"><span class="text-red">.text-no-wrap</span> formatted line   with     multiple       spaces</span><span class="text-baseline text-red">.text-baseline</span></span></p> |
-
-
-| Utility | Mixin | Example |
-| ----------- | ----------- | ----------- |
-| .text-`style` | u-text(`style`)| @include u-text('italic') |
-| .text-`weight` | u-text(`weight`) | @include u-text('light') |
-| .text-`tabular` | u-text('`tabular`') | @include u-text('no-tabular') |
-| .text-`decoration` | u-text(`decoration`) | @include u-text('underline') |
-| .underline-`color` | u-underline(`color`) | @include u-underline('primary-vivid') |
-| .text-`case` | u-text(`case`) | @include u-text('uppercase') |
-| .text-`vertical-align` | u-text(`vertical-align`) | @include u-text('ttop') |
-| multiple text utilities... | u-text(`token`, `token`, `token`...) | @include u-text('uppercase', 'primary-darker', 'no-wrap', 'italic', 'bold', 'no-underline') |
-
-## Advanced settings
-
-### Responsive variants
-Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
-
-**Example**
-`.tablet:padding-y-2`
-
-**Output**
-```scss
-@media screen and (min-width: 640px) {
-  .tablet\:padding-y-2 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-```
-
-| Utility variable | Default |
+| Name | Value |
 | ----------- | ----------- |
-| $font-style-settings.responsive | false |
-| $font-weight-settings.responsive | `true` |
-| $letter-spacing-settings.responsive | false |
-| $font-feature-settings-settings.responsive | false |
-| $text-decoration-settings.responsive | false |
-| $text-decoration-color-settings.responsive | false |
-| $text-transform-settings.responsive | false |
-| $vertical-align-settings.responsive | false |
-| $whitespace-settings.responsive | false |
-
-
-### State variants
-Use a state prefix separated with a `:` to target a utility in a specific state.
-
-**Example**
-`.hover:bg-primary-vivid`
-
-**Output**
-```scss
-.hover\:bg-primary-vivid:hover { background-color: #0052de; }
-```
+| `.text-pre` | pre |
+| `.text-pre-line` | pre-line |
+| `.text-pre-wrap` | pre-wrap |
+| `.text-wrap` | normal |
+| `.text-no-wrap` | nowrap |
