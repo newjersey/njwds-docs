@@ -1,0 +1,142 @@
+---
+title: Text styles
+description: Change the appearance of text. (Not all text styles are available in every typeface.)
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+CSS Properties: `font-feature-settings` `font-style` `font-weight` `letter-spacing` `text-decoration` `text-transform` `vertical-align` `white-space`
+
+## Basic settings
+
+### Font style
+CSS Property: `font-style`
+
+Sets text in italics or returns it to upright. Use `.text-no-italic` to remove italics 
+from elements that are italic by default, such as `<em>` or `<cite>`, or that inherit 
+italics from a parent.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.text-italic` | italic |
+| `.text-no-italic` | normal |
+
+### Font weight
+CSS Property: `font-weight`
+
+Sets how thick or thin text appears. If the active font doesn't include a weight, 
+the browser uses the closest weight it has.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.text-light` | 300 |
+| `.text-normal` | 400 |
+| `.text-semibold` | 600 |
+| `.text-bold` | 700 |
+| `.text-heavy` | 800 |
+
+### Letterspacing
+CSS Property: `letter-spacing`
+
+Adjusts the space between characters. Negative values tighten large headings, and 
+positive values open up short labels set in all caps. `.text-ls-auto` resets the spacing to the browser default.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.text-ls-neg-3` | -0.03em |
+| `.text-ls-neg-2` | -0.02em |
+| `.text-ls-neg-1` | -0.01em |
+| `.text-ls-auto` | initial |
+| `.text-ls-1` | 0.025em |
+| `.text-ls-2` | 0.1em |
+| `.text-ls-3` | 0.15em |
+
+### Tabular numerals
+CSS Property: `font-feature-settings`
+
+Activates two OpenType typographic features (assuming the active font supports them):
+
+- **Tabular Figures ("tnum" 1)**: Forces all numbers (0-9) to share the exact same horizontal width. This keeps columns aligned in data tables and prevents horizontal layout jitter in live-updating counters or timers.
+- **Kerning ("kern" 1)**: Applies the font's built-in spacing adjustments between specific character pairs (such as "AV" or "To") to eliminate awkward visual gaps.
+
+| Name | Preview |
+| ----------- | ----------- |
+| `.text-tabular` | <p class="text-tabular margin-0">825,489,012</p><p class="text-tabular margin-0">112,051,928</p> |
+| `.text-no-tabular` | <p class="text-no-tabular margin-0">825,489,012</p><p class="text-no-tabular margin-0">112,051,928</p> |
+
+### Text decoration
+CSS Property: `text-decoration`
+
+Adds or removes lines through or under text.
+
+- **Underlines on links**: If you use `.text-no-underline` on a link, make sure something other than color still shows it's a link.
+- **Strikethrough**: `.text-strike` only changes how text looks. Use the `<del>` or `<s>` element when the struck-through text carries meaning.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.text-underline` | underline |
+| `.text-strike` | line-through |
+| `.text-no-strike` | none |
+| `.text-no-underline` | none |
+
+### Uppercase and lowercase
+CSS Property: `text-transform`
+
+Changes capitalization visually while the text in the HTML stays as written. 
+Use uppercase for short labels only, since long runs of capital letters are 
+harder to read. `.text-no-uppercase` and `.text-no-lowercase` remove a transform 
+inherited from a parent.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.text-uppercase` | uppercase |
+| `.text-lowercase` | lowercase |
+| `.text-no-uppercase` | none |
+| `.text-no-lowercase` | none |
+
+### Vertical alignment
+CSS Property: `vertical-align`
+
+Sets how inline items, such as icons, images, and inline-block elements, line up 
+with the text around them. It also sets how content aligns inside table cells. 
+It has no effect on block elements.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.text-baseline` | baseline |
+| `.text-bottom` | bottom |
+| `.text-middle` | middle |
+| `.text-sub` | sub |
+| `.text-super` | super |
+| `.text-tbottom` | text-bottom |
+| `.text-ttop` | text-top |
+| `.text-top` | top |
+
+### Whitespace formatting
+CSS Property: `white-space`
+
+Controls how spaces and line breaks in the HTML are displayed, and whether text 
+wraps to the next line:
+
+- **`.text-pre`**: Keeps all spaces and line breaks. Text doesn't wrap.
+- **`.text-pre-line`**: Combines repeated spaces but keeps line breaks. Text wraps.
+- **`.text-pre-wrap`**: Keeps all spaces and line breaks. Text wraps.
+- **`.text-wrap`**: The default. Combines spaces and line breaks. Text wraps.
+- **`.text-no-wrap`**: Combines spaces and keeps text on one line.
+
+`.text-pre` and `.text-no-wrap` can push content past the edge of small screens, 
+so check that pages still work at narrow widths and when zoomed.
+
+| Name | Value |
+| ----------- | ----------- |
+| `.text-pre` | pre |
+| `.text-pre-line` | pre-line |
+| `.text-pre-wrap` | pre-wrap |
+| `.text-wrap` | normal |
+| `.text-no-wrap` | nowrap |
