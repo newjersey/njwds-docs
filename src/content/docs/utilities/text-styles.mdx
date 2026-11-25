@@ -18,35 +18,44 @@ CSS Properties: `font-feature-settings` `font-style` `font-weight` `letter-spaci
 ### Font style
 CSS Property: `font-style`
 
+Sets text in italics or returns it to upright. Use `.text-no-italic` to remove italics 
+from elements that are italic by default, such as `<em>` or `<cite>`, or that inherit 
+italics from a parent.
+
 | Name | Value |
 | ----------- | ----------- |
 | `.text-italic` | italic |
-| `.text-no-italic` | none |
+| `.text-no-italic` | normal |
 
 ### Font weight
 CSS Property: `font-weight`
 
+Sets how thick or thin text appears. If the active font doesn't include a weight, 
+the browser uses the closest weight it has.
+
 | Name | Value |
 | ----------- | ----------- |
-| <p class="utility-example-container text-light">.text-light</p> | 300 |
-| <p class="utility-example-container text-normal">.text-normal</p> | 400 |
-| <p class="utility-example-container text-semibold">.text-semibold</p> | 600 |
-| <p class="utility-example-container text-bold">.text-bold</p> | 700 |
-| <p class="utility-example-container text-heavy">.text-heavy</p> | 800 |
-
+| `.text-light` | 300 |
+| `.text-normal` | 400 |
+| `.text-semibold` | 600 |
+| `.text-bold` | 700 |
+| `.text-heavy` | 800 |
 
 ### Letterspacing
 CSS Property: `letter-spacing`
 
+Adjusts the space between characters. Negative values tighten large headings, and 
+positive values open up short labels set in all caps. `.text-ls-auto` resets the spacing to the browser default.
+
 | Name | Value |
 | ----------- | ----------- |
-| <p class="text-ls-neg-3">.text-ls-neg-3</p> | -0.03em |
-| <p class="text-ls-neg-2">.text-ls-neg-2</p> | -0.02em |
-| <p class="text-ls-neg-1">.text-ls-neg-1</p> | -0.01em |
-| <p class="text-ls-auto">.text-ls-auto</p> | initial |
-| <p class="text-ls-1">.text-ls-1</p> | 0.025em |
-| <p class="text-ls-2">.text-ls-2</p> | 0.1em |
-| <p class="text-ls-3">.text-ls-3</p> | 0.15em |
+| `.text-ls-neg-3` | -0.03em |
+| `.text-ls-neg-2` | -0.02em |
+| `.text-ls-neg-1` | -0.01em |
+| `.text-ls-auto` | initial |
+| `.text-ls-1` | 0.025em |
+| `.text-ls-2` | 0.1em |
+| `.text-ls-3` | 0.15em |
 
 ### Tabular numerals
 CSS Property: `font-feature-settings`
@@ -64,6 +73,11 @@ Activates two OpenType typographic features (assuming the active font supports t
 ### Text decoration
 CSS Property: `text-decoration`
 
+Adds or removes lines through or under text.
+
+- **Underlines on links**: If you use `.text-no-underline` on a link, make sure something other than color still shows it's a link.
+- **Strikethrough**: `.text-strike` only changes how text looks. Use the `<del>` or `<s>` element when the struck-through text carries meaning.
+
 | Name | Value |
 | ----------- | ----------- |
 | `.text-underline` | underline |
@@ -74,6 +88,11 @@ CSS Property: `text-decoration`
 ### Uppercase and lowercase
 CSS Property: `text-transform`
 
+Changes capitalization visually while the text in the HTML stays as written. 
+Use uppercase for short labels only, since long runs of capital letters are 
+harder to read. `.text-no-uppercase` and `.text-no-lowercase` remove a transform 
+inherited from a parent.
+
 | Name | Value |
 | ----------- | ----------- |
 | `.text-uppercase` | uppercase |
@@ -83,6 +102,10 @@ CSS Property: `text-transform`
 
 ### Vertical alignment
 CSS Property: `vertical-align`
+
+Sets how inline items, such as icons, images, and inline-block elements, line up 
+with the text around them. It also sets how content aligns inside table cells. 
+It has no effect on block elements.
 
 | Name | Value |
 | ----------- | ----------- |
@@ -97,6 +120,18 @@ CSS Property: `vertical-align`
 
 ### Whitespace formatting
 CSS Property: `white-space`
+
+Controls how spaces and line breaks in the HTML are displayed, and whether text 
+wraps to the next line:
+
+- **`.text-pre`**: Keeps all spaces and line breaks. Text doesn't wrap.
+- **`.text-pre-line`**: Combines repeated spaces but keeps line breaks. Text wraps.
+- **`.text-pre-wrap`**: Keeps all spaces and line breaks. Text wraps.
+- **`.text-wrap`**: The default. Combines spaces and line breaks. Text wraps.
+- **`.text-no-wrap`**: Combines spaces and keeps text on one line.
+
+`.text-pre` and `.text-no-wrap` can push content past the edge of small screens, 
+so check that pages still work at narrow widths and when zoomed.
 
 | Name | Value |
 | ----------- | ----------- |
