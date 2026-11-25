@@ -1,0 +1,43 @@
+---
+title: Shadow
+description: Set size of an item’s drop shadow
+---
+
+import { STORYBOOK_BASE_URL } from '@config/storybook';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<PageHeader
+  name={frontmatter.title}
+  description={frontmatter.description}
+  wcagBadge={false} />
+
+CSS Properties: `box-shadow`
+
+## Basic settings
+
+### Shadow 
+CSS Property: `box-shadow`
+
+Adds a drop shadow so an item looks raised above the page. Higher numbers make the shadow 
+bigger and more spread out, so the item looks higher off the page.
+
+Shadows are decorative. They're too faint to be the only thing showing where a control's 
+edge is or that it's interactive, so pair them with a border or another visible cue.
+
+| Name | Value | Preview |
+| ----------- | ----------- | ----------- |
+| `.shadow-none` | `none` | <div class="square-4 bg-white shadow-none"></div> |
+| `.shadow-1` | `0 1px 4px 0 rgba(0, 0, 0, 0.1)` | <div class="square-4 bg-white shadow-1"></div> |
+| `.shadow-2` | `0 4px 8px 0 rgba(0, 0, 0, 0.1)` | <div class="square-4 bg-white shadow-2"></div> |
+| `.shadow-3` | `0 8px 16px 0 rgba(0, 0, 0, 0.1)` | <div class="square-4 bg-white shadow-3"></div> |
+| `.shadow-4` | `0 12px 24px 0 rgba(0, 0, 0, 0.1)` | <div class="square-4 bg-white shadow-4"></div> |
+| `.shadow-5` | `0 16px 32px 0 rgba(0, 0, 0, 0.1)` | <div class="square-4 bg-white shadow-5"></div> |
+
+## Advanced settings
+
+### State variants
+Use a state prefix separated with a `:` to target a utility in a specific state. The state value
+of `hover` is available for this utility.
+
+**Example**
+`.hover:shadow-5`
